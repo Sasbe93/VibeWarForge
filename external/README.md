@@ -11,8 +11,8 @@ Third-party or Blizzard files the tools can use. Nothing here is committed. Crea
 | `external/refmaps/wc3/ref/`, `external/refmaps/wc3/set/` | Reference ranked maps (`*.w3x`) | Download the current W3Champions map pool; only needed to recalibrate thresholds |
 | `external/refmaps/bw/set/` | Reference BW ladder maps (`*.scx`/`*.scm`) | Download current ladder map packs (e.g. from nydus.gg / the ASL map pool); only for recalibration |
 | `external/bwapi/` | BWAPI source (unit/weapon tables) | `git clone https://github.com/bwapi/bwapi`; only to rebuild `data/bw/*.json` |
-| `tools/lib/bw/isomtool_src/external/Chkdraft`, `.../RareCpp` | C++ libraries for isomtool | `git clone https://github.com/TheNitesWhoSay/Chkdraft` and `https://github.com/TheNitesWhoSay/RareCpp`, then `cmake -S tools/lib/bw/isomtool_src -B build && cmake --build build` and copy the binary to `tools/lib/bw/isomtool` |
-| `tools/lib/bw/tileset/` | BW tileset files (`badlands.cv5/.vf4/.vx4/.vr4/.wpe`, ...) | Extract `tileset\*` from your own StarCraft Remastered install (CASC) |
+| `tools/lib/bw/isomtool_src/external/Chkdraft`, `.../RareCpp` | C++ libraries for isomtool | `git clone https://github.com/TheNitesWhoSay/Chkdraft` and `https://github.com/TheNitesWhoSay/RareCpp`, then `cmake -S tools/lib/bw/isomtool_src -B build && cmake --build build` and copy the binary to `tools/lib/bw/isomtool`. Full Linux/Windows steps: `docs/bw-terrain-setup.md`. Required for all BW terrain work |
+| `tools/lib/bw/tileset/` | BW tileset files (`badlands.cv5/.vx4ex/.vr4/.wpe`, `.vf4` optional, ...) | `python3 tools/bw/extract_tilesets.py --from-folder <CascView export>` (or `--casc`), see `docs/bw-terrain-setup.md`. Required for all BW terrain work |
 | `external/bw/vcod_seeds.txt` | StarEdit VCOD seed table (needed by `tools/lib/bw/sclib.py` to write maps) | `python3 tools/bw/extract_vcod.py <any .scx/.scm you own>`; or set `BW_VCOD_SEEDS` |
 
 Environment overrides: `WC3_STOCK_DATA` (stock SLK `data/` dir, used by `slk.py`, `dslk.py` and the map-design checks), `PJASS` (pjass binary), `JASS_HEADERS` (folder with common.j/Blizzard.j), `BW_VCOD_SEEDS`.
