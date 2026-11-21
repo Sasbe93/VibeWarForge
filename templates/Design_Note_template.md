@@ -25,6 +25,14 @@ START_SETUP: <no-base|build-up|small-base|established> :: <story reason>
 START_DEFENSE_WHY: <what> :: <reason>          (only if more than 2 towers at start)
 START_GIFT_WHY: <unit or building> :: <reason>  (only for a ready new building or more than 3 of a new unit)
 
+## Scene views
+One line per in-mission dialogue scene that centres the camera on (or speaks at) a location; the player must see that
+location from the first line (no black screen):
+SCENE_VIEW: <scene> :: <location name> :: <alliance-vision | revealer | own units present>
+(alliance-vision: the alliance and its shared vision start before the first line; revealer: `m.scene_reveal(loc, player)`
+before the first line, removed after the scene unless the vision should stay; own units present: the player's units
+stand there at that moment.)
+
 ## Briefing and voice
 - Briefing: who speaks (portraits), what the objectives screen shows.
 - Voiced lines: every story line voiced (WC3: docs/wc3-storytelling-cinematics.md; Brood War: edge-tts, docs/bw-campaign-design.md
