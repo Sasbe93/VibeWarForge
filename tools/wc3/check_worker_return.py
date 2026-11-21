@@ -13,7 +13,6 @@ sys.path[:0] = [os.path.join(R, 'tools', 'lib', 'wc3'), os.path.join(R, 'data', 
 from mpqread import MPQ
 from check_tech_wc3 import parse_obj
 STOCK = os.environ.get('WC3_STOCK_DATA', os.path.join(R, 'external', 'wc3data', 'warpack-stock-data-0.0.1', 'data'))
-if not os.path.isdir(STOCK): STOCK = '/workspace/wc3data/warpack-stock-data-0.0.1/data'
 HARVEST = {'Ahar': ('gold', 'lumber'), 'Ahrl': ('lumber',), 'Ahr2': ('lumber',), 'Ahr3': ('lumber',)}   # Awha/Aaha need no return trip
 RETURN = {'Argd': ('gold',), 'Argl': ('gold', 'lumber'), 'Arlm': ('lumber',)}
 def stock_abils():

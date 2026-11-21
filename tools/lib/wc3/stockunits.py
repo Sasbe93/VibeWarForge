@@ -2,7 +2,6 @@
 import os, re
 R = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', '..')
 D = os.environ.get('WC3_STOCK_DATA', os.path.join(R, 'external', 'wc3data', 'warpack-stock-data-0.0.1', 'data'))
-if not os.path.isdir(D): D = '/workspace/wc3data/warpack-stock-data-0.0.1/data'
 U = os.path.join(D, 'units')
 def ini(f):
     out, cur = {}, None

@@ -82,8 +82,8 @@ from mpqread import MPQ
 from check_tech_reachability import stock, parse_obj, Obj, ids, read_slk, UD
 from check_creep_distance import units_with_owner
 import ai_timeline
-PJASS = os.environ.get('PJASS', '/workspace/vibemodforge/external/pjass/pjass')
-JDIR = os.environ.get('WC3_JASS_DIR', '/home/box/wc3tools/jass')
+PJASS = os.environ.get('PJASS', os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'external', 'pjass', 'pjass'))
+JDIR = os.environ.get('WC3_JASS_DIR', os.environ.get('JASS_HEADERS', os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'external', 'jass')))
 HALLS = {'htow', 'hkee', 'hcas', 'ogre', 'ostr', 'ofrt', 'unpl', 'unp1', 'unp2', 'etol', 'etoa', 'etoe'}
 HALL_CHAINS = [('htow', 'hkee', 'hcas'), ('ogre', 'ostr', 'ofrt'), ('unpl', 'unp1', 'unp2'), ('etol', 'etoa', 'etoe')]
 TWN = {'TWN1': 0, 'TWN2': 1, 'TWN3': 2}

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """check_campaign_reference: campaign-mission reference metrics, calibrated on 10 official Blizzard
 chapters (RoC Human02/04/05/06/07/09 originals + Undead04/05, NightElf02, Orc03 2P/MP edits) and 6 custom chapters
-(Dwarf Campaign 1-3, Gnoll Campaign 1, To the Bitter End 05/06). Report: /workspace/campaign_compare/report.md.
+(Dwarf Campaign 1-3, Gnoll Campaign 1, To the Bitter End 05/06).
 Applies to mission maps only (melee/ranked maps keep the ranked rules). [base] = only for base-building missions
 (user town hall or StartCampaignAI/tech limits + gold mine; override with `BASE_BUILDING: yes|no` in the Design Note).
 FAIL height       [base] >= 3 cliff levels, >= 2 ramp groups (WARN below 4; every built ramp must be a valid 3-vertex-row ramp,

@@ -3,7 +3,7 @@
 destructabledata.slk (or be a custom type the builder defines). Scans byte-string ids (b'XXXX') in prop/scene/doodad calls of
 missions/*/src/*.py and terrain builders, plus the scene_purpose presets and the landmark lists of the mission library.
 Hollowdeep: 'NOob' (Brood Nursery scene, also in check_doodad_purpose LANDMARK) and 'NOsh' are no stock ids.
-Usage: check_doodad_ids.py [DIR_OR_FILE ...]   (default: /workspace/warcraft3/missions)"""
+Usage: check_doodad_ids.py [DIR_OR_FILE ...]   (default: the current directory)"""
 import sys, os, re, json
 H = os.path.dirname(os.path.abspath(__file__)); sys.path[:0] = [H, os.path.join(H, '..', 'lib', 'wc3')]
 import check_decor_lookalike as CDL
@@ -13,7 +13,7 @@ def main():
     for f in glob.glob(os.path.join(os.path.dirname(SU.U), 'terrain', '*.slk')):
         T |= set(re.findall(r'K"(\w{4})"', open(f, encoding='latin1').read()))
     T |= set(SU.load()['skin'])   # unit ids are no doodads (b'h000' in a test script)
-    args = sys.argv[1:] or ['/workspace/warcraft3/missions']
+    args = sys.argv[1:] or ['.']
     files = []
     for a in args:
         if os.path.isfile(a): files.append(a)

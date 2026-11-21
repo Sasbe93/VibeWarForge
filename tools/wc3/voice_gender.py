@@ -45,8 +45,7 @@ def _stock():
     try:
         import stockunits as SU; p=os.path.join(SU.U,'unitskin.txt')
     except Exception:
-        p='/workspace/wc3data/warpack-stock-data-0.0.1/data/units/unitskin.txt'
-    if not os.path.isfile(p): p='/workspace/wc3data/warpack-stock-data-0.0.1/data/units/unitskin.txt'
+        p=os.path.join(os.environ.get('WC3_STOCK_DATA','external/wc3data/warpack-stock-data-0.0.1/data'),'units','unitskin.txt')
     cur=None
     try:
         for l in open(p,encoding='latin1'):

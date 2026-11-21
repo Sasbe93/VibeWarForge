@@ -17,7 +17,7 @@ def _terrain():
     global _SLK
     if _SLK is None:
         _SLK = {}
-        for p in (os.environ.get('WC3_STOCK_DATA', ''), 'external/wc3data/warpack-stock-data-0.0.1/data', '/workspace/wc3data/warpack-stock-data-0.0.1/data'):
+        for p in (os.environ.get('WC3_STOCK_DATA', ''), 'external/wc3data/warpack-stock-data-0.0.1/data'):
             f = os.path.join(p, 'terrain', 'terrain.slk')
             if p and os.path.exists(f):
                 rows, cols, cur = {}, {}, None
