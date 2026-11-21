@@ -5,6 +5,12 @@ campaign missions, ranked/melee maps, custom races and custom units.
 
 This repository contains **no finished maps, campaigns, races or units** and **no Blizzard assets**. It contains what you need to build and verify your own.
 
+**AI agents: start with [`AGENTS.md`](AGENTS.md)** (fixed workflow per task, checks that must pass).
+
+**Brood War terrain needs two things you provide yourself:** the `isomtool` binary (built from `tools/lib/bw/isomtool_src`)
+and the tileset files from your own StarCraft install. Without them BW map generation stops with an error; there is no
+fallback. Setup: [`docs/bw-terrain-setup.md`](docs/bw-terrain-setup.md).
+
 ## Contents
 | Folder | What |
 |---|---|
@@ -22,6 +28,8 @@ python3 -m pip install -r requirements.txt
 # optional: fetch pjass, JASS headers, stock data, BW tilesets (external/README.md)
 python3 tools/ranked/wc3/example_2p.py          # generate an example WC3 melee map into output/
 bash tools/wc3/run_all_checks.sh output/<map>.w3x
+# Brood War (after docs/bw-terrain-setup.md): example campaign mission with voiced briefing, built and checked
+python3 tools/bw/example_mission.py
 ```
 Always run tools from the repository root. Read the matching guide in `docs/` before building; the checkers enforce the rules written there.
 
