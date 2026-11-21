@@ -1,0 +1,1238 @@
+{
+ "source": "liquipedia.net/warcraft (UpgradeCard/SpellCard templates, unit infoboxes, shop tables), fetched 2026-10-30",
+ "upgrades": {
+  "Rhme": {
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "hkee"
+    ],
+    [
+     "hcas"
+    ]
+   ],
+   "researched_at": "hbla",
+   "hotkey": "S"
+  },
+  "Rhra": {
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "hkee"
+    ],
+    [
+     "hcas"
+    ]
+   ],
+   "researched_at": "hbla",
+   "hotkey": "G"
+  },
+  "Rhar": {
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "hkee"
+    ],
+    [
+     "hcas"
+    ]
+   ],
+   "researched_at": "hbla",
+   "hotkey": "P"
+  },
+  "Rhla": {
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "hkee"
+    ],
+    [
+     "hcas"
+    ]
+   ],
+   "researched_at": "hbla",
+   "hotkey": "A"
+  },
+  "Rhac": {
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "hkee"
+    ],
+    [
+     "hcas"
+    ]
+   ],
+   "researched_at": "hlum",
+   "hotkey": "M"
+  },
+  "Rhlh": {
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "hkee"
+    ]
+   ],
+   "researched_at": "hlum",
+   "hotkey": "L"
+  },
+  "Rhri": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hkee"
+    ]
+   ],
+   "researched_at": "hbar",
+   "hotkey": "L"
+  },
+  "Rhan": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hlum"
+    ]
+   ],
+   "researched_at": "hbar",
+   "hotkey": "A"
+  },
+  "Rhsb": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hlum"
+    ]
+   ],
+   "researched_at": "hbar",
+   "hotkey": "B"
+  },
+  "Rhpt": {
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "hcas"
+    ]
+   ],
+   "researched_at": "hars",
+   "hotkey": "T"
+  },
+  "Rhst": {
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "hcas"
+    ]
+   ],
+   "researched_at": "hars",
+   "hotkey": "O"
+  },
+  "Rome": {
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "ostr"
+    ],
+    [
+     "ofrt"
+    ]
+   ],
+   "researched_at": "ofor",
+   "hotkey": "M"
+  },
+  "Rora": {
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "ostr"
+    ],
+    [
+     "ofrt"
+    ]
+   ],
+   "researched_at": "ofor",
+   "hotkey": "R"
+  },
+  "Roar": {
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "ostr"
+    ],
+    [
+     "ofrt"
+    ]
+   ],
+   "researched_at": "ofor",
+   "hotkey": "A"
+  },
+  "Rosp": {
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "ostr"
+    ]
+   ],
+   "researched_at": "ofor",
+   "hotkey": "S"
+  },
+  "Rorb": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ostr"
+    ]
+   ],
+   "researched_at": "ofor",
+   "hotkey": "D"
+  },
+  "Rwdm": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ofrt"
+    ]
+   ],
+   "researched_at": "obea",
+   "hotkey": "D"
+  },
+  "Robs": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ostr"
+    ]
+   ],
+   "researched_at": "obar",
+   "hotkey": "B"
+  },
+  "Rotr": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ostr"
+    ]
+   ],
+   "researched_at": "obar",
+   "hotkey": "R"
+  },
+  "Robk": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ofrt"
+    ]
+   ],
+   "researched_at": "obar",
+   "hotkey": "E"
+  },
+  "Rost": {
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "ofrt"
+    ]
+   ],
+   "researched_at": "osld",
+   "hotkey": "M"
+  },
+  "Rowd": {
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "ofrt"
+    ]
+   ],
+   "researched_at": "osld",
+   "hotkey": "D"
+  },
+  "Rows": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ofrt"
+    ]
+   ],
+   "researched_at": "otto",
+   "hotkey": "P"
+  },
+  "Rowt": {
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "ofrt"
+    ]
+   ],
+   "researched_at": "otto",
+   "hotkey": "R"
+  },
+  "Rume": {
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "unp1"
+    ],
+    [
+     "unp2"
+    ]
+   ],
+   "researched_at": "ugrv",
+   "hotkey": "S"
+  },
+  "Rura": {
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "unp1"
+    ],
+    [
+     "unp2"
+    ]
+   ],
+   "researched_at": "ugrv",
+   "hotkey": "A"
+  },
+  "Ruar": {
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "unp1"
+    ],
+    [
+     "unp2"
+    ]
+   ],
+   "researched_at": "ugrv",
+   "hotkey": "U"
+  },
+  "Rucr": {
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "unp1"
+    ],
+    [
+     "unp2"
+    ]
+   ],
+   "researched_at": "ugrv",
+   "hotkey": "C"
+  },
+  "Rugf": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "unp2"
+    ]
+   ],
+   "researched_at": "usep",
+   "hotkey": "Z"
+  },
+  "Rune": {
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "unp2"
+    ]
+   ],
+   "researched_at": "utod",
+   "hotkey": "E"
+  },
+  "Ruba": {
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "unp2"
+    ]
+   ],
+   "researched_at": "utod",
+   "hotkey": "A"
+  },
+  "Rusl": {
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "researched_at": "utod",
+   "hotkey": "S"
+  },
+  "Rusm": {
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "researched_at": "utod",
+   "hotkey": "M"
+  },
+  "Resm": {
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "etoa"
+    ],
+    [
+     "etoe"
+    ]
+   ],
+   "researched_at": "edob",
+   "hotkey": "M"
+  },
+  "Resw": {
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "etoa"
+    ],
+    [
+     "etoe"
+    ]
+   ],
+   "researched_at": "edob",
+   "hotkey": "W"
+  },
+  "Rema": {
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "etoa"
+    ],
+    [
+     "etoe"
+    ]
+   ],
+   "researched_at": "edob",
+   "hotkey": "A"
+  },
+  "Rerh": {
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "etoa"
+    ],
+    [
+     "etoe"
+    ]
+   ],
+   "researched_at": "edob",
+   "hotkey": "R"
+  },
+  "Reuv": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoa"
+    ]
+   ],
+   "researched_at": "edob",
+   "hotkey": "U"
+  },
+  "Renb": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoa"
+    ]
+   ],
+   "researched_at": "etol",
+   "hotkey": "N"
+  },
+  "Rews": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoe"
+    ]
+   ],
+   "researched_at": "edob",
+   "hotkey": "E"
+  },
+  "Reib": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoa"
+    ]
+   ],
+   "researched_at": "eaom",
+   "hotkey": "I"
+  },
+  "Remk": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoe"
+    ]
+   ],
+   "researched_at": "eaom",
+   "hotkey": "M"
+  },
+  "Redc": {
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "etoe"
+    ]
+   ],
+   "researched_at": "eaoe",
+   "hotkey": "L"
+  },
+  "Reeb": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoe"
+    ]
+   ],
+   "researched_at": "eaoe",
+   "hotkey": "M"
+  },
+  "Redt": {
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "etoe"
+    ]
+   ],
+   "researched_at": "eaow",
+   "hotkey": "A"
+  },
+  "Reec": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoa"
+    ]
+   ],
+   "researched_at": "eaow",
+   "hotkey": "M"
+  },
+  "Rhde": {
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "researched_at": "hbar"
+  },
+  "Rhss": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hcas",
+     "hvlt"
+    ]
+   ],
+   "researched_at": "hars"
+  },
+  "Rhse": {
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "researched_at": "hars"
+  },
+  "Rhfl": {
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "researched_at": "harm"
+  },
+  "Rhgb": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hcas"
+    ]
+   ],
+   "researched_at": "harm"
+  },
+  "Rhfc": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hkee"
+    ]
+   ],
+   "researched_at": "harm"
+  },
+  "Rhrt": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hcas"
+    ]
+   ],
+   "researched_at": "harm"
+  },
+  "Rhhb": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hcas"
+    ]
+   ],
+   "researched_at": "hgra"
+  },
+  "Rhcd": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hcas"
+    ]
+   ],
+   "researched_at": "hgra"
+  },
+  "Ropg": {
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "researched_at": "ogre"
+  },
+  "Robf": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ofrt"
+    ]
+   ],
+   "researched_at": "obar"
+  },
+  "Roen": {
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "researched_at": "obea"
+  },
+  "Rovs": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ofrt"
+    ]
+   ],
+   "researched_at": "obea"
+  },
+  "Rolf": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ofrt",
+     "ovln"
+    ]
+   ],
+   "researched_at": "obea"
+  },
+  "Ruac": {
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "researched_at": "usep"
+  },
+  "Ruwb": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ugrv",
+     "unp1"
+    ]
+   ],
+   "researched_at": "usep"
+  },
+  "Rubu": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ugrv",
+     "unp1"
+    ]
+   ],
+   "researched_at": "usep"
+  },
+  "Rusf": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ugrv",
+     "unp2"
+    ]
+   ],
+   "researched_at": "usep"
+  },
+  "Rupc": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "unp2"
+    ]
+   ],
+   "researched_at": "uslh"
+  },
+  "Ruex": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "unp1"
+    ]
+   ],
+   "researched_at": "uslh"
+  },
+  "Rufb": {
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "researched_at": null
+  },
+  "Resc": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "edob"
+    ]
+   ],
+   "researched_at": "eaom"
+  },
+  "Resi": {
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "researched_at": "eaoe"
+  },
+  "Rehs": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "eden",
+     "etoe"
+    ]
+   ],
+   "researched_at": "eaoe"
+  },
+  "Rers": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "eden",
+     "etoe"
+    ]
+   ],
+   "researched_at": "eaoe"
+  },
+  "Recb": {
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "researched_at": "edos"
+  },
+  "Rusp": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "unp2",
+     "utom"
+    ]
+   ],
+   "researched_at": "uslh"
+  },
+  "Rhfs": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hcas"
+    ]
+   ],
+   "researched_at": "harm"
+  },
+  "Rhpm": {
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "researched_at": "ogre"
+  },
+  "Repd": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "edob",
+     "etoa"
+    ]
+   ],
+   "researched_at": "eaom"
+  },
+  "Remg": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoa"
+    ]
+   ],
+   "researched_at": null
+  },
+  "Reht": {
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoa"
+    ]
+   ],
+   "researched_at": null
+  }
+ },
+ "unit_requires": {
+  "hspt": [
+   "hkee",
+   "hvlt"
+  ],
+  "hdhw": [],
+  "ospm": [],
+  "otbr": [
+   "ovln"
+  ],
+  "uobs": [
+   "utom"
+  ],
+  "ubsp": [],
+  "emtg": [
+   "etoa",
+   "eden"
+  ],
+  "efdr": [
+   "eden"
+  ],
+  "hvlt": [],
+  "ovln": [],
+  "utom": [],
+  "eden": [],
+  "ushd": [],
+  "ufro": [],
+  "echm": [],
+  "hkni": [
+   "hcas",
+   "hbla"
+  ],
+  "hgry": [
+   "hcas"
+  ],
+  "otau": [
+   "ofrt",
+   "ofor"
+  ],
+  "okod": [
+   "ofor"
+  ],
+  "uabo": [
+   "unp2"
+  ],
+  "uban": [],
+  "unec": [],
+  "ugar": [
+   "ugrv",
+   "unp1"
+  ],
+  "ucry": [
+   "ugrv"
+  ],
+  "edot": [],
+  "ehip": [],
+  "hmtm": [],
+  "hrtt": [
+   "hcas"
+  ],
+  "hgyr": [],
+  "hsor": [],
+  "hmpr": [],
+  "hrif": [
+   "hbla"
+  ],
+  "orai": [],
+  "oshm": [],
+  "ohun": [
+   "ofor"
+  ],
+  "ocat": [
+   "ofor",
+   "ostr"
+  ],
+  "ebal": [
+   "edob"
+  ],
+  "edry": [],
+  "edoc": [
+   "etoa"
+  ],
+  "umtw": [
+   "unp1"
+  ],
+  "earc": [],
+  "ehpr": [],
+  "uzg2": [],
+  "hatw": [],
+  "hctw": [
+   "harm"
+  ],
+  "usap": [
+   "unp1"
+  ],
+  "ubon": [
+   "unp2"
+  ],
+  "uslh": [
+   "unp1",
+   "ugrv"
+  ],
+  "utod": [
+   "unp1",
+   "ugrv"
+  ],
+  "eaow": [
+   "etoa"
+  ],
+  "edos": [
+   "etoe"
+  ],
+  "hgra": [
+   "hkee",
+   "hlum"
+  ],
+  "hars": [
+   "hkee"
+  ],
+  "harm": [
+   "hkee",
+   "hbla"
+  ],
+  "obea": [
+   "ostr"
+  ],
+  "otto": [
+   "ostr"
+  ],
+  "osld": [
+   "ostr"
+  ],
+  "eaoe": [
+   "etoa",
+   "edob"
+  ],
+  "oalt": [],
+  "halt": [],
+  "eate": [],
+  "unp1": [],
+  "hkee": [],
+  "hcas": [
+   "halt"
+  ],
+  "ostr": [],
+  "ofrt": [
+   "oalt"
+  ],
+  "etoa": [],
+  "uzig": []
+ },
+ "shop_items": {
+  "hvlt": [
+   {
+    "id": "tsct",
+    "name": "Ivory Tower",
+    "requires": [
+     "hkee"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "plcl",
+    "name": "Lesser Clarity Potion",
+    "requires": [
+     "htow"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "mcri",
+    "name": "Mechanical Critter",
+    "requires": [],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "oslo",
+    "name": "Orb of Slow",
+    "requires": [
+     "hcas"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "phea",
+    "name": "Potion of Healing",
+    "requires": [
+     "hkee"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "pman",
+    "name": "Potion of Mana",
+    "requires": [
+     "hkee"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "sreg",
+    "name": "Scroll of Regeneration",
+    "requires": [],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "stwp",
+    "name": "Scroll of Town Portal",
+    "requires": [
+     "hkee"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "ssan",
+    "name": "Staff of Sanctuary",
+    "requires": [
+     "hcas"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   }
+  ],
+  "ovln": [
+   {
+    "id": "hslv",
+    "name": "Healing Salve",
+    "requires": [],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "plcl",
+    "name": "Lesser Clarity Potion",
+    "requires": [
+     "ogre"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "olig",
+    "name": "Orb of Lightning",
+    "requires": [
+     "ofrt"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "phea",
+    "name": "Potion of Healing",
+    "requires": [
+     "ostr"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "pman",
+    "name": "Potion of Mana",
+    "requires": [
+     "ostr"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "shas",
+    "name": "Scroll of Speed",
+    "requires": [],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "stwp",
+    "name": "Scroll of Town Portal",
+    "requires": [
+     "ostr"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "tgrh",
+    "name": "Tiny Great Hall",
+    "requires": [
+     "ofrt"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   }
+  ],
+  "utom": [
+   {
+    "id": "dust",
+    "name": "Dust of Appearance",
+    "requires": [
+     "unpl"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "ocor",
+    "name": "Orb of Corruption",
+    "requires": [
+     "unp2"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "phea",
+    "name": "Potion of Healing",
+    "requires": [
+     "unp1"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "pman",
+    "name": "Potion of Mana",
+    "requires": [
+     "unp1"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "rde3",
+    "name": "Ritual Dagger",
+    "requires": [],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "rnec",
+    "name": "Rod of Necromancy",
+    "requires": [],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "skul",
+    "name": "Sacrificial Skull",
+    "requires": [],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "stwp",
+    "name": "Scroll of Town Portal",
+    "requires": [
+     "unp1"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "wneg",
+    "name": "Wand of Negation",
+    "requires": [
+     "unp1"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   }
+  ],
+  "eden": [
+   {
+    "id": "pams",
+    "name": "Anti-magic Potion",
+    "requires": [
+     "etoe"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "dust",
+    "name": "Dust of Appearance",
+    "requires": [
+     "etol"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "plcl",
+    "name": "Lesser Clarity Potion",
+    "requires": [
+     "etol"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "moon",
+    "name": "Moonstone",
+    "requires": [],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "oven",
+    "name": "Orb of Venom",
+    "requires": [
+     "etoe"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "phea",
+    "name": "Potion of Healing",
+    "requires": [
+     "etoa"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "pman",
+    "name": "Potion of Mana",
+    "requires": [
+     "etoa"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "stwp",
+    "name": "Scroll of Town Portal",
+    "requires": [
+     "etoa"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "spre",
+    "name": "Staff of Preservation",
+    "requires": [
+     "etoa"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   }
+  ]
+ }
+}

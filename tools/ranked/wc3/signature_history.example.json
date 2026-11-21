@@ -1,0 +1,21 @@
+{
+ "_doc": "Optional: log the signature features of each ranked map you finish. A new map should share at most 2 optional signature tags with the previous map. Copy to output/ranked/signature_history.json and append after every map.",
+ "tags_examples": [
+  "bridge",
+  "moat",
+  "centre_plateau_fountain",
+  "camp_back_grove",
+  "start_tex_disc",
+  "marketplace"
+ ],
+ "maps": [
+  {
+   "name": "<your map>",
+   "seed": 1,
+   "features": [
+    "bridge",
+    "marketplace"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1603 @@
+{
+ "_about": {
+  "scale": "on-screen size = extent x modelScale (SD: legacyModelScale)",
+  "source": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/",
+  "what": "Stand-sequence extent (min/max xyz, model units) of classic SD stock models, measured from the TFT mirror"
+ },
+ "models": {
+  "buildings\\human\\altarofkings\\altarofkings": {
+   "max": [
+    128.8,
+    118.5,
+    175.4
+   ],
+   "min": [
+    -124.7,
+    -125.1,
+    -121.7
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/human/altarofkings/altarofkings.mdx"
+  },
+  "buildings\\human\\workshop\\workshop": {
+   "max": [
+    125.9,
+    130.6,
+    186.1
+   ],
+   "min": [
+    -129.2,
+    -131.8,
+    -113.3
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/human/workshop/workshop.mdx"
+  },
+  "buildings\\orc\\altarofstorms\\altarofstorms": {
+   "max": [
+    148.1,
+    121.3,
+    226.5
+   ],
+   "min": [
+    -134.3,
+    -136.9,
+    -76.7
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/orc/altarofstorms/altarofstorms.mdx"
+  },
+  "buildings\\orc\\greathall\\greathall": {
+   "max": [
+    237.0,
+    199.4,
+    202.1
+   ],
+   "min": [
+    -154.8,
+    -232.2,
+    -165.6
+   ],
+   "seq": "sequence 'stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/orc/greathall/greathall.mdx"
+  },
+  "buildings\\orc\\orcbarracks\\orcbarracks": {
+   "max": [
+    182.0,
+    154.6,
+    200.6
+   ],
+   "min": [
+    -163.0,
+    -173.6,
+    -137.6
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/orc/orcbarracks/orcbarracks.mdx"
+  },
+  "buildings\\orc\\trollburrow\\trollburrow": {
+   "max": [
+    101.5,
+    103.0,
+    80.3
+   ],
+   "min": [
+    -109.8,
+    -105.0,
+    -76.6
+   ],
+   "seq": "sequence 'Stand - 1'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/orc/trollburrow/trollburrow.mdx"
+  },
+  "buildings\\orc\\voodoolounge\\voodoolounge": {
+   "max": [
+    124.5,
+    134.3,
+    234.6
+   ],
+   "min": [
+    -152.9,
+    -139.8,
+    -67.2
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/orc/voodoolounge/voodoolounge.mdx"
+  },
+  "buildings\\orc\\watchtower\\watchtower": {
+   "max": [
+    82.1,
+    85.2,
+    220.5
+   ],
+   "min": [
+    -93.6,
+    -86.4,
+    -62.6
+   ],
+   "seq": "sequence 'stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/orc/watchtower/watchtower.mdx"
+  },
+  "buildings\\other\\furbolghut2\\furbolghut2": {
+   "max": [
+    158.2,
+    157.5,
+    142.3
+   ],
+   "min": [
+    -112.0,
+    -83.3,
+    -135.9
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/other/furbolghut2/furbolghut2.mdx"
+  },
+  "buildings\\other\\goldmine\\goldmine": {
+   "max": [
+    145.8,
+    121.0,
+    152.9
+   ],
+   "min": [
+    -172.9,
+    -153.1,
+    -113.0
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/other/goldmine/goldmine.mdx"
+  },
+  "buildings\\other\\icetrollhut0\\icetrollhut0": {
+   "max": [
+    102.8,
+    139.4,
+    154.6
+   ],
+   "min": [
+    -129.4,
+    -208.7,
+    -104.1
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/other/icetrollhut0/icetrollhut0.mdx"
+  },
+  "buildings\\other\\icetrollhut1\\icetrollhut1": {
+   "max": [
+    105.2,
+    96.9,
+    130.0
+   ],
+   "min": [
+    -109.5,
+    -101.6,
+    0.2
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/other/icetrollhut1/icetrollhut1.mdx"
+  },
+  "buildings\\other\\nerubianziggurat\\nerubianziggurat": {
+   "max": [
+    116.4,
+    127.2,
+    110.9
+   ],
+   "min": [
+    -144.3,
+    -133.1,
+    -79.2
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/other/nerubianziggurat/nerubianziggurat.mdx"
+  },
+  "buildings\\other\\sacrificialaltar\\sacrificialaltar": {
+   "max": [
+    110.7,
+    120.2,
+    236.5
+   ],
+   "min": [
+    -141.1,
+    -124.6,
+    -96.8
+   ],
+   "seq": "sequence 'stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/other/sacrificialaltar/sacrificialaltar.mdx"
+  },
+  "buildings\\other\\towerdefensetower\\towerdefensetower": {
+   "max": [
+    156.4,
+    275.6,
+    589.6
+   ],
+   "min": [
+    -381.5,
+    -524.4,
+    -191.4
+   ],
+   "seq": "model bounds",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/other/towerdefensetower/towerdefensetower.mdx"
+  },
+  "buildings\\undead\\altarofdarkness\\altarofdarkness": {
+   "max": [
+    136.0,
+    152.3,
+    165.7
+   ],
+   "min": [
+    -158.6,
+    -111.4,
+    -98.8
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/undead/altarofdarkness/altarofdarkness.mdx"
+  },
+  "buildings\\undead\\crypt\\crypt": {
+   "max": [
+    219.9,
+    206.8,
+    323.1
+   ],
+   "min": [
+    -171.9,
+    -209.2,
+    -124.2
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/undead/crypt/crypt.mdx"
+  },
+  "buildings\\undead\\graveyard\\graveyard": {
+   "max": [
+    138.6,
+    153.3,
+    232.9
+   ],
+   "min": [
+    -135.7,
+    -128.8,
+    -75.6
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/undead/graveyard/graveyard.mdx"
+  },
+  "buildings\\undead\\hauntedmine\\hauntedmine": {
+   "max": [
+    179.2,
+    174.2,
+    363.9
+   ],
+   "min": [
+    -207.2,
+    -173.2,
+    -70.6
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/undead/hauntedmine/hauntedmine.mdx"
+  },
+  "buildings\\undead\\necropolis\\necropolis": {
+   "max": [
+    201.1,
+    195.8,
+    417.4
+   ],
+   "min": [
+    -198.6,
+    -206.0,
+    36.8
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/undead/necropolis/necropolis.mdx"
+  },
+  "buildings\\undead\\ziggurat\\ziggurat": {
+   "max": [
+    151.8,
+    139.9,
+    193.1
+   ],
+   "min": [
+    -105.5,
+    -141.3,
+    -99.9
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/buildings/undead/ziggurat/ziggurat.mdx"
+  },
+  "doodads\\dungeon\\terrain\\eggsack\\eggsack0": {
+   "max": [
+    46.8,
+    44.9,
+    66.8
+   ],
+   "min": [
+    -48.1,
+    -51.6,
+    -13.9
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/doodads/dungeon/terrain/eggsack/eggsack0.mdx"
+  },
+  "doodads\\lordaeronsummer\\props\\brazier\\brazier": {
+   "max": [
+    25.0,
+    23.3,
+    71.4
+   ],
+   "min": [
+    -21.6,
+    -23.0,
+    0.6
+   ],
+   "seq": "sequence 'stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/doodads/lordaeronsummer/props/brazier/brazier.mdx"
+  },
+  "doodads\\lordaeronsummer\\props\\lanternpost\\lanternpost0": {
+   "max": [
+    45.7,
+    77.6,
+    176.4
+   ],
+   "min": [
+    -59.2,
+    -31.6,
+    -58.8
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/doodads/lordaeronsummer/props/lanternpost/lanternpost0.mdx"
+  },
+  "doodads\\northrend\\rocks\\north_webrocks\\north_webrocks3": {
+   "max": [
+    111.1,
+    139.8,
+    301.9
+   ],
+   "min": [
+    -110.6,
+    -104.1,
+    -0.5
+   ],
+   "seq": "model bounds",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/doodads/northrend/rocks/north_webrocks/north_webrocks3.mdx"
+  },
+  "units\\creeps\\corruptedent\\corruptedent": {
+   "max": [
+    53.8,
+    63.1,
+    144.7
+   ],
+   "min": [
+    -52.4,
+    -58.4,
+    -1.8
+   ],
+   "seq": "sequence 'Stand - 1'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/corruptedent/corruptedent.mdx"
+  },
+  "units\\creeps\\furbolgelder\\furbolgelder": {
+   "max": [
+    71.9,
+    61.1,
+    126.5
+   ],
+   "min": [
+    -55.8,
+    -60.2,
+    -1.9
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/furbolgelder/furbolgelder.mdx"
+  },
+  "units\\creeps\\furbolgpanda\\furbolgpanda": {
+   "max": [
+    71.9,
+    61.1,
+    126.5
+   ],
+   "min": [
+    -55.8,
+    -60.2,
+    -1.9
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/furbolgpanda/furbolgpanda.mdx"
+  },
+  "units\\creeps\\furbolgshaman\\furbolgshaman": {
+   "max": [
+    71.9,
+    61.1,
+    126.5
+   ],
+   "min": [
+    -55.8,
+    -60.2,
+    -1.9
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/furbolgshaman/furbolgshaman.mdx"
+  },
+  "units\\creeps\\furbolgtracker\\furbolgtracker": {
+   "max": [
+    71.9,
+    61.1,
+    126.5
+   ],
+   "min": [
+    -55.8,
+    -60.2,
+    -1.9
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/furbolgtracker/furbolgtracker.mdx"
+  },
+  "units\\creeps\\grizzlybear\\grizzlybear": {
+   "max": [
+    105.0,
+    59.1,
+    138.2
+   ],
+   "min": [
+    -106.2,
+    -82.9,
+    -8.2
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/grizzlybear/grizzlybear.mdx"
+  },
+  "units\\creeps\\nerubian\\nerubian": {
+   "max": [
+    122.0,
+    53.7,
+    134.5
+   ],
+   "min": [
+    -76.2,
+    -52.9,
+    -3.8
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/nerubian/nerubian.mdx"
+  },
+  "units\\creeps\\nerubianqueen\\nerubianqueen": {
+   "max": [
+    122.0,
+    53.7,
+    134.5
+   ],
+   "min": [
+    -76.2,
+    -52.9,
+    -3.8
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/nerubianqueen/nerubianqueen.mdx"
+  },
+  "units\\creeps\\nerubianspiderlord\\nerubianspiderlord": {
+   "max": [
+    122.0,
+    53.7,
+    134.5
+   ],
+   "min": [
+    -76.2,
+    -52.9,
+    -3.8
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/nerubianspiderlord/nerubianspiderlord.mdx"
+  },
+  "units\\creeps\\nightelfbattleship\\nightelfbattleship": {
+   "max": [
+    198.2,
+    113.8,
+    278.4
+   ],
+   "min": [
+    -147.2,
+    -121.2,
+    -25.1
+   ],
+   "seq": "sequence 'Stand - 1'",
+   "status": "measured",
+   "unit": "ebsh",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/nightelfbattleship/nightelfbattleship.mdx"
+  },
+  "units\\creeps\\satyrhellcaller\\satyrhellcaller": {
+   "max": [
+    96.5,
+    105.1,
+    217.1
+   ],
+   "min": [
+    -126.6,
+    -62.5,
+    1.7
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/satyrhellcaller/satyrhellcaller.mdx"
+  },
+  "units\\creeps\\satyrtrickster\\satyrtrickster": {
+   "max": [
+    60.7,
+    59.9,
+    122.7
+   ],
+   "min": [
+    -67.4,
+    -36.4,
+    -1.1
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/satyrtrickster/satyrtrickster.mdx"
+  },
+  "units\\creeps\\spider\\spider": {
+   "max": [
+    139.8,
+    79.1,
+    73.5
+   ],
+   "min": [
+    -79.3,
+    -79.2,
+    -0.7
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/spider/spider.mdx"
+  },
+  "units\\creeps\\spiderblack\\spiderblack": {
+   "max": [
+    139.8,
+    79.1,
+    73.5
+   ],
+   "min": [
+    -79.3,
+    -79.2,
+    -0.7
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/spiderblack/spiderblack.mdx"
+  },
+  "units\\creeps\\spiderblue\\spiderblue": {
+   "max": [
+    139.8,
+    79.1,
+    73.5
+   ],
+   "min": [
+    -79.3,
+    -79.2,
+    -0.7
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/spiderblue/spiderblue.mdx"
+  },
+  "units\\creeps\\spidergreen\\spidergreen": {
+   "max": [
+    139.8,
+    79.1,
+    73.5
+   ],
+   "min": [
+    -79.3,
+    -79.2,
+    -0.7
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/spidergreen/spidergreen.mdx"
+  },
+  "units\\creeps\\tuskar\\tuskar": {
+   "max": [
+    97.9,
+    78.3,
+    139.3
+   ],
+   "min": [
+    -48.8,
+    -62.4,
+    -7.0
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/tuskar/tuskar.mdx"
+  },
+  "units\\creeps\\tuskarlord\\tuskarlord": {
+   "max": [
+    97.9,
+    78.3,
+    139.3
+   ],
+   "min": [
+    -48.8,
+    -62.4,
+    -7.0
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/tuskarlord/tuskarlord.mdx"
+  },
+  "units\\creeps\\tuskarranged\\tuskarranged": {
+   "max": [
+    51.5,
+    66.0,
+    139.3
+   ],
+   "min": [
+    -117.8,
+    -62.4,
+    1.0
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/tuskarranged/tuskarranged.mdx"
+  },
+  "units\\creeps\\whitewolf\\whitewolf": {
+   "max": [
+    91.7,
+    44.6,
+    111.7
+   ],
+   "min": [
+    -90.6,
+    -41.2,
+    -2.2
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/creeps/whitewolf/whitewolf.mdx"
+  },
+  "units\\demon\\infernal\\infernal": {
+   "max": [
+    77.3,
+    131.3,
+    258.9
+   ],
+   "min": [
+    -81.8,
+    -135.5,
+    -20.9
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/demon/infernal/infernal.mdx"
+  },
+  "units\\human\\footman\\footman": {
+   "max": [
+    52.4,
+    36.7,
+    99.1
+   ],
+   "min": [
+    -19.6,
+    -33.2,
+    -0.3
+   ],
+   "seq": "sequence 'Stand - 1'",
+   "status": "measured",
+   "unit": "hfoo",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/human/footman/footman.mdx"
+  },
+  "units\\human\\gryphonrider\\gryphonrider": {
+   "max": [
+    53.4,
+    80.8,
+    73.1
+   ],
+   "min": [
+    -71.8,
+    -84.5,
+    -72.4
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "hgry",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/human/gryphonrider/gryphonrider.mdx"
+  },
+  "units\\human\\heroarchmage\\heroarchmage": {
+   "max": [
+    162.3,
+    149.2,
+    232.6
+   ],
+   "min": [
+    -162.8,
+    -149.0,
+    -2.2
+   ],
+   "seq": "sequence 'Stand 1'",
+   "status": "measured",
+   "unit": "Hamg",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/human/heroarchmage/heroarchmage.mdx"
+  },
+  "units\\human\\herobloodelf\\herobloodelf": {
+   "max": [
+    131.1,
+    131.2,
+    194.2
+   ],
+   "min": [
+    -139.6,
+    -139.5,
+    -11.2
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "Hblm",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/human/herobloodelf/herobloodelf.mdx"
+  },
+  "units\\human\\heromountainking\\heromountainking": {
+   "max": [
+    101.5,
+    96.3,
+    98.9
+   ],
+   "min": [
+    -91.8,
+    -97.0,
+    -17.7
+   ],
+   "seq": "sequence 'Stand - 1'",
+   "status": "measured",
+   "unit": "Hmkg",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/human/heromountainking/heromountainking.mdx"
+  },
+  "units\\human\\heropaladin\\heropaladin": {
+   "max": [
+    123.3,
+    131.5,
+    114.3
+   ],
+   "min": [
+    -140.3,
+    -132.1,
+    -40.6
+   ],
+   "seq": "sequence 'Stand - 1'",
+   "status": "measured",
+   "unit": "Hpal",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/human/heropaladin/heropaladin.mdx"
+  },
+  "units\\human\\knight\\knight": {
+   "max": [
+    87.8,
+    34.1,
+    151.8
+   ],
+   "min": [
+    -60.3,
+    -50.3,
+    -1.0
+   ],
+   "seq": "sequence 'Stand -1'",
+   "status": "measured",
+   "unit": "hkni",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/human/knight/knight.mdx"
+  },
+  "units\\human\\mortarteam\\mortarteam": {
+   "max": [
+    45.5,
+    43.1,
+    77.6
+   ],
+   "min": [
+    -68.1,
+    -65.4,
+    -2.7
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "hmtm",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/human/mortarteam/mortarteam.mdx"
+  },
+  "units\\human\\peasant\\peasant": {
+   "max": [
+    20.6,
+    26.6,
+    92.7
+   ],
+   "min": [
+    -28.6,
+    -29.8,
+    -0.1
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "hpea",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/human/peasant/peasant.mdx"
+  },
+  "units\\human\\priest\\priest": {
+   "max": [
+    27.9,
+    34.9,
+    123.0
+   ],
+   "min": [
+    -66.5,
+    -49.9,
+    0.7
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "hmpr",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/human/priest/priest.mdx"
+  },
+  "units\\human\\rifleman\\rifleman": {
+   "max": [
+    63.0,
+    49.0,
+    82.3
+   ],
+   "min": [
+    -31.9,
+    -38.6,
+    0.5
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "hrif",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/human/rifleman/rifleman.mdx"
+  },
+  "units\\human\\sorceress\\sorceress": {
+   "max": [
+    28.5,
+    40.9,
+    133.6
+   ],
+   "min": [
+    -45.3,
+    -42.8,
+    3.0
+   ],
+   "seq": "sequence 'Stand 1'",
+   "status": "measured",
+   "unit": "hsor",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/human/sorceress/sorceress.mdx"
+  },
+  "units\\nightelf\\archer\\archer": {
+   "max": [
+    59.4,
+    66.1,
+    93.9
+   ],
+   "min": [
+    -33.9,
+    -60.4,
+    0.6
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "earc",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/nightelf/archer/archer.mdx"
+  },
+  "units\\nightelf\\ballista\\ballista": {
+   "max": [
+    96.1,
+    82.5,
+    88.6
+   ],
+   "min": [
+    -92.7,
+    -83.8,
+    0.2
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "ebal",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/nightelf/ballista/ballista.mdx"
+  },
+  "units\\nightelf\\druidoftheclaw\\druidoftheclaw": {
+   "max": [
+    47.0,
+    64.0,
+    150.7
+   ],
+   "min": [
+    -50.8,
+    -66.8,
+    -0.5
+   ],
+   "seq": "sequence 'Stand - 1'",
+   "status": "measured",
+   "unit": "edcm",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/nightelf/druidoftheclaw/druidoftheclaw.mdx"
+  },
+  "units\\nightelf\\dryad\\dryad": {
+   "max": [
+    98.9,
+    38.9,
+    146.5
+   ],
+   "min": [
+    -44.1,
+    -38.9,
+    1.5
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "edry",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/nightelf/dryad/dryad.mdx"
+  },
+  "units\\nightelf\\ent\\ent": {
+   "max": [
+    50.1,
+    65.8,
+    161.3
+   ],
+   "min": [
+    -61.4,
+    -59.7,
+    -1.5
+   ],
+   "seq": "sequence 'Stand 1'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/nightelf/ent/ent.mdx"
+  },
+  "units\\nightelf\\herodemonhunter\\herodemonhunter": {
+   "max": [
+    198.5,
+    200.6,
+    209.8
+   ],
+   "min": [
+    -203.5,
+    -201.3,
+    -35.6
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "Edem",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/nightelf/herodemonhunter/herodemonhunter.mdx"
+  },
+  "units\\nightelf\\herokeeperofthegrove\\herokeeperofthegrove": {
+   "max": [
+    191.5,
+    179.0,
+    233.0
+   ],
+   "min": [
+    -199.6,
+    -179.8,
+    1.7
+   ],
+   "seq": "sequence 'Stand - 1'",
+   "status": "measured",
+   "unit": "Ekee",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/nightelf/herokeeperofthegrove/herokeeperofthegrove.mdx"
+  },
+  "units\\nightelf\\heromoonpriestess\\heromoonpriestess": {
+   "max": [
+    148.9,
+    135.3,
+    150.0
+   ],
+   "min": [
+    -147.2,
+    -136.0,
+    -1.4
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "Emoo",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/nightelf/heromoonpriestess/heromoonpriestess.mdx"
+  },
+  "units\\nightelf\\herowarden\\herowarden": {
+   "max": [
+    96.7,
+    107.4,
+    160.4
+   ],
+   "min": [
+    -117.9,
+    -107.2,
+    -33.3
+   ],
+   "seq": "sequence 'Stand - 1'",
+   "status": "measured",
+   "unit": "Ewar",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/nightelf/herowarden/herowarden.mdx"
+  },
+  "units\\nightelf\\hippogryph\\hippogryph": {
+   "max": [
+    67.5,
+    109.4,
+    127.6
+   ],
+   "min": [
+    -103.0,
+    -109.1,
+    -49.5
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "ehip",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/nightelf/hippogryph/hippogryph.mdx"
+  },
+  "units\\nightelf\\huntress\\huntress": {
+   "max": [
+    75.6,
+    41.0,
+    125.6
+   ],
+   "min": [
+    -119.6,
+    -44.8,
+    -2.4
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "esen",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/nightelf/huntress/huntress.mdx"
+  },
+  "units\\nightelf\\mountaingiant\\mountaingiant": {
+   "max": [
+    64.4,
+    97.6,
+    228.7
+   ],
+   "min": [
+    -74.0,
+    -106.3,
+    -2.8
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "emtg",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/nightelf/mountaingiant/mountaingiant.mdx"
+  },
+  "units\\nightelf\\wisp\\wisp": {
+   "max": [
+    107.9,
+    109.9,
+    176.2
+   ],
+   "min": [
+    -107.9,
+    -109.7,
+    -50.0
+   ],
+   "seq": "sequence 'stand'",
+   "status": "measured",
+   "unit": "ewsp",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/nightelf/wisp/wisp.mdx"
+  },
+  "units\\orc\\catapult\\catapult": {
+   "max": [
+    95.4,
+    70.6,
+    77.1
+   ],
+   "min": [
+    -102.8,
+    -65.9,
+    -0.1
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "ocat",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/orc/catapult/catapult.mdx"
+  },
+  "units\\orc\\grunt\\grunt": {
+   "max": [
+    71.0,
+    41.5,
+    100.6
+   ],
+   "min": [
+    -18.9,
+    -40.8,
+    -0.4
+   ],
+   "seq": "sequence 'Stand - 1'",
+   "status": "measured",
+   "unit": "ogru",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/orc/grunt/grunt.mdx"
+  },
+  "units\\orc\\headhunter\\headhunter": {
+   "max": [
+    80.0,
+    29.8,
+    109.9
+   ],
+   "min": [
+    -49.6,
+    -72.2,
+    -0.2
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "ohun",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/orc/headhunter/headhunter.mdx"
+  },
+  "units\\orc\\heroblademaster\\heroblademaster": {
+   "max": [
+    153.3,
+    150.5,
+    182.1
+   ],
+   "min": [
+    -150.4,
+    -153.6,
+    -52.8
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "Obla",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/orc/heroblademaster/heroblademaster.mdx"
+  },
+  "units\\orc\\herofarseer\\herofarseer": {
+   "max": [
+    200.2,
+    170.4,
+    230.7
+   ],
+   "min": [
+    -199.4,
+    -171.1,
+    -0.2
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "Ofar",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/orc/herofarseer/herofarseer.mdx"
+  },
+  "units\\orc\\heroshadowhunter\\heroshadowhunter": {
+   "max": [
+    162.4,
+    162.9,
+    214.9
+   ],
+   "min": [
+    -183.6,
+    -183.1,
+    -95.1
+   ],
+   "seq": "sequence 'Stand -1'",
+   "status": "measured",
+   "unit": "Oshd",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/orc/heroshadowhunter/heroshadowhunter.mdx"
+  },
+  "units\\orc\\herotaurenchieftain\\herotaurenchieftain": {
+   "max": [
+    185.2,
+    192.5,
+    213.9
+   ],
+   "min": [
+    -200.5,
+    -193.2,
+    -45.4
+   ],
+   "seq": "sequence 'Stand -1'",
+   "status": "measured",
+   "unit": "Otch",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/orc/herotaurenchieftain/herotaurenchieftain.mdx"
+  },
+  "units\\orc\\kotobeast\\kotobeast": {
+   "max": [
+    216.6,
+    90.2,
+    205.0
+   ],
+   "min": [
+    -160.3,
+    -181.8,
+    -106.5
+   ],
+   "seq": "model bounds",
+   "status": "measured",
+   "unit": "okod",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/orc/kotobeast/kotobeast.mdx"
+  },
+  "units\\orc\\peon\\peon": {
+   "max": [
+    50.3,
+    34.3,
+    87.6
+   ],
+   "min": [
+    -17.3,
+    -33.5,
+    -1.7
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "opeo",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/orc/peon/peon.mdx"
+  },
+  "units\\orc\\sentryward\\sentryward": {
+   "max": [
+    14.3,
+    23.1,
+    115.8
+   ],
+   "min": [
+    -25.7,
+    -30.4,
+    -4.4
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/orc/sentryward/sentryward.mdx"
+  },
+  "units\\orc\\shaman\\shaman": {
+   "max": [
+    35.3,
+    46.3,
+    108.2
+   ],
+   "min": [
+    -48.9,
+    -44.3,
+    -1.9
+   ],
+   "seq": "sequence 'Stand - 1'",
+   "status": "measured",
+   "unit": "oshm",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/orc/shaman/shaman.mdx"
+  },
+  "units\\orc\\tauren\\tauren": {
+   "max": [
+    60.6,
+    63.3,
+    165.4
+   ],
+   "min": [
+    -60.9,
+    -68.8,
+    -0.5
+   ],
+   "seq": "sequence 'Stand -1'",
+   "status": "measured",
+   "unit": "otau",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/orc/tauren/tauren.mdx"
+  },
+  "units\\orc\\witchdoctor\\witchdoctor": {
+   "max": [
+    52.7,
+    42.3,
+    170.7
+   ],
+   "min": [
+    -44.9,
+    -44.9,
+    0.3
+   ],
+   "seq": "sequence 'Stand - 1'",
+   "status": "measured",
+   "unit": "odoc",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/orc/witchdoctor/witchdoctor.mdx"
+  },
+  "units\\orc\\wolfrider\\wolfrider": {
+   "max": [
+    80.4,
+    40.3,
+    172.2
+   ],
+   "min": [
+    -88.8,
+    -46.4,
+    2.0
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "orai",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/orc/wolfrider/wolfrider.mdx"
+  },
+  "units\\orc\\wyvernrider\\wyvernrider": {
+   "max": [
+    71.6,
+    106.0,
+    118.8
+   ],
+   "min": [
+    -128.0,
+    -106.1,
+    -85.5
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "owyv",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/orc/wyvernrider/wyvernrider.mdx"
+  },
+  "units\\undead\\abomination\\abomination": {
+   "max": [
+    102.7,
+    119.6,
+    197.5
+   ],
+   "min": [
+    -120.5,
+    -108.6,
+    -12.4
+   ],
+   "seq": "sequence 'Stand - 1'",
+   "status": "measured",
+   "unit": "uabo",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/undead/abomination/abomination.mdx"
+  },
+  "units\\undead\\acolyte\\acolyte": {
+   "max": [
+    24.0,
+    35.1,
+    107.3
+   ],
+   "min": [
+    -48.2,
+    -34.1,
+    7.0
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "uaco",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/undead/acolyte/acolyte.mdx"
+  },
+  "units\\undead\\banshee\\banshee": {
+   "max": [
+    27.4,
+    74.3,
+    115.7
+   ],
+   "min": [
+    -74.8,
+    -78.6,
+    -36.4
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "uban",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/undead/banshee/banshee.mdx"
+  },
+  "units\\undead\\cryptfiend\\cryptfiend": {
+   "max": [
+    122.0,
+    53.7,
+    143.7
+   ],
+   "min": [
+    -76.2,
+    -52.9,
+    -3.8
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "ucry",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/undead/cryptfiend/cryptfiend.mdx"
+  },
+  "units\\undead\\frostwyrm\\frostwyrm": {
+   "max": [
+    112.0,
+    170.8,
+    122.8
+   ],
+   "min": [
+    -185.7,
+    -184.9,
+    -148.2
+   ],
+   "seq": "sequence 'Stand - 1'",
+   "status": "measured",
+   "unit": "ufro",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/undead/frostwyrm/frostwyrm.mdx"
+  },
+  "units\\undead\\ghoul\\ghoul": {
+   "max": [
+    46.9,
+    48.8,
+    61.2
+   ],
+   "min": [
+    -37.7,
+    -50.0,
+    -0.7
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "ugho",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/undead/ghoul/ghoul.mdx"
+  },
+  "units\\undead\\herocryptlord\\herocryptlord": {
+   "max": [
+    161.3,
+    212.6,
+    157.0
+   ],
+   "min": [
+    -264.7,
+    -213.5,
+    -2.1
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "Ucrl",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/undead/herocryptlord/herocryptlord.mdx"
+  },
+  "units\\undead\\herodeathknight\\herodeathknight": {
+   "max": [
+    229.9,
+    210.1,
+    154.1
+   ],
+   "min": [
+    -229.1,
+    -210.8,
+    -16.3
+   ],
+   "seq": "sequence 'Stand -2'",
+   "status": "measured",
+   "unit": "Udea",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/undead/herodeathknight/herodeathknight.mdx"
+  },
+  "units\\undead\\herodreadlord\\herodreadlord": {
+   "max": [
+    174.3,
+    156.7,
+    162.0
+   ],
+   "min": [
+    -147.8,
+    -165.4,
+    -6.0
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "Udre",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/undead/herodreadlord/herodreadlord.mdx"
+  },
+  "units\\undead\\herolich\\herolich": {
+   "max": [
+    168.9,
+    165.3,
+    177.5
+   ],
+   "min": [
+    -162.3,
+    -166.0,
+    -31.4
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "Ulic",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/undead/herolich/herolich.mdx"
+  },
+  "units\\undead\\meatwagon\\meatwagon": {
+   "max": [
+    87.5,
+    100.8,
+    156.3
+   ],
+   "min": [
+    -132.2,
+    -99.2,
+    -1.6
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "umtw",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/undead/meatwagon/meatwagon.mdx"
+  },
+  "units\\undead\\necromancer\\necromancer": {
+   "max": [
+    20.0,
+    37.8,
+    130.6
+   ],
+   "min": [
+    -57.8,
+    -71.9,
+    -1.4
+   ],
+   "seq": "sequence 'Stand - 1'",
+   "status": "measured",
+   "unit": "unec",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/undead/necromancer/necromancer.mdx"
+  },
+  "units\\undead\\scarab\\scarab": {
+   "max": [
+    45.6,
+    31.4,
+    56.7
+   ],
+   "min": [
+    -49.4,
+    -31.1,
+    -1.2
+   ],
+   "seq": "sequence 'Stand'",
+   "status": "measured",
+   "unit": "?",
+   "url": "https://www.hiveworkshop.com/data/static_assets/mpq/tft/units/undead/scarab/scarab.mdx"
+  }
+ },
+ "refs": {
+  "caster": "oshm odoc hsor hmpr unec uban edry edoc",
+  "flyer": "owyv hgry ufro ehip",
+  "hero": "Obla Ofar Otch Oshd Hpal Hamg Hmkg Hblm Udea Ulic Udre Ucrl Edem Ekee Emoo Ewar",
+  "infantry": "ogru hfoo ugho earc",
+  "mounted": "orai okod otau hkni uabo ebsh esen emtg edcm",
+  "ranged": "ohun hrif ucry esen",
+  "siege": "ocat hmtm umtw ebal",
+  "worker": "opeo hpea uaco ewsp"
+ }
+}

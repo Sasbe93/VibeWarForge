@@ -1,0 +1,5429 @@
+{
+"doodads": {
+"ACt0": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Props\\MarketStallLarge\\MarketStallLarge",
+"name": "Androhal Clock Tower",
+"tag": "any"
+},
+"ACtd": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Props\\MarketStallLarge\\MarketStallLarge",
+"name": "Androhal Clock Tower (Destroyed)",
+"tag": "any"
+},
+"AObd": {
+"cat": "O",
+"model": "Doodads\\Ashenvale\\Props\\Bird\\Bird",
+"name": "Birds",
+"tag": "any"
+},
+"AObo": {
+"cat": "O",
+"model": "Doodads\\Ashenvale\\Props\\AshenBrokenObilisk\\AshenBrokenObilisk",
+"name": "Broken Obelisk",
+"tag": "any"
+},
+"AObr": {
+"cat": "O",
+"model": "Doodads\\Ashenvale\\Props\\Brazier\\Brazier",
+"name": "Skull Brazier",
+"tag": "any"
+},
+"AOgs": {
+"cat": "O",
+"model": "Doodads\\Ashenvale\\Props\\SentinelStatue\\SentinelStatue",
+"name": "Guardian Statue of Aszune",
+"tag": "any"
+},
+"AOhs": {
+"cat": "E",
+"model": "Doodads\\Ashenvale\\Props\\AshenHollowStump\\AshenHollowStump",
+"name": "Hollow Stump",
+"tag": "any"
+},
+"AOks": {
+"cat": "O",
+"model": "Doodads\\Ashenvale\\Props\\KeeperStatue\\KeeperStatue",
+"name": "Keeper Statue",
+"tag": "any"
+},
+"AOla": {
+"cat": "E",
+"model": "Doodads\\Ashenvale\\Props\\AshenLogAngled\\AshenLogAngled",
+"name": "Angled Log",
+"tag": "any"
+},
+"AOlg": {
+"cat": "E",
+"model": "Doodads\\Ashenvale\\Props\\AshenLogStraight\\AshenLogStraight",
+"name": "Straight Log",
+"tag": "any"
+},
+"AOnt": {
+"cat": "O",
+"model": "Doodads\\Ashenvale\\Props\\Totem\\Totem",
+"name": "Totem Lantern",
+"tag": "any"
+},
+"AOob": {
+"cat": "O",
+"model": "Doodads\\Ashenvale\\Props\\Obelisk\\Obelisk",
+"name": "Glowing Obelisk",
+"tag": "any"
+},
+"AOsk": {
+"cat": "O",
+"model": "Doodads\\Ashenvale\\Props\\AshenObilisk\\AshenObilisk",
+"name": "Obelisk",
+"tag": "any"
+},
+"AOsr": {
+"cat": "O",
+"model": "Doodads\\Ashenvale\\Props\\ScorchedRemains\\ScorchedRemains",
+"name": "Scorched Remains",
+"tag": "any"
+},
+"APbs": {
+"cat": "E",
+"model": "Doodads\\Ashenvale\\Plants\\AshenBush0\\AshenBush0",
+"name": "Bush",
+"tag": "any"
+},
+"APct": {
+"cat": "E",
+"model": "Doodads\\Ashenvale\\Plants\\AshenCatTail\\AshenCatTail",
+"name": "Cattail",
+"tag": "any"
+},
+"APms": {
+"cat": "E",
+"model": "",
+"name": "Mushrooms",
+"tag": "any"
+},
+"APtv": {
+"cat": "E",
+"model": "Doodads\\Felwood\\Plants\\Felwood_Thorns\\Felwood_Thorns",
+"name": "Thorny Vines",
+"tag": "any"
+},
+"ARrk": {
+"cat": "E",
+"model": "Doodads\\Ashenvale\\Rocks\\AshenRock\\AshenRock",
+"name": "Rocks",
+"tag": "any"
+},
+"ASHB": {
+"cat": "S",
+"model": "Doodads\\Ashenvale\\Structures\\AshenRuinsBlocks\\AshenRuinsBlocks",
+"name": "Ruined Blocks",
+"tag": "any"
+},
+"ASbc": {
+"cat": "S",
+"model": "Doodads\\Ashenvale\\Structures\\AshenBrokenColumn\\AshenBrokenColumn",
+"name": "Broken Column",
+"tag": "any"
+},
+"ASbr": {
+"cat": "S",
+"model": "Doodads\\Ashenvale\\Structures\\AshenRubble\\AshenRubble",
+"name": "Black Ruined Rubble",
+"tag": "any"
+},
+"ASd0": {
+"cat": "S",
+"model": "Doodads\\Outland\\Structures\\Outland_RockArch\\Outland_RockArch",
+"name": "Archway (Standard Dimension)",
+"tag": "any"
+},
+"ASpr": {
+"cat": "S",
+"model": "Doodads\\Ashenvale\\Structures\\Pier\\Pier",
+"name": "Pier",
+"tag": "any"
+},
+"ASpt": {
+"cat": "S",
+"model": "Doodads\\Ashenvale\\Structures\\PierTrashed\\PierTrashed",
+"name": "Ruined Pier",
+"tag": "any"
+},
+"ASr1": {
+"cat": "S",
+"model": "Doodads\\Ashenvale\\Structures\\ARockArch45\\ARockArch45",
+"name": "Archway",
+"tag": "any"
+},
+"ASra": {
+"cat": "S",
+"model": "Doodads\\Ashenvale\\Structures\\ARockArch\\ARockArch",
+"name": "Archway",
+"tag": "any"
+},
+"ASv0": {
+"cat": "S",
+"model": "Buildings\\Other\\ElvenFishVillageBuilding0\\ElvenFishVillageBuilding0",
+"name": "Elven Fishing Village",
+"tag": "any"
+},
+"ASv1": {
+"cat": "S",
+"model": "Buildings\\Other\\ElvenFishVillageBuilding1\\ElvenFishVillageBuilding1",
+"name": "Elven Fishing Village",
+"tag": "any"
+},
+"ASv2": {
+"cat": "S",
+"model": "Buildings\\Other\\ElvenFishVillageBuilding2\\ElvenFishVillageBuilding2",
+"name": "Elven Fishing Village",
+"tag": "any"
+},
+"ASv3": {
+"cat": "S",
+"model": "Buildings\\Other\\ElvenFishVillageBuilding3\\ElvenFishVillageBuilding3",
+"name": "Elven Fishing Village",
+"tag": "any"
+},
+"ASv4": {
+"cat": "S",
+"model": "Buildings\\Other\\ElvenFishVillageBuilding4\\ElvenFishVillageBuilding4",
+"name": "Elven Fishing Village",
+"tag": "any"
+},
+"ASwt": {
+"cat": "Z",
+"model": "Doodads\\Ashenvale\\Structures\\Worldtree\\Worldtree",
+"name": "World Tree",
+"tag": "any"
+},
+"ASx0": {
+"cat": "S",
+"model": "Buildings\\Other\\ElvenFishVillageBuildingRuined0\\ElvenFishVillageBuildingRuined0",
+"name": "Ruined Elven Fishing Village",
+"tag": "any"
+},
+"ASx1": {
+"cat": "S",
+"model": "Buildings\\Other\\ElvenFishVillageBuildingRuined1\\ElvenFishVillageBuildingRuined1",
+"name": "Ruined Elven Fishing Village",
+"tag": "any"
+},
+"ASx2": {
+"cat": "S",
+"model": "Buildings\\Other\\ElvenFishVillageBuildingRuined2\\ElvenFishVillageBuildingRuined2",
+"name": "Ruined Elven Fishing Village",
+"tag": "any"
+},
+"ATg1": {
+"cat": "D",
+"model": "",
+"name": "Iron Gate",
+"tag": "any"
+},
+"ATg2": {
+"cat": "D",
+"model": "",
+"name": "Iron Gate",
+"tag": "any"
+},
+"ATg3": {
+"cat": "D",
+"model": "",
+"name": "Iron Gate",
+"tag": "any"
+},
+"ATg4": {
+"cat": "D",
+"model": "",
+"name": "Iron Gate",
+"tag": "any"
+},
+"ATt0": {
+"cat": "B",
+"model": "",
+"name": "Tree Bridge",
+"tag": "any"
+},
+"ATt1": {
+"cat": "B",
+"model": "",
+"name": "Tree Bridge",
+"tag": "any"
+},
+"ATtc": {
+"cat": "D",
+"model": "",
+"name": "Canopy Tree",
+"tag": "any"
+},
+"ATtr": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"ATwf": {
+"cat": "B",
+"model": "",
+"name": "Wharf",
+"tag": "any"
+},
+"AWfl": {
+"cat": "W",
+"model": "Doodads\\Ashenvale\\Water\\AshenvaleLilyPad\\AshenvaleLilyPad",
+"name": "Floating Lily Pads",
+"tag": "floating"
+},
+"AWfs": {
+"cat": "W",
+"model": "Doodads\\Ashenvale\\Water\\Fish\\Fish",
+"name": "Fish",
+"tag": "water"
+},
+"AWlp": {
+"cat": "W",
+"model": "Doodads\\Ashenvale\\Water\\AshenLillyPad\\AshenLillyPad",
+"name": "Lily Pads",
+"tag": "floating"
+},
+"AZrf": {
+"cat": "W",
+"model": "Doodads\\Cinematic\\NightElfTransportShipRuined\\NightElfTransportShipRuined",
+"name": "Ruined Ship",
+"tag": "wreck"
+},
+"BA00": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Building A",
+"tag": "any"
+},
+"BB00": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Building B",
+"tag": "any"
+},
+"BC00": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Building C",
+"tag": "any"
+},
+"BCt0": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Props\\MarketStallLarge\\MarketStallLarge",
+"name": "Brill Clock Tower",
+"tag": "any"
+},
+"BObo": {
+"cat": "O",
+"model": "Doodads\\Barrens\\Props\\Barrens_Bones\\Barrens_Bones",
+"name": "Bones",
+"tag": "any"
+},
+"BOct": {
+"cat": "O",
+"model": "Doodads\\Barrens\\Props\\CentaurTotem\\CentaurTotem",
+"name": "Totem",
+"tag": "any"
+},
+"BOth": {
+"cat": "O",
+"model": "Doodads\\Barrens\\Props\\HellscreamThrone\\HellscreamThrone",
+"name": "Throne",
+"tag": "any"
+},
+"BOtt": {
+"cat": "O",
+"model": "Doodads\\Barrens\\Props\\TaurenTotem\\TaurenTotem",
+"name": "Totem",
+"tag": "any"
+},
+"BPca": {
+"cat": "E",
+"model": "Doodads\\Barrens\\Plants\\Cactus\\Cactus",
+"name": "Cactus",
+"tag": "any"
+},
+"BPtw": {
+"cat": "E",
+"model": "Doodads\\Barrens\\Plants\\Barrens_TreeDoodad\\Barrens_TreeDoodad",
+"name": "Barrens Tree",
+"tag": "any"
+},
+"BRcr": {
+"cat": "E",
+"model": "Doodads\\Barrens\\Rocks\\Crator\\Crator",
+"name": "Crater",
+"tag": "any"
+},
+"BRfs": {
+"cat": "E",
+"model": "Doodads\\Barrens\\Rocks\\BarrensFissure\\BarrensFissure",
+"name": "Fissure",
+"tag": "any"
+},
+"BRgs": {
+"cat": "E",
+"model": "Doodads\\Barrens\\Rocks\\Geyser\\Geyser",
+"name": "Geyser",
+"tag": "any"
+},
+"BRrc": {
+"cat": "E",
+"model": "Doodads\\Barrens\\Rocks\\Barrens_Spires\\Barrens_Spires",
+"name": "Rock Spires (Cinematic)",
+"tag": "any"
+},
+"BRrk": {
+"cat": "E",
+"model": "Doodads\\Barrens\\Rocks\\Barrens_Rocks\\Barrens_Rocks",
+"name": "Rocks",
+"tag": "any"
+},
+"BRrp": {
+"cat": "E",
+"model": "Doodads\\Barrens\\Rocks\\RockPillar\\RockPillar",
+"name": "Pillar of Rock",
+"tag": "any"
+},
+"BRrs": {
+"cat": "E",
+"model": "Doodads\\Barrens\\Rocks\\Barrens_Spires\\Barrens_Spires",
+"name": "Rock Spires",
+"tag": "any"
+},
+"BRsp": {
+"cat": "E",
+"model": "Doodads\\Barrens\\Rocks\\Barrens_Spires\\Barrens_Spires",
+"name": "Small Rock Spires",
+"tag": "any"
+},
+"BSar": {
+"cat": "S",
+"model": "Doodads\\Barrens\\Structures\\RuinedArch\\RuinedArch",
+"name": "Ruined Arch",
+"tag": "any"
+},
+"BSr1": {
+"cat": "S",
+"model": "Doodads\\Barrens\\Structures\\BRockArch45\\BRockArch45",
+"name": "Archway",
+"tag": "any"
+},
+"BSra": {
+"cat": "S",
+"model": "Doodads\\Barrens\\Structures\\BRockArch\\BRockArch",
+"name": "Archway",
+"tag": "any"
+},
+"BSrc": {
+"cat": "S",
+"model": "Doodads\\Barrens\\Structures\\RuinedChunk\\RuinedChunk",
+"name": "Ruined Chunk",
+"tag": "any"
+},
+"BSrv": {
+"cat": "S",
+"model": "Doodads\\Barrens\\Structures\\RuinedCurvedWall\\RuinedCurvedWall",
+"name": "Ruined Curved Wall",
+"tag": "any"
+},
+"BSrw": {
+"cat": "S",
+"model": "Doodads\\Barrens\\Structures\\RuinedWall\\RuinedWall",
+"name": "Ruined Wall",
+"tag": "any"
+},
+"BTrs": {
+"cat": "D",
+"model": "",
+"name": "Res Stone",
+"tag": "any"
+},
+"BTrx": {
+"cat": "D",
+"model": "",
+"name": "Res Stone",
+"tag": "any"
+},
+"BTs1": {
+"cat": "D",
+"model": "",
+"name": "Support Column",
+"tag": "any"
+},
+"BTs2": {
+"cat": "D",
+"model": "",
+"name": "Statue",
+"tag": "any"
+},
+"BTs3": {
+"cat": "D",
+"model": "",
+"name": "Statue",
+"tag": "any"
+},
+"BTs4": {
+"cat": "D",
+"model": "",
+"name": "Statue",
+"tag": "any"
+},
+"BTs5": {
+"cat": "D",
+"model": "",
+"name": "Statue",
+"tag": "any"
+},
+"BTsc": {
+"cat": "D",
+"model": "",
+"name": "Support Column",
+"tag": "any"
+},
+"BTsk": {
+"cat": "D",
+"model": "",
+"name": "Support Column",
+"tag": "any"
+},
+"BTtc": {
+"cat": "D",
+"model": "",
+"name": "Canopy Tree",
+"tag": "any"
+},
+"BTtw": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"CGd0": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\SittingCorpse\\SittingCorpse",
+"name": "Corpse of Gul\u001b)2Dan",
+"tag": "any"
+},
+"CObl": {
+"cat": "O",
+"model": "Environment\\BlightDoodad\\BlightDoodad",
+"name": "Blighted Mist",
+"tag": "any"
+},
+"CObo": {
+"cat": "O",
+"model": "Doodads\\Felwood\\Props\\FelwoodBrokenObilisk\\FelwoodBrokenObilisk",
+"name": "Broken Obelisk",
+"tag": "any"
+},
+"COdf": {
+"cat": "O",
+"model": "Doodads\\Felwood\\Props\\Fish_Dead\\Fish_Dead",
+"name": "Dead Fish",
+"tag": "floating"
+},
+"COhs": {
+"cat": "E",
+"model": "Doodads\\Felwood\\Props\\FelwoodHollowStump\\FelwoodHollowStump",
+"name": "Hollow Stump",
+"tag": "any"
+},
+"COla": {
+"cat": "E",
+"model": "Doodads\\Felwood\\Props\\FelwoodLogAngled\\FelwoodLogAngled",
+"name": "Angled Log",
+"tag": "any"
+},
+"COlg": {
+"cat": "E",
+"model": "Doodads\\Felwood\\Props\\FelwoodLogStraight\\FelwoodLogStraight",
+"name": "Straight Log",
+"tag": "any"
+},
+"COob": {
+"cat": "O",
+"model": "Doodads\\Felwood\\Props\\FelwoodObilisk\\FelwoodObilisk",
+"name": "Obelisk",
+"tag": "any"
+},
+"CPbs": {
+"cat": "E",
+"model": "Doodads\\Felwood\\Plants\\FelwoodBush\\FelwoodBush",
+"name": "Bush",
+"tag": "any"
+},
+"CPct": {
+"cat": "E",
+"model": "Doodads\\Felwood\\Plants\\FelwoodCatTail\\FelwoodCatTail",
+"name": "Cattail",
+"tag": "any"
+},
+"CPlp": {
+"cat": "E",
+"model": "Doodads\\Felwood\\Plants\\FelwoodLillyPad\\FelwoodLillyPad",
+"name": "Lily Pad",
+"tag": "floating"
+},
+"CPms": {
+"cat": "E",
+"model": "Doodads\\Felwood\\Plants\\FelwoodShrooms\\FelwoodShrooms",
+"name": "Mushrooms",
+"tag": "any"
+},
+"CRfs": {
+"cat": "E",
+"model": "Doodads\\Felwood\\Rocks\\FelwoodFissure\\FelwoodFissure",
+"name": "Fissure",
+"tag": "any"
+},
+"CRrk": {
+"cat": "E",
+"model": "Doodads\\Felwood\\Rocks\\FelwoodRock\\FelwoodRock",
+"name": "Rocks",
+"tag": "any"
+},
+"CRrs": {
+"cat": "E",
+"model": "Doodads\\Felwood\\Rocks\\Felwood_Spires\\Felwood_Spires",
+"name": "Rock Spires",
+"tag": "any"
+},
+"CSbc": {
+"cat": "S",
+"model": "Doodads\\Felwood\\Structures\\FelwoodBrokenColumn\\FelwoodBrokenColumn",
+"name": "Broken Column",
+"tag": "any"
+},
+"CSbl": {
+"cat": "S",
+"model": "Doodads\\Felwood\\Structures\\FelwoodRuinsBlocks\\FelwoodRuinsBlocks",
+"name": "Ruined Blocks",
+"tag": "any"
+},
+"CSbr": {
+"cat": "S",
+"model": "Doodads\\Felwood\\Structures\\FelwoodRubble\\FelwoodRubble",
+"name": "Black Ruined Rubble",
+"tag": "any"
+},
+"CSr1": {
+"cat": "S",
+"model": "Doodads\\Felwood\\Structures\\CRockArch45\\CRockArch45",
+"name": "Angled Archway",
+"tag": "any"
+},
+"CSra": {
+"cat": "S",
+"model": "Doodads\\Felwood\\Structures\\CRockArch\\CRockArch",
+"name": "Archway",
+"tag": "any"
+},
+"CTtc": {
+"cat": "D",
+"model": "",
+"name": "Canopy Tree",
+"tag": "any"
+},
+"CTtr": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"DOab": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\BookshelfWall45\\BookshelfWall45",
+"name": "Angled Bookshelf",
+"tag": "any"
+},
+"DOas": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\AzsharaStatue\\AzsharaStatue",
+"name": "Statue of Azshara",
+"tag": "any"
+},
+"DObh": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\Bench\\Bench",
+"name": "Bench",
+"tag": "any"
+},
+"DObk": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\Bookshelf\\Bookshelf",
+"name": "Bookshelf",
+"tag": "any"
+},
+"DObw": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\BookshelfWall\\BookshelfWall",
+"name": "Long Bookshelf",
+"tag": "any"
+},
+"DOch": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\Chain\\Chain",
+"name": "Chains",
+"tag": "any"
+},
+"DOcp": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\ChainPost\\ChainPost",
+"name": "Chain Post",
+"tag": "any"
+},
+"DOcr": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\Chair\\Chair",
+"name": "Chair",
+"tag": "any"
+},
+"DOim": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\IronMaiden\\IronMaiden",
+"name": "Iron Maiden",
+"tag": "any"
+},
+"DOjp": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\JunkPile\\JunkPile",
+"name": "Pile of Junk",
+"tag": "any"
+},
+"DOkb": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\BigBookshelf\\BigBookshelf",
+"name": "Large Bookshelf",
+"tag": "any"
+},
+"DOlc": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\LavaCracks\\LavaCracks",
+"name": "Lava Cracks",
+"tag": "any"
+},
+"DOmc": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\MineCart\\MineCart",
+"name": "Mine Cart",
+"tag": "any"
+},
+"DOme": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\MineCartEmpty\\MineCartEmpty",
+"name": "Empty Mine Cart",
+"tag": "any"
+},
+"DOob": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\DungeonObilisk\\DungeonObilisk",
+"name": "Obelisk",
+"tag": "any"
+},
+"DOsv": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\SewerVent\\SewerVent",
+"name": "Sewer Vent",
+"tag": "any"
+},
+"DOsw": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\SewerWallpipes\\SewerWallpipes",
+"name": "Sewer Wallpipes",
+"tag": "any"
+},
+"DOtb": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\Table\\Table",
+"name": "Table",
+"tag": "any"
+},
+"DOtc": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\TableNChair\\TableNChair",
+"name": "Table and Chair",
+"tag": "any"
+},
+"DOtp": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\TreasurePile\\TreasurePile",
+"name": "Pile of Treasure",
+"tag": "any"
+},
+"DOtt": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\TortureTable\\TortureTable",
+"name": "Torture Table",
+"tag": "any"
+},
+"DRfc": {
+"cat": "E",
+"model": "Doodads\\Dungeon\\Rocks\\Cave_FieryCrator\\Cave_FieryCrator",
+"name": "Fiery Crater",
+"tag": "any"
+},
+"DRrk": {
+"cat": "E",
+"model": "Doodads\\Dungeon\\Rocks\\DungeonRock\\DungeonRock",
+"name": "Rocks",
+"tag": "any"
+},
+"DRst": {
+"cat": "E",
+"model": "Doodads\\Dungeon\\Rocks\\DungeonStalagmite\\DungeonStalagmite",
+"name": "Stalagmite",
+"tag": "any"
+},
+"DSa1": {
+"cat": "S",
+"model": "Doodads\\Dungeon\\Structures\\DRockArch45\\DRockArch45",
+"name": "Angled Archway",
+"tag": "any"
+},
+"DSa2": {
+"cat": "S",
+"model": "Doodads\\Dungeon\\Structures\\DungeonArchway45\\DungeonArchway45",
+"name": "Stone Archway",
+"tag": "any"
+},
+"DSah": {
+"cat": "S",
+"model": "Doodads\\Dungeon\\Structures\\DungeonArchway1\\DungeonArchway1",
+"name": "Stone Archway",
+"tag": "any"
+},
+"DSar": {
+"cat": "S",
+"model": "Doodads\\Dungeon\\Structures\\DRockArch\\DRockArch",
+"name": "Archway",
+"tag": "any"
+},
+"DSp0": {
+"cat": "S",
+"model": "Doodads\\Dungeon\\Structures\\PorticulisWall0_\\PorticulisWall0_",
+"name": "Barred Wall",
+"tag": "any"
+},
+"DSp9": {
+"cat": "S",
+"model": "Doodads\\Dungeon\\Structures\\PorticulisWall45_\\PorticulisWall45_",
+"name": "Barred Wall",
+"tag": "any"
+},
+"DTc1": {
+"cat": "D",
+"model": "",
+"name": "CaveGate1",
+"tag": "any"
+},
+"DTc2": {
+"cat": "D",
+"model": "",
+"name": "CaveGate2",
+"tag": "any"
+},
+"DTep": {
+"cat": "B",
+"model": "",
+"name": "elevator pathing block",
+"tag": "any"
+},
+"DTes": {
+"cat": "D",
+"model": "",
+"name": "Egg Sack",
+"tag": "any"
+},
+"DTfp": {
+"cat": "B",
+"model": "",
+"name": "Small Elevator",
+"tag": "any"
+},
+"DTfx": {
+"cat": "B",
+"model": "",
+"name": "Small Elevator",
+"tag": "any"
+},
+"DTg1": {
+"cat": "D",
+"model": "",
+"name": "DungeonGate",
+"tag": "any"
+},
+"DTg2": {
+"cat": "D",
+"model": "",
+"name": "DungeonGate",
+"tag": "any"
+},
+"DTg3": {
+"cat": "D",
+"model": "",
+"name": "DungeonGate",
+"tag": "any"
+},
+"DTg4": {
+"cat": "D",
+"model": "",
+"name": "DungeonGate",
+"tag": "any"
+},
+"DTg5": {
+"cat": "D",
+"model": "",
+"name": "Iron Gate",
+"tag": "any"
+},
+"DTg6": {
+"cat": "D",
+"model": "",
+"name": "Iron Gate",
+"tag": "any"
+},
+"DTg7": {
+"cat": "D",
+"model": "",
+"name": "Iron Gate",
+"tag": "any"
+},
+"DTg8": {
+"cat": "D",
+"model": "",
+"name": "Iron Gate",
+"tag": "any"
+},
+"DTlv": {
+"cat": "D",
+"model": "",
+"name": "Lever",
+"tag": "any"
+},
+"DTrc": {
+"cat": "D",
+"model": "",
+"name": "rock chunks",
+"tag": "any"
+},
+"DTrf": {
+"cat": "B",
+"model": "",
+"name": "Elevator",
+"tag": "any"
+},
+"DTrx": {
+"cat": "B",
+"model": "",
+"name": "Elevator",
+"tag": "any"
+},
+"DTs0": {
+"cat": "B",
+"model": "",
+"name": "Large Force Bridge 0",
+"tag": "any"
+},
+"DTs1": {
+"cat": "B",
+"model": "",
+"name": "Large Force Bridge 45",
+"tag": "any"
+},
+"DTs2": {
+"cat": "B",
+"model": "",
+"name": "Large Force Bridge 90",
+"tag": "any"
+},
+"DTs3": {
+"cat": "B",
+"model": "",
+"name": "Large Force Bridge 135",
+"tag": "any"
+},
+"DTsh": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"DTsp": {
+"cat": "D",
+"model": "",
+"name": "Spikes",
+"tag": "any"
+},
+"Dofv": {
+"cat": "D",
+"model": "",
+"name": "Forcewall45",
+"tag": "any"
+},
+"Dofw": {
+"cat": "D",
+"model": "",
+"name": "Forcewall",
+"tag": "any"
+},
+"EB00": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 0 0",
+"tag": "any"
+},
+"EB01": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 45 0",
+"tag": "any"
+},
+"EB02": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 90 0",
+"tag": "any"
+},
+"EB03": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 135 0",
+"tag": "any"
+},
+"EB04": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 0 0",
+"tag": "any"
+},
+"EB05": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 45 0",
+"tag": "any"
+},
+"EB06": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 90 0",
+"tag": "any"
+},
+"EB07": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 135 0",
+"tag": "any"
+},
+"EB08": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 0 0",
+"tag": "any"
+},
+"EB09": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 45 0",
+"tag": "any"
+},
+"EB10": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 90 0",
+"tag": "any"
+},
+"EB11": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 135 0",
+"tag": "any"
+},
+"EG00": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityMainTower\\CityMainTower",
+"name": "Exterior Gate",
+"tag": "any"
+},
+"EH00": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Enclave House",
+"tag": "any"
+},
+"EHb0": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Enclave House B",
+"tag": "any"
+},
+"EMs0": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Enclave Main Structure",
+"tag": "any"
+},
+"EMt0": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityMainTower\\CityMainTower",
+"name": "Exterior Main Tower",
+"tag": "any"
+},
+"ES00": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Enclave Spire",
+"tag": "any"
+},
+"ET00": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityMainTower\\CityMainTower",
+"name": "Exterior Tower",
+"tag": "any"
+},
+"ET01": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Enclave Turret",
+"tag": "any"
+},
+"EW00": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityMainTower\\CityMainTower",
+"name": "Exterior Wall",
+"tag": "any"
+},
+"FTtw": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"GOlc": {
+"cat": "O",
+"model": "Doodads\\Underground\\Props\\GCracks\\GCracks",
+"name": "Lava Cracks",
+"tag": "any"
+},
+"GOob": {
+"cat": "O",
+"model": "Doodads\\Underground\\Props\\UndergroundObilisk\\UndergroundObilisk",
+"name": "Obelisk",
+"tag": "any"
+},
+"GPsh": {
+"cat": "E",
+"model": "Doodads\\Underground\\Plants\\ShroomsBlue\\ShroomsBlue",
+"name": "Blue Mushroom",
+"tag": "any"
+},
+"GRfc": {
+"cat": "E",
+"model": "Doodads\\Underground\\Rocks\\Underground_FieryCrator\\Underground_FieryCrator",
+"name": "Fiery Crater",
+"tag": "any"
+},
+"GRrk": {
+"cat": "E",
+"model": "Doodads\\Underground\\Rocks\\UndergoundRock\\UndergoundRock",
+"name": "Rocks",
+"tag": "any"
+},
+"GRst": {
+"cat": "E",
+"model": "Doodads\\Underground\\Rocks\\UndergroundStalagmite\\UndergroundStalagmite",
+"name": "Stalagmite",
+"tag": "any"
+},
+"GSa1": {
+"cat": "S",
+"model": "Doodads\\Underground\\Structures\\GRockArch45\\GRockArch45",
+"name": "Archway",
+"tag": "any"
+},
+"GSa2": {
+"cat": "S",
+"model": "Doodads\\Underground\\Structures\\UndergroundArchway45\\UndergroundArchway45",
+"name": "Stone Archway",
+"tag": "any"
+},
+"GSah": {
+"cat": "S",
+"model": "Doodads\\Underground\\Structures\\UndergroundArchway1\\UndergroundArchway1",
+"name": "Stone Archway",
+"tag": "any"
+},
+"GSar": {
+"cat": "S",
+"model": "Doodads\\Underground\\Structures\\GRockArch\\GRockArch",
+"name": "Archway",
+"tag": "any"
+},
+"GSp0": {
+"cat": "S",
+"model": "Doodads\\Underground\\Structures\\GPorticulisWall0_\\GPorticulisWall0_",
+"name": "Barred Wall",
+"tag": "any"
+},
+"GSp9": {
+"cat": "S",
+"model": "Doodads\\Underground\\Structures\\GPorticulisWall45_\\GPorticulisWall45_",
+"name": "Barred Wall",
+"tag": "any"
+},
+"GTsh": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"HA00": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Props\\MarketStallLarge\\MarketStallLarge",
+"name": "Hearthglen Abbey",
+"tag": "any"
+},
+"HEch": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\Banner_Long\\Banner_Long",
+"name": "High Elf Crest Hanging Banners",
+"tag": "any"
+},
+"HEcs": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\Banner_Long\\Banner_Long",
+"name": "High Elf Crest Standing Banners",
+"tag": "any"
+},
+"IOch": {
+"cat": "O",
+"model": "Doodads\\Icecrown\\Props\\IcecrownChair\\IcecrownChair",
+"name": "Chair",
+"tag": "any"
+},
+"IOic": {
+"cat": "O",
+"model": "Doodads\\Icecrown\\Props\\Icecrown_IceChair\\Icecrown_IceChair",
+"name": "Icey Chair",
+"tag": "icy"
+},
+"IOob": {
+"cat": "O",
+"model": "Doodads\\Icecrown\\Props\\IceCrownObelisk\\IceCrownObelisk",
+"name": "Obelisk",
+"tag": "any"
+},
+"IOpr": {
+"cat": "O",
+"model": "Doodads\\Icecrown\\Props\\IceCrownPillar\\IceCrownPillar",
+"name": "Pillar",
+"tag": "any"
+},
+"IOsl": {
+"cat": "O",
+"model": "Doodads\\Icecrown\\Props\\SpiderStatue0\\SpiderStatue0",
+"name": "Ice Spider Statue",
+"tag": "icy"
+},
+"IOsm": {
+"cat": "O",
+"model": "Doodads\\Icecrown\\Props\\SnowMan\\SnowMan",
+"name": "Snowman",
+"tag": "icy"
+},
+"IOss": {
+"cat": "O",
+"model": "Doodads\\Icecrown\\Props\\SpiderStatue1\\SpiderStatue1",
+"name": "Ice Spider on Pedestal",
+"tag": "icy"
+},
+"IOst": {
+"cat": "O",
+"model": "Doodads\\Icecrown\\Props\\IceTorch\\IceTorch",
+"name": "Skull Torch",
+"tag": "icy"
+},
+"IOt0": {
+"cat": "D",
+"model": "",
+"name": "_",
+"tag": "any"
+},
+"IOt1": {
+"cat": "D",
+"model": "",
+"name": "_",
+"tag": "any"
+},
+"IOt2": {
+"cat": "D",
+"model": "",
+"name": "_",
+"tag": "any"
+},
+"IRcy": {
+"cat": "E",
+"model": "Doodads\\Icecrown\\Rocks\\Icecrown_Crystal\\Icecrown_Crystal",
+"name": "Crystal",
+"tag": "icy"
+},
+"IRgc": {
+"cat": "E",
+"model": "Doodads\\Icecrown\\Rocks\\Glacier\\Glacier",
+"name": "Glacier",
+"tag": "icy"
+},
+"IRic": {
+"cat": "E",
+"model": "Doodads\\Icecrown\\Rocks\\IceBlock\\IceBlock",
+"name": "Ice Block",
+"tag": "icy"
+},
+"IRrk": {
+"cat": "E",
+"model": "Doodads\\Icecrown\\Rocks\\Ice_Rock\\Ice_Rock",
+"name": "Rocks",
+"tag": "icy"
+},
+"IRrs": {
+"cat": "E",
+"model": "Doodads\\Icecrown\\Rocks\\Ice_SnowRock\\Ice_SnowRock",
+"name": "Snowy Rocks",
+"tag": "snowy"
+},
+"ISa1": {
+"cat": "S",
+"model": "Doodads\\Icecrown\\Structures\\IC_IceArch45\\IC_IceArch45",
+"name": "Ice Archway",
+"tag": "icy"
+},
+"ISar": {
+"cat": "S",
+"model": "Doodads\\Icecrown\\Structures\\IC_IceArch\\IC_IceArch",
+"name": "Ice Archway",
+"tag": "icy"
+},
+"ISrb": {
+"cat": "S",
+"model": "Doodads\\Icecrown\\Structures\\Icecrown_Rubble\\Icecrown_Rubble",
+"name": "Rubble",
+"tag": "any"
+},
+"ISs1": {
+"cat": "S",
+"model": "Doodads\\Icecrown\\Structures\\Icecrown_StoneArch45\\Icecrown_StoneArch45",
+"name": "Angled Stone Archway",
+"tag": "any"
+},
+"ISsr": {
+"cat": "S",
+"model": "Doodads\\Icecrown\\Structures\\Icecrown_StoneArch\\Icecrown_StoneArch",
+"name": "Stone Archway",
+"tag": "any"
+},
+"ITag": {
+"cat": "D",
+"model": "",
+"name": "Rockin' Arthas",
+"tag": "any"
+},
+"ITcr": {
+"cat": "D",
+"model": "",
+"name": "Icey Rock",
+"tag": "icy"
+},
+"ITd1": {
+"cat": "D",
+"model": "",
+"name": "RoundDoor",
+"tag": "any"
+},
+"ITd2": {
+"cat": "D",
+"model": "",
+"name": "RoundDoor",
+"tag": "any"
+},
+"ITd3": {
+"cat": "D",
+"model": "",
+"name": "RoundDoor",
+"tag": "any"
+},
+"ITd4": {
+"cat": "D",
+"model": "",
+"name": "RoundDoor",
+"tag": "any"
+},
+"ITf1": {
+"cat": "D",
+"model": "",
+"name": "Ice Floe",
+"tag": "icy"
+},
+"ITf2": {
+"cat": "D",
+"model": "",
+"name": "Ice Floe",
+"tag": "icy"
+},
+"ITf3": {
+"cat": "D",
+"model": "",
+"name": "Ice Floe",
+"tag": "icy"
+},
+"ITf4": {
+"cat": "D",
+"model": "",
+"name": "Ice Floe",
+"tag": "icy"
+},
+"ITg1": {
+"cat": "D",
+"model": "",
+"name": "Gate",
+"tag": "any"
+},
+"ITg2": {
+"cat": "D",
+"model": "",
+"name": "Gate",
+"tag": "any"
+},
+"ITg3": {
+"cat": "D",
+"model": "",
+"name": "Gate",
+"tag": "any"
+},
+"ITg4": {
+"cat": "D",
+"model": "",
+"name": "Gate",
+"tag": "any"
+},
+"ITi2": {
+"cat": "B",
+"model": "",
+"name": "Ice Bridge 45",
+"tag": "any"
+},
+"ITi3": {
+"cat": "B",
+"model": "",
+"name": "Ice Bridge",
+"tag": "any"
+},
+"ITi4": {
+"cat": "B",
+"model": "",
+"name": "Ice Bridge 45",
+"tag": "any"
+},
+"ITib": {
+"cat": "B",
+"model": "",
+"name": "Ice Bridge",
+"tag": "any"
+},
+"ITig": {
+"cat": "D",
+"model": "",
+"name": "Igloo",
+"tag": "any"
+},
+"ITtc": {
+"cat": "D",
+"model": "",
+"name": "Canopy Tree",
+"tag": "any"
+},
+"ITtg": {
+"cat": "D",
+"model": "",
+"name": "Frozen Throne Gate",
+"tag": "any"
+},
+"ITtw": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"ITw0": {
+"cat": "D",
+"model": "",
+"name": "Stone Wall 0",
+"tag": "any"
+},
+"ITw1": {
+"cat": "D",
+"model": "",
+"name": "Stone Wall 45",
+"tag": "any"
+},
+"ITw2": {
+"cat": "D",
+"model": "",
+"name": "Stone Wall 90",
+"tag": "any"
+},
+"ITw3": {
+"cat": "D",
+"model": "",
+"name": "Stone Wall 135",
+"tag": "any"
+},
+"ITx1": {
+"cat": "D",
+"model": "",
+"name": "Gate",
+"tag": "any"
+},
+"ITx2": {
+"cat": "D",
+"model": "",
+"name": "Gate",
+"tag": "any"
+},
+"ITx3": {
+"cat": "D",
+"model": "",
+"name": "Gate",
+"tag": "any"
+},
+"ITx4": {
+"cat": "D",
+"model": "",
+"name": "Gate",
+"tag": "any"
+},
+"IWbg": {
+"cat": "W",
+"model": "Doodads\\Icecrown\\Water\\BubbleGeyserSteam\\BubbleGeyserSteam",
+"name": "Steam Bubbles",
+"tag": "floating"
+},
+"IWie": {
+"cat": "W",
+"model": "Doodads\\Icecrown\\Water\\IceEdge\\IceEdge",
+"name": "Floating Ice",
+"tag": "floating"
+},
+"IWw0": {
+"cat": "W",
+"model": "Doodads\\Terrain\\CliffDoodad\\IceCrownWaterfall\\IceCrownWaterfall",
+"name": "Icy Waterfall Effect",
+"tag": "any"
+},
+"IZft": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\FrozenThrone\\FrozenThrone",
+"name": "The Frozen Throne",
+"tag": "icy"
+},
+"IZrw": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\RisingWaterDoodad\\RisingWaterDoodad",
+"name": "Rising Water",
+"tag": "any"
+},
+"IZww": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\RisingWaterWIDEDoodad\\RisingWaterWIDEDoodad",
+"name": "Rising Water Wide",
+"tag": "any"
+},
+"JOgr": {
+"cat": "O",
+"model": "Doodads\\Cinematic\\GlowingRunes\\GlowingRunes",
+"name": "Glowing Runes",
+"tag": "any"
+},
+"JSar": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\Archway2_Ruined\\Archway2_Ruined",
+"name": "Archway Ruined",
+"tag": "any"
+},
+"JSax": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\Archway1_Ruined\\Archway1_Ruined",
+"name": "Archway Ruined",
+"tag": "any"
+},
+"JSc2": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\City_ColumnSemiCircle_Ruined\\City_ColumnSemiCircle_Ruined",
+"name": "Column Semi Circle2 Ruined",
+"tag": "any"
+},
+"JSc3": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\City_ColumnSemiCircle_Ruined\\City_ColumnSemiCircle_Ruined",
+"name": "Column Semi Circle3 Ruined",
+"tag": "any"
+},
+"JSc4": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\City_ColumnSemiCircle_Ruined\\City_ColumnSemiCircle_Ruined",
+"name": "Column Semi Circle4 Ruined",
+"tag": "any"
+},
+"JSco": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\City_ColumnSingle1_Ruined\\City_ColumnSingle1_Ruined",
+"name": "Single Column Ruined",
+"tag": "any"
+},
+"JScs": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\City_ColumnSemiCircle_Ruined\\City_ColumnSemiCircle_Ruined",
+"name": "Column Semi Circle Ruined",
+"tag": "any"
+},
+"JScx": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\City_ColumnSingle2_Ruined\\City_ColumnSingle2_Ruined",
+"name": "Single Column Ruined",
+"tag": "any"
+},
+"JSr6": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingSmall135_0_BaseRuin\\CityBuildingSmall135_0_BaseRuin",
+"name": "City Building Ruined Base",
+"tag": "any"
+},
+"JSrc": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingLarge_0_BaseRuin\\CityBuildingLarge_0_BaseRuin",
+"name": "Large City Building Ruined Base",
+"tag": "any"
+},
+"JTct": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"JTtw": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"JZif": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\EnergyFieldWall\\EnergyFieldWall",
+"name": "Invulnerability Field",
+"tag": "any"
+},
+"JZud": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\UndergroundDome\\UndergroundDome",
+"name": "Underground Dome",
+"tag": "any"
+},
+"KOdr": {
+"cat": "O",
+"model": "Doodads\\BlackCitadel\\Props\\RuneArt\\RuneArt",
+"name": "Runes",
+"tag": "any"
+},
+"KOst": {
+"cat": "O",
+"model": "Doodads\\BlackCitadel\\Props\\BlackCitadelStatue\\BlackCitadelStatue",
+"name": "Black Citadel Statue",
+"tag": "any"
+},
+"KTtw": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"LCc0": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CliffDoodadCave\\CliffDoodadCave",
+"name": "Cave0",
+"tag": "any"
+},
+"LCc2": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CliffDoodadCave2\\CliffDoodadCave2",
+"name": "Cave2",
+"tag": "any"
+},
+"LOam": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\ArmorRack\\ArmorRack",
+"name": "Armor Rack",
+"tag": "any"
+},
+"LOar": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\ArcheryRange\\ArcheryRange",
+"name": "Archery Target",
+"tag": "any"
+},
+"LObr": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\Brazier\\Brazier",
+"name": "Brazier",
+"tag": "any"
+},
+"LObz": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\brazieromni\\brazieromni",
+"name": "Glowing Brazier",
+"tag": "any"
+},
+"LOca": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\CauldronWithHeads\\CauldronWithHeads",
+"name": "Cauldron with Heads",
+"tag": "any"
+},
+"LOcb": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\HayCartbroken\\HayCartbroken",
+"name": "Broken Hay Cart",
+"tag": "any"
+},
+"LOce": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\CageEmpty\\CageEmpty",
+"name": "Empty Cage",
+"tag": "any"
+},
+"LOcg": {
+"cat": "D",
+"model": "",
+"name": "Cage",
+"tag": "any"
+},
+"LOch": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\HayCart\\HayCart",
+"name": "Hay Cart",
+"tag": "any"
+},
+"LOct": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\CageTrashed\\CageTrashed",
+"name": "Empty Cage",
+"tag": "any"
+},
+"LOfl": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\Flies\\Flies",
+"name": "Flies",
+"tag": "any"
+},
+"LOgr": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\Grave\\Grave",
+"name": "Grave",
+"tag": "any"
+},
+"LOh1": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\BannerHuman\\BannerHuman",
+"name": "Human Banner",
+"tag": "any"
+},
+"LOhb": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\Hay\\Hay",
+"name": "Hay",
+"tag": "any"
+},
+"LOhc": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\HayClump\\HayClump",
+"name": "Hay Clump",
+"tag": "any"
+},
+"LOhp": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\HitchingPost\\HitchingPost",
+"name": "Hitching Post",
+"tag": "any"
+},
+"LOic": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\ImpaledBody\\ImpaledBody",
+"name": "Impaled Corpse",
+"tag": "any"
+},
+"LOlp": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\LanternPost\\LanternPost",
+"name": "Lantern Post",
+"tag": "any"
+},
+"LOo1": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\BannerOrc\\BannerOrc",
+"name": "Orc Banner",
+"tag": "any"
+},
+"LOo2": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\TutorialOrcBanner\\TutorialOrcBanner",
+"name": "Tutorial Orc Banner",
+"tag": "any"
+},
+"LOpg": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\PeasantGrave\\PeasantGrave",
+"name": "Peasant Grave",
+"tag": "any"
+},
+"LOrb": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\RibBones\\RibBones",
+"name": "Rib Bones",
+"tag": "any"
+},
+"LOrc": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\RottenHayCart\\RottenHayCart",
+"name": "Hay Cart Infected",
+"tag": "any"
+},
+"LOrh": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\RottenHay\\RottenHay",
+"name": "Hay (Infected)",
+"tag": "any"
+},
+"LOsc": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\SittingCorpse\\SittingCorpse",
+"name": "Sitting Corpse",
+"tag": "any"
+},
+"LOsh": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\HeadOnSpear\\HeadOnSpear",
+"name": "Head on Spear",
+"tag": "any"
+},
+"LOsk": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\SkullPile\\SkullPile",
+"name": "Skull Pile",
+"tag": "any"
+},
+"LOsm": {
+"cat": "Z",
+"model": "Doodads\\LordaeronSummer\\Props\\SmokeSmudge\\SmokeSmudge",
+"name": "Smoke Smudge",
+"tag": "any"
+},
+"LOsp": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\SignPost\\SignPost",
+"name": "Sign Post",
+"tag": "any"
+},
+"LOss": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\SkullonStick\\SkullonStick",
+"name": "Skulls on Stick",
+"tag": "any"
+},
+"LOsw": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\RubbleStoneWall\\RubbleStoneWall",
+"name": "Stone Wall",
+"tag": "any"
+},
+"LOt1": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\Trash1\\Trash1",
+"name": "Trash",
+"tag": "any"
+},
+"LOth": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\TorchHuman\\TorchHuman",
+"name": "Torch",
+"tag": "any"
+},
+"LOtr": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\Trough\\Trough",
+"name": "Trough",
+"tag": "any"
+},
+"LOtz": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\TorchHumanOmni\\TorchHumanOmni",
+"name": "Glowing Torch",
+"tag": "any"
+},
+"LOwb": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\WheelBarrel\\WheelBarrel",
+"name": "Wheelbarrel",
+"tag": "any"
+},
+"LOwf": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\WallFountainCliff\\WallFountainCliff",
+"name": "Wall Fountain",
+"tag": "any"
+},
+"LOwp": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\Weapons\\Weapons",
+"name": "Weapon Rack",
+"tag": "any"
+},
+"LOwr": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\WheelBarrelBroken\\WheelBarrelBroken",
+"name": "Broken Wheelbarrel",
+"tag": "any"
+},
+"LOxx": {
+"cat": "O",
+"model": "Doodads\\LordaeronSummer\\Props\\RottenHayCartbroken\\RottenHayCartbroken",
+"name": "Broken Hay Cart Infected",
+"tag": "any"
+},
+"LPcr": {
+"cat": "E",
+"model": "Doodads\\LordaeronSummer\\Plants\\Corn\\Corn",
+"name": "Corn",
+"tag": "any"
+},
+"LPcw": {
+"cat": "E",
+"model": "Doodads\\LordaeronSummer\\Plants\\CornWheatScorched\\CornWheatScorched",
+"name": "Scorched Grain",
+"tag": "any"
+},
+"LPfp": {
+"cat": "W",
+"model": "Doodads\\LordaeronSummer\\Plants\\LilyPad\\LilyPad",
+"name": "Floating Lily Pads",
+"tag": "floating"
+},
+"LPlp": {
+"cat": "E",
+"model": "Doodads\\LordaeronSummer\\Plants\\LillyPad\\LillyPad",
+"name": "Lilly Pad",
+"tag": "floating"
+},
+"LPrs": {
+"cat": "E",
+"model": "Doodads\\LordaeronSummer\\Plants\\RiverRushes\\RiverRushes",
+"name": "River Rushes",
+"tag": "any"
+},
+"LPwb": {
+"cat": "E",
+"model": "Doodads\\LordaeronSummer\\Plants\\WheatBunch\\WheatBunch",
+"name": "Wheat Bunch",
+"tag": "any"
+},
+"LPwh": {
+"cat": "E",
+"model": "Doodads\\LordaeronSummer\\Plants\\Wheat\\Wheat",
+"name": "Wheat",
+"tag": "any"
+},
+"LRrk": {
+"cat": "E",
+"model": "Doodads\\LordaeronSummer\\Rocks\\Lords_Rock\\Lords_Rock",
+"name": "Rocks",
+"tag": "any"
+},
+"LSba": {
+"cat": "S",
+"model": "Doodads\\LordaeronSummer\\Structures\\Barn\\Barn",
+"name": "Barn",
+"tag": "any"
+},
+"LSeb": {
+"cat": "S",
+"model": "Doodads\\LordaeronSummer\\Structures\\ElvenVillageBuilding\\ElvenVillageBuilding",
+"name": "Elven Building",
+"tag": "any"
+},
+"LSgr": {
+"cat": "S",
+"model": "Doodads\\LordaeronSummer\\Structures\\Granary\\Granary",
+"name": "Granary",
+"tag": "any"
+},
+"LSgs": {
+"cat": "S",
+"model": "Doodads\\LordaeronSummer\\Structures\\GranaryBurned\\GranaryBurned",
+"name": "Scorched Granary",
+"tag": "any"
+},
+"LSin": {
+"cat": "S",
+"model": "Doodads\\LordaeronSummer\\Structures\\Inn\\Inn",
+"name": "Inn",
+"tag": "any"
+},
+"LSr1": {
+"cat": "S",
+"model": "Doodads\\LordaeronSummer\\Structures\\LRockArch45\\LRockArch45",
+"name": "Angled Rock Archway",
+"tag": "any"
+},
+"LSra": {
+"cat": "S",
+"model": "Doodads\\LordaeronSummer\\Structures\\LRockArch\\LRockArch",
+"name": "Rock Archway",
+"tag": "any"
+},
+"LSrg": {
+"cat": "S",
+"model": "Doodads\\LordaeronSummer\\Structures\\GoblinShipyardRuined\\GoblinShipyardRuined",
+"name": "Ruined Goblin Shipyard",
+"tag": "any"
+},
+"LSsb": {
+"cat": "S",
+"model": "Doodads\\LordaeronSummer\\Structures\\BarnScorched\\BarnScorched",
+"name": "Scorched Barn",
+"tag": "any"
+},
+"LSsf": {
+"cat": "S",
+"model": "Doodads\\LordaeronSummer\\Structures\\FarmScorched\\FarmScorched",
+"name": "Scorched Farm",
+"tag": "any"
+},
+"LSsi": {
+"cat": "S",
+"model": "Doodads\\LordaeronSummer\\Structures\\InnScorched\\InnScorched",
+"name": "Scorched Inn",
+"tag": "any"
+},
+"LSst": {
+"cat": "S",
+"model": "Doodads\\LordaeronSummer\\Structures\\TowerScorched\\TowerScorched",
+"name": "Scorched Tower",
+"tag": "any"
+},
+"LSt0": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityMainTower\\CityMainTower",
+"name": "Large Silvermoon Tower",
+"tag": "any"
+},
+"LSwb": {
+"cat": "S",
+"model": "Doodads\\LordaeronSummer\\Structures\\WindMillBurned\\WindMillBurned",
+"name": "Burned Wind Mill",
+"tag": "any"
+},
+"LSwl": {
+"cat": "S",
+"model": "Doodads\\LordaeronSummer\\Structures\\well\\well",
+"name": "Well",
+"tag": "any"
+},
+"LSwm": {
+"cat": "S",
+"model": "Doodads\\LordaeronSummer\\Structures\\WindMill\\WindMill",
+"name": "Wind Mill",
+"tag": "any"
+},
+"LT00": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 0 0",
+"tag": "any"
+},
+"LT01": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 45 0",
+"tag": "any"
+},
+"LT02": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 90 0",
+"tag": "any"
+},
+"LT03": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 135 0",
+"tag": "any"
+},
+"LT04": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 0 0",
+"tag": "any"
+},
+"LT05": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 45 0",
+"tag": "any"
+},
+"LT06": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 90 0",
+"tag": "any"
+},
+"LT07": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 135 0",
+"tag": "any"
+},
+"LT08": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 0 0",
+"tag": "any"
+},
+"LT09": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 45 0",
+"tag": "any"
+},
+"LT10": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 90 0",
+"tag": "any"
+},
+"LT11": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 135 0",
+"tag": "any"
+},
+"LTba": {
+"cat": "D",
+"model": "",
+"name": "Barricade",
+"tag": "any"
+},
+"LTbr": {
+"cat": "D",
+"model": "",
+"name": "Barrel",
+"tag": "any"
+},
+"LTbs": {
+"cat": "D",
+"model": "",
+"name": "Barrel",
+"tag": "any"
+},
+"LTbx": {
+"cat": "D",
+"model": "",
+"name": "Barrel",
+"tag": "any"
+},
+"LTcr": {
+"cat": "D",
+"model": "",
+"name": "Crates",
+"tag": "any"
+},
+"LTe1": {
+"cat": "D",
+"model": "",
+"name": "Elven Gate",
+"tag": "any"
+},
+"LTe2": {
+"cat": "D",
+"model": "",
+"name": "Elven Gate",
+"tag": "any"
+},
+"LTe3": {
+"cat": "D",
+"model": "",
+"name": "Elven Gate",
+"tag": "any"
+},
+"LTe4": {
+"cat": "D",
+"model": "",
+"name": "Elven Gate",
+"tag": "any"
+},
+"LTex": {
+"cat": "D",
+"model": "",
+"name": "Barrel",
+"tag": "any"
+},
+"LTg1": {
+"cat": "D",
+"model": "",
+"name": "Gate",
+"tag": "any"
+},
+"LTg2": {
+"cat": "D",
+"model": "",
+"name": "Gate",
+"tag": "any"
+},
+"LTg3": {
+"cat": "D",
+"model": "",
+"name": "Gate",
+"tag": "any"
+},
+"LTg4": {
+"cat": "D",
+"model": "",
+"name": "Gate",
+"tag": "any"
+},
+"LTlt": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"LTr1": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge Ramp 135",
+"tag": "any"
+},
+"LTr2": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge Ramp 225",
+"tag": "any"
+},
+"LTr3": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge Ramp 315",
+"tag": "any"
+},
+"LTr4": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge Ramp 45",
+"tag": "any"
+},
+"LTr5": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge Ramp 135",
+"tag": "any"
+},
+"LTr6": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge Ramp 225",
+"tag": "any"
+},
+"LTr7": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge Ramp 315",
+"tag": "any"
+},
+"LTr8": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge Ramp 45",
+"tag": "any"
+},
+"LTrc": {
+"cat": "D",
+"model": "",
+"name": "rock chunks",
+"tag": "any"
+},
+"LTrt": {
+"cat": "D",
+"model": "",
+"name": "rock chunks",
+"tag": "any"
+},
+"LTs1": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge Ramp 135",
+"tag": "any"
+},
+"LTs2": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge Ramp 225",
+"tag": "any"
+},
+"LTs3": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge Ramp 315",
+"tag": "any"
+},
+"LTs4": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge Ramp 45",
+"tag": "any"
+},
+"LTs5": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge Ramp 135",
+"tag": "any"
+},
+"LTs6": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge Ramp 225",
+"tag": "any"
+},
+"LTs7": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge Ramp 315",
+"tag": "any"
+},
+"LTs8": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge Ramp 45",
+"tag": "any"
+},
+"LTt0": {
+"cat": "B",
+"model": "",
+"name": "Tree Bridge",
+"tag": "any"
+},
+"LTt1": {
+"cat": "B",
+"model": "",
+"name": "Tree Bridge",
+"tag": "any"
+},
+"LTt2": {
+"cat": "B",
+"model": "",
+"name": "Tree Bridge",
+"tag": "any"
+},
+"LTt3": {
+"cat": "B",
+"model": "",
+"name": "Tree Bridge",
+"tag": "any"
+},
+"LTt4": {
+"cat": "B",
+"model": "",
+"name": "Tree Bridge",
+"tag": "any"
+},
+"LTt5": {
+"cat": "B",
+"model": "",
+"name": "Tree Bridge",
+"tag": "any"
+},
+"LTtc": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 0 0",
+"tag": "any"
+},
+"LTtx": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 90 0",
+"tag": "any"
+},
+"LTw0": {
+"cat": "D",
+"model": "",
+"name": "Stone Wall 0",
+"tag": "any"
+},
+"LTw1": {
+"cat": "D",
+"model": "",
+"name": "Stone Wall 45",
+"tag": "any"
+},
+"LTw2": {
+"cat": "D",
+"model": "",
+"name": "Stone Wall 90",
+"tag": "any"
+},
+"LTw3": {
+"cat": "D",
+"model": "",
+"name": "Stone Wall 135",
+"tag": "any"
+},
+"LWw0": {
+"cat": "W",
+"model": "Doodads\\Terrain\\CliffDoodad\\Waterfall\\Waterfall",
+"name": "WaterfallEffect",
+"tag": "any"
+},
+"LZth": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\ThrallsHut\\ThrallsHut",
+"name": "Thrall's Hut",
+"tag": "any"
+},
+"MC00": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Magus Conservatory",
+"tag": "any"
+},
+"MH00": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Magus Highrise",
+"tag": "any"
+},
+"MT00": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Magus Turret",
+"tag": "any"
+},
+"NB00": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 0 0",
+"tag": "any"
+},
+"NB01": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 45 0",
+"tag": "any"
+},
+"NB02": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 90 0",
+"tag": "any"
+},
+"NB03": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 135 0",
+"tag": "any"
+},
+"NB04": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 0 0",
+"tag": "any"
+},
+"NB05": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 45 0",
+"tag": "any"
+},
+"NB06": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 90 0",
+"tag": "any"
+},
+"NB07": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 135 0",
+"tag": "any"
+},
+"NB08": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 0 0",
+"tag": "any"
+},
+"NB09": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 45 0",
+"tag": "any"
+},
+"NB10": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 90 0",
+"tag": "any"
+},
+"NB11": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 135 0",
+"tag": "any"
+},
+"NOal": {
+"cat": "O",
+"model": "Doodads\\Northrend\\Props\\NorthrendFenceAngled\\NorthrendFenceAngled",
+"name": "Angled Fence",
+"tag": "any"
+},
+"NObc": {
+"cat": "O",
+"model": "Doodads\\Northrend\\Props\\NorthrendBrokenColumn\\NorthrendBrokenColumn",
+"name": "Broken Column",
+"tag": "any"
+},
+"NObk": {
+"cat": "O",
+"model": "Doodads\\Northrend\\Props\\NorthrendBrokenObilisk\\NorthrendBrokenObilisk",
+"name": "Broken Obelisk",
+"tag": "any"
+},
+"NObo": {
+"cat": "O",
+"model": "Doodads\\Northrend\\Props\\North_Bones\\North_Bones",
+"name": "Bones",
+"tag": "icy"
+},
+"NObt": {
+"cat": "O",
+"model": "Doodads\\Northrend\\Props\\Bats\\Bats",
+"name": "Bats",
+"tag": "any"
+},
+"NOfg": {
+"cat": "O",
+"model": "Doodads\\Northrend\\Props\\FirePitPig\\FirePitPig",
+"name": "Fire Pit w/ Pig",
+"tag": "any"
+},
+"NOfl": {
+"cat": "O",
+"model": "Doodads\\Northrend\\Props\\NorthrendFenceStraight\\NorthrendFenceStraight",
+"name": "Fence",
+"tag": "any"
+},
+"NOfp": {
+"cat": "O",
+"model": "Doodads\\Northrend\\Props\\FirePit\\FirePit",
+"name": "Fire Pit",
+"tag": "any"
+},
+"NOft": {
+"cat": "O",
+"model": "Doodads\\Northrend\\Props\\FirePitTrashed\\FirePitTrashed",
+"name": "Trashed Fire Pit",
+"tag": "any"
+},
+"NOgv": {
+"cat": "O",
+"model": "Doodads\\Northrend\\Props\\NorthrendGrave\\NorthrendGrave",
+"name": "Stone Grave",
+"tag": "any"
+},
+"NOok": {
+"cat": "O",
+"model": "Doodads\\Northrend\\Props\\NorthrendObilisk\\NorthrendObilisk",
+"name": "Obelisk",
+"tag": "any"
+},
+"NOtb": {
+"cat": "O",
+"model": "Doodads\\Northrend\\Props\\NorthrendTombstone\\NorthrendTombstone",
+"name": "Tombstone",
+"tag": "any"
+},
+"NPth": {
+"cat": "E",
+"model": "Doodads\\Northrend\\Plants\\North_Thorns\\North_Thorns",
+"name": "Thorny Vines",
+"tag": "any"
+},
+"NRfs": {
+"cat": "E",
+"model": "Doodads\\Northrend\\Rocks\\NorthrendFissure\\NorthrendFissure",
+"name": "Fissure",
+"tag": "any"
+},
+"NRic": {
+"cat": "E",
+"model": "Doodads\\Northrend\\Rocks\\North_IceClaw\\North_IceClaw",
+"name": "Ice Claws",
+"tag": "icy"
+},
+"NRrk": {
+"cat": "E",
+"model": "Doodads\\Northrend\\Rocks\\North_Rocks\\North_Rocks",
+"name": "Rocks",
+"tag": "any"
+},
+"NRwr": {
+"cat": "E",
+"model": "Doodads\\Northrend\\Rocks\\North_WebRocks\\North_WebRocks",
+"name": "Webbed Rocks",
+"tag": "any"
+},
+"NSct": {
+"cat": "S",
+"model": "Doodads\\Northrend\\Structures\\NorthrendCrypt\\NorthrendCrypt",
+"name": "Crypt",
+"tag": "any"
+},
+"NSr1": {
+"cat": "S",
+"model": "Doodads\\Northrend\\Structures\\NRockArch45\\NRockArch45",
+"name": "Angled Archway",
+"tag": "any"
+},
+"NSra": {
+"cat": "S",
+"model": "Doodads\\Northrend\\Structures\\NRockArch\\NRockArch",
+"name": "Archway",
+"tag": "any"
+},
+"NSrb": {
+"cat": "S",
+"model": "Doodads\\Northrend\\Structures\\NorthrendRubble\\NorthrendRubble",
+"name": "Rubble",
+"tag": "any"
+},
+"NTbd": {
+"cat": "D",
+"model": "",
+"name": "Ship",
+"tag": "any"
+},
+"NTiw": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"NTtc": {
+"cat": "D",
+"model": "",
+"name": "Canopy Tree",
+"tag": "any"
+},
+"NTtw": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"NWf1": {
+"cat": "W",
+"model": "Doodads\\Northrend\\Water\\North_IceFloe\\North_IceFloe",
+"name": "IceFloe",
+"tag": "floating"
+},
+"NWf2": {
+"cat": "W",
+"model": "Doodads\\Northrend\\Water\\North_IceFloe2\\North_IceFloe2",
+"name": "IceFloe",
+"tag": "floating"
+},
+"NWf3": {
+"cat": "W",
+"model": "Doodads\\Northrend\\Water\\North_IceFloe3\\North_IceFloe3",
+"name": "IceFloe",
+"tag": "floating"
+},
+"NWf4": {
+"cat": "W",
+"model": "Doodads\\Northrend\\Water\\North_IceFloe4\\North_IceFloe4",
+"name": "IceFloe",
+"tag": "floating"
+},
+"NWfb": {
+"cat": "W",
+"model": "Doodads\\Northrend\\Water\\FloatingBox\\FloatingBox",
+"name": "Floating Box",
+"tag": "floating"
+},
+"NWfp": {
+"cat": "W",
+"model": "Doodads\\Northrend\\Water\\FloatingPlank\\FloatingPlank",
+"name": "Floating Plank",
+"tag": "floating"
+},
+"NWi1": {
+"cat": "W",
+"model": "Doodads\\Northrend\\Water\\North_Iceberg\\North_Iceberg",
+"name": "Iceberg",
+"tag": "floating"
+},
+"NWi2": {
+"cat": "W",
+"model": "Doodads\\Northrend\\Water\\North_Iceberg2\\North_Iceberg2",
+"name": "Iceberg",
+"tag": "floating"
+},
+"NWi3": {
+"cat": "W",
+"model": "Doodads\\Northrend\\Water\\North_Iceberg3\\North_Iceberg3",
+"name": "Iceberg",
+"tag": "floating"
+},
+"NWi4": {
+"cat": "W",
+"model": "Doodads\\Northrend\\Water\\North_Iceberg4\\North_Iceberg4",
+"name": "Iceberg",
+"tag": "floating"
+},
+"NWpa": {
+"cat": "W",
+"model": "Doodads\\Northrend\\Water\\FloatingPanel\\FloatingPanel",
+"name": "Floating Panel",
+"tag": "floating"
+},
+"NWrd": {
+"cat": "W",
+"model": "Doodads\\Northrend\\Water\\RowboatDestroyed\\RowboatDestroyed",
+"name": "Destroyed Rowboat",
+"tag": "wreck"
+},
+"NWrw": {
+"cat": "W",
+"model": "Doodads\\Northrend\\Water\\Rowboat\\Rowboat",
+"name": "Rowboat",
+"tag": "floating"
+},
+"NWsd": {
+"cat": "W",
+"model": "Doodads\\Northrend\\Water\\BattleshipDestroyed\\BattleshipDestroyed",
+"name": "Destroyed Ship",
+"tag": "wreck"
+},
+"NWsp": {
+"cat": "W",
+"model": "Doodads\\Northrend\\Water\\Battleship\\Battleship",
+"name": "Ship",
+"tag": "floating"
+},
+"NWwh": {
+"cat": "W",
+"model": "Doodads\\Northrend\\Water\\Whale\\Whale",
+"name": "Whale",
+"tag": "water"
+},
+"OG00": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 0 0",
+"tag": "any"
+},
+"OG01": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 45 0",
+"tag": "any"
+},
+"OG02": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 90 0",
+"tag": "any"
+},
+"OG03": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 135 0",
+"tag": "any"
+},
+"OG04": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 0 0",
+"tag": "any"
+},
+"OG05": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 45 0",
+"tag": "any"
+},
+"OG06": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 90 0",
+"tag": "any"
+},
+"OG07": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 135 0",
+"tag": "any"
+},
+"OG08": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 0 0",
+"tag": "any"
+},
+"OG09": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 45 0",
+"tag": "any"
+},
+"OG10": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 90 0",
+"tag": "any"
+},
+"OG11": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 135 0",
+"tag": "any"
+},
+"OOal": {
+"cat": "O",
+"model": "Doodads\\Outland\\Props\\Altar\\Altar",
+"name": "Altar",
+"tag": "any"
+},
+"OOgr": {
+"cat": "O",
+"model": "Doodads\\Outland\\Props\\Grate\\Grate",
+"name": "Flame Grate",
+"tag": "any"
+},
+"OOob": {
+"cat": "O",
+"model": "Doodads\\Outland\\Props\\Obstacle\\Obstacle",
+"name": "Obstacle",
+"tag": "any"
+},
+"OOsd": {
+"cat": "O",
+"model": "Doodads\\Outland\\Props\\Standard\\Standard",
+"name": "Standard",
+"tag": "any"
+},
+"OOsk": {
+"cat": "O",
+"model": "Doodads\\Outland\\Props\\Skull\\Skull",
+"name": "Skull",
+"tag": "any"
+},
+"OOst": {
+"cat": "O",
+"model": "Doodads\\Outland\\Props\\Stake\\Stake",
+"name": "Stake",
+"tag": "any"
+},
+"OPop": {
+"cat": "E",
+"model": "Doodads\\Outland\\Plants\\Outland_Plant\\Outland_Plant",
+"name": "Plants",
+"tag": "any"
+},
+"ORfk": {
+"cat": "E",
+"model": "Doodads\\Cinematic\\Outland_FloatingChunks\\Outland_FloatingChunks",
+"name": "Floating Rock",
+"tag": "any"
+},
+"ORmk": {
+"cat": "E",
+"model": "Doodads\\Outland\\Rocks\\Outland_MagmaRock\\Outland_MagmaRock",
+"name": "Magma Rock",
+"tag": "any"
+},
+"ORrk": {
+"cat": "E",
+"model": "Doodads\\Outland\\Rocks\\Outland_Rock\\Outland_Rock",
+"name": "Rocks",
+"tag": "any"
+},
+"ORrr": {
+"cat": "E",
+"model": "Doodads\\Outland\\Rocks\\RubbleRock\\RubbleRock",
+"name": "Rubble",
+"tag": "any"
+},
+"ORrs": {
+"cat": "E",
+"model": "Doodads\\Outland\\Rocks\\Outland_Spires\\Outland_Spires",
+"name": "Rock Spires",
+"tag": "any"
+},
+"OSa1": {
+"cat": "S",
+"model": "Doodads\\Outland\\Structures\\Outland_RockArch45\\Outland_RockArch45",
+"name": "Angled Rock Archway",
+"tag": "any"
+},
+"OSar": {
+"cat": "S",
+"model": "Doodads\\Outland\\Structures\\Outland_RockArch\\Outland_RockArch",
+"name": "Rock Archway",
+"tag": "any"
+},
+"OTds": {
+"cat": "D",
+"model": "",
+"name": "Demon Storm",
+"tag": "any"
+},
+"OTip": {
+"cat": "B",
+"model": "",
+"name": "Invisible Platform",
+"tag": "any"
+},
+"OTis": {
+"cat": "B",
+"model": "",
+"name": "Invisible Platform Small",
+"tag": "any"
+},
+"OTsp": {
+"cat": "D",
+"model": "",
+"name": "Shimmering Portal",
+"tag": "any"
+},
+"OTtw": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"OZfc": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\Outland_FloatingChunksCluster\\Outland_FloatingChunksCluster",
+"name": "Floating Rock Cluster",
+"tag": "any"
+},
+"OZsp": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\ShimmeringPortal\\ShimmeringPortal",
+"name": "Shimmering Portal",
+"tag": "any"
+},
+"PVct": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Props\\MarketStallLarge\\MarketStallLarge",
+"name": "Pyrewood Village Clock Tower (Destroyed)",
+"tag": "any"
+},
+"RSf0": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Props\\City_Fountain\\City_Fountain",
+"name": "Runeweaver Square Fountain",
+"tag": "any"
+},
+"RW00": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 0 0",
+"tag": "any"
+},
+"RW01": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 45 0",
+"tag": "any"
+},
+"RW02": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 90 0",
+"tag": "any"
+},
+"RW03": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 135 0",
+"tag": "any"
+},
+"RW04": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 0 0",
+"tag": "any"
+},
+"RW05": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 45 0",
+"tag": "any"
+},
+"RW06": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 90 0",
+"tag": "any"
+},
+"RW07": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 135 0",
+"tag": "any"
+},
+"RW08": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 0 0",
+"tag": "any"
+},
+"RW09": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 45 0",
+"tag": "any"
+},
+"RW10": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 90 0",
+"tag": "any"
+},
+"RW11": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 135 0",
+"tag": "any"
+},
+"SA00": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\Archway1\\Archway1",
+"name": "Silvermoon Archway",
+"tag": "any"
+},
+"SA01": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\Archway45\\Archway45",
+"name": "Silvermoon Archway 45",
+"tag": "any"
+},
+"SA02": {
+"cat": "O",
+"model": "Doodads\\Dungeon\\Props\\AzsharaStatue\\AzsharaStatue",
+"name": "Statue of Azshara",
+"tag": "any"
+},
+"SA03": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Sunreaver Archway",
+"tag": "any"
+},
+"SAe0": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\ArchwayEntrance1\\ArchwayEntrance1",
+"name": "Silvermoon Archway Entrance",
+"tag": "any"
+},
+"SAe1": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\ArchwayEntrance45\\ArchwayEntrance45",
+"name": "Silvermoon Archway Entrance 45",
+"tag": "any"
+},
+"SCt0": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Props\\MarketStallLarge\\MarketStallLarge",
+"name": "Strahnbrad Clock Tower",
+"tag": "any"
+},
+"SD00": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Sunreaver Dome",
+"tag": "any"
+},
+"SDs0": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Sunreaver Dome (Small)",
+"tag": "any"
+},
+"SLt0": {
+"cat": "S",
+"model": "Doodads\\Barrens\\Rocks\\Barrens_Spires\\Barrens_Spires",
+"name": "Strahnbrad Large Tree",
+"tag": "any"
+},
+"SRbc": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingLarge_45\\CityBuildingLarge_45",
+"name": "Silvermoon Residential Buildings (Diagonal 1)",
+"tag": "any"
+},
+"SRbe": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingLarge_135\\CityBuildingLarge_135",
+"name": "Silvermoon Residential Buildings (Diagonal 2)",
+"tag": "any"
+},
+"SRbh": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingLarge_0\\CityBuildingLarge_0",
+"name": "Silvermoon Residential Buildings (Horizontal)",
+"tag": "any"
+},
+"SRbv": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingLarge_90\\CityBuildingLarge_90",
+"name": "Silvermoon Residential Buildings (Vertical)",
+"tag": "any"
+},
+"SS00": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Sunreaver Spire",
+"tag": "any"
+},
+"SSmt": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityMainTower\\CityMainTower",
+"name": "Sunfury Spire Main Tower",
+"tag": "any"
+},
+"SSst": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityMainTower\\CityMainTower",
+"name": "Sunfury Spire Side Tower",
+"tag": "any"
+},
+"STdl": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityMainTower\\CityMainTower",
+"name": "Silvermoon Tower Doodads Large",
+"tag": "any"
+},
+"STdm": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityMainTower\\CityMainTower",
+"name": "Silvermoon Tower Doodads Medium",
+"tag": "any"
+},
+"STds": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityMainTower\\CityMainTower",
+"name": "Silvermoon Tower Doodads Small",
+"tag": "any"
+},
+"SWc0": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallCorner\\CityWallCorner",
+"name": "Silvermoon Wall Corner",
+"tag": "any"
+},
+"SWe0": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallEndcap\\CityWallEndcap",
+"name": "Silvermoon Wall Endcap",
+"tag": "any"
+},
+"SWs0": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallStraight\\CityWallStraight",
+"name": "Silvermoon Wall Straight",
+"tag": "any"
+},
+"SWsd": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallStraightDoor\\CityWallStraightDoor",
+"name": "Silvermoon Wall Straight Door",
+"tag": "any"
+},
+"SWse": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallStraightShortDoor\\CityWallStraightShortDoor",
+"name": "Silvermoon Wall Straight Door Short",
+"tag": "any"
+},
+"SWsl": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallStraightLong\\CityWallStraightLong",
+"name": "Silvermoon Wall Straight Long",
+"tag": "any"
+},
+"SWss": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallStraightShort\\CityWallStraightShort",
+"name": "Silvermoon Wall Straight Short",
+"tag": "any"
+},
+"SWt0": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWall_T\\CityWall_T",
+"name": "SilvermoonWall_T",
+"tag": "any"
+},
+"VHae": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallEndcap\\CityWallEndcap",
+"name": "Violet Hold Archway Endpiece",
+"tag": "any"
+},
+"VHms": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityMainTower\\CityMainTower",
+"name": "VioletHoldMainStructure",
+"tag": "any"
+},
+"VHs0": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Violet Hold Spire",
+"tag": "any"
+},
+"VHss": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Violet Hold Spire (Small)",
+"tag": "any"
+},
+"VOal": {
+"cat": "O",
+"model": "Doodads\\Village\\Props\\Village_FencelongAngled\\Village_FencelongAngled",
+"name": "Angled Long Fence",
+"tag": "any"
+},
+"VOas": {
+"cat": "O",
+"model": "Doodads\\Village\\Props\\Village_FenceshortAngled\\Village_FenceshortAngled",
+"name": "Angled Short Fence",
+"tag": "any"
+},
+"VOfl": {
+"cat": "O",
+"model": "Doodads\\Village\\Props\\Village_Fencelong\\Village_Fencelong",
+"name": "Long Fence",
+"tag": "any"
+},
+"VOfs": {
+"cat": "O",
+"model": "Doodads\\Village\\Props\\Village_Fenceshort\\Village_Fenceshort",
+"name": "Short Fence",
+"tag": "any"
+},
+"VSvb": {
+"cat": "S",
+"model": "Doodads\\Village\\Structures\\VillageBuilding\\VillageBuilding",
+"name": "Building",
+"tag": "any"
+},
+"VTlt": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"Volc": {
+"cat": "D",
+"model": "",
+"name": "Volcano",
+"tag": "any"
+},
+"WD00": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallStraight\\CityWallStraight",
+"name": "Wall 90 Degree",
+"tag": "any"
+},
+"WE00": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallEndcap\\CityWallEndcap",
+"name": "Wall Endcap",
+"tag": "any"
+},
+"WGTR": {
+"cat": "B",
+"model": "",
+"name": "WayGate Ramp",
+"tag": "any"
+},
+"WS00": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallStraight\\CityWallStraight",
+"name": "Wall Straight",
+"tag": "any"
+},
+"WS01": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Wall Spire",
+"tag": "any"
+},
+"WSa0": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Wall Spire Alt",
+"tag": "any"
+},
+"WSl0": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallStraightLong\\CityWallStraightLong",
+"name": "Wall Straight Long",
+"tag": "any"
+},
+"WSs0": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallStraightShort\\CityWallStraightShort",
+"name": "Wall Straight Short",
+"tag": "any"
+},
+"WT00": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWall_T\\CityWall_T",
+"name": "Wall T",
+"tag": "any"
+},
+"WTa0": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWall_TAlt\\CityWall_Talt",
+"name": "Wall T Alt",
+"tag": "any"
+},
+"WTst": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"WTtw": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"XOcl": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\CrystalLamp\\CrystalLamp",
+"name": "Magical Lantern",
+"tag": "any"
+},
+"XOcs": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\CrystalShield\\CrystalShield",
+"name": "Power Generator",
+"tag": "any"
+},
+"XOk1": {
+"cat": "D",
+"model": "",
+"name": "_",
+"tag": "any"
+},
+"XOk2": {
+"cat": "D",
+"model": "",
+"name": "_",
+"tag": "any"
+},
+"XOkt": {
+"cat": "D",
+"model": "",
+"name": "_",
+"tag": "any"
+},
+"XOmr": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\MagicRunes\\MagicRunes",
+"name": "Magical Runes",
+"tag": "any"
+},
+"XTbd": {
+"cat": "D",
+"model": "",
+"name": "Building",
+"tag": "any"
+},
+"XTm5": {
+"cat": "D",
+"model": "",
+"name": "angled magical pen",
+"tag": "any"
+},
+"XTmp": {
+"cat": "D",
+"model": "",
+"name": "magical pen",
+"tag": "any"
+},
+"XTmx": {
+"cat": "D",
+"model": "",
+"name": "magical pen wall",
+"tag": "any"
+},
+"XTv1": {
+"cat": "D",
+"model": "",
+"name": "Large Building",
+"tag": "any"
+},
+"XTv2": {
+"cat": "D",
+"model": "",
+"name": "Large Building",
+"tag": "any"
+},
+"XTv3": {
+"cat": "D",
+"model": "",
+"name": "Large Building",
+"tag": "any"
+},
+"XTv4": {
+"cat": "D",
+"model": "",
+"name": "Large Building",
+"tag": "any"
+},
+"XTv5": {
+"cat": "D",
+"model": "",
+"name": "Large Building",
+"tag": "any"
+},
+"XTv6": {
+"cat": "D",
+"model": "",
+"name": "Large Building",
+"tag": "any"
+},
+"XTv7": {
+"cat": "D",
+"model": "",
+"name": "Large Building",
+"tag": "any"
+},
+"XTv8": {
+"cat": "D",
+"model": "",
+"name": "Large Building",
+"tag": "any"
+},
+"XTvt": {
+"cat": "D",
+"model": "",
+"name": "Large Building",
+"tag": "any"
+},
+"XTx5": {
+"cat": "D",
+"model": "",
+"name": "angled magical pen wall",
+"tag": "any"
+},
+"YCc1": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCave1\\CityCliffDoodadCave1",
+"name": "CityCliffCave1",
+"tag": "any"
+},
+"YCc2": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCave2\\CityCliffDoodadCave2",
+"name": "CityCliffCave2",
+"tag": "any"
+},
+"YCc3": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCave3\\CityCliffDoodadCave3",
+"name": "CityCliffCave3",
+"tag": "any"
+},
+"YCc4": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCave4\\CityCliffDoodadCave4",
+"name": "CityCliffCave4",
+"tag": "any"
+},
+"YCd1": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCollapse0\\CityCliffDoodadCollapse0",
+"name": "CityCliffCollapse1",
+"tag": "any"
+},
+"YCd2": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCollapse1\\CityCliffDoodadCollapse1",
+"name": "CityCliffCollapse2",
+"tag": "any"
+},
+"YCd3": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCollapse2\\CityCliffDoodadCollapse2",
+"name": "CityCliffCollapse3",
+"tag": "any"
+},
+"YCd4": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCollapse3\\CityCliffDoodadCollapse3",
+"name": "CityCliffCollapse4",
+"tag": "any"
+},
+"YCg1": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadSlide0\\RoughCliffDoodadSlide0",
+"name": "Rough Cliff Slide 1",
+"tag": "any"
+},
+"YCg2": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadSlide1\\RoughCliffDoodadSlide1",
+"name": "Rough Cliff Slide 2",
+"tag": "any"
+},
+"YCg3": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadSlide2\\RoughCliffDoodadSlide2",
+"name": "Rough Cliff Slide 3",
+"tag": "any"
+},
+"YCg4": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadSlide3\\RoughCliffDoodadSlide3",
+"name": "Rough Cliff Slide 4",
+"tag": "any"
+},
+"YCl1": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadCollapseShort0\\RoughCliffDoodadCollapseShort0",
+"name": "Rough Cliff Collapse Short 1",
+"tag": "any"
+},
+"YCl2": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadCollapseShort1\\RoughCliffDoodadCollapseShort1",
+"name": "Rough Cliff Collapse Short 2",
+"tag": "any"
+},
+"YCl3": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadCollapseShort2\\RoughCliffDoodadCollapseShort2",
+"name": "Rough Cliff Collapse Short 3",
+"tag": "any"
+},
+"YCl4": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadCollapseShort3\\RoughCliffDoodadCollapseShort3",
+"name": "Rough Cliff Collapse Short 4",
+"tag": "any"
+},
+"YCo1": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadSlideShort0\\CityCliffDoodadSlideShort0",
+"name": "City Cliff Slide Short 1",
+"tag": "any"
+},
+"YCo2": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadSlideShort1\\CityCliffDoodadSlideShort1",
+"name": "City Cliff Slide Short 2",
+"tag": "any"
+},
+"YCo3": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadSlideShort2\\CityCliffDoodadSlideShort2",
+"name": "City Cliff Slide Short 3",
+"tag": "any"
+},
+"YCo4": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadSlideShort3\\CityCliffDoodadSlideShort3",
+"name": "City Cliff Slide Short 4",
+"tag": "any"
+},
+"YCp1": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadCollapse0\\RoughCliffDoodadCollapse0",
+"name": "Rough Cliff Collapse 1",
+"tag": "any"
+},
+"YCp2": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadCollapse1\\RoughCliffDoodadCollapse1",
+"name": "Rough Cliff Collapse 2",
+"tag": "any"
+},
+"YCp3": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadCollapse2\\RoughCliffDoodadCollapse2",
+"name": "Rough Cliff Collapse 3",
+"tag": "any"
+},
+"YCp4": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadCollapse3\\RoughCliffDoodadCollapse3",
+"name": "Rough Cliff Collapse 4",
+"tag": "any"
+},
+"YCr1": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\NewRoughCliffDoodadCave1\\NewRoughCliffDoodadCave1",
+"name": "Rough cliff cave 1",
+"tag": "any"
+},
+"YCr2": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\NewRoughCliffDoodadCave2\\NewRoughCliffDoodadCave2",
+"name": "Rough cliff cave 2",
+"tag": "any"
+},
+"YCr3": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\NewRoughCliffDoodadCave3\\NewRoughCliffDoodadCave3",
+"name": "Rough cliff cave 3",
+"tag": "any"
+},
+"YCr4": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\NewRoughCliffDoodadCave4\\NewRoughCliffDoodadCave4",
+"name": "Rough cliff cave 4",
+"tag": "any"
+},
+"YCs1": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadSlide0\\CityCliffDoodadSlide0",
+"name": "City Cliff Slide 1",
+"tag": "any"
+},
+"YCs2": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadSlide1\\CityCliffDoodadSlide1",
+"name": "City Cliff Slide 2",
+"tag": "any"
+},
+"YCs3": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadSlide2\\CityCliffDoodadSlide2",
+"name": "City Cliff Slide 3",
+"tag": "any"
+},
+"YCs4": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadSlide3\\CityCliffDoodadSlide3",
+"name": "City Cliff Slide 4",
+"tag": "any"
+},
+"YCt1": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCollapseShort0\\CityCliffDoodadCollapseShort0",
+"name": "CityCliffCollapseShort1",
+"tag": "any"
+},
+"YCt2": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCollapseShort1\\CityCliffDoodadCollapseShort1",
+"name": "CityCliffCollapseShort2",
+"tag": "any"
+},
+"YCt3": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCollapseShort2\\CityCliffDoodadCollapseShort2",
+"name": "CityCliffCollapseShort3",
+"tag": "any"
+},
+"YCt4": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCollapseShort3\\CityCliffDoodadCollapseShort3",
+"name": "CityCliffCollapseShort4",
+"tag": "any"
+},
+"YCu1": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadSlideShort0\\RoughCliffDoodadSlideShort0",
+"name": "Rough Cliff Slide Short 1",
+"tag": "any"
+},
+"YCu2": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadSlideShort1\\RoughCliffDoodadSlideShort1",
+"name": "Rough Cliff Slide Short 2",
+"tag": "any"
+},
+"YCu3": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadSlideShort2\\RoughCliffDoodadSlideShort2",
+"name": "Rough Cliff Slide Short 3",
+"tag": "any"
+},
+"YCu4": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadSlideShort3\\RoughCliffDoodadSlideShort3",
+"name": "Rough Cliff Slide Short 4",
+"tag": "any"
+},
+"YCx1": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\Ruinedfloor2x2_0\\Ruinedfloor2x2_0",
+"name": "RuinedFloor2x2_",
+"tag": "any"
+},
+"YCx2": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\Ruinedfloor2x2_1\\Ruinedfloor2x2_1",
+"name": "RuinedFloor2x2_",
+"tag": "any"
+},
+"YCx3": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\Ruinedfloor2x2_2\\Ruinedfloor2x2_2",
+"name": "RuinedFloor2x2_",
+"tag": "any"
+},
+"YCx4": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\Ruinedfloor2x2_3\\Ruinedfloor2x2_3",
+"name": "RuinedFloor2x2_",
+"tag": "any"
+},
+"YCx5": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\Ruinedfloor4x4_0\\Ruinedfloor4x4_0",
+"name": "RuinedFloor4x4_",
+"tag": "any"
+},
+"YCx6": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\Ruinedfloor4x4_1\\Ruinedfloor4x4_1",
+"name": "RuinedFloor4x4_",
+"tag": "any"
+},
+"YCx7": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\Ruinedfloor4x2_0\\Ruinedfloor4x2_0",
+"name": "RuinedFloor4x2_",
+"tag": "any"
+},
+"YCx8": {
+"cat": "C",
+"model": "Doodads\\Terrain\\CliffDoodad\\Ruinedfloor4x2_1\\Ruinedfloor4x2_1",
+"name": "RuinedFloor4x2_",
+"tag": "any"
+},
+"YObb": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\Banner_Long\\Banner_Long",
+"name": "Long Blue Banner",
+"tag": "any"
+},
+"YObg": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\TavernSignBobsGuns\\TavernSignBobsGuns",
+"name": "Bob's Guns Sign",
+"tag": "any"
+},
+"YObs": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\CityStoneBench\\CityStoneBench",
+"name": "Stone Bench",
+"tag": "any"
+},
+"YObw": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\CityWoodBench\\CityWoodBench",
+"name": "Wood Bench",
+"tag": "any"
+},
+"YOcp": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\CameraProp\\CameraProp",
+"name": "Camera Prop",
+"tag": "any"
+},
+"YOec": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\EmptyCrates\\EmptyCrates",
+"name": "Empty Crates",
+"tag": "any"
+},
+"YOf1": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\FireTrapSide\\FireTrapSide",
+"name": "Side Fire Trap",
+"tag": "any"
+},
+"YOf2": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\FireTrapUp\\FireTrapUp",
+"name": "Fire Trap",
+"tag": "any"
+},
+"YOf3": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\FirePillarMedium\\FirePillarMedium",
+"name": "Fire Gust",
+"tag": "any"
+},
+"YOfb": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\TownBurningFireEmitterBlue\\TownBurningFireEmitterBlue",
+"name": "Blue Fire",
+"tag": "any"
+},
+"YOfn": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\City_Fountain\\City_Fountain",
+"name": "Fountain",
+"tag": "any"
+},
+"YOfr": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\FountainRuined\\FountainRuined",
+"name": "Ruined Fountain",
+"tag": "any"
+},
+"YOfs": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\FireRockSmall\\FireRockSmall",
+"name": "Small Fire",
+"tag": "any"
+},
+"YOgr": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\CityGrave\\CityGrave",
+"name": "Grave",
+"tag": "any"
+},
+"YOi1": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\IronGateB\\IronGateB",
+"name": "Iron Gate (B)",
+"tag": "any"
+},
+"YOig": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\IronGateA\\IronGateA",
+"name": "Iron Gate (A)",
+"tag": "any"
+},
+"YOks": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\KnightStatueA\\KnightStatueA",
+"name": "Shieldless Statue",
+"tag": "any"
+},
+"YOlb": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\Lightningbolt\\Lightningbolt",
+"name": "Lightning Bolt",
+"tag": "any"
+},
+"YOlp": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\LanternPost\\LanternPost",
+"name": "Lantern Post",
+"tag": "any"
+},
+"YOm1": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Props\\MarketStallSmall\\MarketStallSmall",
+"name": "Market Stall Small",
+"tag": "any"
+},
+"YOm2": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Props\\MarketItemBaubles\\MarketItemBaubles",
+"name": "Market Item Baubles",
+"tag": "any"
+},
+"YOm3": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Props\\MarketItemBaublesAlt\\MarketItemBaublesAlt",
+"name": "Market Item Baubles (Alt)",
+"tag": "any"
+},
+"YOm4": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Props\\MarketItemProduce\\MarketItemProduce",
+"name": "Market Item Produce",
+"tag": "any"
+},
+"YOm5": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Props\\MarketItemProduceAlt\\MarketItemProduceAlt",
+"name": "Market Item Produce (Alt)",
+"tag": "any"
+},
+"YOm6": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Props\\MarketItemTextiles\\MarketItemTextiles",
+"name": "Market Item Textiles",
+"tag": "any"
+},
+"YOm7": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Props\\MarketItemTextilesAlt\\MarketItemTextilesAlt",
+"name": "Market Item Textiles (Alt)",
+"tag": "any"
+},
+"YOmb": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityMainTower\\CityMainTower",
+"name": "Alonsus Chapel",
+"tag": "any"
+},
+"YOms": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Props\\MarketStallLarge\\MarketStallLarge",
+"name": "Clock Tower",
+"tag": "any"
+},
+"YOob": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\City_Oblisk\\City_Oblisk",
+"name": "Obelisk",
+"tag": "any"
+},
+"YOr1": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\FrostTrapSide\\FrostTrapSide",
+"name": "Side Frost Trap",
+"tag": "icy"
+},
+"YOr2": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\FrostTrapUp\\FrostTrapUp",
+"name": "Frost Trap",
+"tag": "icy"
+},
+"YOsa": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\CityStoneBenchAngled\\CityStoneBenchAngled",
+"name": "Angled Stone Bench",
+"tag": "any"
+},
+"YOsb": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityAlonsusChapel\\CityAlonsusChapel",
+"name": "Alonsus Chapel",
+"tag": "any"
+},
+"YOss": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\StatueKingTerenas\\StatueKingTerenas",
+"name": "King Terenas Statue",
+"tag": "any"
+},
+"YOst": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\City_Statue\\City_Statue",
+"name": "Statue",
+"tag": "any"
+},
+"YOsw": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\SunWell\\SunWell",
+"name": "Sun Well",
+"tag": "any"
+},
+"YOta": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\TavernSignTraceysArmory\\TavernSignTraceysArmory",
+"name": "Tracey's Armory Sign",
+"tag": "any"
+},
+"YOtf": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\TownBurningFireEmitter\\TownBurningFireEmitter",
+"name": "Fire",
+"tag": "any"
+},
+"YOth": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\Throne\\Throne",
+"name": "Throne",
+"tag": "any"
+},
+"YOts": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\TavernSign\\TavernSign",
+"name": "Tavern Sign",
+"tag": "any"
+},
+"YOwa": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\CityWoodBenchAngled\\CityWoodBenchAngled",
+"name": "Angled Wood Bench",
+"tag": "any"
+},
+"YOwb": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\Banner_Long2\\Banner_Long2",
+"name": "Long White Banner",
+"tag": "any"
+},
+"YOws": {
+"cat": "O",
+"model": "Doodads\\Cityscape\\Props\\WhaleStatue\\WhaleStatue",
+"name": "Whale Statue",
+"tag": "any"
+},
+"YPbs": {
+"cat": "E",
+"model": "Doodads\\Cityscape\\Plants\\CityBush\\CityBush",
+"name": "Bush",
+"tag": "any"
+},
+"YPfa": {
+"cat": "E",
+"model": "Doodads\\Cityscape\\Plants\\FlowerBedAngled\\FlowerBedAngled",
+"name": "Angled Flower Bed",
+"tag": "any"
+},
+"YPfs": {
+"cat": "E",
+"model": "Doodads\\Cityscape\\Plants\\FlowerBedStraight\\FlowerBedStraight",
+"name": "Straight Flower Bed",
+"tag": "any"
+},
+"YPpp": {
+"cat": "E",
+"model": "Doodads\\Cityscape\\Plants\\PottedPlant\\PottedPlant",
+"name": "Potted Plant",
+"tag": "any"
+},
+"YPtp": {
+"cat": "E",
+"model": "Doodads\\Terrain\\CityscapeTreePlanter\\CityscapeTreePlanter",
+"name": "Tree Planter",
+"tag": "any"
+},
+"YS00": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingSmall45_0\\CityBuildingSmall45_0",
+"name": "City Building",
+"tag": "any"
+},
+"YS01": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingSmall45_1\\CityBuildingSmall45_1",
+"name": "City Building",
+"tag": "any"
+},
+"YS02": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingSmall45_2\\CityBuildingSmall45_2",
+"name": "City Building",
+"tag": "any"
+},
+"YS03": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingSmall90_0\\CityBuildingSmall90_0",
+"name": "City Building",
+"tag": "any"
+},
+"YS04": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingSmall90_1\\CityBuildingSmall90_1",
+"name": "City Building",
+"tag": "any"
+},
+"YS05": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingSmall90_2\\CityBuildingSmall90_2",
+"name": "City Building",
+"tag": "any"
+},
+"YS06": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingSmall135_0\\CityBuildingSmall135_0",
+"name": "City Building",
+"tag": "any"
+},
+"YS07": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingSmall135_1\\CityBuildingSmall135_1",
+"name": "City Building",
+"tag": "any"
+},
+"YS08": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingSmall135_2\\CityBuildingSmall135_2",
+"name": "City Building",
+"tag": "any"
+},
+"YS09": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingSmall0_0\\CityBuildingSmall0_0",
+"name": "City Building",
+"tag": "any"
+},
+"YS10": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingSmall0_1\\CityBuildingSmall0_1",
+"name": "City Building",
+"tag": "any"
+},
+"YS11": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingSmall0_2\\CityBuildingSmall0_2",
+"name": "City Building",
+"tag": "any"
+},
+"YS12": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingLarge_0\\CityBuildingLarge_0",
+"name": "Large City Building",
+"tag": "any"
+},
+"YS13": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingLarge_45\\CityBuildingLarge_45",
+"name": "Large City Building",
+"tag": "any"
+},
+"YS14": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingLarge_90\\CityBuildingLarge_90",
+"name": "Large City Building",
+"tag": "any"
+},
+"YS15": {
+"cat": "S",
+"model": "Buildings\\Other\\CityBuildingLarge_135\\CityBuildingLarge_135",
+"name": "Large City Building",
+"tag": "any"
+},
+"YSa1": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\Archway45\\Archway45",
+"name": "Angled Archway",
+"tag": "any"
+},
+"YSa2": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\ArchwayEntrance1\\ArchwayEntrance1",
+"name": "Archway Entrance",
+"tag": "any"
+},
+"YSa3": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\ArchwayEntrance45\\ArchwayEntrance45",
+"name": "Angled Archway Entrance",
+"tag": "any"
+},
+"YSaw": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\Archway1\\Archway1",
+"name": "Archway",
+"tag": "any"
+},
+"YSb1": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingRow_1\\CityBuildingRow_1",
+"name": "City Building Row",
+"tag": "any"
+},
+"YSb2": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingRow_2\\CityBuildingRow_2",
+"name": "City Building Row",
+"tag": "any"
+},
+"YSbr": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingRow_0\\CityBuildingRow_0",
+"name": "City Building Row",
+"tag": "any"
+},
+"YSc2": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\City_ColumnSemiCircle\\City_ColumnSemiCircle",
+"name": "Column Semi Circle2",
+"tag": "any"
+},
+"YSc3": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\City_ColumnSemiCircle\\City_ColumnSemiCircle",
+"name": "Column Semi Circle3",
+"tag": "any"
+},
+"YSc4": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\City_ColumnSemiCircle\\City_ColumnSemiCircle",
+"name": "Column Semi Circle4",
+"tag": "any"
+},
+"YSc5": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\City_ColumnDouble45\\City_ColumnDouble45",
+"name": "Double Column 45",
+"tag": "any"
+},
+"YSca": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\Cathedral\\Cathedral",
+"name": "Cathedral",
+"tag": "any"
+},
+"YScd": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\City_ColumnDouble\\City_ColumnDouble",
+"name": "Double Column",
+"tag": "any"
+},
+"YSco": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\City_ColumnSingle\\City_ColumnSingle",
+"name": "Single Column",
+"tag": "any"
+},
+"YScr": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CathedralRuined\\CathedralRuined",
+"name": "Ruined Cathedral",
+"tag": "any"
+},
+"YScs": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\City_ColumnSemiCircle\\City_ColumnSemiCircle",
+"name": "Column Semi Circle",
+"tag": "any"
+},
+"YSdb": {
+"cat": "B",
+"model": "",
+"name": "destroyed bridge 45",
+"tag": "any"
+},
+"YSdc": {
+"cat": "B",
+"model": "",
+"name": "destroyed bridge 135",
+"tag": "any"
+},
+"YSll": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\City_LowWall_TallEndCapWithLantern\\City_LowWall_TallEndCapWithLantern",
+"name": "Lantern Wall End",
+"tag": "any"
+},
+"YSls": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\City_LowWall_ShortEndCap\\City_LowWall_ShortEndCap",
+"name": "Short Wall End",
+"tag": "any"
+},
+"YSlt": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\City_LowWall_TallEndCap\\City_LowWall_TallEndCap",
+"name": "Tall Wall End",
+"tag": "any"
+},
+"YSlx": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\City_LowWall_TallEndCapWithoutLantern\\City_LowWall_TallEndCapWithoutLantern",
+"name": "No Lantern Wall End",
+"tag": "any"
+},
+"YSr0": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingSmall45_0_Ruined\\CityBuildingSmall45_0_Ruined",
+"name": "City Building",
+"tag": "any"
+},
+"YSr1": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingSmall45_1_Ruined\\CityBuildingSmall45_1_Ruined",
+"name": "City Building",
+"tag": "any"
+},
+"YSr2": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingSmall45_2_Ruined\\CityBuildingSmall45_2_Ruined",
+"name": "City Building",
+"tag": "any"
+},
+"YSr3": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingSmall90_0_Ruined\\CityBuildingSmall90_0_Ruined",
+"name": "City Building",
+"tag": "any"
+},
+"YSr4": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingSmall90_1_Ruined\\CityBuildingSmall90_1_Ruined",
+"name": "City Building",
+"tag": "any"
+},
+"YSr5": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingSmall90_2_Ruined\\CityBuildingSmall90_2_Ruined",
+"name": "City Building",
+"tag": "any"
+},
+"YSr6": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingSmall135_0_Ruined\\CityBuildingSmall135_0_Ruined",
+"name": "City Building",
+"tag": "any"
+},
+"YSr7": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingSmall135_1_Ruined\\CityBuildingSmall135_1_Ruined",
+"name": "City Building",
+"tag": "any"
+},
+"YSr8": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingSmall135_2_Ruined\\CityBuildingSmall135_2_Ruined",
+"name": "City Building",
+"tag": "any"
+},
+"YSr9": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingSmall0_0_Ruined\\CityBuildingSmall0_0_Ruined",
+"name": "City Building",
+"tag": "any"
+},
+"YSra": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingSmall0_1_Ruined\\CityBuildingSmall0_1_Ruined",
+"name": "City Building",
+"tag": "any"
+},
+"YSrb": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingSmall0_2_Ruined\\CityBuildingSmall0_2_Ruined",
+"name": "City Building",
+"tag": "any"
+},
+"YSrc": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingLarge_0_Ruined\\CityBuildingLarge_0_Ruined",
+"name": "Large City Building",
+"tag": "any"
+},
+"YSrd": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingLarge_45_Ruined\\CityBuildingLarge_45_Ruined",
+"name": "Large City Building",
+"tag": "any"
+},
+"YSre": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingLarge_90_Ruined\\CityBuildingLarge_90_Ruined",
+"name": "Large City Building",
+"tag": "any"
+},
+"YSrf": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityBuildingLarge_135_Ruined\\CityBuildingLarge_135_Ruined",
+"name": "Large City Building",
+"tag": "any"
+},
+"YSta": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\Tavern\\Tavern",
+"name": "Tavern",
+"tag": "any"
+},
+"YSw0": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityLowWall0\\CityLowWall0",
+"name": "Low Wall",
+"tag": "any"
+},
+"YSw1": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityLowWall45\\CityLowWall45",
+"name": "Low Wall",
+"tag": "any"
+},
+"YSw2": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityLowWall90\\CityLowWall90",
+"name": "Low Wall",
+"tag": "any"
+},
+"YSw3": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityLowWall135\\CityLowWall135",
+"name": "Low Wall",
+"tag": "any"
+},
+"YSw4": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallCorner\\CityWallCorner",
+"name": "Wall Corner",
+"tag": "any"
+},
+"YSw5": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallEndcap\\CityWallEndcap",
+"name": "Wall Endcap",
+"tag": "any"
+},
+"YSw6": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallStraight\\CityWallStraight",
+"name": "Wall Staright",
+"tag": "any"
+},
+"YSw7": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallCornerAlt\\CityWallCornerAlt",
+"name": "Wall Corner",
+"tag": "any"
+},
+"YSw8": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallStraightLong\\CityWallStraightLong",
+"name": "Wall Straight Long",
+"tag": "any"
+},
+"YSw9": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallStraightShort\\CityWallStraightShort",
+"name": "Wall Straight Short",
+"tag": "any"
+},
+"YSwA": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWall_T\\CityWall_T",
+"name": "Wall Straight Tee",
+"tag": "any"
+},
+"YSwB": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWall_TAlt\\CityWall_Talt",
+"name": "Wall Straight Tee (Alt)",
+"tag": "any"
+},
+"YSwC": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallEntrance\\CityWallEntrance",
+"name": "Wall Entrance",
+"tag": "any"
+},
+"YSwD": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallStraightDoor\\CityWallStraightDoor",
+"name": "Wall Door",
+"tag": "any"
+},
+"YSwE": {
+"cat": "S",
+"model": "Doodads\\Cityscape\\Structures\\CityWallStraightShortDoor\\CityWallStraightShortDoor",
+"name": "Wall Door (Short)",
+"tag": "any"
+},
+"YT00": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 0 0",
+"tag": "any"
+},
+"YT01": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 45 0",
+"tag": "any"
+},
+"YT02": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 90 0",
+"tag": "any"
+},
+"YT03": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 135 0",
+"tag": "any"
+},
+"YT04": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 0 0",
+"tag": "any"
+},
+"YT05": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 45 0",
+"tag": "any"
+},
+"YT06": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 90 0",
+"tag": "any"
+},
+"YT07": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 135 0",
+"tag": "any"
+},
+"YT08": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 0 0",
+"tag": "any"
+},
+"YT09": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 45 0",
+"tag": "any"
+},
+"YT10": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 90 0",
+"tag": "any"
+},
+"YT11": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 135 0",
+"tag": "any"
+},
+"YT12": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 0 1",
+"tag": "any"
+},
+"YT13": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 45 1",
+"tag": "any"
+},
+"YT14": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 90 1",
+"tag": "any"
+},
+"YT15": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 135 1",
+"tag": "any"
+},
+"YT16": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 0 1",
+"tag": "any"
+},
+"YT17": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 45 1",
+"tag": "any"
+},
+"YT18": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 90 1",
+"tag": "any"
+},
+"YT19": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 135 1",
+"tag": "any"
+},
+"YT20": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 0 1",
+"tag": "any"
+},
+"YT21": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 45 1",
+"tag": "any"
+},
+"YT22": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 90 1",
+"tag": "any"
+},
+"YT23": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 135 1",
+"tag": "any"
+},
+"YT24": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 0 1",
+"tag": "any"
+},
+"YT25": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 45 1",
+"tag": "any"
+},
+"YT26": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 90 1",
+"tag": "any"
+},
+"YT27": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 135 1",
+"tag": "any"
+},
+"YT28": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 0 1",
+"tag": "any"
+},
+"YT29": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 45 1",
+"tag": "any"
+},
+"YT30": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 90 1",
+"tag": "any"
+},
+"YT31": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 135 1",
+"tag": "any"
+},
+"YT32": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 0 1",
+"tag": "any"
+},
+"YT33": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 45 1",
+"tag": "any"
+},
+"YT34": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 90 1",
+"tag": "any"
+},
+"YT35": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 135 1",
+"tag": "any"
+},
+"YT36": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 0 0",
+"tag": "any"
+},
+"YT37": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 45 0",
+"tag": "any"
+},
+"YT38": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 90 0",
+"tag": "any"
+},
+"YT39": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 135 0",
+"tag": "any"
+},
+"YT40": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 0 0",
+"tag": "any"
+},
+"YT41": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 45 0",
+"tag": "any"
+},
+"YT42": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 90 0",
+"tag": "any"
+},
+"YT43": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 135 0",
+"tag": "any"
+},
+"YT44": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 0 0",
+"tag": "any"
+},
+"YT45": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 45 0",
+"tag": "any"
+},
+"YT46": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 90 0",
+"tag": "any"
+},
+"YT47": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 135 0",
+"tag": "any"
+},
+"YT48": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 0 1",
+"tag": "any"
+},
+"YT49": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 45 1",
+"tag": "any"
+},
+"YT50": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 90 1",
+"tag": "any"
+},
+"YT51": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 135 1",
+"tag": "any"
+},
+"YT66": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 0 1",
+"tag": "any"
+},
+"YT67": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 0 1",
+"tag": "any"
+},
+"YTab": {
+"cat": "P",
+"model": "",
+"name": "pathing blocker air",
+"tag": "any"
+},
+"YTac": {
+"cat": "P",
+"model": "",
+"name": "large pathing blocker air",
+"tag": "any"
+},
+"YTc1": {
+"cat": "D",
+"model": "",
+"name": "City Entrance",
+"tag": "any"
+},
+"YTc2": {
+"cat": "D",
+"model": "",
+"name": "City Entrance",
+"tag": "any"
+},
+"YTc4": {
+"cat": "D",
+"model": "",
+"name": "City Entrance",
+"tag": "any"
+},
+"YTce": {
+"cat": "D",
+"model": "",
+"name": "City Entrance",
+"tag": "any"
+},
+"YTcn": {
+"cat": "D",
+"model": "",
+"name": "City Entrance",
+"tag": "any"
+},
+"YTct": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"YTcx": {
+"cat": "D",
+"model": "",
+"name": "City Entrance",
+"tag": "any"
+},
+"YTfb": {
+"cat": "P",
+"model": "",
+"name": "pathing blocker both",
+"tag": "any"
+},
+"YTfc": {
+"cat": "P",
+"model": "",
+"name": "large pathing blocker both",
+"tag": "any"
+},
+"YTft": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"YTlb": {
+"cat": "P",
+"model": "",
+"name": "line of sight blocker",
+"tag": "any"
+},
+"YTpb": {
+"cat": "P",
+"model": "",
+"name": "pathing blocker ground",
+"tag": "any"
+},
+"YTpc": {
+"cat": "P",
+"model": "",
+"name": "large pathing blocker ground",
+"tag": "any"
+},
+"YTst": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"YTwt": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"YY12": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 0 1",
+"tag": "any"
+},
+"YY13": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 45 1",
+"tag": "any"
+},
+"YY14": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 90 1",
+"tag": "any"
+},
+"YY15": {
+"cat": "B",
+"model": "",
+"name": "Small Bridge 135 1",
+"tag": "any"
+},
+"YY16": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 0 1",
+"tag": "any"
+},
+"YY17": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 45 1",
+"tag": "any"
+},
+"YY18": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 90 1",
+"tag": "any"
+},
+"YY19": {
+"cat": "B",
+"model": "",
+"name": "Large Bridge 135 1",
+"tag": "any"
+},
+"YY20": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 0 1",
+"tag": "any"
+},
+"YY21": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 45 1",
+"tag": "any"
+},
+"YY22": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 90 1",
+"tag": "any"
+},
+"YY23": {
+"cat": "B",
+"model": "",
+"name": "Extra Large Bridge 135 1",
+"tag": "any"
+},
+"YZef": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\EnergyField\\EnergyField",
+"name": "Energy Field",
+"tag": "any"
+},
+"Ytlc": {
+"cat": "P",
+"model": "",
+"name": "large line of sight blocker",
+"tag": "any"
+},
+"Yts1": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"Ytsc": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"ZCv1": {
+"cat": "E",
+"model": "Doodads\\Ruins\\Terrain\\CityCliffVines0\\CityCliffVines0",
+"name": "Cliffside Vines",
+"tag": "any"
+},
+"ZCv2": {
+"cat": "E",
+"model": "Doodads\\Ruins\\Terrain\\CityCliffVines1\\CityCliffVines1",
+"name": "Cliffside Vines",
+"tag": "any"
+},
+"ZOba": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\RuinsBloodyAltar\\RuinsBloodyAltar",
+"name": "Bloody Altar",
+"tag": "any"
+},
+"ZObz": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\Brazier\\Brazier",
+"name": "Ruins Brazier",
+"tag": "any"
+},
+"ZOd2": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower2\\DalaranRuinTower2",
+"name": "Ruined Tower",
+"tag": "any"
+},
+"ZOdt": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower",
+"name": "Ruined Tower",
+"tag": "any"
+},
+"ZOfo": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\RuinFountain\\RuinFountain",
+"name": "Ruins Fountain",
+"tag": "any"
+},
+"ZOfp": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\Firepot\\Firepot",
+"name": "Ruins Firepot",
+"tag": "any"
+},
+"ZOls": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\LibraryShelf\\LibraryShelf",
+"name": "Library Shelf",
+"tag": "any"
+},
+"ZOob": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\RuinsObelisk\\RuinsObelisk",
+"name": "Ruins Obelisk",
+"tag": "any"
+},
+"ZOrb": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTowerBase\\DalaranRuinTowerBase",
+"name": "Ruined Tower Base",
+"tag": "any"
+},
+"ZOrc": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinCrystals\\DalaranRuinCrystals",
+"name": "Ruined Crystal Tower",
+"tag": "any"
+},
+"ZOrp": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\RuinsPillar\\RuinsPillar",
+"name": "Ruins Pillar",
+"tag": "any"
+},
+"ZOrt": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\RuinsRuinedThrone\\RuinsRuinedThrone",
+"name": "Ruins Throne",
+"tag": "any"
+},
+"ZOsb": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\StatueBroken\\StatueBroken",
+"name": "Ruins Broken Statue",
+"tag": "any"
+},
+"ZOsh": {
+"cat": "E",
+"model": "Doodads\\Ruins\\Props\\Ruins_Shells\\Ruins_Shells",
+"name": "Shells",
+"tag": "any"
+},
+"ZOss": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\Stone\\Stone",
+"name": " Ruins Stones",
+"tag": "any"
+},
+"ZOst": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\Statue\\Statue",
+"name": "Ruins Statue",
+"tag": "any"
+},
+"ZOt2": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTwoBases2\\DalaranRuinTwoBases2",
+"name": "Ruined Double Base",
+"tag": "any"
+},
+"ZOtb": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\DalaranRuinTwoBases\\DalaranRuinTwoBases",
+"name": "Ruined Double Base",
+"tag": "any"
+},
+"ZOtr": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\RuinsTrash\\RuinsTrash",
+"name": "Trash",
+"tag": "any"
+},
+"ZOvr": {
+"cat": "O",
+"model": "Doodads\\Ruins\\Props\\DalaranVioletCitadelRuin\\DalaranVioletCitadelRuin",
+"name": "Ruined Violet Citadel",
+"tag": "any"
+},
+"ZPf0": {
+"cat": "E",
+"model": "Doodads\\Ruins\\Plants\\Ruins_Flower\\Ruins_Flower",
+"name": "Flowers",
+"tag": "any"
+},
+"ZPfw": {
+"cat": "E",
+"model": "Doodads\\Ruins\\Plants\\Ruins_Flower\\Ruins_Flower",
+"name": "Flowers",
+"tag": "any"
+},
+"ZPlp": {
+"cat": "E",
+"model": "Doodads\\Ruins\\Plants\\Ruins_Lilypad\\Ruins_Lilypad",
+"name": "Lilypad",
+"tag": "floating"
+},
+"ZPms": {
+"cat": "E",
+"model": "Doodads\\Ruins\\Plants\\Ruins_Shroom\\Ruins_Shroom",
+"name": "Mushrooms",
+"tag": "any"
+},
+"ZPru": {
+"cat": "E",
+"model": "Doodads\\Ruins\\Plants\\Ruins_Rush\\Ruins_Rush",
+"name": "CatTail",
+"tag": "any"
+},
+"ZPsh": {
+"cat": "E",
+"model": "Doodads\\Ruins\\Plants\\Ruins_Shrub\\Ruins_Shrub",
+"name": "Shrub",
+"tag": "any"
+},
+"ZPtw": {
+"cat": "E",
+"model": "Doodads\\Ruins\\Plants\\RuinsTreeDoodad\\RuinsTreeDoodad",
+"name": "Sunken Ruins Tree",
+"tag": "any"
+},
+"ZPvp": {
+"cat": "E",
+"model": "Doodads\\Ruins\\Plants\\VinyPlant\\VinyPlant",
+"name": "Viny Plant",
+"tag": "any"
+},
+"ZRbd": {
+"cat": "E",
+"model": "Doodads\\Ruins\\Rocks\\CliffRubble_Double\\CliffRubble_Double",
+"name": "Large Rubble",
+"tag": "any"
+},
+"ZRbs": {
+"cat": "E",
+"model": "Doodads\\Ruins\\Rocks\\CliffRubble_Single\\CliffRubble_Single",
+"name": "Small Rubble",
+"tag": "any"
+},
+"ZRrk": {
+"cat": "E",
+"model": "Doodads\\Ruins\\Rocks\\Ruins_Rock\\Ruins_Rock",
+"name": "Rocks",
+"tag": "any"
+},
+"ZRrs": {
+"cat": "E",
+"model": "Doodads\\Ruins\\Rocks\\Ruins_Spires\\Ruins_Spires",
+"name": "Rock Spires",
+"tag": "any"
+},
+"ZRsp": {
+"cat": "E",
+"model": "Doodads\\Ruins\\Rocks\\Ruins_Spires\\Ruins_Spires",
+"name": "Small Rock Spires",
+"tag": "any"
+},
+"ZSa1": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Structures\\SRuinArch45\\SRuinArch45",
+"name": "Archway",
+"tag": "any"
+},
+"ZSab": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Structures\\RuinsArchwayBroken00\\RuinsArchwayBroken00",
+"name": "Ruined Archway",
+"tag": "any"
+},
+"ZSar": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Structures\\SRuinArch\\SRuinArch",
+"name": "Archway",
+"tag": "any"
+},
+"ZSas": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Structures\\RuinsArchway0_\\RuinsArchway0_",
+"name": "Archway",
+"tag": "any"
+},
+"ZSb1": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Structures\\RuinsArchwayBroken450\\RuinsArchwayBroken450",
+"name": "Ruined Archway",
+"tag": "any"
+},
+"ZSrb": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Structures\\RuinsBuilding\\RuinsBuilding",
+"name": "Ruins",
+"tag": "any"
+},
+"ZSs1": {
+"cat": "S",
+"model": "Doodads\\Ruins\\Structures\\RuinsArchway45_\\RuinsArchway45_",
+"name": "Archway",
+"tag": "any"
+},
+"ZTd1": {
+"cat": "D",
+"model": "",
+"name": "RoundDoor",
+"tag": "any"
+},
+"ZTd2": {
+"cat": "D",
+"model": "",
+"name": "RoundDoor",
+"tag": "any"
+},
+"ZTd3": {
+"cat": "D",
+"model": "",
+"name": "RoundDoor",
+"tag": "any"
+},
+"ZTd4": {
+"cat": "D",
+"model": "",
+"name": "RoundDoor",
+"tag": "any"
+},
+"ZTd5": {
+"cat": "D",
+"model": "",
+"name": "RoundDoor",
+"tag": "any"
+},
+"ZTd6": {
+"cat": "D",
+"model": "",
+"name": "RoundDoor",
+"tag": "any"
+},
+"ZTd7": {
+"cat": "D",
+"model": "",
+"name": "RoundDoor",
+"tag": "any"
+},
+"ZTd8": {
+"cat": "D",
+"model": "",
+"name": "RoundDoor",
+"tag": "any"
+},
+"ZTg1": {
+"cat": "D",
+"model": "",
+"name": "Gate",
+"tag": "any"
+},
+"ZTg2": {
+"cat": "D",
+"model": "",
+"name": "Gate",
+"tag": "any"
+},
+"ZTg3": {
+"cat": "D",
+"model": "",
+"name": "Gate",
+"tag": "any"
+},
+"ZTg4": {
+"cat": "D",
+"model": "",
+"name": "Gate",
+"tag": "any"
+},
+"ZTnc": {
+"cat": "D",
+"model": "",
+"name": "Ruins Naga Circle",
+"tag": "any"
+},
+"ZTr0": {
+"cat": "B",
+"model": "",
+"name": "NagaRampSmall0",
+"tag": "any"
+},
+"ZTr1": {
+"cat": "B",
+"model": "",
+"name": "NagaRampSmall90",
+"tag": "any"
+},
+"ZTr2": {
+"cat": "B",
+"model": "",
+"name": "NagaRampSmall180",
+"tag": "any"
+},
+"ZTr3": {
+"cat": "B",
+"model": "",
+"name": "NagaRampSmall270",
+"tag": "any"
+},
+"ZTsg": {
+"cat": "D",
+"model": "",
+"name": "Gate to the Tomb of Sargeras",
+"tag": "any"
+},
+"ZTsx": {
+"cat": "D",
+"model": "",
+"name": "Gate to the Tomb of Sargeras",
+"tag": "any"
+},
+"ZTtc": {
+"cat": "D",
+"model": "",
+"name": "Canopy Tree",
+"tag": "any"
+},
+"ZTtw": {
+"cat": "D",
+"model": "",
+"name": "Tree Wall",
+"tag": "any"
+},
+"ZTw0": {
+"cat": "D",
+"model": "",
+"name": "Stone Wall 0",
+"tag": "any"
+},
+"ZTw1": {
+"cat": "D",
+"model": "",
+"name": "Stone Wall 45",
+"tag": "any"
+},
+"ZTw2": {
+"cat": "D",
+"model": "",
+"name": "Stone Wall 90",
+"tag": "any"
+},
+"ZTw3": {
+"cat": "D",
+"model": "",
+"name": "Stone Wall 135",
+"tag": "any"
+},
+"ZWbg": {
+"cat": "W",
+"model": "Doodads\\Ruins\\Water\\BubbleGeyser\\BubbleGeyser",
+"name": "Bubbles",
+"tag": "floating"
+},
+"ZWca": {
+"cat": "W",
+"model": "Doodads\\Ruins\\Water\\CoralArch\\CoralArch",
+"name": "Coral Arch",
+"tag": "water"
+},
+"ZWcl": {
+"cat": "W",
+"model": "Doodads\\Ruins\\Water\\Coral\\Coral",
+"name": "Coral",
+"tag": "water"
+},
+"ZWfs": {
+"cat": "W",
+"model": "Doodads\\Ruins\\Water\\FishTropical\\FishTropical",
+"name": "Green Fish",
+"tag": "water"
+},
+"ZWsf": {
+"cat": "W",
+"model": "Doodads\\Ruins\\Water\\FishSchool\\FishSchool",
+"name": "School of Fish",
+"tag": "water"
+},
+"ZWsw": {
+"cat": "W",
+"model": "Doodads\\Ruins\\Water\\Seaweed0\\Seaweed0",
+"name": "Seaweed",
+"tag": "floating"
+},
+"ZZcd": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\CavernDust\\CavernDust",
+"name": "Dust",
+"tag": "any"
+},
+"ZZdt": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\DemonFootPrint\\DemonFootPrint",
+"name": "Demonic Footprints",
+"tag": "any"
+},
+"ZZgr": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\RunesOfGuldan\\RunesOfGuldan",
+"name": "Gul'dan's Runes",
+"tag": "any"
+},
+"ZZys": {
+"cat": "Z",
+"model": "Doodads\\Cinematic\\EyeOfSargeras\\EyeOfSargeras",
+"name": "Eye of Sargeras",
+"tag": "any"
+}
+},
+"note": "generated by doodad_terrain_fit.py --table from stock doodads.slk/destructabledata.slk + manual lists"
+}

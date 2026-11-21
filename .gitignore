@@ -1,0 +1,15 @@
+*.bak*
+__pycache__/
+*.pyc
+*SECRET*
+.DS_Store
+*.tmp
+
+output/*
+!output/README.md
+external/*
+!external/README.md
+tools/lib/bw/isomtool
+tools/lib/bw/tileset
+tools/lib/bw/isomtool_src/external/
+.cache/

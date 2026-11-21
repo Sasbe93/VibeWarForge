@@ -1,0 +1,4506 @@
+{
+ "source": "WC3 TFT current melee data (patch 1.36 / Reforged 2.0), rawcodes from Blizzard UnitData.slk/UpgradeData.slk naming, cross-checked against common.ai constants; requirement details from knowledge, not extracted from game files (no war3.mpq/CASC on box)",
+ "notes": [
+  "requires = buildings that must exist (completed, owned) besides the producer",
+  "tier equivalents: a higher hall satisfies a lower hall requirement (equivalents)",
+  "level_requires[i] = extra buildings needed for level i+1 of an upgrade",
+  "how: build|train|upgrade (building morph)|research:<Rxxx> (unit transforms after research)|ability",
+  "families: weapon/armor upgrade families per race that should share max level",
+  "heroes also need: 1 hero free per altar tier (2nd hero at tier2, 3rd at tier3) - checker treats hero count as info only",
+  "verified overlay: requirements of listed ids taken from Liquipedia (current patch); shop_items = per-shop items with extra required building/tier",
+  "Naga: taken from stock campaign data (campaignunitfunc.txt Builds/Trains/Researches, campaignupgradestrings.txt). Naga is not a playable melee race: single hall tier, no requirements set in stock data, Royal Guard/Summoner not trainable. Use it as a reference for a 5th race, not as melee balance."
+ ],
+ "equivalents": {
+  "htow": [
+   "hkee",
+   "hcas"
+  ],
+  "hkee": [
+   "hcas"
+  ],
+  "ogre": [
+   "ostr",
+   "ofrt"
+  ],
+  "ostr": [
+   "ofrt"
+  ],
+  "unpl": [
+   "unp1",
+   "unp2"
+  ],
+  "unp1": [
+   "unp2"
+  ],
+  "etol": [
+   "etoa",
+   "etoe"
+  ],
+  "etoa": [
+   "etoe"
+  ],
+  "hwtw": [
+   "hgtw",
+   "hctw",
+   "hatw"
+  ],
+  "uzig": [
+   "uzg1",
+   "uzg2"
+  ]
+ },
+ "tiers": {
+  "Human": [
+   "htow",
+   "hkee",
+   "hcas"
+  ],
+  "Orc": [
+   "ogre",
+   "ostr",
+   "ofrt"
+  ],
+  "Undead": [
+   "unpl",
+   "unp1",
+   "unp2"
+  ],
+  "NightElf": [
+   "etol",
+   "etoa",
+   "etoe"
+  ],
+  "Naga": [
+   "nntt"
+  ]
+ },
+ "families": {
+  "Human": [
+   [
+    "Rhme",
+    "Rhra"
+   ],
+   [
+    "Rhar",
+    "Rhla"
+   ]
+  ],
+  "Orc": [
+   [
+    "Rome",
+    "Rora"
+   ],
+   [
+    "Roar"
+   ]
+  ],
+  "Undead": [
+   [
+    "Rume",
+    "Rura"
+   ],
+   [
+    "Ruar",
+    "Rucr"
+   ]
+  ],
+  "NightElf": [
+   [
+    "Resm",
+    "Resw"
+   ],
+   [
+    "Rema",
+    "Rerh"
+   ]
+  ],
+  "Naga": [
+   [
+    "Rnat"
+   ],
+   [
+    "Rnam"
+   ]
+  ]
+ },
+ "gold_mine": "ngol",
+ "town_halls": [
+  "htow",
+  "hkee",
+  "hcas",
+  "ogre",
+  "ostr",
+  "ofrt",
+  "unpl",
+  "unp1",
+  "unp2",
+  "etol",
+  "etoa",
+  "etoe",
+  "nntt"
+ ],
+ "units": [
+  {
+   "id": "htow",
+   "name": "Town Hall",
+   "race": "Human",
+   "kind": "townhall",
+   "produced_by": [
+    "hpea"
+   ],
+   "how": "build",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "hkee",
+   "name": "Keep",
+   "race": "Human",
+   "kind": "townhall",
+   "produced_by": [
+    "htow"
+   ],
+   "how": "upgrade",
+   "requires": [
+    "halt"
+   ],
+   "note": "tier 2"
+  },
+  {
+   "id": "hcas",
+   "name": "Castle",
+   "race": "Human",
+   "kind": "townhall",
+   "produced_by": [
+    "hkee"
+   ],
+   "how": "upgrade",
+   "requires": [
+    "halt"
+   ],
+   "note": "tier 3"
+  },
+  {
+   "id": "hhou",
+   "name": "Farm",
+   "race": "Human",
+   "kind": "building",
+   "produced_by": [
+    "hpea"
+   ],
+   "how": "build",
+   "requires": [],
+   "note": "food 6"
+  },
+  {
+   "id": "hbar",
+   "name": "Barracks",
+   "race": "Human",
+   "kind": "building",
+   "produced_by": [
+    "hpea"
+   ],
+   "how": "build",
+   "requires": [
+    "htow"
+   ],
+   "note": ""
+  },
+  {
+   "id": "hlum",
+   "name": "Lumber Mill",
+   "race": "Human",
+   "kind": "building",
+   "produced_by": [
+    "hpea"
+   ],
+   "how": "build",
+   "requires": [
+    "htow"
+   ],
+   "note": ""
+  },
+  {
+   "id": "hbla",
+   "name": "Blacksmith",
+   "race": "Human",
+   "kind": "building",
+   "produced_by": [
+    "hpea"
+   ],
+   "how": "build",
+   "requires": [
+    "htow"
+   ],
+   "note": ""
+  },
+  {
+   "id": "halt",
+   "name": "Altar of Kings",
+   "race": "Human",
+   "kind": "building",
+   "produced_by": [
+    "hpea"
+   ],
+   "how": "build",
+   "requires": [
+    "htow"
+   ],
+   "note": ""
+  },
+  {
+   "id": "harm",
+   "name": "Workshop",
+   "race": "Human",
+   "kind": "building",
+   "produced_by": [
+    "hpea"
+   ],
+   "how": "build",
+   "requires": [
+    "hbla",
+    "hkee"
+   ],
+   "note": ""
+  },
+  {
+   "id": "hars",
+   "name": "Arcane Sanctum",
+   "race": "Human",
+   "kind": "building",
+   "produced_by": [
+    "hpea"
+   ],
+   "how": "build",
+   "requires": [
+    "hkee"
+   ],
+   "note": ""
+  },
+  {
+   "id": "hgra",
+   "name": "Gryphon Aviary",
+   "race": "Human",
+   "kind": "building",
+   "produced_by": [
+    "hpea"
+   ],
+   "how": "build",
+   "requires": [
+    "hkee",
+    "hlum"
+   ],
+   "note": ""
+  },
+  {
+   "id": "hvlt",
+   "name": "Arcane Vault",
+   "race": "Human",
+   "kind": "building",
+   "produced_by": [
+    "hpea"
+   ],
+   "how": "build",
+   "requires": [
+    "htow"
+   ],
+   "note": "shop"
+  },
+  {
+   "id": "hwtw",
+   "name": "Scout Tower",
+   "race": "Human",
+   "kind": "building",
+   "produced_by": [
+    "hpea"
+   ],
+   "how": "build",
+   "requires": [
+    "hlum"
+   ],
+   "note": ""
+  },
+  {
+   "id": "hgtw",
+   "name": "Guard Tower",
+   "race": "Human",
+   "kind": "building",
+   "produced_by": [
+    "hwtw"
+   ],
+   "how": "upgrade",
+   "requires": [
+    "hlum"
+   ],
+   "note": ""
+  },
+  {
+   "id": "hctw",
+   "name": "Cannon Tower",
+   "race": "Human",
+   "kind": "building",
+   "produced_by": [
+    "hwtw"
+   ],
+   "how": "upgrade",
+   "requires": [
+    "harm"
+   ],
+   "note": ""
+  },
+  {
+   "id": "hatw",
+   "name": "Arcane Tower",
+   "race": "Human",
+   "kind": "building",
+   "produced_by": [
+    "hwtw"
+   ],
+   "how": "upgrade",
+   "requires": [
+    "hars"
+   ],
+   "note": ""
+  },
+  {
+   "id": "hpea",
+   "name": "Peasant",
+   "race": "Human",
+   "kind": "unit",
+   "produced_by": [
+    "htow"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "hmil",
+   "name": "Militia",
+   "race": "Human",
+   "kind": "unit",
+   "produced_by": [
+    "hpea"
+   ],
+   "how": "ability",
+   "requires": [
+    "htow"
+   ],
+   "note": "Call to Arms (Amic)"
+  },
+  {
+   "id": "hfoo",
+   "name": "Footman",
+   "race": "Human",
+   "kind": "unit",
+   "produced_by": [
+    "hbar"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "hrif",
+   "name": "Rifleman",
+   "race": "Human",
+   "kind": "unit",
+   "produced_by": [
+    "hbar"
+   ],
+   "how": "train",
+   "requires": [
+    "hbla"
+   ],
+   "note": ""
+  },
+  {
+   "id": "hkni",
+   "name": "Knight",
+   "race": "Human",
+   "kind": "unit",
+   "produced_by": [
+    "hbar"
+   ],
+   "how": "train",
+   "requires": [
+    "hbla",
+    "hcas",
+    "hlum"
+   ],
+   "note": ""
+  },
+  {
+   "id": "hmpr",
+   "name": "Priest",
+   "race": "Human",
+   "kind": "unit",
+   "produced_by": [
+    "hars"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "hsor",
+   "name": "Sorceress",
+   "race": "Human",
+   "kind": "unit",
+   "produced_by": [
+    "hars"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "hspt",
+   "name": "Spell Breaker",
+   "race": "Human",
+   "kind": "unit",
+   "produced_by": [
+    "hars"
+   ],
+   "how": "train",
+   "requires": [
+    "hkee",
+    "hvlt"
+   ],
+   "note": ""
+  },
+  {
+   "id": "hmtm",
+   "name": "Mortar Team",
+   "race": "Human",
+   "kind": "unit",
+   "produced_by": [
+    "harm"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "hgyr",
+   "name": "Flying Machine",
+   "race": "Human",
+   "kind": "unit",
+   "produced_by": [
+    "harm"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "hmtt",
+   "name": "Siege Engine",
+   "race": "Human",
+   "kind": "unit",
+   "produced_by": [
+    "harm"
+   ],
+   "how": "train",
+   "requires": [
+    "hcas"
+   ],
+   "note": ""
+  },
+  {
+   "id": "hrtt",
+   "name": "Siege Engine (Barrage)",
+   "race": "Human",
+   "kind": "unit",
+   "produced_by": [
+    "hmtt"
+   ],
+   "how": "research:Rhrt",
+   "requires": [
+    "hcas"
+   ],
+   "note": "upgraded form"
+  },
+  {
+   "id": "hgry",
+   "name": "Gryphon Rider",
+   "race": "Human",
+   "kind": "unit",
+   "produced_by": [
+    "hgra"
+   ],
+   "how": "train",
+   "requires": [
+    "hcas"
+   ],
+   "note": ""
+  },
+  {
+   "id": "hdhw",
+   "name": "Dragonhawk Rider",
+   "race": "Human",
+   "kind": "unit",
+   "produced_by": [
+    "hgra"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "Hpal",
+   "name": "Paladin",
+   "race": "Human",
+   "kind": "hero",
+   "produced_by": [
+    "halt"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "Hamg",
+   "name": "Archmage",
+   "race": "Human",
+   "kind": "hero",
+   "produced_by": [
+    "halt"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "Hmkg",
+   "name": "Mountain King",
+   "race": "Human",
+   "kind": "hero",
+   "produced_by": [
+    "halt"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "Hblm",
+   "name": "Blood Mage",
+   "race": "Human",
+   "kind": "hero",
+   "produced_by": [
+    "halt"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "ogre",
+   "name": "Great Hall",
+   "race": "Orc",
+   "kind": "townhall",
+   "produced_by": [
+    "opeo"
+   ],
+   "how": "build",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "ostr",
+   "name": "Stronghold",
+   "race": "Orc",
+   "kind": "townhall",
+   "produced_by": [
+    "ogre"
+   ],
+   "how": "upgrade",
+   "requires": [
+    "oalt"
+   ],
+   "note": "tier 2"
+  },
+  {
+   "id": "ofrt",
+   "name": "Fortress",
+   "race": "Orc",
+   "kind": "townhall",
+   "produced_by": [
+    "ostr"
+   ],
+   "how": "upgrade",
+   "requires": [
+    "oalt"
+   ],
+   "note": "tier 3"
+  },
+  {
+   "id": "otrb",
+   "name": "Orc Burrow",
+   "race": "Orc",
+   "kind": "building",
+   "produced_by": [
+    "opeo"
+   ],
+   "how": "build",
+   "requires": [
+    "ogre"
+   ],
+   "note": "food 10"
+  },
+  {
+   "id": "obar",
+   "name": "Barracks",
+   "race": "Orc",
+   "kind": "building",
+   "produced_by": [
+    "opeo"
+   ],
+   "how": "build",
+   "requires": [
+    "ogre"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ofor",
+   "name": "War Mill",
+   "race": "Orc",
+   "kind": "building",
+   "produced_by": [
+    "opeo"
+   ],
+   "how": "build",
+   "requires": [
+    "ogre"
+   ],
+   "note": ""
+  },
+  {
+   "id": "oalt",
+   "name": "Altar of Storms",
+   "race": "Orc",
+   "kind": "building",
+   "produced_by": [
+    "opeo"
+   ],
+   "how": "build",
+   "requires": [
+    "ogre"
+   ],
+   "note": ""
+  },
+  {
+   "id": "osld",
+   "name": "Spirit Lodge",
+   "race": "Orc",
+   "kind": "building",
+   "produced_by": [
+    "opeo"
+   ],
+   "how": "build",
+   "requires": [
+    "obar",
+    "ostr"
+   ],
+   "note": ""
+  },
+  {
+   "id": "obea",
+   "name": "Beastiary",
+   "race": "Orc",
+   "kind": "building",
+   "produced_by": [
+    "opeo"
+   ],
+   "how": "build",
+   "requires": [
+    "obar",
+    "ostr"
+   ],
+   "note": ""
+  },
+  {
+   "id": "otto",
+   "name": "Tauren Totem",
+   "race": "Orc",
+   "kind": "building",
+   "produced_by": [
+    "opeo"
+   ],
+   "how": "build",
+   "requires": [
+    "ofor",
+    "ostr"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ovln",
+   "name": "Voodoo Lounge",
+   "race": "Orc",
+   "kind": "building",
+   "produced_by": [
+    "opeo"
+   ],
+   "how": "build",
+   "requires": [
+    "ogre"
+   ],
+   "note": "shop"
+  },
+  {
+   "id": "owtw",
+   "name": "Watch Tower",
+   "race": "Orc",
+   "kind": "building",
+   "produced_by": [
+    "opeo"
+   ],
+   "how": "build",
+   "requires": [
+    "ofor"
+   ],
+   "note": ""
+  },
+  {
+   "id": "opeo",
+   "name": "Peon",
+   "race": "Orc",
+   "kind": "unit",
+   "produced_by": [
+    "ogre"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "ogru",
+   "name": "Grunt",
+   "race": "Orc",
+   "kind": "unit",
+   "produced_by": [
+    "obar"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "ohun",
+   "name": "Troll Headhunter",
+   "race": "Orc",
+   "kind": "unit",
+   "produced_by": [
+    "obar"
+   ],
+   "how": "train",
+   "requires": [
+    "ofor"
+   ],
+   "note": ""
+  },
+  {
+   "id": "otbk",
+   "name": "Troll Berserker",
+   "race": "Orc",
+   "kind": "unit",
+   "produced_by": [
+    "ohun"
+   ],
+   "how": "research:Robk",
+   "requires": [],
+   "note": "upgraded form"
+  },
+  {
+   "id": "ocat",
+   "name": "Demolisher",
+   "race": "Orc",
+   "kind": "unit",
+   "produced_by": [
+    "obar"
+   ],
+   "how": "train",
+   "requires": [
+    "ofor",
+    "ostr"
+   ],
+   "note": ""
+  },
+  {
+   "id": "orai",
+   "name": "Raider",
+   "race": "Orc",
+   "kind": "unit",
+   "produced_by": [
+    "obea"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "okod",
+   "name": "Kodo Beast",
+   "race": "Orc",
+   "kind": "unit",
+   "produced_by": [
+    "obea"
+   ],
+   "how": "train",
+   "requires": [
+    "ofor"
+   ],
+   "note": ""
+  },
+  {
+   "id": "owyv",
+   "name": "Wind Rider",
+   "race": "Orc",
+   "kind": "unit",
+   "produced_by": [
+    "obea"
+   ],
+   "how": "train",
+   "requires": [
+    "ofrt"
+   ],
+   "note": ""
+  },
+  {
+   "id": "otbr",
+   "name": "Troll Batrider",
+   "race": "Orc",
+   "kind": "unit",
+   "produced_by": [
+    "obea"
+   ],
+   "how": "train",
+   "requires": [
+    "ovln"
+   ],
+   "note": ""
+  },
+  {
+   "id": "oshm",
+   "name": "Shaman",
+   "race": "Orc",
+   "kind": "unit",
+   "produced_by": [
+    "osld"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "odoc",
+   "name": "Troll Witch Doctor",
+   "race": "Orc",
+   "kind": "unit",
+   "produced_by": [
+    "osld"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "ospm",
+   "name": "Spirit Walker",
+   "race": "Orc",
+   "kind": "unit",
+   "produced_by": [
+    "otto"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "otau",
+   "name": "Tauren",
+   "race": "Orc",
+   "kind": "unit",
+   "produced_by": [
+    "otto"
+   ],
+   "how": "train",
+   "requires": [
+    "ofor",
+    "ofrt"
+   ],
+   "note": ""
+  },
+  {
+   "id": "Obla",
+   "name": "Blademaster",
+   "race": "Orc",
+   "kind": "hero",
+   "produced_by": [
+    "oalt"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "Ofar",
+   "name": "Far Seer",
+   "race": "Orc",
+   "kind": "hero",
+   "produced_by": [
+    "oalt"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "Otch",
+   "name": "Tauren Chieftain",
+   "race": "Orc",
+   "kind": "hero",
+   "produced_by": [
+    "oalt"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "Oshd",
+   "name": "Shadow Hunter",
+   "race": "Orc",
+   "kind": "hero",
+   "produced_by": [
+    "oalt"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "unpl",
+   "name": "Necropolis",
+   "race": "Undead",
+   "kind": "townhall",
+   "produced_by": [
+    "uaco"
+   ],
+   "how": "build",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "unp1",
+   "name": "Halls of the Dead",
+   "race": "Undead",
+   "kind": "townhall",
+   "produced_by": [
+    "unpl"
+   ],
+   "how": "upgrade",
+   "requires": [
+    "uaod"
+   ],
+   "note": "tier 2"
+  },
+  {
+   "id": "unp2",
+   "name": "Black Citadel",
+   "race": "Undead",
+   "kind": "townhall",
+   "produced_by": [
+    "unp1"
+   ],
+   "how": "upgrade",
+   "requires": [
+    "uaod"
+   ],
+   "note": "tier 3"
+  },
+  {
+   "id": "uzig",
+   "name": "Ziggurat",
+   "race": "Undead",
+   "kind": "building",
+   "produced_by": [
+    "uaco"
+   ],
+   "how": "build",
+   "requires": [
+    "unpl"
+   ],
+   "note": "food 10"
+  },
+  {
+   "id": "uzg1",
+   "name": "Spirit Tower",
+   "race": "Undead",
+   "kind": "building",
+   "produced_by": [
+    "uzig"
+   ],
+   "how": "upgrade",
+   "requires": [
+    "ugrv"
+   ],
+   "note": ""
+  },
+  {
+   "id": "uzg2",
+   "name": "Nerubian Tower",
+   "race": "Undead",
+   "kind": "building",
+   "produced_by": [
+    "uzig"
+   ],
+   "how": "upgrade",
+   "requires": [
+    "ugrv"
+   ],
+   "note": ""
+  },
+  {
+   "id": "usep",
+   "name": "Crypt",
+   "race": "Undead",
+   "kind": "building",
+   "produced_by": [
+    "uaco"
+   ],
+   "how": "build",
+   "requires": [
+    "unpl"
+   ],
+   "note": ""
+  },
+  {
+   "id": "uaod",
+   "name": "Altar of Darkness",
+   "race": "Undead",
+   "kind": "building",
+   "produced_by": [
+    "uaco"
+   ],
+   "how": "build",
+   "requires": [
+    "unpl"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ugrv",
+   "name": "Graveyard",
+   "race": "Undead",
+   "kind": "building",
+   "produced_by": [
+    "uaco"
+   ],
+   "how": "build",
+   "requires": [
+    "unpl"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ugol",
+   "name": "Haunted Gold Mine",
+   "race": "Undead",
+   "kind": "building",
+   "produced_by": [
+    "uaco"
+   ],
+   "how": "build",
+   "requires": [
+    "unpl"
+   ],
+   "note": "on gold mine"
+  },
+  {
+   "id": "utom",
+   "name": "Tomb of Relics",
+   "race": "Undead",
+   "kind": "building",
+   "produced_by": [
+    "uaco"
+   ],
+   "how": "build",
+   "requires": [
+    "unpl"
+   ],
+   "note": "shop"
+  },
+  {
+   "id": "uslh",
+   "name": "Slaughterhouse",
+   "race": "Undead",
+   "kind": "building",
+   "produced_by": [
+    "uaco"
+   ],
+   "how": "build",
+   "requires": [
+    "ugrv",
+    "unp1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "utod",
+   "name": "Temple of the Damned",
+   "race": "Undead",
+   "kind": "building",
+   "produced_by": [
+    "uaco"
+   ],
+   "how": "build",
+   "requires": [
+    "ugrv",
+    "unp1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "usap",
+   "name": "Sacrificial Pit",
+   "race": "Undead",
+   "kind": "building",
+   "produced_by": [
+    "uaco"
+   ],
+   "how": "build",
+   "requires": [
+    "unp1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ubon",
+   "name": "Boneyard",
+   "race": "Undead",
+   "kind": "building",
+   "produced_by": [
+    "uaco"
+   ],
+   "how": "build",
+   "requires": [
+    "unp2",
+    "usap"
+   ],
+   "note": ""
+  },
+  {
+   "id": "uaco",
+   "name": "Acolyte",
+   "race": "Undead",
+   "kind": "unit",
+   "produced_by": [
+    "unpl"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "ugho",
+   "name": "Ghoul",
+   "race": "Undead",
+   "kind": "unit",
+   "produced_by": [
+    "usep"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "ucry",
+   "name": "Crypt Fiend",
+   "race": "Undead",
+   "kind": "unit",
+   "produced_by": [
+    "usep"
+   ],
+   "how": "train",
+   "requires": [
+    "ugrv"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ugar",
+   "name": "Gargoyle",
+   "race": "Undead",
+   "kind": "unit",
+   "produced_by": [
+    "usep"
+   ],
+   "how": "train",
+   "requires": [
+    "ugrv",
+    "unp1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ugrm",
+   "name": "Gargoyle (Stone Form)",
+   "race": "Undead",
+   "kind": "unit",
+   "produced_by": [
+    "ugar"
+   ],
+   "how": "ability:Rusf",
+   "requires": [],
+   "note": "morph"
+  },
+  {
+   "id": "uabo",
+   "name": "Abomination",
+   "race": "Undead",
+   "kind": "unit",
+   "produced_by": [
+    "uslh"
+   ],
+   "how": "train",
+   "requires": [
+    "unp2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "umtw",
+   "name": "Meat Wagon",
+   "race": "Undead",
+   "kind": "unit",
+   "produced_by": [
+    "uslh"
+   ],
+   "how": "train",
+   "requires": [
+    "unp1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "uobs",
+   "name": "Obsidian Statue",
+   "race": "Undead",
+   "kind": "unit",
+   "produced_by": [
+    "uslh"
+   ],
+   "how": "train",
+   "requires": [
+    "utom"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ubsp",
+   "name": "Destroyer",
+   "race": "Undead",
+   "kind": "unit",
+   "produced_by": [
+    "uobs"
+   ],
+   "how": "research:Rusp",
+   "requires": [],
+   "note": "morph"
+  },
+  {
+   "id": "unec",
+   "name": "Necromancer",
+   "race": "Undead",
+   "kind": "unit",
+   "produced_by": [
+    "utod"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "uban",
+   "name": "Banshee",
+   "race": "Undead",
+   "kind": "unit",
+   "produced_by": [
+    "utod"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "ushd",
+   "name": "Shade",
+   "race": "Undead",
+   "kind": "unit",
+   "produced_by": [
+    "usap"
+   ],
+   "how": "ability",
+   "requires": [
+    "uaco"
+   ],
+   "note": "Sacrifice acolyte"
+  },
+  {
+   "id": "ufro",
+   "name": "Frost Wyrm",
+   "race": "Undead",
+   "kind": "unit",
+   "produced_by": [
+    "ubon"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "uske",
+   "name": "Skeleton Warrior",
+   "race": "Undead",
+   "kind": "unit",
+   "produced_by": [
+    "unec"
+   ],
+   "how": "ability",
+   "requires": [],
+   "note": "summoned"
+  },
+  {
+   "id": "Udea",
+   "name": "Death Knight",
+   "race": "Undead",
+   "kind": "hero",
+   "produced_by": [
+    "uaod"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "Udre",
+   "name": "Dreadlord",
+   "race": "Undead",
+   "kind": "hero",
+   "produced_by": [
+    "uaod"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "Ulic",
+   "name": "Lich",
+   "race": "Undead",
+   "kind": "hero",
+   "produced_by": [
+    "uaod"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "Ucrl",
+   "name": "Crypt Lord",
+   "race": "Undead",
+   "kind": "hero",
+   "produced_by": [
+    "uaod"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "etol",
+   "name": "Tree of Life",
+   "race": "NightElf",
+   "kind": "townhall",
+   "produced_by": [
+    "ewsp"
+   ],
+   "how": "build",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "etoa",
+   "name": "Tree of Ages",
+   "race": "NightElf",
+   "kind": "townhall",
+   "produced_by": [
+    "etol"
+   ],
+   "how": "upgrade",
+   "requires": [
+    "eate"
+   ],
+   "note": "tier 2"
+  },
+  {
+   "id": "etoe",
+   "name": "Tree of Eternity",
+   "race": "NightElf",
+   "kind": "townhall",
+   "produced_by": [
+    "etoa"
+   ],
+   "how": "upgrade",
+   "requires": [
+    "eate"
+   ],
+   "note": "tier 3"
+  },
+  {
+   "id": "emow",
+   "name": "Moon Well",
+   "race": "NightElf",
+   "kind": "building",
+   "produced_by": [
+    "ewsp"
+   ],
+   "how": "build",
+   "requires": [
+    "etol"
+   ],
+   "note": "food 10"
+  },
+  {
+   "id": "eaom",
+   "name": "Ancient of War",
+   "race": "NightElf",
+   "kind": "building",
+   "produced_by": [
+    "ewsp"
+   ],
+   "how": "build",
+   "requires": [
+    "etol"
+   ],
+   "note": ""
+  },
+  {
+   "id": "eate",
+   "name": "Altar of Elders",
+   "race": "NightElf",
+   "kind": "building",
+   "produced_by": [
+    "ewsp"
+   ],
+   "how": "build",
+   "requires": [
+    "etol"
+   ],
+   "note": ""
+  },
+  {
+   "id": "edob",
+   "name": "Hunter's Hall",
+   "race": "NightElf",
+   "kind": "building",
+   "produced_by": [
+    "ewsp"
+   ],
+   "how": "build",
+   "requires": [
+    "etol"
+   ],
+   "note": ""
+  },
+  {
+   "id": "etrp",
+   "name": "Ancient Protector",
+   "race": "NightElf",
+   "kind": "building",
+   "produced_by": [
+    "ewsp"
+   ],
+   "how": "build",
+   "requires": [
+    "eaom"
+   ],
+   "note": ""
+  },
+  {
+   "id": "eaoe",
+   "name": "Ancient of Lore",
+   "race": "NightElf",
+   "kind": "building",
+   "produced_by": [
+    "ewsp"
+   ],
+   "how": "build",
+   "requires": [
+    "eaom",
+    "edob",
+    "etoa"
+   ],
+   "note": ""
+  },
+  {
+   "id": "eaow",
+   "name": "Ancient of Wind",
+   "race": "NightElf",
+   "kind": "building",
+   "produced_by": [
+    "ewsp"
+   ],
+   "how": "build",
+   "requires": [
+    "eaom",
+    "etoa"
+   ],
+   "note": ""
+  },
+  {
+   "id": "edos",
+   "name": "Chimaera Roost",
+   "race": "NightElf",
+   "kind": "building",
+   "produced_by": [
+    "ewsp"
+   ],
+   "how": "build",
+   "requires": [
+    "eaow",
+    "etoe"
+   ],
+   "note": ""
+  },
+  {
+   "id": "eden",
+   "name": "Ancient of Wonders",
+   "race": "NightElf",
+   "kind": "building",
+   "produced_by": [
+    "ewsp"
+   ],
+   "how": "build",
+   "requires": [
+    "etol"
+   ],
+   "note": "shop"
+  },
+  {
+   "id": "egol",
+   "name": "Entangled Gold Mine",
+   "race": "NightElf",
+   "kind": "building",
+   "produced_by": [
+    "etol"
+   ],
+   "how": "ability",
+   "requires": [
+    "etol"
+   ],
+   "note": "Entangle (Aent)"
+  },
+  {
+   "id": "ewsp",
+   "name": "Wisp",
+   "race": "NightElf",
+   "kind": "unit",
+   "produced_by": [
+    "etol"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "earc",
+   "name": "Archer",
+   "race": "NightElf",
+   "kind": "unit",
+   "produced_by": [
+    "eaom"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "esen",
+   "name": "Huntress",
+   "race": "NightElf",
+   "kind": "unit",
+   "produced_by": [
+    "eaom"
+   ],
+   "how": "train",
+   "requires": [
+    "edob"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ebal",
+   "name": "Glaive Thrower",
+   "race": "NightElf",
+   "kind": "unit",
+   "produced_by": [
+    "eaom"
+   ],
+   "how": "train",
+   "requires": [
+    "edob"
+   ],
+   "note": ""
+  },
+  {
+   "id": "edry",
+   "name": "Dryad",
+   "race": "NightElf",
+   "kind": "unit",
+   "produced_by": [
+    "eaoe"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "edoc",
+   "name": "Druid of the Claw",
+   "race": "NightElf",
+   "kind": "unit",
+   "produced_by": [
+    "eaoe"
+   ],
+   "how": "train",
+   "requires": [
+    "etoa"
+   ],
+   "note": ""
+  },
+  {
+   "id": "edcm",
+   "name": "Druid of the Claw (Bear)",
+   "race": "NightElf",
+   "kind": "unit",
+   "produced_by": [
+    "edoc"
+   ],
+   "how": "ability",
+   "requires": [],
+   "note": "morph"
+  },
+  {
+   "id": "emtg",
+   "name": "Mountain Giant",
+   "race": "NightElf",
+   "kind": "unit",
+   "produced_by": [
+    "eaoe"
+   ],
+   "how": "train",
+   "requires": [
+    "eden",
+    "etoa"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ehip",
+   "name": "Hippogryph",
+   "race": "NightElf",
+   "kind": "unit",
+   "produced_by": [
+    "eaow"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "ehpr",
+   "name": "Hippogryph Rider",
+   "race": "NightElf",
+   "kind": "unit",
+   "produced_by": [
+    "ehip"
+   ],
+   "how": "ability:Reht",
+   "requires": [
+    "earc"
+   ],
+   "note": "archer mounts"
+  },
+  {
+   "id": "edot",
+   "name": "Druid of the Talon",
+   "race": "NightElf",
+   "kind": "unit",
+   "produced_by": [
+    "eaow"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "edtm",
+   "name": "Druid of the Talon (Storm Crow)",
+   "race": "NightElf",
+   "kind": "unit",
+   "produced_by": [
+    "edot"
+   ],
+   "how": "ability",
+   "requires": [],
+   "note": "morph"
+  },
+  {
+   "id": "efdr",
+   "name": "Faerie Dragon",
+   "race": "NightElf",
+   "kind": "unit",
+   "produced_by": [
+    "eaow"
+   ],
+   "how": "train",
+   "requires": [
+    "eden"
+   ],
+   "note": ""
+  },
+  {
+   "id": "echm",
+   "name": "Chimaera",
+   "race": "NightElf",
+   "kind": "unit",
+   "produced_by": [
+    "edos"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "Edem",
+   "name": "Demon Hunter",
+   "race": "NightElf",
+   "kind": "hero",
+   "produced_by": [
+    "eate"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "Ekee",
+   "name": "Keeper of the Grove",
+   "race": "NightElf",
+   "kind": "hero",
+   "produced_by": [
+    "eate"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "Emoo",
+   "name": "Priestess of the Moon",
+   "race": "NightElf",
+   "kind": "hero",
+   "produced_by": [
+    "eate"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "Ewar",
+   "name": "Warden",
+   "race": "NightElf",
+   "kind": "hero",
+   "produced_by": [
+    "eate"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "nntt",
+   "name": "Temple of Tides",
+   "race": "Naga",
+   "kind": "townhall",
+   "produced_by": [
+    "nmpe"
+   ],
+   "how": "build",
+   "requires": [],
+   "note": "single tier; no hall upgrades in stock data; resource drop-off"
+  },
+  {
+   "id": "nnfm",
+   "name": "Coral Bed",
+   "race": "Naga",
+   "kind": "building",
+   "produced_by": [
+    "nmpe"
+   ],
+   "how": "build",
+   "requires": [],
+   "note": "food"
+  },
+  {
+   "id": "nntg",
+   "name": "Tidal Guardian",
+   "race": "Naga",
+   "kind": "building",
+   "produced_by": [
+    "nmpe"
+   ],
+   "how": "build",
+   "requires": [],
+   "note": "tower"
+  },
+  {
+   "id": "nnsg",
+   "name": "Spawning Grounds",
+   "race": "Naga",
+   "kind": "building",
+   "produced_by": [
+    "nmpe"
+   ],
+   "how": "build",
+   "requires": [],
+   "note": "barracks-equivalent"
+  },
+  {
+   "id": "nnsa",
+   "name": "Shrine of Azshara",
+   "race": "Naga",
+   "kind": "building",
+   "produced_by": [
+    "nmpe"
+   ],
+   "how": "build",
+   "requires": [],
+   "note": "caster/air building"
+  },
+  {
+   "id": "nnad",
+   "name": "Altar of the Depths",
+   "race": "Naga",
+   "kind": "building",
+   "produced_by": [
+    "nmpe"
+   ],
+   "how": "build",
+   "requires": [],
+   "note": "altar"
+  },
+  {
+   "id": "nmpe",
+   "name": "Mur'gul Slave",
+   "race": "Naga",
+   "kind": "unit",
+   "produced_by": [
+    "nntt"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": "worker"
+  },
+  {
+   "id": "nnmg",
+   "name": "Mur'gul Reaver",
+   "race": "Naga",
+   "kind": "unit",
+   "produced_by": [
+    "nntt"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "nmyr",
+   "name": "Naga Myrmidon",
+   "race": "Naga",
+   "kind": "unit",
+   "produced_by": [
+    "nnsg"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "nsnp",
+   "name": "Snap Dragon",
+   "race": "Naga",
+   "kind": "unit",
+   "produced_by": [
+    "nnsg"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "nhyc",
+   "name": "Dragon Turtle",
+   "race": "Naga",
+   "kind": "unit",
+   "produced_by": [
+    "nnsg"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "nnsw",
+   "name": "Naga Siren",
+   "race": "Naga",
+   "kind": "unit",
+   "produced_by": [
+    "nnsa"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "nwgs",
+   "name": "Couatl",
+   "race": "Naga",
+   "kind": "unit",
+   "produced_by": [
+    "nnsa"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": ""
+  },
+  {
+   "id": "Hvsh",
+   "name": "Sea Witch",
+   "race": "Naga",
+   "kind": "hero",
+   "produced_by": [
+    "nnad"
+   ],
+   "how": "train",
+   "requires": [],
+   "note": "only stock Naga hero (Lady Vashj model); altar training list is empty in stock data, campaign maps set it per map"
+  },
+  {
+   "id": "nmys",
+   "name": "Submerged Naga Myrmidon",
+   "race": "Naga",
+   "kind": "unit",
+   "produced_by": [
+    "nmyr"
+   ],
+   "how": "ability",
+   "requires": [],
+   "note": "Submerge form"
+  },
+  {
+   "id": "nsbs",
+   "name": "Submerged Snap Dragon",
+   "race": "Naga",
+   "kind": "unit",
+   "produced_by": [
+    "nsnp"
+   ],
+   "how": "ability",
+   "requires": [],
+   "note": "Submerge form"
+  },
+  {
+   "id": "nnrg",
+   "name": "Naga Royal Guard",
+   "race": "Naga",
+   "kind": "unit",
+   "produced_by": [],
+   "how": "none",
+   "requires": [],
+   "note": "not trainable in stock data (campaign-placed)"
+  },
+  {
+   "id": "nnrs",
+   "name": "Submerged Naga Royal Guard",
+   "race": "Naga",
+   "kind": "unit",
+   "produced_by": [
+    "nnrg"
+   ],
+   "how": "ability",
+   "requires": [],
+   "note": "Submerge form"
+  },
+  {
+   "id": "nnsu",
+   "name": "Summoner",
+   "race": "Naga",
+   "kind": "unit",
+   "produced_by": [],
+   "how": "none",
+   "requires": [],
+   "note": "not trainable in stock data (campaign-placed)"
+  }
+ ],
+ "upgrades": [
+  {
+   "id": "Rhme",
+   "name": "Iron Forged Swords",
+   "race": "Human",
+   "researched_at": "hbla",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "hkee"
+    ],
+    [
+     "hcas"
+    ]
+   ],
+   "benefits": [
+    "hfoo",
+    "hkni",
+    "hgry",
+    "hmil"
+   ],
+   "kind": "weapon"
+  },
+  {
+   "id": "Rhra",
+   "name": "Black Gunpowder",
+   "race": "Human",
+   "researched_at": "hbla",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "hkee"
+    ],
+    [
+     "hcas"
+    ]
+   ],
+   "benefits": [
+    "hrif",
+    "hmtm",
+    "hgyr",
+    "hmtt",
+    "hrtt",
+    "hdhw",
+    "hspt"
+   ],
+   "kind": "weapon"
+  },
+  {
+   "id": "Rhar",
+   "name": "Iron Plating",
+   "race": "Human",
+   "researched_at": "hbla",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "hkee"
+    ],
+    [
+     "hcas"
+    ]
+   ],
+   "benefits": [
+    "hfoo",
+    "hkni",
+    "hspt",
+    "hmil",
+    "hmtt",
+    "hrtt",
+    "hgyr"
+   ],
+   "kind": "armor"
+  },
+  {
+   "id": "Rhla",
+   "name": "Studded Leather Armor",
+   "race": "Human",
+   "researched_at": "hbla",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "hkee"
+    ],
+    [
+     "hcas"
+    ]
+   ],
+   "benefits": [
+    "hrif",
+    "hmtm",
+    "hgry",
+    "hdhw"
+   ],
+   "kind": "armor"
+  },
+  {
+   "id": "Rhac",
+   "name": "Improved Masonry",
+   "race": "Human",
+   "researched_at": "hlum",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "hkee"
+    ],
+    [
+     "hcas"
+    ]
+   ],
+   "benefits": [
+    "htow",
+    "hkee",
+    "hcas",
+    "hhou",
+    "hbar",
+    "hlum",
+    "hbla",
+    "halt",
+    "harm",
+    "hars",
+    "hgra",
+    "hvlt",
+    "hwtw",
+    "hgtw",
+    "hctw",
+    "hatw"
+   ],
+   "kind": "building"
+  },
+  {
+   "id": "Rhlh",
+   "name": "Improved Lumber Harvesting",
+   "race": "Human",
+   "researched_at": "hlum",
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "hkee"
+    ]
+   ],
+   "benefits": [
+    "hpea"
+   ],
+   "kind": "economy"
+  },
+  {
+   "id": "Rhde",
+   "name": "Defend",
+   "race": "Human",
+   "researched_at": "hbar",
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "benefits": [
+    "hfoo"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rhri",
+   "name": "Long Rifles",
+   "race": "Human",
+   "researched_at": "hbar",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hkee"
+    ]
+   ],
+   "benefits": [
+    "hrif"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rhan",
+   "name": "Animal War Training",
+   "race": "Human",
+   "researched_at": "hbar",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hlum"
+    ]
+   ],
+   "benefits": [
+    "hkni",
+    "hgry",
+    "hdhw"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rhsb",
+   "name": "Sundering Blades",
+   "race": "Human",
+   "researched_at": "hbar",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hlum"
+    ]
+   ],
+   "benefits": [
+    "hkni"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rhpt",
+   "name": "Priest Adept Training",
+   "race": "Human",
+   "researched_at": "hars",
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "hcas"
+    ]
+   ],
+   "benefits": [
+    "hmpr"
+   ],
+   "kind": "caster"
+  },
+  {
+   "id": "Rhst",
+   "name": "Sorceress Adept Training",
+   "race": "Human",
+   "researched_at": "hars",
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "hcas"
+    ]
+   ],
+   "benefits": [
+    "hsor"
+   ],
+   "kind": "caster"
+  },
+  {
+   "id": "Rhss",
+   "name": "Control Magic",
+   "race": "Human",
+   "researched_at": "hars",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hcas",
+     "hvlt"
+    ]
+   ],
+   "benefits": [
+    "hspt"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rhse",
+   "name": "Magic Sentry",
+   "race": "Human",
+   "researched_at": "hars",
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "benefits": [
+    "hgtw",
+    "hctw",
+    "hatw",
+    "hwtw"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rhfl",
+   "name": "Flare",
+   "race": "Human",
+   "researched_at": "harm",
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "benefits": [
+    "hmtm"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rhfs",
+   "name": "Fragmentation Shards",
+   "race": "Human",
+   "researched_at": "harm",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hcas"
+    ]
+   ],
+   "benefits": [
+    "hmtm"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rhgb",
+   "name": "Flying Machine Bombs",
+   "race": "Human",
+   "researched_at": "harm",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hcas"
+    ]
+   ],
+   "benefits": [
+    "hgyr"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rhfc",
+   "name": "Flak Cannons",
+   "race": "Human",
+   "researched_at": "harm",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hkee"
+    ]
+   ],
+   "benefits": [
+    "hgyr"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rhrt",
+   "name": "Barrage",
+   "race": "Human",
+   "researched_at": "harm",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hcas"
+    ]
+   ],
+   "benefits": [
+    "hmtt"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rhhb",
+   "name": "Storm Hammers",
+   "race": "Human",
+   "researched_at": "hgra",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hcas"
+    ]
+   ],
+   "benefits": [
+    "hgry"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rhcd",
+   "name": "Cloud",
+   "race": "Human",
+   "researched_at": "hgra",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "hcas"
+    ]
+   ],
+   "benefits": [
+    "hdhw"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rhpm",
+   "name": "Backpack",
+   "race": "Human",
+   "researched_at": "ogre",
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "benefits": [
+    "hpea",
+    "hfoo",
+    "hrif",
+    "hkni",
+    "hmtm",
+    "hspt"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rome",
+   "name": "Melee Weapons",
+   "race": "Orc",
+   "researched_at": "ofor",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "ostr"
+    ],
+    [
+     "ofrt"
+    ]
+   ],
+   "benefits": [
+    "ogru",
+    "orai",
+    "otau",
+    "otbk",
+    "owyv"
+   ],
+   "kind": "weapon"
+  },
+  {
+   "id": "Rora",
+   "name": "Ranged Weapons",
+   "race": "Orc",
+   "researched_at": "ofor",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "ostr"
+    ],
+    [
+     "ofrt"
+    ]
+   ],
+   "benefits": [
+    "ohun",
+    "otbk",
+    "ocat",
+    "owyv",
+    "otbr",
+    "okod"
+   ],
+   "kind": "weapon"
+  },
+  {
+   "id": "Roar",
+   "name": "Unit Armor",
+   "race": "Orc",
+   "researched_at": "ofor",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "ostr"
+    ],
+    [
+     "ofrt"
+    ]
+   ],
+   "benefits": [
+    "ogru",
+    "ohun",
+    "otbk",
+    "orai",
+    "okod",
+    "owyv",
+    "otbr",
+    "otau",
+    "ocat"
+   ],
+   "kind": "armor"
+  },
+  {
+   "id": "Rosp",
+   "name": "Spiked Barricades",
+   "race": "Orc",
+   "researched_at": "ofor",
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "ostr"
+    ]
+   ],
+   "benefits": [
+    "ogre",
+    "ostr",
+    "ofrt",
+    "otrb",
+    "obar",
+    "ofor",
+    "oalt",
+    "osld",
+    "obea",
+    "otto",
+    "ovln",
+    "owtw"
+   ],
+   "kind": "building"
+  },
+  {
+   "id": "Rorb",
+   "name": "Reinforced Defenses",
+   "race": "Orc",
+   "researched_at": "ofor",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ostr"
+    ]
+   ],
+   "benefits": [
+    "otrb",
+    "owtw"
+   ],
+   "kind": "building"
+  },
+  {
+   "id": "Rwdm",
+   "name": "War Drums Damage Increase",
+   "race": "Orc",
+   "researched_at": "obea",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ofrt"
+    ]
+   ],
+   "benefits": [
+    "okod"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Ropg",
+   "name": "Pillage",
+   "race": "Orc",
+   "researched_at": "ogre",
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "benefits": [
+    "opeo",
+    "ogru",
+    "orai"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Robs",
+   "name": "Berserker Strength",
+   "race": "Orc",
+   "researched_at": "obar",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ostr"
+    ]
+   ],
+   "benefits": [
+    "ogru"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rotr",
+   "name": "Troll Regeneration",
+   "race": "Orc",
+   "researched_at": "obar",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ostr"
+    ]
+   ],
+   "benefits": [
+    "ohun",
+    "otbk",
+    "odoc",
+    "otbr"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Robk",
+   "name": "Berserker Upgrade",
+   "race": "Orc",
+   "researched_at": "obar",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ofrt"
+    ]
+   ],
+   "benefits": [
+    "ohun"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Robf",
+   "name": "Burning Oil",
+   "race": "Orc",
+   "researched_at": "obar",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ofrt"
+    ]
+   ],
+   "benefits": [
+    "ocat"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Roen",
+   "name": "Ensnare",
+   "race": "Orc",
+   "researched_at": "obea",
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "benefits": [
+    "orai"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rovs",
+   "name": "Envenomed Spears",
+   "race": "Orc",
+   "researched_at": "obea",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ofrt"
+    ]
+   ],
+   "benefits": [
+    "owyv"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rolf",
+   "name": "Liquid Fire",
+   "race": "Orc",
+   "researched_at": "obea",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ofrt",
+     "ovln"
+    ]
+   ],
+   "benefits": [
+    "otbr"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rost",
+   "name": "Shaman Adept Training",
+   "race": "Orc",
+   "researched_at": "osld",
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "ofrt"
+    ]
+   ],
+   "benefits": [
+    "oshm"
+   ],
+   "kind": "caster"
+  },
+  {
+   "id": "Rowd",
+   "name": "Witch Doctor Adept Training",
+   "race": "Orc",
+   "researched_at": "osld",
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "ofrt"
+    ]
+   ],
+   "benefits": [
+    "odoc"
+   ],
+   "kind": "caster"
+  },
+  {
+   "id": "Rows",
+   "name": "Pulverize",
+   "race": "Orc",
+   "researched_at": "otto",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ofrt"
+    ]
+   ],
+   "benefits": [
+    "otau"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rowt",
+   "name": "Spirit Walker Adept Training",
+   "race": "Orc",
+   "researched_at": "otto",
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "ofrt"
+    ]
+   ],
+   "benefits": [
+    "ospm"
+   ],
+   "kind": "caster"
+  },
+  {
+   "id": "Rume",
+   "name": "Unholy Strength",
+   "race": "Undead",
+   "researched_at": "ugrv",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "unp1"
+    ],
+    [
+     "unp2"
+    ]
+   ],
+   "benefits": [
+    "ugho",
+    "uabo",
+    "umtw",
+    "uske"
+   ],
+   "kind": "weapon"
+  },
+  {
+   "id": "Rura",
+   "name": "Creature Attack",
+   "race": "Undead",
+   "researched_at": "ugrv",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "unp1"
+    ],
+    [
+     "unp2"
+    ]
+   ],
+   "benefits": [
+    "ucry",
+    "ugar",
+    "ufro",
+    "uobs",
+    "ubsp"
+   ],
+   "kind": "weapon"
+  },
+  {
+   "id": "Ruar",
+   "name": "Unholy Armor",
+   "race": "Undead",
+   "researched_at": "ugrv",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "unp1"
+    ],
+    [
+     "unp2"
+    ]
+   ],
+   "benefits": [
+    "ugho",
+    "uabo",
+    "umtw",
+    "uske",
+    "uaco"
+   ],
+   "kind": "armor"
+  },
+  {
+   "id": "Rucr",
+   "name": "Creature Carapace",
+   "race": "Undead",
+   "researched_at": "ugrv",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "unp1"
+    ],
+    [
+     "unp2"
+    ]
+   ],
+   "benefits": [
+    "ucry",
+    "ugar",
+    "ugrm",
+    "ufro",
+    "uobs",
+    "ubsp"
+   ],
+   "kind": "armor"
+  },
+  {
+   "id": "Ruac",
+   "name": "Cannibalize",
+   "race": "Undead",
+   "researched_at": "usep",
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "benefits": [
+    "ugho",
+    "uabo"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rugf",
+   "name": "Ghoul Frenzy",
+   "race": "Undead",
+   "researched_at": "usep",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "unp2"
+    ]
+   ],
+   "benefits": [
+    "ugho"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Ruwb",
+   "name": "Web",
+   "race": "Undead",
+   "researched_at": "usep",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ugrv",
+     "unp1"
+    ]
+   ],
+   "benefits": [
+    "ucry"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rubu",
+   "name": "Burrow",
+   "race": "Undead",
+   "researched_at": "usep",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ugrv",
+     "unp1"
+    ]
+   ],
+   "benefits": [
+    "ucry"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rusf",
+   "name": "Stone Form",
+   "race": "Undead",
+   "researched_at": "usep",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "ugrv",
+     "unp2"
+    ]
+   ],
+   "benefits": [
+    "ugar"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rune",
+   "name": "Necromancer Adept Training",
+   "race": "Undead",
+   "researched_at": "utod",
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "unp2"
+    ]
+   ],
+   "benefits": [
+    "unec"
+   ],
+   "kind": "caster"
+  },
+  {
+   "id": "Ruba",
+   "name": "Banshee Adept Training",
+   "race": "Undead",
+   "researched_at": "utod",
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "unp2"
+    ]
+   ],
+   "benefits": [
+    "uban"
+   ],
+   "kind": "caster"
+  },
+  {
+   "id": "Rusl",
+   "name": "Skeletal Longevity",
+   "race": "Undead",
+   "researched_at": "utod",
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "benefits": [
+    "unec"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rusm",
+   "name": "Skeletal Mastery",
+   "race": "Undead",
+   "researched_at": "utod",
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "benefits": [
+    "unec"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rupc",
+   "name": "Disease Cloud",
+   "race": "Undead",
+   "researched_at": "uslh",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "unp2"
+    ]
+   ],
+   "benefits": [
+    "umtw",
+    "uabo"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Ruex",
+   "name": "Exhume Corpses",
+   "race": "Undead",
+   "researched_at": "uslh",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "unp1"
+    ]
+   ],
+   "benefits": [
+    "umtw"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rusp",
+   "name": "Destroyer Form",
+   "race": "Undead",
+   "researched_at": "uslh",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "unp2",
+     "utom"
+    ]
+   ],
+   "benefits": [
+    "uobs"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rufb",
+   "name": "Freezing Breath",
+   "race": "Undead",
+   "researched_at": "ubon",
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "benefits": [
+    "ufro"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Resm",
+   "name": "Strength of the Moon",
+   "race": "NightElf",
+   "researched_at": "edob",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "etoa"
+    ],
+    [
+     "etoe"
+    ]
+   ],
+   "benefits": [
+    "earc",
+    "esen",
+    "ebal",
+    "ehpr"
+   ],
+   "kind": "weapon"
+  },
+  {
+   "id": "Resw",
+   "name": "Strength of the Wild",
+   "race": "NightElf",
+   "researched_at": "edob",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "etoa"
+    ],
+    [
+     "etoe"
+    ]
+   ],
+   "benefits": [
+    "edoc",
+    "edcm",
+    "ehip",
+    "echm",
+    "emtg",
+    "edtm",
+    "efdr"
+   ],
+   "kind": "weapon"
+  },
+  {
+   "id": "Rema",
+   "name": "Moon Armor",
+   "race": "NightElf",
+   "researched_at": "edob",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "etoa"
+    ],
+    [
+     "etoe"
+    ]
+   ],
+   "benefits": [
+    "earc",
+    "esen",
+    "ebal",
+    "ehpr"
+   ],
+   "kind": "armor"
+  },
+  {
+   "id": "Rerh",
+   "name": "Reinforced Hides",
+   "race": "NightElf",
+   "researched_at": "edob",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [
+     "etoa"
+    ],
+    [
+     "etoe"
+    ]
+   ],
+   "benefits": [
+    "edoc",
+    "edcm",
+    "ehip",
+    "echm",
+    "emtg",
+    "edry",
+    "edot",
+    "edtm",
+    "efdr"
+   ],
+   "kind": "armor"
+  },
+  {
+   "id": "Reuv",
+   "name": "Ultravision",
+   "race": "NightElf",
+   "researched_at": "edob",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoa"
+    ]
+   ],
+   "benefits": [
+    "earc",
+    "esen",
+    "ebal",
+    "ehpr",
+    "edry"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Resc",
+   "name": "Sentinel",
+   "race": "NightElf",
+   "researched_at": "eaom",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "edob"
+    ]
+   ],
+   "benefits": [
+    "esen"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Renb",
+   "name": "Nature's Blessing",
+   "race": "NightElf",
+   "researched_at": "etol",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoa"
+    ]
+   ],
+   "benefits": [
+    "etol",
+    "etoa",
+    "etoe",
+    "eaom",
+    "eaoe",
+    "eaow",
+    "edos",
+    "edob",
+    "eate",
+    "emow",
+    "eden",
+    "etrp"
+   ],
+   "kind": "building"
+  },
+  {
+   "id": "Rews",
+   "name": "Well Spring",
+   "race": "NightElf",
+   "researched_at": "edob",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoe"
+    ]
+   ],
+   "benefits": [
+    "emow"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Reib",
+   "name": "Improved Bows",
+   "race": "NightElf",
+   "researched_at": "eaom",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoa"
+    ]
+   ],
+   "benefits": [
+    "earc",
+    "ehpr"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Remk",
+   "name": "Marksmanship",
+   "race": "NightElf",
+   "researched_at": "eaom",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoe"
+    ]
+   ],
+   "benefits": [
+    "earc",
+    "ehpr"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Remg",
+   "name": "Upgrade Moon Glaive",
+   "race": "NightElf",
+   "researched_at": "eaom",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoa"
+    ]
+   ],
+   "benefits": [
+    "esen"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Repd",
+   "name": "Vorpal Blades",
+   "race": "NightElf",
+   "researched_at": "eaom",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "edob",
+     "etoa"
+    ]
+   ],
+   "benefits": [
+    "ebal"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Reht",
+   "name": "Hippogryph Taming",
+   "race": "NightElf",
+   "researched_at": "eaow",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoa"
+    ]
+   ],
+   "benefits": [
+    "ehip",
+    "earc"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Redc",
+   "name": "Druid of the Claw Adept Training",
+   "race": "NightElf",
+   "researched_at": "eaoe",
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "etoe"
+    ]
+   ],
+   "benefits": [
+    "edoc",
+    "edcm"
+   ],
+   "kind": "caster"
+  },
+  {
+   "id": "Reeb",
+   "name": "Mark of the Claw",
+   "race": "NightElf",
+   "researched_at": "eaoe",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoe"
+    ]
+   ],
+   "benefits": [
+    "edoc"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Resi",
+   "name": "Abolish Magic",
+   "race": "NightElf",
+   "researched_at": "eaoe",
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "benefits": [
+    "edry"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rehs",
+   "name": "Hardened Skin",
+   "race": "NightElf",
+   "researched_at": "eaoe",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "eden",
+     "etoe"
+    ]
+   ],
+   "benefits": [
+    "emtg"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rers",
+   "name": "Resistant Skin",
+   "race": "NightElf",
+   "researched_at": "eaoe",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "eden",
+     "etoe"
+    ]
+   ],
+   "benefits": [
+    "emtg"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Redt",
+   "name": "Druid of the Talon Adept Training",
+   "race": "NightElf",
+   "researched_at": "eaow",
+   "max_level": 2,
+   "level_requires": [
+    [],
+    [
+     "etoe"
+    ]
+   ],
+   "benefits": [
+    "edot",
+    "edtm"
+   ],
+   "kind": "caster"
+  },
+  {
+   "id": "Reec",
+   "name": "Mark of the Talon",
+   "race": "NightElf",
+   "researched_at": "eaow",
+   "max_level": 1,
+   "level_requires": [
+    [
+     "etoa"
+    ]
+   ],
+   "benefits": [
+    "edot"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Recb",
+   "name": "Corrosive Breath",
+   "race": "NightElf",
+   "researched_at": "edos",
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "benefits": [
+    "echm"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rnat",
+   "name": "Coral Blades / Chitinous Blades / Razorspine Blades",
+   "race": "Naga",
+   "researched_at": "nntt",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [],
+    []
+   ],
+   "benefits": [
+    "nnmg",
+    "nmyr",
+    "nsnp",
+    "nhyc",
+    "nwgs"
+   ],
+   "kind": "weapon"
+  },
+  {
+   "id": "Rnam",
+   "name": "Coral Scales / Chitinous Scales / Razorspine Scales",
+   "race": "Naga",
+   "researched_at": "nntt",
+   "max_level": 3,
+   "level_requires": [
+    [],
+    [],
+    []
+   ],
+   "benefits": [
+    "nnmg",
+    "nmyr",
+    "nsnp",
+    "nhyc",
+    "nwgs"
+   ],
+   "kind": "armor"
+  },
+  {
+   "id": "Rnsb",
+   "name": "Submerge",
+   "race": "Naga",
+   "researched_at": "nntt",
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "benefits": [
+    "nmyr",
+    "nsnp"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rnen",
+   "name": "Ensnare",
+   "race": "Naga",
+   "researched_at": "nnsg",
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "benefits": [
+    "nmyr"
+   ],
+   "kind": "ability"
+  },
+  {
+   "id": "Rnsw",
+   "name": "Naga Siren Adept/Master Training",
+   "race": "Naga",
+   "researched_at": "nnsa",
+   "max_level": 2,
+   "level_requires": [
+    [],
+    []
+   ],
+   "benefits": [
+    "nnsw"
+   ],
+   "kind": "caster"
+  },
+  {
+   "id": "Rnsi",
+   "name": "Abolish Magic",
+   "race": "Naga",
+   "researched_at": "nnsa",
+   "max_level": 1,
+   "level_requires": [
+    []
+   ],
+   "benefits": [
+    "nwgs"
+   ],
+   "kind": "ability"
+  }
+ ],
+ "verified": {
+  "source": "liquipedia.net/warcraft (UpgradeCard/SpellCard templates, unit infoboxes, shop tables), fetched 2026-10-30",
+  "upgrades": [
+   "Rhme",
+   "Rhra",
+   "Rhar",
+   "Rhla",
+   "Rhac",
+   "Rhlh",
+   "Rhde",
+   "Rhri",
+   "Rhan",
+   "Rhsb",
+   "Rhpt",
+   "Rhst",
+   "Rhss",
+   "Rhse",
+   "Rhfl",
+   "Rhfs",
+   "Rhgb",
+   "Rhfc",
+   "Rhrt",
+   "Rhhb",
+   "Rhcd",
+   "Rhpm",
+   "Rome",
+   "Rora",
+   "Roar",
+   "Rosp",
+   "Rorb",
+   "Rwdm",
+   "Ropg",
+   "Robs",
+   "Rotr",
+   "Robk",
+   "Robf",
+   "Roen",
+   "Rovs",
+   "Rolf",
+   "Rost",
+   "Rowd",
+   "Rows",
+   "Rowt",
+   "Rume",
+   "Rura",
+   "Ruar",
+   "Rucr",
+   "Ruac",
+   "Rugf",
+   "Ruwb",
+   "Rubu",
+   "Rusf",
+   "Rune",
+   "Ruba",
+   "Rusl",
+   "Rusm",
+   "Rupc",
+   "Ruex",
+   "Rusp",
+   "Rufb",
+   "Resm",
+   "Resw",
+   "Rema",
+   "Rerh",
+   "Reuv",
+   "Resc",
+   "Renb",
+   "Rews",
+   "Reib",
+   "Remk",
+   "Remg",
+   "Repd",
+   "Reht",
+   "Redc",
+   "Reeb",
+   "Resi",
+   "Rehs",
+   "Rers",
+   "Redt",
+   "Reec",
+   "Recb"
+  ],
+  "units": [
+   "hkee",
+   "hcas",
+   "halt",
+   "harm",
+   "hars",
+   "hgra",
+   "hvlt",
+   "hctw",
+   "hatw",
+   "hrif",
+   "hkni",
+   "hmpr",
+   "hsor",
+   "hspt",
+   "hmtm",
+   "hgyr",
+   "hrtt",
+   "hgry",
+   "hdhw",
+   "ostr",
+   "ofrt",
+   "oalt",
+   "osld",
+   "obea",
+   "otto",
+   "ovln",
+   "ohun",
+   "ocat",
+   "orai",
+   "okod",
+   "otbr",
+   "oshm",
+   "ospm",
+   "otau",
+   "unp1",
+   "uzig",
+   "uzg2",
+   "utom",
+   "uslh",
+   "utod",
+   "usap",
+   "ubon",
+   "ucry",
+   "ugar",
+   "uabo",
+   "umtw",
+   "uobs",
+   "ubsp",
+   "unec",
+   "uban",
+   "ushd",
+   "ufro",
+   "etoa",
+   "eate",
+   "eaoe",
+   "eaow",
+   "edos",
+   "eden",
+   "earc",
+   "ebal",
+   "edry",
+   "edoc",
+   "emtg",
+   "ehip",
+   "ehpr",
+   "edot",
+   "efdr",
+   "echm"
+  ]
+ },
+ "shop_items": {
+  "hvlt": [
+   {
+    "id": "tsct",
+    "name": "Ivory Tower",
+    "requires": [
+     "hkee"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "plcl",
+    "name": "Lesser Clarity Potion",
+    "requires": [
+     "htow"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "mcri",
+    "name": "Mechanical Critter",
+    "requires": [],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "oslo",
+    "name": "Orb of Slow",
+    "requires": [
+     "hcas"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "phea",
+    "name": "Potion of Healing",
+    "requires": [
+     "hkee"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "pman",
+    "name": "Potion of Mana",
+    "requires": [
+     "hkee"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "sreg",
+    "name": "Scroll of Regeneration",
+    "requires": [],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "stwp",
+    "name": "Scroll of Town Portal",
+    "requires": [
+     "hkee"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "ssan",
+    "name": "Staff of Sanctuary",
+    "requires": [
+     "hcas"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   }
+  ],
+  "ovln": [
+   {
+    "id": "hslv",
+    "name": "Healing Salve",
+    "requires": [],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "plcl",
+    "name": "Lesser Clarity Potion",
+    "requires": [
+     "ogre"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "olig",
+    "name": "Orb of Lightning",
+    "requires": [
+     "ofrt"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "phea",
+    "name": "Potion of Healing",
+    "requires": [
+     "ostr"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "pman",
+    "name": "Potion of Mana",
+    "requires": [
+     "ostr"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "shas",
+    "name": "Scroll of Speed",
+    "requires": [],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "stwp",
+    "name": "Scroll of Town Portal",
+    "requires": [
+     "ostr"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "tgrh",
+    "name": "Tiny Great Hall",
+    "requires": [
+     "ofrt"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   }
+  ],
+  "utom": [
+   {
+    "id": "dust",
+    "name": "Dust of Appearance",
+    "requires": [
+     "unpl"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "ocor",
+    "name": "Orb of Corruption",
+    "requires": [
+     "unp2"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "phea",
+    "name": "Potion of Healing",
+    "requires": [
+     "unp1"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "pman",
+    "name": "Potion of Mana",
+    "requires": [
+     "unp1"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "rde3",
+    "name": "Ritual Dagger",
+    "requires": [],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "rnec",
+    "name": "Rod of Necromancy",
+    "requires": [],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "skul",
+    "name": "Sacrificial Skull",
+    "requires": [],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "stwp",
+    "name": "Scroll of Town Portal",
+    "requires": [
+     "unp1"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "wneg",
+    "name": "Wand of Negation",
+    "requires": [
+     "unp1"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   }
+  ],
+  "eden": [
+   {
+    "id": "pams",
+    "name": "Anti-magic Potion",
+    "requires": [
+     "etoe"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "dust",
+    "name": "Dust of Appearance",
+    "requires": [
+     "etol"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "plcl",
+    "name": "Lesser Clarity Potion",
+    "requires": [
+     "etol"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "moon",
+    "name": "Moonstone",
+    "requires": [],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "oven",
+    "name": "Orb of Venom",
+    "requires": [
+     "etoe"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "phea",
+    "name": "Potion of Healing",
+    "requires": [
+     "etoa"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "pman",
+    "name": "Potion of Mana",
+    "requires": [
+     "etoa"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "stwp",
+    "name": "Scroll of Town Portal",
+    "requires": [
+     "etoa"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   },
+   {
+    "id": "spre",
+    "name": "Staff of Preservation",
+    "requires": [
+     "etoa"
+    ],
+    "id_source": "knowledge (Blizzard ItemData rawcode)"
+   }
+  ]
+ },
+ "hero_abilities": [
+  "AEah",
+  "AEar",
+  "AEbl",
+  "AEer",
+  "AEev",
+  "AEfk",
+  "AEfn",
+  "AEim",
+  "AEmb",
+  "AEme",
+  "AEsf",
+  "AEsh",
+  "AEst",
+  "AEsv",
+  "AEtq",
+  "AHab",
+  "AHad",
+  "AHav",
+  "AHbh",
+  "AHbn",
+  "AHbz",
+  "AHdr",
+  "AHds",
+  "AHfa",
+  "AHfs",
+  "AHhb",
+  "AHmt",
+  "AHpx",
+  "AHre",
+  "AHtb",
+  "AHtc",
+  "AHwe",
+  "AOae",
+  "AOcl",
+  "AOcr",
+  "AOeq",
+  "AOfs",
+  "AOhw",
+  "AOhx",
+  "AOmi",
+  "AOre",
+  "AOsf",
+  "AOsh",
+  "AOsw",
+  "AOvd",
+  "AOwk",
+  "AOws",
+  "AOww",
+  "AUan",
+  "AUau",
+  "AUav",
+  "AUcb",
+  "AUcs",
+  "AUdc",
+  "AUdd",
+  "AUdp",
+  "AUdr",
+  "AUfn",
+  "AUfu",
+  "AUim",
+  "AUin",
+  "AUls",
+  "AUsl",
+  "AUts"
+ ],
+ "crosscheck": {
+  "not_in_common_ai": [
+   "Rhfl",
+   "Rhpm",
+   "Rhsb"
+  ]
+ },
+ "known_other": [
+  "AEah",
+  "AEar",
+  "AEbl",
+  "AEer",
+  "AEev",
+  "AEfk",
+  "AEfn",
+  "AEim",
+  "AEmb",
+  "AEme",
+  "AEsf",
+  "AEsh",
+  "AEst",
+  "AEsv",
+  "AEtq",
+  "AHab",
+  "AHad",
+  "AHav",
+  "AHbh",
+  "AHbn",
+  "AHbz",
+  "AHdr",
+  "AHds",
+  "AHfa",
+  "AHfs",
+  "AHhb",
+  "AHmt",
+  "AHpx",
+  "AHre",
+  "AHtb",
+  "AHtc",
+  "AHwe",
+  "AOae",
+  "AOcl",
+  "AOcr",
+  "AOeq",
+  "AOfs",
+  "AOhw",
+  "AOhx",
+  "AOmi",
+  "AOre",
+  "AOsf",
+  "AOsh",
+  "AOsw",
+  "AOvd",
+  "AOwk",
+  "AOws",
+  "AOww",
+  "AUan",
+  "AUau",
+  "AUav",
+  "AUcb",
+  "AUcs",
+  "AUdc",
+  "AUdd",
+  "AUdp",
+  "AUdr",
+  "AUfn",
+  "AUfu",
+  "AUim",
+  "AUin",
+  "AUls",
+  "AUsl",
+  "AUts",
+  "Ecen",
+  "Edem",
+  "Edmm",
+  "Eevi",
+  "Eevm",
+  "Ekee",
+  "Emoo",
+  "Ewar",
+  "Ewrd",
+  "Hamg",
+  "Hblm",
+  "Hjai",
+  "Hkal",
+  "Hlgr",
+  "Hmbr",
+  "Hmkg",
+  "Hpal",
+  "Hvsh",
+  "Hvwd",
+  "Nbbc",
+  "Nngs",
+  "Npld",
+  "Obla",
+  "Ofar",
+  "Ogrh",
+  "Opgh",
+  "Oshd",
+  "Otch",
+  "Othr",
+  "Recb",
+  "Redc",
+  "Redt",
+  "Reeb",
+  "Reec",
+  "Rehs",
+  "Reht",
+  "Reib",
+  "Rema",
+  "Remg",
+  "Remk",
+  "Renb",
+  "Repd",
+  "Repm",
+  "Rerh",
+  "Rers",
+  "Resc",
+  "Resi",
+  "Resm",
+  "Resw",
+  "Reuv",
+  "Rews",
+  "Rhaa",
+  "Rhac",
+  "Rhan",
+  "Rhar",
+  "Rhcd",
+  "Rhde",
+  "Rhfc",
+  "Rhfs",
+  "Rhgb",
+  "Rhhb",
+  "Rhla",
+  "Rhlh",
+  "Rhme",
+  "Rhmi",
+  "Rhpt",
+  "Rhra",
+  "Rhri",
+  "Rhrt",
+  "Rhse",
+  "Rhsr",
+  "Rhss",
+  "Rhst",
+  "Rnam",
+  "Rnat",
+  "Rnen",
+  "Rnsi",
+  "Rnsw",
+  "Roaa",
+  "Roar",
+  "Robf",
+  "Robk",
+  "Robs",
+  "Roch",
+  "Roen",
+  "Rolf",
+  "Rome",
+  "Ropg",
+  "Ropm",
+  "Rora",
+  "Rorb",
+  "Rosp",
+  "Rost",
+  "Rotr",
+  "Rovs",
+  "Rowd",
+  "Rows",
+  "Rowt",
+  "Ruab",
+  "Ruac",
+  "Ruar",
+  "Ruax",
+  "Ruba",
+  "Rubu",
+  "Rucr",
+  "Ruex",
+  "Rufb",
+  "Rugf",
+  "Rume",
+  "Rump",
+  "Rune",
+  "Rupc",
+  "Rupm",
+  "Rura",
+  "Rurs",
+  "Rusf",
+  "Rusl",
+  "Rusm",
+  "Rusp",
+  "Ruwb",
+  "Rwdm",
+  "Ucrl",
+  "Udea",
+  "Udre",
+  "Udth",
+  "Ulic",
+  "Umal",
+  "Utic",
+  "eaoe",
+  "eaom",
+  "eaow",
+  "earc",
+  "eate",
+  "ebal",
+  "echm",
+  "edcm",
+  "eden",
+  "edob",
+  "edoc",
+  "edol",
+  "edos",
+  "edot",
+  "edry",
+  "edtm",
+  "efdr",
+  "efon",
+  "egol",
+  "ehip",
+  "ehpr",
+  "emow",
+  "emtg",
+  "esen",
+  "eshd",
+  "etoa",
+  "etoe",
+  "etol",
+  "etrp",
+  "ewsp",
+  "halt",
+  "harm",
+  "hars",
+  "hatw",
+  "hbar",
+  "hbep",
+  "hbes",
+  "hbew",
+  "hbla",
+  "hbsh",
+  "hcas",
+  "hcth",
+  "hctw",
+  "hdhw",
+  "hfoo",
+  "hgra",
+  "hgry",
+  "hgtw",
+  "hgyr",
+  "hhes",
+  "hhou",
+  "hkee",
+  "hkni",
+  "hlum",
+  "hmil",
+  "hmpr",
+  "hmtm",
+  "hmtt",
+  "hpea",
+  "hrif",
+  "hrtt",
+  "hsor",
+  "hspt",
+  "htow",
+  "htws",
+  "hvlt",
+  "hwat",
+  "hwtw",
+  "nbal",
+  "ncap",
+  "ncaw",
+  "nchg",
+  "nchr",
+  "nchw",
+  "nckb",
+  "ncmw",
+  "ncop",
+  "ncp2",
+  "ncp3",
+  "ncpn",
+  "ncta",
+  "ncte",
+  "nctl",
+  "ndmg",
+  "ndrb",
+  "ndrk",
+  "nefm",
+  "negf",
+  "negm",
+  "negt",
+  "nenc",
+  "nenp",
+  "nepl",
+  "nfel",
+  "nfoh",
+  "nfr1",
+  "nfr2",
+  "nfrb",
+  "nfre",
+  "nfrg",
+  "nfrl",
+  "nfrs",
+  "nftr",
+  "ngad",
+  "ngme",
+  "ngol",
+  "ngsp",
+  "ngwr",
+  "nhea",
+  "nheb",
+  "nhew",
+  "nhyc",
+  "ninf",
+  "nmer",
+  "nmoo",
+  "nmpe",
+  "nmrk",
+  "nmyr",
+  "nnad",
+  "nnfm",
+  "nnmg",
+  "nnrg",
+  "nnsa",
+  "nnsg",
+  "nnsw",
+  "nntg",
+  "nntt",
+  "nomg",
+  "npgf",
+  "nrwm",
+  "nsat",
+  "nshp",
+  "nska",
+  "nskf",
+  "nskg",
+  "nskm",
+  "nsnp",
+  "nsth",
+  "nstl",
+  "nsts",
+  "nsty",
+  "ntav",
+  "nw2w",
+  "nwgs",
+  "nws1",
+  "nzep",
+  "oalt",
+  "oang",
+  "obar",
+  "obea",
+  "ocat",
+  "ocbw",
+  "odoc",
+  "ofor",
+  "ofrt",
+  "ogre",
+  "ogru",
+  "ohun",
+  "okod",
+  "opeo",
+  "orai",
+  "oshm",
+  "osld",
+  "ospm",
+  "ospw",
+  "ostr",
+  "otau",
+  "otbk",
+  "otbr",
+  "otrb",
+  "otto",
+  "ovln",
+  "owtw",
+  "owyv",
+  "uabo",
+  "uaco",
+  "uaod",
+  "uarb",
+  "uban",
+  "ubon",
+  "ubsp",
+  "ucry",
+  "ufro",
+  "ugar",
+  "ugho",
+  "ugol",
+  "ugrm",
+  "ugrv",
+  "ugsp",
+  "umtw",
+  "unec",
+  "unp1",
+  "unp2",
+  "unpl",
+  "uobs",
+  "usap",
+  "usep",
+  "ushd",
+  "uske",
+  "uslh",
+  "utod",
+  "utom",
+  "uzg1",
+  "uzg2",
+  "uzig",
+  "oeye"
+ ]
+}

@@ -1,0 +1,646 @@
+{
+ "_note": "Original WC3 Frozen Throne hero abilities as balance anchors . Values per level 1/2/3 (ultimates: one level). Taken from the 1.2x/Reforged-era tooltips from memory; several were changed by patches, so treat them as approximate anchors, not exact patch data. Disable values: 'stun' = unit stun/hold seconds, 'stun_hero' = seconds on heroes (0 = does not affect heroes, missing = same as units). 'slow' seconds. 'targets' = expected units hit (AoE estimate). Used by tools/check_ability_balance.py.",
+ "abilities": {
+  "Storm Bolt": {
+   "race": "human",
+   "cat": "unit_stun_nuke",
+   "mana": [
+    75,
+    75,
+    75
+   ],
+   "cd": [
+    9,
+    9,
+    9
+   ],
+   "range": [
+    600,
+    600,
+    600
+   ],
+   "dmg": [
+    100,
+    225,
+    350
+   ],
+   "stun": [
+    5,
+    5,
+    5
+   ],
+   "stun_hero": [
+    3,
+    3,
+    3
+   ],
+   "targets": 1,
+   "hero": true
+  },
+  "Holy Light": {
+   "race": "human",
+   "cat": "heal",
+   "mana": [
+    65,
+    65,
+    65
+   ],
+   "cd": [
+    5,
+    5,
+    5
+   ],
+   "range": [
+    800,
+    800,
+    800
+   ],
+   "heal": [
+    200,
+    400,
+    600
+   ],
+   "targets": 1,
+   "hero": true,
+   "note": "also damages undead for half"
+  },
+  "Thunder Clap": {
+   "race": "human",
+   "cat": "aoe_nuke",
+   "mana": [
+    90,
+    90,
+    90
+   ],
+   "cd": [
+    6,
+    6,
+    6
+   ],
+   "range": [
+    0,
+    0,
+    0
+   ],
+   "area": [
+    250,
+    300,
+    350
+   ],
+   "dmg": [
+    60,
+    100,
+    140
+   ],
+   "slow": [
+    5,
+    5,
+    5
+   ],
+   "slow_hero": [
+    3,
+    3,
+    3
+   ],
+   "targets": 3,
+   "hero": true
+  },
+  "Flame Strike": {
+   "race": "human",
+   "cat": "aoe_nuke",
+   "mana": [
+    135,
+    135,
+    135
+   ],
+   "cd": [
+    10,
+    10,
+    10
+   ],
+   "range": [
+    800,
+    800,
+    800
+   ],
+   "area": [
+    200,
+    200,
+    200
+   ],
+   "dmg": [
+    80,
+    135,
+    200
+   ],
+   "dot": [
+    24,
+    48,
+    72
+   ],
+   "targets": 3,
+   "hero": true
+  },
+  "Blizzard": {
+   "race": "human",
+   "cat": "aoe_nuke",
+   "mana": [
+    75,
+    75,
+    75
+   ],
+   "cd": [
+    6,
+    6,
+    6
+   ],
+   "range": [
+    800,
+    800,
+    800
+   ],
+   "area": [
+    200,
+    200,
+    200
+   ],
+   "dmg": [
+    180,
+    240,
+    300
+   ],
+   "targets": 3,
+   "hero": true,
+   "note": "30 dmg x 6/8/10 waves, channeled; buildings half",
+   "eff": 0.5
+  },
+  "Shadow Strike": {
+   "race": "nightelf",
+   "cat": "unit_nuke",
+   "mana": [
+    75,
+    75,
+    75
+   ],
+   "cd": [
+    8,
+    8,
+    8
+   ],
+   "range": [
+    300,
+    300,
+    300
+   ],
+   "dmg": [
+    75,
+    150,
+    225
+   ],
+   "dot": [
+    60,
+    90,
+    120
+   ],
+   "slow": [
+    15,
+    15,
+    15
+   ],
+   "targets": 1,
+   "hero": true,
+   "note": "initial + decaying damage over 15 s, movement/attack slow"
+  },
+  "Entangling Roots": {
+   "race": "nightelf",
+   "cat": "unit_disable",
+   "mana": [
+    75,
+    75,
+    75
+   ],
+   "cd": [
+    8,
+    8,
+    8
+   ],
+   "range": [
+    800,
+    800,
+    800
+   ],
+   "dmg": [
+    0,
+    0,
+    0
+   ],
+   "dot": [
+    45,
+    60,
+    75
+   ],
+   "stun": [
+    3,
+    4,
+    5
+   ],
+   "stun_hero": [
+    3,
+    4,
+    5
+   ],
+   "targets": 1,
+   "hero": true,
+   "note": "ground units only, 15 dps"
+  },
+  "Searing Arrows": {
+   "race": "nightelf",
+   "cat": "autocast",
+   "mana": [
+    8,
+    8,
+    8
+   ],
+   "cd": [
+    0,
+    0,
+    0
+   ],
+   "range": [
+    700,
+    700,
+    700
+   ],
+   "dmg": [
+    10,
+    20,
+    30
+   ],
+   "targets": 1,
+   "hero": true
+  },
+  "Forked Lightning": {
+   "race": "naga",
+   "cat": "multi_nuke",
+   "mana": [
+    110,
+    110,
+    110
+   ],
+   "cd": [
+    11,
+    11,
+    11
+   ],
+   "range": [
+    600,
+    600,
+    600
+   ],
+   "dmg": [
+    85,
+    160,
+    250
+   ],
+   "targets": 3,
+   "hero": true
+  },
+  "Frost Nova": {
+   "race": "undead",
+   "cat": "aoe_nuke",
+   "mana": [
+    125,
+    125,
+    125
+   ],
+   "cd": [
+    8,
+    8,
+    8
+   ],
+   "range": [
+    800,
+    800,
+    800
+   ],
+   "area": [
+    200,
+    200,
+    200
+   ],
+   "dmg": [
+    50,
+    100,
+    150
+   ],
+   "primary_dmg": [
+    100,
+    100,
+    100
+   ],
+   "slow": [
+    4,
+    6,
+    8
+   ],
+   "slow_hero": [
+    3,
+    4,
+    5
+   ],
+   "targets": 3,
+   "hero": true
+  },
+  "Death Coil": {
+   "race": "undead",
+   "cat": "heal",
+   "mana": [
+    75,
+    75,
+    75
+   ],
+   "cd": [
+    6,
+    6,
+    6
+   ],
+   "range": [
+    800,
+    800,
+    800
+   ],
+   "heal": [
+    200,
+    400,
+    600
+   ],
+   "targets": 1,
+   "hero": true
+  },
+  "Carrion Swarm": {
+   "race": "undead",
+   "cat": "line_nuke",
+   "mana": [
+    110,
+    110,
+    110
+   ],
+   "cd": [
+    10,
+    10,
+    10
+   ],
+   "range": [
+    700,
+    700,
+    700
+   ],
+   "area": [
+    200,
+    200,
+    200
+   ],
+   "dmg": [
+    75,
+    125,
+    200
+   ],
+   "targets": 3.5,
+   "hero": true
+  },
+  "Shockwave": {
+   "race": "orc",
+   "cat": "line_nuke",
+   "mana": [
+    100,
+    100,
+    100
+   ],
+   "cd": [
+    8,
+    8,
+    8
+   ],
+   "range": [
+    700,
+    700,
+    700
+   ],
+   "area": [
+    150,
+    150,
+    150
+   ],
+   "dmg": [
+    75,
+    130,
+    200
+   ],
+   "targets": 3,
+   "hero": true
+  },
+  "War Stomp": {
+   "race": "orc",
+   "cat": "aoe_disable",
+   "mana": [
+    90,
+    90,
+    90
+   ],
+   "cd": [
+    6,
+    6,
+    6
+   ],
+   "range": [
+    0,
+    0,
+    0
+   ],
+   "area": [
+    250,
+    300,
+    350
+   ],
+   "dmg": [
+    25,
+    50,
+    75
+   ],
+   "stun": [
+    3,
+    4,
+    5
+   ],
+   "stun_hero": [
+    2,
+    3,
+    3
+   ],
+   "targets": 3,
+   "hero": true
+  },
+  "Chain Lightning": {
+   "race": "orc",
+   "cat": "multi_nuke",
+   "mana": [
+    120,
+    120,
+    120
+   ],
+   "cd": [
+    9,
+    9,
+    9
+   ],
+   "range": [
+    700,
+    700,
+    700
+   ],
+   "dmg": [
+    85,
+    125,
+    180
+   ],
+   "targets": 3.3,
+   "hero": true,
+   "note": "4/6/8 jumps, -15% per jump"
+  },
+  "Healing Wave": {
+   "race": "orc",
+   "cat": "heal",
+   "mana": [
+    90,
+    90,
+    90
+   ],
+   "cd": [
+    9,
+    9,
+    9
+   ],
+   "range": [
+    700,
+    700,
+    700
+   ],
+   "heal": [
+    130,
+    250,
+    390
+   ],
+   "targets": 2.8,
+   "hero": true
+  },
+  "Evasion": {
+   "race": "nightelf",
+   "cat": "passive_evasion",
+   "value": [
+    10,
+    20,
+    30
+   ],
+   "hero": true
+  },
+  "Thorns Aura": {
+   "race": "nightelf",
+   "cat": "passive_thorns",
+   "value": [
+    10,
+    20,
+    30
+   ],
+   "hero": true
+  },
+  "Starfall": {
+   "race": "nightelf",
+   "cat": "ult_aoe_dmg",
+   "ult": true,
+   "mana": [
+    150
+   ],
+   "cd": [
+    180
+   ],
+   "range": [
+    0
+   ],
+   "area": [
+    1000
+   ],
+   "dmg": [
+    1500
+   ],
+   "targets": 4,
+   "hero": true,
+   "note": "50 dmg per wave, 30 waves, channeled; effective value heavily reduced by channeling; eff=0.2 accounts for 30 s channel and interruptibility",
+   "eff": 0.2
+  },
+  "Inferno": {
+   "race": "undead",
+   "cat": "ult_disable",
+   "ult": true,
+   "mana": [
+    175
+   ],
+   "cd": [
+    180
+   ],
+   "range": [
+    900
+   ],
+   "area": [
+    250
+   ],
+   "dmg": [
+    50
+   ],
+   "stun": [
+    4
+   ],
+   "stun_hero": [
+    2
+   ],
+   "targets": 3,
+   "hero": true,
+   "note": "plus a 1350 hp Infernal for 180 s (summon value ~800)",
+   "extra_value": [
+    800
+   ]
+  },
+  "Rain of Fire": {
+   "race": "naga",
+   "cat": "aoe_nuke",
+   "mana": [
+    75,
+    75,
+    75
+   ],
+   "cd": [
+    10,
+    10,
+    10
+   ],
+   "range": [
+    800,
+    800,
+    800
+   ],
+   "area": [
+    200,
+    200,
+    200
+   ],
+   "dmg": [
+    150,
+    270,
+    390
+   ],
+   "targets": 3,
+   "hero": true,
+   "note": "basic ability, channeled waves",
+   "eff": 0.5
+  }
+ }
+}

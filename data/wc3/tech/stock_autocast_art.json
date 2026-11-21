@@ -1,0 +1,270 @@
+{
+ "ANav": [
+  "ReplaceableTextures\\CommandButtons\\BTNAvatarOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNAvatarOff.blp"
+ ],
+ "Andm": [
+  "ReplaceableTextures\\CommandButtons\\BTNDryadDispelMagicOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNDryadDispelMagicOff.blp"
+ ],
+ "ACfu": [
+  "ReplaceableTextures\\CommandButtons\\BTNFrostArmorOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNFrostArmorOff.blp"
+ ],
+ "ANpa": [
+  "ReplaceableTextures\\CommandButtons\\BTNParasiteOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNParasiteOff.blp"
+ ],
+ "Arep": [
+  "ReplaceableTextures\\CommandButtons\\BTNRepairOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNRepairOff.blp"
+ ],
+ "AEpa": [
+  "ReplaceableTextures\\CommandButtons\\BTNSearingArrowsOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNSearingArrowsOff.blp"
+ ],
+ "Asps": [
+  "ReplaceableTextures\\CommandButtons\\BTNSpellStealOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNSpellStealOff.blp"
+ ],
+ "Ainf": [
+  "ReplaceableTextures\\CommandButtons\\BTNInnerFireOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNInnerFireOff.blp"
+ ],
+ "Ahea": [
+  "ReplaceableTextures\\CommandButtons\\BTNHealOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNHealOff.blp"
+ ],
+ "Aslo": [
+  "ReplaceableTextures\\CommandButtons\\BTNSlowOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNSlowOff.blp"
+ ],
+ "AHav": [
+  "ReplaceableTextures\\CommandButtons\\BTNAvatarOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNAvatarOff.blp"
+ ],
+ "AHds": [
+  "ReplaceableTextures\\CommandButtons\\BTNDivineIntervention.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNDivineShieldOff.blp"
+ ],
+ "ANia": [
+  "ReplaceableTextures\\CommandButtons\\BTNIncinerateOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNIncinerateOff.blp"
+ ],
+ "ACpa": [
+  "ReplaceableTextures\\CommandButtons\\BTNParasiteOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNParasiteOff.blp"
+ ],
+ "ANfa": [
+  "ReplaceableTextures\\CommandButtons\\BTNColdArrowsOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNColdArrowsOff.blp"
+ ],
+ "AHca": [
+  "ReplaceableTextures\\CommandButtons\\BTNColdArrowsOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNColdArrowsOff.blp"
+ ],
+ "Aneu": [
+  "ReplaceableTextures\\CommandButtons\\BTNSelectHeroOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNSelectHeroOff.blp"
+ ],
+ "Ane2": [
+  "ReplaceableTextures\\CommandButtons\\BTNSelectHeroOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNSelectHeroOff.blp"
+ ],
+ "Aall": [
+  "ReplaceableTextures\\CommandButtons\\BTNSelectHeroOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNSelectHeroOff.blp"
+ ],
+ "Asds": [
+  "ReplaceableTextures\\CommandButtons\\BTNSelfDestructOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNSelfDestructOff.blp"
+ ],
+ "Asdg": [
+  "ReplaceableTextures\\CommandButtons\\BTNSelfDestructOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNSelfDestructOff.blp"
+ ],
+ "Asd2": [
+  "ReplaceableTextures\\CommandButtons\\BTNSelfDestructOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNSelfDestructOff.blp"
+ ],
+ "Asd3": [
+  "ReplaceableTextures\\CommandButtons\\BTNSelfDestructOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNSelfDestructOff.blp"
+ ],
+ "Anhe": [
+  "ReplaceableTextures\\CommandButtons\\BTNHealOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNHealOff.blp"
+ ],
+ "ACsw": [
+  "ReplaceableTextures\\CommandButtons\\BTNSlowOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNSlowOff.blp"
+ ],
+ "ACbb": [
+  "ReplaceableTextures\\CommandButtons\\BTNBloodLustOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNBloodLustOff.blp"
+ ],
+ "Afzy": [
+  "ReplaceableTextures\\CommandButtons\\BTNBloodLustOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNBloodLustOff.blp"
+ ],
+ "ACbl": [
+  "ReplaceableTextures\\CommandButtons\\BTNBloodLustOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNBloodLustOff.blp"
+ ],
+ "ACcw": [
+  "ReplaceableTextures\\CommandButtons\\BTNColdArrowsOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNColdArrowsOff.blp"
+ ],
+ "ACcs": [
+  "ReplaceableTextures\\CommandButtons\\BTNCurseOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNCurseOff.blp"
+ ],
+ "ACds": [
+  "ReplaceableTextures\\CommandButtons\\BTNDivineIntervention.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNDivineShieldOff.blp"
+ ],
+ "ACff": [
+  "ReplaceableTextures\\CommandButtons\\BTNFaerieFireOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNFaerieFireOff.blp"
+ ],
+ "ACf2": [
+  "ReplaceableTextures\\CommandButtons\\BTNFrostArmorOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNFrostArmorOff.blp"
+ ],
+ "Anh1": [
+  "ReplaceableTextures\\CommandButtons\\BTNHealOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNHealOff.blp"
+ ],
+ "Anh2": [
+  "ReplaceableTextures\\CommandButtons\\BTNHealOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNHealOff.blp"
+ ],
+ "ACim": [
+  "ReplaceableTextures\\CommandButtons\\BTNImmolationOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNImmolationOff.blp"
+ ],
+ "ACif": [
+  "ReplaceableTextures\\CommandButtons\\BTNInnerFireOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNInnerFireOff.blp"
+ ],
+ "ACrd": [
+  "ReplaceableTextures\\CommandButtons\\BTNRaiseDeadOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNRaiseDeadOff.blp"
+ ],
+ "Ahrp": [
+  "ReplaceableTextures\\CommandButtons\\BTNRepairOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNRepairOff.blp"
+ ],
+ "ACsa": [
+  "ReplaceableTextures\\CommandButtons\\BTNSearingArrowsOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNSearingArrowsOff.blp"
+ ],
+ "ACwb": [
+  "ReplaceableTextures\\CommandButtons\\BTNWebOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNWebOff.blp"
+ ],
+ "ACdm": [
+  "ReplaceableTextures\\CommandButtons\\BTNDryadDispelMagicOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNDryadDispelMagicOff.blp"
+ ],
+ "ACd2": [
+  "ReplaceableTextures\\CommandButtons\\BTNDryadDispelMagicOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNDryadDispelMagicOff.blp"
+ ],
+ "Avng": [
+  "ReplaceableTextures\\CommandButtons\\BTNAvengingWatcherOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNAvengingWatcherOff.blp"
+ ],
+ "Apsh": [
+  "ReplaceableTextures\\CommandButtons\\BTNPhaseShiftOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNPhaseShiftOff.blp"
+ ],
+ "Ambt": [
+  "ReplaceableTextures\\CommandButtons\\BTNManaRechargeOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNManaRechargeOff.blp"
+ ],
+ "Awhe": [
+  "ReplaceableTextures\\CommandButtons\\BTNWispHealOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNWispHealOff.blp"
+ ],
+ "Aadm": [
+  "ReplaceableTextures\\CommandButtons\\BTNDryadDispelMagicOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNDryadDispelMagicOff.blp"
+ ],
+ "AEim": [
+  "ReplaceableTextures\\CommandButtons\\BTNImmolationOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNImmolationOff.blp"
+ ],
+ "AHfa": [
+  "ReplaceableTextures\\CommandButtons\\BTNSearingArrowsOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNSearingArrowsOff.blp"
+ ],
+ "Afae": [
+  "ReplaceableTextures\\CommandButtons\\BTNFaerieFireOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNFaerieFireOff.blp"
+ ],
+ "Afa2": [
+  "ReplaceableTextures\\CommandButtons\\BTNFaerieFireOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNFaerieFireOff.blp"
+ ],
+ "Aren": [
+  "ReplaceableTextures\\CommandButtons\\BTNWispHealOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNWispHealOff.blp"
+ ],
+ "Ablo": [
+  "ReplaceableTextures\\CommandButtons\\BTNBloodLustOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNBloodLustOff.blp"
+ ],
+ "Afak": [
+  "ReplaceableTextures\\CommandButtons\\BTNOrbOfDeathOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNOrbOfDeathOff.blp"
+ ],
+ "AUfu": [
+  "ReplaceableTextures\\CommandButtons\\BTNFrostArmorOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNFrostArmorOff.blp"
+ ],
+ "Arpm": [
+  "ReplaceableTextures\\CommandButtons\\BTNReplenishManaOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNReplenishManaOff.blp"
+ ],
+ "Arpl": [
+  "ReplaceableTextures\\CommandButtons\\BTNReplenishHealthOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNReplenishHealthOff.blp"
+ ],
+ "Arpb": [
+  "ReplaceableTextures\\CommandButtons\\BTNReplenishManaOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNReplenishManaOff.blp"
+ ],
+ "Arst": [
+  "ReplaceableTextures\\CommandButtons\\BTNRepairOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNRepairOff.blp"
+ ],
+ "Arai": [
+  "ReplaceableTextures\\CommandButtons\\BTNRaiseDeadOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNRaiseDeadOff.blp"
+ ],
+ "Amb2": [
+  "ReplaceableTextures\\CommandButtons\\BTNReplenishManaOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNReplenishManaOff.blp"
+ ],
+ "Acrs": [
+  "ReplaceableTextures\\CommandButtons\\BTNCurseOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNCurseOff.blp"
+ ],
+ "Aweb": [
+  "ReplaceableTextures\\CommandButtons\\BTNWebOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNWebOff.blp"
+ ],
+ "AUcb": [
+  "ReplaceableTextures\\CommandButtons\\BTNCarrionScarabsOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNCarrionScarabsOff.blp"
+ ],
+ "Amel": [
+  "ReplaceableTextures\\CommandButtons\\BTNUndeadLoadOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNUndeadLoadOff.blp"
+ ],
+ "Aatp": [
+  "ReplaceableTextures\\CommandButtons\\BTNAirAttackOn.blp",
+  "ReplaceableTextures\\CommandButtons\\BTNAirAttackOff.blp"
+ ]
+}

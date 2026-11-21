@@ -1,0 +1,10 @@
+{
+ "note": "Solid doodad types (rule solid_doodad_pathing): r = radius in world units of the VISIBLE ground footprint at scale 1.0; the footprint at scale s is r*s. Types not listed fall back to their pathing texture size (NxM*32 wu) when the texture is a solid one. walk_under = arches and gates units walk beneath (skipped). Extend when a new solid type is used.",
+ "r": {
+  "NRwr": 150, "NRic": 100, "IRic": 70, "IRrk": 70, "NRrk": 70, "IRrs": 60, "CRrk": 70, "CRrs": 150, "LRrk": 70, "ARrk": 70,
+  "NOok": 45, "NObk": 45, "NObc": 45, "COob": 45, "CObo": 45, "AObo": 45, "ZOob": 45, "LOob": 45, "NOtb": 30, "NOgv": 40,
+  "CSbl": 90, "COhs": 60, "ISa1": 60, "ISar": 60, "IOic": 60, "ITcr": 60
+ },
+ "walk_under": ["CSra", "ZSra", "LSra", "BSra", "DSar", "ZOar"],
+ "not_solid_tex_words": ["Unbuildable", "Unflyable", "Arch", "Bridge", "Cliff"]
+}

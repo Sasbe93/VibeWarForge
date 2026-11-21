@@ -1,0 +1,9 @@
+numpy
+scipy
+pillow
+mpyq
+# eudplib is needed for StarCraft: Brood War map IO (tools/lib/bw, tools/bw, tools/ranked/bw)
+eudplib
+# voiced dialogue (tools/wc3/voice_tts.py); model files: see DEPENDENCIES.md
+kokoro-onnx
+soundfile

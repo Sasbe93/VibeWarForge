@@ -1,0 +1,1519 @@
+{
+ "Abomination": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Acolyte": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Akama": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Albatross": [
+  "Death",
+  "What"
+ ],
+ "AltarOfDarkness": [],
+ "AltarOfDepths": [],
+ "AltarOfElders": [],
+ "AltarofKings": [],
+ "AltarofStorms": [],
+ "AmmoDump": [],
+ "AncientOfLore": [],
+ "AncientOfWar": [],
+ "AncientOfWind": [],
+ "AncientOfWonder": [],
+ "AncientProtector": [],
+ "Arachnathid": [
+  "Death",
+  "What",
+  "Yes"
+ ],
+ "ArcaneObservatory": [],
+ "ArcaneSanctum": [],
+ "ArcaneTower": [],
+ "ArcaneVault": [],
+ "Archer": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Arthas": [
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "ArthasWithFrostmourne": [],
+ "Assassin": [
+  "Death"
+ ],
+ "AzureDragon": [
+  "Death",
+  "Pissed",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Ballista": [
+  "Death",
+  "Ready",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Bandit": [
+  "Death",
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Banshee": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "BarrowDen": [],
+ "Beastiary": [],
+ "Beastmaster": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Blacksmith": [],
+ "BloodElfDragonHawk": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "BloodElfEngineer": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "BloodElfSorceror": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "BloodElfWorker": [],
+ "Boat": [
+  "What",
+  "Yes"
+ ],
+ "BoneYard": [],
+ "BookOfSummoning": [],
+ "Bristleback": [
+  "Death",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Cairne": [
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "CannonTower": [],
+ "Cantina": [],
+ "Captain": [
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Castle": [],
+ "Catapult": [
+  "Death",
+  "Ready",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Centaur": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "CentaurArcher": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "CentaurTent": [],
+ "ChaosGrunt": [],
+ "ChaosWarlord": [],
+ "Chicken": [
+  "What"
+ ],
+ "Chimaera": [
+  "Pissed",
+  "Ready",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "ChimaeraRoost": [],
+ "CircleOfPower": [],
+ "CityBuilding0": [],
+ "CityBuilding1": [],
+ "CityBuilding2": [],
+ "CityBuilding3": [],
+ "CityBuilding4": [],
+ "CityBuilding5": [],
+ "CityBuilding6": [],
+ "CityBuilding7": [],
+ "CityBuilding8": [],
+ "CityBuilding9": [],
+ "CityBuildinga": [],
+ "CityBuildingb": [],
+ "CityBuildingc": [],
+ "CityBuildingd": [],
+ "CityBuildinge": [],
+ "CityBuildingf": [],
+ "ClockwerkGoblin": [
+  "Death",
+  "Ready",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "CoralBed": [],
+ "CorruptedEnt": [],
+ "Crypt": [],
+ "CryptFiend": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "DarkRanger": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "DemonGate": [],
+ "Demoness": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "DoomGuard": [
+  "Death"
+ ],
+ "Draenei": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "DraeneiChieftainHut": [],
+ "DraeneiHut": [],
+ "DragonHawk": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "DragonRoost": [],
+ "DragonSpawn": [
+  "What",
+  "Yes"
+ ],
+ "DrekThar": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "DruidOfTheTalon": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "DruidoftheClaw": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "DruidoftheClawMorphed": [
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "DruidoftheTalon": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "DruidoftheTalonMorphed": [
+  "Warcry",
+  "What",
+  "Yes"
+ ],
+ "Dryad": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "EarthPandarenBrewmaster": [],
+ "ElfWizard": [],
+ "ElvenFarm": [],
+ "ElvenGuardTower": [],
+ "Ent": [
+  "Death",
+  "Ready",
+  "What",
+  "Yes"
+ ],
+ "EntangledGoldMine": [],
+ "EvilArthas": [
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "EvilIllidan": [],
+ "EvilIllidanMorphed": [],
+ "EvilSylvanas": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "FacelessOne": [
+  "What",
+  "Yes"
+ ],
+ "FaerieDragon": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "What",
+  "Yes"
+ ],
+ "Farm": [],
+ "Felhound": [
+  "Death",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "FirePandarenBrewmaster": [],
+ "Footman": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "ForestTroll": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "ForestTrollHut0": [],
+ "ForestTrollHut1": [],
+ "ForestTrollShadowPriest": [
+  "Death"
+ ],
+ "Fortress": [],
+ "FountainOfLife": [],
+ "Frog": [
+  "What"
+ ],
+ "FrostTower": [],
+ "FrostWyrm": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Frostmourne": [],
+ "FruitStand": [],
+ "Furbolg": [
+  "Death",
+  "Pissed",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "FurbolgHut": [],
+ "Furion": [
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Gargoyle": [
+  "Death",
+  "Ready",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Garithos": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Ghost": [
+  "Death",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Ghoul": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "GiantSeaTurtle": [
+  "Death",
+  "What",
+  "Yes"
+ ],
+ "Gnoll": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "GnollArcher": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "GnollHut": [],
+ "GnollKing": [],
+ "GoblinLandMine": [
+  "Death"
+ ],
+ "GoblinSapper": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "GoblinShipyard": [],
+ "GoblinZeppelin": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "What",
+  "Yes"
+ ],
+ "GoldMine": [],
+ "GrainWarehouse": [],
+ "GranaryInfected": [],
+ "Graveyard": [],
+ "GreatHall": [],
+ "GrizzlyBear": [
+  "Death",
+  "Ready",
+  "What",
+  "Yes"
+ ],
+ "Grom": [
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Grunt": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "GryphonAviary": [],
+ "GryphonRider": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "GuardTower": [],
+ "Gyrocopter": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Harpy": [
+  "Death",
+  "Pissed",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HarpyNest": [],
+ "HauntedMine": [],
+ "HeadHunter": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HealingWard": [],
+ "HeroArchMage": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroBladeMaster": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroBloodElf": [],
+ "HeroCryptLord": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroDarkRanger": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroDeathKnight": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroDemonHunter": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroDemonHunterMorphed": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroDreadLord": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroFarSeer": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroFemaleDeathKnight": [],
+ "HeroFemaleDemonHunter": [],
+ "HeroFireLord": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroGoblinAlchemist": [],
+ "HeroKeeperoftheGrove": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroLich": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroMoonPriestess": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroMountainKing": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroPaladin": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroPitLord": [
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroShadowHunter": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroTaurenChieftain": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroTinker": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HeroWarden": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HighElfSwordsman": [],
+ "Hippogryph": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "HornOfCenarius": [],
+ "HumanBarracks": [],
+ "HumanLumberMill": [],
+ "HuntersHall": [],
+ "Huntress": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Hydralisk": [
+  "Death",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "IceTroll": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "IceTrollHut0": [],
+ "IceTrollHut1": [],
+ "IceTrollShadowPriest": [],
+ "Illidan": [
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "IllidanMorphed": [
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Infernal": [
+  "Death",
+  "Pissed",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "InfernalMachine": [
+  "Death",
+  "What",
+  "Yes"
+ ],
+ "IronGolem": [
+  "Death",
+  "Pissed",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Jaina": [
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Kael": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Keep": [],
+ "KeeperOfTheGrove": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "KelThuzadLich": [],
+ "KelThuzadNecro": [],
+ "Knight": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "KnightNoRider": [
+  "Death",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Kobold": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "KotoBeast": [
+  "Pissed",
+  "Ready",
+  "What",
+  "Yes"
+ ],
+ "KotoBeastNoRider": [],
+ "LavaSpawn": [
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Lobstrokk": [
+  "Death",
+  "What",
+  "Yes"
+ ],
+ "MageTower": [],
+ "Magnataur": [
+  "Death",
+  "Ready",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Maiev": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "MalFurion": [
+  "Death",
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Mammoth": [
+  "Yes"
+ ],
+ "Mannoroth": [],
+ "Marketplace": [],
+ "MeatWagon": [
+  "Death",
+  "Ready",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Medivh": [],
+ "Mercenary": [],
+ "Merchant": [],
+ "Militia": [],
+ "MoonWell": [],
+ "MortarTeam": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "MountainGiant": [
+  "Death",
+  "Pissed",
+  "What",
+  "Yes"
+ ],
+ "Muradin": [
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Murloc": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "MurlocHut0": [],
+ "MurlocHut1": [],
+ "NagaMyrmidon": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "NagaRoyalGuard": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "NagaSeaWitch": [],
+ "NagaSiren": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Naisha": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Nazgrel": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Necromancer": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Necropolis": [],
+ "Necropolisu1": [],
+ "Necropolisu2": [],
+ "Nerubian": [],
+ "NerubianZiggurat": [],
+ "NetherDragon": [
+  "Death",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "ObsidianDestroyer": [],
+ "ObsidianStatue": [
+  "Ready",
+  "What",
+  "Yes"
+ ],
+ "Ogre": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "OgreOneHead": [],
+ "OrcBarracks": [],
+ "Owlbear": [
+  "Death",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "PandarenBrewmaster": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Peasant": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Penguin": [
+  "Death",
+  "What"
+ ],
+ "Peon": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Phoenix": [
+  "Death",
+  "What",
+  "Yes"
+ ],
+ "PhoenixEgg": [
+  "What"
+ ],
+ "Pig": [
+  "Death",
+  "What"
+ ],
+ "PigFarm": [],
+ "PitLord": [
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "PlagueCloud": [],
+ "PocketFactory": [
+  "What"
+ ],
+ "Priest": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "PrisonWagon": [
+  "Death",
+  "What",
+  "Yes"
+ ],
+ "Proudmoore": [],
+ "QuillBeast": [],
+ "Rabbit": [
+  "What"
+ ],
+ "Raccoon": [],
+ "Rat": [
+  "Death",
+  "What"
+ ],
+ "RazorMane": [],
+ "Revenant": [
+  "Death"
+ ],
+ "RiddenHippogryph": [
+  "Death"
+ ],
+ "Rifleman": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "RockGolem": [
+  "Death",
+  "Pissed",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Rokhan": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Runner": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "SacrificialAltar": [],
+ "SacrificialPit": [],
+ "SammyCube": [],
+ "Satyr": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Scarab": [
+  "Death",
+  "Pissed",
+  "What",
+  "Yes"
+ ],
+ "ScoutTower": [],
+ "SeaGiant": [
+  "Death",
+  "Pissed",
+  "What",
+  "Yes"
+ ],
+ "SeaWitch": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Seal": [
+  "Death",
+  "What"
+ ],
+ "SentryWard": [
+  "Death"
+ ],
+ "Shade": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Shaman": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "ShamanX": [],
+ "Shandris": [
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Sheep": [
+  "Death",
+  "What"
+ ],
+ "ShrineOfAzshara": [],
+ "Skeleton": [
+  "Death",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "SkeletonArcher": [],
+ "Skink": [
+  "Death",
+  "What"
+ ],
+ "Slaughterhouse": [],
+ "SludgeMonster": [],
+ "SnapDragon": [
+  "Death",
+  "Ready",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "SnowOwl": [],
+ "Sorceress": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "SpawningGrounds": [],
+ "SpellBreaker": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Spider": [
+  "Death",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "SpiderCrab": [],
+ "SpiritLodge": [],
+ "SpiritOfVengeance": [
+  "Ready",
+  "What",
+  "Yes"
+ ],
+ "SpiritWalker": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "SpiritWolf": [
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "StasisTotem": [],
+ "SteamTank": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "StormPandarenBrewmaster": [],
+ "Stronghold": [],
+ "Sylvanas": [
+  "Pissed",
+  "Warcry",
+  "What"
+ ],
+ "Sylvanus": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Tauren": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "TaurenTent": [],
+ "TaurenTent2": [],
+ "TaurenTotem": [],
+ "TempleOfTheDamned": [],
+ "TempleOfTides": [],
+ "Tent": [],
+ "Thrall": [
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Tichondrius": [
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "TidalGuardian": [],
+ "TombOfRelics": [],
+ "TownHall": [],
+ "TreeofLife": [],
+ "TrollBatrider": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "TrollBurrow": [],
+ "Tuskarr": [
+  "Death",
+  "What",
+  "Yes"
+ ],
+ "Tyrande": [
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Unbroken": [
+  "Death",
+  "What",
+  "Yes"
+ ],
+ "Uther": [
+  "Pissed",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Varimathras": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Vengeance": [],
+ "VillagerKid": [],
+ "VillagerMan": [
+  "Pissed",
+  "What",
+  "Yes"
+ ],
+ "VillagerMan2": [
+  "Pissed",
+  "What",
+  "Yes"
+ ],
+ "VillagerWoman": [
+  "Pissed",
+  "What",
+  "Yes"
+ ],
+ "VoodooLounge": [],
+ "Vulture": [
+  "Death",
+  "What"
+ ],
+ "WarEagle": [
+  "Death"
+ ],
+ "WarMill": [],
+ "WatchTower": [],
+ "Watcher": [
+  "Death"
+ ],
+ "WaterElemental": [
+  "Death",
+  "Pissed",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Waygate": [],
+ "Wendigo": [
+  "Death",
+  "Pissed",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "WindRyderCage": [],
+ "WingedSerpent": [
+  "Death",
+  "Ready",
+  "What",
+  "Yes"
+ ],
+ "Wisp": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "What",
+  "Yes"
+ ],
+ "WitchDoctor": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Wolf": [
+  "Death"
+ ],
+ "WolfRider": [
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Workshop": [],
+ "WyvernRider": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "Warcry",
+  "What",
+  "Yes",
+  "YesAttack"
+ ],
+ "Zergling": [],
+ "Ziggurat": [],
+ "ZigguratUpgrade": [],
+ "Zombie": [
+  "Death"
+ ],
+ "boat": [
+  "What",
+  "Yes"
+ ],
+ "murloc": [
+  "Death",
+  "Pissed",
+  "Ready",
+  "What",
+  "Yes",
+  "YesAttack"
+ ]
+}

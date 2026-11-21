@@ -1,0 +1,4270 @@
+{
+ "source": "warpack-stock-data-0.0.1 (doodads.slk, destructabledata.slk, unitdata.slk, terrain.slk)",
+ "count": 100,
+ "scenes": [
+  {
+   "id": "S001",
+   "name": "Wolf Graveyard",
+   "story": "Wolves have stirred up graves at the edge of the forest and gnaw at the bones.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Ldro",
+   "blocker": "LTlt",
+   "creeps": {
+    "center": "nwld",
+    "flank": [
+     "nwlt",
+     "nwlt"
+    ]
+   },
+   "doodads": [
+    "LOgr",
+    "LOpg",
+    "LOrb",
+    "LOsk",
+    "AOhs"
+   ],
+   "layout": "Center: nwld (back to LTlt); flanks left/right: nwlt, nwlt; decoration in half circle behind/next to the camp: LOgr, Lopg, LOrb, LOsk, AOhs; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Pups (nwlt) instead of a pack",
+    "Winter variant NOgv+NObo on Ndrd",
+    "Alpha wolf nwlg instead of nwld"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: Graves only on dug-up ground (Fdro/Ldro patch) at the edge of the forest, cliff or map, never on grass (edge_props).",
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nwld": true,
+    "nwlt": true,
+    "LOgr": true,
+    "LOpg": true,
+    "LOrb": true,
+    "LOsk": true,
+    "AOhs": true,
+    "Ldro": true,
+    "LTlt": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S002",
+   "name": "Gnoll Poachers",
+   "story": "Gnolle have a deer camp with skins and cages on the edge of the forest.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Ldrt",
+   "blocker": "LTlt",
+   "creeps": {
+    "center": "ngns",
+    "flank": [
+     "ngno",
+     "ngnb"
+    ]
+   },
+   "doodads": [
+    "LOce",
+    "LOct",
+    "LOwp",
+    "LOfl",
+    "LObr"
+   ],
+   "layout": "Center: ngns (back to LTlt); flanks left/right: ngno, ngnb; decoration in half circle behind/next to the camp: LOce, LOct, LOwp, LOfl, LObr; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Cage with critter ner next to it",
+    "Cage set with FTtw",
+    "Brute pair instead of gnolls"
+   ],
+   "use": "both",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "ngns": true,
+    "ngno": true,
+    "ngnb": true,
+    "LOce": true,
+    "LOct": true,
+    "LOwp": true,
+    "LOfl": true,
+    "LObr": true,
+    "Ldrt": true,
+    "LTlt": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S003",
+   "name": "Kobold Mine",
+   "story": "Goblins dig for gold at the cliff, Loren stand around.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Lrok",
+   "blocker": "Klippe",
+   "creeps": {
+    "center": "nkol",
+    "flank": [
+     "nkob",
+     "nkog"
+    ]
+   },
+   "doodads": [
+    "DOmc",
+    "DOme",
+    "DOjp",
+    "LTrc",
+    "LObz"
+   ],
+   "layout": "Center: nkol (back to cliff); flanks left/right: nkob, nkog; decoration in half circle behind/next to camp: DOmc, DOme, DOjp, LTrc, LObz; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "empty lore overturned",
+    "Tunneler nkot in the center",
+    "Dungeon cave entrance LCc0"
+   ],
+   "use": "both",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nkol": true,
+    "nkob": true,
+    "nkog": true,
+    "DOmc": true,
+    "DOme": true,
+    "DOjp": true,
+    "LTrc": true,
+    "LObz": true,
+    "Lrok": true
+   },
+   "tileset_unfit": [
+    "DOme"
+   ]
+  },
+  {
+   "id": "S004",
+   "name": "Burned Farm",
+   "story": "Bandits burned down a farm and looted the barn.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Ldrg",
+   "blocker": "LSsb",
+   "creeps": {
+    "center": "nbld",
+    "flank": [
+     "nbrg",
+     "nrog"
+    ]
+   },
+   "doodads": [
+    "LSsb",
+    "LSsf",
+    "LPcw",
+    "LOcb",
+    "LOsm",
+    "LOtr"
+   ],
+   "layout": "Center: nbld (back to LSsb); flanks left/right: nbrg, nrog; decoration in half circle behind/next to the camp: LSsB, LSsf, LPcw, LOcb, LOsm, LOtr; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Granary LSgs instead of a barn",
+    "only smoke without fire",
+    "Assassin nass as guard"
+   ],
+   "use": "both",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nbld": true,
+    "nbrg": true,
+    "nrog": true,
+    "LSsb": true,
+    "LSsf": true,
+    "LPcw": true,
+    "LOcb": true,
+    "LOsm": true,
+    "LOtr": true,
+    "Ldrg": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S005",
+   "name": "Ogre Kitchen",
+   "story": "Ogres cook heads in the cauldron in front of their cave.",
+   "tileset": "Lordaeron Fall",
+   "ground_tile": "Fdro",
+   "blocker": "Klippe",
+   "creeps": {
+    "center": "nogl",
+    "flank": [
+     "nogr",
+     "nogm"
+    ]
+   },
+   "doodads": [
+    "LOca",
+    "LOsh",
+    "LOrb",
+    "LOsk",
+    "NOfp"
+   ],
+   "layout": "Center: nogl (back to cliff); flanks left/right: nogr, nogm; decoration in half circle behind/next to camp: LOca, LOsh, LOrb, LOsk, NOfp; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Fire place with pig NOfg",
+    "Ogre magi nomg in the center",
+    "Barrens version on Bdrr"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nogl": true,
+    "nogr": true,
+    "nogm": true,
+    "LOca": true,
+    "LOsh": true,
+    "LOrb": true,
+    "LOsk": true,
+    "NOfp": true,
+    "Fdro": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S006",
+   "name": "Murloc Cove",
+   "story": "Murlocs have collected fish and stranded boats at seawater.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Ldrt",
+   "blocker": "Wasserrand",
+   "creeps": {
+    "center": "nmrm",
+    "flank": [
+     "nmrl",
+     "nmrr"
+    ]
+   },
+   "doodads": [
+    "NWrd",
+    "LPrs",
+    "COdf",
+    "ZOsh",
+    "LPlp"
+   ],
+   "layout": "Center: nmrm (back to water edge); flanks left/right: nmrl, nmrr; decoration in half circle behind/next to the camp: NWrd, LPrs, COdf, ZOsh, LPlp; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Flesheater nmfs feeding circle",
+    "Plaguebearer disease with LOfl",
+    "Pier ASpt"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nmrm": true,
+    "nmrl": true,
+    "nmrr": true,
+    "NWrd": true,
+    "LPrs": true,
+    "COdf": true,
+    "ZOsh": true,
+    "LPlp": true,
+    "Ldrt": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S007",
+   "name": "Spider Nest",
+   "story": "Riesenspinnen haben Wanderer in Kokons an Felsen gesponnen.",
+   "tileset": "Lordaeron Fall",
+   "ground_tile": "Fdrt",
+   "blocker": "Felsen",
+   "creeps": {
+    "center": "nsgt",
+    "flank": [
+     "nspr",
+     "nspr"
+    ]
+   },
+   "doodads": [
+    "NRwr",
+    "DTes",
+    "LOsc",
+    "LOrb"
+   ],
+   "layout": "Center: nsgt (back to rocks); flanks left/right: nspr, nspr; decoration in half circle behind/next to the camp: NRwr, DTes, LOsc, LOrb; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Northrend NRwr+Nsnw",
+    "Spitting Spider nssp",
+    "Egg sacks as margin"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nsgt": true,
+    "nspr": true,
+    "NRwr": true,
+    "DTes": true,
+    "LOsc": true,
+    "LOrb": true,
+    "Fdrt": true
+   },
+   "tileset_unfit": [
+    "NRwr"
+   ]
+  },
+  {
+   "id": "S008",
+   "name": "Troll Shrine",
+   "story": "Forest trolls pray at a shrine with totem and coal basins.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Lgrd",
+   "blocker": "LTlt",
+   "creeps": {
+    "center": "nftk",
+    "flank": [
+     "nftr",
+     "nfsp"
+    ]
+   },
+   "doodads": [
+    "AOnt",
+    "LObz",
+    "LOss",
+    "LOsk"
+   ],
+   "layout": "Center: nftk (back to LTlt); flanks left/right: nftr, nfsp; decoration in half circle behind/next to the camp: AOnt, LObz, LOss, LOsk; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Berserker guard nftb",
+    "Dark trolls on Fdrt",
+    "Totem replaced by AOob"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nftk": true,
+    "nftr": true,
+    "nfsp": true,
+    "AOnt": true,
+    "LObz": true,
+    "LOss": true,
+    "LOsk": true,
+    "Lgrd": true,
+    "LTlt": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S009",
+   "name": "Satyr Grove",
+   "story": "Satyrn's ruining a grove with devil's runes.",
+   "tileset": "Ashenvale",
+   "ground_tile": "Adrd",
+   "blocker": "ATtr",
+   "creeps": {
+    "center": "nsth",
+    "flank": [
+     "nsty",
+     "nsat"
+    ]
+   },
+   "doodads": [
+    "CObl",
+    "APtv",
+    "ZZgr",
+    "AOsr"
+   ],
+   "layout": "Center: nsth (back to ATtr); flanks left/right: nsty, nsat; decoration in half circle behind/next to the camp: CObl, APtv, ZZgr, AOsr; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Felwood version CTtr",
+    "Soulstealer nstl",
+    "Leave out runes for Ranked"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nsth": true,
+    "nsty": true,
+    "nsat": true,
+    "CObl": true,
+    "APtv": true,
+    "ZZgr": true,
+    "AOsr": true,
+    "Adrd": true,
+    "ATtr": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S010",
+   "name": "Furbolg Den",
+   "story": "Furbolgs live in a hollow giant stump with supplies.",
+   "tileset": "Ashenvale",
+   "ground_tile": "Agrd",
+   "blocker": "ATtr",
+   "creeps": {
+    "center": "nfre",
+    "flank": [
+     "nfrl",
+     "nfrs"
+    ]
+   },
+   "doodads": [
+    "AOhs",
+    "AOlg",
+    "AOla",
+    "LOhb"
+   ],
+   "layout": "Center: nfre (back to ATtr); flanks left/right: nfrl, nfrs; decoration in half circle behind/next to the camp: AOhs, AOlg, AOla, LOhb; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Champion nfrg",
+    "Polar furbolgs nfpe on Nsnw",
+    "Trackers nfrb on the flanks"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nfre": true,
+    "nfrl": true,
+    "nfrs": true,
+    "AOhs": true,
+    "AOlg": true,
+    "AOla": true,
+    "LOhb": true,
+    "Agrd": true,
+    "ATtr": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S011",
+   "name": "Harpy Roost",
+   "story": "Harpyia live on a rocky tip full of bones.",
+   "tileset": "Barrens",
+   "ground_tile": "Bdrr",
+   "blocker": "BRsp",
+   "creeps": {
+    "center": "nhrq",
+    "flank": [
+     "nhar",
+     "nhrw"
+    ]
+   },
+   "doodads": [
+    "BRrs",
+    "BObo",
+    "BRrk"
+   ],
+   "layout": "Center: nhrq (back to BRsp); flanks left/right: nhar, nhrw; decoration in half circle behind/next to camp: BRrs, BObo, BRrk; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Storm Hag nhrh",
+    "Rogue pack nhrr",
+    "Felwood with CRrs"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nhrq": true,
+    "nhar": true,
+    "nhrw": true,
+    "BRrs": true,
+    "BObo": true,
+    "BRrk": true,
+    "Bdrr": true,
+    "BRsp": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S012",
+   "name": "Centaur Camp",
+   "story": "Centaurs race on a totem in the steppe.",
+   "tileset": "Barrens",
+   "ground_tile": "Bdrh",
+   "blocker": "BRrp",
+   "creeps": {
+    "center": "ncnk",
+    "flank": [
+     "ncea",
+     "ncer"
+    ]
+   },
+   "doodads": [
+    "BOct",
+    "BObo",
+    "LOss",
+    "BRrk"
+   ],
+   "layout": "Center: ncnk (back to BRrp); flanks left/right: ncea, ncer; decoration in half circle behind/next to the camp: BOct, BObo, LOSS, BRrk; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Sorcerer ncks",
+    "only Drudge group",
+    "with cactus BPca at the edge"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "ncnk": true,
+    "ncea": true,
+    "ncer": true,
+    "BOct": true,
+    "BObo": true,
+    "LOss": true,
+    "BRrk": true,
+    "Bdrh": true,
+    "BRrp": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S013",
+   "name": "Quillboar Pen",
+   "story": "Stingle boars defend their thorn mound.",
+   "tileset": "Barrens",
+   "ground_tile": "Bgrr",
+   "blocker": "BRrs",
+   "creeps": {
+    "center": "nrzm",
+    "flank": [
+     "nqb1",
+     "nrzs"
+    ]
+   },
+   "doodads": [
+    "APtv",
+    "BObo",
+    "BOtt",
+    "BRrk"
+   ],
+   "layout": "Center: nrzm (back at BRrs); flanks left/right: nqb1, nrzs; decoration in half circle behind/next to the camp: APtv, BObo, BOtt, BRrk; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Brute nrzb",
+    "Geomancer nrzg",
+    "Ashenvale thorns"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nrzm": true,
+    "nqb1": true,
+    "nrzs": true,
+    "APtv": true,
+    "BObo": true,
+    "BOtt": true,
+    "BRrk": true,
+    "Bgrr": true,
+    "BRrs": true
+   },
+   "tileset_unfit": [
+    "APtv"
+   ]
+  },
+  {
+   "id": "S014",
+   "name": "Crater Worm",
+   "story": "A Donnerlurch lies in a crater with bones.",
+   "tileset": "Barrens",
+   "ground_tile": "Bdsd",
+   "blocker": "BRcr",
+   "creeps": {
+    "center": "nthl",
+    "flank": [
+     "nstw",
+     "nstw"
+    ]
+   },
+   "doodads": [
+    "BRcr",
+    "BObo",
+    "BRrk"
+   ],
+   "layout": "Center: nthl (back to BRcr); flanks left/right: nstw, nstw; decoration in half circle behind/next to camp: BRcr, BObo, BRrk; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Lightning Lizard nltc",
+    "Geyser BRgs beside it",
+    "only desert edge"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nthl": true,
+    "nstw": true,
+    "BRcr": true,
+    "BObo": true,
+    "BRrk": true,
+    "Bdsd": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S015",
+   "name": "Mud Bath",
+   "story": "Mud golems rise from a pond at the cliff foot.",
+   "tileset": "Lordaeron Fall",
+   "ground_tile": "Fdrg",
+   "blocker": "Klippe",
+   "creeps": {
+    "center": "ngst",
+    "flank": [
+     "ngrk",
+     "ngrk"
+    ]
+   },
+   "doodads": [
+    "LPrs",
+    "LRrk",
+    "LTrc"
+   ],
+   "layout": "Center: ngst (back to cliff); flanks left/right: ngrk, ngrk; decoration in half circle behind/next to camp: LPrs, LRrk, LTrc; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Granite golem nggr",
+    "Felwood Cpos",
+    "With water lilies"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "ngst": true,
+    "ngrk": true,
+    "LPrs": true,
+    "LRrk": true,
+    "LTrc": true,
+    "Fdrg": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S016",
+   "name": "Undead Churchyard",
+   "story": "Skeletons rise from a cemetery at the corner of the map.",
+   "tileset": "Lordaeron Fall",
+   "ground_tile": "Fdro",
+   "blocker": "Kartenrand",
+   "creeps": {
+    "center": "nskg",
+    "flank": [
+     "nske",
+     "nskm"
+    ]
+   },
+   "doodads": [
+    "LOgr",
+    "LOpg",
+    "YOgr",
+    "LOrb",
+    "LOsk",
+    "NOtb"
+   ],
+   "layout": "Center: nskg (back to the border); flanks left/right: nske, nskm; decoration in half circle behind/next to the camp: LOgr, LOpg, YOgr, LOrb, LOsk, NOtb; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Zombies nzom instead of skeletons",
+    "Northrend NSct Krypta",
+    "Ghosts ngh1"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: Graves only on dug-up ground (Fdro/Ldro patch) at the edge of the forest, cliff or map, never on grass (edge_props).",
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nskg": true,
+    "nske": true,
+    "nskm": true,
+    "LOgr": true,
+    "LOpg": true,
+    "YOgr": true,
+    "LOrb": true,
+    "LOsk": true,
+    "NOtb": true,
+    "Fdro": true
+   },
+   "tileset_unfit": [
+    "NOtb"
+   ]
+  },
+  {
+   "id": "S017",
+   "name": "Fallen Knight",
+   "story": "A Wraith watches over a knight's body at a chapel ruin.",
+   "tileset": "Dalaran Ruins",
+   "ground_tile": "Xdtr",
+   "blocker": "ZSrb",
+   "creeps": {
+    "center": "ngh2",
+    "flank": [
+     "ngh1",
+     "ngh1"
+    ]
+   },
+   "doodads": [
+    "YOks",
+    "ZOsb",
+    "LOsc",
+    "LOwp"
+   ],
+   "layout": "Center: ngh2 (back to ZSrb); flanks left/right: ngh1, ngh1; decoration in half circle behind/next to the camp: YOks, ZOsb, LOsc, LOwp; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Statue overturned",
+    "Fall version",
+    "without ruin only Campaign"
+   ],
+   "use": "both",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "ngh2": true,
+    "ngh1": true,
+    "YOks": true,
+    "ZOsb": true,
+    "LOsc": true,
+    "LOwp": true,
+    "Xdtr": true,
+    "ZSrb": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S018",
+   "name": "Gnoll Watchtower",
+   "story": "Gnolle occupied a destroyed tower.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Ldro",
+   "blocker": "LSst",
+   "creeps": {
+    "center": "ngnw",
+    "flank": [
+     "ngno",
+     "ngno"
+    ]
+   },
+   "doodads": [
+    "LSst",
+    "LOh1",
+    "LOwp",
+    "LTba"
+   ],
+   "layout": "Center: ngnw (back to LSst); flanks left/right: ngno, ngno; decoration in half circle behind/next to the camp: LSst, LOh1, LOwp, LTba; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Overseer ngns",
+    "Tower ruin ZOdt",
+    "with barricades LTba"
+   ],
+   "use": "both",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "ngnw": true,
+    "ngno": true,
+    "LSst": true,
+    "LOh1": true,
+    "LOwp": true,
+    "LTba": true,
+    "Ldro": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S019",
+   "name": "Burning Mill",
+   "story": "A mill burns, bandits flee with sacks.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Ldrg",
+   "blocker": "LSwb",
+   "creeps": {
+    "center": "nenf",
+    "flank": [
+     "nban",
+     "nban"
+    ]
+   },
+   "doodads": [
+    "LSwb",
+    "LPcw",
+    "LOhb",
+    "LOwr",
+    "YOtf"
+   ],
+   "layout": "Center: nenf (back to LSwb); flanks left/right: nban, nban; decoration in half circle behind/next to the camp: LSwB, LPcw, LOhb, LOwr, YOtf; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "without fire emitter",
+    "Wheat field LPwh",
+    "Assassin nass"
+   ],
+   "use": "campaign",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nenf": true,
+    "nban": true,
+    "LSwb": true,
+    "LPcw": true,
+    "LOhb": true,
+    "LOwr": true,
+    "YOtf": true,
+    "Ldrg": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S020",
+   "name": "Elven Spring",
+   "story": "Wildkin's bathing at a decayed elf spring.",
+   "tileset": "Ashenvale",
+   "ground_tile": "Agrs",
+   "blocker": "ATtr",
+   "creeps": {
+    "center": "nowk",
+    "flank": [
+     "nowb",
+     "nowb"
+    ]
+   },
+   "doodads": [
+    "ZOfo",
+    "AOob",
+    "AWfl",
+    "APct"
+   ],
+   "layout": "Center: nowk (back to ATtr); flanks left/right: nowb, nowb; decoration in the semicircle behind/next to the camp: ZOfo, AOob, AWfl, APct; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Moonkin nowe",
+    "Ruins version ZOfo on Zgrs",
+    "without source only water lilies"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nowk": true,
+    "nowb": true,
+    "ZOfo": true,
+    "AOob": true,
+    "AWfl": true,
+    "APct": true,
+    "Agrs": true,
+    "ATtr": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S021",
+   "name": "Dragon Hoard",
+   "story": "A black dragon rests on a treasure trove in the cave.",
+   "tileset": "Lordaeron Fall",
+   "ground_tile": "Frok",
+   "blocker": "Klippe",
+   "creeps": {
+    "center": "nbwm",
+    "flank": [
+     "nbdk",
+     "nbdr"
+    ]
+   },
+   "doodads": [
+    "DOtp",
+    "LOsk",
+    "LOrb",
+    "LCc0"
+   ],
+   "layout": "Center: nbwm (back to cliff); flanks left/right: nbdk, nbdr; decoration in half circle behind/next to camp: DOtp, LOsk, LOrb, LCc0; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Green Dragon ngrd",
+    "Blue nadr in Northrend",
+    "Pup group"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nbwm": true,
+    "nbdk": true,
+    "nbdr": true,
+    "DOtp": true,
+    "LOsk": true,
+    "LOrb": true,
+    "LCc0": true,
+    "Frok": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S022",
+   "name": "Whelp Clutch",
+   "story": "Dragon puppies nest in eggs between rocks.",
+   "tileset": "Barrens",
+   "ground_tile": "Bdrr",
+   "blocker": "BRrs",
+   "creeps": {
+    "center": "nbdk",
+    "flank": [
+     "nbdr",
+     "nbdr"
+    ]
+   },
+   "doodads": [
+    "DTes",
+    "BRrk",
+    "BObo"
+   ],
+   "layout": "Center: nbdk (back at BRrs); flanks left/right: nbr, nbdr; decoration in half circle behind/next to camp: DTes, BRrk, BObo; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "green puppies ngdk",
+    "Ice variant nadk",
+    "Clutch without dragon"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nbdk": true,
+    "nbdr": true,
+    "DTes": true,
+    "BRrk": true,
+    "BObo": true,
+    "Bdrr": true,
+    "BRrs": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S023",
+   "name": "Wendigo Cave",
+   "story": "Wendigos lurk in an ice cave with bones.",
+   "tileset": "Northrend",
+   "ground_tile": "Nsnr",
+   "blocker": "Klippe",
+   "creeps": {
+    "center": "nwna",
+    "flank": [
+     "nwen",
+     "nwns"
+    ]
+   },
+   "doodads": [
+    "NObo",
+    "NRic",
+    "IRrk",
+    "LCc0"
+   ],
+   "layout": "Center: nwna (back to cliff); flanks left/right: nwen, nwns; decoration in half circle behind/next to camp: NObo, NRic, IRrk, LCc0; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Elder nwnr",
+    "without cave only ice blocks",
+    "Sasquatch note"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nwna": true,
+    "nwen": true,
+    "nwns": true,
+    "NObo": true,
+    "NRic": true,
+    "IRrk": true,
+    "LCc0": true,
+    "Nsnr": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S024",
+   "name": "Ice Troll Camp",
+   "story": "Ice rolls roast a pig at the fire.",
+   "tileset": "Northrend",
+   "ground_tile": "Ndrd",
+   "blocker": "NTtw",
+   "creeps": {
+    "center": "nitw",
+    "flank": [
+     "nitr",
+     "nith"
+    ]
+   },
+   "doodads": [
+    "NOfg",
+    "NOfp",
+    "NObo",
+    "NOal"
+   ],
+   "layout": "Center: nitw (back to NTtw); flanks left/right: nitr, nith; decoration in half circle behind/next to the camp: NOfg, NOfp, NObo, NOal; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Trapper nitt",
+    "two fires",
+    "Igloo ITig for campaign"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nitw": true,
+    "nitr": true,
+    "nith": true,
+    "NOfg": true,
+    "NOfp": true,
+    "NObo": true,
+    "NOal": true,
+    "Ndrd": true,
+    "NTtw": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S025",
+   "name": "Mammoth Trail",
+   "story": "Magnataur drives a mammoth past ice floes.",
+   "tileset": "Northrend",
+   "ground_tile": "Nsnw",
+   "blocker": "IRgc",
+   "creeps": {
+    "center": "nmgd",
+    "flank": [
+     "nmgw",
+     "nmgr"
+    ]
+   },
+   "doodads": [
+    "NWf1",
+    "NRic",
+    "NObo"
+   ],
+   "layout": "Center: nmgd (back to IRgc); flanks left/right: nmgw, nmgr; decoration in half circle behind/next to camp: NWf1, NRic, NObo; open side to approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Mammoth nmam instead of warriors",
+    "Reaver pair",
+    "Glacier at the edge"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nmgd": true,
+    "nmgw": true,
+    "nmgr": true,
+    "NWf1": true,
+    "NRic": true,
+    "NObo": true,
+    "Nsnw": true,
+    "IRgc": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S026",
+   "name": "Tuskarr Fishery",
+   "story": "Tuskarr fishing on a jetty with rowing boats.",
+   "tileset": "Northrend",
+   "ground_tile": "Nice",
+   "blocker": "Wasserrand",
+   "creeps": {
+    "center": "ntkc",
+    "flank": [
+     "ntka",
+     "ntkf"
+    ]
+   },
+   "doodads": [
+    "NWrw",
+    "NWfb",
+    "NWfp",
+    "ASpr"
+   ],
+   "layout": "Center: ntkc (back to water edge); flanks left/right: ntka, ntkf; decoration in half circle behind/next to the camp: NWrw, NWfb, NWFp, ASpr; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Healer ntkh",
+    "Wreck NWrd",
+    "Seals nsea as critters"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "ntkc": true,
+    "ntka": true,
+    "ntkf": true,
+    "NWrw": true,
+    "NWfb": true,
+    "NWfp": true,
+    "ASpr": true,
+    "Nice": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S027",
+   "name": "Nerubian Burrow",
+   "story": "Nerubers have undermined a tomb, egg bags everywhere.",
+   "tileset": "Northrend",
+   "ground_tile": "Ndrd",
+   "blocker": "NSct",
+   "creeps": {
+    "center": "nnwq",
+    "flank": [
+     "nnwl",
+     "nnws"
+    ]
+   },
+   "doodads": [
+    "NSct",
+    "DTes",
+    "NRwr",
+    "NObo"
+   ],
+   "layout": "Center: nnwq (back to NSct); flanks left/right: nnwl, nnws; decoration in half circle behind/next to the camp: NSct, DTes, NRwr, NObo; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Ravager nnwr",
+    "Arachnathids nanb",
+    "Spider statues IOss"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: Graves only on dug-up ground (Ndrd patch) at the edge of the forest, cliff or map, never on grass (edge_props).",
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nnwq": true,
+    "nnwl": true,
+    "nnws": true,
+    "NSct": true,
+    "DTes": true,
+    "NRwr": true,
+    "NObo": true,
+    "Ndrd": true
+   },
+   "tileset_unfit": [
+    "DTes"
+   ]
+  },
+  {
+   "id": "S028",
+   "name": "Stranded Ship",
+   "story": "A battleship wreck on the coast, Makrura looting it.",
+   "tileset": "Northrend",
+   "ground_tile": "Ndrt",
+   "blocker": "NWsd",
+   "creeps": {
+    "center": "nlds",
+    "flank": [
+     "nlpr",
+     "nltl"
+    ]
+   },
+   "doodads": [
+    "NWsd",
+    "NWfb",
+    "NWfp",
+    "ZOsh"
+   ],
+   "layout": "Center: nlds (back to NWsd); flanks left/right: nlpr, nltl; decoration in half circle behind/next to the camp: NWsD, NWfb, NWFp, ZOsh; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Murgul nmcf",
+    "Summer coast",
+    "Planks only"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nlds": true,
+    "nlpr": true,
+    "nltl": true,
+    "NWsd": true,
+    "NWfb": true,
+    "NWfp": true,
+    "ZOsh": true,
+    "Ndrt": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S029",
+   "name": "Naga Ritual Circle",
+   "story": "Nagas conjure on a circle by the water.",
+   "tileset": "Dalaran Ruins",
+   "ground_tile": "Zdrt",
+   "blocker": "ZTtw",
+   "creeps": {
+    "center": "nnrg",
+    "flank": [
+     "nnmg",
+     "nnsw"
+    ]
+   },
+   "doodads": [
+    "ZTnc",
+    "ZOrp",
+    "ZWcl",
+    "ZPlp"
+   ],
+   "layout": "Center: nnrg (back to ZTtw); flanks left/right: nnmg, nnsw; decoration in half circle behind/next to the camp: ZTnc, ZOrp, ZWcl, ZPlp; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Siren pair",
+    "Corals ZWca",
+    "without circle only pillars"
+   ],
+   "use": "campaign",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nnrg": true,
+    "nnmg": true,
+    "nnsw": true,
+    "ZTnc": true,
+    "ZOrp": true,
+    "ZWcl": true,
+    "ZPlp": true,
+    "Zdrt": true,
+    "ZTtw": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S030",
+   "name": "Dalaran Library",
+   "story": "Arkans are guarding scattered books of a ruin.",
+   "tileset": "Dalaran Ruins",
+   "ground_tile": "Xblm",
+   "blocker": "ZOdt",
+   "creeps": {
+    "center": "nwzr",
+    "flank": [
+     "nwiz",
+     "nwiz"
+    ]
+   },
+   "doodads": [
+    "ZOls",
+    "ZOrc",
+    "DObk",
+    "XOmr"
+   ],
+   "layout": "Center: nwzr (back to ZOdt); flanks left/right: nwiz, nwiz; decoration in half circle behind/next to the camp: ZOls, ZOrc, Dobk, XOmr; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Revenants",
+    "Crystals in the centre",
+    "Bookshelves overturned"
+   ],
+   "use": "campaign",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nwzr": true,
+    "nwiz": true,
+    "ZOls": true,
+    "ZOrc": true,
+    "DObk": true,
+    "XOmr": true,
+    "Xblm": true,
+    "ZOdt": true
+   },
+   "tileset_unfit": [
+    "DObk"
+   ]
+  },
+  {
+   "id": "S031",
+   "name": "Cursed Tower",
+   "story": "Rogue magicians have defended a Dalaran tower against hikers.",
+   "tileset": "Dalaran Ruins",
+   "ground_tile": "Xdtr",
+   "blocker": "ZOdt",
+   "creeps": {
+    "center": "nwzd",
+    "flank": [
+     "nwzr",
+     "nwzg"
+    ]
+   },
+   "doodads": [
+    "ZOdt",
+    "ZOd2",
+    "XOcl",
+    "XOmr"
+   ],
+   "layout": "Center: nwzd (back to ZOdt); flanks left/right: nwtzr, nwzg; decoration in half circle behind/next to the camp: ZOdd, ZOd2, XOcl, XOmr; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Dark Wizard nwzd with Apprentices nwiz",
+    "Tower base ZOrb",
+    "Rune circle"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nwzd": true,
+    "nwzr": true,
+    "nwzg": true,
+    "ZOdt": true,
+    "ZOd2": true,
+    "XOcl": true,
+    "XOmr": true,
+    "Xdtr": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S032",
+   "name": "Arcane Crystals",
+   "story": "Crystal golems grow from a crystal field.",
+   "tileset": "Dalaran Ruins",
+   "ground_tile": "Xgsb",
+   "blocker": "ZRrs",
+   "creeps": {
+    "center": "nggr",
+    "flank": [
+     "ngrk",
+     "ngst"
+    ]
+   },
+   "doodads": [
+    "ZOrc",
+    "IRcy",
+    "ZRrk"
+   ],
+   "layout": "Center: nggr (back at ZRrs); flanks left/right: ngrk, ngst; decoration in half circle behind/next to camp: ZOrc, IRcy, ZRrk; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Ice crystals IRcy",
+    "Rocks instead of crystals",
+    "Elemental ngrk"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nggr": true,
+    "ngrk": true,
+    "ngst": true,
+    "ZOrc": true,
+    "IRcy": true,
+    "ZRrk": true,
+    "Xgsb": true,
+    "ZRrs": true
+   },
+   "tileset_unfit": [
+    "IRcy"
+   ]
+  },
+  {
+   "id": "S033",
+   "name": "Bear Cave",
+   "story": "An Ursa sleeps in front of his cave, fish remains lie around.",
+   "tileset": "Ashenvale",
+   "ground_tile": "Adrt",
+   "blocker": "Klippe",
+   "creeps": {
+    "center": "nfrg",
+    "flank": [
+     "nfrb",
+     "nfrb"
+    ]
+   },
+   "doodads": [
+    "COdf",
+    "AOhs",
+    "LCc2",
+    "ARrk"
+   ],
+   "layout": "Center: nfrg (back to cliff); flanks left/right: nfrb, nfrb; decoration in half circle behind/next to camp: COdf, AOhs, LCc2, ARrk; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Polar furbolg nfpc",
+    "Pups as critters",
+    "Fall version"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nfrg": true,
+    "nfrb": true,
+    "COdf": true,
+    "AOhs": true,
+    "LCc2": true,
+    "ARrk": true,
+    "Adrt": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S034",
+   "name": "Troll Stone Bridge",
+   "story": "Trolls demand tolls at an old bridge.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Ldrt",
+   "blocker": "Bridgehead",
+   "creeps": {
+    "center": "nftb",
+    "flank": [
+     "nftr",
+     "nftt"
+    ]
+   },
+   "doodads": [
+    "LOss",
+    "LObz",
+    "LT04"
+   ],
+   "layout": "Center: nftb (back to bridge head); flanks left/right: nftr, nftt; decoration in half circle behind/next to camp: LOss, LObz, LT04; open side to march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Dark trolls",
+    "LT00 wooden bridge",
+    "without toll torches"
+   ],
+   "use": "campaign",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nftb": true,
+    "nftr": true,
+    "nftt": true,
+    "LOss": true,
+    "LObz": true,
+    "LT04": true,
+    "Ldrt": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S035",
+   "name": "Cultist Altar",
+   "story": "Apostate magicians sacrifice at a bloody altar in the forest.",
+   "tileset": "Lordaeron Fall",
+   "ground_tile": "Fdrt",
+   "blocker": "FTtw",
+   "creeps": {
+    "center": "nwzd",
+    "flank": [
+     "nwzg",
+     "nwzg"
+    ]
+   },
+   "doodads": [
+    "ZOba",
+    "LOtz",
+    "LOsk",
+    "LOic"
+   ],
+   "layout": "Center: nwzd (back to FTtw); flanks left/right: nwtzg, nwzg; decoration in half circle behind/next to the camp: ZOba, LOtz, LOsk, LOic; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Rogue Wizard nwzr",
+    "Altar OOal",
+    "Pillars LOSSS"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nwzd": true,
+    "nwzg": true,
+    "ZOba": true,
+    "LOtz": true,
+    "LOsk": true,
+    "LOic": true,
+    "Fdrt": true,
+    "FTtw": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S036",
+   "name": "Plague Field",
+   "story": "A disease-treant poisons a cornfield next to the farm.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Ldrg",
+   "blocker": "LSsf",
+   "creeps": {
+    "center": "nepl",
+    "flank": [
+     "nenp",
+     "nenp"
+    ]
+   },
+   "doodads": [
+    "LPcw",
+    "LOfl",
+    "LSsf",
+    "LOrh"
+   ],
+   "layout": "Center: nepl (back at LSsf); flanks left/right: nep, nep; decoration in half circle behind/next to the camp: LPcw, LOfl, LSsF, LOrh; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Corrupted Treant nenc",
+    "Fly swarm",
+    "Fall"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nepl": true,
+    "nenp": true,
+    "LPcw": true,
+    "LOfl": true,
+    "LSsf": true,
+    "LOrh": true,
+    "Ldrg": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S037",
+   "name": "Treant Grove",
+   "story": "Awakened trees form a circle around an old stump.",
+   "tileset": "Ashenvale",
+   "ground_tile": "Agrd",
+   "blocker": "ATtr",
+   "creeps": {
+    "center": "nenc",
+    "flank": [
+     "nenp",
+     "nenp"
+    ]
+   },
+   "doodads": [
+    "AOhs",
+    "AOlg",
+    "APbs"
+   ],
+   "layout": "Center: nenc (back to ATtr); flanks left/right: nenp, nenp; decoration in half circle behind/next to camp: AOhs, AOlg, APbs; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Felwood treants",
+    "Ruins variant",
+    "Shrines AOob"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nenc": true,
+    "nenp": true,
+    "AOhs": true,
+    "AOlg": true,
+    "APbs": true,
+    "Agrd": true,
+    "ATtr": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S038",
+   "name": "Hellhound Pit",
+   "story": "Devil beasts dig at a demonic crater.",
+   "tileset": "Felwood",
+   "ground_tile": "Cdrd",
+   "blocker": "CRrs",
+   "creeps": {
+    "center": "nfgu",
+    "flank": [
+     "nfel",
+     "nfel"
+    ]
+   },
+   "doodads": [
+    "DRfc",
+    "DOlc",
+    "CObl",
+    "OOsk"
+   ],
+   "layout": "Center: nfgu (back to CRrs); flanks left/right: nfel, nfel; decoration in half circle behind/next to the camp: DRfc, DOlc, CObl, OOSk; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Doom Guard nbal",
+    "Infernal ninf",
+    "Lava cracks"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nfgu": true,
+    "nfel": true,
+    "DRfc": true,
+    "DOlc": true,
+    "CObl": true,
+    "OOsk": true,
+    "Cdrd": true,
+    "CRrs": true
+   },
+   "tileset_unfit": [
+    "DRfc",
+    "DOlc"
+   ]
+  },
+  {
+   "id": "S039",
+   "name": "Infernal Impact",
+   "story": "An infernal is struck, the crater glows.",
+   "tileset": "Barrens",
+   "ground_tile": "Bdsd",
+   "blocker": "BRcr",
+   "creeps": {
+    "center": "ninf",
+    "flank": [
+     "nfel",
+     "nfel"
+    ]
+   },
+   "doodads": [
+    "BRcr",
+    "DOlc",
+    "YOfs",
+    "LOsm"
+   ],
+   "layout": "Center: ninf (back to BRcr); flanks left/right: nfel, nfel; decoration in half circle behind/next to camp: BRcr, DOlc, YOfs, LOsm; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "without fel beasts",
+    "Winter impact",
+    "Felwood"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "ninf": true,
+    "nfel": true,
+    "BRcr": true,
+    "DOlc": true,
+    "YOfs": true,
+    "LOsm": true,
+    "Bdsd": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S040",
+   "name": "Void Rift",
+   "story": "Voidwalkers step out of a shimmering portal.",
+   "tileset": "Dalaran Ruins",
+   "ground_tile": "Xrtl",
+   "blocker": "ZOdt",
+   "creeps": {
+    "center": "nvde",
+    "flank": [
+     "nvdl",
+     "nvdl"
+    ]
+   },
+   "doodads": [
+    "OZsp",
+    "XOmr",
+    "ZOrc"
+   ],
+   "layout": "Center: nvde (back to ZOdt); flanks left/right: nvdl, nvdl; decoration in half circle behind/next to the camp: OZsp, XOmr, ZOrc; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Greater Voidwalker nvdg",
+    "Runes instead of a portal",
+    "Outland note"
+   ],
+   "use": "campaign",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nvde": true,
+    "nvdl": true,
+    "OZsp": true,
+    "XOmr": true,
+    "ZOrc": true,
+    "Xrtl": true,
+    "ZOdt": true
+   },
+   "tileset_unfit": [
+    "OZsp"
+   ]
+  },
+  {
+   "id": "S041",
+   "name": "Salamander Nest",
+   "story": "Salamanders warm up to lava cracks.",
+   "tileset": "Barrens",
+   "ground_tile": "Bdrr",
+   "blocker": "BRrs",
+   "creeps": {
+    "center": "nsll",
+    "flank": [
+     "nslh",
+     "nslh"
+    ]
+   },
+   "doodads": [
+    "DOlc",
+    "DRfc",
+    "BRrk"
+   ],
+   "layout": "Center: nsll (back to BRrs); flanks left/right: nslh, nslH; decoration in half circle behind/next to camp: DOlc, DRfc, BRrk; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Vizier nslv",
+    "Dungeon tile Dlav",
+    "Leave out lava"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nsll": true,
+    "nslh": true,
+    "DOlc": true,
+    "DRfc": true,
+    "BRrk": true,
+    "Bdrr": true,
+    "BRrs": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S042",
+   "name": "Turtle Beach",
+   "story": "Giant turtles lie on the sandy beach between shells.",
+   "tileset": "Dalaran Ruins",
+   "ground_tile": "Zsan",
+   "blocker": "Wasserrand",
+   "creeps": {
+    "center": "ntrg",
+    "flank": [
+     "ntrs",
+     "ntrs"
+    ]
+   },
+   "doodads": [
+    "ZOsh",
+    "ZWcl",
+    "ZPru"
+   ],
+   "layout": "Center: ntrg (back to water edge); flanks left/right: ntrs, ntrs; decoration in half circle behind/next to camp: ZOsh, ZWcl, ZPru; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Dragon Turtle ntrd",
+    "Barrens sand Bdsd",
+    "Hatchlings ntrh"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "ntrg": true,
+    "ntrs": true,
+    "ZOsh": true,
+    "ZWcl": true,
+    "ZPru": true,
+    "Zsan": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S043",
+   "name": "Hydra Swamp",
+   "story": "A Hydra lurks in the seawater between Bensen.",
+   "tileset": "Felwood",
+   "ground_tile": "Cpos",
+   "blocker": "Wasserrand",
+   "creeps": {
+    "center": "nhyd",
+    "flank": [
+     "nhyh",
+     "nhyh"
+    ]
+   },
+   "doodads": [
+    "CPct",
+    "CPlp",
+    "COdf",
+    "CPms"
+   ],
+   "layout": "Center: nhyd (back to water edge); flanks left/right: nhyh, nhyh; decoration in half circle behind/next to the camp: CPct, CPlp, COdf, CPms; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Ancient nahy",
+    "Ashenvale swamp",
+    "Elder nehy"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nhyd": true,
+    "nhyh": true,
+    "CPct": true,
+    "CPlp": true,
+    "COdf": true,
+    "CPms": true,
+    "Cpos": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S044",
+   "name": "Storm Witch Peak",
+   "story": "Harpyias circle around a cliff with nests of hay.",
+   "tileset": "Lordaeron Fall",
+   "ground_tile": "Frok",
+   "blocker": "Klippe",
+   "creeps": {
+    "center": "nhrh",
+    "flank": [
+     "nhrw",
+     "nhrr"
+    ]
+   },
+   "doodads": [
+    "LOhc",
+    "LOrb",
+    "LRrk"
+   ],
+   "layout": "Center: nhrh (back to cliff); flanks left/right: nhrw, nhrr; decoration in half circle behind/next to camp: LOhc, LOrb, LRrk; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Barrens",
+    "Queen",
+    "without hay"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nhrh": true,
+    "nhrw": true,
+    "nhrr": true,
+    "LOhc": true,
+    "LOrb": true,
+    "LRrk": true,
+    "Frok": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S045",
+   "name": "Stone Circle",
+   "story": "Felsgolems stand in an ancient Obelisk circle.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Lgrd",
+   "blocker": "LTlt",
+   "creeps": {
+    "center": "nggr",
+    "flank": [
+     "ngst",
+     "ngst"
+    ]
+   },
+   "doodads": [
+    "AOob",
+    "AObo",
+    "LRrk"
+   ],
+   "layout": "Center: nggr (back to LTlt); flanks left/right: ngst, ngst; decoration in half circle behind/next to camp: AOob, AObo, LRrk; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Northrend NOok",
+    "broken obelisks",
+    "Barrens BRrp"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nggr": true,
+    "ngst": true,
+    "AOob": true,
+    "AObo": true,
+    "LRrk": true,
+    "Lgrd": true,
+    "LTlt": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S046",
+   "name": "Woodcutter Stores",
+   "story": "Gnolle raided a lumberjack camp.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Ldrt",
+   "blocker": "LTlt",
+   "creeps": {
+    "center": "ngnb",
+    "flank": [
+     "ngno",
+     "ngna"
+    ]
+   },
+   "doodads": [
+    "AOlg",
+    "AOla",
+    "LOwb",
+    "LTcr",
+    "LObr"
+   ],
+   "layout": "Center: ngnb (back to LTlt); flanks left/right: ngno, ngna; decoration in half circle behind/next to the camp: AOlg, AOla, LOwb, LTcr, LObr; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Bandits instead of gnolls",
+    "Fall",
+    "Boxes destroyed"
+   ],
+   "use": "both",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "ngnb": true,
+    "ngno": true,
+    "ngna": true,
+    "AOlg": true,
+    "AOla": true,
+    "LOwb": true,
+    "LTcr": true,
+    "LObr": true,
+    "Ldrt": true,
+    "LTlt": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S047",
+   "name": "Crossroads Gallows",
+   "story": "A bandit leader hangs victims at the signpost.",
+   "tileset": "Lordaeron Fall",
+   "ground_tile": "Fdro",
+   "blocker": "FTtw",
+   "creeps": {
+    "center": "nbld",
+    "flank": [
+     "nban",
+     "nass"
+    ]
+   },
+   "doodads": [
+    "LOsp",
+    "LOic",
+    "LOss",
+    "LOlp"
+   ],
+   "layout": "Center: nbld (back to FTtw); flanks left/right: nban, wet; decoration in half circle behind/next to camp: LOsp, LOic, LOss, LOlp; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Only signposts",
+    "Rogue nrog",
+    "lantern off"
+   ],
+   "use": "campaign",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nbld": true,
+    "nban": true,
+    "nass": true,
+    "LOsp": true,
+    "LOic": true,
+    "LOss": true,
+    "LOlp": true,
+    "Fdro": true,
+    "FTtw": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S048",
+   "name": "Ice Mage Tower",
+   "story": "Frost-revenants guard an icy tower ruin.",
+   "tileset": "Northrend",
+   "ground_tile": "Nice",
+   "blocker": "IRgc",
+   "creeps": {
+    "center": "nrvi",
+    "flank": [
+     "nrvs",
+     "nrvs"
+    ]
+   },
+   "doodads": [
+    "ISrb",
+    "IRrk",
+    "IOst",
+    "ZOdt"
+   ],
+   "layout": "Center: nrvi (back to IRgc); flanks left/right: nrvs, nrvs; decoration in half circle behind/next to the camp: ISrb, IRrk, IOst, ZOdt; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Lightning-Revenant nrvl",
+    "Blocks of ice",
+    "Icecrown tiles Iice"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nrvi": true,
+    "nrvs": true,
+    "ISrb": true,
+    "IRrk": true,
+    "IOst": true,
+    "ZOdt": true,
+    "Nice": true,
+    "IRgc": true
+   },
+   "tileset_unfit": [
+    "ZOdt"
+   ]
+  },
+  {
+   "id": "S049",
+   "name": "Fire Revenants",
+   "story": "Fire spirits orbit a melted blacksmith.",
+   "tileset": "Barrens",
+   "ground_tile": "Bflr",
+   "blocker": "BRrp",
+   "creeps": {
+    "center": "nrvf",
+    "flank": [
+     "nrvl",
+     "nrvl"
+    ]
+   },
+   "doodads": [
+    "DOlc",
+    "YOfs",
+    "LObz"
+   ],
+   "layout": "Center: nrvf (back to BRrp); flanks left/right: nrvl, nrvl; decoration in the semicircle behind/next to the camp: DOlc, YOfs, LObz; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Dungeon",
+    "Lava puddles",
+    "Death-Revenant nrvd"
+   ],
+   "use": "both",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nrvf": true,
+    "nrvl": true,
+    "DOlc": true,
+    "YOfs": true,
+    "LObz": true,
+    "Bflr": true,
+    "BRrp": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S050",
+   "name": "Penguin Colony",
+   "story": "Critter penguins escape from a polar bear-furbolg group.",
+   "tileset": "Northrend",
+   "ground_tile": "Nsnw",
+   "blocker": "NTtw",
+   "creeps": {
+    "center": "nfpe",
+    "flank": [
+     "nfpl",
+     "nfpt"
+    ]
+   },
+   "doodads": [
+    "NWf2",
+    "NRrk",
+    "NObo"
+   ],
+   "layout": "Center: nfpe (back to NTtw); flanks left/right: nfpl, nfpt; decoration in half circle behind/next to the camp: NWf2, NRrk, NObo; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Penguins npng as story",
+    "Seals",
+    "Tuskarr hunter"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nfpe": true,
+    "nfpl": true,
+    "nfpt": true,
+    "NWf2": true,
+    "NRrk": true,
+    "NObo": true,
+    "Nsnw": true,
+    "NTtw": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S051",
+   "name": "Goblin Shipyard",
+   "story": "A destroyed Goblin shipyard, Murlocs they took over.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Ldrt",
+   "blocker": "LSrg",
+   "creeps": {
+    "center": "nmmu",
+    "flank": [
+     "nmrl",
+     "nmrr"
+    ]
+   },
+   "doodads": [
+    "LSrg",
+    "NWfb",
+    "LTbr",
+    "LTex"
+   ],
+   "layout": "Center: nmmu (back to LSrg); flanks left/right: nmrl, nmrr; decoration in the semicircle behind/next to the camp: LSrG, NWfb, LTbr, LTex; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "with TNT barrel",
+    "Bandits",
+    "Ruin coast"
+   ],
+   "use": "campaign",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nmmu": true,
+    "nmrl": true,
+    "nmrr": true,
+    "LSrg": true,
+    "NWfb": true,
+    "LTbr": true,
+    "LTex": true,
+    "Ldrt": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S052",
+   "name": "Broken Caravan",
+   "story": "Centaurs have attacked a caravan in the desert.",
+   "tileset": "Barrens",
+   "ground_tile": "Bdsr",
+   "blocker": "BRrk",
+   "creeps": {
+    "center": "ncim",
+    "flank": [
+     "ncea",
+     "ncen"
+    ]
+   },
+   "doodads": [
+    "LOcb",
+    "LTcr",
+    "LTbr",
+    "BObo",
+    "LOsc"
+   ],
+   "layout": "Center: ncim (back to BRrk); flanks left/right: ncea, ncen; decoration in half circle behind/next to the camp: LOcb, LTcr, LTbr, BObo, LOsc; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Quillboar",
+    "Bandits",
+    "only boxes"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "ncim": true,
+    "ncea": true,
+    "ncen": true,
+    "LOcb": true,
+    "LTcr": true,
+    "LTbr": true,
+    "BObo": true,
+    "LOsc": true,
+    "Bdsr": true,
+    "BRrk": true
+   },
+   "tileset_unfit": [
+    "LOcb"
+   ]
+  },
+  {
+   "id": "S053",
+   "name": "Tomb Robbers",
+   "story": "Bandits dig up a nobility cemetery, piles of shovels next to it.",
+   "tileset": "Lordaeron Fall",
+   "ground_tile": "Fdro",
+   "blocker": "Kartenrand",
+   "creeps": {
+    "center": "nrog",
+    "flank": [
+     "nban",
+     "nban"
+    ]
+   },
+   "doodads": [
+    "YOgr",
+    "LOgr",
+    "LOwb",
+    "LTcr",
+    "LOlp"
+   ],
+   "layout": "Center: nrog (back to the edge of the map); flanks left/right: nban, nban; decoration in half circle behind/next to the camp: YOgr, LOgr, LOwb, LTcr, LOlp; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Ghouls disturb them",
+    "Dalaran YOgr",
+    "Northrend NOgv"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: Graves only on dug-up ground (Fdro/Ldro patch) at the edge of the forest, cliff or map, never on grass (edge_props).",
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nrog": true,
+    "nban": true,
+    "YOgr": true,
+    "LOgr": true,
+    "LOwb": true,
+    "LTcr": true,
+    "LOlp": true,
+    "Fdro": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S054",
+   "name": "Ghoul Feast",
+   "story": "Ghouls eat bodies on a devastated battlefield.",
+   "tileset": "Lordaeron Fall",
+   "ground_tile": "Fdrt",
+   "blocker": "LSst",
+   "creeps": {
+    "center": "nzom",
+    "flank": [
+     "nzom",
+     "nzom"
+    ]
+   },
+   "doodads": [
+    "LOsc",
+    "LOwp",
+    "LOrb",
+    "LOh1",
+    "LOo1"
+   ],
+   "layout": "Center: nzom (back to LSst); flanks left/right: nzome, nzom; decoration in half circle behind/next to the camp: LOsc, LOwp, LOrb, LOh1, LOo1; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "only zombies",
+    "Banner snapped",
+    "Flies LOfl"
+   ],
+   "use": "campaign",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nzom": true,
+    "LOsc": true,
+    "LOwp": true,
+    "LOrb": true,
+    "LOh1": true,
+    "LOo1": true,
+    "Fdrt": true,
+    "LSst": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S055",
+   "name": "Battlefield Banner",
+   "story": "Orc and human banners over an old battlefield, skeletons resting.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Ldrt",
+   "blocker": "LTba",
+   "creeps": {
+    "center": "nsko",
+    "flank": [
+     "nske",
+     "nske"
+    ]
+   },
+   "doodads": [
+    "LOh1",
+    "LOo1",
+    "LOwp",
+    "LOrb"
+   ],
+   "layout": "Center: nsko (back to LTba); flanks left/right: nske, nske; decoration in half circle behind/next to the camp: LOh1, LOo1, LOwp, LOrb; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "orcish skeletons",
+    "only weapons",
+    "Fall"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nsko": true,
+    "nske": true,
+    "LOh1": true,
+    "LOo1": true,
+    "LOwp": true,
+    "LOrb": true,
+    "Ldrt": true,
+    "LTba": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S056",
+   "name": "Witch Cabin",
+   "story": "A warlock brews in a cauldron near a hut.",
+   "tileset": "Lordaeron Fall",
+   "ground_tile": "Fdrg",
+   "blocker": "FTtw",
+   "creeps": {
+    "center": "nwzr",
+    "flank": [
+     "nwiz",
+     "nwiz"
+    ]
+   },
+   "doodads": [
+    "LOca",
+    "VSvb",
+    "LOfl",
+    "LObr"
+   ],
+   "layout": "Center: nwzr (back to FTtw); flanks left/right: nwiz, nwiz; decoration in half circle behind/next to the camp: LOca, VSvb, LOfl, LObr; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Cultist",
+    "Ogre magi",
+    "Felwood"
+   ],
+   "use": "campaign",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nwzr": true,
+    "nwiz": true,
+    "LOca": true,
+    "VSvb": true,
+    "LOfl": true,
+    "LObr": true,
+    "Fdrg": true,
+    "FTtw": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S057",
+   "name": "Mushroom Grove",
+   "story": "Huge mushrooms, Felwood toads and Satyrn in the mist.",
+   "tileset": "Felwood",
+   "ground_tile": "Cvin",
+   "blocker": "CTtr",
+   "creeps": {
+    "center": "nsts",
+    "flank": [
+     "nsty",
+     "nsty"
+    ]
+   },
+   "doodads": [
+    "CPms",
+    "DTsh",
+    "CObl"
+   ],
+   "layout": "Center: nsts (back to CTtr); flanks left/right: nsty, nsty; decoration in half circle behind/next to the camp: CPms, DTsh, CObl; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Ashenvale mushrooms",
+    "Treants",
+    "Sludges nslm"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nsts": true,
+    "nsty": true,
+    "CPms": true,
+    "DTsh": true,
+    "CObl": true,
+    "Cvin": true,
+    "CTtr": true
+   },
+   "tileset_unfit": [
+    "DTsh"
+   ]
+  },
+  {
+   "id": "S058",
+   "name": "Plague Pit",
+   "story": "Mucilage springs from a rotten pond.",
+   "tileset": "Felwood",
+   "ground_tile": "Cpos",
+   "blocker": "Wasserrand",
+   "creeps": {
+    "center": "nslf",
+    "flank": [
+     "nslm",
+     "nslm"
+    ]
+   },
+   "doodads": [
+    "COdf",
+    "CPct",
+    "CObl",
+    "LOfl"
+   ],
+   "layout": "Center: nslf (back to water edge); flanks left/right: nslm, nslm; decoration in half circle behind/next to the camp: COdf, CPct, CObl, LOfl; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Larger mucus nslf",
+    "Summer pond",
+    "Murloc mutants"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nslf": true,
+    "nslm": true,
+    "COdf": true,
+    "CPct": true,
+    "CObl": true,
+    "LOfl": true,
+    "Cpos": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S059",
+   "name": "Rock Eagles",
+   "story": "Wildkin breeds on a rocky arch.",
+   "tileset": "Ashenvale",
+   "ground_tile": "Arck",
+   "blocker": "ASra",
+   "creeps": {
+    "center": "nowe",
+    "flank": [
+     "nowb",
+     "nowb"
+    ]
+   },
+   "doodads": [
+    "ASra",
+    "ARrk",
+    "AObd"
+   ],
+   "layout": "Center: nowe (back to ASra); flanks left/right: nowb, nowb; decoration in half circle behind/next to the camp: ASra, ARrk, AObd; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Barrens BSra",
+    "Northrend NSra",
+    "Birds Aobd"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nowe": true,
+    "nowb": true,
+    "ASra": true,
+    "ARrk": true,
+    "AObd": true,
+    "Arck": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S060",
+   "name": "Wood Elf Watch",
+   "story": "An abandoned Sentinel statue; furbolgs use it as a resting place.",
+   "tileset": "Ashenvale",
+   "ground_tile": "Agrd",
+   "blocker": "ATtr",
+   "creeps": {
+    "center": "nfrs",
+    "flank": [
+     "nfrl",
+     "nfrl"
+    ]
+   },
+   "doodads": [
+    "AOgs",
+    "AOks",
+    "AObr",
+    "AOlg"
+   ],
+   "layout": "Center: nfrs (back to ATtr); flanks left/right: nfrl, nfrl; decoration in half circle behind/next to the camp: AOgs, AOks, AObr, AOlg; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Keeper statue AOks",
+    "Satyrs",
+    "Felwood"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nfrs": true,
+    "nfrl": true,
+    "AOgs": true,
+    "AOks": true,
+    "AObr": true,
+    "AOlg": true,
+    "Agrd": true,
+    "ATtr": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S061",
+   "name": "World Tree Shrine",
+   "story": "Elven ruins with a broken column, Satyrn desecrates them.",
+   "tileset": "Ashenvale",
+   "ground_tile": "Adrg",
+   "blocker": "ASbc",
+   "creeps": {
+    "center": "nsat",
+    "flank": [
+     "nsty",
+     "nsty"
+    ]
+   },
+   "doodads": [
+    "ASbc",
+    "ASHB",
+    "ASbr",
+    "AObo"
+   ],
+   "layout": "Center: nsat (back to ASbc); flanks left/right: nsty, nsty; decoration in half circle behind/next to the camp: ASbc, ASHB, ASbr, AObo; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Felwood CSbc",
+    "Furbolgs",
+    "Without pillar"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nsat": true,
+    "nsty": true,
+    "ASbc": true,
+    "ASHB": true,
+    "ASbr": true,
+    "AObo": true,
+    "Adrg": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S062",
+   "name": "Icicle Crypt",
+   "story": "Skeletons break out of a frozen crypt.",
+   "tileset": "Northrend",
+   "ground_tile": "Nsnw",
+   "blocker": "Kartenrand",
+   "creeps": {
+    "center": "nskg",
+    "flank": [
+     "nske",
+     "nskm"
+    ]
+   },
+   "doodads": [
+    "NSct",
+    "NOtb",
+    "NOgv",
+    "NObo"
+   ],
+   "layout": "Center: nskg (back to the edge of the map); flanks left/right: nske, nskm; decoration in half circle behind/next to the camp: NSct, NOtb, NOgv, NObo; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Revenants",
+    "Ghouls",
+    "Icecrown tiles"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: Graves only on dug-up ground (Ndrd patch) at the edge of the forest, cliff or map, never on grass (edge_props).",
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nskg": true,
+    "nske": true,
+    "nskm": true,
+    "NSct": true,
+    "NOtb": true,
+    "NOgv": true,
+    "NObo": true,
+    "Nsnw": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S063",
+   "name": "Quarry",
+   "story": "Felsgolems and goblins work in a quarry.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Lrok",
+   "blocker": "Klippe",
+   "creeps": {
+    "center": "ngst",
+    "flank": [
+     "nkob",
+     "nkob"
+    ]
+   },
+   "doodads": [
+    "LTrc",
+    "DOmc",
+    "LRrk",
+    "DRst"
+   ],
+   "layout": "Center: ngst (back to cliff); flanks left/right: nkob, nkob; decoration in half circle behind/next to camp: LTrc, DOmc, LRrk, DRst; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "only Golems",
+    "Barrens",
+    "Lore empty"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "ngst": true,
+    "nkob": true,
+    "LTrc": true,
+    "DOmc": true,
+    "LRrk": true,
+    "DRst": true,
+    "Lrok": true
+   },
+   "tileset_unfit": [
+    "DRst"
+   ]
+  },
+  {
+   "id": "S064",
+   "name": "Waterfall Grotto",
+   "story": "Murlocs live behind a waterfall in a cliff cave.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Lrok",
+   "blocker": "Klippe",
+   "creeps": {
+    "center": "nmrm",
+    "flank": [
+     "nmrl",
+     "nmrl"
+    ]
+   },
+   "doodads": [
+    "LWw0",
+    "LCc0",
+    "LPrs"
+   ],
+   "layout": "Center: nmrm (back to cliff); flanks left/right: nmrl, nmrl; decoration in half circle behind/next to camp: LWw0, LCc0, LPrs; open side to approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Naga",
+    "Ice waterfall IWw0",
+    "without cave"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nmrm": true,
+    "nmrl": true,
+    "LWw0": true,
+    "LCc0": true,
+    "LPrs": true,
+    "Lrok": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S065",
+   "name": "Forest Spirit Glade",
+   "story": "A treant watches over a clearing with flowers and wildlife.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Lgrs",
+   "blocker": "LTlt",
+   "creeps": {
+    "center": "nenc",
+    "flank": [
+     "nenp",
+     "nenp"
+    ]
+   },
+   "doodads": [
+    "ZPfw",
+    "APbs",
+    "LRrk"
+   ],
+   "layout": "Center: nenc (back to LTlt); flanks left/right: nenp, nenp; decoration in half circle behind/next to camp: ZPfw, APbs, LRrk; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Deer nder",
+    "Ashenvale",
+    "only flowers"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nenc": true,
+    "nenp": true,
+    "ZPfw": true,
+    "APbs": true,
+    "LRrk": true,
+    "Lgrs": true,
+    "LTlt": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S066",
+   "name": "Waykeeper Bridge",
+   "story": "Bandits lurk at a wooden bridge with barricade.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Ldrt",
+   "blocker": "Bridgehead",
+   "creeps": {
+    "center": "nenf",
+    "flank": [
+     "nban",
+     "nrog"
+    ]
+   },
+   "doodads": [
+    "LTba",
+    "LTcr",
+    "LOtz"
+   ],
+   "layout": "Center: nenf (back to bridge head); flanks left/right: nban, nrog; decoration in half circle behind/next to camp: LTba, LTcr, LOtz; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Gnolls",
+    "Stone bridge YT00",
+    "Trolls"
+   ],
+   "use": "campaign",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nenf": true,
+    "nban": true,
+    "nrog": true,
+    "LTba": true,
+    "LTcr": true,
+    "LOtz": true,
+    "Ldrt": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S067",
+   "name": "Forest Fire Scar",
+   "story": "A charred strip of forest where fire elementals rage.",
+   "tileset": "Lordaeron Fall",
+   "ground_tile": "Fdrt",
+   "blocker": "FTtw",
+   "creeps": {
+    "center": "nrvf",
+    "flank": [
+     "nrvf",
+     "nrvf"
+    ]
+   },
+   "doodads": [
+    "AOsr",
+    "LOsm",
+    "LPcw"
+   ],
+   "layout": "Center: nrvf (back to FTtw); flanks left/right: nrvvf, nrvf; decoration in the semicircle behind/next to the camp: AOsr, LOsm, LPcw; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "only smoke",
+    "Barrens",
+    "Infernal"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nrvf": true,
+    "AOsr": true,
+    "LOsm": true,
+    "LPcw": true,
+    "Fdrt": true,
+    "FTtw": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S068",
+   "name": "Spike Pit",
+   "story": "Stinged boars have rammed stakes into their camp.",
+   "tileset": "Barrens",
+   "ground_tile": "Bdrg",
+   "blocker": "BRrs",
+   "creeps": {
+    "center": "nrzg",
+    "flank": [
+     "nqb2",
+     "nrzs"
+    ]
+   },
+   "doodads": [
+    "LOss",
+    "BObo",
+    "BOtt",
+    "APtv"
+   ],
+   "layout": "Center: nrzg (back at BRrs); flanks left/right: nqb2, nrzs; decoration in half circle behind/next to the camp: LOss, BObo, BOtt, APtv; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Medicine Man",
+    "more bones",
+    "Centaurs"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nrzg": true,
+    "nqb2": true,
+    "nrzs": true,
+    "LOss": true,
+    "BObo": true,
+    "BOtt": true,
+    "APtv": true,
+    "Bdrg": true,
+    "BRrs": true
+   },
+   "tileset_unfit": [
+    "APtv"
+   ]
+  },
+  {
+   "id": "S069",
+   "name": "Murloc Spawning Ground",
+   "story": "Murloc eggs between shells on the lakeshore.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Ldrt",
+   "blocker": "Wasserrand",
+   "creeps": {
+    "center": "nmpg",
+    "flank": [
+     "nmrl",
+     "nmrl"
+    ]
+   },
+   "doodads": [
+    "DTes",
+    "ZOsh",
+    "LPrs",
+    "LPfp"
+   ],
+   "layout": "Center: nmpg (back to water edge); flanks left/right: nmrl, nmrl; decoration in half circle behind/next to the camp: DTes, ZOsh, LPrs, LPfp; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Ruins beach",
+    "Flesheater",
+    "Mutants"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nmpg": true,
+    "nmrl": true,
+    "DTes": true,
+    "ZOsh": true,
+    "LPrs": true,
+    "LPfp": true,
+    "Ldrt": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S070",
+   "name": "Tauren Ancestor Grave",
+   "story": "A tauren-death over old graves, ghosts watch.",
+   "tileset": "Barrens",
+   "ground_tile": "Bdrh",
+   "blocker": "BRrp",
+   "creeps": {
+    "center": "ngh2",
+    "flank": [
+     "ngh1",
+     "ngh1"
+    ]
+   },
+   "doodads": [
+    "BOtt",
+    "BObo",
+    "LOgr",
+    "LOrb"
+   ],
+   "layout": "Center: ngh2 (back to BRrp); flanks left/right: ngh1, ngh1; decoration in half circle behind/next to the camp: BOtt, BObo, LOgr, LOrb; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Centaur revenants",
+    "without totem",
+    "Winter"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: Graves only on dug-up ground (Fdro/Ldro patch) at the edge of the forest, cliff or map, never on grass (edge_props).",
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "ngh2": true,
+    "ngh1": true,
+    "BOtt": true,
+    "BObo": true,
+    "LOgr": true,
+    "LOrb": true,
+    "Bdrh": true,
+    "BRrp": true
+   },
+   "tileset_unfit": [
+    "LOrb"
+   ]
+  },
+  {
+   "id": "S071",
+   "name": "Harpy Looting",
+   "story": "Harpyia robbed a caravan on a hill.",
+   "tileset": "Barrens",
+   "ground_tile": "Bdrr",
+   "blocker": "BRsp",
+   "creeps": {
+    "center": "nhrq",
+    "flank": [
+     "nhrr",
+     "nhrr"
+    ]
+   },
+   "doodads": [
+    "LOcb",
+    "LTbx",
+    "BObo"
+   ],
+   "layout": "Center: nhrq (back to BRsp); flanks left/right: nhrr, nhrr; decoration in half circle behind/next to camp: LOcb, LTbx, BObo; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Centaurs",
+    "Bandits",
+    "Ashenvale"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nhrq": true,
+    "nhrr": true,
+    "LOcb": true,
+    "LTbx": true,
+    "BObo": true,
+    "Bdrr": true,
+    "BRsp": true
+   },
+   "tileset_unfit": [
+    "LOcb"
+   ]
+  },
+  {
+   "id": "S072",
+   "name": "Goblin Candle Cave",
+   "story": "Goblins with candles in a narrow rock niche.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Lrok",
+   "blocker": "Klippe",
+   "creeps": {
+    "center": "nkot",
+    "flank": [
+     "nkob",
+     "nkog"
+    ]
+   },
+   "doodads": [
+    "LCc2",
+    "LObz",
+    "DOjp",
+    "LTrc"
+   ],
+   "layout": "Center: nkot (back to cliff); flanks left/right: nkob, nkog; decoration in half circle behind/next to camp: LCc2, LObz, DOjp, LTrc; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Fall",
+    "Northrend",
+    "Lore"
+   ],
+   "use": "both",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nkot": true,
+    "nkob": true,
+    "nkog": true,
+    "LCc2": true,
+    "LObz": true,
+    "DOjp": true,
+    "LTrc": true,
+    "Lrok": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S073",
+   "name": "Ruined Fountains",
+   "story": "A Naga guard on a sunken fountain.",
+   "tileset": "Dalaran Ruins",
+   "ground_tile": "Ztil",
+   "blocker": "ZOrp",
+   "creeps": {
+    "center": "nnmg",
+    "flank": [
+     "nnsw",
+     "nnsw"
+    ]
+   },
+   "doodads": [
+    "ZOfo",
+    "ZOrp",
+    "ZPlp",
+    "ZWsw"
+   ],
+   "layout": "Center: nnmg (back to ZOrp); flanks left/right: nnsw, nnsw; decoration in half circle behind/next to the camp: ZOfo, ZOrp, ZPlp, ZWsw; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Murgul",
+    "Corals",
+    "Ruins grass"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nnmg": true,
+    "nnsw": true,
+    "ZOfo": true,
+    "ZOrp": true,
+    "ZPlp": true,
+    "ZWsw": true,
+    "Ztil": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S074",
+   "name": "Forgotten Throne",
+   "story": "A revenant sits on a destroyed throne in the Ruin Court.",
+   "tileset": "Dalaran Ruins",
+   "ground_tile": "Xbtl",
+   "blocker": "ZOrt",
+   "creeps": {
+    "center": "nrvd",
+    "flank": [
+     "nskm",
+     "nskm"
+    ]
+   },
+   "doodads": [
+    "ZOrt",
+    "ZOsb",
+    "ZObz",
+    "ZOrp"
+   ],
+   "layout": "Center: nrvd (back to ZOrt); flanks left/right: nskm, nskm; decoration in half circle behind/next to the camp: ZOrt, ZOsb, ZObz, ZOrp; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Wraith",
+    "Skeletons",
+    "Statue intact"
+   ],
+   "use": "campaign",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nrvd": true,
+    "nskm": true,
+    "ZOrt": true,
+    "ZOsb": true,
+    "ZObz": true,
+    "ZOrp": true,
+    "Xbtl": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S075",
+   "name": "Boundary Stone Watch",
+   "story": "Gnolle have marked an old border obelisk with banners.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Lgrd",
+   "blocker": "LTlt",
+   "creeps": {
+    "center": "ngns",
+    "flank": [
+     "ngno",
+     "ngnb"
+    ]
+   },
+   "doodads": [
+    "AObo",
+    "LOo1",
+    "LObz"
+   ],
+   "layout": "Center: ngns (back to LTlt); flanks left/right: ngno, ngnb; decoration in half circle behind/next to the camp: AObo, LOo1, LObz; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Kobolds",
+    "Trolls",
+    "Fall"
+   ],
+   "use": "both",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "ngns": true,
+    "ngno": true,
+    "ngnb": true,
+    "AObo": true,
+    "LOo1": true,
+    "LObz": true,
+    "Lgrd": true,
+    "LTlt": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S076",
+   "name": "Elven Ruin Fountain",
+   "story": "A crumbling fountain where wolf packs drink.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Ldrg",
+   "blocker": "LTlt",
+   "creeps": {
+    "center": "nwlg",
+    "flank": [
+     "nwlt",
+     "nwlt"
+    ]
+   },
+   "doodads": [
+    "LSwl",
+    "LOtr",
+    "LOrb"
+   ],
+   "layout": "Center: nwlg (back to LTlt); flanks left/right: nwlt, nwlt; decoration in half circle behind/next to the camp: LSwl, LOtr, LOrb; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Bears",
+    "Ghouls",
+    "Fall"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nwlg": true,
+    "nwlt": true,
+    "LSwl": true,
+    "LOtr": true,
+    "LOrb": true,
+    "Ldrg": true,
+    "LTlt": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S077",
+   "name": "Frozen Lake",
+   "story": "Tuskarr fisherman fishing through ice holes on a frozen pond.",
+   "tileset": "Northrend",
+   "ground_tile": "Nice",
+   "blocker": "Wasserrand",
+   "creeps": {
+    "center": "ntkw",
+    "flank": [
+     "ntka",
+     "ntka"
+    ]
+   },
+   "doodads": [
+    "NWf3",
+    "IRrk",
+    "NWrw"
+   ],
+   "layout": "Center: ntkw (back to water edge); flanks left/right: ntka, ntka; decoration in half circle behind/next to camp: NWf3, IRrk, NWrw; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Seal hunters instead of fishermen",
+    "Wendigo attack on the fishing camp",
+    "Polar bear (nfra) as prey at the ice hole"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "ntkw": true,
+    "ntka": true,
+    "NWf3": true,
+    "IRrk": true,
+    "NWrw": true,
+    "Nice": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S078",
+   "name": "Dragon Bones",
+   "story": "A giant dragon skeleton, vulture and skeletons in between.",
+   "tileset": "Barrens",
+   "ground_tile": "Bdsd",
+   "blocker": "BRrs",
+   "creeps": {
+    "center": "nskg",
+    "flank": [
+     "nske",
+     "nske"
+    ]
+   },
+   "doodads": [
+    "BObo",
+    "NObo",
+    "LOrb",
+    "BRrk"
+   ],
+   "layout": "Center: nskg (back to BRrs); flanks left/right: nske, nske; decoration in half circle behind/next to camp: BObo, NObo, LOrb, BRrk; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Northrend",
+    "Ghouls",
+    "Bones only"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nskg": true,
+    "nske": true,
+    "BObo": true,
+    "NObo": true,
+    "LOrb": true,
+    "BRrk": true,
+    "Bdsd": true,
+    "BRrs": true
+   },
+   "tileset_unfit": [
+    "NObo",
+    "LOrb"
+   ]
+  },
+  {
+   "id": "S079",
+   "name": "Abandoned Workshop",
+   "story": "Goblin barrels and TNT, a gnoll pile stole them.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Ldrt",
+   "blocker": "LTba",
+   "creeps": {
+    "center": "ngnb",
+    "flank": [
+     "ngno",
+     "ngno"
+    ]
+   },
+   "doodads": [
+    "LTbr",
+    "LTbs",
+    "LTex",
+    "LTcr"
+   ],
+   "layout": "Center: ngnb (back to LTba); flanks left/right: ngno, ngno; decoration in half circle behind/next to the camp: LTbr, LTbs, LTex, LTcr; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Kobolds",
+    "Barrens",
+    "without TNT"
+   ],
+   "use": "both",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "ngnb": true,
+    "ngno": true,
+    "LTbr": true,
+    "LTbs": true,
+    "LTex": true,
+    "LTcr": true,
+    "Ldrt": true,
+    "LTba": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S080",
+   "name": "Small Arena",
+   "story": "Ogres let prisoners fight in a stone ring.",
+   "tileset": "Lordaeron Fall",
+   "ground_tile": "Frok",
+   "blocker": "LTw0",
+   "creeps": {
+    "center": "nogl",
+    "flank": [
+     "nogr",
+     "nogr"
+    ]
+   },
+   "doodads": [
+    "LTw0",
+    "LOcg",
+    "LOwp",
+    "LObz"
+   ],
+   "layout": "Center: nogl (back to LTw0); flanks left/right: nogr, nogr; decoration in half circle behind/next to the camp: LTwO, LOcg, LOwp, LObz; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Centaurs",
+    "Gnolls",
+    "Cage empty"
+   ],
+   "use": "campaign",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nogl": true,
+    "nogr": true,
+    "LTw0": true,
+    "LOcg": true,
+    "LOwp": true,
+    "LObz": true,
+    "Frok": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S081",
+   "name": "Swamp Witch",
+   "story": "Murgul shamans summon in the Felwood swamp.",
+   "tileset": "Felwood",
+   "ground_tile": "Cpos",
+   "blocker": "CTtr",
+   "creeps": {
+    "center": "nmsc",
+    "flank": [
+     "nmbg",
+     "nmcf"
+    ]
+   },
+   "doodads": [
+    "CPct",
+    "CPms",
+    "AOnt",
+    "CObl"
+   ],
+   "layout": "Center: nmsc (back to CTtr); flanks left/right: nmbg, nmcf; decoration in the semicircle behind/next to the camp: CPct, CPms, AOnt, CObl; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Ashenvale",
+    "Naga",
+    "Trolls"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nmsc": true,
+    "nmbg": true,
+    "nmcf": true,
+    "CPct": true,
+    "CPms": true,
+    "AOnt": true,
+    "CObl": true,
+    "Cpos": true,
+    "CTtr": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S082",
+   "name": "Pillar Avenue",
+   "story": "A golem pair flanks a column avenue to a treasure.",
+   "tileset": "Dalaran Ruins",
+   "ground_tile": "Xsqd",
+   "blocker": "YScd",
+   "creeps": {
+    "center": "nggr",
+    "flank": [
+     "ngst",
+     "ngst"
+    ]
+   },
+   "doodads": [
+    "YSco",
+    "ZOrp",
+    "DOtp"
+   ],
+   "layout": "Center: nggr (back to YScd); flanks left/right: ngst, ngst; decoration in half circle behind/next to camp: YSco, ZOrp, DOtp; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Statues instead of golems",
+    "Revenants",
+    "Ruins"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nggr": true,
+    "ngst": true,
+    "YSco": true,
+    "ZOrp": true,
+    "DOtp": true,
+    "Xsqd": true,
+    "YScd": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S083",
+   "name": "Trapper Camp",
+   "story": "Trollhunters have set traps and skins.",
+   "tileset": "Lordaeron Fall",
+   "ground_tile": "Fdro",
+   "blocker": "FTtw",
+   "creeps": {
+    "center": "nftt",
+    "flank": [
+     "nftr",
+     "nftr"
+    ]
+   },
+   "doodads": [
+    "LOce",
+    "LOwp",
+    "LOhb",
+    "LObr"
+   ],
+   "layout": "Center: nftt (back to FTtw); flanks left/right: nftr, nftr; decoration in half circle behind/next to the camp: LOce, LOwp, LOhb, LObr; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Ice troll trapper nitt",
+    "Dark trolls ndtt",
+    "Gnolls"
+   ],
+   "use": "both",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nftt": true,
+    "nftr": true,
+    "LOce": true,
+    "LOwp": true,
+    "LOhb": true,
+    "LObr": true,
+    "Fdro": true,
+    "FTtw": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S084",
+   "name": "Poisoned Well",
+   "story": "Apostate magicians poison a village fountain, flies swirl.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Ldrg",
+   "blocker": "LSwl",
+   "creeps": {
+    "center": "nwzd",
+    "flank": [
+     "nwiz",
+     "nwiz"
+    ]
+   },
+   "doodads": [
+    "LSwl",
+    "LOfl",
+    "LOca",
+    "LOtr"
+   ],
+   "layout": "Center: nwzd (back to LSwl); flanks left/right: nwiz, nwiz; decoration in half circle behind/next to the camp: LSwl, LOfl, LOca, LOtr; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Plague treant",
+    "Ghouls",
+    "Fall"
+   ],
+   "use": "campaign",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nwzd": true,
+    "nwiz": true,
+    "LSwl": true,
+    "LOfl": true,
+    "LOca": true,
+    "LOtr": true,
+    "Ldrg": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S085",
+   "name": "Cliff Lookout",
+   "story": "Bandits have a look with torches on the cliff.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Lrok",
+   "blocker": "Klippe",
+   "creeps": {
+    "center": "nass",
+    "flank": [
+     "nbrg",
+     "nbrg"
+    ]
+   },
+   "doodads": [
+    "LOtz",
+    "LOsp",
+    "LTcr"
+   ],
+   "layout": "Middle: wet (back to cliff); flanks left/right: nbrg, nbrg; decoration in half circle behind/next to camp: LOtz, LOsp, LTcr; open side to approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Gnolls",
+    "Trolls",
+    "Lantern"
+   ],
+   "use": "both",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nass": true,
+    "nbrg": true,
+    "LOtz": true,
+    "LOsp": true,
+    "LTcr": true,
+    "Lrok": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S086",
+   "name": "Beacon Ruin",
+   "story": "A lantern still burns at an abandoned outpost, ghosts move.",
+   "tileset": "Lordaeron Fall",
+   "ground_tile": "Fdrt",
+   "blocker": "LTba",
+   "creeps": {
+    "center": "ngh2",
+    "flank": [
+     "ngh1",
+     "ngh1"
+    ]
+   },
+   "doodads": [
+    "LOlp",
+    "LTba",
+    "LOwp",
+    "LOsc"
+   ],
+   "layout": "Center: ngh2 (back to LTba); flanks left/right: ngh1, ngh1; decoration in half circle behind/next to the camp: LOlp, LTba, LOwp, LOsc; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "without light",
+    "Bandits",
+    "Winter"
+   ],
+   "use": "both",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "ngh2": true,
+    "ngh1": true,
+    "LOlp": true,
+    "LTba": true,
+    "LOwp": true,
+    "LOsc": true,
+    "Fdrt": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S087",
+   "name": "Wild Garden",
+   "story": "Furbolgs harvest a feral crop field.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Lgrs",
+   "blocker": "Zaunrand",
+   "creeps": {
+    "center": "nfrs",
+    "flank": [
+     "nfrl",
+     "nfrl"
+    ]
+   },
+   "doodads": [
+    "LPwh",
+    "LPwb",
+    "LPcr",
+    "LOhb"
+   ],
+   "layout": "Center: nfrs (back at fence edge); flanks left/right: nfrl, nfrl; decoration in half circle behind/next to the camp: LPwh, LPwb, LPcr, LOhb; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Pigs npig",
+    "Gnolls",
+    "Fall"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nfrs": true,
+    "nfrl": true,
+    "LPwh": true,
+    "LPwb": true,
+    "LPcr": true,
+    "LOhb": true,
+    "Lgrs": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S088",
+   "name": "Rock Throne",
+   "story": "A giant ogre sits on Hellscream's old throne in the wasteland.",
+   "tileset": "Barrens",
+   "ground_tile": "Bflr",
+   "blocker": "BRrp",
+   "creeps": {
+    "center": "nogl",
+    "flank": [
+     "nogm",
+     "nogm"
+    ]
+   },
+   "doodads": [
+    "BOth",
+    "BObo",
+    "LOss"
+   ],
+   "layout": "Center: nogl (back to BRrp); flanks left/right: nogm, nogm; decoration in half circle behind/next to camp: BOth, BObo, LOSS; open side to approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Centaur Khan",
+    "Quillboar",
+    "without throne"
+   ],
+   "use": "campaign",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nogl": true,
+    "nogm": true,
+    "BOth": true,
+    "BObo": true,
+    "LOss": true,
+    "Bflr": true,
+    "BRrp": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S089",
+   "name": "Crystal Lake",
+   "story": "Water elements from a crystal lake in the ruins.",
+   "tileset": "Dalaran Ruins",
+   "ground_tile": "Xwmb",
+   "blocker": "Wasserrand",
+   "creeps": {
+    "center": "nsel",
+    "flank": [
+     "nsel",
+     "nsel"
+    ]
+   },
+   "doodads": [
+    "ZOrc",
+    "ZPlp",
+    "ZWsw"
+   ],
+   "layout": "Center: nsel (back to water edge); flanks left/right: nsel, nsel; decoration in half circle behind/next to the camp: ZOrc, ZPlp, ZWsw; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Revenants",
+    "Naga",
+    "Ice"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nsel": true,
+    "ZOrc": true,
+    "ZPlp": true,
+    "ZWsw": true,
+    "Xwmb": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S090",
+   "name": "Bee Grove",
+   "story": "Wild animals and furbolgs around a hollow tree with honey.",
+   "tileset": "Ashenvale",
+   "ground_tile": "Agrs",
+   "blocker": "ATtr",
+   "creeps": {
+    "center": "nfrg",
+    "flank": [
+     "nfrb",
+     "nfrb"
+    ]
+   },
+   "doodads": [
+    "AOhs",
+    "APbs",
+    "AObd"
+   ],
+   "layout": "Center: nfrg (back to ATtr); flanks left/right: nfrb, nfrb; decoration in half circle behind/next to the camp: AOhs, APbs, AObd; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Bears",
+    "Wildkin",
+    "Summer"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nfrg": true,
+    "nfrb": true,
+    "AOhs": true,
+    "APbs": true,
+    "AObd": true,
+    "Agrs": true,
+    "ATtr": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S091",
+   "name": "Cave Troll Shelter",
+   "story": "Dunkeltrolle live under a cliff overhang with a fireplace.",
+   "tileset": "Lordaeron Fall",
+   "ground_tile": "Frok",
+   "blocker": "Klippe",
+   "creeps": {
+    "center": "ndtw",
+    "flank": [
+     "ndtr",
+     "ndtp"
+    ]
+   },
+   "doodads": [
+    "LCc0",
+    "NOft",
+    "LOrb",
+    "LObz"
+   ],
+   "layout": "Center: ndtw (back to cliff); flanks left/right: ndtr, ndtp; decoration in half circle behind/next to camp: LCc0, NOft, LOrb, LObz; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Forest trolls",
+    "Northrend",
+    "without fire"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "ndtw": true,
+    "ndtr": true,
+    "ndtp": true,
+    "LCc0": true,
+    "NOft": true,
+    "LOrb": true,
+    "LObz": true,
+    "Frok": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S092",
+   "name": "Steppe Pack",
+   "story": "Steppe wolves orbit a dead Kodo.",
+   "tileset": "Barrens",
+   "ground_tile": "Bdrt",
+   "blocker": "BRrk",
+   "creeps": {
+    "center": "nwld",
+    "flank": [
+     "nwlt",
+     "nwlt"
+    ]
+   },
+   "doodads": [
+    "BObo",
+    "LOrb",
+    "LOfl"
+   ],
+   "layout": "Center: nwld (back to BRrk); flanks left/right: nwlt, nwlt; decoration in half circle behind/next to camp: BObo, LOrb, LOfl; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Hyena note",
+    "Winter",
+    "Vultures"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nwld": true,
+    "nwlt": true,
+    "BObo": true,
+    "LOrb": true,
+    "LOfl": true,
+    "Bdrt": true,
+    "BRrk": true
+   },
+   "tileset_unfit": [
+    "LOrb"
+   ]
+  },
+  {
+   "id": "S093",
+   "name": "Arachnathid Rock",
+   "story": "Arachnathides dig out of crystal rocks.",
+   "tileset": "Northrend",
+   "ground_tile": "Nrck",
+   "blocker": "NRrk",
+   "creeps": {
+    "center": "nanc",
+    "flank": [
+     "nanb",
+     "nanb"
+    ]
+   },
+   "doodads": [
+    "NRwr",
+    "IRcy",
+    "NObo"
+   ],
+   "layout": "Center: nanc (back to NRrk); flanks left/right: nanb, nanb; decoration in half circle behind/next to camp: NRwr, IRcy, NObo; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Nerubians",
+    "Spiders",
+    "Barrens"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nanc": true,
+    "nanb": true,
+    "NRwr": true,
+    "IRcy": true,
+    "NObo": true,
+    "Nrck": true,
+    "NRrk": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S094",
+   "name": "Abandoned Market",
+   "story": "A disintegrated marketplace, rats and bandits are fighting over remains.",
+   "tileset": "Dalaran Ruins",
+   "ground_tile": "Xsqd",
+   "blocker": "YSr0",
+   "creeps": {
+    "center": "nbld",
+    "flank": [
+     "nban",
+     "nbrg"
+    ]
+   },
+   "doodads": [
+    "YOm1",
+    "YOm4",
+    "YOec",
+    "LTcr"
+   ],
+   "layout": "Center: nbld (back to YSr0); flanks left/right: nban, nbrg; decoration in half circle behind/next to camp: YOm1, YOm4, YOec, LTcr; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "only with item offer",
+    "Gnolls",
+    "Fall"
+   ],
+   "use": "campaign",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nbld": true,
+    "nban": true,
+    "nbrg": true,
+    "YOm1": true,
+    "YOm4": true,
+    "YOec": true,
+    "LTcr": true,
+    "Xsqd": true,
+    "YSr0": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S095",
+   "name": "Border Wall",
+   "story": "A piece of old city wall, Golems as gatekeeper.",
+   "tileset": "Dalaran Ruins",
+   "ground_tile": "Xdtr",
+   "blocker": "ZTw0",
+   "creeps": {
+    "center": "nggr",
+    "flank": [
+     "ngst",
+     "ngst"
+    ]
+   },
+   "doodads": [
+    "LTw0",
+    "ZTw0",
+    "ZSab",
+    "ZRbs"
+   ],
+   "layout": "Center: nggr (back to ZTw0); flanks left/right: ngst, ngst; decoration in half circle behind/next to the camp: LTw0, ZTw02, ZSab, ZRbs; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Lordaeron stone wall",
+    "Revenants",
+    "Ruined gate"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nggr": true,
+    "ngst": true,
+    "LTw0": true,
+    "ZTw0": true,
+    "ZSab": true,
+    "ZRbs": true,
+    "Xdtr": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S096",
+   "name": "Plague Carts",
+   "story": "A cart full of corpses with zombies stumbling around it.",
+   "tileset": "Lordaeron Fall",
+   "ground_tile": "Fdrt",
+   "blocker": "LTba",
+   "creeps": {
+    "center": "nzom",
+    "flank": [
+     "nzom",
+     "nzom"
+    ]
+   },
+   "doodads": [
+    "LOrc",
+    "LOxx",
+    "LOfl",
+    "LOsc"
+   ],
+   "layout": "Center: nzom (back to LTba); flanks left/right: nzoM, nzom; decoration in half circle behind/next to the camp: LOrc, LOxx, LOfl, LOsc; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Ghouls",
+    "Cultists",
+    "Summer"
+   ],
+   "use": "campaign",
+   "rules": [
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nzom": true,
+    "LOrc": true,
+    "LOxx": true,
+    "LOfl": true,
+    "LOsc": true,
+    "Fdrt": true,
+    "LTba": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S097",
+   "name": "Druid Stone",
+   "story": "A Moonkin meditates on a rocky arch above a pond.",
+   "tileset": "Ashenvale",
+   "ground_tile": "Agrs",
+   "blocker": "ASr1",
+   "creeps": {
+    "center": "nowk",
+    "flank": [
+     "nowb",
+     "nowe"
+    ]
+   },
+   "doodads": [
+    "ASr1",
+    "AWfl",
+    "AWlp",
+    "APct"
+   ],
+   "layout": "Center: nowk (back to ASr1); flanks left/right: nowb, nowe; decoration in half circle behind/next to the camp: ASr1, AWfl, AWlp, APct; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Felwood",
+    "Furbolgs",
+    "without pond"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nowk": true,
+    "nowb": true,
+    "nowe": true,
+    "ASr1": true,
+    "AWfl": true,
+    "AWlp": true,
+    "APct": true,
+    "Agrs": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S098",
+   "name": "Ice Giant Grave",
+   "story": "A fallen ice giant lies next to ice claws, Wendigos looting.",
+   "tileset": "Northrend",
+   "ground_tile": "Nsnr",
+   "blocker": "IRgc",
+   "creeps": {
+    "center": "nwna",
+    "flank": [
+     "nwen",
+     "nwns"
+    ]
+   },
+   "doodads": [
+    "NRic",
+    "NObo",
+    "IRrk",
+    "NOtb"
+   ],
+   "layout": "Center: nwna (back to IRgc); flanks left/right: nwen, nwns; decoration in half circle behind/next to the camp: NRic, NObo, IRrk, NOtb; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Magnataur",
+    "Trolls",
+    "Igloo"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: Graves only on dug-up ground (Ndrd patch) at the edge of the forest, cliff or map, never on grass (edge_props).",
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nwna": true,
+    "nwen": true,
+    "nwns": true,
+    "NRic": true,
+    "NObo": true,
+    "IRrk": true,
+    "NOtb": true,
+    "Nsnr": true,
+    "IRgc": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S099",
+   "name": "Cloud Watch",
+   "story": "Harpyia on a plateau with torn banners.",
+   "tileset": "Lordaeron Summer",
+   "ground_tile": "Lrok",
+   "blocker": "Klippe",
+   "creeps": {
+    "center": "nhrw",
+    "flank": [
+     "nhar",
+     "nhar"
+    ]
+   },
+   "doodads": [
+    "LOh1",
+    "LOrb",
+    "LRrk"
+   ],
+   "layout": "Center: nhrw (back to cliff); flanks left/right: nhar, nhar; decoration in half circle behind/next to camp: LOh1, LOrb, LRrk; open side to the approach route free (guard_placement/camp_formation).",
+   "variations": [
+    "Barrens",
+    "Ashenvale",
+    "without banner"
+   ],
+   "use": "both",
+   "rules": [
+    "Bones only directly at the camp or cemetery (contextual_props/edge_props).",
+    "Artificial props only at the edge/camp, not free in the field (edge_props).",
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nhrw": true,
+    "nhar": true,
+    "LOh1": true,
+    "LOrb": true,
+    "LRrk": true,
+    "Lrok": true
+   },
+   "tileset_unfit": []
+  },
+  {
+   "id": "S100",
+   "name": "Sulphur Spring",
+   "story": "A steaming geyser, salamander and revenants off.",
+   "tileset": "Barrens",
+   "ground_tile": "Bdsd",
+   "blocker": "BRrs",
+   "creeps": {
+    "center": "nslv",
+    "flank": [
+     "nslh",
+     "nslh"
+    ]
+   },
+   "doodads": [
+    "BRgs",
+    "BRfs",
+    "BRrk"
+   ],
+   "layout": "Center: nslv (back to BRrs); flanks left/right: nslh, nslH; decoration in half circle behind/next to camp: BRgs, BRfs, BRrk; open side to the march route free (guard_placement/camp_formation).",
+   "variations": [
+    "Northrend IWbg",
+    "Felwood",
+    "Lava"
+   ],
+   "use": "both",
+   "rules": [
+    "Ranked: blocking doodads mirror-symmetric in the occupied cells, may use other ids per side (symmetric_blockers); nothing blocking on mine/wood path (natural_choke)."
+   ],
+   "verified": {
+    "nslv": true,
+    "nslh": true,
+    "BRgs": true,
+    "BRfs": true,
+    "BRrk": true,
+    "Bdsd": true,
+    "BRrs": true
+   },
+   "tileset_unfit": []
+  }
+ ]
+}

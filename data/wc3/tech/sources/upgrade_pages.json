@@ -1,0 +1,351 @@
+{
+ "Rhde": [
+  [
+   "Defend",
+   "Barracks (Human)",
+   []
+  ],
+  [
+   "Backpack (Human)",
+   "Blacksmith",
+   []
+  ]
+ ],
+ "Rhss": [
+  [
+   "Control Magic",
+   "Arcane Sanctum",
+   [
+    "Arcane Vault"
+   ]
+  ],
+  [
+   "Backpack (Human)",
+   "Blacksmith",
+   []
+  ]
+ ],
+ "Rhfl": [
+  [
+   "Flare",
+   "Workshop",
+   []
+  ],
+  [
+   "Fragmentation Shards",
+   "Workshop",
+   [
+    "Castle"
+   ]
+  ]
+ ],
+ "Rhgb": [
+  [
+   "Flak Cannons",
+   "Workshop",
+   [
+    "Keep"
+   ]
+  ],
+  [
+   "Flying Machine Bombs",
+   "Workshop",
+   [
+    "Castle"
+   ]
+  ]
+ ],
+ "Rhfc": [
+  [
+   "Flak Cannons",
+   "Workshop",
+   [
+    "Keep"
+   ]
+  ],
+  [
+   "Flying Machine Bombs",
+   "Workshop",
+   [
+    "Castle"
+   ]
+  ]
+ ],
+ "Rhrt": [
+  [
+   "Barrage",
+   "Workshop",
+   [
+    "Castle"
+   ]
+  ]
+ ],
+ "Ropg": [
+  [
+   "Pillage",
+   "Great Hall",
+   []
+  ]
+ ],
+ "Robf": [
+  [
+   "Burning Oil",
+   "Barracks (Orc)",
+   [
+    "Fortress"
+   ]
+  ]
+ ],
+ "Roen": [
+  [
+   "Ensnare",
+   "Beastiary",
+   []
+  ]
+ ],
+ "Rovs": [
+  [
+   "Envenomed Spears",
+   "Beastiary",
+   [
+    "Fortress"
+   ]
+  ]
+ ],
+ "Rolf": [
+  [
+   "Liquid Fire",
+   "Beastiary",
+   [
+    "Fortress"
+   ]
+  ],
+  [
+   "Troll Regeneration",
+   "Barracks (Orc)",
+   [
+    "Stronghold"
+   ]
+  ]
+ ],
+ "Ruac": [
+  [
+   "Cannibalize",
+   "Crypt",
+   []
+  ],
+  [
+   "Cannibalize",
+   "Crypt",
+   []
+  ]
+ ],
+ "Ruwb": [
+  [
+   "Web",
+   "Crypt",
+   [
+    "Halls of the Dead"
+   ]
+  ]
+ ],
+ "Rubu": [
+  [
+   "Burrow",
+   "Crypt",
+   [
+    "Halls of the Dead"
+   ]
+  ],
+  [
+   "Burrow",
+   "Crypt",
+   [
+    "Halls of the Dead"
+   ]
+  ],
+  [
+   "Burrow",
+   "Crypt",
+   [
+    "Halls of the Dead"
+   ]
+  ]
+ ],
+ "Rupc": [
+  [
+   "Disease Cloud",
+   "Slaughterhouse",
+   [
+    "Black Citadel"
+   ]
+  ],
+  [
+   "Disease Cloud",
+   "Slaughterhouse",
+   []
+  ]
+ ],
+ "Ruex": [
+  [
+   "Disease Cloud",
+   "Slaughterhouse",
+   []
+  ],
+  [
+   "Exhume Corpses",
+   "Slaughterhouse",
+   [
+    "Halls of the Dead"
+   ]
+  ]
+ ],
+ "Rufb": [
+  [
+   "Freezing Breath",
+   "Graveyard",
+   []
+  ]
+ ],
+ "Resc": [
+  [
+   "Sentinel",
+   "Ancient of War",
+   [
+    "Hunter's Hall"
+   ]
+  ],
+  [
+   "Moon Glaive",
+   "Ancient of War",
+   [
+    "Hunter's Hall"
+   ]
+  ],
+  [
+   "Backpack (Night Elf)",
+   "Hunter's Hall",
+   []
+  ]
+ ],
+ "Resi": [
+  [
+   "Abolish Magic",
+   "Ancient of Lore",
+   []
+  ]
+ ],
+ "Rehs": [
+  [
+   "Resistant Skin",
+   "Ancient of Lore",
+   [
+    "Tree of Eternity"
+   ]
+  ],
+  [
+   "Hardened Skin",
+   "Ancient of Lore",
+   [
+    "Tree of Eternity"
+   ]
+  ],
+  [
+   "Backpack (Night Elf)",
+   "Hunter's Hall",
+   []
+  ]
+ ],
+ "Recb": [
+  [
+   "Corrosive Breath",
+   "Hunter's Hall",
+   []
+  ]
+ ],
+ "Rusp": [
+  [
+   "Destroyer Form",
+   "Slaughterhouse",
+   [
+    "Black Citadel"
+   ]
+  ]
+ ],
+ "Rhpm": [
+  [
+   "Backpack (Human)",
+   "Town Hall",
+   []
+  ],
+  [
+   "Backpack (Night Elf)",
+   "Tree of Life",
+   []
+  ],
+  [
+   "Backpack (Orc)",
+   "Great Hall",
+   []
+  ],
+  [
+   "Backpack (Undead)",
+   "Necropolis",
+   []
+  ],
+  [
+   "Backpack (Orc)",
+   "Great Hall",
+   []
+  ]
+ ],
+ "Repd": [
+  [
+   "Vorpal Blades",
+   "Ancient of War",
+   [
+    "Tree of Ages"
+   ]
+  ]
+ ],
+ "Rugf": [
+  [
+   "Cannibalize",
+   "Crypt",
+   []
+  ],
+  [
+   "Ghoul Frenzy",
+   "Crypt",
+   [
+    "Black Citadel"
+   ]
+  ],
+  [
+   "Backpack (Undead)",
+   "Graveyard",
+   []
+  ]
+ ],
+ "Remg": [
+  [
+   "Sentinel",
+   "Ancient of War",
+   [
+    "Hunter's Hall"
+   ]
+  ],
+  [
+   "Moon Glaive",
+   "Ancient of War",
+   [
+    "Hunter's Hall"
+   ]
+  ],
+  [
+   "Backpack (Night Elf)",
+   "Hunter's Hall",
+   []
+  ]
+ ]
+}

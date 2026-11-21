@@ -1,0 +1,7057 @@
+[
+ {
+  "map": "WC3_2p_water_hills_bridges_test",
+  "size": "88x88",
+  "players": 2,
+  "shallow_pct": 13.24,
+  "deep_pct": 5.37,
+  "n_shallow": 5,
+  "comps": [
+   {
+    "area": 77,
+    "width": 4.5,
+    "len": 17.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 140,
+    "width": 5.7,
+    "len": 24.7,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 540,
+    "width": 7.2,
+    "len": 74.9,
+    "deep": true,
+    "ford": false,
+    "loc": "centre"
+   },
+   {
+    "area": 142,
+    "width": 5.7,
+    "len": 25.1,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 71,
+    "width": 4.5,
+    "len": 15.9,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 47.2,
+  "hills_per_1k": 4.56,
+  "slope_pct": 51.1,
+  "bridges": [
+   {
+    "id": "LT08",
+    "kind": "bridge",
+    "tex": "CityBridgeExtraLarge0",
+    "span": 8.5,
+    "under": "water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   },
+   {
+    "id": "LT08",
+    "kind": "bridge",
+    "tex": "CityBridgeExtraLarge0",
+    "span": 8.5,
+    "under": "water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   }
+  ]
+ },
+ {
+  "map": "Amazonia",
+  "size": "80x80",
+  "players": 2,
+  "shallow_pct": 23.27,
+  "deep_pct": 3.16,
+  "n_shallow": 6,
+  "comps": [
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 1321,
+    "width": 11.3,
+    "len": 116.8,
+    "deep": false,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 33.6,
+  "hills_per_1k": 4.73,
+  "slope_pct": 50.0,
+  "bridges": []
+ },
+ {
+  "map": "Arathor_v1.3",
+  "size": "140x140",
+  "players": 8,
+  "shallow_pct": 0.14,
+  "deep_pct": 7.05,
+  "n_shallow": 3,
+  "comps": [
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 72.1,
+  "hills_per_1k": 3.55,
+  "slope_pct": 64.4,
+  "bridges": []
+ },
+ {
+  "map": "AutumnLeaves_v2-0",
+  "size": "98x98",
+  "players": 2,
+  "shallow_pct": 18.97,
+  "deep_pct": 12.29,
+  "n_shallow": 2,
+  "comps": [
+   {
+    "area": 1327,
+    "width": 7.2,
+    "len": 184.0,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 83.1,
+  "hills_per_1k": 4.3,
+  "slope_pct": 62.1,
+  "bridges": []
+ },
+ {
+  "map": "Avalanche_LV",
+  "size": "96x96",
+  "players": 4,
+  "shallow_pct": 0.1,
+  "deep_pct": 2.42,
+  "n_shallow": 1,
+  "comps": [
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 85.3,
+  "hills_per_1k": 2.1,
+  "slope_pct": 49.0,
+  "bridges": []
+ },
+ {
+  "map": "BanditsRetreat_v1.1",
+  "size": "136x136",
+  "players": 8,
+  "shallow_pct": 3.9,
+  "deep_pct": 0.0,
+  "n_shallow": 9,
+  "comps": [
+   {
+    "area": 89,
+    "width": 6.0,
+    "len": 14.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 89,
+    "width": 6.0,
+    "len": 14.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 37,
+    "width": 5.7,
+    "len": 6.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 37,
+    "width": 5.7,
+    "len": 6.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 108,
+    "width": 4.5,
+    "len": 24.1,
+    "deep": false,
+    "ford": false,
+    "loc": "centre"
+   },
+   {
+    "area": 37,
+    "width": 5.7,
+    "len": 6.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 37,
+    "width": 5.7,
+    "len": 6.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 89,
+    "width": 6.0,
+    "len": 14.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 89,
+    "width": 6.0,
+    "len": 14.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 78.1,
+  "hills_per_1k": 2.4,
+  "slope_pct": 65.9,
+  "bridges": []
+ },
+ {
+  "map": "Battleground",
+  "size": "128x128",
+  "players": 8,
+  "shallow_pct": 1.22,
+  "deep_pct": 9.32,
+  "n_shallow": 8,
+  "comps": [
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 64,
+    "width": 4.0,
+    "len": 16.0,
+    "deep": false,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "base"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 26,
+    "width": 4.0,
+    "len": 6.5,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 122.7,
+  "hills_per_1k": 3.45,
+  "slope_pct": 59.1,
+  "bridges": []
+ },
+ {
+  "map": "BoomTown",
+  "size": "116x116",
+  "players": 4,
+  "shallow_pct": 0.0,
+  "deep_pct": 0.0,
+  "n_shallow": 0,
+  "comps": [],
+  "hill_std": 58.3,
+  "hills_per_1k": 4.88,
+  "slope_pct": 62.0,
+  "bridges": []
+ },
+ {
+  "map": "CircleOfFallenHeroes",
+  "size": "152x152",
+  "players": 5,
+  "shallow_pct": 29.41,
+  "deep_pct": 17.65,
+  "n_shallow": 12,
+  "comps": [
+   {
+    "area": 4356,
+    "width": 12.8,
+    "len": 340.1,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": true,
+    "loc": "expansion"
+   },
+   {
+    "area": 27,
+    "width": 4.5,
+    "len": 6.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 11,
+    "width": 2.0,
+    "len": 5.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 9,
+    "width": 2.0,
+    "len": 4.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 19,
+    "width": 2.8,
+    "len": 6.7,
+    "deep": false,
+    "ford": true,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 28.6,
+  "hills_per_1k": 5.27,
+  "slope_pct": 40.3,
+  "bridges": [
+   {
+    "id": "ZTr2",
+    "kind": "stairs",
+    "tex": "NagaStairsSmall180",
+    "span": 12.5,
+    "under": "chasm/water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   },
+   {
+    "id": "ZTr2",
+    "kind": "stairs",
+    "tex": "NagaStairsSmall180",
+    "span": 15.5,
+    "under": "water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   },
+   {
+    "id": "ZTr1",
+    "kind": "stairs",
+    "tex": "NagaStairsSmall90",
+    "span": 12.5,
+    "under": "chasm/water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   },
+   {
+    "id": "ZTr1",
+    "kind": "stairs",
+    "tex": "NagaStairsSmall90",
+    "span": 13.5,
+    "under": "chasm/water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   }
+  ]
+ },
+ {
+  "map": "ConcealedHill",
+  "size": "80x98",
+  "players": 2,
+  "shallow_pct": 9.47,
+  "deep_pct": 15.61,
+  "n_shallow": 4,
+  "comps": [
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 286,
+    "width": 10.8,
+    "len": 26.6,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 276,
+    "width": 8.0,
+    "len": 34.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 90.5,
+  "hills_per_1k": 5.94,
+  "slope_pct": 70.4,
+  "bridges": []
+ },
+ {
+  "map": "Deadlock_LV",
+  "size": "144x144",
+  "players": 8,
+  "shallow_pct": 12.05,
+  "deep_pct": 4.07,
+  "n_shallow": 2,
+  "comps": [
+   {
+    "area": 1956,
+    "width": 16.1,
+    "len": 121.3,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 96.7,
+  "hills_per_1k": 2.23,
+  "slope_pct": 68.0,
+  "bridges": []
+ },
+ {
+  "map": "DejaVu_v1.5",
+  "size": "124x124",
+  "players": 4,
+  "shallow_pct": 24.82,
+  "deep_pct": 32.31,
+  "n_shallow": 20,
+  "comps": [
+   {
+    "area": 21,
+    "width": 4.5,
+    "len": 4.7,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 23,
+    "width": 4.0,
+    "len": 5.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 36,
+    "width": 4.5,
+    "len": 8.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 1910,
+    "width": 8.0,
+    "len": 238.8,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 9,
+    "width": 2.8,
+    "len": 3.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 24,
+    "width": 4.5,
+    "len": 5.4,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 35,
+    "width": 4.5,
+    "len": 7.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 10,
+    "width": 2.8,
+    "len": 3.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 26,
+    "width": 4.5,
+    "len": 5.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 31,
+    "width": 4.5,
+    "len": 6.9,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.8,
+    "len": 2.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 39,
+    "width": 4.5,
+    "len": 8.7,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 22,
+    "width": 4.5,
+    "len": 4.9,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 9,
+    "width": 2.8,
+    "len": 3.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 38,
+    "width": 4.5,
+    "len": 8.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 33,
+    "width": 5.7,
+    "len": 5.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 26,
+    "width": 4.5,
+    "len": 5.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 39.9,
+  "hills_per_1k": 8.15,
+  "slope_pct": 62.3,
+  "bridges": []
+ },
+ {
+  "map": "DragonFalls",
+  "size": "132x132",
+  "players": 8,
+  "shallow_pct": 6.6,
+  "deep_pct": 0.46,
+  "n_shallow": 6,
+  "comps": [
+   {
+    "area": 259,
+    "width": 8.5,
+    "len": 30.5,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 220,
+    "width": 7.2,
+    "len": 30.5,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 31,
+    "width": 5.7,
+    "len": 5.5,
+    "deep": true,
+    "ford": false,
+    "loc": "centre"
+   },
+   {
+    "area": 208,
+    "width": 7.2,
+    "len": 28.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 284,
+    "width": 10.0,
+    "len": 28.4,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "centre"
+   }
+  ],
+  "hill_std": 110.6,
+  "hills_per_1k": 3.92,
+  "slope_pct": 65.6,
+  "bridges": []
+ },
+ {
+  "map": "EchoIsles",
+  "size": "116x84",
+  "players": 2,
+  "shallow_pct": 32.83,
+  "deep_pct": 24.33,
+  "n_shallow": 6,
+  "comps": [
+   {
+    "area": 2247,
+    "width": 10.0,
+    "len": 224.7,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 69,
+    "width": 5.7,
+    "len": 12.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 10,
+    "width": 2.0,
+    "len": 5.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 86.1,
+  "hills_per_1k": 6.02,
+  "slope_pct": 82.1,
+  "bridges": []
+ },
+ {
+  "map": "EkrezemsMaze",
+  "size": "184x184",
+  "players": 8,
+  "shallow_pct": 5.45,
+  "deep_pct": 5.45,
+  "n_shallow": 82,
+  "comps": [
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 12,
+    "width": 2.0,
+    "len": 6.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 14,
+    "width": 2.0,
+    "len": 7.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 21,
+    "width": 2.0,
+    "len": 10.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 17,
+    "width": 2.8,
+    "len": 6.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 81,
+    "width": 6.0,
+    "len": 13.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 16,
+    "width": 2.0,
+    "len": 8.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 15,
+    "width": 2.0,
+    "len": 7.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.8,
+    "len": 2.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 26,
+    "width": 4.0,
+    "len": 6.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 9,
+    "width": 2.0,
+    "len": 4.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 18,
+    "width": 2.0,
+    "len": 9.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 18,
+    "width": 2.8,
+    "len": 6.4,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 23,
+    "width": 4.0,
+    "len": 5.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 59,
+    "width": 6.0,
+    "len": 9.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.8,
+    "len": 2.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 23,
+    "width": 4.0,
+    "len": 5.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": false,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 18,
+    "width": 4.0,
+    "len": 4.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 23,
+    "width": 4.0,
+    "len": 5.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 80,
+    "width": 6.0,
+    "len": 13.3,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 59,
+    "width": 6.0,
+    "len": 9.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 23,
+    "width": 4.0,
+    "len": 5.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": false,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 170,
+    "width": 6.3,
+    "len": 26.9,
+    "deep": false,
+    "ford": false,
+    "loc": "centre"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.8,
+    "len": 2.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 16,
+    "width": 2.0,
+    "len": 8.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 10,
+    "width": 2.0,
+    "len": 5.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 59,
+    "width": 6.0,
+    "len": 9.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 84,
+    "width": 6.0,
+    "len": 14.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 23,
+    "width": 4.0,
+    "len": 5.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": false,
+    "ford": false,
+    "loc": "centre"
+   },
+   {
+    "area": 23,
+    "width": 4.0,
+    "len": 5.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 16,
+    "width": 2.8,
+    "len": 5.7,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 23,
+    "width": 4.0,
+    "len": 5.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.8,
+    "len": 2.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 60,
+    "width": 6.0,
+    "len": 10.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": false,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 23,
+    "width": 4.0,
+    "len": 5.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 28,
+    "width": 4.0,
+    "len": 7.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 12,
+    "width": 2.0,
+    "len": 6.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 59,
+    "width": 2.8,
+    "len": 20.9,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 12,
+    "width": 2.8,
+    "len": 4.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 85,
+    "width": 6.0,
+    "len": 14.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": false,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 18,
+    "width": 2.0,
+    "len": 9.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.8,
+    "len": 2.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 17,
+    "width": 4.0,
+    "len": 4.2,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 22,
+    "width": 2.0,
+    "len": 11.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 12,
+    "width": 2.8,
+    "len": 4.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 50.0,
+  "hills_per_1k": 5.33,
+  "slope_pct": 50.2,
+  "bridges": []
+ },
+ {
+  "map": "Feralas_LV",
+  "size": "148x116",
+  "players": 8,
+  "shallow_pct": 18.95,
+  "deep_pct": 6.37,
+  "n_shallow": 3,
+  "comps": [
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 2832,
+    "width": 10.2,
+    "len": 277.7,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 8,
+    "width": 2.8,
+    "len": 2.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 103.4,
+  "hills_per_1k": 4.02,
+  "slope_pct": 73.2,
+  "bridges": []
+ },
+ {
+  "map": "Ferocity_v1.2",
+  "size": "168x168",
+  "players": 8,
+  "shallow_pct": 22.91,
+  "deep_pct": 15.76,
+  "n_shallow": 4,
+  "comps": [
+   {
+    "area": 3918,
+    "width": 8.0,
+    "len": 489.8,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 1066,
+    "width": 8.0,
+    "len": 133.2,
+    "deep": false,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 69.4,
+  "hills_per_1k": 6.69,
+  "slope_pct": 79.7,
+  "bridges": []
+ },
+ {
+  "map": "FountainOfManipulation",
+  "size": "148x148",
+  "players": 4,
+  "shallow_pct": 15.1,
+  "deep_pct": 10.59,
+  "n_shallow": 28,
+  "comps": [
+   {
+    "area": 376,
+    "width": 7.2,
+    "len": 52.1,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 118,
+    "width": 4.0,
+    "len": 29.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 168,
+    "width": 8.2,
+    "len": 20.4,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 35,
+    "width": 4.0,
+    "len": 8.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 292,
+    "width": 6.3,
+    "len": 46.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 120,
+    "width": 4.5,
+    "len": 26.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 172,
+    "width": 8.0,
+    "len": 21.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 9,
+    "width": 2.8,
+    "len": 3.2,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 39,
+    "width": 4.5,
+    "len": 8.7,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 165,
+    "width": 6.3,
+    "len": 26.1,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 39,
+    "width": 4.0,
+    "len": 9.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 23,
+    "width": 2.8,
+    "len": 8.1,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 171,
+    "width": 7.2,
+    "len": 23.7,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 135,
+    "width": 4.5,
+    "len": 30.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 20,
+    "width": 2.8,
+    "len": 7.1,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 180,
+    "width": 8.2,
+    "len": 21.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 135,
+    "width": 5.7,
+    "len": 23.9,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 22,
+    "width": 4.0,
+    "len": 5.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 17,
+    "width": 4.0,
+    "len": 4.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 118,
+    "width": 6.0,
+    "len": 19.7,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 105,
+    "width": 6.0,
+    "len": 17.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 117,
+    "width": 6.0,
+    "len": 19.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 10,
+    "width": 2.0,
+    "len": 5.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 46.5,
+  "hills_per_1k": 4.52,
+  "slope_pct": 46.2,
+  "bridges": [
+   {
+    "id": "LT08",
+    "kind": "bridge",
+    "tex": "CityBridgeExtraLarge0",
+    "span": 8.5,
+    "under": "water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   },
+   {
+    "id": "LT10",
+    "kind": "bridge",
+    "tex": "CityBridgeExtraLarge0",
+    "span": 8.5,
+    "under": "water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   },
+   {
+    "id": "LT10",
+    "kind": "bridge",
+    "tex": "CityBridgeExtraLarge0",
+    "span": 8.5,
+    "under": "water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   },
+   {
+    "id": "LT08",
+    "kind": "bridge",
+    "tex": "CityBridgeExtraLarge0",
+    "span": 8.5,
+    "under": "water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   }
+  ]
+ },
+ {
+  "map": "Friends_v1.2",
+  "size": "146x146",
+  "players": 8,
+  "shallow_pct": 0.0,
+  "deep_pct": 0.97,
+  "n_shallow": 0,
+  "comps": [],
+  "hill_std": 99.4,
+  "hills_per_1k": 3.64,
+  "slope_pct": 63.1,
+  "bridges": []
+ },
+ {
+  "map": "FrozenMarshlands",
+  "size": "140x132",
+  "players": 4,
+  "shallow_pct": 40.16,
+  "deep_pct": 10.86,
+  "n_shallow": 5,
+  "comps": [
+   {
+    "area": 5808,
+    "width": 14.0,
+    "len": 414.9,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 10,
+    "width": 2.0,
+    "len": 5.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 57.7,
+  "hills_per_1k": 4.02,
+  "slope_pct": 57.7,
+  "bridges": []
+ },
+ {
+  "map": "FullScaleAssault",
+  "size": "184x148",
+  "players": 8,
+  "shallow_pct": 6.53,
+  "deep_pct": 2.61,
+  "n_shallow": 7,
+  "comps": [
+   {
+    "area": 11,
+    "width": 2.0,
+    "len": 5.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 928,
+    "width": 12.8,
+    "len": 72.5,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 165,
+    "width": 7.2,
+    "len": 22.9,
+    "deep": false,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 401,
+    "width": 13.4,
+    "len": 29.9,
+    "deep": false,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 25,
+    "width": 4.5,
+    "len": 5.6,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 14,
+    "width": 2.8,
+    "len": 4.9,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 127.1,
+  "hills_per_1k": 2.89,
+  "slope_pct": 82.4,
+  "bridges": []
+ },
+ {
+  "map": "GnollWood",
+  "size": "128x128",
+  "players": 6,
+  "shallow_pct": 13.44,
+  "deep_pct": 11.37,
+  "n_shallow": 14,
+  "comps": [
+   {
+    "area": 15,
+    "width": 2.8,
+    "len": 5.3,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 307,
+    "width": 7.2,
+    "len": 42.6,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 17,
+    "width": 2.8,
+    "len": 6.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 1289,
+    "width": 10.0,
+    "len": 128.9,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 20,
+    "width": 2.8,
+    "len": 7.1,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 128,
+    "width": 4.5,
+    "len": 28.6,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 10,
+    "width": 2.0,
+    "len": 5.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 11,
+    "width": 2.0,
+    "len": 5.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 160.8,
+  "hills_per_1k": 2.53,
+  "slope_pct": 76.6,
+  "bridges": []
+ },
+ {
+  "map": "GoldRush",
+  "size": "172x172",
+  "players": 8,
+  "shallow_pct": 2.0,
+  "deep_pct": 3.39,
+  "n_shallow": 5,
+  "comps": [
+   {
+    "area": 340,
+    "width": 8.5,
+    "len": 40.1,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 128,
+    "width": 7.2,
+    "len": 17.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 26,
+    "width": 4.0,
+    "len": 6.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 122.7,
+  "hills_per_1k": 2.21,
+  "slope_pct": 75.3,
+  "bridges": []
+ },
+ {
+  "map": "Goldshire",
+  "size": "100x100",
+  "players": 4,
+  "shallow_pct": 3.34,
+  "deep_pct": 4.25,
+  "n_shallow": 3,
+  "comps": [
+   {
+    "area": 174,
+    "width": 8.5,
+    "len": 20.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 84,
+    "width": 8.0,
+    "len": 10.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 9,
+    "width": 2.8,
+    "len": 3.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 73.5,
+  "hills_per_1k": 3.73,
+  "slope_pct": 62.6,
+  "bridges": []
+ },
+ {
+  "map": "GolemsInTheMist_LV",
+  "size": "136x136",
+  "players": 8,
+  "shallow_pct": 0.02,
+  "deep_pct": 6.05,
+  "n_shallow": 1,
+  "comps": [
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 136.2,
+  "hills_per_1k": 2.46,
+  "slope_pct": 61.5,
+  "bridges": []
+ },
+ {
+  "map": "GreenvilleWoods",
+  "size": "144x144",
+  "players": 4,
+  "shallow_pct": 2.86,
+  "deep_pct": 4.77,
+  "n_shallow": 8,
+  "comps": [
+   {
+    "area": 64,
+    "width": 4.5,
+    "len": 14.3,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 59,
+    "width": 6.0,
+    "len": 9.8,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 64,
+    "width": 5.7,
+    "len": 11.3,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 57,
+    "width": 6.0,
+    "len": 9.5,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 56,
+    "width": 4.5,
+    "len": 12.5,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 63,
+    "width": 4.5,
+    "len": 14.1,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 57,
+    "width": 4.5,
+    "len": 12.7,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 62,
+    "width": 4.5,
+    "len": 13.9,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 76.6,
+  "hills_per_1k": 5.82,
+  "slope_pct": 73.7,
+  "bridges": []
+ },
+ {
+  "map": "HillsbradCreek",
+  "size": "128x128",
+  "players": 4,
+  "shallow_pct": 18.28,
+  "deep_pct": 9.52,
+  "n_shallow": 6,
+  "comps": [
+   {
+    "area": 2072,
+    "width": 10.0,
+    "len": 207.2,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 211,
+    "width": 12.0,
+    "len": 17.6,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 13,
+    "width": 2.8,
+    "len": 4.6,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 10,
+    "width": 2.8,
+    "len": 3.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 38,
+    "width": 4.5,
+    "len": 8.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 31,
+    "width": 4.0,
+    "len": 7.8,
+    "deep": false,
+    "ford": true,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 92.0,
+  "hills_per_1k": 4.33,
+  "slope_pct": 74.2,
+  "bridges": []
+ },
+ {
+  "map": "ImaginaryFriends",
+  "size": "146x146",
+  "players": 4,
+  "shallow_pct": 0.0,
+  "deep_pct": 0.86,
+  "n_shallow": 0,
+  "comps": [],
+  "hill_std": 99.4,
+  "hills_per_1k": 3.64,
+  "slope_pct": 63.2,
+  "bridges": []
+ },
+ {
+  "map": "Kal'drassil",
+  "size": "112x112",
+  "players": 4,
+  "shallow_pct": 2.13,
+  "deep_pct": 3.64,
+  "n_shallow": 7,
+  "comps": [
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": false,
+    "ford": false,
+    "loc": "centre"
+   },
+   {
+    "area": 30,
+    "width": 5.7,
+    "len": 5.3,
+    "deep": false,
+    "ford": false,
+    "loc": "centre"
+   },
+   {
+    "area": 165,
+    "width": 5.7,
+    "len": 29.2,
+    "deep": false,
+    "ford": false,
+    "loc": "centre"
+   }
+  ],
+  "hill_std": 92.6,
+  "hills_per_1k": 2.5,
+  "slope_pct": 58.5,
+  "bridges": []
+ },
+ {
+  "map": "KingAndCountry",
+  "size": "102x108",
+  "players": 4,
+  "shallow_pct": 17.37,
+  "deep_pct": 1.03,
+  "n_shallow": 13,
+  "comps": [
+   {
+    "area": 32,
+    "width": 5.7,
+    "len": 5.7,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 282,
+    "width": 8.0,
+    "len": 35.2,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 291,
+    "width": 8.0,
+    "len": 36.4,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 31,
+    "width": 5.7,
+    "len": 5.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 222,
+    "width": 6.3,
+    "len": 35.1,
+    "deep": false,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 303,
+    "width": 7.2,
+    "len": 42.0,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 297,
+    "width": 8.0,
+    "len": 37.1,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 35,
+    "width": 5.7,
+    "len": 6.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 35,
+    "width": 5.7,
+    "len": 6.2,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 57.5,
+  "hills_per_1k": 2.03,
+  "slope_pct": 47.2,
+  "bridges": []
+ },
+ {
+  "map": "LastRefuge_v1.4",
+  "size": "84x84",
+  "players": 2,
+  "shallow_pct": 9.63,
+  "deep_pct": 17.86,
+  "n_shallow": 10,
+  "comps": [
+   {
+    "area": 59,
+    "width": 6.3,
+    "len": 9.3,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 95,
+    "width": 7.2,
+    "len": 13.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 162,
+    "width": 12.2,
+    "len": 13.3,
+    "deep": true,
+    "ford": false,
+    "loc": "centre"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 147,
+    "width": 6.0,
+    "len": 24.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   }
+  ],
+  "hill_std": 44.6,
+  "hills_per_1k": 7.16,
+  "slope_pct": 53.0,
+  "bridges": []
+ },
+ {
+  "map": "LostTemple_LV",
+  "size": "124x124",
+  "players": 4,
+  "shallow_pct": 7.12,
+  "deep_pct": 5.25,
+  "n_shallow": 7,
+  "comps": [
+   {
+    "area": 324,
+    "width": 8.2,
+    "len": 39.3,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 124,
+    "width": 6.0,
+    "len": 20.7,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 313,
+    "width": 8.9,
+    "len": 35.0,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 124,
+    "width": 7.2,
+    "len": 17.2,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 86.9,
+  "hills_per_1k": 3.89,
+  "slope_pct": 55.6,
+  "bridges": []
+ },
+ {
+  "map": "MarketSquare",
+  "size": "141x141",
+  "players": 8,
+  "shallow_pct": 0.0,
+  "deep_pct": 0.0,
+  "n_shallow": 0,
+  "comps": [],
+  "hill_std": 21.5,
+  "hills_per_1k": 1.98,
+  "slope_pct": 3.0,
+  "bridges": []
+ },
+ {
+  "map": "MesonDeLaTaberna",
+  "size": "156x156",
+  "players": 4,
+  "shallow_pct": 4.85,
+  "deep_pct": 9.15,
+  "n_shallow": 26,
+  "comps": [
+   {
+    "area": 173,
+    "width": 8.0,
+    "len": 21.6,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 30,
+    "width": 5.7,
+    "len": 5.3,
+    "deep": false,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 33,
+    "width": 4.0,
+    "len": 8.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 15,
+    "width": 2.0,
+    "len": 7.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 30,
+    "width": 4.0,
+    "len": 7.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 45,
+    "width": 4.0,
+    "len": 11.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 28,
+    "width": 2.8,
+    "len": 9.9,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 28,
+    "width": 4.0,
+    "len": 7.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 38,
+    "width": 4.0,
+    "len": 9.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 32,
+    "width": 6.0,
+    "len": 5.3,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.8,
+    "len": 2.8,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 10,
+    "width": 4.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.8,
+    "len": 2.1,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 8,
+    "width": 2.0,
+    "len": 4.0,
+    "deep": false,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 18,
+    "width": 2.8,
+    "len": 6.4,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 62,
+    "width": 4.5,
+    "len": 13.9,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 41,
+    "width": 4.0,
+    "len": 10.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 32,
+    "width": 4.0,
+    "len": 8.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 42,
+    "width": 2.8,
+    "len": 14.8,
+    "deep": true,
+    "ford": true,
+    "loc": "expansion"
+   },
+   {
+    "area": 104,
+    "width": 4.5,
+    "len": 23.3,
+    "deep": true,
+    "ford": true,
+    "loc": "expansion"
+   },
+   {
+    "area": 33,
+    "width": 4.0,
+    "len": 8.2,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 19,
+    "width": 2.8,
+    "len": 6.7,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 17,
+    "width": 4.0,
+    "len": 4.2,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 89.9,
+  "hills_per_1k": 4.24,
+  "slope_pct": 72.4,
+  "bridges": [
+   {
+    "id": "YT21",
+    "kind": "bridge",
+    "tex": "CityBridgeExtraLarge45",
+    "span": 11.5,
+    "under": "chasm/water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   },
+   {
+    "id": "YT21",
+    "kind": "bridge",
+    "tex": "CityBridgeExtraLarge45",
+    "span": 9.5,
+    "under": "water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "centre"
+   },
+   {
+    "id": "YT23",
+    "kind": "bridge",
+    "tex": "CityBridgeExtraLarge135",
+    "span": 9.5,
+    "under": "chasm/water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "centre"
+   },
+   {
+    "id": "YT23",
+    "kind": "bridge",
+    "tex": "CityBridgeExtraLarge135",
+    "span": 9.5,
+    "under": "chasm/water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "centre"
+   },
+   {
+    "id": "LT06",
+    "kind": "bridge",
+    "tex": "CityBridgeLarge0",
+    "span": 8.5,
+    "under": "water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   },
+   {
+    "id": "LT05",
+    "kind": "bridge",
+    "tex": "CityBridgeLarge45",
+    "span": 21.0,
+    "under": "chasm/water",
+    "ends": false,
+    "scale": 1.0,
+    "loc": "lane"
+   },
+   {
+    "id": "LT06",
+    "kind": "bridge",
+    "tex": "CityBridgeLarge0",
+    "span": 21.0,
+    "under": "chasm/water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   },
+   {
+    "id": "LT04",
+    "kind": "bridge",
+    "tex": "CityBridgeLarge0",
+    "span": 8.5,
+    "under": "water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   },
+   {
+    "id": "LT05",
+    "kind": "bridge",
+    "tex": "CityBridgeLarge45",
+    "span": 19.5,
+    "under": "chasm/water",
+    "ends": false,
+    "scale": 1.0,
+    "loc": "lane"
+   },
+   {
+    "id": "LT07",
+    "kind": "bridge",
+    "tex": "CityBridgeLarge45",
+    "span": 10.5,
+    "under": "chasm/water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   },
+   {
+    "id": "LT04",
+    "kind": "bridge",
+    "tex": "CityBridgeLarge0",
+    "span": 8.5,
+    "under": "water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   }
+  ]
+ },
+ {
+  "map": "Mur'gulOasis_LV",
+  "size": "128x128",
+  "players": 8,
+  "shallow_pct": 4.95,
+  "deep_pct": 2.81,
+  "n_shallow": 8,
+  "comps": [
+   {
+    "area": 32,
+    "width": 5.7,
+    "len": 5.7,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 30,
+    "width": 6.0,
+    "len": 5.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 10,
+    "width": 2.8,
+    "len": 3.5,
+    "deep": false,
+    "ford": false,
+    "loc": "centre"
+   },
+   {
+    "area": 10,
+    "width": 2.0,
+    "len": 5.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 497,
+    "width": 10.0,
+    "len": 49.7,
+    "deep": true,
+    "ford": false,
+    "loc": "centre"
+   },
+   {
+    "area": 71,
+    "width": 4.5,
+    "len": 15.9,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 44,
+    "width": 5.7,
+    "len": 7.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 13,
+    "width": 2.0,
+    "len": 6.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 130.5,
+  "hills_per_1k": 1.59,
+  "slope_pct": 70.3,
+  "bridges": []
+ },
+ {
+  "map": "NeonCity",
+  "size": "184x184",
+  "players": 6,
+  "shallow_pct": 0.0,
+  "deep_pct": 1.75,
+  "n_shallow": 0,
+  "comps": [],
+  "hill_std": 43.0,
+  "hills_per_1k": 2.85,
+  "slope_pct": 30.9,
+  "bridges": []
+ },
+ {
+  "map": "NerubianPassage",
+  "size": "182x148",
+  "players": 8,
+  "shallow_pct": 27.07,
+  "deep_pct": 0.52,
+  "n_shallow": 2,
+  "comps": [
+   {
+    "area": 5830,
+    "width": 16.0,
+    "len": 364.4,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 73.8,
+  "hills_per_1k": 4.07,
+  "slope_pct": 57.5,
+  "bridges": []
+ },
+ {
+  "map": "Nightopia",
+  "size": "144x144",
+  "players": 8,
+  "shallow_pct": 5.18,
+  "deep_pct": 11.97,
+  "n_shallow": 7,
+  "comps": [
+   {
+    "area": 127,
+    "width": 6.0,
+    "len": 21.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 532,
+    "width": 10.0,
+    "len": 53.2,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "centre"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 109,
+    "width": 6.0,
+    "len": 18.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   }
+  ],
+  "hill_std": 127.7,
+  "hills_per_1k": 3.41,
+  "slope_pct": 71.0,
+  "bridges": []
+ },
+ {
+  "map": "NorthernFelwood_v1.1",
+  "size": "218x160",
+  "players": 8,
+  "shallow_pct": 20.48,
+  "deep_pct": 15.08,
+  "n_shallow": 8,
+  "comps": [
+   {
+    "area": 8,
+    "width": 2.0,
+    "len": 4.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 16,
+    "width": 2.8,
+    "len": 5.7,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 749,
+    "width": 14.0,
+    "len": 53.5,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 26,
+    "width": 4.0,
+    "len": 6.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 2042,
+    "width": 14.4,
+    "len": 141.6,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 1895,
+    "width": 12.8,
+    "len": 148.0,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 780,
+    "width": 11.7,
+    "len": 66.9,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 72.1,
+  "hills_per_1k": 2.94,
+  "slope_pct": 49.2,
+  "bridges": []
+ },
+ {
+  "map": "NorthernIsles",
+  "size": "108x86",
+  "players": 2,
+  "shallow_pct": 29.23,
+  "deep_pct": 20.23,
+  "n_shallow": 6,
+  "comps": [
+   {
+    "area": 1860,
+    "width": 10.8,
+    "len": 172.7,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 16,
+    "width": 2.0,
+    "len": 8.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 59.3,
+  "hills_per_1k": 5.63,
+  "slope_pct": 52.3,
+  "bridges": []
+ },
+ {
+  "map": "NorthmarshRuin_v1.6",
+  "size": "144x144",
+  "players": 8,
+  "shallow_pct": 11.15,
+  "deep_pct": 1.32,
+  "n_shallow": 38,
+  "comps": [
+   {
+    "area": 118,
+    "width": 7.2,
+    "len": 16.4,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 73,
+    "width": 5.7,
+    "len": 12.9,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 138,
+    "width": 7.2,
+    "len": 19.1,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 139,
+    "width": 7.2,
+    "len": 19.3,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 57,
+    "width": 4.5,
+    "len": 12.7,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 18,
+    "width": 2.8,
+    "len": 6.4,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 92,
+    "width": 8.2,
+    "len": 11.2,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 40,
+    "width": 4.5,
+    "len": 8.9,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 54,
+    "width": 4.5,
+    "len": 12.1,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.0,
+    "len": 4.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 109,
+    "width": 8.0,
+    "len": 13.6,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.0,
+    "len": 4.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 39,
+    "width": 4.5,
+    "len": 8.7,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 127,
+    "width": 6.3,
+    "len": 20.1,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 16,
+    "width": 2.8,
+    "len": 5.7,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 132,
+    "width": 7.2,
+    "len": 18.3,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 39,
+    "width": 4.5,
+    "len": 8.7,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 17,
+    "width": 2.8,
+    "len": 6.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 106,
+    "width": 7.2,
+    "len": 14.7,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.0,
+    "len": 4.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 107,
+    "width": 8.0,
+    "len": 13.4,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 56,
+    "width": 4.5,
+    "len": 12.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 136,
+    "width": 7.2,
+    "len": 18.9,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 33,
+    "width": 4.5,
+    "len": 7.4,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 47,
+    "width": 6.0,
+    "len": 7.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 16,
+    "width": 2.8,
+    "len": 5.7,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 119,
+    "width": 7.2,
+    "len": 16.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 161,
+    "width": 7.2,
+    "len": 22.3,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 35.5,
+  "hills_per_1k": 5.91,
+  "slope_pct": 52.6,
+  "bridges": []
+ },
+ {
+  "map": "Northshire_LV",
+  "size": "148x148",
+  "players": 8,
+  "shallow_pct": 4.4,
+  "deep_pct": 12.76,
+  "n_shallow": 24,
+  "comps": [
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": false,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 71,
+    "width": 6.0,
+    "len": 11.8,
+    "deep": true,
+    "ford": true,
+    "loc": "expansion"
+   },
+   {
+    "area": 57,
+    "width": 7.2,
+    "len": 7.9,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 96,
+    "width": 8.5,
+    "len": 11.3,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 33,
+    "width": 4.0,
+    "len": 8.2,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 61,
+    "width": 6.0,
+    "len": 10.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 66,
+    "width": 8.0,
+    "len": 8.2,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 25,
+    "width": 2.8,
+    "len": 8.8,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 12,
+    "width": 2.8,
+    "len": 4.2,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 21,
+    "width": 2.0,
+    "len": 10.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 10,
+    "width": 2.0,
+    "len": 5.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 10,
+    "width": 2.0,
+    "len": 5.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.0,
+    "len": 4.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 23,
+    "width": 2.8,
+    "len": 8.1,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 33,
+    "width": 4.5,
+    "len": 7.4,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 69,
+    "width": 7.2,
+    "len": 9.6,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 25,
+    "width": 4.0,
+    "len": 6.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 32,
+    "width": 4.5,
+    "len": 7.2,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 49,
+    "width": 6.0,
+    "len": 8.2,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 42.6,
+  "hills_per_1k": 2.88,
+  "slope_pct": 34.0,
+  "bridges": []
+ },
+ {
+  "map": "PaintedWorld",
+  "size": "152x150",
+  "players": 8,
+  "shallow_pct": 15.34,
+  "deep_pct": 0.78,
+  "n_shallow": 9,
+  "comps": [
+   {
+    "area": 46,
+    "width": 5.7,
+    "len": 8.1,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 66,
+    "width": 6.0,
+    "len": 11.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 2477,
+    "width": 10.0,
+    "len": 247.7,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 9,
+    "width": 2.0,
+    "len": 4.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 9,
+    "width": 2.0,
+    "len": 4.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 60,
+    "width": 7.2,
+    "len": 8.3,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 41,
+    "width": 5.7,
+    "len": 7.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 35.4,
+  "hills_per_1k": 5.62,
+  "slope_pct": 33.9,
+  "bridges": []
+ },
+ {
+  "map": "PhantomGrove_W3C",
+  "size": "116x116",
+  "players": 4,
+  "shallow_pct": 3.14,
+  "deep_pct": 2.8,
+  "n_shallow": 15,
+  "comps": [
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 75,
+    "width": 7.2,
+    "len": 10.4,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 71,
+    "width": 7.2,
+    "len": 9.8,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 7,
+    "width": 2.8,
+    "len": 2.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 13,
+    "width": 2.0,
+    "len": 6.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 12,
+    "width": 4.0,
+    "len": 3.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.8,
+    "len": 2.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 73,
+    "width": 6.0,
+    "len": 12.2,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 88,
+    "width": 8.0,
+    "len": 11.0,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 85.0,
+  "hills_per_1k": 2.46,
+  "slope_pct": 58.5,
+  "bridges": []
+ },
+ {
+  "map": "RoyalGardens_v1.2",
+  "size": "148x152",
+  "players": 8,
+  "shallow_pct": 2.15,
+  "deep_pct": 4.2,
+  "n_shallow": 4,
+  "comps": [
+   {
+    "area": 70,
+    "width": 7.2,
+    "len": 9.7,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 96,
+    "width": 8.0,
+    "len": 12.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 96,
+    "width": 8.0,
+    "len": 12.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 71,
+    "width": 8.0,
+    "len": 8.9,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 0.7,
+  "hills_per_1k": 0.0,
+  "slope_pct": 0.0,
+  "bridges": []
+ },
+ {
+  "map": "RuinsOfAzshara",
+  "size": "94x88",
+  "players": 2,
+  "shallow_pct": 23.43,
+  "deep_pct": 18.36,
+  "n_shallow": 3,
+  "comps": [
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 1420,
+    "width": 11.3,
+    "len": 125.5,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 65.6,
+  "hills_per_1k": 3.22,
+  "slope_pct": 59.2,
+  "bridges": []
+ },
+ {
+  "map": "RustyCreek_v1.1",
+  "size": "104x104",
+  "players": 4,
+  "shallow_pct": 14.97,
+  "deep_pct": 8.16,
+  "n_shallow": 10,
+  "comps": [
+   {
+    "area": 28,
+    "width": 4.0,
+    "len": 7.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 40,
+    "width": 4.0,
+    "len": 10.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 1053,
+    "width": 8.2,
+    "len": 127.7,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 25,
+    "width": 4.0,
+    "len": 6.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 38,
+    "width": 4.0,
+    "len": 9.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 52,
+    "width": 4.0,
+    "len": 13.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 27,
+    "width": 4.0,
+    "len": 6.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 52.4,
+  "hills_per_1k": 3.56,
+  "slope_pct": 42.2,
+  "bridges": []
+ },
+ {
+  "map": "Sanctuary_LV",
+  "size": "148x116",
+  "players": 8,
+  "shallow_pct": 16.65,
+  "deep_pct": 0.0,
+  "n_shallow": 3,
+  "comps": [
+   {
+    "area": 2517,
+    "width": 10.0,
+    "len": 251.7,
+    "deep": false,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 9,
+    "width": 2.0,
+    "len": 4.5,
+    "deep": false,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 20,
+    "width": 2.0,
+    "len": 10.0,
+    "deep": false,
+    "ford": false,
+    "loc": "expansion"
+   }
+  ],
+  "hill_std": 38.4,
+  "hills_per_1k": 4.91,
+  "slope_pct": 39.2,
+  "bridges": []
+ },
+ {
+  "map": "ShallowGrave_v1.4",
+  "size": "96x96",
+  "players": 2,
+  "shallow_pct": 13.56,
+  "deep_pct": 2.94,
+  "n_shallow": 9,
+  "comps": [
+   {
+    "area": 209,
+    "width": 7.2,
+    "len": 29.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 252,
+    "width": 8.9,
+    "len": 28.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 26,
+    "width": 4.5,
+    "len": 5.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 21,
+    "width": 2.8,
+    "len": 7.4,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 210,
+    "width": 7.2,
+    "len": 29.1,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 258,
+    "width": 8.9,
+    "len": 28.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 15,
+    "width": 2.8,
+    "len": 5.3,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 31,
+    "width": 4.5,
+    "len": 6.9,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 70.9,
+  "hills_per_1k": 1.98,
+  "slope_pct": 63.9,
+  "bridges": [
+   {
+    "id": "YT35",
+    "kind": "bridge",
+    "tex": "CityBridgeExtraLarge45",
+    "span": 15.0,
+    "under": "chasm/water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   },
+   {
+    "id": "YT35",
+    "kind": "bridge",
+    "tex": "CityBridgeExtraLarge45",
+    "span": 13.0,
+    "under": "chasm/water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   },
+   {
+    "id": "YT35",
+    "kind": "bridge",
+    "tex": "CityBridgeExtraLarge45",
+    "span": 11.5,
+    "under": "chasm/water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   },
+   {
+    "id": "YT35",
+    "kind": "bridge",
+    "tex": "CityBridgeExtraLarge45",
+    "span": 13.5,
+    "under": "chasm/water",
+    "ends": true,
+    "scale": 1.0,
+    "loc": "lane"
+   }
+  ]
+ },
+ {
+  "map": "ShatteredExile_v2-07",
+  "size": "96x90",
+  "players": 4,
+  "shallow_pct": 0.42,
+  "deep_pct": 3.54,
+  "n_shallow": 2,
+  "comps": [
+   {
+    "area": 13,
+    "width": 2.0,
+    "len": 6.5,
+    "deep": true,
+    "ford": false,
+    "loc": "centre"
+   },
+   {
+    "area": 16,
+    "width": 2.0,
+    "len": 8.0,
+    "deep": true,
+    "ford": false,
+    "loc": "centre"
+   }
+  ],
+  "hill_std": 55.9,
+  "hills_per_1k": 2.83,
+  "slope_pct": 39.8,
+  "bridges": []
+ },
+ {
+  "map": "ShatteredExile_v2.06",
+  "size": "96x90",
+  "players": 4,
+  "shallow_pct": 0.42,
+  "deep_pct": 3.54,
+  "n_shallow": 2,
+  "comps": [
+   {
+    "area": 13,
+    "width": 2.0,
+    "len": 6.5,
+    "deep": true,
+    "ford": false,
+    "loc": "centre"
+   },
+   {
+    "area": 16,
+    "width": 2.0,
+    "len": 8.0,
+    "deep": true,
+    "ford": false,
+    "loc": "centre"
+   }
+  ],
+  "hill_std": 55.9,
+  "hills_per_1k": 2.83,
+  "slope_pct": 39.8,
+  "bridges": []
+ },
+ {
+  "map": "SilverpineForest",
+  "size": "136x136",
+  "players": 6,
+  "shallow_pct": 5.44,
+  "deep_pct": 6.88,
+  "n_shallow": 14,
+  "comps": [
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 541,
+    "width": 7.2,
+    "len": 75.0,
+    "deep": true,
+    "ford": false,
+    "loc": "centre"
+   },
+   {
+    "area": 69,
+    "width": 7.2,
+    "len": 9.6,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 15,
+    "width": 4.0,
+    "len": 3.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 22,
+    "width": 4.0,
+    "len": 5.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 31,
+    "width": 4.0,
+    "len": 7.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 60,
+    "width": 4.0,
+    "len": 15.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "base"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   }
+  ],
+  "hill_std": 111.5,
+  "hills_per_1k": 4.68,
+  "slope_pct": 75.5,
+  "bridges": []
+ },
+ {
+  "map": "Snowblind_v1.2",
+  "size": "144x153",
+  "players": 8,
+  "shallow_pct": 36.69,
+  "deep_pct": 3.2,
+  "n_shallow": 1,
+  "comps": [
+   {
+    "area": 6663,
+    "width": 14.6,
+    "len": 457.6,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   }
+  ],
+  "hill_std": 71.4,
+  "hills_per_1k": 4.08,
+  "slope_pct": 60.7,
+  "bridges": []
+ },
+ {
+  "map": "Springtime_v1.1",
+  "size": "90x90",
+  "players": 2,
+  "shallow_pct": 5.04,
+  "deep_pct": 3.9,
+  "n_shallow": 18,
+  "comps": [
+   {
+    "area": 8,
+    "width": 2.0,
+    "len": 4.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 13,
+    "width": 2.0,
+    "len": 6.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 10,
+    "width": 2.8,
+    "len": 3.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 48,
+    "width": 4.0,
+    "len": 12.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 48,
+    "width": 4.0,
+    "len": 12.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 45,
+    "width": 4.0,
+    "len": 11.2,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 35,
+    "width": 4.5,
+    "len": 7.8,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 12,
+    "width": 2.8,
+    "len": 4.2,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 10,
+    "width": 2.8,
+    "len": 3.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 23,
+    "width": 2.8,
+    "len": 8.1,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 62.4,
+  "hills_per_1k": 4.53,
+  "slope_pct": 60.6,
+  "bridges": []
+ },
+ {
+  "map": "TerenasStand_LV",
+  "size": "84x84",
+  "players": 2,
+  "shallow_pct": 0.0,
+  "deep_pct": 10.29,
+  "n_shallow": 0,
+  "comps": [],
+  "hill_std": 48.5,
+  "hills_per_1k": 5.89,
+  "slope_pct": 50.5,
+  "bridges": []
+ },
+ {
+  "map": "TheConsortium",
+  "size": "118x118",
+  "players": 4,
+  "shallow_pct": 0.0,
+  "deep_pct": 0.0,
+  "n_shallow": 0,
+  "comps": [],
+  "hill_std": 63.9,
+  "hills_per_1k": 3.79,
+  "slope_pct": 46.2,
+  "bridges": []
+ },
+ {
+  "map": "Tidehunters_v1.2",
+  "size": "90x90",
+  "players": 2,
+  "shallow_pct": 15.3,
+  "deep_pct": 17.17,
+  "n_shallow": 24,
+  "comps": [
+   {
+    "area": 8,
+    "width": 2.0,
+    "len": 4.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 119,
+    "width": 6.0,
+    "len": 19.8,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 32,
+    "width": 4.5,
+    "len": 7.2,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 118,
+    "width": 5.7,
+    "len": 20.9,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 72,
+    "width": 6.0,
+    "len": 12.0,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 26,
+    "width": 5.7,
+    "len": 4.6,
+    "deep": true,
+    "ford": false,
+    "loc": "centre"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 82,
+    "width": 6.0,
+    "len": 13.7,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 301,
+    "width": 8.0,
+    "len": 37.6,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 32,
+    "width": 4.5,
+    "len": 7.2,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.0,
+    "len": 4.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 64.3,
+  "hills_per_1k": 5.55,
+  "slope_pct": 56.8,
+  "bridges": []
+ },
+ {
+  "map": "TurtleRock",
+  "size": "104x104",
+  "players": 4,
+  "shallow_pct": 20.91,
+  "deep_pct": 25.14,
+  "n_shallow": 19,
+  "comps": [
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.0,
+    "len": 4.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 1443,
+    "width": 8.5,
+    "len": 170.1,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 78.3,
+  "hills_per_1k": 10.92,
+  "slope_pct": 74.7,
+  "bridges": []
+ },
+ {
+  "map": "TwilightRuins",
+  "size": "172x172",
+  "players": 8,
+  "shallow_pct": 14.46,
+  "deep_pct": 16.15,
+  "n_shallow": 37,
+  "comps": [
+   {
+    "area": 183,
+    "width": 6.0,
+    "len": 30.5,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 331,
+    "width": 7.2,
+    "len": 45.9,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 186,
+    "width": 5.7,
+    "len": 32.9,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 8,
+    "width": 2.0,
+    "len": 4.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 9,
+    "width": 2.0,
+    "len": 4.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 838,
+    "width": 10.0,
+    "len": 83.8,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 17,
+    "width": 4.0,
+    "len": 4.2,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 288,
+    "width": 6.0,
+    "len": 48.0,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 59,
+    "width": 7.2,
+    "len": 8.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 203,
+    "width": 6.0,
+    "len": 33.8,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.0,
+    "len": 4.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 24,
+    "width": 4.0,
+    "len": 6.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.8,
+    "len": 2.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 47,
+    "width": 5.7,
+    "len": 8.3,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 9,
+    "width": 2.0,
+    "len": 4.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 115,
+    "width": 6.0,
+    "len": 19.2,
+    "deep": false,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 179,
+    "width": 8.0,
+    "len": 22.4,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 264,
+    "width": 8.0,
+    "len": 33.0,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 21,
+    "width": 4.0,
+    "len": 5.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 268,
+    "width": 10.0,
+    "len": 26.8,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 10,
+    "width": 2.8,
+    "len": 3.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 59,
+    "width": 7.2,
+    "len": 8.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 60.4,
+  "hills_per_1k": 5.08,
+  "slope_pct": 54.9,
+  "bridges": []
+ },
+ {
+  "map": "TwilightRuins_LV",
+  "size": "172x172",
+  "players": 8,
+  "shallow_pct": 14.3,
+  "deep_pct": 16.27,
+  "n_shallow": 37,
+  "comps": [
+   {
+    "area": 175,
+    "width": 6.0,
+    "len": 29.2,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 331,
+    "width": 7.2,
+    "len": 45.9,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 184,
+    "width": 5.7,
+    "len": 32.5,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 8,
+    "width": 2.0,
+    "len": 4.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 9,
+    "width": 2.0,
+    "len": 4.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 838,
+    "width": 10.0,
+    "len": 83.8,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 17,
+    "width": 4.0,
+    "len": 4.2,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 288,
+    "width": 6.0,
+    "len": 48.0,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 59,
+    "width": 7.2,
+    "len": 8.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 202,
+    "width": 6.0,
+    "len": 33.7,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.0,
+    "len": 4.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 24,
+    "width": 4.0,
+    "len": 6.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.8,
+    "len": 2.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 47,
+    "width": 5.7,
+    "len": 8.3,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 9,
+    "width": 2.0,
+    "len": 4.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 90,
+    "width": 6.0,
+    "len": 15.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 177,
+    "width": 8.0,
+    "len": 22.1,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 263,
+    "width": 8.0,
+    "len": 32.9,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 17,
+    "width": 2.8,
+    "len": 6.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 16,
+    "width": 2.8,
+    "len": 5.7,
+    "deep": false,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 283,
+    "width": 10.0,
+    "len": 28.3,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 60,
+    "width": 7.2,
+    "len": 8.3,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 58.6,
+  "hills_per_1k": 4.85,
+  "slope_pct": 51.9,
+  "bridges": []
+ },
+ {
+  "map": "TwistedMeadows",
+  "size": "124x124",
+  "players": 4,
+  "shallow_pct": 10.19,
+  "deep_pct": 4.68,
+  "n_shallow": 11,
+  "comps": [
+   {
+    "area": 194,
+    "width": 6.3,
+    "len": 30.7,
+    "deep": true,
+    "ford": true,
+    "loc": "expansion"
+   },
+   {
+    "area": 203,
+    "width": 10.0,
+    "len": 20.3,
+    "deep": true,
+    "ford": true,
+    "loc": "expansion"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 431,
+    "width": 10.0,
+    "len": 43.1,
+    "deep": false,
+    "ford": false,
+    "loc": "centre"
+   },
+   {
+    "area": 202,
+    "width": 8.0,
+    "len": 25.2,
+    "deep": true,
+    "ford": true,
+    "loc": "expansion"
+   },
+   {
+    "area": 200,
+    "width": 8.9,
+    "len": 22.4,
+    "deep": true,
+    "ford": true,
+    "loc": "expansion"
+   },
+   {
+    "area": 9,
+    "width": 2.8,
+    "len": 3.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 105.3,
+  "hills_per_1k": 3.93,
+  "slope_pct": 65.3,
+  "bridges": []
+ },
+ {
+  "map": "WellspringTemple_v1.2",
+  "size": "148x148",
+  "players": 8,
+  "shallow_pct": 6.93,
+  "deep_pct": 16.39,
+  "n_shallow": 52,
+  "comps": [
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 13,
+    "width": 2.0,
+    "len": 6.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 16,
+    "width": 4.0,
+    "len": 4.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 86,
+    "width": 6.3,
+    "len": 13.6,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 85,
+    "width": 6.3,
+    "len": 13.4,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 40,
+    "width": 5.7,
+    "len": 7.1,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 16,
+    "width": 4.0,
+    "len": 4.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 18,
+    "width": 4.5,
+    "len": 4.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 21,
+    "width": 4.0,
+    "len": 5.2,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 43,
+    "width": 4.0,
+    "len": 10.8,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 15,
+    "width": 4.0,
+    "len": 3.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 41,
+    "width": 4.5,
+    "len": 9.2,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 35,
+    "width": 4.0,
+    "len": 8.8,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 149,
+    "width": 6.0,
+    "len": 24.8,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 20,
+    "width": 4.0,
+    "len": 5.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 22,
+    "width": 4.5,
+    "len": 4.9,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 37,
+    "width": 4.5,
+    "len": 8.3,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 43,
+    "width": 4.0,
+    "len": 10.8,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 15,
+    "width": 4.0,
+    "len": 3.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 40,
+    "width": 4.5,
+    "len": 8.9,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 14,
+    "width": 4.0,
+    "len": 3.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 18,
+    "width": 4.5,
+    "len": 4.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 84,
+    "width": 6.3,
+    "len": 13.3,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 57,
+    "width": 5.7,
+    "len": 10.1,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 40,
+    "width": 5.7,
+    "len": 7.1,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   }
+  ],
+  "hill_std": 43.2,
+  "hills_per_1k": 3.3,
+  "slope_pct": 37.6,
+  "bridges": []
+ },
+ {
+  "map": "dalarangarden",
+  "size": "120x122",
+  "players": 4,
+  "shallow_pct": 0.0,
+  "deep_pct": 14.7,
+  "n_shallow": 0,
+  "comps": [],
+  "hill_std": 36.6,
+  "hills_per_1k": 0.97,
+  "slope_pct": 14.1,
+  "bridges": []
+ },
+ {
+  "map": "featherville",
+  "size": "120x120",
+  "players": 4,
+  "shallow_pct": 27.8,
+  "deep_pct": 15.15,
+  "n_shallow": 1,
+  "comps": [
+   {
+    "area": 3143,
+    "width": 8.9,
+    "len": 351.4,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   }
+  ],
+  "hill_std": 85.7,
+  "hills_per_1k": 7.59,
+  "slope_pct": 86.5,
+  "bridges": []
+ },
+ {
+  "map": "royalgardens",
+  "size": "148x152",
+  "players": 8,
+  "shallow_pct": 2.15,
+  "deep_pct": 4.2,
+  "n_shallow": 4,
+  "comps": [
+   {
+    "area": 70,
+    "width": 7.2,
+    "len": 9.7,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 96,
+    "width": 8.0,
+    "len": 12.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 96,
+    "width": 8.0,
+    "len": 12.0,
+    "deep": false,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 71,
+    "width": 8.0,
+    "len": 8.9,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 0.7,
+  "hills_per_1k": 0.0,
+  "slope_pct": 0.0,
+  "bridges": []
+ },
+ {
+  "map": "synergy",
+  "size": "124x110",
+  "players": 4,
+  "shallow_pct": 24.04,
+  "deep_pct": 0.68,
+  "n_shallow": 3,
+  "comps": [
+   {
+    "area": 3005,
+    "width": 10.2,
+    "len": 294.7,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": false,
+    "ford": false,
+    "loc": "expansion"
+   }
+  ],
+  "hill_std": 55.0,
+  "hills_per_1k": 4.2,
+  "slope_pct": 47.5,
+  "bridges": []
+ },
+ {
+  "map": "tidewaterglades",
+  "size": "116x116",
+  "players": 4,
+  "shallow_pct": 17.06,
+  "deep_pct": 24.4,
+  "n_shallow": 16,
+  "comps": [
+   {
+    "area": 286,
+    "width": 8.2,
+    "len": 34.7,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 1027,
+    "width": 8.2,
+    "len": 124.5,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 7,
+    "width": 2.0,
+    "len": 3.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 227,
+    "width": 7.2,
+    "len": 31.5,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 61.9,
+  "hills_per_1k": 5.15,
+  "slope_pct": 61.9,
+  "bridges": []
+ },
+ {
+  "map": "vilereef",
+  "size": "148x140",
+  "players": 4,
+  "shallow_pct": 32.52,
+  "deep_pct": 29.79,
+  "n_shallow": 32,
+  "comps": [
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 29,
+    "width": 2.8,
+    "len": 10.3,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3257,
+    "width": 13.4,
+    "len": 242.8,
+    "deep": true,
+    "ford": true,
+    "loc": "centre"
+   },
+   {
+    "area": 25,
+    "width": 2.8,
+    "len": 8.8,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 48,
+    "width": 4.5,
+    "len": 10.7,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 8,
+    "width": 2.0,
+    "len": 4.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 84,
+    "width": 5.7,
+    "len": 14.8,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 79,
+    "width": 4.5,
+    "len": 17.7,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 41,
+    "width": 4.5,
+    "len": 9.2,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 37,
+    "width": 4.0,
+    "len": 9.2,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 4,
+    "width": 2.0,
+    "len": 2.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 90,
+    "width": 6.3,
+    "len": 14.2,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 81,
+    "width": 6.3,
+    "len": 12.8,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 39,
+    "width": 4.0,
+    "len": 9.8,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 48,
+    "width": 4.5,
+    "len": 10.7,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 72,
+    "width": 4.5,
+    "len": 16.1,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 68,
+    "width": 4.5,
+    "len": 15.2,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 61,
+    "width": 6.0,
+    "len": 10.2,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 61,
+    "width": 5.7,
+    "len": 10.8,
+    "deep": true,
+    "ford": true,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 3,
+    "width": 2.0,
+    "len": 1.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 28,
+    "width": 4.0,
+    "len": 7.0,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 38,
+    "width": 4.5,
+    "len": 8.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 6,
+    "width": 2.0,
+    "len": 3.0,
+    "deep": true,
+    "ford": false,
+    "loc": "expansion"
+   },
+   {
+    "area": 5,
+    "width": 2.0,
+    "len": 2.5,
+    "deep": true,
+    "ford": false,
+    "loc": "lane"
+   }
+  ],
+  "hill_std": 55.1,
+  "hills_per_1k": 2.94,
+  "slope_pct": 53.7,
+  "bridges": []
+ }
+]

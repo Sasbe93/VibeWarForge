@@ -1,0 +1,161 @@
+{
+ "note": "Scene purpose presets (rule scene_purpose). Every doodad cluster (scene) needs a line 'SCENE <name> [@ x,y] :: purpose; story link; density' in the design note. need = minimum prop count per class within the scene radius; min = minimum props in total; A scene tells its story visually; dialogue mentions are optional (only when really important for the mission). Classes come from camp_props.json (fire, tent, goods, web, bones, burrow) plus egg, victim, ruin, grave, boat, ice.",
+ "classes": {
+  "egg": {
+   "re": "egg sac|egg sack",
+   "ids": [
+    "DTes"
+   ]
+  },
+  "victim": {
+   "re": "corpse|impaled|sitting corpse|cocoon|cage",
+   "ids": [
+    "LOsc",
+    "LOic",
+    "LOce",
+    "LOct",
+    "LOcg"
+   ]
+  },
+  "ruin": {
+   "re": "column|obelisk|ruin(?!edfloor)|rubble|block|pillar|statue",
+   "ids": []
+  },
+  "grave": {
+   "re": "grave|tomb",
+   "ids": []
+  },
+  "boat": {
+   "re": "boat|ship|wreck|plank|floating box",
+   "ids": []
+  },
+  "ice": {
+   "re": "ice claw|ice block|iceberg|ice floe",
+   "ids": []
+  }
+ },
+ "presets": {
+  "nest": {
+   "min": 12,
+   "need": {
+    "web": 4,
+    "egg": 3,
+    "victim": 2,
+    "burrow": 1
+   },
+   "radius": 450,
+   "props": [
+    "NRwr",
+    "NRwr",
+    "NRwr",
+    "NRwr",
+    "DTes",
+    "DTes",
+    "DTes",
+    "LOsc",
+    "LOic",
+    "NRfs",
+    "LOrb",
+    "NRwr"
+   ],
+   "why": "brood nest: dense webs, egg sacs, cocooned prey, tunnels"
+  },
+  "trap": {
+   "min": 5,
+   "need": {
+    "web": 2,
+    "victim": 2
+   },
+   "radius": 400,
+   "props": [
+    "NRwr",
+    "NRwr",
+    "LOsc",
+    "LOic",
+    "LOrb"
+   ],
+   "why": "trap on the escape route: webs strung across the path and caught victims tell it visually (no dialogue needed)"
+  },
+  "lair": {
+   "min": 6,
+   "need": {
+    "bones": 2,
+    "burrow": 1
+   },
+   "radius": 400,
+   "props": [
+    "LOrb",
+    "NObo",
+    "NRfs",
+    "LOsk",
+    "LOrb",
+    "NRfs"
+   ],
+   "why": "beast or brood lair: bones, burrows"
+  },
+  "camp": {
+   "min": 4,
+   "need": {
+    "fire": 1
+   },
+   "radius": 400,
+   "props": [
+    "NOfp",
+    "LTcr",
+    "LTbr",
+    "NOal"
+   ],
+   "why": "humanoid camp: fire, goods, shelter"
+  },
+  "settlement": {
+   "min": 8,
+   "need": {
+    "fire": 1,
+    "goods": 2
+   },
+   "radius": 500,
+   "props": [],
+   "why": "village or hold: hearths, fences, goods, boats"
+  },
+  "wreck": {
+   "min": 4,
+   "need": {
+    "boat": 2
+   },
+   "radius": 450,
+   "props": [],
+   "why": "wreck: hull, planks, cargo"
+  },
+  "graveyard": {
+   "min": 4,
+   "need": {
+    "grave": 1,
+    "bones": 1
+   },
+   "radius": 400,
+   "props": [],
+   "why": "graves and bones"
+  },
+  "ruin": {
+   "min": 3,
+   "need": {
+    "ruin": 2
+   },
+   "radius": 400,
+   "props": [],
+   "why": "ruins: columns, obelisks, rubble"
+  },
+  "landmark": {
+   "min": 2,
+   "need": {},
+   "radius": 400,
+   "props": [],
+   "why": "single landmark for orientation"
+  }
+ },
+ "density": {
+  "sparse": 0.6,
+  "medium": 1.0,
+  "dense": 1.5
+ }
+}

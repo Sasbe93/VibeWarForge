@@ -1,0 +1,128 @@
+{
+ "Amazonia.w3x": {
+  "trees_all": 1894,
+  "trees_in": 1730,
+  "play_cells": 6400,
+  "land_cells": 6098,
+  "trees_per_cell": 0.27,
+  "tree_cover_land": 0.283,
+  "trees_per_land_cell": 0.284
+ },
+ "AutumnLeaves_v2-0.w3x": {
+  "trees_all": 2855,
+  "trees_in": 2162,
+  "play_cells": 9604,
+  "land_cells": 7829,
+  "trees_per_cell": 0.225,
+  "tree_cover_land": 0.267,
+  "trees_per_land_cell": 0.276
+ },
+ "ConcealedHill.w3x": {
+  "trees_all": 2091,
+  "trees_in": 1990,
+  "play_cells": 7840,
+  "land_cells": 6368,
+  "trees_per_cell": 0.254,
+  "tree_cover_land": 0.31,
+  "trees_per_land_cell": 0.312
+ },
+ "EchoIsles.w3x": {
+  "trees_all": 1830,
+  "trees_in": 1830,
+  "play_cells": 9744,
+  "land_cells": 6960,
+  "trees_per_cell": 0.188,
+  "tree_cover_land": 0.257,
+  "trees_per_land_cell": 0.263
+ },
+ "KingAndCountry.w3x": {
+  "trees_all": 4224,
+  "trees_in": 2813,
+  "play_cells": 11016,
+  "land_cells": 10776,
+  "trees_per_cell": 0.255,
+  "tree_cover_land": 0.226,
+  "trees_per_land_cell": 0.261
+ },
+ "LastRefuge_v1.4.w3x": {
+  "trees_all": 1909,
+  "trees_in": 1520,
+  "play_cells": 7056,
+  "land_cells": 5484,
+  "trees_per_cell": 0.215,
+  "tree_cover_land": 0.277,
+  "trees_per_land_cell": 0.277
+ },
+ "NorthernIsles.w3x": {
+  "trees_all": 1895,
+  "trees_in": 1678,
+  "play_cells": 9288,
+  "land_cells": 6928,
+  "trees_per_cell": 0.181,
+  "tree_cover_land": 0.238,
+  "trees_per_land_cell": 0.242
+ },
+ "ShallowGrave_v1.4.w3x": {
+  "trees_all": 4799,
+  "trees_in": 3596,
+  "play_cells": 9216,
+  "land_cells": 8693,
+  "trees_per_cell": 0.39,
+  "tree_cover_land": 0.304,
+  "trees_per_land_cell": 0.414
+ },
+ "ShatteredExile_v2-07.w3x": {
+  "trees_all": 2756,
+  "trees_in": 2724,
+  "play_cells": 8640,
+  "land_cells": 7975,
+  "trees_per_cell": 0.315,
+  "tree_cover_land": 0.335,
+  "trees_per_land_cell": 0.342
+ },
+ "Springtime_v1.1.w3x": {
+  "trees_all": 5173,
+  "trees_in": 2741,
+  "play_cells": 8100,
+  "land_cells": 7564,
+  "trees_per_cell": 0.338,
+  "tree_cover_land": 0.338,
+  "trees_per_land_cell": 0.362
+ },
+ "TerenasStand_LV.w3x": {
+  "trees_all": 1340,
+  "trees_in": 1176,
+  "play_cells": 7056,
+  "land_cells": 5979,
+  "trees_per_cell": 0.167,
+  "tree_cover_land": 0.196,
+  "trees_per_land_cell": 0.197
+ },
+ "Tidehunters_v1.2.w3x": {
+  "trees_all": 2688,
+  "trees_in": 2439,
+  "play_cells": 8100,
+  "land_cells": 5974,
+  "trees_per_cell": 0.301,
+  "tree_cover_land": 0.292,
+  "trees_per_land_cell": 0.408
+ },
+ "TurtleRock.w3x": {
+  "trees_all": 1745,
+  "trees_in": 1745,
+  "play_cells": 10816,
+  "land_cells": 7408,
+  "trees_per_cell": 0.161,
+  "tree_cover_land": 0.236,
+  "trees_per_land_cell": 0.236
+ },
+ "TwistedMeadows.w3x": {
+  "trees_all": 3308,
+  "trees_in": 3051,
+  "play_cells": 15376,
+  "land_cells": 14479,
+  "trees_per_cell": 0.198,
+  "tree_cover_land": 0.211,
+  "trees_per_land_cell": 0.211
+ }
+}

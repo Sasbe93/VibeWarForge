@@ -1,0 +1,22 @@
+{
+ "note": "Faction/creep family -> camp prop rules (rule camp_props_fit). Prop classes are matched on the stock doodad/destructable name (doodad_terrain_fit.json) or listed ids. Families are matched on the unit's visible name and its stock base name.",
+ "prop_classes": {
+  "fire":      {"re": "fire ?pit|campfire|bonfire|brazier|torch|firepot|\\bfire\\b|small fire|blue fire", "ids": ["NOfp","NOft","NOfg","LObr","LObz","LOth","LOtz","ZObz","ZOfp","AObr","IOst","YOfs","YOtf","YOfb"]},
+  "tent":      {"re": "\\btents?\\b|yurt|lean-to|pavilion", "ids": []},
+  "goods":     {"re": "crates?|barrels?|\\bbox\\b|(?<!egg )sacks?\\b|cart|wagon|wheelbarrel|trough|hitching|weapon rack|weapons|fence|signpost|table|chair|lamp|anvil|forge|well\\b|hay", "ids": ["LTcr","LTbr","LTbs","LTbx","LTex","YOec","LOwr","LOwb","LOtr","LOhp","LOwp","NOfl","NOal"]},
+  "web":       {"re": "web|cocoon|egg sac|egg sack|silk", "ids": ["NRwr","DTes"]},
+  "bones":     {"re": "bones?|skull|rib|corpse|carcass|remains", "ids": ["NObo","BObo","LOrb","LOsk","OOsk","LOsc","LOic"]},
+  "burrow":    {"re": "burrow|tunnel|hole|crater|fissure|mound", "ids": ["NRfs","BRcr"]}
+ },
+ "families": {
+  "arachnid":  {"re": "nerubian|nerub|spider|crypt fiend|crypt lord|broodmother|silk|web|burrow|spiderling|arachnathid", "allowed": ["web","bones","burrow"], "forbidden": ["fire","tent","goods"],
+                "why": "cold-adapted, unclothed burrowers without tools: webs, egg sacs, cocooned prey, bones, tunnel/burrow entrances - never camp fires, tents or crates"},
+  "beast":     {"re": "\\bwolf|wolves|bear|raccoon|boar|stag|penguin|seal|hawk|owl|lizard|thunder ?lizard|basilisk|hydra|wendigo|yeti|fel beast|fel ravager|felhound|razormane boar|dog|hound", "allowed": ["bones","burrow"], "forbidden": ["fire","tent","goods"],
+                "why": "animals: dens, bones, burrows - no fires, tents or goods"},
+  "mindless_undead": {"re": "skeleton|zombie|ghoul|abomination|plague|mummy|revenant", "allowed": ["bones","burrow"], "forbidden": ["tent","goods"],
+                "why": "mindless dead do not pitch tents or store goods"},
+  "elemental": {"re": "elemental|golem|infernal|revenant|wisp|spirit", "allowed": ["burrow"], "forbidden": ["fire","tent","goods"], "why": "no camp life"},
+  "humanoid":  {"re": ".*", "allowed": ["fire","tent","goods","bones","burrow","web"], "forbidden": [], "why": "tool and clothing users (tuskarr, trolls, gnolls, satyrs, furbolgs, bandits ...)"}
+ },
+ "family_order": ["arachnid","beast","mindless_undead","elemental","humanoid"]
+}

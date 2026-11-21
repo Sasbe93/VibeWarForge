@@ -1,0 +1,11027 @@
+{
+ "Amazonia": {
+  "map": "Amazonia",
+  "tileset": "V",
+  "tiles": [
+   "Vdrt",
+   "Vdrr",
+   "Vcrp",
+   "Vcbp",
+   "Vstp",
+   "Vgrs",
+   "Vrck",
+   "Vgrt"
+  ],
+  "size": [
+   96,
+   96
+  ],
+  "playable": [
+   80,
+   80
+  ],
+  "players": 2,
+  "rush_cells": {
+   "P1-P2": 66.4
+  },
+  "rush_air_cells": {
+   "P1-P2": 73.9
+  },
+  "mines": [
+   {
+    "gold": 12500,
+    "air": [
+     10228,
+     781
+    ],
+    "path": [
+     72.9,
+     0
+    ]
+   },
+   {
+    "gold": 20000,
+    "air": [
+     4211,
+     8318
+    ],
+    "path": [
+     26.2,
+     61.2
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     781,
+     10228
+    ],
+    "path": [
+     0,
+     73.5
+    ]
+   },
+   {
+    "gold": 20000,
+    "air": [
+     8318,
+     4211
+    ],
+    "path": [
+     61.2,
+     27.2
+    ]
+   }
+  ],
+  "main_mine_wu": [
+   781,
+   781
+  ],
+  "mine_seq_P1": [
+   [
+    0,
+    12500
+   ],
+   [
+    26.2,
+    20000
+   ],
+   [
+    61.2,
+    20000
+   ],
+   [
+    72.9,
+    12500
+   ]
+  ],
+  "camps": [
+   {
+    "x": -4296,
+    "y": 1420,
+    "n": 3,
+    "ids": [
+     "nggr",
+     "ngst",
+     "ngst"
+    ],
+    "lvl": 21,
+    "ds": 5085,
+    "dpath": 33.8,
+    "arc": 112.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4328,
+    "arc_trees": 270.0
+   },
+   {
+    "x": 625,
+    "y": -4471,
+    "n": 5,
+    "ids": [
+     "nftt",
+     "nftt",
+     "ngrk",
+     "ngrk",
+     "ngst"
+    ],
+    "lvl": 16,
+    "ds": 4113,
+    "dpath": 26.4,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 3381,
+    "arc_trees": 67.5
+   },
+   {
+    "x": 1500,
+    "y": -1300,
+    "n": 3,
+    "ids": [
+     "nftb",
+     "nftt",
+     "nftt"
+    ],
+    "lvl": 10,
+    "ds": 4739,
+    "dpath": 31.3,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3958,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -1024,
+    "y": -4250,
+    "n": 3,
+    "ids": [
+     "nrog",
+     "nwiz",
+     "nwiz"
+    ],
+    "lvl": 5,
+    "ds": 2460,
+    "dpath": 13,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1794,
+    "arc_trees": 281.25
+   },
+   {
+    "x": 4405,
+    "y": -2313,
+    "n": 3,
+    "ids": [
+     "nggr",
+     "ngst",
+     "ngst"
+    ],
+    "lvl": 21,
+    "ds": 5491,
+    "dpath": 39.2,
+    "arc": 22.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4732,
+    "arc_trees": 202.5
+   },
+   {
+    "x": -4053,
+    "y": -211,
+    "n": 5,
+    "ids": [
+     "nfsp",
+     "nftr",
+     "nftr",
+     "nftr",
+     "nsqt"
+    ],
+    "lvl": 13,
+    "ds": 3437,
+    "dpath": 20,
+    "arc": 0.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2827,
+    "arc_trees": 56.25
+   },
+   {
+    "x": -725,
+    "y": 3824,
+    "n": 5,
+    "ids": [
+     "nftt",
+     "nftt",
+     "ngrk",
+     "ngrk",
+     "ngst"
+    ],
+    "lvl": 16,
+    "ds": 4122,
+    "dpath": 26,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 3367,
+    "arc_trees": 45.0
+   },
+   {
+    "x": -1577,
+    "y": 574,
+    "n": 3,
+    "ids": [
+     "nftb",
+     "nftt",
+     "nftt"
+    ],
+    "lvl": 10,
+    "ds": 4537,
+    "dpath": 29.7,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3817,
+    "arc_trees": 247.5
+   },
+   {
+    "x": -3546,
+    "y": 3117,
+    "n": 5,
+    "ids": [
+     "nbrg",
+     "nbrg",
+     "nenf",
+     "nenf",
+     "nwzg"
+    ],
+    "lvl": 19,
+    "ds": 6702,
+    "dpath": 46,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 5999,
+    "arc_trees": 22.5
+   },
+   {
+    "x": 721,
+    "y": 3678,
+    "n": 3,
+    "ids": [
+     "nrog",
+     "nwiz",
+     "nwiz"
+    ],
+    "lvl": 5,
+    "ds": 2677,
+    "dpath": 14,
+    "arc": 22.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2032,
+    "arc_trees": 292.5
+   },
+   {
+    "x": -1940,
+    "y": -1947,
+    "n": 3,
+    "ids": [
+     "nmrl",
+     "nmrl",
+     "nmrm"
+    ],
+    "lvl": 5,
+    "ds": 2188,
+    "dpath": 9.5,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1689,
+    "arc_trees": 236.25
+   },
+   {
+    "x": -1967,
+    "y": -4505,
+    "n": 3,
+    "ids": [
+     "nrog",
+     "nrog",
+     "nwzg"
+    ],
+    "lvl": 11,
+    "ds": 1697,
+    "dpath": 6.4,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1009,
+    "arc_trees": 135.0
+   },
+   {
+    "x": 995,
+    "y": 708,
+    "n": 3,
+    "ids": [
+     "nkol",
+     "nkot",
+     "nkot"
+    ],
+    "lvl": 11,
+    "ds": 3322,
+    "dpath": 17.0,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2813,
+    "arc_trees": 202.5
+   },
+   {
+    "x": 1687,
+    "y": 1249,
+    "n": 3,
+    "ids": [
+     "nmrl",
+     "nmrl",
+     "nmrm"
+    ],
+    "lvl": 5,
+    "ds": 2453,
+    "dpath": 10.9,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1935,
+    "arc_trees": 258.75
+   },
+   {
+    "x": 1755,
+    "y": 4042,
+    "n": 3,
+    "ids": [
+     "nrog",
+     "nrog",
+     "nwzg"
+    ],
+    "lvl": 11,
+    "ds": 1848,
+    "dpath": 6.8,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1177,
+    "arc_trees": 101.25
+   },
+   {
+    "x": 3843,
+    "y": -420,
+    "n": 5,
+    "ids": [
+     "nfsp",
+     "nftr",
+     "nftr",
+     "nftr",
+     "nsqt"
+    ],
+    "lvl": 13,
+    "ds": 3529,
+    "dpath": 21,
+    "arc": 0.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2894,
+    "arc_trees": 67.5
+   },
+   {
+    "x": -1294,
+    "y": -1281,
+    "n": 3,
+    "ids": [
+     "nkol",
+     "nkot",
+     "nkot"
+    ],
+    "lvl": 11,
+    "ds": 3115,
+    "dpath": 16.6,
+    "arc": 22.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2600,
+    "arc_trees": 191.25
+   },
+   {
+    "x": 3582,
+    "y": -4023,
+    "n": 4,
+    "ids": [
+     "nbrg",
+     "nbrg",
+     "nenf",
+     "nwzg"
+    ],
+    "lvl": 14,
+    "ds": 6988,
+    "dpath": 49,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 6342,
+    "arc_trees": 90.0
+   },
+   {
+    "x": 3421,
+    "y": -4271,
+    "n": 1,
+    "ids": [
+     "nenf"
+    ],
+    "lvl": 5,
+    "ds": 6848,
+    "dpath": 48,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 6348,
+    "arc_trees": 146.25
+   }
+  ],
+  "start_blocker_creeps": 0,
+  "neutrals": [
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     9514,
+     1951
+    ],
+    "path": [
+     70.5,
+     7.7
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     8153,
+     3679
+    ],
+    "path": [
+     60.5,
+     22.4
+    ]
+   },
+   {
+    "id": "ntav",
+    "name": "Tavern",
+    "air": [
+     4617,
+     4842
+    ],
+    "path": [
+     29.6,
+     29.7
+    ]
+   },
+   {
+    "id": "nmer",
+    "name": "Mercenary Camp",
+    "air": [
+     7255,
+     7319
+    ],
+    "path": [
+     50.4,
+     51
+    ]
+   },
+   {
+    "id": "nmer",
+    "name": "Mercenary Camp",
+    "air": [
+     7178,
+     7054
+    ],
+    "path": [
+     50,
+     49
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     2010,
+     9391
+    ],
+    "path": [
+     7.2,
+     69.1
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     3728,
+     8070
+    ],
+    "path": [
+     22,
+     60.0
+    ]
+   }
+  ],
+  "other_neutral_ids": {
+   "nvil": 1,
+   "nshe": 2,
+   "necr": 2,
+   "nfh0": 1,
+   "nmg1": 1,
+   "hrdh": 1,
+   "nfro": 3,
+   "nbse": 1,
+   "nfh1": 1,
+   "nshf": 1,
+   "nmg0": 1,
+   "nder": 1,
+   "nvl2": 1,
+   "zzrg": 1,
+   "ncrb": 1
+  },
+  "trees": 1894,
+  "trees_per_playable_cell": 0.296,
+  "tree_cell_share": 0.295,
+  "tree_ids": {
+   "VTlt": 1660,
+   "LTlt": 228,
+   "LTcr": 2,
+   "LTbr": 1,
+   "LTbs": 2,
+   "LTba": 1
+  },
+  "nearest_tree_wu": [
+   707,
+   716
+  ],
+  "trees_within_1500": [
+   159,
+   150
+  ],
+  "decor_types": 58,
+  "decor_count": 617,
+  "decor_top": [
+   [
+    "LRrk",
+    148
+   ],
+   [
+    "LPwh",
+    115
+   ],
+   [
+    "ZPsh",
+    60
+   ],
+   [
+    "ZPfw",
+    50
+   ],
+   [
+    "LPrs",
+    37
+   ],
+   [
+    "LPcw",
+    33
+   ],
+   [
+    "LPcr",
+    21
+   ],
+   [
+    "IWbg",
+    15
+   ]
+  ],
+  "cliff_layers": {
+   "0": 2211,
+   "1": 158,
+   "2": 6525,
+   "3": 337,
+   "4": 164
+  },
+  "ramp_points": 0,
+  "water_share": 0.442,
+  "deep_water_share": 0.245,
+  "walkable_share": 0.628,
+  "walk_sym": {
+   "rot180": 88.54,
+   "mirrorX": 91.67,
+   "mirrorY": 88.06,
+   "rot90": 89.47,
+   "diag": 88.95,
+   "antidiag": 89.5
+  },
+  "main_exit_width_cells": [
+   19,
+   19
+  ]
+ },
+ "AutumnLeaves": {
+  "map": "AutumnLeaves",
+  "tileset": "Q",
+  "tiles": [
+   "Qdrt",
+   "Qdrr",
+   "Qcbp",
+   "Qgrs",
+   "Qrck",
+   "Qgrt",
+   "Fgrd",
+   "Bdrg",
+   "Xgsb",
+   "Adrg",
+   "Agrd",
+   "Vgrs"
+  ],
+  "size": [
+   128,
+   128
+  ],
+  "playable": [
+   98,
+   98
+  ],
+  "players": 2,
+  "rush_cells": {
+   "P1-P2": 78.2
+  },
+  "rush_air_cells": {
+   "P1-P2": 80.5
+  },
+  "mines": [
+   {
+    "gold": 12500,
+    "air": [
+     781,
+     10991
+    ],
+    "path": [
+     0,
+     84.7
+    ]
+   },
+   {
+    "gold": 12000,
+    "air": [
+     3781,
+     7187
+    ],
+    "path": [
+     24,
+     50.0
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     10991,
+     781
+    ],
+    "path": [
+     84.7,
+     0
+    ]
+   },
+   {
+    "gold": 12000,
+    "air": [
+     5261,
+     10274
+    ],
+    "path": [
+     35.2,
+     74.8
+    ]
+   },
+   {
+    "gold": 12000,
+    "air": [
+     7187,
+     3781
+    ],
+    "path": [
+     50.0,
+     24
+    ]
+   },
+   {
+    "gold": 12000,
+    "air": [
+     10274,
+     5261
+    ],
+    "path": [
+     75.2,
+     34.8
+    ]
+   }
+  ],
+  "main_mine_wu": [
+   781,
+   781
+  ],
+  "mine_seq_P1": [
+   [
+    0,
+    12500
+   ],
+   [
+    24,
+    12000
+   ],
+   [
+    35.2,
+    12000
+   ],
+   [
+    50.0,
+    12000
+   ],
+   [
+    75.2,
+    12000
+   ],
+   [
+    84.7,
+    12500
+   ]
+  ],
+  "camps": [
+   {
+    "x": 3637,
+    "y": -1927,
+    "n": 3,
+    "ids": [
+     "nska",
+     "nskg",
+     "nslf"
+    ],
+    "lvl": 7,
+    "ds": 6429,
+    "dpath": 45.6,
+    "arc": 45.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 5742,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -2175,
+    "y": 3053,
+    "n": 3,
+    "ids": [
+     "nftb",
+     "nftt",
+     "nsqt"
+    ],
+    "lvl": 12,
+    "ds": 4642,
+    "dpath": 30.9,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3849,
+    "arc_trees": 146.25
+   },
+   {
+    "x": 2176,
+    "y": -3050,
+    "n": 3,
+    "ids": [
+     "nftb",
+     "nftt",
+     "nsqt"
+    ],
+    "lvl": 12,
+    "ds": 4645,
+    "dpath": 30.9,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3852,
+    "arc_trees": 157.5
+   },
+   {
+    "x": -3625,
+    "y": 1937,
+    "n": 3,
+    "ids": [
+     "nska",
+     "nskg",
+     "nslf"
+    ],
+    "lvl": 7,
+    "ds": 6413,
+    "dpath": 45.6,
+    "arc": 45.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 5726,
+    "arc_trees": 258.75
+   },
+   {
+    "x": 2274,
+    "y": 1005,
+    "n": 3,
+    "ids": [
+     "nftt",
+     "nftt",
+     "nomg"
+    ],
+    "lvl": 11,
+    "ds": 3668,
+    "dpath": 23,
+    "arc": 0.0,
+    "camp": 2,
+    "acqs": [
+     -2.0,
+     -1.0
+    ],
+    "acqmargin": 3013,
+    "arc_trees": 236.25
+   },
+   {
+    "x": 4747,
+    "y": -4153,
+    "n": 4,
+    "ids": [
+     "nbrg",
+     "nbrg",
+     "nwiz",
+     "nwzr"
+    ],
+    "lvl": 8,
+    "ds": 6942,
+    "dpath": 48.4,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 6191,
+    "arc_trees": 258.75
+   },
+   {
+    "x": 5583,
+    "y": -1346,
+    "n": 3,
+    "ids": [
+     "nggr",
+     "nwwd",
+     "nwwd"
+    ],
+    "lvl": 21,
+    "ds": 6916,
+    "dpath": 51.3,
+    "arc": 180.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 6212,
+    "arc_trees": 247.5
+   },
+   {
+    "x": -2979,
+    "y": 5377,
+    "n": 4,
+    "ids": [
+     "nkog",
+     "nkog",
+     "nkol",
+     "nkot"
+    ],
+    "lvl": 14,
+    "ds": 5203,
+    "dpath": 34.4,
+    "arc": 22.5,
+    "camp": 2,
+    "acqs": [
+     -2.0,
+     -1.0
+    ],
+    "acqmargin": 4406,
+    "arc_trees": 236.25
+   },
+   {
+    "x": -2287,
+    "y": -1003,
+    "n": 3,
+    "ids": [
+     "nftt",
+     "nftt",
+     "nomg"
+    ],
+    "lvl": 11,
+    "ds": 3671,
+    "dpath": 23,
+    "arc": 0.0,
+    "camp": 2,
+    "acqs": [
+     -2.0,
+     -1.0
+    ],
+    "acqmargin": 3022,
+    "arc_trees": 78.75
+   },
+   {
+    "x": -5610,
+    "y": 1403,
+    "n": 3,
+    "ids": [
+     "nggr",
+     "nwwd",
+     "nwwd"
+    ],
+    "lvl": 21,
+    "ds": 6979,
+    "dpath": 52.9,
+    "arc": 225.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 6304,
+    "arc_trees": 270.0
+   },
+   {
+    "x": 2980,
+    "y": -5350,
+    "n": 4,
+    "ids": [
+     "nkog",
+     "nkog",
+     "nkol",
+     "nkot"
+    ],
+    "lvl": 14,
+    "ds": 5201,
+    "dpath": 34.8,
+    "arc": 22.5,
+    "camp": 2,
+    "acqs": [
+     -2.0,
+     -1.0
+    ],
+    "acqmargin": 4403,
+    "arc_trees": 202.5
+   },
+   {
+    "x": -4772,
+    "y": 4173,
+    "n": 4,
+    "ids": [
+     "nbrg",
+     "nbrg",
+     "nwiz",
+     "nwzr"
+    ],
+    "lvl": 8,
+    "ds": 6966,
+    "dpath": 48,
+    "arc": 22.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 6214,
+    "arc_trees": 236.25
+   },
+   {
+    "x": 5191,
+    "y": 914,
+    "n": 3,
+    "ids": [
+     "nenf",
+     "ngns",
+     "ngnv"
+    ],
+    "lvl": 13,
+    "ds": 4818,
+    "dpath": 31.5,
+    "arc": 157.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4227,
+    "arc_trees": 213.75
+   },
+   {
+    "x": -45,
+    "y": 3716,
+    "n": 3,
+    "ids": [
+     "nftb",
+     "nftt",
+     "nwwf"
+    ],
+    "lvl": 9,
+    "ds": 2418,
+    "dpath": 11.8,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1771,
+    "arc_trees": 168.75
+   },
+   {
+    "x": -3720,
+    "y": -3741,
+    "n": 3,
+    "ids": [
+     "ngnw",
+     "nwwf",
+     "nwwf"
+    ],
+    "lvl": 7,
+    "ds": 1803,
+    "dpath": 6.8,
+    "arc": 45.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1137,
+    "arc_trees": 225.0
+   },
+   {
+    "x": 3732,
+    "y": 3745,
+    "n": 3,
+    "ids": [
+     "ngnw",
+     "nwwf",
+     "nwwf"
+    ],
+    "lvl": 7,
+    "ds": 1812,
+    "dpath": 6.8,
+    "arc": 22.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1146,
+    "arc_trees": 225.0
+   },
+   {
+    "x": 1079,
+    "y": -1225,
+    "n": 4,
+    "ids": [
+     "nfsh",
+     "nftb",
+     "nftk",
+     "nsqt"
+    ],
+    "lvl": 19,
+    "ds": 4741,
+    "dpath": 28.9,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3978,
+    "arc_trees": 213.75
+   },
+   {
+    "x": -5218,
+    "y": -913,
+    "n": 3,
+    "ids": [
+     "nenf",
+     "ngns",
+     "ngnv"
+    ],
+    "lvl": 13,
+    "ds": 4836,
+    "dpath": 31.5,
+    "arc": 180.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4245,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 62,
+    "y": -3686,
+    "n": 3,
+    "ids": [
+     "nftb",
+     "nftt",
+     "nwwf"
+    ],
+    "lvl": 9,
+    "ds": 2446,
+    "dpath": 11.8,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1813,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -1055,
+    "y": 1246,
+    "n": 4,
+    "ids": [
+     "ngns",
+     "ngnv",
+     "ngnw",
+     "nowe"
+    ],
+    "lvl": 17,
+    "ds": 4709,
+    "dpath": 28.9,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4029,
+    "arc_trees": 225.0
+   }
+  ],
+  "start_blocker_creeps": 0,
+  "neutrals": [
+   {
+    "id": "nmer",
+    "name": "Mercenary Camp",
+    "air": [
+     4798,
+     6082
+    ],
+    "path": [
+     29.3,
+     41.4
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     6082,
+     4798
+    ],
+    "path": [
+     41.8,
+     29.3
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     4655,
+     7872
+    ],
+    "path": [
+     30.5,
+     56
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     7872,
+     4655
+    ],
+    "path": [
+     56,
+     30.5
+    ]
+   },
+   {
+    "id": "ntav",
+    "name": "Tavern",
+    "air": [
+     5154,
+     5154
+    ],
+    "path": [
+     36.0,
+     35.6
+    ]
+   }
+  ],
+  "other_neutral_ids": {
+   "nbse": 1,
+   "ntn2": 4,
+   "nrat": 2,
+   "nder": 4,
+   "nshe": 2,
+   "nrac": 2,
+   "nsno": 2,
+   "nvil": 1,
+   "hrdh": 1,
+   "nfh1": 1,
+   "ngnh": 1,
+   "ngt2": 1
+  },
+  "trees": 2855,
+  "trees_per_playable_cell": 0.297,
+  "tree_cell_share": 0.29,
+  "tree_ids": {
+   "YTlb": 55,
+   "FTtw": 2657,
+   "YTpb": 125,
+   "NTiw": 5,
+   "VTlt": 2,
+   "LTlt": 7,
+   "ITag": 1,
+   "LTba": 3
+  },
+  "nearest_tree_wu": [
+   630,
+   689
+  ],
+  "trees_within_1500": [
+   166,
+   165
+  ],
+  "decor_types": 97,
+  "decor_count": 3445,
+  "decor_top": [
+   [
+    "ZPsh",
+    988
+   ],
+   [
+    "LPrs",
+    846
+   ],
+   [
+    "LRrk",
+    515
+   ],
+   [
+    "ZPvp",
+    165
+   ],
+   [
+    "ZWsw",
+    120
+   ],
+   [
+    "ZPms",
+    115
+   ],
+   [
+    "BRrk",
+    83
+   ],
+   [
+    "LPfp",
+    76
+   ]
+  ],
+  "cliff_layers": {
+   "1": 571,
+   "2": 11959,
+   "3": 1076,
+   "4": 920,
+   "5": 1108,
+   "6": 548,
+   "7": 268,
+   "8": 146,
+   "9": 11,
+   "10": 34
+  },
+  "ramp_points": 35,
+  "water_share": 0.37,
+  "deep_water_share": 0.229,
+  "walkable_share": 0.438,
+  "walk_sym": {
+   "rot180": 95.8,
+   "mirrorX": 86.52,
+   "mirrorY": 86.3,
+   "rot90": 85.57,
+   "diag": 83.89,
+   "antidiag": 83.97
+  },
+  "main_exit_width_cells": [
+   7,
+   9
+  ]
+ },
+ "ConcealedHill": {
+  "map": "ConcealedHill",
+  "tileset": "L",
+  "tiles": [
+   "Ldrt",
+   "Ldro",
+   "Ldrg",
+   "Lrok",
+   "Lgrs",
+   "Lgrd"
+  ],
+  "size": [
+   96,
+   128
+  ],
+  "playable": [
+   80,
+   98
+  ],
+  "players": 2,
+  "rush_cells": {
+   "P1-P2": 74.6
+  },
+  "rush_air_cells": {
+   "P1-P2": 78.3
+  },
+  "mines": [
+   {
+    "gold": 12500,
+    "air": [
+     771,
+     10737
+    ],
+    "path": [
+     0,
+     81.7
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     9863,
+     4946
+    ],
+    "path": [
+     71,
+     32.8
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     4809,
+     9795
+    ],
+    "path": [
+     31.8,
+     70
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     10737,
+     771
+    ],
+    "path": [
+     81.7,
+     0
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     4776,
+     5343
+    ],
+    "path": [
+     35.3,
+     35.9
+    ]
+   }
+  ],
+  "main_mine_wu": [
+   771,
+   771
+  ],
+  "mine_seq_P1": [
+   [
+    0,
+    12500
+   ],
+   [
+    31.8,
+    12500
+   ],
+   [
+    35.3,
+    12500
+   ],
+   [
+    71,
+    12500
+   ],
+   [
+    81.7,
+    12500
+   ]
+  ],
+  "camps": [
+   {
+    "x": 1020,
+    "y": -3147,
+    "n": 3,
+    "ids": [
+     "nfsh",
+     "nftt",
+     "nomg"
+    ],
+    "lvl": 12,
+    "ds": 3684,
+    "dpath": 22.5,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2906,
+    "arc_trees": 236.25
+   },
+   {
+    "x": 2349,
+    "y": -5421,
+    "n": 5,
+    "ids": [
+     "ngno",
+     "ngns",
+     "ngns",
+     "ngnv",
+     "ngnw"
+    ],
+    "lvl": 15,
+    "ds": 4703,
+    "dpath": 30,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 4065,
+    "arc_trees": 101.25
+   },
+   {
+    "x": -2354,
+    "y": 4852,
+    "n": 5,
+    "ids": [
+     "ngno",
+     "ngns",
+     "ngns",
+     "ngnv",
+     "ngnw"
+    ],
+    "lvl": 15,
+    "ds": 4573,
+    "dpath": 29.4,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 3931,
+    "arc_trees": 45.0
+   },
+   {
+    "x": 3911,
+    "y": 1354,
+    "n": 4,
+    "ids": [
+     "nfsh",
+     "nftt",
+     "ngrk",
+     "ngst"
+    ],
+    "lvl": 15,
+    "ds": 3353,
+    "dpath": 22.2,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2521,
+    "arc_trees": 101.25
+   },
+   {
+    "x": -3937,
+    "y": -1876,
+    "n": 4,
+    "ids": [
+     "nfsh",
+     "nftt",
+     "ngrk",
+     "ngst"
+    ],
+    "lvl": 15,
+    "ds": 3293,
+    "dpath": 21.2,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2463,
+    "arc_trees": 112.5
+   },
+   {
+    "x": 3691,
+    "y": 2939,
+    "n": 3,
+    "ids": [
+     "nftb",
+     "nftt",
+     "nogr"
+    ],
+    "lvl": 10,
+    "ds": 1986,
+    "dpath": 7.7,
+    "arc": 135.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1282,
+    "arc_trees": 303.75
+   },
+   {
+    "x": 4234,
+    "y": -2316,
+    "n": 6,
+    "ids": [
+     "nfsh",
+     "nftb",
+     "nftb",
+     "nogr",
+     "nomg",
+     "nrdr"
+    ],
+    "lvl": 26,
+    "ds": 6856,
+    "dpath": 49.1,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0,
+     -1.0
+    ],
+    "acqmargin": 6168,
+    "arc_trees": 180.0
+   },
+   {
+    "x": -168,
+    "y": -5668,
+    "n": 3,
+    "ids": [
+     "ntrs",
+     "ntrs",
+     "ntrt"
+    ],
+    "lvl": 8,
+    "ds": 2330,
+    "dpath": 11.4,
+    "arc": 202.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1672,
+    "arc_trees": 225.0
+   },
+   {
+    "x": -1003,
+    "y": 2417,
+    "n": 3,
+    "ids": [
+     "nfsh",
+     "nftt",
+     "nomg"
+    ],
+    "lvl": 12,
+    "ds": 3657,
+    "dpath": 22.3,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2892,
+    "arc_trees": 225.0
+   },
+   {
+    "x": -4204,
+    "y": 1814,
+    "n": 6,
+    "ids": [
+     "nfsh",
+     "nftb",
+     "nftb",
+     "nogr",
+     "nomg",
+     "nrdr"
+    ],
+    "lvl": 26,
+    "ds": 6820,
+    "dpath": 48.7,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0,
+     -1.0
+    ],
+    "acqmargin": 6053,
+    "arc_trees": 78.75
+   },
+   {
+    "x": 1039,
+    "y": -1074,
+    "n": 4,
+    "ids": [
+     "nmrl",
+     "nmrr",
+     "nmrr",
+     "nsc2"
+    ],
+    "lvl": 8,
+    "ds": 4958,
+    "dpath": 31.3,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4318,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 4222,
+    "y": -3704,
+    "n": 3,
+    "ids": [
+     "nkob",
+     "nkog",
+     "nkot"
+    ],
+    "lvl": 7,
+    "ds": 6607,
+    "dpath": 45.8,
+    "arc": 22.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 6055,
+    "arc_trees": 135.0
+   },
+   {
+    "x": -4291,
+    "y": 3287,
+    "n": 3,
+    "ids": [
+     "nkob",
+     "nkog",
+     "nkot"
+    ],
+    "lvl": 7,
+    "ds": 6535,
+    "dpath": 45.4,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 5958,
+    "arc_trees": 270.0
+   },
+   {
+    "x": 248,
+    "y": 5178,
+    "n": 3,
+    "ids": [
+     "ntrs",
+     "ntrs",
+     "ntrt"
+    ],
+    "lvl": 8,
+    "ds": 2151,
+    "dpath": 9.4,
+    "arc": 157.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1512,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -3609,
+    "y": -3406,
+    "n": 3,
+    "ids": [
+     "nftb",
+     "nftt",
+     "nogr"
+    ],
+    "lvl": 10,
+    "ds": 1864,
+    "dpath": 5.7,
+    "arc": 135.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1176,
+    "arc_trees": 281.25
+   },
+   {
+    "x": -458,
+    "y": 124,
+    "n": 5,
+    "ids": [
+     "nfsh",
+     "nftt",
+     "nftt",
+     "nogl",
+     "nomg"
+    ],
+    "lvl": 22,
+    "ds": 4873,
+    "dpath": 35.3,
+    "arc": 0.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4090,
+    "arc_trees": 112.5
+   },
+   {
+    "x": -1560,
+    "y": 319,
+    "n": 4,
+    "ids": [
+     "nmrl",
+     "nmrr",
+     "nmrr",
+     "nsc2"
+    ],
+    "lvl": 8,
+    "ds": 5109,
+    "dpath": 33,
+    "arc": 22.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4455,
+    "arc_trees": 236.25
+   }
+  ],
+  "start_blocker_creeps": 0,
+  "neutrals": [
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     3303,
+     8961
+    ],
+    "path": [
+     23.2,
+     61.8
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     3664,
+     7397
+    ],
+    "path": [
+     21.9,
+     52.2
+    ]
+   },
+   {
+    "id": "nfoh",
+    "name": "Fountain of Health",
+    "air": [
+     6964,
+     6923
+    ],
+    "path": [
+     50.1,
+     50.0
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     7630,
+     3673
+    ],
+    "path": [
+     53.8,
+     22.5
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     8870,
+     3231
+    ],
+    "path": [
+     62.0,
+     22.2
+    ]
+   },
+   {
+    "id": "nfoh",
+    "name": "Fountain of Health",
+    "air": [
+     6802,
+     6927
+    ],
+    "path": [
+     49.0,
+     49.7
+    ]
+   },
+   {
+    "id": "ntav",
+    "name": "Tavern",
+    "air": [
+     7161,
+     2876
+    ],
+    "path": [
+     51.7,
+     15.8
+    ]
+   },
+   {
+    "id": "ntav",
+    "name": "Tavern",
+    "air": [
+     2894,
+     7168
+    ],
+    "path": [
+     15.4,
+     51.1
+    ]
+   }
+  ],
+  "other_neutral_ids": {
+   "nshe": 8,
+   "nmg1": 1,
+   "ntn2": 2,
+   "nfro": 5,
+   "nech": 1,
+   "nten": 1,
+   "necr": 1
+  },
+  "trees": 2091,
+  "trees_per_playable_cell": 0.267,
+  "tree_cell_share": 0.264,
+  "tree_ids": {
+   "LTlt": 2041,
+   "YTpb": 30,
+   "YTpc": 20
+  },
+  "nearest_tree_wu": [
+   634,
+   659
+  ],
+  "trees_within_1500": [
+   175,
+   193
+  ],
+  "decor_types": 42,
+  "decor_count": 703,
+  "decor_top": [
+   [
+    "LPrs",
+    169
+   ],
+   [
+    "LRrk",
+    163
+   ],
+   [
+    "ZPsh",
+    140
+   ],
+   [
+    "LPwh",
+    50
+   ],
+   [
+    "ZPfw",
+    43
+   ],
+   [
+    "LPfp",
+    37
+   ],
+   [
+    "YOec",
+    16
+   ],
+   [
+    "NWfb",
+    6
+   ]
+  ],
+  "cliff_layers": {
+   "1": 5436,
+   "2": 6709,
+   "3": 368
+  },
+  "ramp_points": 161,
+  "water_share": 0.526,
+  "deep_water_share": 0.435,
+  "walkable_share": 0.504,
+  "walk_sym": {
+   "rot180": 90.79,
+   "mirrorX": 87.14,
+   "mirrorY": 86.26
+  },
+  "main_exit_width_cells": [
+   9,
+   7
+  ]
+ },
+ "EchoIsles": {
+  "map": "EchoIsles",
+  "tileset": "L",
+  "tiles": [
+   "Ldrt",
+   "Ldro",
+   "Ldrg",
+   "Lrok",
+   "Lgrs",
+   "Lgrd"
+  ],
+  "size": [
+   128,
+   96
+  ],
+  "playable": [
+   116,
+   84
+  ],
+  "players": 2,
+  "rush_cells": {
+   "P1-P2": 71
+  },
+  "rush_air_cells": {
+   "P1-P2": 77.0
+  },
+  "mines": [
+   {
+    "gold": 13500,
+    "air": [
+     781,
+     10324
+    ],
+    "path": [
+     0,
+     75
+    ]
+   },
+   {
+    "gold": 13500,
+    "air": [
+     10324,
+     781
+    ],
+    "path": [
+     75,
+     0
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     11344,
+     6152
+    ],
+    "path": [
+     86.4,
+     42
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     6152,
+     11344
+    ],
+    "path": [
+     42,
+     86.4
+    ]
+   }
+  ],
+  "main_mine_wu": [
+   781,
+   781
+  ],
+  "mine_seq_P1": [
+   [
+    0,
+    13500
+   ],
+   [
+    42,
+    12500
+   ],
+   [
+    75,
+    13500
+   ],
+   [
+    86.4,
+    12500
+   ]
+  ],
+  "camps": [
+   {
+    "x": -3130,
+    "y": -3666,
+    "n": 4,
+    "ids": [
+     "nmrl",
+     "nmrm",
+     "nmrr",
+     "nmrr"
+    ],
+    "lvl": 8,
+    "ds": 6922,
+    "dpath": 50.6,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 6352,
+    "arc_trees": 213.75
+   },
+   {
+    "x": 2879,
+    "y": 4444,
+    "n": 3,
+    "ids": [
+     "nftt",
+     "nftt",
+     "nogr"
+    ],
+    "lvl": 9,
+    "ds": 2338,
+    "dpath": 11.5,
+    "arc": 45.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1672,
+    "arc_trees": 135.0
+   },
+   {
+    "x": -3333,
+    "y": 4454,
+    "n": 3,
+    "ids": [
+     "nftt",
+     "nftt",
+     "nogr"
+    ],
+    "lvl": 9,
+    "ds": 2388,
+    "dpath": 11.5,
+    "arc": 135.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1701,
+    "arc_trees": 168.75
+   },
+   {
+    "x": -5671,
+    "y": 793,
+    "n": 3,
+    "ids": [
+     "ngna",
+     "ngna",
+     "ngnb"
+    ],
+    "lvl": 5,
+    "ds": 2206,
+    "dpath": 11,
+    "arc": 112.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1488,
+    "arc_trees": 270.0
+   },
+   {
+    "x": 5833,
+    "y": -778,
+    "n": 6,
+    "ids": [
+     "nkob",
+     "nkob",
+     "nkog",
+     "nkot",
+     "nkot",
+     "nwzg"
+    ],
+    "lvl": 16,
+    "ds": 3898,
+    "dpath": 24.7,
+    "arc": 0.0,
+    "camp": 6,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3150,
+    "arc_trees": 67.5
+   },
+   {
+    "x": -4562,
+    "y": -3052,
+    "n": 2,
+    "ids": [
+     "nftt",
+     "nomg"
+    ],
+    "lvl": 8,
+    "ds": 6028,
+    "dpath": 41,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 5421,
+    "arc_trees": 22.5
+   },
+   {
+    "x": 4140,
+    "y": -2977,
+    "n": 3,
+    "ids": [
+     "nftt",
+     "nftt",
+     "nomg"
+    ],
+    "lvl": 11,
+    "ds": 5945,
+    "dpath": 40,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 5218,
+    "arc_trees": 67.5
+   },
+   {
+    "x": -425,
+    "y": 2989,
+    "n": 3,
+    "ids": [
+     "nftt",
+     "nogr",
+     "nomg"
+    ],
+    "lvl": 11,
+    "ds": 4759,
+    "dpath": 32,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4070,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 10,
+    "y": 2925,
+    "n": 2,
+    "ids": [
+     "nftt",
+     "nogr"
+    ],
+    "lvl": 6,
+    "ds": 4662,
+    "dpath": 31,
+    "arc": 0.0,
+    "camp": 2,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4068,
+    "arc_trees": 191.25
+   },
+   {
+    "x": 2857,
+    "y": -3791,
+    "n": 4,
+    "ids": [
+     "nmrl",
+     "nmrm",
+     "nmrr",
+     "nmrr"
+    ],
+    "lvl": 8,
+    "ds": 6976,
+    "dpath": 50.7,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 6307,
+    "arc_trees": 225.0
+   },
+   {
+    "x": -240,
+    "y": -3144,
+    "n": 3,
+    "ids": [
+     "nftb",
+     "nftb",
+     "nogm"
+    ],
+    "lvl": 13,
+    "ds": 7823,
+    "dpath": 55.7,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 7205,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -6346,
+    "y": -810,
+    "n": 5,
+    "ids": [
+     "nkob",
+     "nkob",
+     "nkog",
+     "nkot",
+     "nwzg"
+    ],
+    "lvl": 13,
+    "ds": 3930,
+    "dpath": 24.7,
+    "arc": 67.5,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3086,
+    "arc_trees": 168.75
+   },
+   {
+    "x": -4838,
+    "y": -2812,
+    "n": 1,
+    "ids": [
+     "nftt"
+    ],
+    "lvl": 3,
+    "ds": 5766,
+    "dpath": 39,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 5166,
+    "arc_trees": 67.5
+   },
+   {
+    "x": 5210,
+    "y": 846,
+    "n": 3,
+    "ids": [
+     "ngna",
+     "ngna",
+     "ngnb"
+    ],
+    "lvl": 5,
+    "ds": 2166,
+    "dpath": 10,
+    "arc": 45.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1495,
+    "arc_trees": 213.75
+   },
+   {
+    "x": -6557,
+    "y": -3669,
+    "n": 3,
+    "ids": [
+     "nmrm",
+     "nmrr",
+     "ntrg"
+    ],
+    "lvl": 12,
+    "ds": 6754,
+    "dpath": 49.2,
+    "arc": 202.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 6088,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -6299,
+    "y": -3410,
+    "n": 2,
+    "ids": [
+     "nmrm",
+     "nmrr"
+    ],
+    "lvl": 5,
+    "ds": 6451,
+    "dpath": 46.4,
+    "arc": 112.5,
+    "camp": 2,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 5866,
+    "arc_trees": 236.25
+   },
+   {
+    "x": 2824,
+    "y": -725,
+    "n": 7,
+    "ids": [
+     "nmrl",
+     "nmrl",
+     "nmrl",
+     "nmrm",
+     "nmrm",
+     "nmrr",
+     "nmrr"
+    ],
+    "lvl": 13,
+    "ds": 4108,
+    "dpath": 26.7,
+    "arc": 22.5,
+    "camp": 7,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3448,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -3444,
+    "y": -797,
+    "n": 7,
+    "ids": [
+     "nmrl",
+     "nmrl",
+     "nmrl",
+     "nmrm",
+     "nmrm",
+     "nmrr",
+     "nmrr"
+    ],
+    "lvl": 13,
+    "ds": 4126,
+    "dpath": 26.3,
+    "arc": 0.0,
+    "camp": 7,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3509,
+    "arc_trees": 236.25
+   },
+   {
+    "x": 6014,
+    "y": -4621,
+    "n": 5,
+    "ids": [
+     "nmrm",
+     "nmrm",
+     "nmrr",
+     "nmrr",
+     "ntrg"
+    ],
+    "lvl": 17,
+    "ds": 7683,
+    "dpath": 55.1,
+    "arc": 22.5,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 7050,
+    "arc_trees": 180.0
+   },
+   {
+    "x": -6216,
+    "y": -568,
+    "n": 1,
+    "ids": [
+     "nkot"
+    ],
+    "lvl": 3,
+    "ds": 3661,
+    "dpath": 22.2,
+    "arc": 22.5,
+    "camp": 1,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3161,
+    "arc_trees": 56.25
+   }
+  ],
+  "start_blocker_creeps": 0,
+  "neutrals": [
+   {
+    "id": "ntav",
+    "name": "Tavern",
+    "air": [
+     6093,
+     6093
+    ],
+    "path": [
+     42.1,
+     42.1
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     7976,
+     7976
+    ],
+    "path": [
+     56.7,
+     57.2
+    ]
+   },
+   {
+    "id": "nmer",
+    "name": "Mercenary Camp",
+    "air": [
+     3906,
+     11678
+    ],
+    "path": [
+     24.7,
+     90.5
+    ]
+   },
+   {
+    "id": "nmrk",
+    "name": "Marketplace",
+    "air": [
+     4928,
+     4928
+    ],
+    "path": [
+     33,
+     33
+    ]
+   },
+   {
+    "id": "nmer",
+    "name": "Mercenary Camp",
+    "air": [
+     11678,
+     3906
+    ],
+    "path": [
+     90.5,
+     24.7
+    ]
+   }
+  ],
+  "other_neutral_ids": {
+   "nmh1": 8,
+   "nshe": 2,
+   "nrac": 2,
+   "npig": 2,
+   "nmh0": 2
+  },
+  "trees": 1830,
+  "trees_per_playable_cell": 0.188,
+  "tree_cell_share": 0.183,
+  "tree_ids": {
+   "LTlt": 1695,
+   "YTpb": 117,
+   "YTpc": 13,
+   "LTcr": 2,
+   "LTbs": 3
+  },
+  "nearest_tree_wu": [
+   516,
+   551
+  ],
+  "trees_within_1500": [
+   166,
+   141
+  ],
+  "decor_types": 19,
+  "decor_count": 916,
+  "decor_top": [
+   [
+    "ZPsh",
+    360
+   ],
+   [
+    "LRrk",
+    217
+   ],
+   [
+    "ZWsw",
+    172
+   ],
+   [
+    "ZPfw",
+    68
+   ],
+   [
+    "AWfs",
+    40
+   ],
+   [
+    "ARrk",
+    16
+   ],
+   [
+    "ZWbg",
+    10
+   ],
+   [
+    "LPrs",
+    5
+   ]
+  ],
+  "cliff_layers": {
+   "4": 12507,
+   "5": 4,
+   "6": 2
+  },
+  "ramp_points": 0,
+  "water_share": 0.653,
+  "deep_water_share": 0.416,
+  "walkable_share": 0.584,
+  "walk_sym": {
+   "rot180": 87.39,
+   "mirrorX": 90.93,
+   "mirrorY": 88.4
+  },
+  "main_exit_width_cells": [
+   19,
+   15
+  ]
+ },
+ "KingAndCountry": {
+  "map": "KingAndCountry",
+  "tileset": "J",
+  "tiles": [
+   "Jdrt",
+   "Jdtr",
+   "cZc2",
+   "Zsan",
+   "Qstp",
+   "cVc1",
+   "Jsqd"
+  ],
+  "size": [
+   128,
+   128
+  ],
+  "playable": [
+   102,
+   108
+  ],
+  "players": 4,
+  "rush_cells": {
+   "P1-P2": 70.9,
+   "P1-P3": 96.9,
+   "P1-P4": 69.1,
+   "P2-P3": 68.2,
+   "P2-P4": 97.5,
+   "P3-P4": 69.2
+  },
+  "rush_air_cells": {
+   "P1-P2": 74.6,
+   "P1-P3": 104.7,
+   "P1-P4": 73.6,
+   "P2-P3": 73.6,
+   "P2-P4": 104.8,
+   "P3-P4": 74.6
+  },
+  "mines": [
+   {
+    "gold": 12500,
+    "air": [
+     14181,
+     10048,
+     781,
+     10043
+    ],
+    "path": [
+     104.6,
+     75.9,
+     0,
+     75.7
+    ]
+   },
+   {
+    "gold": 15000,
+    "air": [
+     5787,
+     5067,
+     8113,
+     8588
+    ],
+    "path": [
+     54.2,
+     34.4,
+     59.8,
+     62.6
+    ]
+   },
+   {
+    "gold": 15000,
+    "air": [
+     8113,
+     8588,
+     5787,
+     5067
+    ],
+    "path": [
+     59.8,
+     62.6,
+     52.8,
+     34.4
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     4098,
+     5759,
+     12025,
+     11328
+    ],
+    "path": [
+     26.2,
+     48.3,
+     93.7,
+     87.6
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     781,
+     10043,
+     14181,
+     10048
+    ],
+    "path": [
+     0,
+     77.4,
+     104.6,
+     76.7
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     10176,
+     781,
+     9916,
+     14191
+    ],
+    "path": [
+     78.6,
+     0,
+     74.7,
+     105.2
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     9916,
+     14191,
+     10176,
+     781
+    ],
+    "path": [
+     75.6,
+     105.2,
+     76.9,
+     0
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     5636,
+     12087,
+     11446,
+     4098
+    ],
+    "path": [
+     47.7,
+     94.8,
+     88.6,
+     26.2
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     12025,
+     11328,
+     4098,
+     5759
+    ],
+    "path": [
+     93.7,
+     87.6,
+     26.2,
+     46.7
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     11446,
+     4098,
+     5636,
+     12087
+    ],
+    "path": [
+     88.6,
+     26.2,
+     45.7,
+     94.2
+    ]
+   },
+   {
+    "gold": 15000,
+    "air": [
+     5067,
+     8224,
+     8606,
+     5676
+    ],
+    "path": [
+     34.4,
+     60.8,
+     63.1,
+     53.0
+    ]
+   },
+   {
+    "gold": 15000,
+    "air": [
+     8606,
+     5676,
+     5067,
+     8224
+    ],
+    "path": [
+     63.1,
+     53.2,
+     34.4,
+     60.8
+    ]
+   }
+  ],
+  "main_mine_wu": [
+   781,
+   781,
+   781,
+   781
+  ],
+  "mine_seq_P1": [
+   [
+    0,
+    12500
+   ],
+   [
+    26.2,
+    12500
+   ],
+   [
+    34.4,
+    15000
+   ],
+   [
+    47.7,
+    12500
+   ],
+   [
+    54.2,
+    15000
+   ],
+   [
+    59.8,
+    15000
+   ],
+   [
+    63.1,
+    15000
+   ],
+   [
+    75.6,
+    12500
+   ],
+   [
+    78.6,
+    12500
+   ],
+   [
+    88.6,
+    12500
+   ],
+   [
+    93.7,
+    12500
+   ],
+   [
+    104.6,
+    12500
+   ]
+  ],
+  "camps": [
+   {
+    "x": -1782,
+    "y": -5948,
+    "n": 5,
+    "ids": [
+     "nass",
+     "nban",
+     "ngst",
+     "nhdc",
+     "nrog"
+    ],
+    "lvl": 17,
+    "ds": 3503,
+    "dpath": 21.1,
+    "arc": 22.5,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2876,
+    "arc_trees": 258.75
+   },
+   {
+    "x": 2872,
+    "y": 4714,
+    "n": 3,
+    "ids": [
+     "nbrg",
+     "nrog",
+     "nwzr"
+    ],
+    "lvl": 8,
+    "ds": 1999,
+    "dpath": 10,
+    "arc": 90.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1296,
+    "arc_trees": 270.0
+   },
+   {
+    "x": -714,
+    "y": -2188,
+    "n": 4,
+    "ids": [
+     "nass",
+     "nftb",
+     "nsqo",
+     "nsqt"
+    ],
+    "lvl": 20,
+    "ds": 4884,
+    "dpath": 32.4,
+    "arc": 157.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4283,
+    "arc_trees": 236.25
+   },
+   {
+    "x": -2933,
+    "y": -368,
+    "n": 4,
+    "ids": [
+     "nfsp",
+     "nkog",
+     "nkot",
+     "nsqe"
+    ],
+    "lvl": 14,
+    "ds": 4656,
+    "dpath": 31.1,
+    "arc": 22.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3940,
+    "arc_trees": 202.5
+   },
+   {
+    "x": -473,
+    "y": -2450,
+    "n": 1,
+    "ids": [
+     "nftb"
+    ],
+    "lvl": 4,
+    "ds": 4981,
+    "dpath": 33.6,
+    "arc": 112.5,
+    "camp": 1,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4481,
+    "arc_trees": 225.0
+   },
+   {
+    "x": -5972,
+    "y": 1772,
+    "n": 5,
+    "ids": [
+     "nass",
+     "nban",
+     "ngst",
+     "nhdc",
+     "nrog"
+    ],
+    "lvl": 17,
+    "ds": 3522,
+    "dpath": 21.5,
+    "arc": 45.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2893,
+    "arc_trees": 258.75
+   },
+   {
+    "x": 1672,
+    "y": 5943,
+    "n": 5,
+    "ids": [
+     "nass",
+     "nban",
+     "ngst",
+     "nhdc",
+     "nrog"
+    ],
+    "lvl": 17,
+    "ds": 3485,
+    "dpath": 21.1,
+    "arc": 45.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2856,
+    "arc_trees": 123.75
+   },
+   {
+    "x": -3016,
+    "y": -4723,
+    "n": 3,
+    "ids": [
+     "nbrg",
+     "nrog",
+     "nwzr"
+    ],
+    "lvl": 8,
+    "ds": 1985,
+    "dpath": 9,
+    "arc": 90.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1281,
+    "arc_trees": 270.0
+   },
+   {
+    "x": -2487,
+    "y": 3686,
+    "n": 3,
+    "ids": [
+     "nfsp",
+     "nftr",
+     "nftr"
+    ],
+    "lvl": 6,
+    "ds": 2437,
+    "dpath": 12.7,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1766,
+    "arc_trees": 247.5
+   },
+   {
+    "x": -6021,
+    "y": -2836,
+    "n": 4,
+    "ids": [
+     "nmrl",
+     "nmrr",
+     "ntrs",
+     "ntrt"
+    ],
+    "lvl": 9,
+    "ds": 1994,
+    "dpath": 8.8,
+    "arc": 112.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1370,
+    "arc_trees": 281.25
+   },
+   {
+    "x": -4743,
+    "y": 2995,
+    "n": 3,
+    "ids": [
+     "nbrg",
+     "nrog",
+     "nwzr"
+    ],
+    "lvl": 8,
+    "ds": 2007,
+    "dpath": 10,
+    "arc": 112.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1303,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -5729,
+    "y": -539,
+    "n": 5,
+    "ids": [
+     "nfsp",
+     "nftt",
+     "nkob",
+     "nkol",
+     "nrog"
+    ],
+    "lvl": 14,
+    "ds": 4072,
+    "dpath": 26.4,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 3248,
+    "arc_trees": 45.0
+   },
+   {
+    "x": 5843,
+    "y": -1773,
+    "n": 5,
+    "ids": [
+     "nass",
+     "nban",
+     "ngst",
+     "nhdc",
+     "nrog"
+    ],
+    "lvl": 17,
+    "ds": 3521,
+    "dpath": 21.5,
+    "arc": 22.5,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2889,
+    "arc_trees": 258.75
+   },
+   {
+    "x": 2032,
+    "y": -731,
+    "n": 4,
+    "ids": [
+     "nass",
+     "nftb",
+     "nsqo",
+     "nsqt"
+    ],
+    "lvl": 20,
+    "ds": 4882,
+    "dpath": 32.4,
+    "arc": 45.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4266,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 2284,
+    "y": -484,
+    "n": 1,
+    "ids": [
+     "nftb"
+    ],
+    "lvl": 4,
+    "ds": 4986,
+    "dpath": 33.6,
+    "arc": 180.0,
+    "camp": 1,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4486,
+    "arc_trees": 236.25
+   },
+   {
+    "x": 4615,
+    "y": -3019,
+    "n": 3,
+    "ids": [
+     "nbrg",
+     "nrog",
+     "nwzr"
+    ],
+    "lvl": 8,
+    "ds": 1983,
+    "dpath": 9,
+    "arc": 135.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1279,
+    "arc_trees": 258.75
+   },
+   {
+    "x": 615,
+    "y": 2166,
+    "n": 4,
+    "ids": [
+     "nass",
+     "nftb",
+     "nsqo",
+     "nsqt"
+    ],
+    "lvl": 20,
+    "ds": 4869,
+    "dpath": 32.4,
+    "arc": 45.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4262,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 393,
+    "y": 2424,
+    "n": 1,
+    "ids": [
+     "nftb"
+    ],
+    "lvl": 4,
+    "ds": 4948,
+    "dpath": 33.6,
+    "arc": 180.0,
+    "camp": 1,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4448,
+    "arc_trees": 213.75
+   },
+   {
+    "x": -2185,
+    "y": 702,
+    "n": 4,
+    "ids": [
+     "nass",
+     "nftb",
+     "nsqo",
+     "nsqt"
+    ],
+    "lvl": 20,
+    "ds": 4896,
+    "dpath": 33.4,
+    "arc": 180.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4291,
+    "arc_trees": 213.75
+   },
+   {
+    "x": -2444,
+    "y": 479,
+    "n": 1,
+    "ids": [
+     "nftb"
+    ],
+    "lvl": 4,
+    "ds": 4978,
+    "dpath": 33.6,
+    "arc": 90.0,
+    "camp": 1,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4478,
+    "arc_trees": 225.0
+   },
+   {
+    "x": 2732,
+    "y": -6072,
+    "n": 4,
+    "ids": [
+     "nmrl",
+     "nmrr",
+     "ntrs",
+     "ntrt"
+    ],
+    "lvl": 9,
+    "ds": 2000,
+    "dpath": 8.8,
+    "arc": 135.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1379,
+    "arc_trees": 270.0
+   },
+   {
+    "x": 411,
+    "y": -5729,
+    "n": 5,
+    "ids": [
+     "nfsp",
+     "nftt",
+     "nkob",
+     "nkol",
+     "nrog"
+    ],
+    "lvl": 14,
+    "ds": 4072,
+    "dpath": 26.4,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 3248,
+    "arc_trees": 78.75
+   },
+   {
+    "x": 5885,
+    "y": 2828,
+    "n": 4,
+    "ids": [
+     "nmrl",
+     "nmrr",
+     "ntrs",
+     "ntrt"
+    ],
+    "lvl": 9,
+    "ds": 1997,
+    "dpath": 8.8,
+    "arc": 90.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1372,
+    "arc_trees": 258.75
+   },
+   {
+    "x": 5601,
+    "y": 539,
+    "n": 5,
+    "ids": [
+     "nfsp",
+     "nftt",
+     "nkob",
+     "nkol",
+     "nrog"
+    ],
+    "lvl": 14,
+    "ds": 4072,
+    "dpath": 26.4,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 3248,
+    "arc_trees": 45.0
+   },
+   {
+    "x": -2850,
+    "y": 5995,
+    "n": 4,
+    "ids": [
+     "nmrl",
+     "nmrr",
+     "ntrs",
+     "ntrt"
+    ],
+    "lvl": 9,
+    "ds": 1969,
+    "dpath": 8.8,
+    "arc": 90.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1344,
+    "arc_trees": 281.25
+   },
+   {
+    "x": -539,
+    "y": 5729,
+    "n": 5,
+    "ids": [
+     "nfsp",
+     "nftt",
+     "nkob",
+     "nkol",
+     "nrog"
+    ],
+    "lvl": 14,
+    "ds": 4072,
+    "dpath": 26.4,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 3248,
+    "arc_trees": 78.75
+   },
+   {
+    "x": 331,
+    "y": -2922,
+    "n": 4,
+    "ids": [
+     "nfsp",
+     "nkog",
+     "nkot",
+     "nsqe"
+    ],
+    "lvl": 14,
+    "ds": 4580,
+    "dpath": 30.1,
+    "arc": 67.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3859,
+    "arc_trees": 281.25
+   },
+   {
+    "x": 2816,
+    "y": 317,
+    "n": 4,
+    "ids": [
+     "nfsp",
+     "nkog",
+     "nkot",
+     "nsqe"
+    ],
+    "lvl": 14,
+    "ds": 4697,
+    "dpath": 32.1,
+    "arc": 90.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3918,
+    "arc_trees": 292.5
+   },
+   {
+    "x": -439,
+    "y": 2932,
+    "n": 4,
+    "ids": [
+     "nfsp",
+     "nkog",
+     "nkot",
+     "nsqe"
+    ],
+    "lvl": 14,
+    "ds": 4593,
+    "dpath": 31.1,
+    "arc": 67.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3840,
+    "arc_trees": 270.0
+   },
+   {
+    "x": 3577,
+    "y": 2487,
+    "n": 3,
+    "ids": [
+     "nfsp",
+     "nftr",
+     "nftr"
+    ],
+    "lvl": 6,
+    "ds": 2426,
+    "dpath": 12.7,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1755,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -3690,
+    "y": -2501,
+    "n": 3,
+    "ids": [
+     "nfsp",
+     "nftr",
+     "nftr"
+    ],
+    "lvl": 6,
+    "ds": 2422,
+    "dpath": 11.7,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1752,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 2371,
+    "y": -3698,
+    "n": 3,
+    "ids": [
+     "nfsp",
+     "nftr",
+     "nftr"
+    ],
+    "lvl": 6,
+    "ds": 2420,
+    "dpath": 11.7,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1749,
+    "arc_trees": 270.0
+   }
+  ],
+  "start_blocker_creeps": 24,
+  "neutrals": [
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     12458,
+     6062,
+     3808,
+     11535
+    ],
+    "path": [
+     97.5,
+     56.5,
+     23.9,
+     88.5
+    ]
+   },
+   {
+    "id": "ntav",
+    "name": "Tavern",
+    "air": [
+     6703,
+     6707,
+     6703,
+     6707
+    ],
+    "path": [
+     44.4,
+     45.0,
+     44.4,
+     45.0
+    ]
+   },
+   {
+    "id": "nmr0",
+    "name": "Mercenary Camp",
+    "air": [
+     4783,
+     5407,
+     9187,
+     8841
+    ],
+    "path": [
+     31.7,
+     36.5,
+     70.3,
+     64.8
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     3808,
+     11535,
+     12458,
+     6062
+    ],
+    "path": [
+     23.9,
+     88.5,
+     97.9,
+     57.1
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     6188,
+     3808,
+     11412,
+     12415
+    ],
+    "path": [
+     59.7,
+     23.9,
+     87.5,
+     96.9
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     5407,
+     9297,
+     8880,
+     4667
+    ],
+    "path": [
+     36.5,
+     72.1,
+     65.4,
+     30.7
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     8880,
+     4667,
+     5407,
+     9297
+    ],
+    "path": [
+     65.4,
+     30.7,
+     36.5,
+     71.3
+    ]
+   },
+   {
+    "id": "nmr0",
+    "name": "Mercenary Camp",
+    "air": [
+     9187,
+     8841,
+     4783,
+     5407
+    ],
+    "path": [
+     70.3,
+     64.8,
+     31.7,
+     36.5
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     11412,
+     12415,
+     6188,
+     3808
+    ],
+    "path": [
+     87.5,
+     96.5,
+     55.9,
+     23.9
+    ]
+   }
+  ],
+  "other_neutral_ids": {
+   "nrac": 12,
+   "nmh1": 4,
+   "necr": 4,
+   "nmh0": 4
+  },
+  "trees": 4224,
+  "trees_per_playable_cell": 0.383,
+  "tree_cell_share": 0.348,
+  "tree_ids": {
+   "LTlt": 3555,
+   "YTpb": 485,
+   "LTw1": 14,
+   "YTlb": 120,
+   "LTw3": 14,
+   "YTce": 2,
+   "LTw0": 10,
+   "LTw2": 10,
+   "VTlt": 8,
+   "YTcx": 2,
+   "LTg4": 2,
+   "LTg2": 2
+  },
+  "nearest_tree_wu": [
+   630,
+   630,
+   630,
+   630
+  ],
+  "trees_within_1500": [
+   156,
+   156,
+   156,
+   156
+  ],
+  "decor_types": 28,
+  "decor_count": 1469,
+  "decor_top": [
+   [
+    "LPrs",
+    511
+   ],
+   [
+    "LRrk",
+    406
+   ],
+   [
+    "ZOsh",
+    122
+   ],
+   [
+    "ZPsh",
+    102
+   ],
+   [
+    "YSll",
+    52
+   ],
+   [
+    "LOtz",
+    28
+   ],
+   [
+    "ZWsf",
+    23
+   ],
+   [
+    "AWfs",
+    22
+   ]
+  ],
+  "cliff_layers": {
+   "3": 9577,
+   "4": 1435,
+   "5": 5629
+  },
+  "ramp_points": 0,
+  "water_share": 0.152,
+  "deep_water_share": 0.009,
+  "walkable_share": 0.545,
+  "walk_sym": {
+   "rot180": 93.26,
+   "mirrorX": 82.59,
+   "mirrorY": 82.69,
+   "rot90": 91.55,
+   "diag": 80.71,
+   "antidiag": 81.12
+  },
+  "main_exit_width_cells": [
+   9,
+   9,
+   11,
+   11
+  ]
+ },
+ "LastRefuge": {
+  "map": "LastRefuge",
+  "tileset": "L",
+  "tiles": [
+   "Ldrt",
+   "Ldro",
+   "Ldrg",
+   "Lrok",
+   "Lgrs",
+   "Lgrd"
+  ],
+  "size": [
+   96,
+   96
+  ],
+  "playable": [
+   84,
+   84
+  ],
+  "players": 2,
+  "rush_cells": {
+   "P1-P2": 76.5
+  },
+  "rush_air_cells": {
+   "P1-P2": 83.1
+  },
+  "mines": [
+   {
+    "gold": 12500,
+    "air": [
+     773,
+     11374
+    ],
+    "path": [
+     0,
+     81.9
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     11374,
+     773
+    ],
+    "path": [
+     83.7,
+     0
+    ]
+   },
+   {
+    "gold": 10000,
+    "air": [
+     6085,
+     7733
+    ],
+    "path": [
+     42,
+     56.3
+    ]
+   },
+   {
+    "gold": 10000,
+    "air": [
+     7820,
+     6284
+    ],
+    "path": [
+     56.5,
+     43
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     8587,
+     5803
+    ],
+    "path": [
+     66.2,
+     46.8
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     5874,
+     8638
+    ],
+    "path": [
+     44.8,
+     67.0
+    ]
+   }
+  ],
+  "main_mine_wu": [
+   773,
+   773
+  ],
+  "mine_seq_P1": [
+   [
+    0,
+    12500
+   ],
+   [
+    42,
+    10000
+   ],
+   [
+    44.8,
+    12500
+   ],
+   [
+    56.5,
+    10000
+   ],
+   [
+    66.2,
+    12500
+   ],
+   [
+    83.7,
+    12500
+   ]
+  ],
+  "camps": [
+   {
+    "x": -289,
+    "y": -4862,
+    "n": 5,
+    "ids": [
+     "nfsh",
+     "nftt",
+     "nftt",
+     "ngrk",
+     "ngst"
+    ],
+    "lvl": 18,
+    "ds": 3724,
+    "dpath": 23.4,
+    "arc": 22.5,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3016,
+    "arc_trees": 112.5
+   },
+   {
+    "x": 1748,
+    "y": 4535,
+    "n": 3,
+    "ids": [
+     "nftt",
+     "nftt",
+     "nogr"
+    ],
+    "lvl": 9,
+    "ds": 2415,
+    "dpath": 11.2,
+    "arc": 157.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1737,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 2004,
+    "y": -4085,
+    "n": 3,
+    "ids": [
+     "nftt",
+     "nftt",
+     "nomg"
+    ],
+    "lvl": 11,
+    "ds": 5909,
+    "dpath": 41,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 5269,
+    "arc_trees": 135.0
+   },
+   {
+    "x": -2313,
+    "y": 3518,
+    "n": 3,
+    "ids": [
+     "nftt",
+     "nftt",
+     "nomg"
+    ],
+    "lvl": 11,
+    "ds": 6156,
+    "dpath": 42,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 5476,
+    "arc_trees": 123.75
+   },
+   {
+    "x": 246,
+    "y": 2375,
+    "n": 4,
+    "ids": [
+     "nmrl",
+     "nmrm",
+     "nmrr",
+     "nmrr"
+    ],
+    "lvl": 8,
+    "ds": 3719,
+    "dpath": 26.8,
+    "arc": 112.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3151,
+    "arc_trees": 270.0
+   },
+   {
+    "x": -695,
+    "y": -2956,
+    "n": 4,
+    "ids": [
+     "nmrl",
+     "nmrm",
+     "nmrr",
+     "nmrr"
+    ],
+    "lvl": 8,
+    "ds": 3365,
+    "dpath": 24.2,
+    "arc": 135.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2755,
+    "arc_trees": 270.0
+   },
+   {
+    "x": -4366,
+    "y": 3542,
+    "n": 5,
+    "ids": [
+     "nmrm",
+     "nmrm",
+     "nmrr",
+     "nmrr",
+     "ntrg"
+    ],
+    "lvl": 17,
+    "ds": 7525,
+    "dpath": 58.8,
+    "arc": 90.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 6891,
+    "arc_trees": 101.25
+   },
+   {
+    "x": -2198,
+    "y": -335,
+    "n": 5,
+    "ids": [
+     "nftt",
+     "nftt",
+     "nogr",
+     "nogr",
+     "nomg"
+    ],
+    "lvl": 17,
+    "ds": 4014,
+    "dpath": 25.3,
+    "arc": 0.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3318,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 3815,
+    "y": -4284,
+    "n": 5,
+    "ids": [
+     "nmrm",
+     "nmrm",
+     "nmrr",
+     "nmrr",
+     "ntrg"
+    ],
+    "lvl": 17,
+    "ds": 7612,
+    "dpath": 58.4,
+    "arc": 135.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 6984,
+    "arc_trees": 157.5
+   },
+   {
+    "x": 1847,
+    "y": -166,
+    "n": 5,
+    "ids": [
+     "nftt",
+     "nftt",
+     "nogr",
+     "nogr",
+     "nomg"
+    ],
+    "lvl": 17,
+    "ds": 4023,
+    "dpath": 25.1,
+    "arc": 0.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3288,
+    "arc_trees": 247.5
+   },
+   {
+    "x": -32,
+    "y": 4336,
+    "n": 5,
+    "ids": [
+     "nfsh",
+     "nftt",
+     "nftt",
+     "ngrk",
+     "ngst"
+    ],
+    "lvl": 18,
+    "ds": 4001,
+    "dpath": 24.8,
+    "arc": 67.5,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3316,
+    "arc_trees": 157.5
+   },
+   {
+    "x": 4164,
+    "y": -2294,
+    "n": 5,
+    "ids": [
+     "nfsh",
+     "nftb",
+     "nftb",
+     "nogl",
+     "nomg"
+    ],
+    "lvl": 24,
+    "ds": 5631,
+    "dpath": 44.4,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 4881,
+    "arc_trees": 22.5
+   },
+   {
+    "x": -4301,
+    "y": 1596,
+    "n": 4,
+    "ids": [
+     "nfsh",
+     "nftb",
+     "nogl",
+     "nomg"
+    ],
+    "lvl": 20,
+    "ds": 5578,
+    "dpath": 42.0,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 4998,
+    "arc_trees": 56.25
+   },
+   {
+    "x": -4194,
+    "y": 1816,
+    "n": 1,
+    "ids": [
+     "nftb"
+    ],
+    "lvl": 4,
+    "ds": 5791,
+    "dpath": 43.6,
+    "arc": 22.5,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 5291,
+    "arc_trees": 135.0
+   },
+   {
+    "x": -1671,
+    "y": -4980,
+    "n": 3,
+    "ids": [
+     "nftt",
+     "nftt",
+     "nogr"
+    ],
+    "lvl": 9,
+    "ds": 2452,
+    "dpath": 12.8,
+    "arc": 135.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1763,
+    "arc_trees": 202.5
+   },
+   {
+    "x": -1712,
+    "y": 601,
+    "n": 3,
+    "ids": [
+     "ngns",
+     "ngnv",
+     "ngnw"
+    ],
+    "lvl": 11,
+    "ds": 5068,
+    "dpath": 35.0,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4498,
+    "arc_trees": 225.0
+   },
+   {
+    "x": 1398,
+    "y": -1113,
+    "n": 3,
+    "ids": [
+     "ngns",
+     "ngnv",
+     "ngnw"
+    ],
+    "lvl": 11,
+    "ds": 5068,
+    "dpath": 34.4,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4534,
+    "arc_trees": 281.25
+   },
+   {
+    "x": 1388,
+    "y": 2566,
+    "n": 4,
+    "ids": [
+     "nfsh",
+     "nftb",
+     "nogm",
+     "nomg"
+    ],
+    "lvl": 18,
+    "ds": 2568,
+    "dpath": 15.9,
+    "arc": 67.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1932,
+    "arc_trees": 112.5
+   },
+   {
+    "x": -1892,
+    "y": -3219,
+    "n": 4,
+    "ids": [
+     "nfsh",
+     "nftb",
+     "nogm",
+     "nomg"
+    ],
+    "lvl": 18,
+    "ds": 2147,
+    "dpath": 12.1,
+    "arc": 22.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1484,
+    "arc_trees": 281.25
+   },
+   {
+    "x": -356,
+    "y": -1877,
+    "n": 3,
+    "ids": [
+     "nfsh",
+     "nftr",
+     "nftt"
+    ],
+    "lvl": 9,
+    "ds": 4118,
+    "dpath": 33.5,
+    "arc": 67.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3394,
+    "arc_trees": 292.5
+   },
+   {
+    "x": -80,
+    "y": 1339,
+    "n": 3,
+    "ids": [
+     "nfsh",
+     "nftr",
+     "nftt"
+    ],
+    "lvl": 9,
+    "ds": 4396,
+    "dpath": 30.8,
+    "arc": 45.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3696,
+    "arc_trees": 202.5
+   }
+  ],
+  "start_blocker_creeps": 0,
+  "neutrals": [
+   {
+    "id": "ntav",
+    "name": "Tavern",
+    "air": [
+     5250,
+     5395
+    ],
+    "path": [
+     34.3,
+     34.1
+    ]
+   },
+   {
+    "id": "nmer",
+    "name": "Mercenary Camp",
+    "air": [
+     3826,
+     9389
+    ],
+    "path": [
+     24.2,
+     70.8
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     2330,
+     8637
+    ],
+    "path": [
+     14.5,
+     70.0
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     6838,
+     4179
+    ],
+    "path": [
+     51.7,
+     26.7
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     4160,
+     7049
+    ],
+    "path": [
+     26.9,
+     50.7
+    ]
+   },
+   {
+    "id": "nmer",
+    "name": "Mercenary Camp",
+    "air": [
+     9370,
+     4169
+    ],
+    "path": [
+     70.9,
+     26.7
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     8359,
+     2763
+    ],
+    "path": [
+     69.6,
+     18.3
+    ]
+   }
+  ],
+  "other_neutral_ids": {
+   "ngnh": 1,
+   "ntn2": 3,
+   "nshe": 2,
+   "necr": 2,
+   "nmh1": 3,
+   "nmh0": 2,
+   "npig": 2,
+   "nten": 1
+  },
+  "trees": 1909,
+  "trees_per_playable_cell": 0.271,
+  "tree_cell_share": 0.27,
+  "tree_ids": {
+   "LTlt": 1490,
+   "YTpc": 35,
+   "JTct": 65,
+   "YTft": 24,
+   "FTtw": 245,
+   "JTtw": 46,
+   "LTcr": 2,
+   "LTbs": 1,
+   "LTbr": 1
+  },
+  "nearest_tree_wu": [
+   659,
+   692
+  ],
+  "trees_within_1500": [
+   193,
+   212
+  ],
+  "decor_types": 41,
+  "decor_count": 540,
+  "decor_top": [
+   [
+    "LRrk",
+    177
+   ],
+   [
+    "ZPsh",
+    49
+   ],
+   [
+    "ZWsw",
+    37
+   ],
+   [
+    "LPfp",
+    36
+   ],
+   [
+    "LPwh",
+    36
+   ],
+   [
+    "LPrs",
+    32
+   ],
+   [
+    "ZPfw",
+    25
+   ],
+   [
+    "LPlp",
+    20
+   ]
+  ],
+  "cliff_layers": {
+   "0": 1008,
+   "1": 680,
+   "2": 6357,
+   "3": 612,
+   "4": 687,
+   "5": 23,
+   "7": 42
+  },
+  "ramp_points": 123,
+  "water_share": 0.354,
+  "deep_water_share": 0.275,
+  "walkable_share": 0.558,
+  "walk_sym": {
+   "rot180": 79.9,
+   "mirrorX": 74.22,
+   "mirrorY": 74.09,
+   "rot90": 69.21,
+   "diag": 76.45,
+   "antidiag": 77.17
+  },
+  "main_exit_width_cells": [
+   5,
+   5
+  ]
+ },
+ "NorthernIsles": {
+  "map": "NorthernIsles",
+  "tileset": "W",
+  "tiles": [
+   "Wdrt",
+   "Wdro",
+   "Nsnr",
+   "Iice",
+   "Nice",
+   "Wrok",
+   "Wgrs",
+   "Wsnw"
+  ],
+  "size": [
+   128,
+   96
+  ],
+  "playable": [
+   108,
+   86
+  ],
+  "players": 2,
+  "rush_cells": {
+   "P1-P2": 87.6
+  },
+  "rush_air_cells": {
+   "P1-P2": 91.4
+  },
+  "mines": [
+   {
+    "gold": 13500,
+    "air": [
+     12463,
+     771
+    ],
+    "path": [
+     94.3,
+     0
+    ]
+   },
+   {
+    "gold": 10000,
+    "air": [
+     8891,
+     5297
+    ],
+    "path": [
+     67.6,
+     35.2
+    ]
+   },
+   {
+    "gold": 13500,
+    "air": [
+     781,
+     12479
+    ],
+    "path": [
+     0,
+     94.3
+    ]
+   },
+   {
+    "gold": 10000,
+    "air": [
+     5284,
+     8836
+    ],
+    "path": [
+     35.8,
+     66.0
+    ]
+   },
+   {
+    "gold": 9000,
+    "air": [
+     9925,
+     6917
+    ],
+    "path": [
+     74.5,
+     48
+    ]
+   },
+   {
+    "gold": 9000,
+    "air": [
+     6983,
+     9991
+    ],
+    "path": [
+     48,
+     72.8
+    ]
+   }
+  ],
+  "main_mine_wu": [
+   781,
+   771
+  ],
+  "mine_seq_P1": [
+   [
+    0,
+    13500
+   ],
+   [
+    35.8,
+    10000
+   ],
+   [
+    48,
+    9000
+   ],
+   [
+    67.6,
+    10000
+   ],
+   [
+    74.5,
+    9000
+   ],
+   [
+    94.3,
+    13500
+   ]
+  ],
+  "camps": [
+   {
+    "x": 3209,
+    "y": -1031,
+    "n": 4,
+    "ids": [
+     "nitr",
+     "nitr",
+     "nits",
+     "nitw"
+    ],
+    "lvl": 14,
+    "ds": 5671,
+    "dpath": 39.1,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4931,
+    "arc_trees": 157.5
+   },
+   {
+    "x": 5422,
+    "y": 5106,
+    "n": 3,
+    "ids": [
+     "ngnw",
+     "nitr",
+     "nogr"
+    ],
+    "lvl": 8,
+    "ds": 2370,
+    "dpath": 11.5,
+    "arc": 225.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1627,
+    "arc_trees": 247.5
+   },
+   {
+    "x": -3640,
+    "y": -219,
+    "n": 3,
+    "ids": [
+     "nomg",
+     "ntkt",
+     "ntkw"
+    ],
+    "lvl": 13,
+    "ds": 3233,
+    "dpath": 18.4,
+    "arc": 112.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2611,
+    "arc_trees": 180.0
+   },
+   {
+    "x": -1312,
+    "y": -5048,
+    "n": 3,
+    "ids": [
+     "ngnw",
+     "nitr",
+     "nogr"
+    ],
+    "lvl": 8,
+    "ds": 2243,
+    "dpath": 10.1,
+    "arc": 202.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1500,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 322,
+    "y": -2581,
+    "n": 4,
+    "ids": [
+     "nmfs",
+     "nmrl",
+     "nmrl",
+     "nmrr"
+    ],
+    "lvl": 7,
+    "ds": 3164,
+    "dpath": 20.2,
+    "arc": 67.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2540,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 3027,
+    "y": -1353,
+    "n": 1,
+    "ids": [
+     "nith"
+    ],
+    "lvl": 4,
+    "ds": 6034,
+    "dpath": 40.9,
+    "arc": 0.0,
+    "camp": 1,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 5434,
+    "arc_trees": 168.75
+   },
+   {
+    "x": 913,
+    "y": 1110,
+    "n": 4,
+    "ids": [
+     "ngnb",
+     "ngns",
+     "ngnv",
+     "ngnw"
+    ],
+    "lvl": 14,
+    "ds": 5755,
+    "dpath": 39.7,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 5048,
+    "arc_trees": 146.25
+   },
+   {
+    "x": 2288,
+    "y": -4206,
+    "n": 4,
+    "ids": [
+     "nitp",
+     "nitr",
+     "nomg",
+     "ntkt"
+    ],
+    "lvl": 13,
+    "ds": 5115,
+    "dpath": 34.4,
+    "arc": 0.0,
+    "camp": 1,
+    "acqs": [
+     -2.0,
+     -1.0
+    ],
+    "acqmargin": 4189,
+    "arc_trees": 90.0
+   },
+   {
+    "x": 1189,
+    "y": 1236,
+    "n": 1,
+    "ids": [
+     "ngnb"
+    ],
+    "lvl": 3,
+    "ds": 6030,
+    "dpath": 42.1,
+    "arc": 0.0,
+    "camp": 1,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 5530,
+    "arc_trees": 135.0
+   },
+   {
+    "x": -1575,
+    "y": -1104,
+    "n": 2,
+    "ids": [
+     "nmfs",
+     "nmrr"
+    ],
+    "lvl": 5,
+    "ds": 2517,
+    "dpath": 13.2,
+    "arc": 22.5,
+    "camp": 2,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1965,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -422,
+    "y": 3876,
+    "n": 5,
+    "ids": [
+     "nanb",
+     "nanc",
+     "nano",
+     "nanw",
+     "nnwl"
+    ],
+    "lvl": 13,
+    "ds": 7359,
+    "dpath": 52.7,
+    "arc": 112.5,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 6581,
+    "arc_trees": 202.5
+   },
+   {
+    "x": 4569,
+    "y": -3909,
+    "n": 5,
+    "ids": [
+     "nanb",
+     "nanc",
+     "nano",
+     "nanw",
+     "nnwl"
+    ],
+    "lvl": 13,
+    "ds": 7344,
+    "dpath": 54.9,
+    "arc": 202.5,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 6604,
+    "arc_trees": 213.75
+   },
+   {
+    "x": -1521,
+    "y": 928,
+    "n": 2,
+    "ids": [
+     "nfpt",
+     "ntks"
+    ],
+    "lvl": 11,
+    "ds": 4430,
+    "dpath": 28.7,
+    "arc": 0.0,
+    "camp": 2,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3786,
+    "arc_trees": 258.75
+   },
+   {
+    "x": 5544,
+    "y": -1085,
+    "n": 3,
+    "ids": [
+     "nfpt",
+     "ntks",
+     "ntks"
+    ],
+    "lvl": 16,
+    "ds": 4559,
+    "dpath": 30.1,
+    "arc": 45.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3809,
+    "arc_trees": 247.5
+   },
+   {
+    "x": -3049,
+    "y": 3361,
+    "n": 4,
+    "ids": [
+     "nfps",
+     "nmgr",
+     "nogr",
+     "nomg"
+    ],
+    "lvl": 20,
+    "ds": 6695,
+    "dpath": 46,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 5959,
+    "arc_trees": 33.75
+   },
+   {
+    "x": -1281,
+    "y": 1179,
+    "n": 1,
+    "ids": [
+     "ntks"
+    ],
+    "lvl": 5,
+    "ds": 4741,
+    "dpath": 31.5,
+    "arc": 45.0,
+    "camp": 1,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4141,
+    "arc_trees": 202.5
+   },
+   {
+    "x": 7760,
+    "y": 229,
+    "n": 3,
+    "ids": [
+     "nomg",
+     "ntkt",
+     "ntkw"
+    ],
+    "lvl": 13,
+    "ds": 3151,
+    "dpath": 18.4,
+    "arc": 112.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2530,
+    "arc_trees": 168.75
+   },
+   {
+    "x": 3743,
+    "y": 2619,
+    "n": 4,
+    "ids": [
+     "nmfs",
+     "nmrl",
+     "nmrl",
+     "nmrr"
+    ],
+    "lvl": 7,
+    "ds": 3234,
+    "dpath": 19.8,
+    "arc": 22.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2632,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 5656,
+    "y": 1001,
+    "n": 2,
+    "ids": [
+     "nmfs",
+     "nmrr"
+    ],
+    "lvl": 5,
+    "ds": 2588,
+    "dpath": 13.7,
+    "arc": 22.5,
+    "camp": 2,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2057,
+    "arc_trees": 236.25
+   },
+   {
+    "x": 7140,
+    "y": -3367,
+    "n": 4,
+    "ids": [
+     "nfps",
+     "nmgr",
+     "nogr",
+     "nomg"
+    ],
+    "lvl": 20,
+    "ds": 6635,
+    "dpath": 46,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 5897,
+    "arc_trees": 45.0
+   },
+   {
+    "x": 1870,
+    "y": 4196,
+    "n": 4,
+    "ids": [
+     "nitp",
+     "nitr",
+     "nomg",
+     "ntkt"
+    ],
+    "lvl": 13,
+    "ds": 5127,
+    "dpath": 33.8,
+    "arc": 0.0,
+    "camp": 1,
+    "acqs": [
+     -2.0,
+     -1.0
+    ],
+    "acqmargin": 4197,
+    "arc_trees": 78.75
+   }
+  ],
+  "start_blocker_creeps": 0,
+  "neutrals": [
+   {
+    "id": "ntav",
+    "name": "Tavern",
+    "air": [
+     5841,
+     5858
+    ],
+    "path": [
+     40.3,
+     40.3
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     5799,
+     6456
+    ],
+    "path": [
+     40.3,
+     46.1
+    ]
+   },
+   {
+    "id": "nmrk",
+    "name": "Marketplace",
+    "air": [
+     6416,
+     5787
+    ],
+    "path": [
+     46.7,
+     39.1
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     4642,
+     8708
+    ],
+    "path": [
+     30.7,
+     68.1
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     8646,
+     4659
+    ],
+    "path": [
+     65.8,
+     30.7
+    ]
+   }
+  ],
+  "other_neutral_ids": {
+   "nshe": 2,
+   "nmh0": 6,
+   "nfro": 4,
+   "nsea": 2,
+   "nmh1": 4,
+   "nsno": 2,
+   "npng": 2,
+   "npig": 2
+  },
+  "trees": 1895,
+  "trees_per_playable_cell": 0.204,
+  "tree_cell_share": 0.201,
+  "tree_ids": {
+   "WTtw": 1256,
+   "LTba": 12,
+   "YTpb": 6,
+   "WTst": 606,
+   "LTex": 7,
+   "LTbx": 5,
+   "LTbr": 3
+  },
+  "nearest_tree_wu": [
+   607,
+   547
+  ],
+  "trees_within_1500": [
+   182,
+   193
+  ],
+  "decor_types": 67,
+  "decor_count": 1354,
+  "decor_top": [
+   [
+    "LRrk",
+    280
+   ],
+   [
+    "LPrs",
+    195
+   ],
+   [
+    "IWie",
+    154
+   ],
+   [
+    "IRrs",
+    123
+   ],
+   [
+    "IRic",
+    104
+   ],
+   [
+    "LPfp",
+    60
+   ],
+   [
+    "IRcy",
+    32
+   ],
+   [
+    "YOec",
+    31
+   ]
+  ],
+  "cliff_layers": {
+   "4": 2482,
+   "5": 9001,
+   "6": 309,
+   "7": 498,
+   "8": 223
+  },
+  "ramp_points": 0,
+  "water_share": 0.557,
+  "deep_water_share": 0.35,
+  "walkable_share": 0.531,
+  "walk_sym": {
+   "rot180": 96.55,
+   "mirrorX": 82.19,
+   "mirrorY": 82.06
+  },
+  "main_exit_width_cells": [
+   11,
+   9
+  ]
+ },
+ "ShallowGrave": {
+  "map": "ShallowGrave",
+  "tileset": "J",
+  "tiles": [
+   "Jdrt",
+   "Jdtr",
+   "cZc2",
+   "Zsan",
+   "Qstp",
+   "Xgsb",
+   "Jblm",
+   "Jsqd",
+   "Jbtl",
+   "Vrck"
+  ],
+  "size": [
+   128,
+   128
+  ],
+  "playable": [
+   96,
+   96
+  ],
+  "players": 2,
+  "rush_cells": {
+   "P1-P2": 74.5
+  },
+  "rush_air_cells": {
+   "P1-P2": 81.5
+  },
+  "mines": [
+   {
+    "gold": 12500,
+    "air": [
+     771,
+     11199
+    ],
+    "path": [
+     0,
+     81.5
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     8623,
+     8862
+    ],
+    "path": [
+     61.4,
+     64.9
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     9508,
+     4211
+    ],
+    "path": [
+     71.4,
+     26.9
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     11199,
+     771
+    ],
+    "path": [
+     81.5,
+     0
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     4238,
+     9566
+    ],
+    "path": [
+     27.3,
+     72.4
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     8824,
+     8744
+    ],
+    "path": [
+     65.3,
+     62.4
+    ]
+   }
+  ],
+  "main_mine_wu": [
+   771,
+   771
+  ],
+  "mine_seq_P1": [
+   [
+    0,
+    12500
+   ],
+   [
+    27.3,
+    12500
+   ],
+   [
+    61.4,
+    12500
+   ],
+   [
+    65.3,
+    12500
+   ],
+   [
+    71.4,
+    12500
+   ],
+   [
+    81.5,
+    12500
+   ]
+  ],
+  "camps": [
+   {
+    "x": 4081,
+    "y": 451,
+    "n": 3,
+    "ids": [
+     "nmrr",
+     "ntrs",
+     "ntrt"
+    ],
+    "lvl": 8,
+    "ds": 3035,
+    "dpath": 18.1,
+    "arc": 22.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2377,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -1787,
+    "y": -1990,
+    "n": 5,
+    "ids": [
+     "nfsh",
+     "nftb",
+     "nftb",
+     "nogl",
+     "nomg"
+    ],
+    "lvl": 24,
+    "ds": 8340,
+    "dpath": 59,
+    "arc": 22.5,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 7648,
+    "arc_trees": 78.75
+   },
+   {
+    "x": 4097,
+    "y": 4923,
+    "n": 3,
+    "ids": [
+     "nkob",
+     "nkog",
+     "nkot"
+    ],
+    "lvl": 7,
+    "ds": 4739,
+    "dpath": 31.9,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4115,
+    "arc_trees": 146.25
+   },
+   {
+    "x": 5599,
+    "y": 1240,
+    "n": 3,
+    "ids": [
+     "nbrg",
+     "nrog",
+     "nwzr"
+    ],
+    "lvl": 8,
+    "ds": 2745,
+    "dpath": 15.4,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2097,
+    "arc_trees": 270.0
+   },
+   {
+    "x": 555,
+    "y": 3909,
+    "n": 3,
+    "ids": [
+     "nbrg",
+     "nrog",
+     "nwzr"
+    ],
+    "lvl": 8,
+    "ds": 2722,
+    "dpath": 14.4,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2075,
+    "arc_trees": 270.0
+   },
+   {
+    "x": 2049,
+    "y": 4739,
+    "n": 4,
+    "ids": [
+     "nmrl",
+     "nmrr",
+     "ntrs",
+     "ntrt"
+    ],
+    "lvl": 9,
+    "ds": 2983,
+    "dpath": 16.3,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2331,
+    "arc_trees": 258.75
+   },
+   {
+    "x": 3,
+    "y": -612,
+    "n": 4,
+    "ids": [
+     "nftb",
+     "nftb",
+     "nogm",
+     "nomg"
+    ],
+    "lvl": 18,
+    "ds": 6566,
+    "dpath": 45.8,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 5976,
+    "arc_trees": 123.75
+   },
+   {
+    "x": 8369,
+    "y": -145,
+    "n": 3,
+    "ids": [
+     "nftr",
+     "nogr",
+     "nwzg"
+    ],
+    "lvl": 10,
+    "ds": 2197,
+    "dpath": 9.7,
+    "arc": 45.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1575,
+    "arc_trees": 270.0
+   },
+   {
+    "x": 6138,
+    "y": 5731,
+    "n": 4,
+    "ids": [
+     "nftb",
+     "nftb",
+     "nogm",
+     "nomg"
+    ],
+    "lvl": 18,
+    "ds": 6563,
+    "dpath": 45.4,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 5973,
+    "arc_trees": 236.25
+   },
+   {
+    "x": 7978,
+    "y": 2197,
+    "n": 4,
+    "ids": [
+     "nfsh",
+     "nftt",
+     "nftt",
+     "nsqt"
+    ],
+    "lvl": 15,
+    "ds": 3826,
+    "dpath": 24.1,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0,
+     -1.0
+    ],
+    "acqmargin": 3186,
+    "arc_trees": 45.0
+   },
+   {
+    "x": 3687,
+    "y": -2571,
+    "n": 4,
+    "ids": [
+     "nfsh",
+     "nftk",
+     "nftt",
+     "nftt"
+    ],
+    "lvl": 16,
+    "ds": 3095,
+    "dpath": 17.7,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2311,
+    "arc_trees": 123.75
+   },
+   {
+    "x": -2225,
+    "y": 5265,
+    "n": 3,
+    "ids": [
+     "nftr",
+     "nogr",
+     "nwzg"
+    ],
+    "lvl": 10,
+    "ds": 2197,
+    "dpath": 9.7,
+    "arc": 45.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1575,
+    "arc_trees": 281.25
+   },
+   {
+    "x": 2514,
+    "y": 7733,
+    "n": 4,
+    "ids": [
+     "nfsh",
+     "nftk",
+     "nftt",
+     "nftt"
+    ],
+    "lvl": 16,
+    "ds": 3164,
+    "dpath": 18.7,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2380,
+    "arc_trees": 135.0
+   },
+   {
+    "x": 4137,
+    "y": 173,
+    "n": 1,
+    "ids": [
+     "nmrl"
+    ],
+    "lvl": 1,
+    "ds": 2831,
+    "dpath": 15.5,
+    "arc": 22.5,
+    "camp": 1,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2331,
+    "arc_trees": 213.75
+   },
+   {
+    "x": -1823,
+    "y": 2912,
+    "n": 4,
+    "ids": [
+     "nfsh",
+     "nftt",
+     "nftt",
+     "nsqt"
+    ],
+    "lvl": 15,
+    "ds": 3833,
+    "dpath": 24.1,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0,
+     -1.0
+    ],
+    "acqmargin": 3194,
+    "arc_trees": 67.5
+   },
+   {
+    "x": 1199,
+    "y": 1873,
+    "n": 5,
+    "ids": [
+     "nass",
+     "ngst",
+     "nogr",
+     "nogr",
+     "nwzr"
+    ],
+    "lvl": 19,
+    "ds": 4856,
+    "dpath": 33.3,
+    "arc": 180.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4142,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 4945,
+    "y": 3247,
+    "n": 5,
+    "ids": [
+     "nass",
+     "ngst",
+     "nogr",
+     "nogr",
+     "nwzr"
+    ],
+    "lvl": 19,
+    "ds": 4856,
+    "dpath": 33.3,
+    "arc": 180.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4142,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 2049,
+    "y": 197,
+    "n": 3,
+    "ids": [
+     "nkob",
+     "nkog",
+     "nkot"
+    ],
+    "lvl": 7,
+    "ds": 4736,
+    "dpath": 31.9,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4115,
+    "arc_trees": 146.25
+   },
+   {
+    "x": 8059,
+    "y": 7046,
+    "n": 5,
+    "ids": [
+     "nfsh",
+     "nftb",
+     "nftb",
+     "nogl",
+     "nomg"
+    ],
+    "lvl": 24,
+    "ds": 8463,
+    "dpath": 60,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 7771,
+    "arc_trees": 67.5
+   }
+  ],
+  "start_blocker_creeps": 0,
+  "neutrals": [
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     6693,
+     7109
+    ],
+    "path": [
+     46.8,
+     50
+    ]
+   },
+   {
+    "id": "nmer",
+    "name": "Mercenary Camp",
+    "air": [
+     3406,
+     10043
+    ],
+    "path": [
+     20.5,
+     77.4
+    ]
+   },
+   {
+    "id": "ntav",
+    "name": "Tavern",
+    "air": [
+     5214,
+     5214
+    ],
+    "path": [
+     33.7,
+     33.7
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     7109,
+     6693
+    ],
+    "path": [
+     50,
+     46.4
+    ]
+   },
+   {
+    "id": "nmer",
+    "name": "Mercenary Camp",
+    "air": [
+     10043,
+     3406
+    ],
+    "path": [
+     76.9,
+     20.5
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     5002,
+     6272
+    ],
+    "path": [
+     35.3,
+     48.2
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     6272,
+     5002
+    ],
+    "path": [
+     49.4,
+     35.3
+    ]
+   }
+  ],
+  "other_neutral_ids": {
+   "nfro": 6,
+   "nmh1": 2,
+   "nech": 6,
+   "ntn2": 2,
+   "ndog": 2,
+   "ngnh": 2,
+   "nmh0": 4,
+   "nrac": 2
+  },
+  "trees": 4799,
+  "trees_per_playable_cell": 0.521,
+  "tree_cell_share": 0.417,
+  "tree_ids": {
+   "YTpb": 1397,
+   "YTpc": 12,
+   "YTlb": 91,
+   "LTw1": 10,
+   "LTbx": 8,
+   "LTbs": 8,
+   "LTbr": 8,
+   "LTw0": 4,
+   "LTlt": 3229,
+   "DTg6": 2,
+   "LTw3": 14,
+   "LTw2": 2,
+   "LTg4": 2,
+   "YT35": 4,
+   "LTba": 8
+  },
+  "nearest_tree_wu": [
+   640,
+   640
+  ],
+  "trees_within_1500": [
+   169,
+   169
+  ],
+  "decor_types": 57,
+  "decor_count": 1535,
+  "decor_top": [
+   [
+    "LRrk",
+    520
+   ],
+   [
+    "LPrs",
+    429
+   ],
+   [
+    "ZOsh",
+    93
+   ],
+   [
+    "LOsh",
+    48
+   ],
+   [
+    "ZPsh",
+    40
+   ],
+   [
+    "VSvb",
+    40
+   ],
+   [
+    "YOec",
+    34
+   ],
+   [
+    "LOlp",
+    29
+   ]
+  ],
+  "cliff_layers": {
+   "2": 9935,
+   "3": 1315,
+   "4": 3918,
+   "5": 435,
+   "6": 10,
+   "7": 1028
+  },
+  "ramp_points": 72,
+  "water_share": 0.193,
+  "deep_water_share": 0.095,
+  "walkable_share": 0.466,
+  "walk_sym": {
+   "rot180": 75.37,
+   "mirrorX": 87.96,
+   "mirrorY": 76.66,
+   "rot90": 80.44,
+   "diag": 81.1,
+   "antidiag": 80.43
+  },
+  "main_exit_width_cells": [
+   15,
+   15
+  ]
+ },
+ "ShatteredExile": {
+  "map": "ShatteredExile",
+  "tileset": "X",
+  "tiles": [
+   "Xdrt",
+   "Xdtr",
+   "Xblm",
+   "Xbtl",
+   "Jbtl",
+   "Xsqd",
+   "Xrtl",
+   "Jrtl",
+   "Xgsb",
+   "cVc1",
+   "Xhdg",
+   "Xwmb",
+   "Jwmb",
+   "Ywmb"
+  ],
+  "size": [
+   128,
+   128
+  ],
+  "playable": [
+   96,
+   90
+  ],
+  "players": 4,
+  "rush_cells": {
+   "P1-P2": 56,
+   "P1-P3": 85.1,
+   "P1-P4": 57,
+   "P2-P3": 61,
+   "P2-P4": 84.5,
+   "P3-P4": 56
+  },
+  "rush_air_cells": {
+   "P1-P2": 62.0,
+   "P1-P3": 90.2,
+   "P1-P4": 64.0,
+   "P2-P3": 67.0,
+   "P2-P4": 90.2,
+   "P3-P4": 62.0
+  },
+  "mines": [
+   {
+    "gold": 12500,
+    "air": [
+     12264,
+     8924,
+     773,
+     8655
+    ],
+    "path": [
+     91.2,
+     64,
+     0,
+     62.4
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     771,
+     8518,
+     12312,
+     8723
+    ],
+    "path": [
+     0,
+     61,
+     92.2,
+     63.4
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     8655,
+     773,
+     8924,
+     12264
+    ],
+    "path": [
+     62,
+     0,
+     64,
+     91.8
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     8723,
+     12312,
+     8518,
+     771
+    ],
+    "path": [
+     63.8,
+     91.6,
+     61,
+     0
+    ]
+   },
+   {
+    "gold": 10000,
+    "air": [
+     9852,
+     4409,
+     4409,
+     9852
+    ],
+    "path": [
+     74.8,
+     28.8,
+     28.8,
+     74.8
+    ]
+   },
+   {
+    "gold": 10000,
+    "air": [
+     4193,
+     9818,
+     9818,
+     4193
+    ],
+    "path": [
+     26.4,
+     74.6,
+     74.6,
+     28.2
+    ]
+   },
+   {
+    "gold": 10000,
+    "air": [
+     9825,
+     9950,
+     3946,
+     4104
+    ],
+    "path": [
+     74.8,
+     76.4,
+     25,
+     26
+    ]
+   },
+   {
+    "gold": 10000,
+    "air": [
+     4104,
+     3946,
+     9950,
+     9825
+    ],
+    "path": [
+     26,
+     25,
+     76.4,
+     74.8
+    ]
+   }
+  ],
+  "main_mine_wu": [
+   771,
+   773,
+   773,
+   771
+  ],
+  "mine_seq_P1": [
+   [
+    0,
+    12500
+   ],
+   [
+    26,
+    10000
+   ],
+   [
+    26.4,
+    10000
+   ],
+   [
+    62,
+    12500
+   ],
+   [
+    63.8,
+    12500
+   ],
+   [
+    74.8,
+    10000
+   ],
+   [
+    74.8,
+    10000
+   ],
+   [
+    91.2,
+    12500
+   ]
+  ],
+  "camps": [
+   {
+    "x": -23,
+    "y": 4734,
+    "n": 5,
+    "ids": [
+     "narg",
+     "narg",
+     "nftk",
+     "nftt",
+     "nftt"
+    ],
+    "lvl": 18,
+    "ds": 4133,
+    "dpath": 26.4,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 3321,
+    "arc_trees": 56.25
+   },
+   {
+    "x": 4901,
+    "y": -1711,
+    "n": 3,
+    "ids": [
+     "nftb",
+     "nftr",
+     "nrog"
+    ],
+    "lvl": 9,
+    "ds": 2277,
+    "dpath": 12,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1649,
+    "arc_trees": 135.0
+   },
+   {
+    "x": -2498,
+    "y": 2311,
+    "n": 4,
+    "ids": [
+     "nban",
+     "nbrg",
+     "nwiz",
+     "nwzr"
+    ],
+    "lvl": 7,
+    "ds": 2349,
+    "dpath": 10.5,
+    "arc": 22.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1553,
+    "arc_trees": 270.0
+   },
+   {
+    "x": 2098,
+    "y": -4251,
+    "n": 3,
+    "ids": [
+     "nkob",
+     "nkob",
+     "nkog"
+    ],
+    "lvl": 5,
+    "ds": 2217,
+    "dpath": 12,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1629,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 2183,
+    "y": 4389,
+    "n": 3,
+    "ids": [
+     "nkob",
+     "nkob",
+     "nkog"
+    ],
+    "lvl": 5,
+    "ds": 1946,
+    "dpath": 9,
+    "arc": 180.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1341,
+    "arc_trees": 236.25
+   },
+   {
+    "x": -2167,
+    "y": 4330,
+    "n": 3,
+    "ids": [
+     "nkob",
+     "nkob",
+     "nkog"
+    ],
+    "lvl": 5,
+    "ds": 1952,
+    "dpath": 9,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1344,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -4857,
+    "y": -1745,
+    "n": 3,
+    "ids": [
+     "nftb",
+     "nftr",
+     "nrog"
+    ],
+    "lvl": 9,
+    "ds": 2232,
+    "dpath": 11,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1611,
+    "arc_trees": 135.0
+   },
+   {
+    "x": 2383,
+    "y": 9,
+    "n": 3,
+    "ids": [
+     "nele",
+     "nele",
+     "nwzg"
+    ],
+    "lvl": 13,
+    "ds": 4352,
+    "dpath": 28.9,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3622,
+    "arc_trees": 202.5
+   },
+   {
+    "x": -2139,
+    "y": -4220,
+    "n": 3,
+    "ids": [
+     "nkob",
+     "nkob",
+     "nkog"
+    ],
+    "lvl": 5,
+    "ds": 2172,
+    "dpath": 11,
+    "arc": 90.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1508,
+    "arc_trees": 168.75
+   },
+   {
+    "x": 2643,
+    "y": -2334,
+    "n": 4,
+    "ids": [
+     "nban",
+     "nbrg",
+     "nwiz",
+     "nwzr"
+    ],
+    "lvl": 7,
+    "ds": 2274,
+    "dpath": 9.9,
+    "arc": 22.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1493,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 2540,
+    "y": 2233,
+    "n": 3,
+    "ids": [
+     "nban",
+     "nwiz",
+     "nwzr"
+    ],
+    "lvl": 5,
+    "ds": 2379,
+    "dpath": 12.1,
+    "arc": 22.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1631,
+    "arc_trees": 258.75
+   },
+   {
+    "x": 2770,
+    "y": 2436,
+    "n": 1,
+    "ids": [
+     "nbrg"
+    ],
+    "lvl": 2,
+    "ds": 2075,
+    "dpath": 8.7,
+    "arc": 22.5,
+    "camp": 1,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1475,
+    "arc_trees": 157.5
+   },
+   {
+    "x": -2375,
+    "y": -2384,
+    "n": 4,
+    "ids": [
+     "nban",
+     "nbrg",
+     "nwiz",
+     "nwzr"
+    ],
+    "lvl": 7,
+    "ds": 2444,
+    "dpath": 11.5,
+    "arc": 45.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1645,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 4893,
+    "y": 1759,
+    "n": 3,
+    "ids": [
+     "nftb",
+     "nftr",
+     "nrog"
+    ],
+    "lvl": 9,
+    "ds": 2409,
+    "dpath": 12,
+    "arc": 22.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1777,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -2334,
+    "y": 135,
+    "n": 2,
+    "ids": [
+     "nele",
+     "nwzg"
+    ],
+    "lvl": 9,
+    "ds": 4276,
+    "dpath": 28.3,
+    "arc": 0.0,
+    "camp": 2,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3655,
+    "arc_trees": 168.75
+   },
+   {
+    "x": 250,
+    "y": 2087,
+    "n": 2,
+    "ids": [
+     "nenf",
+     "nwzr"
+    ],
+    "lvl": 8,
+    "ds": 4310,
+    "dpath": 28.1,
+    "arc": 0.0,
+    "camp": 2,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3733,
+    "arc_trees": 225.0
+   },
+   {
+    "x": -146,
+    "y": -4719,
+    "n": 3,
+    "ids": [
+     "narg",
+     "nftk",
+     "nftt"
+    ],
+    "lvl": 12,
+    "ds": 4221,
+    "dpath": 27.4,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 3556,
+    "arc_trees": 123.75
+   },
+   {
+    "x": 209,
+    "y": -4752,
+    "n": 2,
+    "ids": [
+     "narg",
+     "nftt"
+    ],
+    "lvl": 6,
+    "ds": 4166,
+    "dpath": 26.4,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 3564,
+    "arc_trees": 157.5
+   },
+   {
+    "x": -24,
+    "y": -1068,
+    "n": 2,
+    "ids": [
+     "nele",
+     "nsel"
+    ],
+    "lvl": 9,
+    "ds": 5121,
+    "dpath": 36.7,
+    "arc": 67.5,
+    "camp": 2,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4385,
+    "arc_trees": 202.5
+   },
+   {
+    "x": -231,
+    "y": 2048,
+    "n": 2,
+    "ids": [
+     "nass",
+     "nrog"
+    ],
+    "lvl": 7,
+    "ds": 4345,
+    "dpath": 28.1,
+    "arc": 22.5,
+    "camp": 2,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3827,
+    "arc_trees": 146.25
+   },
+   {
+    "x": 2,
+    "y": -2070,
+    "n": 4,
+    "ids": [
+     "nass",
+     "nenf",
+     "nrog",
+     "nwzr"
+    ],
+    "lvl": 15,
+    "ds": 4662,
+    "dpath": 31.7,
+    "arc": 22.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3895,
+    "arc_trees": 225.0
+   },
+   {
+    "x": -2353,
+    "y": -244,
+    "n": 1,
+    "ids": [
+     "nele"
+    ],
+    "lvl": 4,
+    "ds": 4139,
+    "dpath": 27.1,
+    "arc": 0.0,
+    "camp": 1,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3639,
+    "arc_trees": 191.25
+   },
+   {
+    "x": -4827,
+    "y": 1733,
+    "n": 3,
+    "ids": [
+     "nftb",
+     "nftr",
+     "nrog"
+    ],
+    "lvl": 9,
+    "ds": 2412,
+    "dpath": 12,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1736,
+    "arc_trees": 191.25
+   },
+   {
+    "x": -4770,
+    "y": -148,
+    "n": 3,
+    "ids": [
+     "nkob",
+     "nkog",
+     "nkol"
+    ],
+    "lvl": 9,
+    "ds": 3787,
+    "dpath": 24,
+    "arc": 0.0,
+    "camp": 2,
+    "acqs": [
+     -2.0,
+     -1.0
+    ],
+    "acqmargin": 3128,
+    "arc_trees": 157.5
+   },
+   {
+    "x": 4764,
+    "y": -138,
+    "n": 3,
+    "ids": [
+     "nkog",
+     "nkol",
+     "nkot"
+    ],
+    "lvl": 11,
+    "ds": 3796,
+    "dpath": 24,
+    "arc": 0.0,
+    "camp": 2,
+    "acqs": [
+     -2.0,
+     -1.0
+    ],
+    "acqmargin": 3101,
+    "arc_trees": 90.0
+   },
+   {
+    "x": 4837,
+    "y": 200,
+    "n": 2,
+    "ids": [
+     "nkob",
+     "nkog"
+    ],
+    "lvl": 4,
+    "ds": 3903,
+    "dpath": 24,
+    "arc": 0.0,
+    "camp": 1,
+    "acqs": [
+     -2.0,
+     -1.0
+    ],
+    "acqmargin": 3317,
+    "arc_trees": 168.75
+   },
+   {
+    "x": -4836,
+    "y": 223,
+    "n": 2,
+    "ids": [
+     "nkog",
+     "nkot"
+    ],
+    "lvl": 6,
+    "ds": 3880,
+    "dpath": 24,
+    "arc": 0.0,
+    "camp": 1,
+    "acqs": [
+     -2.0,
+     -1.0
+    ],
+    "acqmargin": 3273,
+    "arc_trees": 157.5
+   },
+   {
+    "x": 8,
+    "y": 1092,
+    "n": 5,
+    "ids": [
+     "nsrv",
+     "nsrv",
+     "nvdg",
+     "nvdw",
+     "nvdw"
+    ],
+    "lvl": 22,
+    "ds": 5036,
+    "dpath": 37.7,
+    "arc": 67.5,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4260,
+    "arc_trees": 191.25
+   }
+  ],
+  "start_blocker_creeps": 20,
+  "neutrals": [
+   {
+    "id": "ntav",
+    "name": "Tavern",
+    "air": [
+     5748,
+     5799,
+     5799,
+     5748
+    ],
+    "path": [
+     38.5,
+     38.4,
+     39.5,
+     39.1
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     2472,
+     5676,
+     10855,
+     9376
+    ],
+    "path": [
+     12.4,
+     38,
+     83.3,
+     70.0
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     10780,
+     9609,
+     2368,
+     5776
+    ],
+    "path": [
+     81.7,
+     72.0,
+     12,
+     39.4
+    ]
+   },
+   {
+    "id": "nmr8",
+    "name": "Mercenary Camp",
+    "air": [
+     7331,
+     4672,
+     4672,
+     7331
+    ],
+    "path": [
+     53.9,
+     31.7,
+     31.7,
+     53.9
+    ]
+   },
+   {
+    "id": "nmr8",
+    "name": "Mercenary Camp",
+    "air": [
+     4551,
+     7336,
+     7336,
+     4551
+    ],
+    "path": [
+     30.1,
+     53.8,
+     57.9,
+     30.1
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     7782,
+     7883,
+     4269,
+     4315
+    ],
+    "path": [
+     58.5,
+     58.4,
+     28.9,
+     28.5
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     4315,
+     4269,
+     7883,
+     7782
+    ],
+    "path": [
+     28.5,
+     28.3,
+     58.4,
+     56.8
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     9453,
+     10877,
+     5621,
+     2555
+    ],
+    "path": [
+     70.4,
+     83.6,
+     38,
+     13.4
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     5776,
+     2368,
+     9609,
+     10780
+    ],
+    "path": [
+     39.4,
+     12,
+     72.0,
+     81.1
+    ]
+   }
+  ],
+  "other_neutral_ids": {
+   "nshe": 6,
+   "necr": 1,
+   "ndog": 2,
+   "nech": 4,
+   "nfro": 2
+  },
+  "trees": 2756,
+  "trees_per_playable_cell": 0.319,
+  "tree_cell_share": 0.313,
+  "tree_ids": {
+   "YTlb": 72,
+   "JTtw": 555,
+   "JTct": 538,
+   "FTtw": 798,
+   "LTlt": 765,
+   "YTpc": 3,
+   "YTpb": 13,
+   "YTct": 12
+  },
+  "nearest_tree_wu": [
+   572,
+   630,
+   640,
+   500
+  ],
+  "trees_within_1500": [
+   191,
+   192,
+   210,
+   190
+  ],
+  "decor_types": 54,
+  "decor_count": 1121,
+  "decor_top": [
+   [
+    "ZPsh",
+    396
+   ],
+   [
+    "LRrk",
+    242
+   ],
+   [
+    "JOgr",
+    95
+   ],
+   [
+    "ZWsw",
+    80
+   ],
+   [
+    "ZPfw",
+    67
+   ],
+   [
+    "XOcl",
+    28
+   ],
+   [
+    "YPpp",
+    22
+   ],
+   [
+    "YPbs",
+    17
+   ]
+  ],
+  "cliff_layers": {
+   "2": 7728,
+   "3": 517,
+   "4": 8331,
+   "5": 51,
+   "6": 14
+  },
+  "ramp_points": 12,
+  "water_share": 0.472,
+  "deep_water_share": 0.466,
+  "walkable_share": 0.455,
+  "walk_sym": {
+   "rot180": 95.51,
+   "mirrorX": 94.9,
+   "mirrorY": 94.68,
+   "rot90": 90.5,
+   "diag": 90.81,
+   "antidiag": 90.87
+  },
+  "main_exit_width_cells": [
+   17,
+   9,
+   11,
+   9
+  ]
+ },
+ "Springtime": {
+  "map": "Springtime",
+  "tileset": "W",
+  "tiles": [
+   "Wdrt",
+   "Wdro",
+   "Wsng",
+   "Fdrg",
+   "Qgrs",
+   "Ldrg",
+   "Vgrs",
+   "Zdrg",
+   "Vrck",
+   "Wrok",
+   "Wgrs",
+   "Adrg",
+   "Clvg",
+   "Wsnw"
+  ],
+  "size": [
+   128,
+   128
+  ],
+  "playable": [
+   90,
+   90
+  ],
+  "players": 2,
+  "rush_cells": {
+   "P1-P2": 74.4
+  },
+  "rush_air_cells": {
+   "P1-P2": 76.7
+  },
+  "mines": [
+   {
+    "gold": 12500,
+    "air": [
+     781,
+     10592
+    ],
+    "path": [
+     0,
+     80.9
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     4952,
+     8280
+    ],
+    "path": [
+     33.0,
+     61.4
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     10592,
+     781
+    ],
+    "path": [
+     80.9,
+     0
+    ]
+   },
+   {
+    "gold": 10000,
+    "air": [
+     5096,
+     4762
+    ],
+    "path": [
+     34.6,
+     32.4
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     8280,
+     4952
+    ],
+    "path": [
+     61.4,
+     33.0
+    ]
+   }
+  ],
+  "main_mine_wu": [
+   781,
+   781
+  ],
+  "mine_seq_P1": [
+   [
+    0,
+    12500
+   ],
+   [
+    33.0,
+    12500
+   ],
+   [
+    34.6,
+    10000
+   ],
+   [
+    61.4,
+    12500
+   ],
+   [
+    80.9,
+    12500
+   ]
+  ],
+  "camps": [
+   {
+    "x": 4213,
+    "y": 2481,
+    "n": 4,
+    "ids": [
+     "nith",
+     "nits",
+     "nmgr",
+     "nplg"
+    ],
+    "lvl": 22,
+    "ds": 4978,
+    "dpath": 33,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4282,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 48,
+    "y": 4531,
+    "n": 4,
+    "ids": [
+     "nitp",
+     "nitt",
+     "nitt",
+     "nsqt"
+    ],
+    "lvl": 13,
+    "ds": 4732,
+    "dpath": 31.1,
+    "arc": 0.0,
+    "camp": 2,
+    "acqs": [
+     -2.0,
+     -1.0
+    ],
+    "acqmargin": 4164,
+    "arc_trees": 90.0
+   },
+   {
+    "x": -2983,
+    "y": -770,
+    "n": 3,
+    "ids": [
+     "nfrs",
+     "nwlt",
+     "nwlt"
+    ],
+    "lvl": 8,
+    "ds": 3494,
+    "dpath": 21.7,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2860,
+    "arc_trees": 202.5
+   },
+   {
+    "x": -554,
+    "y": -558,
+    "n": 2,
+    "ids": [
+     "nftt",
+     "ngnb"
+    ],
+    "lvl": 6,
+    "ds": 4775,
+    "dpath": 32.2,
+    "arc": 22.5,
+    "camp": 2,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4207,
+    "arc_trees": 236.25
+   },
+   {
+    "x": -1718,
+    "y": 874,
+    "n": 4,
+    "ids": [
+     "nfrb",
+     "nfrl",
+     "nfsh",
+     "nftb"
+    ],
+    "lvl": 18,
+    "ds": 2985,
+    "dpath": 25.7,
+    "arc": 202.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2375,
+    "arc_trees": 247.5
+   },
+   {
+    "x": -4757,
+    "y": -379,
+    "n": 4,
+    "ids": [
+     "nfsh",
+     "nitt",
+     "nsqt",
+     "nwwf"
+    ],
+    "lvl": 14,
+    "ds": 2924,
+    "dpath": 17,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2189,
+    "arc_trees": 123.75
+   },
+   {
+    "x": 4763,
+    "y": 379,
+    "n": 4,
+    "ids": [
+     "nfsh",
+     "nitt",
+     "nsqt",
+     "nwwf"
+    ],
+    "lvl": 14,
+    "ds": 2925,
+    "dpath": 17,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2190,
+    "arc_trees": 157.5
+   },
+   {
+    "x": 2507,
+    "y": 3995,
+    "n": 3,
+    "ids": [
+     "nfpt",
+     "ntks",
+     "ntkt"
+    ],
+    "lvl": 15,
+    "ds": 6715,
+    "dpath": 47.9,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 5981,
+    "arc_trees": 56.25
+   },
+   {
+    "x": -2018,
+    "y": 2792,
+    "n": 3,
+    "ids": [
+     "nmam",
+     "ntka",
+     "ntkt"
+    ],
+    "lvl": 9,
+    "ds": 2226,
+    "dpath": 11,
+    "arc": 67.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1274,
+    "arc_trees": 236.25
+   },
+   {
+    "x": 2018,
+    "y": -2792,
+    "n": 3,
+    "ids": [
+     "nmam",
+     "ntka",
+     "ntkt"
+    ],
+    "lvl": 9,
+    "ds": 2226,
+    "dpath": 11,
+    "arc": 90.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1274,
+    "arc_trees": 236.25
+   },
+   {
+    "x": -1514,
+    "y": -2345,
+    "n": 4,
+    "ids": [
+     "nftb",
+     "nitt",
+     "nomg",
+     "nplb"
+    ],
+    "lvl": 16,
+    "ds": 5548,
+    "dpath": 38.2,
+    "arc": 45.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4916,
+    "arc_trees": 213.75
+   },
+   {
+    "x": -3191,
+    "y": 4288,
+    "n": 3,
+    "ids": [
+     "ngna",
+     "ngnw",
+     "nwlt"
+    ],
+    "lvl": 6,
+    "ds": 2068,
+    "dpath": 8.8,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1454,
+    "arc_trees": 191.25
+   },
+   {
+    "x": 2975,
+    "y": 788,
+    "n": 3,
+    "ids": [
+     "nfrs",
+     "nwlt",
+     "nwlt"
+    ],
+    "lvl": 8,
+    "ds": 3514,
+    "dpath": 21.7,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2866,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 1514,
+    "y": 2345,
+    "n": 4,
+    "ids": [
+     "nftb",
+     "nitt",
+     "nomg",
+     "nplb"
+    ],
+    "lvl": 16,
+    "ds": 5548,
+    "dpath": 38.2,
+    "arc": 45.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4916,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 555,
+    "y": 493,
+    "n": 3,
+    "ids": [
+     "nhdc",
+     "nsra",
+     "nsra"
+    ],
+    "lvl": 5,
+    "ds": 4732,
+    "dpath": 32.2,
+    "arc": 45.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4091,
+    "arc_trees": 225.0
+   },
+   {
+    "x": 1715,
+    "y": -868,
+    "n": 4,
+    "ids": [
+     "nfrb",
+     "nfrl",
+     "nfsh",
+     "nftb"
+    ],
+    "lvl": 18,
+    "ds": 2991,
+    "dpath": 25.7,
+    "arc": 202.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2381,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -4194,
+    "y": -2481,
+    "n": 4,
+    "ids": [
+     "nith",
+     "nits",
+     "nmgr",
+     "nplg"
+    ],
+    "lvl": 22,
+    "ds": 4977,
+    "dpath": 33,
+    "arc": 22.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4278,
+    "arc_trees": 236.25
+   },
+   {
+    "x": -2507,
+    "y": -3995,
+    "n": 3,
+    "ids": [
+     "nfpt",
+     "ntks",
+     "ntkt"
+    ],
+    "lvl": 15,
+    "ds": 6715,
+    "dpath": 47.9,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 5981,
+    "arc_trees": 45.0
+   },
+   {
+    "x": 3191,
+    "y": -4288,
+    "n": 3,
+    "ids": [
+     "ngna",
+     "ngnw",
+     "nwlt"
+    ],
+    "lvl": 6,
+    "ds": 2068,
+    "dpath": 8.8,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1454,
+    "arc_trees": 191.25
+   },
+   {
+    "x": -26,
+    "y": -4541,
+    "n": 4,
+    "ids": [
+     "nitp",
+     "nitt",
+     "nitt",
+     "nsqt"
+    ],
+    "lvl": 13,
+    "ds": 4716,
+    "dpath": 31.1,
+    "arc": 0.0,
+    "camp": 2,
+    "acqs": [
+     -2.0,
+     -1.0
+    ],
+    "acqmargin": 4162,
+    "arc_trees": 67.5
+   }
+  ],
+  "start_blocker_creeps": 0,
+  "neutrals": [
+   {
+    "id": "ntav",
+    "name": "Tavern",
+    "air": [
+     5162,
+     4933
+    ],
+    "path": [
+     34.5,
+     31.5
+    ]
+   },
+   {
+    "id": "nmr3",
+    "name": "Mercenary Camp",
+    "air": [
+     2903,
+     9407
+    ],
+    "path": [
+     16,
+     69.6
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     5640,
+     5824
+    ],
+    "path": [
+     38.8,
+     39
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     6893,
+     7125
+    ],
+    "path": [
+     49.9,
+     51.3
+    ]
+   },
+   {
+    "id": "nmr3",
+    "name": "Mercenary Camp",
+    "air": [
+     9407,
+     2903
+    ],
+    "path": [
+     69.6,
+     16
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     7125,
+     6893
+    ],
+    "path": [
+     51.3,
+     49.5
+    ]
+   },
+   {
+    "id": "ntav",
+    "name": "Tavern",
+    "air": [
+     4933,
+     5162
+    ],
+    "path": [
+     31.5,
+     34.5
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     5824,
+     5640
+    ],
+    "path": [
+     39,
+     38.8
+    ]
+   },
+   {
+    "id": "nfr2",
+    "name": "Fountain",
+    "air": [
+     7074,
+     2753
+    ],
+    "path": [
+     50.7,
+     13.9
+    ]
+   },
+   {
+    "id": "nfr1",
+    "name": "Fountain of Restoration",
+    "air": [
+     2680,
+     7137
+    ],
+    "path": [
+     13.5,
+     51.1
+    ]
+   }
+  ],
+  "other_neutral_ids": {
+   "n001": 1,
+   "necr": 6,
+   "nder": 2,
+   "ngnh": 2,
+   "nvul": 2,
+   "nfh0": 2,
+   "npig": 3,
+   "n000": 1
+  },
+  "trees": 5173,
+  "trees_per_playable_cell": 0.639,
+  "tree_cell_share": 0.614,
+  "tree_ids": {
+   "LTlt": 263,
+   "WTtw": 4017,
+   "WTst": 513,
+   "YTpc": 362,
+   "YTlb": 12,
+   "LTrt": 1,
+   "LTbr": 2,
+   "LTbs": 1,
+   "LTcr": 2
+  },
+  "nearest_tree_wu": [
+   659,
+   659
+  ],
+  "trees_within_1500": [
+   171,
+   179
+  ],
+  "decor_types": 56,
+  "decor_count": 1102,
+  "decor_top": [
+   [
+    "CPlp",
+    272
+   ],
+   [
+    "LRrk",
+    223
+   ],
+   [
+    "ZPfw",
+    87
+   ],
+   [
+    "CPms",
+    87
+   ],
+   [
+    "ZPsh",
+    64
+   ],
+   [
+    "AWfs",
+    40
+   ],
+   [
+    "NRrk",
+    38
+   ],
+   [
+    "LPfp",
+    37
+   ]
+  ],
+  "cliff_layers": {
+   "2": 850,
+   "3": 534,
+   "4": 7370,
+   "5": 4261,
+   "6": 2018,
+   "7": 1336,
+   "8": 194,
+   "9": 78
+  },
+  "ramp_points": 307,
+  "water_share": 0.073,
+  "deep_water_share": 0.024,
+  "walkable_share": 0.4,
+  "walk_sym": {
+   "rot180": 97.9,
+   "mirrorX": 85.96,
+   "mirrorY": 85.96,
+   "rot90": 85.72,
+   "diag": 90.54,
+   "antidiag": 90.41
+  },
+  "main_exit_width_cells": [
+   11,
+   15
+  ]
+ },
+ "TerenasStand": {
+  "map": "TerenasStand",
+  "tileset": "V",
+  "tiles": [
+   "Vdrt",
+   "Vdrr",
+   "Yrtl",
+   "Vcbp",
+   "Vstp",
+   "Vgrs",
+   "Vrck",
+   "Vgrt"
+  ],
+  "size": [
+   96,
+   96
+  ],
+  "playable": [
+   84,
+   84
+  ],
+  "players": 2,
+  "rush_cells": {
+   "P1-P2": 101.2
+  },
+  "rush_air_cells": {
+   "P1-P2": 92.7
+  },
+  "mines": [
+   {
+    "gold": 12500,
+    "air": [
+     8843,
+     8644
+    ],
+    "path": [
+     72.9,
+     63.1
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     12581,
+     773
+    ],
+    "path": [
+     106.7,
+     0
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     781,
+     12627
+    ],
+    "path": [
+     0,
+     107.7
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     8521,
+     8966
+    ],
+    "path": [
+     63.3,
+     70.2
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     4992,
+     7560
+    ],
+    "path": [
+     33.7,
+     82.9
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     7671,
+     5141
+    ],
+    "path": [
+     79.2,
+     34.9
+    ]
+   }
+  ],
+  "main_mine_wu": [
+   781,
+   773
+  ],
+  "mine_seq_P1": [
+   [
+    0,
+    12500
+   ],
+   [
+    33.7,
+    12500
+   ],
+   [
+    63.3,
+    12500
+   ],
+   [
+    72.9,
+    12500
+   ],
+   [
+    79.2,
+    12500
+   ],
+   [
+    106.7,
+    12500
+   ]
+  ],
+  "camps": [
+   {
+    "x": -4750,
+    "y": 1875,
+    "n": 3,
+    "ids": [
+     "nwiz",
+     "nwiz",
+     "nwiz"
+    ],
+    "lvl": 3,
+    "ds": 2193,
+    "dpath": 10,
+    "arc": 67.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1448,
+    "arc_trees": 247.5
+   },
+   {
+    "x": -25,
+    "y": -5219,
+    "n": 4,
+    "ids": [
+     "nkob",
+     "nkob",
+     "nkob",
+     "nkot"
+    ],
+    "lvl": 6,
+    "ds": 4166,
+    "dpath": 26,
+    "arc": 112.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3522,
+    "arc_trees": 191.25
+   },
+   {
+    "x": 4480,
+    "y": 403,
+    "n": 5,
+    "ids": [
+     "nkog",
+     "nkog",
+     "nkol",
+     "nkot",
+     "nkot"
+    ],
+    "lvl": 17,
+    "ds": 5026,
+    "dpath": 44.9,
+    "arc": 0.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4198,
+    "arc_trees": 67.5
+   },
+   {
+    "x": 258,
+    "y": -1694,
+    "n": 4,
+    "ids": [
+     "nwiz",
+     "nwiz",
+     "nwiz",
+     "nwzr"
+    ],
+    "lvl": 6,
+    "ds": 4819,
+    "dpath": 51.4,
+    "arc": 157.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4119,
+    "arc_trees": 236.25
+   },
+   {
+    "x": 3656,
+    "y": -1418,
+    "n": 4,
+    "ids": [
+     "nrog",
+     "nrog",
+     "nwzg",
+     "nwzr"
+    ],
+    "lvl": 14,
+    "ds": 3220,
+    "dpath": 19,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2564,
+    "arc_trees": 213.75
+   },
+   {
+    "x": 4208,
+    "y": 4151,
+    "n": 5,
+    "ids": [
+     "nass",
+     "nass",
+     "nenf",
+     "nrog",
+     "nrog"
+    ],
+    "lvl": 19,
+    "ds": 8306,
+    "dpath": 61.5,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 7612,
+    "arc_trees": 78.75
+   },
+   {
+    "x": 312,
+    "y": 2242,
+    "n": 5,
+    "ids": [
+     "nfsh",
+     "nftb",
+     "nftb",
+     "nkob",
+     "nkob"
+    ],
+    "lvl": 14,
+    "ds": 4734,
+    "dpath": 30.9,
+    "arc": 22.5,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 4092,
+    "arc_trees": 56.25
+   },
+   {
+    "x": -1627,
+    "y": 4431,
+    "n": 5,
+    "ids": [
+     "nfsp",
+     "nftr",
+     "nftr",
+     "nftr",
+     "nsqt"
+    ],
+    "lvl": 13,
+    "ds": 2512,
+    "dpath": 13,
+    "arc": 0.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1806,
+    "arc_trees": 90.0
+   },
+   {
+    "x": -5101,
+    "y": -3283,
+    "n": 3,
+    "ids": [
+     "nmrm",
+     "nmrr",
+     "nmrr"
+    ],
+    "lvl": 7,
+    "ds": 7321,
+    "dpath": 63.6,
+    "arc": 202.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 6694,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -561,
+    "y": -3144,
+    "n": 5,
+    "ids": [
+     "nfsh",
+     "nftb",
+     "nftb",
+     "nkob",
+     "nkob"
+    ],
+    "lvl": 14,
+    "ds": 4882,
+    "dpath": 32.1,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 4221,
+    "arc_trees": 67.5
+   },
+   {
+    "x": 4994,
+    "y": -2209,
+    "n": 3,
+    "ids": [
+     "nwiz",
+     "nwiz",
+     "nwiz"
+    ],
+    "lvl": 3,
+    "ds": 2561,
+    "dpath": 13.4,
+    "arc": 112.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1858,
+    "arc_trees": 247.5
+   },
+   {
+    "x": -3550,
+    "y": 881,
+    "n": 4,
+    "ids": [
+     "nrog",
+     "nrog",
+     "nwzg",
+     "nwzr"
+    ],
+    "lvl": 14,
+    "ds": 3135,
+    "dpath": 18,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2452,
+    "arc_trees": 78.75
+   },
+   {
+    "x": -4375,
+    "y": -4658,
+    "n": 5,
+    "ids": [
+     "nass",
+     "nass",
+     "nenf",
+     "nrog",
+     "nrog"
+    ],
+    "lvl": 19,
+    "ds": 8471,
+    "dpath": 61.2,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 7826,
+    "arc_trees": 11.25
+   },
+   {
+    "x": -4481,
+    "y": -819,
+    "n": 5,
+    "ids": [
+     "nkog",
+     "nkog",
+     "nkol",
+     "nkot",
+     "nkot"
+    ],
+    "lvl": 17,
+    "ds": 4802,
+    "dpath": 49.0,
+    "arc": 0.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3984,
+    "arc_trees": 135.0
+   },
+   {
+    "x": 2804,
+    "y": 1540,
+    "n": 4,
+    "ids": [
+     "nass",
+     "nass",
+     "nrog",
+     "nwzg"
+    ],
+    "lvl": 16,
+    "ds": 6282,
+    "dpath": 44.5,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 5596,
+    "arc_trees": 146.25
+   },
+   {
+    "x": -266,
+    "y": 4643,
+    "n": 4,
+    "ids": [
+     "nkob",
+     "nkob",
+     "nkob",
+     "nkot"
+    ],
+    "lvl": 6,
+    "ds": 3889,
+    "dpath": 24,
+    "arc": 135.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3237,
+    "arc_trees": 213.75
+   },
+   {
+    "x": -719,
+    "y": 820,
+    "n": 4,
+    "ids": [
+     "nwiz",
+     "nwiz",
+     "nwiz",
+     "nwzr"
+    ],
+    "lvl": 6,
+    "ds": 4617,
+    "dpath": 42.6,
+    "arc": 202.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3959,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 4962,
+    "y": 2392,
+    "n": 3,
+    "ids": [
+     "nmrm",
+     "nmrr",
+     "nmrr"
+    ],
+    "lvl": 7,
+    "ds": 7053,
+    "dpath": 57.3,
+    "arc": 202.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 6410,
+    "arc_trees": 236.25
+   },
+   {
+    "x": 1617,
+    "y": -5017,
+    "n": 5,
+    "ids": [
+     "nfsp",
+     "nftr",
+     "nftr",
+     "nftr",
+     "nsqt"
+    ],
+    "lvl": 13,
+    "ds": 2513,
+    "dpath": 13,
+    "arc": 22.5,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1807,
+    "arc_trees": 180.0
+   },
+   {
+    "x": -3476,
+    "y": -2553,
+    "n": 4,
+    "ids": [
+     "nass",
+     "nass",
+     "nrog",
+     "nwzg"
+    ],
+    "lvl": 16,
+    "ds": 6551,
+    "dpath": 51.6,
+    "arc": 0.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 5880,
+    "arc_trees": 168.75
+   }
+  ],
+  "start_blocker_creeps": 0,
+  "neutrals": [
+   {
+    "id": "ntav",
+    "name": "Tavern",
+    "air": [
+     5949,
+     5933
+    ],
+    "path": [
+     43.6,
+     52.6
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     2577,
+     10834
+    ],
+    "path": [
+     13,
+     88.8
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     10834,
+     2577
+    ],
+    "path": [
+     91.7,
+     13
+    ]
+   },
+   {
+    "id": "nmer",
+    "name": "Mercenary Camp",
+    "air": [
+     9284,
+     3485
+    ],
+    "path": [
+     78.7,
+     21
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     9547,
+     4834
+    ],
+    "path": [
+     71.5,
+     45.5
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     4580,
+     9651
+    ],
+    "path": [
+     50.0,
+     75.3
+    ]
+   },
+   {
+    "id": "nmer",
+    "name": "Mercenary Camp",
+    "air": [
+     3358,
+     9355
+    ],
+    "path": [
+     20,
+     81.5
+    ]
+   }
+  ],
+  "other_neutral_ids": {
+   "nshe": 6,
+   "nech": 2
+  },
+  "trees": 1340,
+  "trees_per_playable_cell": 0.19,
+  "tree_cell_share": 0.189,
+  "tree_ids": {
+   "VTlt": 1327,
+   "YTpb": 10,
+   "LTbs": 3
+  },
+  "nearest_tree_wu": [
+   630,
+   551
+  ],
+  "trees_within_1500": [
+   131,
+   111
+  ],
+  "decor_types": 38,
+  "decor_count": 340,
+  "decor_top": [
+   [
+    "LPwh",
+    168
+   ],
+   [
+    "LRrk",
+    48
+   ],
+   [
+    "VSvb",
+    24
+   ],
+   [
+    "LPwb",
+    20
+   ],
+   [
+    "VOal",
+    11
+   ],
+   [
+    "LOhb",
+    10
+   ],
+   [
+    "VOfl",
+    10
+   ],
+   [
+    "LOlp",
+    7
+   ]
+  ],
+  "cliff_layers": {
+   "2": 1492,
+   "4": 6511,
+   "6": 1406
+  },
+  "ramp_points": 0,
+  "water_share": 0.158,
+  "deep_water_share": 0.158,
+  "walkable_share": 0.608,
+  "walk_sym": {
+   "rot180": 78.84,
+   "mirrorX": 80.92,
+   "mirrorY": 76.37,
+   "rot90": 76.71,
+   "diag": 77.3,
+   "antidiag": 77.0
+  },
+  "main_exit_width_cells": [
+   17,
+   15
+  ]
+ },
+ "Tidehunters": {
+  "map": "Tidehunters",
+  "tileset": "Z",
+  "tiles": [
+   "Zdrt",
+   "Zdtr",
+   "Zdrg",
+   "Zbks",
+   "Zsan",
+   "Zbkl",
+   "Ztil",
+   "Zgrs",
+   "Zvin",
+   "cLc1",
+   "Lrok",
+   "Lgrd",
+   "Arck"
+  ],
+  "size": [
+   128,
+   128
+  ],
+  "playable": [
+   90,
+   90
+  ],
+  "players": 2,
+  "rush_cells": {
+   "P1-P2": 74.1
+  },
+  "rush_air_cells": {
+   "P1-P2": 75.0
+  },
+  "mines": [
+   {
+    "gold": 13500,
+    "air": [
+     10363,
+     771
+    ],
+    "path": [
+     80.7,
+     0
+    ]
+   },
+   {
+    "gold": 10500,
+    "air": [
+     7694,
+     5367
+    ],
+    "path": [
+     60.0,
+     36.8
+    ]
+   },
+   {
+    "gold": 11500,
+    "air": [
+     9301,
+     4809
+    ],
+    "path": [
+     69.8,
+     32.6
+    ]
+   },
+   {
+    "gold": 10500,
+    "air": [
+     5367,
+     7694
+    ],
+    "path": [
+     36.8,
+     60.0
+    ]
+   },
+   {
+    "gold": 11500,
+    "air": [
+     4809,
+     9301
+    ],
+    "path": [
+     32.6,
+     69.8
+    ]
+   },
+   {
+    "gold": 13500,
+    "air": [
+     771,
+     10363
+    ],
+    "path": [
+     0,
+     80.7
+    ]
+   }
+  ],
+  "main_mine_wu": [
+   771,
+   771
+  ],
+  "mine_seq_P1": [
+   [
+    0,
+    13500
+   ],
+   [
+    32.6,
+    11500
+   ],
+   [
+    36.8,
+    10500
+   ],
+   [
+    60.0,
+    10500
+   ],
+   [
+    69.8,
+    11500
+   ],
+   [
+    80.7,
+    13500
+   ]
+  ],
+  "camps": [
+   {
+    "x": 4941,
+    "y": 378,
+    "n": 4,
+    "ids": [
+     "nmbg",
+     "nmsn",
+     "nmtw",
+     "nmtw"
+    ],
+    "lvl": 12,
+    "ds": 4752,
+    "dpath": 32.6,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 4145,
+    "arc_trees": 202.5
+   },
+   {
+    "x": 365,
+    "y": 4950,
+    "n": 4,
+    "ids": [
+     "nmbg",
+     "nmsn",
+     "nmtw",
+     "nmtw"
+    ],
+    "lvl": 12,
+    "ds": 4745,
+    "dpath": 32.6,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 4124,
+    "arc_trees": 135.0
+   },
+   {
+    "x": 3363,
+    "y": 1297,
+    "n": 3,
+    "ids": [
+     "nmrm",
+     "nmrr",
+     "nmrr"
+    ],
+    "lvl": 7,
+    "ds": 5223,
+    "dpath": 39.1,
+    "arc": 45.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4682,
+    "arc_trees": 247.5
+   },
+   {
+    "x": -2504,
+    "y": 601,
+    "n": 4,
+    "ids": [
+     "ngnb",
+     "ngns",
+     "ngnv",
+     "ngnw"
+    ],
+    "lvl": 14,
+    "ds": 2674,
+    "dpath": 14.1,
+    "arc": 22.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2052,
+    "arc_trees": 281.25
+   },
+   {
+    "x": -4513,
+    "y": -2263,
+    "n": 3,
+    "ids": [
+     "ntrg",
+     "ntrt",
+     "ntrt"
+    ],
+    "lvl": 15,
+    "ds": 5179,
+    "dpath": 35.4,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4590,
+    "arc_trees": 56.25
+   },
+   {
+    "x": -1540,
+    "y": 2978,
+    "n": 5,
+    "ids": [
+     "nfsh",
+     "nftr",
+     "nftt",
+     "ngrk",
+     "ngst"
+    ],
+    "lvl": 17,
+    "ds": 2366,
+    "dpath": 18.5,
+    "arc": 135.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1713,
+    "arc_trees": 180.0
+   },
+   {
+    "x": -2903,
+    "y": 4643,
+    "n": 3,
+    "ids": [
+     "nftb",
+     "nftt",
+     "nsgn"
+    ],
+    "lvl": 10,
+    "ds": 2028,
+    "dpath": 9.7,
+    "arc": 112.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1269,
+    "arc_trees": 247.5
+   },
+   {
+    "x": -67,
+    "y": -104,
+    "n": 3,
+    "ids": [
+     "nlsn",
+     "ntrt",
+     "ntrt"
+    ],
+    "lvl": 13,
+    "ds": 4809,
+    "dpath": 36.8,
+    "arc": 247.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4115,
+    "arc_trees": 270.0
+   },
+   {
+    "x": 4641,
+    "y": -2925,
+    "n": 3,
+    "ids": [
+     "nftb",
+     "nftt",
+     "nsgn"
+    ],
+    "lvl": 10,
+    "ds": 2015,
+    "dpath": 9.7,
+    "arc": 45.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1254,
+    "arc_trees": 247.5
+   },
+   {
+    "x": 4301,
+    "y": 4250,
+    "n": 4,
+    "ids": [
+     "nggr",
+     "ngrk",
+     "nsgh",
+     "nsgh"
+    ],
+    "lvl": 21,
+    "ds": 8276,
+    "dpath": 60.5,
+    "arc": 180.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 7633,
+    "arc_trees": 225.0
+   },
+   {
+    "x": 615,
+    "y": -2525,
+    "n": 4,
+    "ids": [
+     "ngnb",
+     "ngns",
+     "ngnv",
+     "ngnw"
+    ],
+    "lvl": 14,
+    "ds": 2652,
+    "dpath": 14.1,
+    "arc": 22.5,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2030,
+    "arc_trees": 270.0
+   },
+   {
+    "x": -2898,
+    "y": -2900,
+    "n": 5,
+    "ids": [
+     "nmrm",
+     "nmrm",
+     "nmrv",
+     "nmsn",
+     "nmsn"
+    ],
+    "lvl": 20,
+    "ds": 5865,
+    "dpath": 42.9,
+    "arc": 247.5,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 5250,
+    "arc_trees": 281.25
+   },
+   {
+    "x": -4475,
+    "y": 842,
+    "n": 3,
+    "ids": [
+     "nmfs",
+     "nmrl",
+     "nmrr"
+    ],
+    "lvl": 6,
+    "ds": 2117,
+    "dpath": 12,
+    "arc": 202.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1490,
+    "arc_trees": 225.0
+   },
+   {
+    "x": 1319,
+    "y": 3393,
+    "n": 3,
+    "ids": [
+     "nmrm",
+     "nmrr",
+     "nmrr"
+    ],
+    "lvl": 7,
+    "ds": 5248,
+    "dpath": 38.7,
+    "arc": 22.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4661,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -590,
+    "y": 2491,
+    "n": 2,
+    "ids": [
+     "ntrs",
+     "ntrt"
+    ],
+    "lvl": 6,
+    "ds": 3337,
+    "dpath": 22.1,
+    "arc": 157.5,
+    "camp": 2,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2756,
+    "arc_trees": 281.25
+   },
+   {
+    "x": -1352,
+    "y": -1318,
+    "n": 3,
+    "ids": [
+     "nsko",
+     "nsra",
+     "nsrh"
+    ],
+    "lvl": 7,
+    "ds": 4913,
+    "dpath": 34.4,
+    "arc": 180.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4297,
+    "arc_trees": 247.5
+   },
+   {
+    "x": -2299,
+    "y": -4486,
+    "n": 3,
+    "ids": [
+     "ntrg",
+     "ntrt",
+     "ntrt"
+    ],
+    "lvl": 15,
+    "ds": 5211,
+    "dpath": 35.4,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4584,
+    "arc_trees": 135.0
+   },
+   {
+    "x": 840,
+    "y": -4500,
+    "n": 3,
+    "ids": [
+     "nmfs",
+     "nmrl",
+     "nmrr"
+    ],
+    "lvl": 6,
+    "ds": 2125,
+    "dpath": 12,
+    "arc": 225.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1473,
+    "arc_trees": 258.75
+   },
+   {
+    "x": 2940,
+    "y": -1546,
+    "n": 5,
+    "ids": [
+     "nfsh",
+     "nftr",
+     "nftt",
+     "ngrk",
+     "ngst"
+    ],
+    "lvl": 17,
+    "ds": 2359,
+    "dpath": 18.5,
+    "arc": 112.5,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1706,
+    "arc_trees": 180.0
+   },
+   {
+    "x": 2422,
+    "y": -571,
+    "n": 2,
+    "ids": [
+     "ntrs",
+     "ntrt"
+    ],
+    "lvl": 6,
+    "ds": 3365,
+    "dpath": 23.1,
+    "arc": 112.5,
+    "camp": 2,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2783,
+    "arc_trees": 281.25
+   },
+   {
+    "x": 2917,
+    "y": 2836,
+    "n": 4,
+    "ids": [
+     "nele",
+     "nele",
+     "nomg",
+     "nrel"
+    ],
+    "lvl": 15,
+    "ds": 6740,
+    "dpath": 50.7,
+    "arc": 90.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 6141,
+    "arc_trees": 303.75
+   },
+   {
+    "x": 2780,
+    "y": 3142,
+    "n": 1,
+    "ids": [
+     "nrel"
+    ],
+    "lvl": 2,
+    "ds": 6689,
+    "dpath": 51.1,
+    "arc": 90.0,
+    "camp": 1,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 6089,
+    "arc_trees": 281.25
+   }
+  ],
+  "start_blocker_creeps": 0,
+  "neutrals": [
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     8503,
+     2136
+    ],
+    "path": [
+     63.4,
+     19.7
+    ]
+   },
+   {
+    "id": "ntav",
+    "name": "Tavern",
+    "air": [
+     5266,
+     5266
+    ],
+    "path": [
+     36.7,
+     36.7
+    ]
+   },
+   {
+    "id": "nmrk",
+    "name": "Marketplace",
+    "air": [
+     6848,
+     6848
+    ],
+    "path": [
+     51.7,
+     51.7
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     4908,
+     4728
+    ],
+    "path": [
+     37.8,
+     36.8
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     2136,
+     8503
+    ],
+    "path": [
+     19.7,
+     63.4
+    ]
+   }
+  ],
+  "other_neutral_ids": {
+   "nmg1": 3,
+   "ncrb": 4,
+   "ntrs": 2,
+   "nfro": 2,
+   "nmg0": 2,
+   "nskk": 1,
+   "nalb": 1,
+   "nsea": 8
+  },
+  "trees": 2688,
+  "trees_per_playable_cell": 0.332,
+  "tree_cell_share": 0.229,
+  "tree_ids": {
+   "LTlt": 1352,
+   "YTpb": 1180,
+   "YTpc": 117,
+   "YTfc": 9,
+   "ZTtw": 8,
+   "YTlb": 18,
+   "ZTd8": 2,
+   "ZTd7": 2
+  },
+  "nearest_tree_wu": [
+   689,
+   689
+  ],
+  "trees_within_1500": [
+   179,
+   179
+  ],
+  "decor_types": 63,
+  "decor_count": 1908,
+  "decor_top": [
+   [
+    "LPrs",
+    611
+   ],
+   [
+    "ZPvp",
+    300
+   ],
+   [
+    "ZPsh",
+    258
+   ],
+   [
+    "ZWsw",
+    120
+   ],
+   [
+    "LRrk",
+    116
+   ],
+   [
+    "ZPru",
+    100
+   ],
+   [
+    "ZRrk",
+    46
+   ],
+   [
+    "APct",
+    44
+   ]
+  ],
+  "cliff_layers": {
+   "0": 318,
+   "1": 9870,
+   "2": 5992,
+   "3": 399,
+   "4": 62
+  },
+  "ramp_points": 56,
+  "water_share": 0.673,
+  "deep_water_share": 0.585,
+  "walkable_share": 0.352,
+  "walk_sym": {
+   "rot180": 85.63,
+   "mirrorX": 83.97,
+   "mirrorY": 83.97,
+   "rot90": 84.01,
+   "diag": 97.25,
+   "antidiag": 85.68
+  },
+  "main_exit_width_cells": [
+   7,
+   7
+  ]
+ },
+ "TurtleRock": {
+  "map": "TurtleRock",
+  "tileset": "L",
+  "tiles": [
+   "Ldrt",
+   "Ldro",
+   "Ldrg",
+   "Lrok",
+   "Lgrs",
+   "Lgrd"
+  ],
+  "size": [
+   128,
+   128
+  ],
+  "playable": [
+   104,
+   104
+  ],
+  "players": 4,
+  "rush_cells": {
+   "P1-P2": 71.0,
+   "P1-P3": 82.8,
+   "P1-P4": 28.0,
+   "P2-P3": 27.7,
+   "P2-P4": 85.5,
+   "P3-P4": 74.5
+  },
+  "rush_air_cells": {
+   "P1-P2": 78.6,
+   "P1-P3": 85.4,
+   "P1-P4": 33.9,
+   "P2-P3": 32.6,
+   "P2-P4": 87.9,
+   "P3-P4": 81.5
+  },
+  "mines": [
+   {
+    "gold": 15000,
+    "air": [
+     7915,
+     5187,
+     3304,
+     7137
+    ],
+    "path": [
+     58.4,
+     35.7,
+     18.0,
+     49.4
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     4384,
+     11933,
+     11199,
+     771
+    ],
+    "path": [
+     32.1,
+     92.6,
+     81.5,
+     0
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     11706,
+     4423,
+     781,
+     11193
+    ],
+    "path": [
+     90.5,
+     32.5,
+     0,
+     80.9
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     10827,
+     771,
+     4148,
+     11933
+    ],
+    "path": [
+     78.1,
+     0,
+     31.9,
+     92.6
+    ]
+   },
+   {
+    "gold": 10000,
+    "air": [
+     9781,
+     10066,
+     6919,
+     6598
+    ],
+    "path": [
+     72.6,
+     75.6,
+     48.4,
+     46.2
+    ]
+   },
+   {
+    "gold": 15000,
+    "air": [
+     3260,
+     6818,
+     7893,
+     5414
+    ],
+    "path": [
+     17.0,
+     46.6,
+     57.8,
+     37.7
+    ]
+   },
+   {
+    "gold": 10000,
+    "air": [
+     6912,
+     6681,
+     10031,
+     10470
+    ],
+    "path": [
+     48,
+     46.4,
+     74.6,
+     79.0
+    ]
+   },
+   {
+    "gold": 15000,
+    "air": [
+     5267,
+     8071,
+     6936,
+     3499
+    ],
+    "path": [
+     37.1,
+     58.5,
+     47.4,
+     20.0
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     781,
+     10824,
+     11706,
+     4531
+    ],
+    "path": [
+     0,
+     77.5,
+     90.5,
+     33.1
+    ]
+   },
+   {
+    "gold": 15000,
+    "air": [
+     7109,
+     2959,
+     5012,
+     8525
+    ],
+    "path": [
+     48.2,
+     15.7,
+     34.2,
+     62.7
+    ]
+   }
+  ],
+  "main_mine_wu": [
+   781,
+   771,
+   781,
+   771
+  ],
+  "mine_seq_P1": [
+   [
+    0,
+    12500
+   ],
+   [
+    17.0,
+    15000
+   ],
+   [
+    32.1,
+    12500
+   ],
+   [
+    37.1,
+    15000
+   ],
+   [
+    48,
+    10000
+   ],
+   [
+    48.2,
+    15000
+   ],
+   [
+    58.4,
+    15000
+   ],
+   [
+    72.6,
+    10000
+   ],
+   [
+    78.1,
+    12500
+   ],
+   [
+    90.5,
+    12500
+   ]
+  ],
+  "camps": [
+   {
+    "x": -4059,
+    "y": -4729,
+    "n": 6,
+    "ids": [
+     "nftb",
+     "nftb",
+     "nogl",
+     "nogr",
+     "nogr",
+     "nomg"
+    ],
+    "lvl": 26,
+    "ds": 6439,
+    "dpath": 45.2,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 5685,
+    "arc_trees": 33.75
+   },
+   {
+    "x": 58,
+    "y": -2781,
+    "n": 2,
+    "ids": [
+     "ntrg",
+     "ntrt"
+    ],
+    "lvl": 11,
+    "ds": 3559,
+    "dpath": 20.4,
+    "arc": 0.0,
+    "camp": 2,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3052,
+    "arc_trees": 78.75
+   },
+   {
+    "x": 3136,
+    "y": 2744,
+    "n": 5,
+    "ids": [
+     "nftt",
+     "nftt",
+     "nogr",
+     "nogr",
+     "nomg"
+    ],
+    "lvl": 17,
+    "ds": 5348,
+    "dpath": 37.0,
+    "arc": 0.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4645,
+    "arc_trees": 146.25
+   },
+   {
+    "x": 3839,
+    "y": -715,
+    "n": 3,
+    "ids": [
+     "ntrh",
+     "ntrh",
+     "ntrt"
+    ],
+    "lvl": 6,
+    "ds": 2077,
+    "dpath": 8.1,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1469,
+    "arc_trees": 112.5
+   },
+   {
+    "x": -5237,
+    "y": -2332,
+    "n": 4,
+    "ids": [
+     "nftr",
+     "nftr",
+     "nogr",
+     "nogr"
+    ],
+    "lvl": 10,
+    "ds": 3932,
+    "dpath": 26.2,
+    "arc": 90.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3250,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -376,
+    "y": 3066,
+    "n": 3,
+    "ids": [
+     "ntrh",
+     "ntrh",
+     "ntrt"
+    ],
+    "lvl": 6,
+    "ds": 2322,
+    "dpath": 10.5,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1723,
+    "arc_trees": 101.25
+   },
+   {
+    "x": 284,
+    "y": 2073,
+    "n": 3,
+    "ids": [
+     "ntrg",
+     "ntrt",
+     "ntrt"
+    ],
+    "lvl": 15,
+    "ds": 3489,
+    "dpath": 19.4,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2928,
+    "arc_trees": 56.25
+   },
+   {
+    "x": 2853,
+    "y": -93,
+    "n": 3,
+    "ids": [
+     "ntrg",
+     "ntrt",
+     "ntrt"
+    ],
+    "lvl": 15,
+    "ds": 3232,
+    "dpath": 18.1,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2676,
+    "arc_trees": 56.25
+   },
+   {
+    "x": -2329,
+    "y": -722,
+    "n": 3,
+    "ids": [
+     "ntrg",
+     "ntrt",
+     "ntrt"
+    ],
+    "lvl": 15,
+    "ds": 3730,
+    "dpath": 22.4,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3134,
+    "arc_trees": 78.75
+   },
+   {
+    "x": -3943,
+    "y": 3468,
+    "n": 5,
+    "ids": [
+     "nmrm",
+     "nmrm",
+     "nmrr",
+     "nmrr",
+     "ntrg"
+    ],
+    "lvl": 17,
+    "ds": 2157,
+    "dpath": 14.8,
+    "arc": 67.5,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1417,
+    "arc_trees": 180.0
+   },
+   {
+    "x": -3420,
+    "y": 10,
+    "n": 3,
+    "ids": [
+     "ntrh",
+     "ntrh",
+     "ntrt"
+    ],
+    "lvl": 6,
+    "ds": 2422,
+    "dpath": 10.9,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1814,
+    "arc_trees": 67.5
+   },
+   {
+    "x": 337,
+    "y": -2581,
+    "n": 1,
+    "ids": [
+     "ntrt"
+    ],
+    "lvl": 4,
+    "ds": 3513,
+    "dpath": 20.0,
+    "arc": 0.0,
+    "camp": 1,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3013,
+    "arc_trees": 101.25
+   },
+   {
+    "x": 1445,
+    "y": 5558,
+    "n": 4,
+    "ids": [
+     "nftr",
+     "nftr",
+     "nogr",
+     "nogr"
+    ],
+    "lvl": 10,
+    "ds": 3682,
+    "dpath": 27.2,
+    "arc": 135.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3016,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -2792,
+    "y": -3490,
+    "n": 5,
+    "ids": [
+     "nftt",
+     "nftt",
+     "nogr",
+     "nogr",
+     "nomg"
+    ],
+    "lvl": 17,
+    "ds": 5652,
+    "dpath": 39.4,
+    "arc": 0.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 4895,
+    "arc_trees": 123.75
+   },
+   {
+    "x": 1076,
+    "y": -3666,
+    "n": 3,
+    "ids": [
+     "ntrh",
+     "ntrh",
+     "ntrt"
+    ],
+    "lvl": 6,
+    "ds": 2214,
+    "dpath": 9.5,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1600,
+    "arc_trees": 78.75
+   },
+   {
+    "x": -1103,
+    "y": -5517,
+    "n": 4,
+    "ids": [
+     "nftr",
+     "nftr",
+     "nogr",
+     "nogr"
+    ],
+    "lvl": 10,
+    "ds": 3737,
+    "dpath": 26.1,
+    "arc": 135.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3116,
+    "arc_trees": 236.25
+   },
+   {
+    "x": 5264,
+    "y": 1554,
+    "n": 4,
+    "ids": [
+     "nftr",
+     "nftr",
+     "nogr",
+     "nogr"
+    ],
+    "lvl": 10,
+    "ds": 3668,
+    "dpath": 23.8,
+    "arc": 135.0,
+    "camp": 4,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3042,
+    "arc_trees": 292.5
+   },
+   {
+    "x": 4589,
+    "y": 4356,
+    "n": 6,
+    "ids": [
+     "nftb",
+     "nftb",
+     "nogl",
+     "nogr",
+     "nogr",
+     "nomg"
+    ],
+    "lvl": 26,
+    "ds": 6516,
+    "dpath": 45.4,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 5774,
+    "arc_trees": 0.0
+   },
+   {
+    "x": 4127,
+    "y": -3730,
+    "n": 5,
+    "ids": [
+     "nmrm",
+     "nmrm",
+     "nmrr",
+     "nmrr",
+     "ntrg"
+    ],
+    "lvl": 17,
+    "ds": 2044,
+    "dpath": 11.7,
+    "arc": 90.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1366,
+    "arc_trees": 281.25
+   }
+  ],
+  "start_blocker_creeps": 20,
+  "neutrals": [
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     5628,
+     5479,
+     8217,
+     8617
+    ],
+    "path": [
+     38.9,
+     38.1,
+     59.2,
+     62.1
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     8361,
+     8472,
+     5776,
+     5790
+    ],
+    "path": [
+     60.7,
+     61.9,
+     40.5,
+     41.0
+    ]
+   },
+   {
+    "id": "ntav",
+    "name": "Tavern",
+    "air": [
+     5527,
+     5206,
+     5420,
+     6052
+    ],
+    "path": [
+     38.2,
+     35.7,
+     37.6,
+     42.7
+    ]
+   }
+  ],
+  "other_neutral_ids": {
+   "nmh0": 4,
+   "nmh1": 2
+  },
+  "trees": 1745,
+  "trees_per_playable_cell": 0.161,
+  "tree_cell_share": 0.161,
+  "tree_ids": {
+   "LTlt": 1745
+  },
+  "nearest_tree_wu": [
+   516,
+   716,
+   659,
+   572
+  ],
+  "trees_within_1500": [
+   121,
+   99,
+   136,
+   109
+  ],
+  "decor_types": 10,
+  "decor_count": 510,
+  "decor_top": [
+   [
+    "LRrk",
+    288
+   ],
+   [
+    "LPrs",
+    189
+   ],
+   [
+    "LOss",
+    9
+   ],
+   [
+    "LObz",
+    8
+   ],
+   [
+    "LOhc",
+    6
+   ],
+   [
+    "LOtz",
+    4
+   ],
+   [
+    "LOgr",
+    2
+   ],
+   [
+    "LOce",
+    2
+   ]
+  ],
+  "cliff_layers": {
+   "0": 9263,
+   "1": 7378
+  },
+  "ramp_points": 0,
+  "water_share": 0.65,
+  "deep_water_share": 0.512,
+  "walkable_share": 0.459,
+  "walk_sym": {
+   "rot180": 86.66,
+   "mirrorX": 83.07,
+   "mirrorY": 83.26,
+   "rot90": 82.25,
+   "diag": 85.3,
+   "antidiag": 86.55
+  },
+  "main_exit_width_cells": [
+   17,
+   15,
+   17,
+   15
+  ]
+ },
+ "TwistedMeadows": {
+  "map": "TwistedMeadows",
+  "tileset": "L",
+  "tiles": [
+   "Ldrt",
+   "Ldro",
+   "Ldrg",
+   "Lrok",
+   "Lgrs",
+   "Lgrd"
+  ],
+  "size": [
+   160,
+   160
+  ],
+  "playable": [
+   124,
+   124
+  ],
+  "players": 4,
+  "rush_cells": {
+   "P1-P2": 59.4,
+   "P1-P3": 87.1,
+   "P1-P4": 60.2,
+   "P2-P3": 58.4,
+   "P2-P4": 89.1,
+   "P3-P4": 62.5
+  },
+  "rush_air_cells": {
+   "P1-P2": 66.0,
+   "P1-P3": 92.5,
+   "P1-P4": 66.6,
+   "P2-P3": 65.0,
+   "P2-P4": 94.4,
+   "P3-P4": 66.8
+  },
+  "mines": [
+   {
+    "gold": 12500,
+    "air": [
+     8975,
+     771,
+     8913,
+     12854
+    ],
+    "path": [
+     64,
+     0,
+     65.5,
+     96.2
+    ]
+   },
+   {
+    "gold": 10000,
+    "air": [
+     10011,
+     2823,
+     10928,
+     14781
+    ],
+    "path": [
+     Infinity,
+     Infinity,
+     Infinity,
+     Infinity
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     3438,
+     11410,
+     12865,
+     7033
+    ],
+    "path": [
+     34.1,
+     88.8,
+     97.4,
+     50.7
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     12604,
+     8779,
+     771,
+     9187
+    ],
+    "path": [
+     93.2,
+     62,
+     0,
+     69.1
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     12819,
+     6679,
+     3677,
+     11699
+    ],
+    "path": [
+     97.1,
+     47.1,
+     34.9,
+     90.8
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     8726,
+     12737,
+     9312,
+     771
+    ],
+    "path": [
+     63.7,
+     95.5,
+     68.5,
+     0
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     781,
+     8987,
+     12624,
+     9115
+    ],
+    "path": [
+     0,
+     65.9,
+     94.8,
+     65.4
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     11329,
+     12500,
+     6456,
+     3679
+    ],
+    "path": [
+     89.0,
+     94.7,
+     46.1,
+     44.5
+    ]
+   },
+   {
+    "gold": 12500,
+    "air": [
+     6621,
+     3586,
+     11247,
+     12789
+    ],
+    "path": [
+     47.7,
+     39.0,
+     90.7,
+     96.9
+    ]
+   },
+   {
+    "gold": 10000,
+    "air": [
+     3392,
+     11611,
+     15081,
+     10385
+    ],
+    "path": [
+     Infinity,
+     Infinity,
+     Infinity,
+     Infinity
+    ]
+   },
+   {
+    "gold": 10000,
+    "air": [
+     14974,
+     10400,
+     3179,
+     11317
+    ],
+    "path": [
+     Infinity,
+     Infinity,
+     Infinity,
+     Infinity
+    ]
+   },
+   {
+    "gold": 10000,
+    "air": [
+     11426,
+     14900,
+     10092,
+     3034
+    ],
+    "path": [
+     Infinity,
+     Infinity,
+     Infinity,
+     Infinity
+    ]
+   }
+  ],
+  "main_mine_wu": [
+   781,
+   771,
+   771,
+   771
+  ],
+  "mine_seq_P1": [
+   [
+    0,
+    12500
+   ],
+   [
+    34.1,
+    12500
+   ],
+   [
+    47.7,
+    12500
+   ],
+   [
+    63.7,
+    12500
+   ],
+   [
+    64,
+    12500
+   ],
+   [
+    89.0,
+    12500
+   ],
+   [
+    93.2,
+    12500
+   ],
+   [
+    97.1,
+    12500
+   ],
+   [
+    Infinity,
+    10000
+   ],
+   [
+    Infinity,
+    10000
+   ],
+   [
+    Infinity,
+    10000
+   ],
+   [
+    Infinity,
+    10000
+   ]
+  ],
+  "camps": [
+   {
+    "x": 6960,
+    "y": -7275,
+    "n": 4,
+    "ids": [
+     "nftt",
+     "nggr",
+     "nrdk",
+     "nrdk"
+    ],
+    "lvl": 18,
+    "ds": 3828,
+    "dpath": Infinity,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 3084,
+    "arc_trees": 135.0
+   },
+   {
+    "x": -7089,
+    "y": -2697,
+    "n": 5,
+    "ids": [
+     "nfsh",
+     "nftt",
+     "nftt",
+     "ngrk",
+     "ngst"
+    ],
+    "lvl": 18,
+    "ds": 2759,
+    "dpath": 16.9,
+    "arc": 22.5,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1951,
+    "arc_trees": 67.5
+   },
+   {
+    "x": 6495,
+    "y": -2355,
+    "n": 5,
+    "ids": [
+     "nftt",
+     "nftt",
+     "nogr",
+     "nogr",
+     "nomg"
+    ],
+    "lvl": 17,
+    "ds": 3787,
+    "dpath": 42.2,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 3000,
+    "arc_trees": 67.5
+   },
+   {
+    "x": -2658,
+    "y": -6711,
+    "n": 5,
+    "ids": [
+     "nftt",
+     "nftt",
+     "nogr",
+     "nogr",
+     "nomg"
+    ],
+    "lvl": 17,
+    "ds": 3418,
+    "dpath": 31.3,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 2650,
+    "arc_trees": 11.25
+   },
+   {
+    "x": -2401,
+    "y": -4606,
+    "n": 3,
+    "ids": [
+     "ngnb",
+     "ngno",
+     "ngno"
+    ],
+    "lvl": 5,
+    "ds": 2316,
+    "dpath": 11,
+    "arc": 112.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1774,
+    "arc_trees": 123.75
+   },
+   {
+    "x": 551,
+    "y": 2217,
+    "n": 3,
+    "ids": [
+     "ngnv",
+     "ngnw",
+     "ngnw"
+    ],
+    "lvl": 11,
+    "ds": 4304,
+    "dpath": 28.7,
+    "arc": 22.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3691,
+    "arc_trees": 258.75
+   },
+   {
+    "x": 3477,
+    "y": -2306,
+    "n": 3,
+    "ids": [
+     "ngnb",
+     "ngno",
+     "ngno"
+    ],
+    "lvl": 5,
+    "ds": 2774,
+    "dpath": 16,
+    "arc": 22.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2232,
+    "arc_trees": 270.0
+   },
+   {
+    "x": -541,
+    "y": -2676,
+    "n": 3,
+    "ids": [
+     "ngnv",
+     "ngnw",
+     "ngnw"
+    ],
+    "lvl": 11,
+    "ds": 4248,
+    "dpath": 27.7,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3642,
+    "arc_trees": 135.0
+   },
+   {
+    "x": 2745,
+    "y": 308,
+    "n": 5,
+    "ids": [
+     "nftk",
+     "nftt",
+     "nftt",
+     "nogr",
+     "nogr"
+    ],
+    "lvl": 18,
+    "ds": 3691,
+    "dpath": 23.1,
+    "arc": 0.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2916,
+    "arc_trees": 90.0
+   },
+   {
+    "x": -2627,
+    "y": -891,
+    "n": 5,
+    "ids": [
+     "nftk",
+     "nftt",
+     "nftt",
+     "nogr",
+     "nogr"
+    ],
+    "lvl": 18,
+    "ds": 3606,
+    "dpath": 21.7,
+    "arc": 0.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2828,
+    "arc_trees": 67.5
+   },
+   {
+    "x": -2318,
+    "y": 226,
+    "n": 3,
+    "ids": [
+     "ngnv",
+     "ngnw",
+     "ngnw"
+    ],
+    "lvl": 11,
+    "ds": 4438,
+    "dpath": 28.7,
+    "arc": 0.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3876,
+    "arc_trees": 258.75
+   },
+   {
+    "x": -2516,
+    "y": 6493,
+    "n": 5,
+    "ids": [
+     "nfsh",
+     "nftt",
+     "nftt",
+     "ngrk",
+     "ngst"
+    ],
+    "lvl": 18,
+    "ds": 2279,
+    "dpath": 16.1,
+    "arc": 45.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1478,
+    "arc_trees": 101.25
+   },
+   {
+    "x": -6349,
+    "y": 2155,
+    "n": 5,
+    "ids": [
+     "nftt",
+     "nftt",
+     "nogr",
+     "nogr",
+     "nomg"
+    ],
+    "lvl": 17,
+    "ds": 3613,
+    "dpath": 37.1,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 2837,
+    "arc_trees": 22.5
+   },
+   {
+    "x": -6867,
+    "y": 6827,
+    "n": 5,
+    "ids": [
+     "nftb",
+     "nftt",
+     "nggr",
+     "nrdk",
+     "nrdk"
+    ],
+    "lvl": 22,
+    "ds": 4036,
+    "dpath": Infinity,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 3296,
+    "arc_trees": 157.5
+   },
+   {
+    "x": 7246,
+    "y": 6766,
+    "n": 5,
+    "ids": [
+     "nftb",
+     "nftt",
+     "nggr",
+     "nrdk",
+     "nrdk"
+    ],
+    "lvl": 22,
+    "ds": 4193,
+    "dpath": Infinity,
+    "arc": 22.5,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 3445,
+    "arc_trees": 168.75
+   },
+   {
+    "x": -452,
+    "y": 2797,
+    "n": 5,
+    "ids": [
+     "nftr",
+     "nftr",
+     "ngst",
+     "nogr",
+     "nogr"
+    ],
+    "lvl": 16,
+    "ds": 3556,
+    "dpath": 20.9,
+    "arc": 0.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 2847,
+    "arc_trees": 101.25
+   },
+   {
+    "x": 7011,
+    "y": 1905,
+    "n": 5,
+    "ids": [
+     "nfsh",
+     "nftt",
+     "nftt",
+     "ngrk",
+     "ngst"
+    ],
+    "lvl": 18,
+    "ds": 2807,
+    "dpath": 20.5,
+    "arc": 22.5,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1994,
+    "arc_trees": 78.75
+   },
+   {
+    "x": 421,
+    "y": -3152,
+    "n": 5,
+    "ids": [
+     "nftr",
+     "nftr",
+     "ngst",
+     "nogr",
+     "nogr"
+    ],
+    "lvl": 16,
+    "ds": 3914,
+    "dpath": 24.7,
+    "arc": 0.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3251,
+    "arc_trees": 78.75
+   },
+   {
+    "x": 2482,
+    "y": 6409,
+    "n": 5,
+    "ids": [
+     "nftt",
+     "nftt",
+     "nogr",
+     "nogr",
+     "nomg"
+    ],
+    "lvl": 17,
+    "ds": 3677,
+    "dpath": 33.1,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 2925,
+    "arc_trees": 11.25
+   },
+   {
+    "x": 2591,
+    "y": -7287,
+    "n": 5,
+    "ids": [
+     "nfsh",
+     "nftt",
+     "nftt",
+     "ngrk",
+     "ngst"
+    ],
+    "lvl": 18,
+    "ds": 2557,
+    "dpath": 20.1,
+    "arc": 45.0,
+    "camp": 5,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1770,
+    "arc_trees": 112.5
+   },
+   {
+    "x": 2217,
+    "y": -854,
+    "n": 3,
+    "ids": [
+     "ngnv",
+     "ngnw",
+     "ngnw"
+    ],
+    "lvl": 11,
+    "ds": 4505,
+    "dpath": 29.9,
+    "arc": 22.5,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 3907,
+    "arc_trees": 270.0
+   },
+   {
+    "x": 7278,
+    "y": -7144,
+    "n": 1,
+    "ids": [
+     "nftb"
+    ],
+    "lvl": 4,
+    "ds": 4023,
+    "dpath": Infinity,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 3523,
+    "arc_trees": 112.5
+   },
+   {
+    "x": 2567,
+    "y": 4284,
+    "n": 3,
+    "ids": [
+     "ngnb",
+     "ngno",
+     "ngno"
+    ],
+    "lvl": 5,
+    "ds": 2262,
+    "dpath": 11,
+    "arc": 45.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1691,
+    "arc_trees": 270.0
+   },
+   {
+    "x": -7074,
+    "y": -7407,
+    "n": 5,
+    "ids": [
+     "nftb",
+     "nftt",
+     "nggr",
+     "nrdk",
+     "nrdk"
+    ],
+    "lvl": 22,
+    "ds": 4284,
+    "dpath": Infinity,
+    "arc": 0.0,
+    "camp": 0,
+    "acqs": [
+     -1.0
+    ],
+    "acqmargin": 3554,
+    "arc_trees": 146.25
+   },
+   {
+    "x": -4285,
+    "y": 2102,
+    "n": 3,
+    "ids": [
+     "ngnb",
+     "ngno",
+     "ngno"
+    ],
+    "lvl": 5,
+    "ds": 2479,
+    "dpath": 13,
+    "arc": 135.0,
+    "camp": 3,
+    "acqs": [
+     -2.0
+    ],
+    "acqmargin": 1880,
+    "arc_trees": 270.0
+   }
+  ],
+  "start_blocker_creeps": 20,
+  "neutrals": [
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     3668,
+     5241,
+     8566,
+     7952
+    ],
+    "path": [
+     22.3,
+     34,
+     63.8,
+     57.6
+    ]
+   },
+   {
+    "id": "nmer",
+    "name": "Mercenary Camp",
+    "air": [
+     8080,
+     3607,
+     5018,
+     9017
+    ],
+    "path": [
+     59.2,
+     21.5,
+     33,
+     67.8
+    ]
+   },
+   {
+    "id": "nmer",
+    "name": "Mercenary Camp",
+    "air": [
+     4827,
+     8731,
+     8183,
+     4010
+    ],
+    "path": [
+     31,
+     64.5,
+     59.0,
+     24.9
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     8305,
+     13520,
+     10953,
+     2472
+    ],
+    "path": [
+     61.7,
+     105.2,
+     87.3,
+     21.9
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     13282,
+     10983,
+     2776,
+     8019
+    ],
+    "path": [
+     103.4,
+     86.7,
+     22.3,
+     61.8
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     10711,
+     2308,
+     8143,
+     13471
+    ],
+    "path": [
+     84.9,
+     17.9,
+     60.9,
+     105.0
+    ]
+   },
+   {
+    "id": "ngad",
+    "name": "Goblin Laboratory",
+    "air": [
+     2631,
+     8332,
+     13464,
+     11122
+    ],
+    "path": [
+     18.3,
+     61.7,
+     105.2,
+     87.5
+    ]
+   },
+   {
+    "id": "ngme",
+    "name": "Goblin Merchant",
+    "air": [
+     8561,
+     7846,
+     3750,
+     5261
+    ],
+    "path": [
+     63.8,
+     56.6,
+     23.3,
+     35.8
+    ]
+   },
+   {
+    "id": "ntav",
+    "name": "Tavern",
+    "air": [
+     5670,
+     6108,
+     6179,
+     5991
+    ],
+    "path": [
+     38.1,
+     41.7,
+     41.4,
+     39.9
+    ]
+   }
+  ],
+  "other_neutral_ids": {
+   "nshe": 7,
+   "npig": 7
+  },
+  "trees": 3308,
+  "trees_per_playable_cell": 0.215,
+  "tree_cell_share": 0.215,
+  "tree_ids": {
+   "LTlt": 3308
+  },
+  "nearest_tree_wu": [
+   653,
+   659,
+   716,
+   704
+  ],
+  "trees_within_1500": [
+   167,
+   159,
+   169,
+   197
+  ],
+  "decor_types": 38,
+  "decor_count": 343,
+  "decor_top": [
+   [
+    "LRrk",
+    138
+   ],
+   [
+    "LPrs",
+    56
+   ],
+   [
+    "APct",
+    23
+   ],
+   [
+    "ZPfw",
+    23
+   ],
+   [
+    "AObd",
+    14
+   ],
+   [
+    "LPlp",
+    14
+   ],
+   [
+    "AWfs",
+    11
+   ],
+   [
+    "LPfp",
+    9
+   ]
+  ],
+  "cliff_layers": {
+   "0": 589,
+   "1": 2861,
+   "2": 12801,
+   "3": 4402,
+   "4": 1886,
+   "5": 1875,
+   "6": 1090,
+   "7": 369,
+   "8": 34,
+   "9": 14
+  },
+  "ramp_points": 0,
+  "water_share": 0.104,
+  "deep_water_share": 0.023,
+  "walkable_share": 0.487,
+  "walk_sym": {
+   "rot180": 87.7,
+   "mirrorX": 86.38,
+   "mirrorY": 84.55,
+   "rot90": 88.86,
+   "diag": 84.87,
+   "antidiag": 85.18
+  },
+  "main_exit_width_cells": [
+   21,
+   21,
+   23,
+   19
+  ]
+ }
+}

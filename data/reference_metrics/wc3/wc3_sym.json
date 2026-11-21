@@ -1,0 +1,272 @@
+{
+ "Amazonia.w3x": {
+  "shift": [
+   -4,
+   -4
+  ],
+  "best": "diag",
+  "walk_sym": {
+   "rot180": 89.06,
+   "mirrorX": 89.34,
+   "mirrorY": 90.44,
+   "rot90": 90.1,
+   "diag": 90.65,
+   "antidiag": 88.68
+  },
+  "mine_dev_max": 5476,
+  "creep_dev_max": 5472,
+  "creep_dev_p90": 5349,
+  "tree_mirrored_within64": 0.47,
+  "tree_mirrored_within256": 0.721,
+  "decor_mirrored_share": 0.109
+ },
+ "AutumnLeaves_v2-0.w3x": {
+  "shift": [
+   0,
+   0
+  ],
+  "best": "rot180",
+  "walk_sym": {
+   "rot180": 92.84,
+   "mirrorX": 77.01,
+   "mirrorY": 76.63,
+   "rot90": 75.39,
+   "diag": 72.51,
+   "antidiag": 72.66
+  },
+  "mine_dev_max": 0,
+  "creep_dev_max": 3503,
+  "creep_dev_p90": 2151,
+  "tree_mirrored_within64": 0.738,
+  "tree_mirrored_within256": 0.834,
+  "decor_mirrored_share": 0.23
+ },
+ "ConcealedHill.w3x": {
+  "shift": [
+   0,
+   0
+  ],
+  "best": "rot180",
+  "walk_sym": {
+   "rot180": 89.08,
+   "mirrorX": 79.85,
+   "mirrorY": 79.29
+  },
+  "mine_dev_max": 1629,
+  "creep_dev_max": 1359,
+  "creep_dev_p90": 599,
+  "tree_mirrored_within64": 0.703,
+  "tree_mirrored_within256": 0.913,
+  "decor_mirrored_share": 0.087
+ },
+ "EchoIsles.w3x": {
+  "shift": [
+   -4,
+   4
+  ],
+  "best": "mirrorX",
+  "walk_sym": {
+   "rot180": 86.12,
+   "mirrorX": 91.36,
+   "mirrorY": 85.59
+  },
+  "mine_dev_max": 0,
+  "creep_dev_max": 1210,
+  "creep_dev_p90": 870,
+  "tree_mirrored_within64": 0.518,
+  "tree_mirrored_within256": 0.741,
+  "decor_mirrored_share": 0.07
+ },
+ "KingAndCountry.w3x": {
+  "shift": [
+   0,
+   0
+  ],
+  "best": "rot180",
+  "walk_sym": {
+   "rot180": 89.98,
+   "mirrorX": 74.11,
+   "mirrorY": 74.26
+  },
+  "mine_dev_max": 128,
+  "creep_dev_max": 175,
+  "creep_dev_p90": 159,
+  "tree_mirrored_within64": 0.697,
+  "tree_mirrored_within256": 0.996,
+  "decor_mirrored_share": 0.284
+ },
+ "LastRefuge_v1.4.w3x": {
+  "shift": [
+   -2,
+   -2
+  ],
+  "best": "rot180",
+  "walk_sym": {
+   "rot180": 83.94,
+   "mirrorX": 67.4,
+   "mirrorY": 66.92,
+   "rot90": 61.3,
+   "diag": 72.04,
+   "antidiag": 70.23
+  },
+  "mine_dev_max": 256,
+  "creep_dev_max": 533,
+  "creep_dev_p90": 363,
+  "tree_mirrored_within64": 0.46,
+  "tree_mirrored_within256": 0.661,
+  "decor_mirrored_share": 0.063
+ },
+ "NorthernIsles.w3x": {
+  "shift": [
+   0,
+   0
+  ],
+  "best": "rot180",
+  "walk_sym": {
+   "rot180": 95.43,
+   "mirrorX": 76.44,
+   "mirrorY": 76.27
+  },
+  "mine_dev_max": 64,
+  "creep_dev_max": 3409,
+  "creep_dev_p90": 3002,
+  "tree_mirrored_within64": 0.864,
+  "tree_mirrored_within256": 0.993,
+  "decor_mirrored_share": 0.761
+ },
+ "ShallowGrave_v1.4.w3x": {
+  "shift": [
+   0,
+   0
+  ],
+  "best": "rot180",
+  "walk_sym": {
+   "rot180": 94.97,
+   "mirrorX": 79.21,
+   "mirrorY": 78.99,
+   "rot90": 79.54,
+   "diag": 80.66,
+   "antidiag": 80.47
+  },
+  "mine_dev_max": 143,
+  "creep_dev_max": 143,
+  "creep_dev_p90": 143,
+  "tree_mirrored_within64": 0.843,
+  "tree_mirrored_within256": 0.964,
+  "decor_mirrored_share": 0.827
+ },
+ "ShatteredExile_v2-07.w3x": {
+  "shift": [
+   0,
+   0
+  ],
+  "best": "rot180",
+  "walk_sym": {
+   "rot180": 91.48,
+   "mirrorX": 90.32,
+   "mirrorY": 89.91
+  },
+  "mine_dev_max": 0,
+  "creep_dev_max": 2213,
+  "creep_dev_p90": 255,
+  "tree_mirrored_within64": 0.847,
+  "tree_mirrored_within256": 0.97,
+  "decor_mirrored_share": 0.119
+ },
+ "Springtime_v1.1.w3x": {
+  "shift": [
+   0,
+   0
+  ],
+  "best": "rot180",
+  "walk_sym": {
+   "rot180": 95.75,
+   "mirrorX": 71.6,
+   "mirrorY": 71.6,
+   "rot90": 71.11,
+   "diag": 80.86,
+   "antidiag": 80.59
+  },
+  "mine_dev_max": 1000,
+  "creep_dev_max": 1584,
+  "creep_dev_p90": 66,
+  "tree_mirrored_within64": 0.912,
+  "tree_mirrored_within256": 0.931,
+  "decor_mirrored_share": 0.766
+ },
+ "TerenasStand_LV.w3x": {
+  "shift": [
+   -4,
+   -2
+  ],
+  "best": "rot180",
+  "walk_sym": {
+   "rot180": 84.79,
+   "mirrorX": 74.36,
+   "mirrorY": 75.82
+  },
+  "mine_dev_max": 630,
+  "creep_dev_max": 858,
+  "creep_dev_p90": 668,
+  "tree_mirrored_within64": 0.273,
+  "tree_mirrored_within256": 0.541,
+  "decor_mirrored_share": 0.068
+ },
+ "Tidehunters_v1.2.w3x": {
+  "shift": [
+   4,
+   4
+  ],
+  "best": "diag",
+  "walk_sym": {
+   "rot180": 62.36,
+   "mirrorX": 67.38,
+   "mirrorY": 68.02,
+   "rot90": 67.68,
+   "diag": 94.91,
+   "antidiag": 62.47
+  },
+  "mine_dev_max": 0,
+  "creep_dev_max": 303,
+  "creep_dev_p90": 108,
+  "tree_mirrored_within64": 0.843,
+  "tree_mirrored_within256": 0.988,
+  "decor_mirrored_share": 0.714
+ },
+ "TurtleRock.w3x": {
+  "shift": [
+   2,
+   0
+  ],
+  "best": "rot180",
+  "walk_sym": {
+   "rot180": 84.38,
+   "mirrorX": 73.42,
+   "mirrorY": 74.69
+  },
+  "mine_dev_max": 689,
+  "creep_dev_max": 670,
+  "creep_dev_p90": 566,
+  "tree_mirrored_within64": 0.308,
+  "tree_mirrored_within256": 0.658,
+  "decor_mirrored_share": 0.159
+ },
+ "TwistedMeadows.w3x": {
+  "shift": [
+   0,
+   -2
+  ],
+  "best": "rot180",
+  "walk_sym": {
+   "rot180": 87.36,
+   "mirrorX": 77.63,
+   "mirrorY": 78.27
+  },
+  "mine_dev_max": 659,
+  "creep_dev_max": 1004,
+  "creep_dev_p90": 537,
+  "tree_mirrored_within64": 0.505,
+  "tree_mirrored_within256": 0.82,
+  "decor_mirrored_share": 0.067
+ }
+}
