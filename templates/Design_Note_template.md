@@ -33,6 +33,12 @@ SCENE_VIEW: <scene> :: <location name> :: <alliance-vision | revealer | own unit
 before the first line, removed after the scene unless the vision should stay; own units present: the player's units
 stand there at that moment.)
 
+## Escort route (only for escort missions)
+ESCORT_ROUTE: <escortee> :: <length in tiles and minutes> :: <threats with locations> :: <what the player must do>
+(Trace the route before building and draw it in the routes PNG: at least a third of the map width or several minutes of
+travel, through dangerous ground, an escortee that cannot survive alone, every threat reachable by the player without
+breaking an enemy base.)
+
 ## Briefing and voice
 - Briefing: who speaks (portraits), what the objectives screen shows.
 - Voiced lines: every story line voiced (WC3: docs/wc3-storytelling-cinematics.md; Brood War: edge-tts, docs/bw-campaign-design.md
