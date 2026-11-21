@@ -26,9 +26,10 @@ A request for "a mission", "a random mission" or "a map with a story" is a campa
 4. **Briefing** with speaking portraits, objectives and voiced lines (`Cast.brief` / `m.B`, `b_portrait`, `b_trans`).
 5. **Every story line voiced:** edge-tts WAVs embedded in the map, in-mission lines as Transmissions, VO markup on every
    line (`docs/voice-delivery-markup.md`); Display Text only for status lines.
-6. **Rewards make sense in the story:** every resource or unit reward has an in-world source the player sees.
-   Side objectives vary (rescue, capture, protect, reach or hold, escort, ally, secret, or none); at most one destroy
-   side objective and one resource reward per mission, never destroy side objectives in two neighbouring missions
+6. **Rewards make sense in the story:** the reward is what the objective yields in the story (freed prisoners join, a
+   captured depot gives its resources, a saved scientist unlocks tech), with an in-world source the player sees
+   (`REWARD_WHY:`). Side objectives vary (rescue, capture, protect, reach or hold, escort, ally, secret, or none); at
+   most one destroy side objective per mission, never destroy side objectives in two neighbouring missions
    (`SIDE_OBJECTIVE:` lines). Destroy targets that can morph (Hatchery -> Lair -> Hive, Creep Colony, Spire) count the
    whole chain: `m.target_gone` / `m.target_stands` + `m.T_each` (`docs/bw-campaign-design.md`).
 7. **Checks:** `python3 tools/bw/predelivery_check.py output/<map>.scx` (includes the story/briefing/voice checks,

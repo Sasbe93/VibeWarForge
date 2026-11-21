@@ -17,14 +17,13 @@ target count), e.g. not "destroy 3 targets before a countdown" twice in a row.
 ## Side objectives (StarCraft maps)
 One line per optional objective (none is fine). Vary the type: rescue or free a unit that joins, capture or protect a
 place, reach or hold a place, escort, gain an ally, a secret, a choice. At most one destroy side objective per mission and
-never in two neighbouring missions; at most one resource reward per mission (prefer units, tech, a base, an ally, info).
+never in two neighbouring missions. The reward follows from the objective (see Rewards below), none is fine.
 Checked by side_objective_variety (exception: SIDE_OBJECTIVE_REPEAT_OK: <reason>):
 SIDE_OBJECTIVE: <name> :: <rescue|capture|protect|reach|hold|escort|ally|secret|collect|choice|destroy|other> :: <units|tech|base|ally|info|none|resources>
 
 ## Rewards
-One line per reward; the source is something the player sees in the world (rescued unit or squad that joins, grateful
-ally who joins or helps, captured base or building, unlocked tech, information, seized cargo, and only rarely a cache of
-resources or loot):
+One line per reward. The reward is what the objective yields in the story, with a source the player sees (freed
+prisoners join, a captured depot gives its stored resources, a saved scientist unlocks tech, a won ally sends troops):
 REWARD_WHY: <objective> :: <reward> :: <in-world source the player sees>
 
 ## Mission type
