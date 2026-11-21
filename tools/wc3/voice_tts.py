@@ -4,7 +4,8 @@
 Engine: Kokoro-82M (hexgrad, model weights + voice packs Apache-2.0) run through kokoro-onnx (MIT). Apache-2.0 places no
 restriction on generated audio, so the lines may be shipped inside public maps. Credit line: VOICE_CREDIT.
 Not allowed as engines: online/consumer TTS whose terms do not grant use of the output (e.g. Edge Read Aloud via edge-tts,
-whose service terms are unclear) - do not add them here.
+whose service terms are unclear) - do not add them here. This is the WC3 rule only; the BW pipeline (tools/lib/bw/sclib.py)
+uses edge-tts, see DEPENDENCIES.md.
 Setup (once per box): pip install kokoro-onnx soundfile ; model files into $VMF_KOKORO_DIR (default ~/tts/kokoro):
   https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
   https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin

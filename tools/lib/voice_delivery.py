@@ -3,7 +3,7 @@
 
 Every voiced line carries a DELIVERY SCRIPT: the spoken words plus notes on emotion, stress, pauses and tempo.
 The notes stay in the sources, in war3map.j (as `// VO:` comments) and in the Voice_Script*.md next to the map, so an agent
-with a better (emotional) TTS can re-voice the lines later. The free pipeline (Kokoro / edge-tts + ffmpeg) applies what it can:
+with a better (emotional) TTS can re-voice the lines later. The free pipeline (Kokoro for WC3 / edge-tts for BW, + ffmpeg) applies what it can:
 pauses as real silence between segments, per-segment tempo/pitch/volume, emotion presets, and a local stress boost.
 
 MARKUP (full spec: docs/voice-delivery-markup.md)

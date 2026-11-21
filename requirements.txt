@@ -7,3 +7,5 @@ eudplib
 # voiced dialogue (tools/wc3/voice_tts.py); model files: see DEPENDENCIES.md
 kokoro-onnx
 soundfile
+# BW voiced dialogue (tools/lib/bw/sclib.py Map.voice): edge-tts CLI + ffmpeg/ffprobe on PATH; see DEPENDENCIES.md (output rights)
+edge-tts
