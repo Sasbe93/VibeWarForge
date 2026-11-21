@@ -67,7 +67,7 @@
 | G-M2 | **Environment as a weapon** (explosive barrels, collapsing dam, capturable towers) | adapted: neutral buildings/units + triggers | yes | yes | design idea |
 | G-M3 | **Timed window events** (interceptable caravan, prisoner transport) | yes | yes (Human05 grain caravan) | yes | design idea; Blizzard Human05 |
 | G-M4 | **Enemy reacts to the player** (reinforces another base, changes route) | yes (AI scripts/triggers) | yes | yes | design idea |
-| G-M5 | **Exploration rewards** (hidden merchant, buff shrine, optional mini-boss) | adapted: resources, units, rescuables | yes | yes | design idea |
+| G-M5 | **Exploration rewards** (hidden merchant, buff shrine, optional mini-boss) | adapted: rescuables, units, tech, a captured base; resources rarely | yes | yes | design idea |
 | G-M6 | **Defense phase with warning countdown** before a big wave | yes (Desperate Alliance "Survive for 30 minutes") | yes (Human05 "Survive for 30 minutes") | yes (Zero Hour) | design idea; Blizzard |
 | G-M7 | **Day/night as mechanic** (night-only enemies, day-only access) | — | yes | yes (`GameTimeOfDaySet`, `GameSetLighting` verified in natives.galaxy; Outbreak: infested come out at night) | design idea; SC2 Outbreak |
 | G-M8 | **Allied AI with its own agenda**, consequences if it falls | yes | yes | yes | design idea |
