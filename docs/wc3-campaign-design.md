@@ -175,6 +175,17 @@ Auto-check: `tools/wc3/check_mission_feedback_rules.py` (in `wc3mission.finish(d
 ## Side quests are real fights (play-test lesson)
 A side quest on Hard was guarded by one nerubian caster and two spiders, the same on every difficulty; only the player handicap changed the HP by about 10 %. Every optional quest needs defenders that scale noticeably: thresholds Normal >= 3 units / 1200 HP / a level-3 unit, Hard >= 5 units / 2000 HP and >= 1.3 x Normal HP, Brutal >= Hard (or a deliberate extra mechanic). Check: `check_sidequest_challenge.py` (guard groups `g<Token>*` of quest `q<Token>`, `SIDEQUEST_GROUP q g`, or hostile units within 900 of the quest target unit; difficulty blocks and `exitwhen i >= gDiff` loops are evaluated). The trigger test adds a runtime step `sidequest_challenge` that counts the living defenders 3 s after the start at the chosen difficulty.
 
+## Rewards make sense in the story (fixed rule, same rule for BW)
+Never give flat gold, lumber or units for an unrelated deed (gold for killing three bandits). A reward needs an
+in-world source the player sees: a guarded cache or loot (a creep drop, a strongbox in the camp), a grateful ally who
+pays or joins, a captured base or gold mine, a rescued unit, seized convoy cargo, unlocked tech. One Design Note line per
+reward: `REWARD_WHY: <objective> :: <reward> :: <in-world source the player sees>`.
+Check: `tools/wc3/check_reward_reason.py` (in `run_all_checks.sh`). FAIL: a gold/lumber add outside map initialisation
+(AdjustPlayerStateBJ, SetPlayerState(BJ) with GetPlayerState + N) without a REWARD_WHY line naming the amount; reward
+units or items created in quest-completion code without a REWARD_WHY line; a REWARD_WHY whose source only says
+"reward"/"bonus". Exempt: map initialisation, gold-mine refills (SetResourceAmount), loot created where the killed unit
+died, and functions marked `// INCOME_OK: <reason>` (non-quest income the story explains).
+
 ## No friendly fire from scripted orders (friendly_fire_orders, mandatory)
 - An objective structure and its guards are on ONE side. Neutral Hostile is the enemy of every player: Neutral Hostile creeps next to a building of an enemy computer player treat that building as a target (auto-acquire, attack-move). Give the guards the structure's owner (builder default `Mission.OWNER_FIX = 'guards'` with `STRUCTURE_IDS`) or ally the two players in both directions (`GR_AllySides`, `ALLIED_SIDES`).
 - Guard responses only order guards of the objective's side, and each order only when the attacker is an enemy of THAT guard's owner (`IsUnitEnemy(attacker, GetOwningPlayer(guard))`). No attack-move fallback: an attack-move acquires every enemy on the way. Use `GR_Register(obj)` from `tools/wc3/jass_guard_response.j` (injected with the story helpers).
