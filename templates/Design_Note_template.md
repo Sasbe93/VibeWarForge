@@ -17,6 +17,14 @@ One line per reward (gold, lumber, minerals, gas, units, items); the source is s
 (guarded cache or loot, grateful ally who pays or joins, captured base/mine/depot, rescued unit, seized cargo, unlocked tech):
 REWARD_WHY: <objective> :: <reward> :: <in-world source the player sees>
 
+## Start setup
+What the player owns at mission start follows the story and differs from the previous missions. Default: a small
+core to build up from (a hall, 2-6 workers, at most one tech building, a small squad). Towers, ready new tech buildings
+and more than 3 of a newly unlocked unit only with a reason:
+START_SETUP: <no-base|build-up|small-base|established> :: <story reason>
+START_DEFENSE_WHY: <what> :: <reason>          (only if more than 2 towers at start)
+START_GIFT_WHY: <unit or building> :: <reason>  (only for a ready new building or more than 3 of a new unit)
+
 ## Briefing and voice
 - Briefing: who speaks (portraits), what the objectives screen shows.
 - Voiced lines: every story line voiced (WC3: docs/wc3-storytelling-cinematics.md; Brood War: edge-tts, docs/bw-campaign-design.md
