@@ -5,6 +5,8 @@ Brood War worked example: templates/Design_Note_example_bw_mission.md.
 
 ## Campaign outline
 Chapter list of the campaign this mission belongs to (a stand-alone mission still gets a short outline first).
+As a table with a Goal (or Pattern) column; neighbouring chapters use different patterns (objective type, pressure,
+target count), e.g. not "destroy 3 targets before a countdown" twice in a row.
 
 ## Story
 ## Objectives
@@ -16,6 +18,12 @@ Chapter list of the campaign this mission belongs to (a stand-alone mission stil
 One line per reward (gold, lumber, minerals, gas, units, items); the source is something the player sees in the world
 (guarded cache or loot, grateful ally who pays or joins, captured base/mine/depot, rescued unit, seized cargo, unlocked tech):
 REWARD_WHY: <objective> :: <reward> :: <in-world source the player sees>
+
+## Mission type
+What the player mainly does, the pressure, and how many targets. Neighbouring missions differ: never the same type and
+pressure as one of the previous 2 missions, nor the same type and target count (exception only with a reason):
+MISSION_TYPE: <destroy-targets|conquest|escort|hold|rescue|hero|reach|capture> :: <time-limit|waves|hold-timer|none> :: <target count>
+MISSION_TYPE_REPEAT_OK: <reason>               (only when a repeat is deliberate)
 
 ## Start setup
 What the player owns at mission start follows the story and differs from the previous missions. Default: a small
