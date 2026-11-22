@@ -19,23 +19,30 @@ A request for "a mission", "a random mission" or "a map with a story" is a campa
 1. **Campaign outline first.** Even a single mission gets a short chapter outline (where it sits, what came before and
    after). Pick patterns from `docs/campaign-design-catalog.md`.
 2. **Design note** from `templates/Design_Note_template.md` (worked example: `templates/Design_Note_example_bw_mission.md`):
-   story, objectives, `REWARD_WHY:` per reward, map, flow, briefing and voice, `## Characters`.
-3. **Build on the example:** copy `tools/bw/example_mission.py` and change terrain, bases, cast and triggers. It uses
+   story, objectives, `REWARD_WHY:` per reward, map, flow, briefing and voice, `## Characters`. For every main and
+   side objective write `OBJECTIVE_PATHS:` with the real path length, travel time, threats or waves, and why it is a
+   challenge (and `ESCORT_ROUTE:` as well when there is an escort).
+3. **Trace every path before building.** Pathfind start to each target, a rescue there and back, and every attack wave
+   to the player base (`tools/bw/path_tool.py`). If a path is short or safe, if a survive timer lets fewer than three
+   waves arrive, or if every wave shares one choke, redesign the map (longer or guarded route, more approaches, earlier
+   or stronger waves). Draw the paths on the routes PNG. The checkers fail a rescue or reach with fewer than two threat
+   encounters and a weak survive setup (`docs/bw-campaign-design.md`, predelivery check 51).
+4. **Build on the example:** copy `tools/bw/example_mission.py` and change terrain, bases, cast and triggers. It uses
    `tools/lib/bw/sclib.py` and `tools/lib/bw/missionkit.py`. Read `docs/bw-campaign-design.md` and
    `docs/bw-map-design.md` first (terrain needs isomtool + tileset files: `docs/bw-terrain-setup.md`).
-4. **Briefing** with speaking portraits, objectives and voiced lines (`Cast.brief` / `m.B`, `b_portrait`, `b_trans`).
-5. **Every story line voiced:** edge-tts WAVs embedded in the map, in-mission lines as Transmissions, VO markup on every
+5. **Briefing** with speaking portraits, objectives and voiced lines (`Cast.brief` / `m.B`, `b_portrait`, `b_trans`).
+6. **Every story line voiced:** edge-tts WAVs embedded in the map, in-mission lines as Transmissions, VO markup on every
    line (`docs/voice-delivery-markup.md`); Display Text only for status lines.
-6. **Rewards make sense in the story:** the reward is what the objective yields in the story (freed prisoners join, a
+7. **Rewards make sense in the story:** the reward is what the objective yields in the story (freed prisoners join, a
    captured depot gives its resources, a saved scientist unlocks tech), with an in-world source the player sees
    (`REWARD_WHY:`). Side objectives vary (rescue, capture, protect, reach or hold, escort, ally, secret, or none); at
    most one destroy side objective per mission, never destroy side objectives in two neighbouring missions
    (`SIDE_OBJECTIVE:` lines). Destroy targets that can morph (Hatchery -> Lair -> Hive, Creep Colony, Spire) count the
    whole chain: `m.target_gone` / `m.target_stands` + `m.T_each` (`docs/bw-campaign-design.md`).
-7. **Checks:** `python3 tools/bw/predelivery_check.py output/<map>.scx` (includes the story/briefing/voice checks,
+8. **Checks:** `python3 tools/bw/predelivery_check.py output/<map>.scx` (includes the story/briefing/voice checks,
    `check_map_design_bw.py`, cliff shape and rewards), plus the placement check and trigger simulation
    (`tools/bw/placecheck.py`, `tools/bw/trigsim.py`; the example script runs all of them).
-8. **Deliver only with 0 FAIL**, with the design note, the voice script and a minimap PNG; say what was not tested in-game.
+9. **Deliver only with 0 FAIL**, with the design note, the voice script, a minimap PNG and a routes PNG; say what was not tested in-game.
 
 ## Warcraft III campaign mission
 Read `docs/wc3-campaign-design.md`, `docs/wc3-storytelling-cinematics.md`, `docs/wc3-map-design.md` and

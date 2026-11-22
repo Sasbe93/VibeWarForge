@@ -48,6 +48,14 @@ SCENE_VIEW: <scene> :: <location name> :: <alliance-vision | revealer | own unit
 before the first line, removed after the scene unless the vision should stay; own units present: the player's units
 stand there at that moment.)
 
+## Objective paths (every mission)
+For every main and side objective, trace the real path on the map (player start to each target, a rescue there and back,
+scripted waves to the player base with travel and arrival times, approach directions and chokes) and judge whether the
+mission is a challenge. Draw the paths on the routes PNG. A short or safe path, or a survive timer that lets fewer than
+three waves arrive or funnels every wave through one choke, means a redesign.
+OBJECTIVE_PATHS: <objective> :: <path(s) with length in tiles and travel time> :: <threats on the way / waves and directions> :: <why it is a challenge>
+OBJECTIVE_PATHS_EASY_OK: <reason>            (only when a short, safe or single-choke path is deliberate)
+
 ## Escort route (only for escort missions)
 ESCORT_ROUTE: <escortee> :: <length in tiles and minutes> :: <threats with locations> :: <what the player must do>
 (Trace the route before building and draw it in the routes PNG: at least a third of the map width or several minutes of
