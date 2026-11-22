@@ -30,7 +30,11 @@ A request for "a mission", "a random mission" or "a map with a story" is a campa
    or the main objective can be finished before the first wave or path encounter, redesign the map or cut the declared
    duration. Draw the paths on the routes PNG. The checkers fail a missing TARGET_DURATION, a budget the path cannot
    fill, and a weak survive setup (`docs/bw-campaign-design.md`, predelivery check 51).
-4. **Build on the example:** copy `tools/bw/example_mission.py` and change terrain, bases, cast and triggers. It uses
+4. **Build on an example (structure only):** pick one of the BW example missions (`docs/bw-example-missions.md`:
+   `tools/bw/example_mission.py` and `tools/bw/examples/`, every complexity level and mission type) and copy its
+   STRUCTURE only: the build pipeline, the design-note sections and the trigger, voice and check conventions. Never copy
+   its mission design (objective, map layout, start setup, enemy, story, rewards): every mission invents its own, uses a
+   different example than the previous mission, and neighbouring missions follow the mission-type variety rule. They use
    `tools/lib/bw/sclib.py` and `tools/lib/bw/missionkit.py`. Read `docs/bw-campaign-design.md` and
    `docs/bw-map-design.md` first (terrain needs isomtool + tileset files: `docs/bw-terrain-setup.md`).
 5. **Briefing** with speaking portraits, objectives and voiced lines (`Cast.brief` / `m.B`, `b_portrait`, `b_trans`).

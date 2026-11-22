@@ -30,7 +30,11 @@ python3 tools/ranked/wc3/example_2p.py          # generate an example WC3 melee 
 bash tools/wc3/run_all_checks.sh output/<map>.w3x
 # Brood War (after docs/bw-terrain-setup.md): example campaign mission with voiced briefing, built and checked
 python3 tools/bw/example_mission.py
+python3 tools/bw/examples/ex_relay_watch.py      # more BW examples: docs/bw-example-missions.md
 ```
+The BW example missions show the structure of a mission (build pipeline, design note, triggers, voice, checks) at every
+complexity level and for several mission types. Copy the structure only, never the mission design: each new mission
+invents its own objective, map, start setup, enemy, story and rewards.
 Always run tools from the repository root. Read the matching guide in `docs/` before building; the checkers enforce the rules written there.
 
 ## Dependencies
