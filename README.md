@@ -37,6 +37,26 @@ complexity level and for several mission types. Copy the structure only, never t
 invents its own objective, map, start setup, enemy, story and rewards.
 Always run tools from the repository root. Read the matching guide in `docs/` before building; the checkers enforce the rules written there.
 
+## Windows setup
+The tools are developed on Linux; the Brood War pipeline also runs natively on Windows (WSL2 works too, see
+`docs/bw-terrain-setup.md`). On Windows:
+- Python 3.10+ from python.org; run the commands with `py` (or `python`) instead of `python3`.
+- **Turn on Python's UTF-8 mode once:** `setx PYTHONUTF8 1` (then open a new terminal). Without it, Python reads and
+  writes text files in the ANSI code page (cp1252) and non-ASCII text in design notes, voice scripts and check output
+  turns into mojibake or crashes; `sclib` prints a warning when it is off.
+- `py -m pip install -r requirements.txt`. edge-tts is called as `edge-tts` when it is on PATH, otherwise as
+  `py -m edge_tts`, so pip's `Scripts` folder does not have to be on PATH.
+- FFmpeg with ffprobe on PATH, e.g. `winget install --id Gyan.FFmpeg -e --scope user`.
+- isomtool: git, CMake 3.24+ and a C++20 compiler (e.g. WinLibs MinGW-w64 GCC via
+  `winget install BrechtSanders.WinLibs.POSIX.UCRT`, or Visual Studio 2022), then `py tools\bw\build_isomtool.py --casclib-dll`.
+  Tilesets: `py tools\bw\extract_tilesets.py --casc "C:\Program Files (x86)\StarCraft"`. VCOD:
+  `py tools\bw\extract_vcod.py <any map you own>`. Details: `docs/bw-terrain-setup.md`.
+- Not available natively: the real ScmDraft 2 open test (`tools/bw/scmdraft_harness`, runs ScmDraft under wine on
+  Linux/WSL; on Windows `check_scmdraft_open.py` reports the static result and asks you to open the map in ScmDraft
+  yourself) and the bash scripts (`tools/wc3/run_all_checks.sh` needs Git Bash or WSL with a working `python3`).
+- Map files are locked while a tool has them open (Windows error 32). The tools release every MPQ handle before the
+  map is opened again; when you change a BW tool, check it on Linux with `tools/bw/sim_windows_locks.py`.
+
 ## Dependencies
 See `DEPENDENCIES.md`. Most checkers run with Python packages only; some need files you provide yourself (pjass, JASS headers, stock SLKs, BW tilesets). Reference maps are not needed: their measurements are bundled in `data/reference_metrics/`.
 

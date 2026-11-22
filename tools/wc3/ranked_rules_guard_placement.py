@@ -1,5 +1,5 @@
 """guard_placement guards of neutral buildings/expansion mines stand BETWEEN the object and its open approach, facing it, not at the map edge."""
-import sys,math,numpy as np
+import os,sys,math,numpy as np
 from collections import deque
 sys.path.insert(0,'tools/lib/wc3')
 import w3parse
@@ -78,5 +78,5 @@ if __name__=='__main__':
     allr={}
     for p in sys.argv[1:]:
         R=metrics(p); allr[p]=R; n=sum(1 for g in R if bad(g))
-        print('%-28s guards %3d bad %3d  cone med %s face med %s' % (p.split('/')[-1][:28],len(R),n,np.median([g['cone'] for g in R]) if R else '-',np.median([g['face'] for g in R]) if R else '-'))
-    json.dump(allr,open('/tmp/guard_placement.json','w'))
+        print('%-28s guards %3d bad %3d  cone med %s face med %s' % (os.path.basename(p)[:28],len(R),n,np.median([g['cone'] for g in R]) if R else '-',np.median([g['face'] for g in R]) if R else '-'))
+    import tempfile; json.dump(allr,open(os.path.join(tempfile.gettempdir(),'guard_placement.json'),'w'))
