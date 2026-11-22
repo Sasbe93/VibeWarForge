@@ -171,3 +171,13 @@ The planned length of a mission, and the real paths of every objective, are judg
 - FAIL when TARGET_DURATION is missing or incomplete, when the walk+fight estimate is below about a third of the budget, when there are fewer encounters than the budget asks for, or when the main objective can be finished before the first wave or path encounter. `OBJECTIVE_PATHS_EASY_OK: <reason>` waives the difficulty rules, not a missing duration line.
 
 Brood War: predelivery check 51, `tools/bw/check_objective_paths.py`. Warcraft III: `tools/wc3/check_objective_paths.py` in `run_all_checks.sh`. StarCraft II: apply both rules the same way in the design note (`docs/sc2-campaign-design.md`); this repository does not yet read SC2 maps, so there is no automated check.
+
+## Cross-game rule: objective shortcuts, enemy-base pressure, tech per chapter (Brood War and Warcraft III)
+- Shortcuts: think through what the player's own units, buildings and abilities (lift-off, flyers, transports,
+  teleports, cloak, building on the spot) can do against each reach/rescue/capture objective; block each vector or
+  accept it. `OBJECTIVE_SHORTCUTS:` / `SHORTCUT_OK:`.
+- Pressure: at least two independent attack sources; no single early-reachable enemy base that is not the objective
+  may switch off every wave and the AI. `PRESSURE_SINGLE_OK:` only by design.
+- Tech: hand the tech tree out chapter by chapter; early chapters restrict it. `TECH_LEVEL: <early|mid|late|full> :: <chapter> :: <what and why>`.
+Brood War: predelivery checks 52-54 (`docs/bw-campaign-design.md`). Warcraft III: the three checks in
+`run_all_checks.sh` (`docs/wc3-campaign-design.md`). Not ported to StarCraft II.

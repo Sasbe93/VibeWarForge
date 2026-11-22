@@ -68,6 +68,21 @@ choke, means a redesign.
 OBJECTIVE_PATHS: <objective> :: <path(s) with length in tiles and travel time> :: <threats on the way / waves and directions> :: <why it is a challenge>
 OBJECTIVE_PATHS_EASY_OK: <reason>            (only when a short, safe or single-choke path is deliberate)
 
+## Shortcuts (Brood War and Warcraft III)
+For each reach, rescue, capture or escort objective: which of the player's units, buildings and abilities could skip
+the guarded path (lift-off, flyers, transports, Recall/Nydus, Blink/Mass Teleport/Zeppelin/teleport items, cloak,
+building next to the target), and how the mission blocks each one, or why skipping is fine.
+OBJECTIVE_SHORTCUTS: <objective|location> :: <vectors the player has> :: <how each one is blocked>
+SHORTCUT_OK: <objective|location> :: <vector> :: <why it is fine>      (only for an accepted shortcut)
+
+## Pressure sources (Brood War and Warcraft III)
+Which bases or off-map sources feed the waves and the AI. At least two independent sources; one early-reachable base
+that is not the objective must not switch off all attacks.
+PRESSURE_SINGLE_OK: <reason>      (only when one source is the design)
+
+## Tech level (Brood War and Warcraft III)
+TECH_LEVEL: <early|mid|late|full> :: <chapter, e.g. M2 of 8, or stand-alone> :: <what the player gets and why>
+
 ## Escort route (only for escort missions)
 ESCORT_ROUTE: <escortee> :: <length in tiles and minutes> :: <threats with locations> :: <what the player must do>
 (Trace the route before building and draw it in the routes PNG: at least a third of the map width or several minutes of

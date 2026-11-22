@@ -36,6 +36,18 @@ TARGET_DURATION: 6 :: Easy 8 / Hard 5 :: Reclaim the Mine=6
 ## Objective paths
 OBJECTIVE_PATHS: Reclaim the Mine :: start at the hall to the north-east keep, around the centre lake, 5811 wu / 22 s at default hero speed (270) :: two Neutral Hostile camps on the centre lane (bandits around 24,28 and gnolls around 40,40) plus footmen at the keep; three path encounters :: the player has to fight both camps and then assault the keep; there is no empty walk to victory
 
+## Shortcuts
+The only objective is a destroy quest (the keep must die), so there is no region to fly, teleport or drop into. The
+player also has no flyers this chapter (Gryphon Aviary and Workshop are tier 2) and no Goblin Laboratory on the map.
+check_objective_shortcuts finds no enter-region objective.
+
+## Pressure sources
+No scripted waves and no campaign AI: the pressure is the two road camps and the keep garrison (objective_paths), and
+the keep is itself the victory target.
+
+## Tech level
+TECH_LEVEL: early :: stand-alone (early chapter of a Human campaign) :: town-hall tier only: Barracks (Footman, Rifleman), Lumber Mill, Blacksmith with level-1 upgrades, Scout and Guard Towers, Arcane Vault with tier-1 items; no Keep or Castle (tools/lib/wc3/tech_tiers.jass_tech_level)
+
 ## Map
 - South-west: the player's hall, peasants and paladin.
 - Centre: a lake and landmark, with a lane around it to the keep.

@@ -11,6 +11,8 @@ import os, sys
 REPO = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', '..')); os.chdir(REPO)
 sys.path.insert(0, 'tools/wc3/mission')
 from wc3mission import Mission, NP, NA
+sys.path.insert(0, 'tools/lib/wc3')
+from tech_tiers import jass_tech_level
 OUTD = 'output/example_mission'; os.makedirs(OUTD, exist_ok=True); OUT = OUTD + '/Example_Mission.w3x'
 
 m = Mission(64, 'Example Mission', 'Reclaim the old mine.', seed=3, players=2)
@@ -65,6 +67,8 @@ DSF_REST, DS_CLICK = _take(DSF, 'DS_Click')
 DSF_PRE, DS_SHOW = _take(DSF_REST, 'DS_Show')
 DS_AFTER = DS_CLICK+DS_SHOW
 cb = [m.OX + M * 128, m.OY + M * 128, -m.OX - M * 128, -m.OY - M * 128]
+# tech per chapter (TECH_LEVEL early in the design note): town-hall tier only, no Keep, no Castle
+TECH = jass_tech_level('Human', 'early')
 LINES = ['The old mine is ours again, once the ogres are gone.', 'Take the keep in the north-east.']
 J = f'''globals
     unit gHero = null
@@ -142,7 +146,7 @@ function Intro takes nothing returns nothing
     call QuestSetRequired(gQ, true)
     call SQ_New(gQ, "Reclaim the Mine", "Destroy the enemy keep. The hero must survive.")
 endfunction
-{DS_AFTER}function InitCustomPlayerSlots takes nothing returns nothing
+{DS_AFTER}{TECH}function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerStartLocation(Player(0), 0)
     call SetPlayerController(Player(0), MAP_CONTROL_USER)
     call SetPlayerRacePreference(Player(0), RACE_PREF_HUMAN)
@@ -169,6 +173,7 @@ function main takes nothing returns nothing
     local trigger t
     call SetCameraBounds({cb[0]:.1f}, {cb[1]:.1f}, {cb[2]:.1f}, {cb[3]:.1f}, {cb[0]:.1f}, {cb[3]:.1f}, {cb[2]:.1f}, {cb[1]:.1f})
     call InitBlizzard()
+    call Mission_TechLevel()
     call InitLines()
     call CreateAll()
     set t = CreateTrigger()

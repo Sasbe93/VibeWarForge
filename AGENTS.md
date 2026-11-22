@@ -30,6 +30,11 @@ A request for "a mission", "a random mission" or "a map with a story" is a campa
    or the main objective can be finished before the first wave or path encounter, redesign the map or cut the declared
    duration. Draw the paths on the routes PNG. The checkers fail a missing TARGET_DURATION, a budget the path cannot
    fill, and a weak survive setup (`docs/bw-campaign-design.md`, predelivery check 51).
+3a. **Shortcuts, pressure, tech per chapter.** Think through what the player's own units, buildings and abilities can
+   do against each objective (lift a Barracks to the target, fly, drop, recall, cloak) and block or accept each vector
+   (`OBJECTIVE_SHORTCUTS:` / `SHORTCUT_OK:`). Give attacks at least two independent sources, so killing one nearby base
+   that is not the objective never ends all pressure (`PRESSURE_SINGLE_OK:` only by design). Restrict the tech tree to
+   the chapter (`missionkit.tech_level`, `TECH_LEVEL:` line). Predelivery checks 52-54.
 4. **Build on an example (structure only):** pick one of the BW example missions (`docs/bw-example-missions.md`:
    `tools/bw/example_mission.py` and `tools/bw/examples/`, every complexity level and mission type) and copy its
    STRUCTURE only: the build pipeline, the design-note sections and the trigger, voice and check conventions. Never copy
@@ -57,7 +62,9 @@ Read `docs/wc3-campaign-design.md`, `docs/wc3-storytelling-cinematics.md`, `docs
 `OBJECTIVE_PATHS:`, same duration and path rules as Brood War; worked example:
 `templates/Design_Note_example_wc3_mission.md`). Trace hero and army paths on the walkable grid, count creep camps
 and scripted attack waves against each objective's budget, then run `bash tools/wc3/run_all_checks.sh MAP.w3x`
-(`check_objective_paths.py`) and fix every FAIL. New units/races: `docs/wc3-new-units.md`, `docs/wc3-custom-races.md`,
+(`check_objective_paths.py`) and fix every FAIL. The shortcut, enemy-base pressure and tech-per-chapter rules apply as in Brood War
+(`OBJECTIVE_SHORTCUTS:`, `PRESSURE_SINGLE_OK:`, `TECH_LEVEL:`; `check_objective_shortcuts.py`, `check_enemy_base_pressure.py`,
+`check_tech_restriction.py`). New units/races: `docs/wc3-new-units.md`, `docs/wc3-custom-races.md`,
 test map via `tools/wc3/race_testmap/gen_testmap.py` (`docs/race-test-harness.md`).
 
 ## StarCraft II campaign mission

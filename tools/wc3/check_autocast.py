@@ -24,7 +24,9 @@ def check(f):
     U=objs_lv(m.read('war3map.w3u'),False) if 'war3map.w3u' in names else {}
     A=objs_lv(m.read('war3map.w3a')) if 'war3map.w3a' in names else {}
     doo=m.read('war3mapUnits.doo').decode('latin1') if 'war3mapUnits.doo' in names else ''
-    used=set(re.findall(r"'(\w{4})'",j))|{t for t in set(U)|set(STOCK) if t in doo}
+    # a rawcode that only appears in SetPlayerTechMaxAllowed(..., 0) (disabled for the chapter) is not used
+    jused=re.sub(r"SetPlayerTechMaxAllowed(?:Swap)?\([^)]*'\w{4}'[^)]*,\s*0\s*\)|SetPlayerTechMaxAllowed\([^,]+,\s*'\w{4}'\s*,\s*0\s*\)",'',j)
+    used=set(re.findall(r"'(\w{4})'",jused))|{t for t in set(U)|set(STOCK) if t in doo}
     E=[];W=[]
     for t in sorted(used):
         if t in U: ab=str(list(U[t][1].get('uabi',{0:STOCK.get(U[t][0],'')}).values())[0])

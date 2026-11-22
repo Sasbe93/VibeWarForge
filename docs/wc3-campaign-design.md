@@ -130,6 +130,30 @@ Templates: `templates/Design_Note_template.md` (Design Note fields read by the c
 ## Tech tree reachability in missions
 Every requirement of the player's units, spells and researches must be reachable for the player race in the mission; new casters follow 1 base + Adept + Master with the race's own training. See docs/wc3-new-units.md; checks `check_tech_reachability.py` and `check_hero_glow.py` run in `run_all_checks.sh` and in `wc3mission.finish()`.
 
+## Objective shortcuts, enemy-base pressure and tech per chapter (fixed rule, Warcraft III and Brood War)
+Same rule as `docs/bw-campaign-design.md`; Warcraft III vectors and checks:
+- **Objective shortcuts.** For every reach, rescue or escort objective (an enter-region trigger that completes a quest
+  or wins) list what the player could use to skip the guarded path: flying units (Gryphon Rider, Dragonhawk, Wind
+  Rider, Bat Rider, Frost Wyrm, Gargoyle, Hippogryph, Chimaera, Faerie Dragon), Goblin Zeppelin from a Goblin
+  Laboratory, Blink, Mass Teleport, Staff of Teleportation or Scroll of Town Portal, invisibility (Wind Walk, Shadow
+  Meld, Invisibility; a WARN), and building next to the target (a WARN). Block it (the region counts a hero or a unit
+  that cannot fly, the unit/ability/item disabled, anti-air on the air line) or accept it. Same note lines:
+  `OBJECTIVE_SHORTCUTS: <quest|region> :: <vectors> :: <how blocked>` and `SHORTCUT_OK: <quest|region> :: <vector> :: <reason>`.
+- **Enemy-base pressure.** At least two independent attack sources. A wave loop gated on one building
+  (`IsUnitAliveBJ(gg_unit_...)`, `GetUnitState(...)>0`) and a campaign AI whose halls are all in the same base count
+  as one source if that base is not the victory target. `PRESSURE_SINGLE_OK: <reason>` only by design.
+- **Tech per chapter.** `SetPlayerTechMaxAllowed(Player(0), ...)` hands out the hall tiers chapter by chapter (early:
+  no tier-3 units or buildings and at most half of tier 2; mid: hold back tier 3). Generate it with
+  `tools/lib/wc3/tech_tiers.jass_tech_level(race, level, drop=..., add=...)` (a `Mission_TechLevel` function: units,
+  buildings, upgrade levels and shop items above the tier; worked example `tools/wc3/mission/example_mission.py`).
+  Hero bans (Mission_HeroLock) do not count as tech restriction. Note line
+  `TECH_LEVEL: <early|mid|late|full> :: <chapter> :: <what and why>`; `full` needs a reason. Keep it consistent with
+  `check_tech_wc3.py` (every research that needs a disabled tier is disabled too).
+- Checks in `run_all_checks.sh`: `tools/wc3/check_objective_shortcuts.py`, `tools/wc3/check_enemy_base_pressure.py`,
+  `tools/wc3/check_tech_restriction.py`, shared model `tools/wc3/mission_model.py` (static, read from war3map.j, the
+  units file, the walk grid and the design note; air lines are straight, anti-air is every threat that is not a
+  known ground-only unit). Fixtures: `python3 tools/wc3/selftest_t1025_checks.py`.
+
 ## Ask the user how new content gets tested (required step)
 Before building a campaign, mission or fun map that contains new or changed units, heroes, buildings or abilities, the agent must ask the user whether all new content should be tested before the map is delivered, and offer two options:
 - **A – the agent tests in-game itself.** Only if the user explicitly grants access to their PC and the game. Without that explicit permission, never touch the user's machine.
