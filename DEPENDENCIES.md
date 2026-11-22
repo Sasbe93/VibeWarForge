@@ -6,13 +6,14 @@ Classes: **(a)** shipped in this repo or freely installable · **(b)** not shipp
 |---|---|---|---|
 | All Python tools | Python 3.10+, numpy, scipy, pillow, mpyq | (a) | `pip install -r requirements.txt` |
 | BW map IO (`tools/lib/bw/sclib.py`, `tools/bw/*`, `tools/ranked/bw/*`) | eudplib | (a) | pip (or wheel from its GitHub releases) |
-| BW terrain generation (`sclib`, ISOM) | `isomtool` binary | (a)+(b) | Source shipped in `tools/lib/bw/isomtool_src`; needs Chkdraft MappingCore (MIT) and RareCpp (MIT) fetched into `external/`, then CMake build |
-| BW terrain / seams / resback / check_ranked_bw | BW tileset files (`*.cv5 *.vf4 *.vx4 *.vr4 *.wpe`) | (b) | Blizzard data; extract from your own StarCraft install (CASC) into `tools/lib/bw/tileset/` |
+| BW terrain generation (`sclib`, ISOM) | `isomtool` binary | (a)+(b) | Source shipped in `tools/lib/bw/isomtool_src` (our `main.cpp`, CMake file and `icu_min/` UTF converters); `tools/bw/build_isomtool.py` fetches Chkdraft mapping core, RareCpp, StormLib and CascLib (all MIT) into `isomtool_src/external/` and builds with CMake 3.24+ on Linux, macOS or Windows. ICU (Unicode license) is used when installed, otherwise `icu_min/`. Nothing third-party is committed |
+| BW terrain / seams / resback / check_ranked_bw | BW tileset files (`*.cv5 *.vf4 *.vx4 *.vr4 *.wpe`) | (b) | Blizzard data; extract from your own StarCraft install (CASC) into `tools/lib/bw/tileset/` (`tools/bw/extract_tilesets.py`) |
+| BW real ScmDraft 2 open test (`check_scmdraft_open.py --real`) | ScmDraft 2 + wine + Xvfb (`tools/bw/scmdraft_harness`) | (b) | Linux/WSL only; on native Windows only the static part runs |
 | BW tech checks (`data/bw/tech/check_tech.py`, `core_tech.py`) | BW tech tree | (c) | `data/bw/tech/bw_techtree.json` bundled |
 | `data/bw/tech/build_json.py`, `build_weapons.py`, `tools/bw/unit_damage.py`, `catalogues/bw_features/gen.py` | BWAPI source tables | (b)/(c) | Output (`bw_techtree.json`, `bw_weapons.json`, `bw_unit_ids.json`, catalogue) bundled; rebuild needs a BWAPI checkout |
 | BW ranked checks (thresholds) | Ladder reference maps | (c) | `data/reference_metrics/bw/*.json`; maps only needed to recalibrate (`external/refmaps/bw`) |
 | `tools/bw/features_demo/neutral_scan.py` | Ladder reference maps | (b)/(c) | Result bundled as `neutral_scan.json` |
-| BW voiced dialogue (`sclib.Map.voice`, briefing and in-mission transmissions) | `edge-tts` CLI (LGPLv3 client of Microsoft's online Edge Read Aloud service), `ffmpeg`/`ffprobe`, internet access | (a) | `pip install edge-tts`; see "Voiced dialogue for Brood War" below (output rights) |
+| BW voiced dialogue (`sclib.Map.voice`, briefing and in-mission transmissions) | `edge-tts` (LGPLv3 client of Microsoft's online Edge Read Aloud service; the CLI on PATH or `python -m edge_tts`), `ffmpeg`/`ffprobe` on PATH, internet access | (a) | `pip install edge-tts`; see "Voiced dialogue for Brood War" below (output rights) |
 | WC3 map IO (`tools/lib/wc3/*`, `w3parse`, `w3common`) | mpyq | (a) | Pure Python MPQ writer/reader included |
 | `check_w3x.py`, race test harness | pjass | (b) | Build from source into `external/pjass/pjass` |
 | `check_w3x.py`, race test harness, `data/wc3/tech/build_json.py` | `common.j`, `Blizzard.j`, `common.ai` | (b) | Blizzard script files; extract from your game or copy from a public JASS repository into `external/jass/` |

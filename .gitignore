@@ -17,3 +17,4 @@ tools/lib/bw/isomtool_src/external/
 # Blizzard campaign map data (scenario.chk read from the game files) is local reference data only, never part of the repository
 *scenario.chk
 locales_*_Assets_campaign_*
+build/

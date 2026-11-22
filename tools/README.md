@@ -7,7 +7,7 @@ Run every tool **from the repository root** (paths such as `data/...`, `external
 | `wc3/` | Warcraft III checkers (`check_*.py`), ranked rule modules (`ranked_rules_R*`, file names keep their historic `t` prefix because they are import names), cinematic JASS helpers (`jass_*.j`), preview renderers (optional, Blender), `run_all_checks.sh` (runs all checks on a map). |
 | `wc3/ability_review/` | Ability review checklist, review sheet generator, mana check. Used for custom races and custom units. |
 | `wc3/race_testmap/` | Generic automated race test-map generator. See `docs/race-test-harness.md`. |
-| `bw/` | Brood War checkers: ranked rules (`check_ranked_bw.py`, `bw_*`), campaign pre-release check (`predelivery_check.py`), terrain analysis helpers. `check_characters.py` and `check_showcase.py` are shared with `wc3/` (symlinks). |
+| `bw/` | Brood War checkers: ranked rules (`check_ranked_bw.py`, `bw_*`), campaign pre-release check (`predelivery_check.py`), terrain analysis helpers, setup helpers (`build_isomtool.py`, `extract_tilesets.py`, `extract_vcod.py`) and `sim_windows_locks.py` (runs a BW tool on Linux under Windows' file locking, to catch MPQ handles kept open). `check_characters.py` and `check_showcase.py` are shared with `wc3/` (symlinks). |
 | `bw/features_demo/` | Feature demo map script, reachability and neutral-building scans. |
 | `ranked/bw/`, `ranked/wc3/` | Ranked/melee map generators (`rankedlib.py`, `wc3melee.py`, ...), map diversity dice (`dice.py`, `dice_tables.md`) and small example scripts (`example_2p.py`, `example_4p.py`). |
 | `lib/wc3/` | WC3 map IO: MPQ write/read, string tables (`mapstrings`), object data style helpers, cinematic library, World-Editor-like `war3map.j` generator. |
