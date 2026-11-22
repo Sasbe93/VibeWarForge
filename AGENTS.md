@@ -19,14 +19,17 @@ A request for "a mission", "a random mission" or "a map with a story" is a campa
 1. **Campaign outline first.** Even a single mission gets a short chapter outline (where it sits, what came before and
    after). Pick patterns from `docs/campaign-design-catalog.md`.
 2. **Design note** from `templates/Design_Note_template.md` (worked example: `templates/Design_Note_example_bw_mission.md`):
-   story, objectives, `REWARD_WHY:` per reward, map, flow, briefing and voice, `## Characters`. For every main and
-   side objective write `OBJECTIVE_PATHS:` with the real path length, travel time, threats or waves, and why it is a
-   challenge (and `ESCORT_ROUTE:` as well when there is an escort).
-3. **Trace every path before building.** Pathfind start to each target, a rescue there and back, and every attack wave
-   to the player base (`tools/bw/path_tool.py`). If a path is short or safe, if a survive timer lets fewer than three
-   waves arrive, or if every wave shares one choke, redesign the map (longer or guarded route, more approaches, earlier
-   or stronger waves). Draw the paths on the routes PNG. The checkers fail a rescue or reach with fewer than two threat
-   encounters and a weak survive setup (`docs/bw-campaign-design.md`, predelivery check 51).
+   story, objectives, `TARGET_DURATION:` (Normal length, Easy/Hard, and a time budget per objective), `REWARD_WHY:` per
+   reward, map, flow, briefing and voice, `## Characters`. For every main and side objective write `OBJECTIVE_PATHS:`
+   with the real path length, travel time, threats or waves, and why it is a challenge (and `ESCORT_ROUTE:` as well when
+   there is an escort).
+3. **Trace every path before building, against the planned duration.** Pathfind start to each target, a rescue there
+   and back, and every attack wave to the player base (`tools/bw/path_tool.py`). Encounters scale with each objective's
+   budget (about one per 1-2 minutes, and at least two on a rescue, reach or escort route). Survive/hold waves arrive
+   about every 60-120 s from more than one direction. If the walk+fight estimate is below about a third of the budget,
+   or the main objective can be finished before the first wave or path encounter, redesign the map or cut the declared
+   duration. Draw the paths on the routes PNG. The checkers fail a missing TARGET_DURATION, a budget the path cannot
+   fill, and a weak survive setup (`docs/bw-campaign-design.md`, predelivery check 51).
 4. **Build on the example:** copy `tools/bw/example_mission.py` and change terrain, bases, cast and triggers. It uses
    `tools/lib/bw/sclib.py` and `tools/lib/bw/missionkit.py`. Read `docs/bw-campaign-design.md` and
    `docs/bw-map-design.md` first (terrain needs isomtool + tileset files: `docs/bw-terrain-setup.md`).
@@ -46,9 +49,17 @@ A request for "a mission", "a random mission" or "a map with a story" is a campa
 
 ## Warcraft III campaign mission
 Read `docs/wc3-campaign-design.md`, `docs/wc3-storytelling-cinematics.md`, `docs/wc3-map-design.md` and
-`docs/wc3-world-editor-technical.md`; design note from the template; run `bash tools/wc3/run_all_checks.sh MAP.w3x` and
-fix every FAIL. New units/races: `docs/wc3-new-units.md`, `docs/wc3-custom-races.md`, test map via
-`tools/wc3/race_testmap/gen_testmap.py` (`docs/race-test-harness.md`).
+`docs/wc3-world-editor-technical.md`; design note from the template (including `TARGET_DURATION:` and
+`OBJECTIVE_PATHS:`, same duration and path rules as Brood War; worked example:
+`templates/Design_Note_example_wc3_mission.md`). Trace hero and army paths on the walkable grid, count creep camps
+and scripted attack waves against each objective's budget, then run `bash tools/wc3/run_all_checks.sh MAP.w3x`
+(`check_objective_paths.py`) and fix every FAIL. New units/races: `docs/wc3-new-units.md`, `docs/wc3-custom-races.md`,
+test map via `tools/wc3/race_testmap/gen_testmap.py` (`docs/race-test-harness.md`).
+
+## StarCraft II campaign mission
+The same duration and path rules apply (`docs/sc2-campaign-design.md`, `TARGET_DURATION:` and `OBJECTIVE_PATHS:` in
+the shared design-note template). This repository does not yet read SC2 maps, so there is no automated check; still
+declare the planned length, budget every objective, and trace the real paths before building.
 
 ## Ranked / melee maps
 - BW: `docs/bw-ranked-maps.md`, examples in `tools/ranked/bw/`, check `python3 tools/bw/check_ranked_bw.py MAP.scx`.

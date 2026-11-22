@@ -186,6 +186,24 @@ units or items created in quest-completion code without a REWARD_WHY line; a REW
 "reward"/"bonus". Exempt: map initialisation, gold-mine refills (SetResourceAmount), loot created where the killed unit
 died, and functions marked `// INCOME_OK: <reason>` (non-quest income the story explains).
 
+## Planned duration and objective paths (fixed rule, same rule for BW and SC2)
+Every mission declares how long it should take on Normal (and on Easy/Hard) and gives each required and optional
+quest a share of that time: `TARGET_DURATION: <Normal minutes> :: <Easy/Hard> :: <objective>=<minutes>; ...`.
+Walking is only a small part of the budget; the rest is fighting, choices and pressure. Before building, pathfind the
+hero or army from the start to every quest target on the walkable grid (`war3map.wpm` plus non-walkable destructables)
+and count Neutral Hostile camps and enemy defenders on the way, plus scripted attack waves from the map script or AI
+where they exist. Encounters scale with the budget: about one real encounter or decision point per 1-2 minutes of that
+quest's time (the checker uses one per 2 minutes), and a rescue, reach or escort route still has at least two threat
+sources. A survive or hold quest gets scripted waves about every 60-120 seconds, from more than one direction. A
+walk+fight estimate below about a third of the budget, or a main quest that can be finished before the first camp or
+wave, means a redesign (or a shorter declared duration).
+Every required and optional quest also gets `OBJECTIVE_PATHS: <objective> :: <path(s) with length and travel time> ::
+<creeps / waves and directions> :: <why it is a challenge>`. A deliberate easy path needs `OBJECTIVE_PATHS_EASY_OK:
+<reason>` (this waives the difficulty rules, not a missing TARGET_DURATION line).
+Check: `tools/wc3/check_objective_paths.py` (in `run_all_checks.sh`), using the same duration math as Brood War
+(`tools/lib/mission_duration.py`). Shared template: `templates/Design_Note_template.md`; worked example:
+`templates/Design_Note_example_wc3_mission.md`.
+
 ## No friendly fire from scripted orders (friendly_fire_orders, mandatory)
 - An objective structure and its guards are on ONE side. Neutral Hostile is the enemy of every player: Neutral Hostile creeps next to a building of an enemy computer player treat that building as a target (auto-acquire, attack-move). Give the guards the structure's owner (builder default `Mission.OWNER_FIX = 'guards'` with `STRUCTURE_IDS`) or ally the two players in both directions (`GR_AllySides`, `ALLIED_SIDES`).
 - Guard responses only order guards of the objective's side, and each order only when the attacker is an enemy of THAT guard's owner (`IsUnitEnemy(attacker, GetOwningPlayer(guard))`). No attack-move fallback: an attack-move acquires every enemy on the way. Use `GR_Register(obj)` from `tools/wc3/jass_guard_response.j` (injected with the story helpers).

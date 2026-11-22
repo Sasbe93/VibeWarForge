@@ -161,3 +161,13 @@
 - Official Warcraft III RoC campaign maps Human02/04/05/06/07/09 and Orc03 (war3map.wts / war3map.j).
 - BW mission patterns G-M11..G-M20 (BW columns): StrategyWiki Agent of the Swarm, Norad II, Desperate Alliance, Escape from Aiur; StarCraft fandom wiki Revolution.
 - SC2 columns of G-M11..G-M20: Liquipedia Rendezvous, Trouble in Paradise; GameFAQs HotS walkthrough (Lab Rat); GameFAQs WoL board (all buildings lost = defeat).
+
+## Cross-game rule: planned duration and objective paths
+The planned length of a mission, and the real paths of every objective, are judged the same way in Brood War, Warcraft III and StarCraft II.
+
+- Declare the intended Normal duration (and Easy/Hard) and a time budget per objective: `TARGET_DURATION: <Normal minutes> :: <Easy/Hard> :: <objective>=<minutes>; ...`.
+- Trace every main and side (or required and optional) objective on the real walkable path before building: `OBJECTIVE_PATHS: <objective> :: <path(s) with length and travel time> :: <threats / waves and directions> :: <why it is a challenge>`.
+- Walking is only a small part of the budget. Path encounters scale with it: about one real encounter or decision point per 1-2 minutes of that objective's time, and a rescue, reach or escort route still has at least two threat sources (an additional baseline, not a replacement for the budget). Survive/hold waves arrive about every 60-120 seconds, from more than one direction. The first real pressure arrives in the first 2-4 minutes.
+- FAIL when TARGET_DURATION is missing or incomplete, when the walk+fight estimate is below about a third of the budget, when there are fewer encounters than the budget asks for, or when the main objective can be finished before the first wave or path encounter. `OBJECTIVE_PATHS_EASY_OK: <reason>` waives the difficulty rules, not a missing duration line.
+
+Brood War: predelivery check 51, `tools/bw/check_objective_paths.py`. Warcraft III: `tools/wc3/check_objective_paths.py` in `run_all_checks.sh`. StarCraft II: apply both rules the same way in the design note (`docs/sc2-campaign-design.md`); this repository does not yet read SC2 maps, so there is no automated check.

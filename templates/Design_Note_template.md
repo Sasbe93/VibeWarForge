@@ -48,11 +48,23 @@ SCENE_VIEW: <scene> :: <location name> :: <alliance-vision | revealer | own unit
 before the first line, removed after the scene unless the vision should stay; own units present: the player's units
 stand there at that moment.)
 
+## Planned duration (every mission, Brood War, Warcraft III and StarCraft II)
+Declare how long the mission should take on Normal, and give each main and side objective a share of that time.
+Walking is only a small part of the budget; the rest is fighting, choices and pressure. Path encounters scale with
+that budget: about one real encounter or decision point per 1-2 minutes of the objective's time, and a rescue, reach
+or escort route still has at least two threat sources (the two-encounter baseline). A survive or hold objective
+gets scripted waves about every 60-120 seconds, rising, from more than one direction. The first real pressure arrives
+in the first 2-4 minutes. A walk+fight estimate below about a third of the budget, or a main objective that can be
+finished before the first wave or path encounter, means a redesign (or a shorter declared duration).
+TARGET_DURATION: <Normal minutes> :: <Easy / Hard> :: <objective>=<minutes>; <objective>=<minutes>
+OBJECTIVE_PATHS_EASY_OK waives the difficulty rules, not a missing TARGET_DURATION line.
+
 ## Objective paths (every mission)
 For every main and side objective, trace the real path on the map (player start to each target, a rescue there and back,
 scripted waves to the player base with travel and arrival times, approach directions and chokes) and judge whether the
-mission is a challenge. Draw the paths on the routes PNG. A short or safe path, or a survive timer that lets fewer than
-three waves arrive or funnels every wave through one choke, means a redesign.
+mission is a challenge for its planned duration. Draw the paths on the routes PNG. A path whose encounters do not
+match the budget, a survive timer that lets waves arrive less often than about every 120 s, or every wave through one
+choke, means a redesign.
 OBJECTIVE_PATHS: <objective> :: <path(s) with length in tiles and travel time> :: <threats on the way / waves and directions> :: <why it is a challenge>
 OBJECTIVE_PATHS_EASY_OK: <reason>            (only when a short, safe or single-choke path is deliberate)
 

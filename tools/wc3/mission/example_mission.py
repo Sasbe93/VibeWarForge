@@ -29,14 +29,24 @@ for c in [(44, 18), (43, 15), (43, 21)]: m.trees(c, 1.8)      # the mine's back 
 m.guard_camp(EXPO, ['nogr', 'nogr', 'nogm'], 'expo')          # guards on the open side, facing it
 for k, uid in enumerate(['nfsp', 'nfsh', 'nfsh']): m.add(uid, (CAMP2[0] + k * 0.8, CAMP2[1]), NA, ang=270, tag='camp2' + ('L' if k == 0 else ''))
 m.add('hkee', ENEMY, 1, tag='keep')
+# two camps on the centre lane to the keep, so the main path is a fight (creep distance > 1300 from start and keep)
+for k, uid in enumerate(['nban', 'nrog', 'nrog']):
+    m.add(uid, (24.0 + k * 0.8, 28.0), NA, ang=90, tag='lane1' + ('L' if k == 0 else ''))
+for k, uid in enumerate(['ngnw', 'ngnw', 'ngrk']):
+    m.add(uid, (40.0 + k * 0.8, 40.0), NA, ang=225, tag='lane2' + ('L' if k == 0 else ''))
+# keep defenders (enemy player, not Neutral Hostile) - the third path encounter at the hall
+m.add('hfoo', (47, 46), 1); m.add('hfoo', (49, 46), 1); m.add('hfoo', (48, 47), 1)
 m.add('Hpal', (17, 19), 0, tag='hero')
 for k in range(5): m.add('hpea', (12 + k, 20), 0)
 m.scene((32, 32), [b'LOrb', b'LOrb', b'LTbs', b'LRrk', b'LOsh'])   # landmark at the centre ford
 info = m.build(OUT)
 
+import shutil
+shutil.copy(os.path.join(REPO, 'templates', 'Design_Note_example_wc3_mission.md'),
+            os.path.join(OUTD, 'Design_Note_Example_Mission.md'))
 wx = m.wxy
 own = lambda o: {0: 'Player(0)', 1: 'Player(1)', NP: 'Player(PLAYER_NEUTRAL_PASSIVE)', NA: 'Player(PLAYER_NEUTRAL_AGGRESSIVE)'}[o]
-TAGVAR = {'hero': 'gHero', 'keep': 'gKeep'}; DROPS = {'expoL': 'pghe', 'camp2L': 'phea'}
+TAGVAR = {'hero': 'gHero', 'keep': 'gKeep'}; DROPS = {'expoL': 'pghe', 'camp2L': 'phea', 'lane1L': 'pman', 'lane2L': 'pclr'}
 cu = []
 for u in m.units:
     if u['id'] == 'sloc': continue
@@ -45,6 +55,15 @@ for u in m.units:
     if u['id'] == 'ngol': cu.append('    call SetResourceAmount(%s,%d)' % (v, u['gold'] or 12500))
     if u['tag'] in DROPS: cu.append("    call SaveInteger(gH,GetHandleId(%s),1,'%s')" % (v, DROPS[u['tag']]))
 bx, by = wx(BASE); ex, ey = wx(ENEMY); N, M = m.N, m.M
+DSG, DSF = m.difficulty_select(on_chosen='Intro')
+import re as _re
+# JASS has no forward declarations: DS_Count before Intro, DS_Click/DS_Show after Intro, before main.
+def _take(src, name):
+    m=_re.search(r'^function %s takes.*?^endfunction\n'%name, src, _re.M|_re.S)
+    return src[:m.start()]+src[m.end():], m.group(0)
+DSF_REST, DS_CLICK = _take(DSF, 'DS_Click')
+DSF_PRE, DS_SHOW = _take(DSF_REST, 'DS_Show')
+DS_AFTER = DS_CLICK+DS_SHOW
 cb = [m.OX + M * 128, m.OY + M * 128, -m.OX - M * 128, -m.OY - M * 128]
 LINES = ['The old mine is ours again, once the ogres are gone.', 'Take the keep in the north-east.']
 J = f'''globals
@@ -53,7 +72,7 @@ J = f'''globals
     hashtable gH = InitHashtable()
     string array gLine
     quest gQ = null
-endglobals
+{DSG}endglobals
 // Story lines go through the bottom transmission bar (StorySay, jass_story.j, injected by Mission.finish).
 function Say takes unit u, string name, string text, sound snd, real dur returns nothing
     if IsUnitAliveBJ(u) then
@@ -69,7 +88,7 @@ function OnDeath takes nothing returns nothing
         call CreateItem(it, GetUnitX(d), GetUnitY(d))
     endif
     if d == gKeep then
-        call QuestSetCompleted(gQ, true)
+        call SQ_Done(gQ, "Reclaim the Mine")
         call CustomVictoryBJ(Player(0), true, true)
     elseif d == gHero then
         call CustomDefeatBJ(Player(0), "Your hero has fallen.")
@@ -81,10 +100,23 @@ function CreateAll takes nothing returns nothing
 {chr(10).join(cu)}
     set u = null
 endfunction
-// Intro: the map starts black (StoryMapInit in main). Scene first, then fade in; actors walk, turn and act; ESC skips.
+{DSF_PRE}// Intro: the map starts black (StoryMapInit in main). Scene first, then fade in; actors walk, turn and act; ESC skips.
 function Intro takes nothing returns nothing
+    local integer extra = DS_Count(0, 1, 2, 3)
+    local integer i = 0
     local real hx = GetUnitX(gHero)
     local real hy = GetUnitY(gHero)
+    loop
+        exitwhen i >= extra
+        call CreateUnit(Player(1), 'hfoo', {ex:.1f} - 128.0, {ey:.1f} - 256.0, 270.0)
+        set i = i + 1
+    endloop
+    if gDiff >= 2 then
+        call CreateUnit(Player(1), 'hfoo', {ex:.1f} + 128.0, {ey:.1f} - 256.0, 270.0)
+    endif
+    if gDiff >= 3 then
+        call CreateUnit(Player(1), 'hfoo', {ex:.1f}, {ey:.1f} - 320.0, 270.0)
+    endif
     call StorySceneBegin()
     call Shot(hx, hy, 1700.0, 340.0, 60.0, 0.0)
     call StoryWalk(gHero, hx + 256.0, hy + 192.0)
@@ -108,9 +140,9 @@ function Intro takes nothing returns nothing
     call QuestSetDescription(gQ, "Destroy the enemy keep. The hero must survive.")
     call QuestSetIconPath(gQ, "ReplaceableTextures\\\\CommandButtons\\\\BTNGoldMine.blp")
     call QuestSetRequired(gQ, true)
-    call FlashQuestDialogButton()
+    call SQ_New(gQ, "Reclaim the Mine", "Destroy the enemy keep. The hero must survive.")
 endfunction
-function InitCustomPlayerSlots takes nothing returns nothing
+{DS_AFTER}function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerStartLocation(Player(0), 0)
     call SetPlayerController(Player(0), MAP_CONTROL_USER)
     call SetPlayerRacePreference(Player(0), RACE_PREF_HUMAN)
@@ -143,11 +175,14 @@ function main takes nothing returns nothing
     call TriggerRegisterAnyUnitEventBJ(t, EVENT_PLAYER_UNIT_DEATH)
     call TriggerAddAction(t, function OnDeath)
     set t = CreateTrigger()
-    call TriggerRegisterTimerEvent(t, 1.0, false)
-    call TriggerAddAction(t, function Intro)
+    call TriggerRegisterTimerEvent(t, 0.0, false)
+    call TriggerAddAction(t, function DS_Show)
     set t = null
 endfunction
 '''
 F = {'war3map.wts': b'STRING 1\n{\nExample Mission\n}\n\nSTRING 2\n{\nReclaim the old mine.\n}\n\nSTRING 3\n{\n2\n}\n\nSTRING 4\n{\nAlliance\n}\n\nSTRING 5\n{\nEnemy\n}\n\nSTRING 9\n{\nForce 1\n}\n\n'}   # w3i strings (title, description, players, player names, force)
 m.finish(OUT, J, extra=F, voices={'Captain': 'male'})   # voiced dialogue is the default (voice_tts.py)
+import shutil
+shutil.copy(os.path.join(REPO, 'templates', 'Design_Note_example_wc3_mission.md'),
+            os.path.join(OUTD, 'Design_Note_Example_Mission.md'))
 print('built', OUT, info)
