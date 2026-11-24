@@ -133,7 +133,7 @@ class Melee:
                '_rolled':True,'war3map.wpm':wpm,'war3map.wts':wts.encode(),'war3map.j':J.encode()}
         cols={0:(255,30,30),1:(30,80,255),2:(30,230,190),3:(160,30,200),NP:(240,230,80),NA:(220,140,60)}
         UR=[(u['x'],u['y'],cols.get(u['o'],(200,200,200)),6 if u['id'] in('ngol','sloc','ntav','ngme','ngad') else 3) for u in s.units]
-        base=out[:-4]
+        base=out[:-4]; os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)   # fresh clone: output/ranked/ does not exist yet
         RXY=[(x,y,b'LTlt') for (x,y,k) in doo.xy]
         mm=ST.minimap(base+'_minimap.png',tex,s.Z,RXY,UR,s.OX,s.OY,mines=[])
         files['war3mapMap.blp']=ST.blp1(mm); files['war3mapPreview.tga']=ST.tga(mm.resize((256,256)))
