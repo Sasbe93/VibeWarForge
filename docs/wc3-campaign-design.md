@@ -2,8 +2,8 @@
 
 Technical World Editor work (file format, JASS, object data, icons/buttons, tooltip strings, validators, test maps): load `wc3-world-editor`. Map and mission design: load `wc3-classic-map-design`.
 
-## Game boundary: WC3 feedback stays WC3 (fixed rule)
-Every rule, check and idea in this guide stays Warcraft III-only. Do not add "BW/SC2: the same ..." notes, analog rules, BW checks or catalog BW/SC2 variants for it; port to SC:BW or SC2 only when explicitly requested for that game.
+## Game boundary (fixed rule)
+This guide is for Warcraft III only. Rules, checks and ideas from other games are not ported here (no "adapted", no "analog"); a rule enters this guide only when it was given for Warcraft III or explicitly requested for it.
 
 ## How the rules are organised
 Four levels:
@@ -130,8 +130,8 @@ Templates: `templates/Design_Note_template.md` (Design Note fields read by the c
 ## Tech tree reachability in missions
 Every requirement of the player's units, spells and researches must be reachable for the player race in the mission; new casters follow 1 base + Adept + Master with the race's own training. See docs/wc3-new-units.md; checks `check_tech_reachability.py` and `check_hero_glow.py` run in `run_all_checks.sh` and in `wc3mission.finish()`.
 
-## Objective shortcuts, enemy-base pressure and tech per chapter (fixed rule, Warcraft III and Brood War)
-Same rule as `docs/bw-campaign-design.md`; Warcraft III vectors and checks:
+## Objective shortcuts, enemy-base pressure and tech per chapter (fixed rule)
+Vectors and checks:
 - **Objective shortcuts.** For every reach, rescue or escort objective (an enter-region trigger that completes a quest
   or wins) list what the player could use to skip the guarded path: flying units (Gryphon Rider, Dragonhawk, Wind
   Rider, Bat Rider, Frost Wyrm, Gargoyle, Hippogryph, Chimaera, Faerie Dragon), Goblin Zeppelin from a Goblin
@@ -199,7 +199,7 @@ Auto-check: `tools/wc3/check_mission_feedback_rules.py` (in `wc3mission.finish(d
 ## Side quests are real fights (play-test lesson)
 A side quest on Hard was guarded by one nerubian caster and two spiders, the same on every difficulty; only the player handicap changed the HP by about 10 %. Every optional quest needs defenders that scale noticeably: thresholds Normal >= 3 units / 1200 HP / a level-3 unit, Hard >= 5 units / 2000 HP and >= 1.3 x Normal HP, Brutal >= Hard (or a deliberate extra mechanic). Check: `check_sidequest_challenge.py` (guard groups `g<Token>*` of quest `q<Token>`, `SIDEQUEST_GROUP q g`, or hostile units within 900 of the quest target unit; difficulty blocks and `exitwhen i >= gDiff` loops are evaluated). The trigger test adds a runtime step `sidequest_challenge` that counts the living defenders 3 s after the start at the chosen difficulty.
 
-## Rewards make sense in the story (fixed rule, same rule for BW)
+## Rewards make sense in the story (fixed rule)
 Never give flat gold, lumber or units for an unrelated deed (gold for killing three bandits). A reward needs an
 in-world source the player sees: a guarded cache or loot (a creep drop, a strongbox in the camp), a grateful ally who
 pays or joins, a captured base or gold mine, a rescued unit, seized convoy cargo, unlocked tech. One Design Note line per
@@ -210,7 +210,7 @@ units or items created in quest-completion code without a REWARD_WHY line; a REW
 "reward"/"bonus". Exempt: map initialisation, gold-mine refills (SetResourceAmount), loot created where the killed unit
 died, and functions marked `// INCOME_OK: <reason>` (non-quest income the story explains).
 
-## Planned duration and objective paths (fixed rule, same rule for BW and SC2)
+## Planned duration and objective paths (fixed rule)
 Every mission declares how long it should take on Normal (and on Easy/Hard) and gives each required and optional
 quest a share of that time: `TARGET_DURATION: <Normal minutes> :: <Easy/Hard> :: <objective>=<minutes>; ...`.
 Walking is only a small part of the budget; the rest is fighting, choices and pressure. Before building, pathfind the
@@ -224,8 +224,8 @@ wave, means a redesign (or a shorter declared duration).
 Every required and optional quest also gets `OBJECTIVE_PATHS: <objective> :: <path(s) with length and travel time> ::
 <creeps / waves and directions> :: <why it is a challenge>`. A deliberate easy path needs `OBJECTIVE_PATHS_EASY_OK:
 <reason>` (this waives the difficulty rules, not a missing TARGET_DURATION line).
-Check: `tools/wc3/check_objective_paths.py` (in `run_all_checks.sh`), using the same duration math as Brood War
-(`tools/lib/mission_duration.py`). Shared template: `templates/Design_Note_template.md`; worked example:
+Check: `tools/wc3/check_objective_paths.py` (in `run_all_checks.sh`), using the duration math in
+`tools/lib/mission_duration.py`. Template: `templates/Design_Note_template.md`; worked example:
 `templates/Design_Note_example_wc3_mission.md`.
 
 ## No friendly fire from scripted orders (friendly_fire_orders, mandatory)

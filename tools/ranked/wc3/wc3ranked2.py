@@ -263,7 +263,7 @@ class MeleeR(Melee):
         cb=[s.OX+M*128,s.OY+M*128,-s.OX-M*128,-s.OY-M*128,s.OX+M*128,-s.OY-M*128,-s.OX-M*128,s.OY+M*128]
         W3I_VER=25
         # map_strings: literal map name/author in w3i (the map list does not resolve TRIGSTR names)
-        w=struct.pack('<iii',W3I_VER,1,6059)+S(s.title)+S('VibeModForge')+S('TRIGSTR_002')+S('TRIGSTR_003')
+        w=struct.pack('<iii',W3I_VER,1,6059)+S(s.title)+S('VibeWarForge')+S('TRIGSTR_002')+S('TRIGSTR_003')
         w+=struct.pack('<8f',*cb)+struct.pack('<4i',M,M,M,M)+struct.pack('<ii',N-2*M,N-2*M)+struct.pack('<i',FLAGS)+s.TILESET
         w+=struct.pack('<i',-1)+S('')+S('')+S('')+S('')+struct.pack('<i',0)+S('')+S('')+S('')+S('')
         w+=ST.w3i_env(fog_rgb=fog,start=3000.0,end=9000.0,dens=0.2,weather=weather,water_rgb=(getattr(s,'WATER_RGB',None) or WS.water_tint(s.TILESET)))

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Shared duration math for BW and WC3 objective-path checks (and the SC2 design-note fields).
+"""Duration math for the objective-path checks (tools/wc3/check_objective_paths.py).
 
 Every campaign mission declares how long it should take on Normal, and each objective gets a share of
 that time. Path encounters scale with that budget: one real encounter or decision point per 2 minutes

@@ -1,12 +1,12 @@
 #!/bin/bash
 # run every WC3 delivery check on one map; prints one line per check and a final RESULT summary.
 # Exit code: 0 = 0 FAIL, 1 = at least one FAIL, 2 = a check crashed. A map is deliverable only with exit 0
-# (tools/deliver.py enforces that). The full output of every check is kept in $VMF_CHECK_LOG (default: a temp folder).
+# (tools/deliver.py enforces that). The full output of every check is kept in $VWF_CHECK_LOG (default: a temp folder).
 [ -f "$1" ] || { echo "usage: bash tools/wc3/run_all_checks.sh MAP.w3x"; exit 2; }
 M=$(readlink -f "$1"); D=$(dirname "$M"); T=tools/wc3
 cd "$(dirname "$0")/../.."  # repository root
 NCRASH=0
-LOG=${VMF_CHECK_LOG:-$(mktemp -d -t vmf_checks.XXXXXX)}; mkdir -p "$LOG"; rm -f "$LOG"/*.out
+LOG=${VWF_CHECK_LOG:-$(mktemp -d -t vwf_checks.XXXXXX)}; mkdir -p "$LOG"; rm -f "$LOG"/*.out
 STOCK=${WC3_STOCK_DATA:-external/wc3data/warpack-stock-data-0.0.1/data}
 [ -f "$STOCK/units/unitskin.txt" ] || echo "== MISSING DEPENDENCY: stock SLK data ($STOCK, see external/README.md); many checks will CRASH. Install it first."
 keep() { printf '%s\n' "$2" > "$LOG/$1.out"; }   # keep(name, full output)

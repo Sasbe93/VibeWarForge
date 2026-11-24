@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""check_reward_reason (WC3; the same rule exists for Brood War in tools/bw/check_story_delivery.py, check 41):
+"""check_reward_reason:
 every reward must make sense in the story. Flat gold or lumber for an unrelated deed (gold for killing three bandits)
 breaks the fiction. A reward needs an in-world source the player sees: a guarded cache or loot, a grateful ally who
 pays or joins, a captured base / mine / depot, a rescued unit, seized convoy cargo, unlocked tech.

@@ -58,7 +58,7 @@ def write_mpq(path,files,prefix=b'',store=('.w3x','.w3m'),raw=False):
         import os as _os, sys as _sys
         _lib=_os.path.join(_os.path.dirname(_os.path.abspath(__file__)),'..')
         if _lib not in _sys.path: _sys.path.insert(0,_lib)
-        import vmf_provenance; vmf_provenance.hook_wc3(path,files)
+        import forge_provenance; forge_provenance.hook_wc3(path,files)
     except Exception as _e: print('WARNING provenance record not written: %r'%(_e,))
     return _pack(path,files,prefix,store)
 def _pack(path,files,prefix,store):

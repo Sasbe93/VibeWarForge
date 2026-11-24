@@ -8,8 +8,7 @@ destroys or disables the wave's timer or trigger. A campaign AI is gated by the 
 grouped into bases (enemy buildings within 1500 wu of each other).
 FAIL: one base that the player can reach on foot, that is not the victory target, stops every source.
 WARN: one base stops at least half of the sources and is closer than the main quest target.
-'PRESSURE_SINGLE_OK: <reason>' in the design note accepts a single source by design. Static. Same rule as Brood War
-predelivery check 53."""
+'PRESSURE_SINGLE_OK: <reason>' in the design note accepts a single source by design. Static."""
 import sys,os,re,math
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 import mission_model as W

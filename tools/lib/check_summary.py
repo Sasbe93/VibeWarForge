@@ -1,6 +1,6 @@
 """Summarise the raw outputs of a check run and decide pass or fail.
 
-run_all_checks.sh (WC3) stores every check's full output in a log folder; this module reads them back. A check
+tools/wc3/run_all_checks.sh stores every check's full output in a log folder; this module reads them back. A check
 counts as FAIL when one of its output lines is a FAIL finding (a line starting with FAIL, or a RESULT line that
 reports a FAIL count other than 0). Return codes are not used for that: several checks return 1 for WARN only.
 

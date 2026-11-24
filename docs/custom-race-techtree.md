@@ -93,6 +93,3 @@ The race doc (`custom_race_<name>.md`) needs the sections Concept, Tech tree, Ab
 - `data/wc3/tech/check_tech_wc3.py <map.w3x> --race <json>`: requirements and tiers against the stock rules, per map.
 - `tools/wc3/check_custom_race_inheritance.py`, `check_hero_kit.py`, `check_autocast.py`, `check_model_voice.py`, `check_unique_visuals.py`.
 - Draw the tree with `data/wc3/tech/draw.py` (adapt the input path) and compare it side by side with the stock PNGs.
-
-## 9. StarCraft: Brood War note
-BW races have no hero/altar layer and no hall tiers by upgrade (except Zerg Hatchery -> Lair -> Hive). If you redesign a BW race, use `data/bw/tech/bw_techtree.json` as the reference: each production building unlocks the next via requirements, each race has 1 worker, 1 detector, 1 transport (or Overlord), and weapon/armor/air upgrade families with 3 levels gated by a mid- or late-game building.

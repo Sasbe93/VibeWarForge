@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""tools/provenance.py - log prompts and read the hidden provenance record of VibeModForge maps and campaigns.
+"""tools/provenance.py - log prompts and read the hidden provenance record of VibeWarForge maps and campaigns.
 
 Every agent logs EVERY user prompt that changes a map or campaign, before building (AGENTS.md, docs/provenance.md):
 
@@ -7,23 +7,23 @@ Every agent logs EVERY user prompt that changes a map or campaign, before buildi
       --model claude-opus-4 --text "Make the escort route longer"            (or --text-file prompt.txt)
 
 Commands
-  add-prompt  log a prompt for one or more maps/campaigns (--map can repeat; --campaign DIR for a BW campaign folder)
+  add-prompt  log a prompt for one or more maps or .w3n campaigns (--map can repeat)
   show MAP    print the record embedded in a map/campaign (prompt count, prompts, agents, models, tool versions,
               builds, human edits) and whether the map changed since the last tool save (--json for raw JSON)
   check MAP   detect editor (human) edits by fingerprint; --record appends a human_edit entry to the map and ledger
   stamp MAP   embed or refresh the record in an existing map without rebuilding it
   verify MAP  delivery gate: FAIL without record, without prompts, or with unrecorded human edits
-  campaign P  .w3n: show per-map summary; BW folder: write vibeforge_campaign_provenance.json
-  versions    print VibeModForge / VibeBroodForge / VibeWarForge versions and the git commit
+  campaign P  .w3n: show the per-chapter summary
+  versions    print the VibeWarForge version and the git commit
   redact MAP --prompt ID   remove one prompt's text from the ledger and the map (keeps its hash)
-  selftest    write, read back, simulate a human edit, detect it (WC3 + BW)
+  selftest    write, read back, simulate a human edit, detect it (.w3x and .w3n)
 
 Environment fallbacks for add-prompt: VIBEFORGE_AGENT, VIBEFORGE_AGENT_VERSION, VIBEFORGE_MODEL, VIBEFORGE_MODEL_VERSION.
 VIBEFORGE_PROVENANCE=0 switches the build hooks off (scratch builds only, never for delivered maps).
 """
 import os, sys, json, argparse
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'lib'))
-import vmf_provenance as P
+import forge_provenance as P
 
 def _text(a):
     if a.text_file: return open(a.text_file, encoding='utf8').read()
@@ -31,8 +31,8 @@ def _text(a):
     return a.text
 
 def cmd_add(a):
-    targets = list(a.map or []) + [os.path.join(c, 'campaign') for c in (a.campaign or [])]
-    if not targets: sys.exit('add-prompt: give --map and/or --campaign')
+    targets = list(a.map or [])
+    if not targets: sys.exit('add-prompt: give --map (a .w3x map or a .w3n campaign)')
     agent = a.agent or os.environ.get('VIBEFORGE_AGENT'); model = a.model or os.environ.get('VIBEFORGE_MODEL')
     if not agent or not model: sys.exit('add-prompt: --agent and --model are required (or VIBEFORGE_AGENT / VIBEFORGE_MODEL)')
     text = _text(a)
@@ -50,15 +50,15 @@ def _print_record(rec, cur, loc, path):
     if 'prompt_count_incl_maps' in s: print('  prompts incl. all maps: %d' % s['prompt_count_incl_maps'])
     print('  agents: %s' % ', '.join(s['agents']) if s['agents'] else '  agents: -')
     print('  models: %s' % ', '.join(s['models']) if s['models'] else '  models: -')
-    print('  tool versions (VibeModForge/VibeBroodForge/VibeWarForge): %s' % ', '.join(s['tool_versions_used']))
+    print('  tool versions: %s' % ', '.join(s['tool_versions_used']))
     for p in rec['prompts']:
         t = p.get('text'); t = '[redacted, sha256 %s...]' % p['text_sha256'][:12] if t is None else t.replace('\n', ' ')
         print('  #%s %s %s %s / %s %s: %s' % (p.get('n'), p['time'], p['agent'], p['agent_version'], p['model'], p.get('model_version', ''),
                                            t[:300] + ('...' if len(t) > 300 else '')))
     for e in rec['events']:
         if e['type'] == 'human_edit': print('  HUMAN EDIT %s: %s' % (e['time'], e['summary']))
-        else: print('  %s %s tools %s/%s/%s commit %s prompts %d%s' % (e['type'], e['time'], e['tools'].get('VibeModForge'),
-              e['tools'].get('VibeBroodForge'), e['tools'].get('VibeWarForge'), e['tools'].get('commit', '?'), len(e.get('prompt_ids', [])),
+        else: print('  %s %s tools %s commit %s prompts %d%s' % (e['type'], e['time'], P._tool_label(e['tools']),
+              e['tools'].get('commit', '?'), len(e.get('prompt_ids', [])),
               ('  WARNING ' + e['warning']) if e.get('warning') else ''))
     for m in rec.get('maps', []): print('  map %s: %s' % (m['file'], 'no record' if m.get('record', 1) is None else
                                    '%d prompts, %d builds, %d human edits' % (m['prompt_count'], m['build_count'], m['human_edit_count'])))
@@ -67,7 +67,7 @@ def _print_record(rec, cur, loc, path):
 
 def cmd_show(a):
     rec, cur, loc = P.read_map(a.map)
-    if not rec: print('%s: no VibeModForge provenance record' % a.map); sys.exit(1)
+    if not rec: print('%s: no provenance record' % a.map); sys.exit(1)
     if a.json: print(json.dumps(rec, indent=1, ensure_ascii=False)); return
     _print_record(rec, cur, loc, a.map)
 
@@ -81,7 +81,7 @@ def cmd_verify(a):
     out = []
     try: rec, cur, loc = P.read_map(a.map)
     except Exception as e: print('FAIL provenance_unreadable: %r' % (e,)); sys.exit(1)
-    if not rec: out.append('FAIL provenance_missing: no record (build with the VibeModForge writers or run tools/provenance.py stamp)')
+    if not rec: out.append('FAIL provenance_missing: no record (build with the VibeWarForge writers or run tools/provenance.py stamp)')
     else:
         s = P.summarize(rec)['summary']
         if s['prompt_count'] == 0 and rec['kind'] == 'map': out.append('FAIL provenance_no_prompts: no prompt logged (tools/provenance.py add-prompt)')
@@ -98,9 +98,7 @@ def cmd_stamp(a):
     print('stamped %s: %d prompts, %d builds, %d human edits' % (a.map, s['prompt_count'], s['build_count'], s['human_edit_count']))
 
 def cmd_campaign(a):
-    if os.path.isdir(a.path):
-        rec, out = P.campaign_bw(a.path); print('wrote', out); _print_record(rec, None, out, a.path)
-    else: cmd_show(argparse.Namespace(map=a.path, json=False))
+    cmd_show(argparse.Namespace(map=a.path, json=False))
 
 def cmd_versions(a): print(json.dumps(P.tool_versions(), indent=1))
 
@@ -115,10 +113,7 @@ def cmd_redact(a):
     if led: P.save_ledger(a.map, led)
     if rec:
         rec['_current_fp'] = cur
-        if P.game_of(a.map) == 'wc3':
-            files = P.read_wc3_files(open(a.map, 'rb').read()); rec.pop('_current_fp'); P.attach_wc3(files, rec); P.write_wc3_raw(a.map, files)
-        else:
-            chk, other = P.read_bw(a.map); rec.pop('_current_fp'); P.write_bw(a.map, chk, other, rec)
+        files = P.read_wc3_files(open(a.map, 'rb').read()); rec.pop('_current_fp'); P.attach_wc3(files, rec); P.write_wc3_raw(a.map, files)
     print('redacted prompt %s' % a.prompt)
 
 def cmd_selftest(a):
@@ -129,7 +124,7 @@ def cmd_selftest(a):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sp = ap.add_subparsers(dest='cmd', required=True)
-    x = sp.add_parser('add-prompt'); x.add_argument('--map', action='append'); x.add_argument('--campaign', action='append')
+    x = sp.add_parser('add-prompt'); x.add_argument('--map', action='append')
     x.add_argument('--text'); x.add_argument('--text-file'); x.add_argument('--agent'); x.add_argument('--agent-version')
     x.add_argument('--model'); x.add_argument('--model-version'); x.add_argument('--redact', action='store_true',
                    help='store only a hash of the prompt (private prompts)')

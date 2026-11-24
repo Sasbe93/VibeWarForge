@@ -22,13 +22,16 @@ def read(p):
 agents = read('AGENTS.md')
 need(agents is not None, 'AGENTS.md missing at the repository root')
 for p, rx in [('CLAUDE.md', r'^@\.?/?AGENTS\.md\s*$'), ('GEMINI.md', r'^@\.?/?AGENTS\.md\s*$'),
-              ('.github/copilot-instructions.md', r'AGENTS\.md'), ('.cursor/rules/vibemodforge.mdc', r'AGENTS\.md')]:
+              ('.github/copilot-instructions.md', r'AGENTS\.md'), ('.cursor/rules/vibewarforge.mdc', r'AGENTS\.md')]:
     t = read(p)
     need(t is not None, f'{p} missing')
     if t: need(re.search(rx, t, re.M), f'{p} does not point to AGENTS.md')
-    if t and p != '.cursor/rules/vibemodforge.mdc': need(len(t) < 2000, f'{p} is longer than a pointer file: keep rules in AGENTS.md')
-mdc = read('.cursor/rules/vibemodforge.mdc') or ''
+    if t and p != '.cursor/rules/vibewarforge.mdc': need(len(t) < 2000, f'{p} is longer than a pointer file: keep rules in AGENTS.md')
+mdc = read('.cursor/rules/vibewarforge.mdc') or ''
 need(re.match(r'---\n(.*\n)*?alwaysApply:\s*true\n(.*\n)*?---\n', mdc), '.cursor rule lacks frontmatter with alwaysApply: true')
+for p in ('README.md', 'AGENTS.md', 'tools/README.md'):
+    t = read(p) or ''
+    need(not re.search(r'tools/bw/|docs/bw-|data/bw/|\.scx\b', t), f'{p} names a Brood War path (this repository is Warcraft III only)')
 if agents:
     for path in sorted(set(re.findall(r'`((?:tools|docs|templates|data)/[^`\s]+)`', agents))):
         if any(c in path for c in '<*>'): continue
@@ -46,9 +49,7 @@ for text, want in [('RESULT OK (0 FAIL, 0 WARN)', 'OK'), ('  FAIL x: y', 'FAIL')
 
 # design-note completeness
 need(deliver.note_problems('wc3', read('templates/Design_Note_example_wc3_mission.md') or '') == [],
-     'the WC3 example design note no longer has every line the gate requires: ' + '; '.join(deliver.note_problems('wc3', read('templates/Design_Note_example_wc3_mission.md') or '')))
-need(deliver.note_problems('bw', read('templates/Design_Note_example_bw_mission.md') or '') == [],
-     'the BW example design note no longer has every line the gate requires: ' + '; '.join(deliver.note_problems('bw', read('templates/Design_Note_example_bw_mission.md') or '')))
+     'the example design note no longer has every line the gate requires: ' + '; '.join(deliver.note_problems('wc3', read('templates/Design_Note_example_wc3_mission.md') or '')))
 need(len(deliver.note_problems('wc3', '# empty note')) >= 6, 'an empty design note is not refused')
 tmp = os.path.join(ROOT, 'output', '_selftest_note.md'); os.makedirs(os.path.dirname(tmp), exist_ok=True)
 open(tmp, 'w', encoding='utf8').write('The hero walks north.\nDer Held geht nach Norden und kämpft.\n')

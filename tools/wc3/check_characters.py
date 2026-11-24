@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""check_characters.py MAP(.w3x|.scx|.j) or DIR  -- shared WC3/BW/SC2 character check (rule 'Characters').
+"""check_characters.py MAP(.w3x|.j) or DIR  -- character check (rule 'Characters').
 FAIL: Design_Note lacks '## Characters', or a speaking named character lacks an entry with all fields
       Trait / Goal / Weakness / Voice / Tone / Moments (Quirk optional, character_profile); or the whole cast shares one Tone.
 WARN: every character of a cast of 3+ has a Quirk (character_profile: not everyone needs a tic; others stand out by personality).

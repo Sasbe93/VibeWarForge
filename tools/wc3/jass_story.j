@@ -31,7 +31,7 @@ globals
     trigger gStoryDestT = null
 endglobals
 // ============================================================================================================
-// jass_story.j - storytelling / cinematic helpers for WC3 campaign missions (VibeModForge).
+// jass_story.j - storytelling / cinematic helpers for WC3 campaign missions (VibeWarForge).
 // Injected by default by tools/wc3/mission/wc3mission.py (Mission.finish). Guide: docs/wc3-storytelling-cinematics.md
 // Needs jass_cine_ui.j, jass_cinematic_freeze.j, jass_cine_camera.j, jass_shot_helpers.j (injected together).
 //

@@ -210,7 +210,7 @@ PLACEHOLDER: no learnings yet. Fill only from real feedback/tests; do not invent
 ## Symmetry tolerance
 - Maps need not be 100 % symmetric. Required: gameplay fairness per start (same resources, comparable path/rush distances within a few %, equal choke widths, equal creep/expansion value, equal access to centre/shops).
 - Purely visual decoration (doodads, tile variation, non-blocking props) should deliberately differ between sides, as long as it does not affect pathing, vision, building space or resources.
-- Therefore near-symmetric layouts (e.g. SC:BW 3-player maps on the tile grid) are acceptable and should be built; checks score fairness with tolerances, not exact tile mirroring.
+- Therefore near-symmetric layouts (e.g. 3-player maps on the tile grid) are acceptable and should be built; checks score fairness with tolerances, not exact tile mirroring.
 
 ## General rule: standard building facing (all maps)
 - Applies to every map: campaign, ranked and fun maps.

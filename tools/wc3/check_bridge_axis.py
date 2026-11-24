@@ -9,7 +9,7 @@ The real deck axis comes from bridge_ends.deck_deg (id + fixedRot + model base a
   bridge_axis FAIL: along the real deck axis there is no dry land within 14 tiles on one or both sides (the deck does
                     not land), or the water extends further along the deck than across it (the bridge lies along the water).
   deck_walk  WARN : the pathing map is not walkable along the deck between the landings (only for maps that bake the
-                    deck into war3map.wpm, i.e. VibeModForge builders; stock maps get bridge pathing at runtime) - INFO else.
+                    deck into war3map.wpm, i.e. this repository's builders; stock maps get bridge pathing at runtime) - INFO else.
   bridge_landing FAIL: a visible deck end (model's fixed half length and end height, bridge_ends.GEOM) is over water/short
                     of the bank, floats above the ground, has ground above it (step) or lies over a slope/cliff (landing
                     not flat); both ends are reported. WARN instead of FAIL when the model geometry is only estimated.
@@ -54,7 +54,7 @@ def check(path):
     dd = os.path.dirname(os.path.abspath(path))
     notes = J + ''.join(open(q, encoding='utf8', errors='replace').read() for q in glob.glob(os.path.join(dd, 'Design_Note*.md')))
     ok = set(re.findall(r'BRIDGE_AXIS_OK\s+(-?\d+,-?\d+)\s*::\s*\S', notes))
-    built = 'VibeModForge' in J or 'bridge_ends' in J
+    built = 'VibeWarForge' in J or 'VibeModForge' in J or 'bridge_ends' in J   # VibeModForge: maps built before the split (former name)
     n = 0
     for b in w3parse.doo(m.read('war3map.doo')):
         if b['id'] not in B.bridge_ids(): continue

@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
-"""voice_tts - voiced dialogue for WC3 missions (VibeModForge). Default for every mission built with wc3mission.Mission.finish().
+"""voice_tts - voiced dialogue for WC3 missions (VibeWarForge). Default for every mission built with wc3mission.Mission.finish().
 
 Engine: Kokoro-82M (hexgrad, model weights + voice packs Apache-2.0) run through kokoro-onnx (MIT). Apache-2.0 places no
 restriction on generated audio, so the lines may be shipped inside public maps. Credit line: VOICE_CREDIT.
 Not allowed as engines: online/consumer TTS whose terms do not grant use of the output (e.g. Edge Read Aloud via edge-tts,
-whose service terms are unclear) - do not add them here. This is the WC3 rule only; the BW pipeline (tools/lib/bw/sclib.py)
-uses edge-tts, see DEPENDENCIES.md.
-Setup (once per box): pip install kokoro-onnx soundfile ; model files into $VMF_KOKORO_DIR (default ~/tts/kokoro):
+whose service terms are unclear) - do not add them here.
+Setup (once per box): pip install kokoro-onnx soundfile ; model files into $VWF_KOKORO_DIR (default ~/tts/kokoro):
   https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
   https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
 
@@ -28,7 +27,7 @@ Markup: tools/lib/voice_delivery.py / docs/voice-delivery-markup.md. The script 
 silence, tempo/pitch/volume per emotion, local stress boost), stays in war3map.j as the comment and is written with the
 speaker profiles to Voice_Script_<prefix>.md next to the map (check_voice_delivery.py FAILs lines without notes).
 voices={...} values: TYPE, (gender, kind), or {'type': TYPE, 'profile': 'character + voice description for better tools'}.
-Engine: Kokoro (default). VMF_VO_ENGINE=chatterbox uses the optional expressive engine (tools/lib/voice_chatterbox.py, MIT)
+Engine: Kokoro (default). VWF_VO_ENGINE=chatterbox uses the optional expressive engine (tools/lib/voice_chatterbox.py, MIT)
 with the Kokoro type voice as timbre reference.
 Opt-out only with a design reason: Mission.finish(..., voice_opt_out='<reason>') and 'VOICE_OPT_OUT: <reason>' in the
 design note (check_voiced_dialogue.py)."""
@@ -115,12 +114,12 @@ def _kokoro():
     global _K
     if _K is None:
         from kokoro_onnx import Kokoro
-        d=os.path.expanduser(os.environ.get('VMF_KOKORO_DIR','~/tts/kokoro'))
+        d=os.path.expanduser(os.environ.get('VWF_KOKORO_DIR','~/tts/kokoro'))
         _K=Kokoro(os.path.join(d,'kokoro-v1.0.onnx'),os.path.join(d,'voices-v1.0.bin'))
     return _K
 def jtext(lit):
     t=lit[1:-1].replace('\\"','"'); t=re.sub(r'\|c[0-9a-fA-F]{8}|\|r|\|n',' ',t); return t
-VO_ENGINE=os.environ.get('VMF_VO_ENGINE','kokoro')
+VO_ENGINE=os.environ.get('VWF_VO_ENGINE','kokoro')
 VO_RE=re.compile(r'//\s*VO:\s*(.*\S)\s*$')
 def vo_comment(line):
     """the delivery script of a JASS call line (`// VO: ...`), or ''"""
@@ -135,7 +134,7 @@ def _synth_script(script,vtype,wav):
             a,sr=_kokoro().create("The fields were green when I left this valley. Now the grain is grey, and the roads remember "
                                   "my name. We do what we are told, and we carry on.",voice=voice,speed=speed,lang=lang); sf.write(ref,a,sr)
         jobs=wav+'.json'; json.dump([dict(script=script,ref=ref,out=wav)],open(jobs,'w'))
-        py=os.path.expanduser(os.environ.get('VMF_CHATTERBOX_PY','~/tts/venv-chatterbox/bin/python'))
+        py=os.path.expanduser(os.environ.get('VWF_CHATTERBOX_PY','~/tts/venv-chatterbox/bin/python'))
         subprocess.run([py,os.path.join(os.path.dirname(VD.__file__),'voice_chatterbox.py'),jobs],check=True,capture_output=True)
         os.remove(jobs); return
     k=_kokoro()

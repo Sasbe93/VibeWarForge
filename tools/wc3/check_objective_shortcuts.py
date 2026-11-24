@@ -9,8 +9,7 @@ in the script, a Goblin Laboratory on the map): flying units, Goblin Zeppelin, M
 teleport items. Each one is compared with the straight air line: anti-air threats (everything that is not a known
 ground-only unit) within 700 wu of the line must be at least min(2, ground encounters). Invisibility only WARNs.
 Note lines: 'OBJECTIVE_SHORTCUTS: <quest|region> :: <vectors> :: <how each one is blocked>' (FAIL when missing and
-any vector exists) and 'SHORTCUT_OK: <quest|region> :: <vector> :: <reason>'. Static. Same rule as Brood War
-predelivery check 52."""
+any vector exists) and 'SHORTCUT_OK: <quest|region> :: <vector> :: <reason>'. Static."""
 import sys,os,re,math
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 import mission_model as W

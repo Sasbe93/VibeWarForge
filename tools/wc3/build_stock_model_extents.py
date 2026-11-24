@@ -21,7 +21,7 @@ def fetch(path):
     if os.path.exists(fn): return open(fn, 'rb').read(), MIRROR + k.replace('\\', '/') + '.mdx'
     url = MIRROR + k.replace('\\', '/') + '.mdx'
     try:
-        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 VibeModForge'})
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 VibeWarForge'})
         b = urllib.request.urlopen(req, timeout=30).read()
     except Exception as e:
         return None, '%s (%s)' % (url, e)

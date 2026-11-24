@@ -12,7 +12,7 @@ import sys, os, re, json, struct, collections
 sys.path.insert(0, 'tools/wc3'); sys.path.insert(0, 'tools/lib/wc3')
 import w3parse
 
-# Reference band (min_ok, typical) measured on three reference campaign chapters built with VibeModForge (Lordaeron
+# Reference band (min_ok, typical) measured on three reference campaign chapters built with VibeWarForge (Lordaeron
 # Fall/Winter, 96x96 to 120x120). Keep this table and docs/quality-bar.md in sync when the band is re-measured.
 BAND = {
     'ground_tiles_used':       (5, 6),

@@ -7,8 +7,7 @@ design note line
 Tiers: tools/lib/wc3/tech_tiers.py (hall tier each unit/building needs, from data/wc3/tech/wc3_techtree.json).
 FAIL: missing TECH_LEVEL (when the player can build or train anything); nothing restricted and the level is not
 'full'; early with tier-3 units/buildings or more than half of tier 2; mid with the whole tier 3; full without a
-reason. WARN: early with weapon/armor upgrades above level 1. Static; pair it with check_tech_wc3.py (consistency).
-Same rule as Brood War predelivery check 54."""
+reason. WARN: early with weapon/armor upgrades above level 1. Static; pair it with check_tech_wc3.py (consistency)."""
 import sys,os,re
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 import mission_model as W

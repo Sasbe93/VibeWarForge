@@ -6,7 +6,7 @@ emotional intensity; the speaker timbre is cloned from a short reference clip (w
 voice TYPE, so a character keeps one recognisable voice). Output carries Resemble's inaudible Perth watermark - keep it.
 Setup (once per box, separate venv because of its pinned deps):
   python3 -m venv ~/tts/venv-chatterbox && ~/tts/venv-chatterbox/bin/pip install chatterbox-tts "setuptools<81"
-Usage (called by voice_tts.py when VMF_VO_ENGINE=chatterbox, or by hand):
+Usage (called by voice_tts.py when VWF_VO_ENGINE=chatterbox, or by hand):
   ~/tts/venv-chatterbox/bin/python voice_chatterbox.py jobs.json
   jobs.json: [{"script": "<VO markup>", "ref": "ref.wav", "out": "line.wav", "mode": "line"|"segments"}, ...]
 Verify every rendered line (listen or ASR, e.g. faster-whisper): it can slur or repeat words; re-render with another seed.

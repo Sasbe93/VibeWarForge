@@ -15,7 +15,7 @@ missing TARGET_DURATION or OBJECTIVE_PATHS line):
   4 the walk+fight estimate (walk time + 60 s per path encounter, plus 3 min for an enemy-hall assault) is at least
     about a third of the quest's budget
   5 the main quest cannot be finished before the first path encounter or scripted wave
-Shared duration math: tools/lib/mission_duration.py. Same rule as Brood War predelivery check 51."""
+Duration math: tools/lib/mission_duration.py."""
 import sys,os,re,math,heapq,collections
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0,os.path.join(os.path.dirname(os.path.abspath(__file__)),'..','lib'))

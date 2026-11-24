@@ -54,7 +54,7 @@ Typical 1v1: 80x80 to 104x104 playable, 2 starts, rotational or mirror symmetry,
 ## Symmetry tolerance
 - Maps need not be 100 % symmetric. Required: gameplay fairness per start (same resources, comparable path/rush distances within a few %, equal choke widths, equal creep/expansion value, equal access to centre/shops).
 - Purely visual decoration (doodads, tile variation, non-blocking props) should deliberately differ between sides, as long as it does not affect pathing, vision, building space or resources.
-- Therefore near-symmetric layouts (e.g. SC:BW 3-player maps on the tile grid) are acceptable and should be built; checks score fairness with tolerances, not exact tile mirroring.
+- Therefore near-symmetric layouts (e.g. 3-player maps on the tile grid) are acceptable and should be built; checks score fairness with tolerances, not exact tile mirroring.
 
 ## Trees and creep placement
 - Every start position needs harvestable trees within initial sight range of the town hall (about 1800 range incl. workers' sight), so lumber starts immediately without scouting. Check: nearest tree cluster to each start <= ~1400 and equal (fair) for all starts.
@@ -118,7 +118,7 @@ Rules derived:
 
 ## No large empty areas
 - Large regions must never stay empty (e.g. blank plain between corner mains and the centre). Every large area needs structure or purpose: height variation, cliffs/water/tar features, alternative paths, an expansion or pocket, neutral/destructible objects, doodad clusters, tile variety.
-- Check: grid scan for the largest connected featureless area; too large (about 12x12 BW tiles or equivalent) = FAIL; calibrate so no reference ladder map fails.
+- Check: grid scan for the largest connected featureless area; too large (largest empty square in terrain cells, `tools/wc3/empty_area_wc3.py`) = FAIL; calibrate so no reference ladder map fails.
 
 ## Creep camp dressing and facing
 - Dress every creep camp with environment doodads that fit its creeps: e.g. gnoll huts/campfire for gnolls, kobold tents, murloc huts/nets at water, spider webs/eggs, troll totems, ogre bones/meat racks, satyr/ruins, golem rocks/crystals, dragon bones near a roost.
@@ -337,7 +337,7 @@ single-linked within 650 wu; levels from unitbalance.slk; XP = default hero XP t
   building guards at L13 or higher, 2 small camps (L5-9) near each main, creeps at most L9, and XP/side within range.
 - Check: ranked_rules_camp_strength.py (called from check_ranked_wc3.py). All 14 refs pass.
 
-## Rule: contextual doodads (general rule, also in wc3-classic-map-design and bw-ranked-maps)
+## Rule: contextual doodads (general rule, also in wc3-map-design)
 - Doodads are placed in context, never as random props. Themed props come in clusters at a matching POI: graves/tombstones only in a graveyard, ruin or crypt (at least 3 together), bones/skulls/corpses only at creep camps or battle sites, wreckage only at battle sites, barrels/crates at camps, villages and docks.
 - No isolated decorative prop on a lane or path. Decorative doodads go at path edges, cliff feet, base outskirts and POIs. Path furniture (sign posts, lamp posts, torches, braziers) may stand beside paths.
 - Reference measurements (14 refs): 0-10 themed props without a cluster or POI per map (0-18 % of props), 0-4 of them on lanes. test map I: 79 (33 %), 28 on lanes.

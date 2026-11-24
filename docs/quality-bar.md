@@ -15,7 +15,7 @@ design review). Copying it and stopping there produces exactly the "simple and f
 So: plan the mission first (outline, design note, paths, duration, abilities, scenes), then write a build script of
 your own that is as rich as the plan, then run the gate. Expect many build-check-fix rounds.
 
-## Measured reference band (WC3 missions)
+## Measured reference band
 `python3 tools/wc3/quality_metrics.py MAP.w3x` measures the rows below; `tools/deliver.py` refuses a mission with 5
 or more rows below the band unless the design note explains why (`QUALITY_BAND_OK: <reason>`, for example a small
 interior map or a deliberate hero-only chapter). Below the band is a prompt to look again, not proof of bad quality.
@@ -39,13 +39,9 @@ The "weak agent map" column is a map another agent built from this repository wi
 judged "so-so" in map and mission design by the playtester. A cave map (Northrend interior, few ramps by design)
 measured 4 rows below, which is why the refusal starts at 5.
 
-Brood War has no metric tool yet; the BW predelivery check already measures doodad purpose, mineral shapes, cliff
-blending, start setup variety and objective paths. Compare a new BW map with the example missions
-(`docs/bw-example-missions.md`) by eye: minimap and routes PNG side by side.
-
 ## What the agent must judge (no tool can)
 Before running the gate, look at the minimap/preview PNG and the routes PNG and answer these in the design note's
-`## Design Review` (WC3) or flow section (BW). Be honest; "fine" is not an answer.
+`## Design Review`. Be honest; "fine" is not an answer.
 - **Looks:** Does the terrain read as a place (river valley, burnt farmland, cliff fortress) or as stripes and blobs?
   Are there long straight cliff or water bands with one gap? Is every quarter of the map dressed with a scene that
   belongs to the story, or are there empty fields?
@@ -62,8 +58,7 @@ Before running the gate, look at the minimap/preview PNG and the routes PNG and 
 State these limits when you deliver.
 
 ## Known gaps in the repository itself
-- The WC3 mission example (`tools/wc3/mission/example_mission.py`) fails 28 of about 150 mission checks; it is a
-  pipeline skeleton, not a reference. A full WC3 reference mission that passes the gate is still missing (the BW
-  examples in `docs/bw-example-missions.md` do pass theirs).
-- The WC3 ranked example (`tools/ranked/wc3/example_2p.py`) fails the ranked check (about 100 findings); use
+- The mission example (`tools/wc3/mission/example_mission.py`) fails 28 of about 150 mission checks; it is a
+  pipeline skeleton, not a reference. A full reference mission that passes the gate is still missing.
+- The ranked example (`tools/ranked/wc3/example_2p.py`) fails the ranked check (about 100 findings); use
   `docs/wc3-ranked-maps.md` and the ranked rules, not the example's look.

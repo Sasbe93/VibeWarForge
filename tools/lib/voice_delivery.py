@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""voice_delivery - VO markup v1: delivery notes for voiced campaign dialogue (Warcraft III AND StarCraft: Brood War).
+"""voice_delivery - VO markup v1: delivery notes for voiced campaign dialogue (Warcraft III).
 
 Every voiced line carries a DELIVERY SCRIPT: the spoken words plus notes on emotion, stress, pauses and tempo.
 The notes stay in the sources, in war3map.j (as `// VO:` comments) and in the Voice_Script*.md next to the map, so an agent
-with a better (emotional) TTS can re-voice the lines later. The free pipeline (Kokoro for WC3 / edge-tts for BW, + ffmpeg) applies what it can:
+with a better (emotional) TTS can re-voice the lines later. The free pipeline (Kokoro + ffmpeg) applies what it can:
 pauses as real silence between segments, per-segment tempo/pitch/volume, emotion presets, and a local stress boost.
 
 MARKUP (full spec: docs/voice-delivery-markup.md)
@@ -223,13 +223,13 @@ def punctuated(script):
     s=re.sub(r'([,;:.!?…]*)\s*<L>',lambda m:(m.group(1) if m.group(1) in ('.','!','?') else '...'),s)   # sentence end keeps its mark
     s=re.sub(r'([,;:.!?…]*)\s*<S>',lambda m:m.group(1) or ',',s)
     return re.sub(r'\s+',' ',re.sub(r'\s+([,.!?;:])',r'\1',s)).strip()
-# ---------------- Voice_Script.md (shared WC3/BW record) ----------------
+# ---------------- Voice_Script.md (record next to the map) ----------------
 def write_script_md(path,title,rows,profiles,genders=None):
     """rows: [dict(id, speaker, text, script)]; profiles {speaker: profile text}; genders {speaker: 'male'|'female'}
     (default: from the rows' voice 'type', female_* / spirit = female) -> '## Speaker voices' section, read by
     tools/wc3/check_unit_voice.py (unit sound-set gender must match). Human- and agent-readable."""
     L=['# Voice script: %s'%title,'',
-       'VO markup v1 (VibeModForge docs/voice-delivery-markup.md). Subtitle = text shown in game; Delivery = how to speak it.',
+       'VO markup v1 (VibeWarForge docs/voice-delivery-markup.md). Subtitle = text shown in game; Delivery = how to speak it.',
        'Pauses inside a line 0.1-0.6 s; between lines the mission rules apply (<= 1 s, interruptions immediately).','',
        '## Speaker profiles','']
     for sp in sorted({r['speaker'] for r in rows}):

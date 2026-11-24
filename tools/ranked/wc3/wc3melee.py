@@ -117,7 +117,7 @@ class Melee:
         st=[u for u in s.units if u['id']=='sloc']; st.sort(key=lambda u:u['o']); s.starts=st
         def S(t): return t.encode('utf8')+b'\0'
         cb=[s.OX+M*128,s.OY+M*128,-s.OX-M*128,-s.OY-M*128,s.OX+M*128,-s.OY-M*128,-s.OX-M*128,s.OY+M*128]
-        w=struct.pack('<iii',25,1,6059)+S('TRIGSTR_001')+S('VibeModForge')+S('TRIGSTR_002')+S('TRIGSTR_003')
+        w=struct.pack('<iii',25,1,6059)+S('TRIGSTR_001')+S('VibeWarForge')+S('TRIGSTR_002')+S('TRIGSTR_003')
         w+=struct.pack('<8f',*cb)+struct.pack('<4i',M,M,M,M)+struct.pack('<ii',N-2*M,N-2*M)+struct.pack('<i',FLAGS)+b'A'
         w+=struct.pack('<i',-1)+S('')+S('')+S('')+S('')+struct.pack('<i',0)+S('')+S('')+S('')+S('')
         w+=ST.w3i_env(fog_rgb=(70,82,96),start=3000.0,end=9000.0,dens=0.2,weather=b'\0\0\0\0',water_rgb=(70,98,120))
