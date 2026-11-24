@@ -27,8 +27,13 @@ def enc(data,key):
         s2=(v+s2+(s2<<5)+3)&0xFFFFFFFF
         out+=struct.pack('<I',c)
     return bytes(out)
-def write_mpq(path,files,prefix=b'',store=('.w3x','.w3m')):
+def write_mpq(path,files,prefix=b'',store=('.w3x','.w3m'),raw=False):
+    """raw=True: write the files exactly as given (no sanitize/roll/strings/editor defaults/provenance);
+    used by tools/provenance.py to re-pack an existing (possibly editor-saved) map."""
     files=dict(files)
+    if raw:
+        files.pop('_rolled',None)
+        return _pack(path,files,prefix,store)
     if 'war3mapUnits.doo' in files:
         import sanitize; sanitize.fix(files)
     if 'war3map.w3e' in files and 'war3map.j' in files and not files.get('_rolled'):
@@ -49,6 +54,14 @@ def write_mpq(path,files,prefix=b'',store=('.w3x','.w3m')):
         files.setdefault('war3map.w3r', I(5,0))                    # regions v5, none
         files.setdefault('war3map.w3c', I(0,0))                    # cameras v0, none
         files.setdefault('war3map.w3s', I(1,0))                    # sounds v1, none
+    try:   # hidden provenance record (prompts, agent, model, tool versions, fingerprint), docs/provenance.md
+        import os as _os, sys as _sys
+        _lib=_os.path.join(_os.path.dirname(_os.path.abspath(__file__)),'..')
+        if _lib not in _sys.path: _sys.path.insert(0,_lib)
+        import vmf_provenance; vmf_provenance.hook_wc3(path,files)
+    except Exception as _e: print('WARNING provenance record not written: %r'%(_e,))
+    return _pack(path,files,prefix,store)
+def _pack(path,files,prefix,store):
     files['(listfile)']=('\r\n'.join(files.keys())+'\r\n').encode()
     SS=3; sec=512<<SS
     hsize=1

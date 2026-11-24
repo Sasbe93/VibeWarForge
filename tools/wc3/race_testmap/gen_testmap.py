@@ -271,6 +271,8 @@ endfunction
     if a.no_imports:
         _m=MPQ(open(a.out,'rb').read()); _l=_m.read('(listfile)').decode().split()
         bad=[x for x in _l if x.lower()=='war3map.imp' or 'imported' in x.lower() or x.lower().endswith(('.mdx','.mdl','.mp3','.wav'))]
+        bad=[x for x in bad if x.lower()!='war3mapimported\\vibeforge_provenance.json']   # provenance record is not an asset import (docs/provenance.md)
+        if [x.lower() for x in bad]==['war3map.imp']: bad=[]
         assert not bad,('imports found',bad); print('no-imports: OK, files:',_l)
     j=MPQ(open(a.out,'rb').read()).read('war3map.j'); jp=os.path.join(tmp,'war3map.j'); open(jp,'wb').write(j)
     if a.keep: shutil.copy(jp,a.keep); json.dump(T,open(a.keep+'.plan.json','w'),indent=1)

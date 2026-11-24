@@ -42,6 +42,8 @@ def check(path,ref=None,melee=False,no_imports=False,notes=()):
     txt=''.join(open(f,encoding='utf8',errors='replace').read() for f in notes)+(m.read('war3map.j') or b'').decode('utf8','replace')
     ce,cw=CTT.cliff_findings(r['w3e_ts'].decode('latin1'),[e[p+4+4*k:p+8+4*k].decode('latin1') for k in range(nc)],txt); F+=ce; W+=cw
     imp=[x for x in r['list'] if x.lower()=='war3map.imp' or 'imported' in x.lower() or x.lower().endswith(('.mdx','.mdl','.mp3','.wav'))]
+    imp=[x for x in imp if x.lower()!='war3mapimported\\vibeforge_provenance.json']   # provenance record is not an asset import (docs/provenance.md)
+    if [x.lower() for x in imp]==['war3map.imp']: imp=[]
     if imp and a.no_imports: F.append('imported files present (--no-imports profile requested): %s'%imp)
     for x in r['list']:
         if m.read(x) is None: F.append('unreadable file '+x)

@@ -18,3 +18,7 @@ tools/lib/bw/isomtool_src/external/
 *scenario.chk
 locales_*_Assets_campaign_*
 build/
+
+# provenance ledgers and human-edit backups (docs/provenance.md)
+*.provenance.json
+*.human-edited-*

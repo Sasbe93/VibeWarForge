@@ -6,7 +6,9 @@ This is the ONLY supported way to hand a map, mission or campaign chapter to a u
     ranked maps: check_ranked_wc3.py / check_ranked_bw.py),
   - a WC3 mission is far below the reference quality band in several rows (tools/wc3/quality_metrics.py,
     docs/quality-bar.md) without a `QUALITY_BAND_OK: <reason>` line in the design note,
-  - delivered text (design note, voice script) is not English.
+  - delivered text (design note, voice script) is not English,
+  - the map has no provenance record, no logged prompt, or an unrecorded human edit (tools/provenance.py verify,
+    docs/provenance.md).
 On success it writes output/delivery/<map>_delivery.zip with the map, the design note, the voice script, the
 PNG previews and GATE_REPORT.json (what ran, the result of every check, the repository commit). Files with SECRET in
 their name are never packed. The gate cannot judge how the map looks or plays: say what was not tested in-game.
@@ -108,6 +110,7 @@ def gate(mp, ranked=False, note=None):
     except Exception: rep['dirty'] = None
     if ranked:
         rep['mode'] = 'ranked'
+        provenance(mp, rep)
         rep['problems'] += preflight(game) if game == 'wc3' else []
         tool = 'tools/wc3/check_ranked_wc3.py' if game == 'wc3' else 'tools/bw/check_ranked_bw.py'
         rc, out = run([sys.executable, tool, mp])
@@ -118,6 +121,7 @@ def gate(mp, ranked=False, note=None):
         return rep
     rep['mode'] = 'mission'
     rep['problems'] += preflight(game)
+    provenance(mp, rep)
     nf = find_note(mp, note)
     if not nf:
         rep['problems'].append('no design note next to the map (Design_Note_<map>.md from templates/Design_Note_template.md)')
@@ -153,6 +157,20 @@ def gate(mp, ranked=False, note=None):
         rep['checks']['predelivery_check'] = {'status': 'CRASH' if crash else 'FAIL' if fails or rc else 'OK', 'fails': fails[:40]}
         if fails or rc or crash: rep['problems'].append(f'predelivery_check: {len(fails)} FAIL line(s)' + (' and a crash' if crash else ''))
     return rep
+
+
+def provenance(mp, rep):
+    """hidden provenance record (docs/provenance.md): prompts logged, no unrecorded human edit"""
+    rc, out = run([sys.executable, 'tools/provenance.py', 'verify', os.path.abspath(mp)])
+    lines = [l for l in out.splitlines() if l.startswith(('OK', 'WARN', 'FAIL'))]
+    rep['checks']['provenance'] = {'status': 'FAIL' if rc else 'OK', 'fails': [l for l in lines if l.startswith('FAIL')]}
+    if rc: rep['problems'].append('provenance: ' + '; '.join(l for l in lines if l.startswith('FAIL'))[:400]
+                                  or 'provenance verify failed: ' + out[-300:])
+    try:
+        sys.path.insert(0, os.path.join(ROOT, 'tools', 'lib')); import vmf_provenance as P
+        rec, _, loc = P.read_map(mp)
+        if rec: rep['provenance'] = dict(P.summarize(rec)['summary'], stored_in=loc, record_id=rec.get('record_id'))
+    except Exception as e: rep['provenance_error'] = repr(e)
 
 
 def package(mp, rep, outdir):
