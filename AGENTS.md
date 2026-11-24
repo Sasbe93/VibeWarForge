@@ -25,8 +25,10 @@ as your workspace (agents read this file from the workspace root), and run every
 - Never touch the user's PC or game without explicit permission. Before building content with new or changed units,
   heroes, buildings or abilities, ask how it gets tested (README "Ask the user how new content gets tested").
 - Never deliver with a FAIL, and never hide one: say what failed, what was not tested in-game, and why.
-- Never silently downgrade: if a required tool is missing (isomtool, tileset files, edge-tts, ffmpeg, pjass), stop and
-  tell the user what to install (`DEPENDENCIES.md`, `docs/bw-terrain-setup.md`). No rectangle-plateau terrain, no
+- Never silently downgrade: if a required tool or data set is missing (isomtool, tileset files, WC3 stock SLK data,
+  JASS headers, edge-tts, ffmpeg, pjass), stop and tell the user what to install (`DEPENDENCIES.md`,
+  `external/README.md`, `docs/bw-terrain-setup.md`). A fresh clone has none of them; without the WC3 stock data
+  about a third of the WC3 checks crash, and `tools/deliver.py` stops first. No rectangle-plateau terrain, no
   text-only missions as a fallback.
 - Never port WC3 rules to BW or the other way round (each guide's "Game boundary").
 - Never commit Blizzard game files (tileset files, extracted assets) or generated maps (`output/` is git-ignored).

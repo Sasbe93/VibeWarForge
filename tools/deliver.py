@@ -44,6 +44,29 @@ GERMAN = re.compile(r'[äöüÄÖÜß]|\b(und|nicht|der|das|mit|wird|sind|oder|a
 QUALITY_REFUSE_ROWS = 5   # rows below the reference band that refuse a WC3 mission without QUALITY_BAND_OK
 
 
+def preflight(game):
+    """Dependencies the checks need. Without them many checks crash or skip, so the gate stops first
+    (external/README.md says where each comes from)."""
+    out = []
+    if game == 'wc3':
+        stock = os.environ.get('WC3_STOCK_DATA') or os.path.join(ROOT, 'external', 'wc3data', 'warpack-stock-data-0.0.1', 'data')
+        for f in ('units/unitskin.txt', 'units/unitbalance.slk', 'doodads/doodads.slk'):
+            if not os.path.isfile(os.path.join(stock, f)):
+                out.append(f'missing stock SLK data {f} under {os.path.relpath(stock, ROOT)} (external/README.md: warpack-stock-data, '
+                           'or set WC3_STOCK_DATA); about a third of the WC3 checks crash without it'); break
+        hdr = os.environ.get('JASS_HEADERS') or os.path.join(ROOT, 'external', 'jass')
+        if not os.path.isfile(os.path.join(hdr, 'common.j')):
+            out.append('missing JASS headers external/jass/common.j (external/README.md, or set JASS_HEADERS)')
+        pj = os.environ.get('PJASS') or os.path.join(ROOT, 'external', 'pjass', 'pjass')
+        if not (os.path.isfile(pj) or os.path.isfile(pj + '.exe')):
+            out.append('missing pjass (external/README.md, or set PJASS): the script syntax check cannot run')
+    else:
+        iso = os.environ.get('ISOMTOOL') or os.path.join(ROOT, 'tools', 'lib', 'bw', 'isomtool')
+        if not (os.path.isfile(iso) or os.path.isfile(iso + '.exe')):
+            out.append('missing isomtool (python3 tools/bw/build_isomtool.py, docs/bw-terrain-setup.md)')
+    return out
+
+
 def find_note(mp, explicit=None):
     if explicit: return explicit if os.path.isfile(explicit) else None
     d = os.path.dirname(os.path.abspath(mp)); base = os.path.splitext(os.path.basename(mp))[0]
@@ -85,6 +108,7 @@ def gate(mp, ranked=False, note=None):
     except Exception: rep['dirty'] = None
     if ranked:
         rep['mode'] = 'ranked'
+        rep['problems'] += preflight(game) if game == 'wc3' else []
         tool = 'tools/wc3/check_ranked_wc3.py' if game == 'wc3' else 'tools/bw/check_ranked_bw.py'
         rc, out = run([sys.executable, tool, mp])
         st, fails = classify(out)
@@ -93,6 +117,7 @@ def gate(mp, ranked=False, note=None):
         if st in ('FAIL', 'CRASH'): rep['problems'].append(f'ranked check: {st} ({len(fails)} findings)')
         return rep
     rep['mode'] = 'mission'
+    rep['problems'] += preflight(game)
     nf = find_note(mp, note)
     if not nf:
         rep['problems'].append('no design note next to the map (Design_Note_<map>.md from templates/Design_Note_template.md)')
