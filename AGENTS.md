@@ -1,8 +1,25 @@
 # AGENTS.md - start here
 
-You are an AI agent (Cursor, Claude Code, Codex, ...) using VibeModForge to build StarCraft: Brood War or Warcraft III
-content. Read this file first, then the guide for your task. The checkers enforce the guides; a map is delivered only
-when its checks show **0 FAIL**. Run every tool from the repository root.
+You are an AI agent (Cursor, Claude Code, Codex, Copilot, Gemini, ...) using VibeModForge to build StarCraft: Brood
+War or Warcraft III content. This file is the single entry point; `CLAUDE.md`, `GEMINI.md`,
+`.cursor/rules/vibemodforge.mdc` and `.github/copilot-instructions.md` only point here. Open the **repository root**
+as your workspace (agents read this file from the workspace root), and run every tool from the repository root.
+
+## Mandatory for every map, mission or campaign (all games)
+1. **Read before you build:** this file, `docs/lessons.md` (how agents got maps wrong before), `docs/quality-bar.md`
+   (what delivery quality means and what the tools cannot judge), then the guides for your game and task below.
+2. **Plan before you build:** campaign outline, then a design note from `templates/Design_Note_template.md` next to
+   the map (`Design_Note_<map>.md`), with every line the template marks as required. The design note is part of
+   the delivery.
+3. **Build with the repository's builders** (`tools/lib/bw/sclib.py` + `missionkit.py`, `tools/wc3/mission/wc3mission.py`
+   + `tools/lib/wc3/`). The examples show the pipeline only; your mission needs its own terrain, scenes, enemies,
+   story and code, as rich as the plan (`docs/quality-bar.md`).
+4. **Gate:** `python3 tools/deliver.py output/<map>.w3x|.scx` runs every check, the design-note completeness test
+   and (WC3) the quality metrics, and packs `output/delivery/<map>_delivery.zip` only when all pass. **Deliver only
+   that ZIP.** If the gate refuses, fix the map and run it again. Never deliver around the gate, never call a FAIL
+   "known" or "existing", never edit a check to make your map pass.
+5. **Report honestly:** say what was tested only statically or in simulation and what was not tested in-game.
+6. **Feedback goes into the repository** (see "Feedback" below), not only into your own memory.
 
 ## Never
 - Never touch the user's PC or game without explicit permission. Before building content with new or changed units,
@@ -54,18 +71,37 @@ A request for "a mission", "a random mission" or "a map with a story" is a campa
 8. **Checks:** `python3 tools/bw/predelivery_check.py output/<map>.scx` (includes the story/briefing/voice checks,
    `check_map_design_bw.py`, cliff shape and rewards), plus the placement check and trigger simulation
    (`tools/bw/placecheck.py`, `tools/bw/trigsim.py`; the example script runs all of them).
-9. **Deliver only with 0 FAIL**, with the design note, the voice script, a minimap PNG and a routes PNG; say what was not tested in-game.
+9. **Gate and deliver:** `python3 tools/deliver.py output/<map>.scx` (runs the predelivery check and the design-note
+   test, packs the map, design note, voice script, minimap and routes PNG). Deliver only its ZIP; say what was not
+   tested in-game.
 
-## Warcraft III campaign mission
-Read `docs/wc3-campaign-design.md`, `docs/wc3-storytelling-cinematics.md`, `docs/wc3-map-design.md` and
-`docs/wc3-world-editor-technical.md`; design note from the template (including `TARGET_DURATION:` and
-`OBJECTIVE_PATHS:`, same duration and path rules as Brood War; worked example:
-`templates/Design_Note_example_wc3_mission.md`). Trace hero and army paths on the walkable grid, count creep camps
-and scripted attack waves against each objective's budget, then run `bash tools/wc3/run_all_checks.sh MAP.w3x`
-(`check_objective_paths.py`) and fix every FAIL. The shortcut, enemy-base pressure and tech-per-chapter rules apply as in Brood War
-(`OBJECTIVE_SHORTCUTS:`, `PRESSURE_SINGLE_OK:`, `TECH_LEVEL:`; `check_objective_shortcuts.py`, `check_enemy_base_pressure.py`,
-`check_tech_restriction.py`). New units/races: `docs/wc3-new-units.md`, `docs/wc3-custom-races.md`,
-test map via `tools/wc3/race_testmap/gen_testmap.py` (`docs/race-test-harness.md`).
+## Warcraft III campaign mission (fixed workflow, in this order)
+1. **Read** `docs/wc3-campaign-design.md`, `docs/wc3-map-design.md`, `docs/wc3-storytelling-cinematics.md` and
+   `docs/wc3-world-editor-technical.md`; new units or races also `docs/wc3-new-units.md` / `docs/wc3-custom-races.md`.
+2. **Campaign outline first**, then the **design note** from the template (worked example:
+   `templates/Design_Note_example_wc3_mission.md`): story, `## Characters` with `VOICE_GENDER:`, `TARGET_DURATION:`,
+   `OBJECTIVE_PATHS:` for every objective, `REQUIRED_WHY`, `REWARD_WHY:`, `ROSTER` lines for enemy unit types,
+   `ABILITY_USE` for every player ability, `SCENE` lines for every decorated spot, `PHASES:` (at least three phase
+   types), `SHALLOW_WATER:`, `TECH_LEVEL:`, and a `## Design Review` (pacing, rewards, fairness, abilities, fun,
+   verdict).
+3. **Paths, shortcuts, pressure, tech:** trace hero and army paths on the walkable grid, count creep camps and attack
+   waves against each objective's budget (same duration and path rules as Brood War). Check what the player's
+   heroes, units, items and abilities allow against each objective (`OBJECTIVE_SHORTCUTS:` / `SHORTCUT_OK:`), give
+   attacks at least two independent sources (`PRESSURE_SINGLE_OK:` only by design), and restrict the tech tree to
+   the chapter (`TECH_LEVEL:`).
+4. **Build your own mission script** on `tools/wc3/mission/wc3mission.py` (`Mission`, scenes, cinematics, campaign AI
+   from `tools/lib/wc3/campaign_ai.py`, voice via `tools/wc3/voice_tts.py`). `tools/wc3/mission/example_mission.py`
+   is a pipeline skeleton that fails many mission checks on purpose; never deliver anything close to it. Organic
+   terrain with at least three cliff levels and several ramps, every quarter dressed with a story scene, multi-phase
+   flow, dynamic intro cinematic, voiced dialogue, campaign AI that attacks from mission start.
+5. **Trigger test:** `python3 tools/wc3/mission_testmap/gen_trigger_test.py MAP.w3x` (`docs/mission-trigger-test.md`);
+   AI observation test for attacking AI (`tools/wc3/ai_observation_test.py`).
+6. **Checks:** `bash tools/wc3/run_all_checks.sh MAP.w3x` exits 0 only with 0 FAIL and prints a summary of every
+   failing check; `python3 tools/wc3/quality_metrics.py MAP.w3x` compares the map with the reference band.
+7. **Gate and deliver:** `python3 tools/deliver.py output/<map>.w3x`; deliver only its ZIP. Campaigns (`.w3n`): gate
+   every chapter map, then run `check_campaign_button_unlock.py` on the `.w3n`.
+New units/races: `docs/wc3-new-units.md`, `docs/wc3-custom-races.md`, test map via
+`tools/wc3/race_testmap/gen_testmap.py` (`docs/race-test-harness.md`).
 
 ## StarCraft II campaign mission
 The same duration and path rules apply (`docs/sc2-campaign-design.md`, `TARGET_DURATION:` and `OBJECTIVE_PATHS:` in
@@ -75,7 +111,16 @@ declare the planned length, budget every objective, and trace the real paths bef
 ## Ranked / melee maps
 - BW: `docs/bw-ranked-maps.md`, examples in `tools/ranked/bw/`, check `python3 tools/bw/check_ranked_bw.py MAP.scx`.
 - WC3: `docs/wc3-ranked-maps.md`, examples in `tools/ranked/wc3/`, check `python3 tools/wc3/check_ranked_wc3.py MAP.w3x`.
+- Gate: `python3 tools/deliver.py MAP --ranked`.
 
-## Feedback
-When the user gives design or playtest feedback that is a reusable rule, write it into the fitting guide (and a check
-where feasible) in the same turn, for the game it was given for.
+## Feedback (keep the quality in the repository)
+The rules in this repository exist because a human playtester rejected earlier maps. Quality only carries over to the
+next agent if it is written down here. When the user gives design or playtest feedback, in the same turn and
+without being asked:
+1. Game rule -> the fitting guide for the game it was given for (`docs/bw-*.md`, `docs/wc3-*.md`, catalogue).
+2. Working mistake (how the agent worked) -> `docs/lessons.md`, tagged with the game.
+3. Measurable property -> a check (with a known-bad and a known-good fixture) wired into `run_all_checks.sh` or
+   `predelivery_check.py`, and a design-note line in `templates/Design_Note_template.md` if the check reads one.
+4. If an example mission breaks the new rule, fix the example too: examples get copied.
+5. Run `python3 tools/selftest_agent_setup.py` and the selftests; commit in English.
+Keep `AGENTS.md` the only full instruction file; pointer files stay pointers.

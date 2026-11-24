@@ -397,6 +397,8 @@ A chapter AI observation test (`tools/wc3/ai_observation_test.py`) logs build or
 - `check_doodad_cluster_repeat.py` / `check_item_unguarded_loose.py`: repeated decoration near the starts; loose items without a reason.
 
 ## Campaign movies, interlude maps and campaign packaging
+- **Do not plan campaign scenes as movies:** custom movies stayed black in a current Reforged build in playtests
+  (`docs/wc3-campaign-design.md` "Campaign movies"). The format notes below are for reference only.
 - Movie files (Reforged 1.35+): `Movies\<Name>.avi` = VP9 CQ, 800x450, 25 fps, no audio; `Movies\Audio\<Name>.mp3` with the same name. Import both into the campaign (war3campaign.imp).
 - Interlude map: a tiny black map whose single trigger thread stops the music, hides the interface, shows a black cine filter, calls `PlayCinematic("<Name>")`, waits 0 s, `SetNextLevelBJ("<next map>")` and `CustomVictoryBJ(Player(0), false, false)`.
 - Campaign w3f v3: button flag 1 = visible, 2 = cinematic; `FLAG_VARIABLE_DIFFICULTY` for the campaign-menu difficulty.

@@ -121,7 +121,7 @@ Per-mission decisions, each recorded in the mission's Design_Note under "Mission
 - Classic-race units are not transports (see wc3-classic-races); mission-only transports need a reason in the Design_Note.
 
 
-Templates: `templates/Design_Note_template.md` (Design Note fields read by the checks) and `tools/wc3/mission/example_mission.py` (minimal mission built with the mission builder; passes the general map-design check, check_w3x and check_map_loadable; full mission checks need the content of a real mission: intro shots, difficulty, hero level cap, Design Note).
+Templates: `templates/Design_Note_template.md` (Design Note fields read by the checks) and `tools/wc3/mission/example_mission.py` (pipeline skeleton built with the mission builder; passes the general map-design check, check_w3x and check_map_loadable but fails many mission checks on purpose, because those need the content of a real mission: intro shots, several cliff levels, difficulty, hero level cap, a complete Design Note. Never deliver anything close to it; see `docs/quality-bar.md` and gate with `tools/deliver.py`).
 
 ### Attack announcements
 - Default: enemy attacks and waves are NOT announced: no warning text, no transmission, no minimap ping when a wave is sent. Announcements are allowed only when the mission design needs them (e.g. scouts or watchtowers as a story feature), justified with `ANNOUNCE_OK: <reason>` in the design note.
@@ -352,3 +352,54 @@ A required objective must be needed in the story and show that need from the sta
 
 ## Every player has its own colour
 Player(n) has colour n by default (Player(0) = red). Never give another player the human player's colour with `SetPlayerColor`; recolour only to free colours. Check: `check_player_color_unique.py`.
+
+## Rules that were enforced only by checks (now documented)
+These rules came from playtests of delivered chapters. Their checks run in `run_all_checks.sh`; until now the
+reasons were not written down here, so an agent only met them as a FAIL.
+
+### Altars only revive: no new heroes in campaign missions
+Campaign missions do not let the player train new heroes; each hero appears once and the altar only revives the
+fallen one. Official precedent: the orc chapters set `SetPlayerTechMaxAllowed(Player(0), <hero>, 0)` for every hero,
+owned ones included, and revive keeps working. `wc3mission.finish()` injects this lock. Exception:
+`HERO_TRAIN_OK :: <hero id> :: <reason>` in the design note. Check `check_hero_training.py`.
+
+### Cutscenes never stop the player's economy
+Workers keep working during mid-mission cutscenes, and the starting workers already harvest during the opening
+cinematic. The shared cinematic freeze (`tools/wc3/jass_cinematic_freeze.j`) stops only combat orders; harvesting
+workers are remembered and idle ones get `resumeharvesting` when the scene ends (every path, including ESC). Enemy
+combat units may be held for cutscene isolation, never workers. No `PauseAllUnitsBJ` and no player-wide pause,
+stop or hold in scenes; pause only the scene actors. Exception: `SCENE_PAUSE_OK <function> :: <reason>`. Checks
+`check_cutscene_workers.py`, `check_workers_idle_in_intro.py`, `check_start_workers.py`.
+
+### Campaign AI attacks without discovering the player
+- Never ship the AI-editor template attack thread in a campaign mission: it picks its target with
+  `GetEnemyExpansion` / `StartGetEnemyBase` and loops on `WaitGetEnemyBase`, so the AI attacks only a town it has
+  discovered. Under the black mask that depends on a scout, and waves come very late or never. Use the Blizzard
+  campaign pattern in `tools/lib/wc3/campaign_ai.py`: `CampaignAI(farm, null)`, a short standing build list, then per
+  wave `InitAssaultGroup` + `CampaignAttackerEx` + `SuicideOnPlayer(delay, user)`.
+- Wave timing: `SuicideOnPlayer` counts its delay from the previous launch but waits until the previous wave is
+  beaten (at most 300 s). Keep the next wave's units in the standing list so they train while a wave is out. Put the
+  tier hall, upgrades and an expansion after waves 1-2.
+- Pay for the plan: one gold mine yields at most about 10 gold/s. If the planned Hard waves cost more, add production
+  and a trigger stipend or cap the wave size. Hard is bigger AND more frequent than Normal.
+- No `WaitForSignal` unless the map sends `CommandAI` to that player.
+- Proof levels: `check_campaign_ai.py` with the economic timeline (`ai_timeline.py`) is a prediction; the proof is an
+  AI observation test map run in the game (`tools/wc3/ai_observation_test.py`). Report which level was reached. The
+  observation test keeps the player's units vulnerable and targetable and heals them instead
+  (`check_test_player_invulnerable.py`).
+
+### Campaign progression
+Every chapter map in a `.w3n` unlocks the next campaign button(s) with `ShowCustomCampaignButton(true, N)` before
+`SetNextLevelBJ` and the victory. Check `check_campaign_button_unlock.py` (run on the folder's `.w3n`).
+
+### Campaign movies
+Custom movie files played with `PlayCinematic` stayed black in a current Reforged build in playtests (the stock
+gnoll campaign intro too, and there are open bug reports). Do not plan campaign scenes as video files; use in-engine
+cinematics. The movie notes in `docs/wc3-world-editor-technical.md` describe the format for reference only.
+
+### Escape and interception routes
+Before building a mission where enemy groups flee or travel (refugees, couriers, caravans), draw every route and
+judge it from the player's view: each route needs an interception zone the player can reach and hold without first
+breaking an enemy base or its defences, and must not run through the enemy wave corridor. One line per route:
+`ESCAPE_ROUTE <name> :: start -> exit :: intercept zone :: why reachable`. Check
+`check_escape_route_interceptable.py`.

@@ -1,3 +1,6 @@
-# CLAUDE.md
-Read `AGENTS.md` first and follow it. It is the entry point for all work in this repository (Brood War and Warcraft III
-missions, campaigns, ranked maps, races and units) and lists the fixed workflow and the checks that must show 0 FAIL.
+@AGENTS.md
+
+## Claude Code
+The import above loads `AGENTS.md`, the single entry point for this repository. Follow its mandatory workflow:
+design note first, `docs/lessons.md` and `docs/quality-bar.md`, and deliver only what `python3 tools/deliver.py MAP`
+packs (0 FAIL). Do not add rules here; add them to `AGENTS.md` or the guides so every agent gets them.

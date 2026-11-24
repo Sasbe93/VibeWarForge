@@ -2,7 +2,12 @@
 description: VibeModForge entry point for StarCraft Brood War and Warcraft III maps, missions and campaigns
 alwaysApply: true
 ---
-Before any map, mission, campaign, race or unit work in this repository, read `AGENTS.md` at the repository root and
-follow its workflow. Brood War campaign missions: outline first, design note from the template, build on
-`tools/bw/example_mission.py`, voiced briefing and transmissions, rewards with an in-world source, then
-`python3 tools/bw/predelivery_check.py` - deliver only with 0 FAIL. Never touch the user's PC or game without permission.
+Before any map, mission, campaign, race or unit work in this repository, open and read `AGENTS.md` at the repository
+root (@AGENTS.md) and follow its mandatory workflow. If you cannot find it, the workspace is not the repository root:
+say so instead of continuing. Non-negotiable summary (AGENTS.md is authoritative):
+- Read `docs/lessons.md` and `docs/quality-bar.md`, then the game guides in `docs/`.
+- Design note from `templates/Design_Note_template.md` next to the map before building.
+- Build your own mission script on the repository builders; the examples are pipeline skeletons, never a design.
+- Deliver only the ZIP from `python3 tools/deliver.py output/<map>` (refuses on any FAIL). Never edit a check to pass.
+- Never touch the user's PC or game without permission. Never port WC3 rules to BW or the other way round.
+- Feedback goes into the guides, `docs/lessons.md` and a check in the same turn.
