@@ -1,6 +1,6 @@
 # Designing a custom race tech tree (Warcraft III)
 
-This guide covers the tech tree of a new, self-invented race that plays like a classic WC3 race. Model, voice, ability and test-map rules are in [wc3-custom-races.md](wc3-custom-races.md); the stock trees to compare against are in `data/wc3/tech/` (Human, Orc, Undead, Night Elf, Naga) and `data/bw/tech/` (Terran, Zerg, Protoss).
+This guide covers the tech tree of a new, self-invented race that plays like a classic WC3 race. Model, voice, ability and test-map rules are in [wc3-custom-races.md](wc3-custom-races.md); the stock trees to compare against are in `data/wc3/tech/` (Human, Orc, Undead, Night Elf, Naga).
 
 ## 1. Order of work
 1. Concept (section 2).
