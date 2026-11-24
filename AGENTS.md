@@ -20,6 +20,13 @@ as your workspace (agents read this file from the workspace root), and run every
    "known" or "existing", never edit a check to make your map pass.
 5. **Report honestly:** say what was tested only statically or in simulation and what was not tested in-game.
 6. **Feedback goes into the repository** (see "Feedback" below), not only into your own memory.
+7. **Provenance record (`docs/provenance.md`):** before you build, log every user prompt that changes a map or
+   campaign: `python3 tools/provenance.py add-prompt --map <map> --agent "<Cursor|Grok Bot|Claude Code|Codex|Dots|other:NAME>"
+   --agent-version <v> --model <model> --model-version <v> --text-file <prompt.txt>` (`--campaign <folder>` for a Brood
+   War campaign, `--redact` when a prompt holds personal data). Before changing a map the user may have edited in an
+   editor, run `python3 tools/provenance.py check <map> --record` and tell the user that a rebuild replaces their
+   editor changes (a backup is kept next to the map). Maps not written by `write_mpq` or `sclib.Map.save` get
+   `python3 tools/provenance.py stamp <map>`. Never switch the record off (`VIBEFORGE_PROVENANCE=0`) for a delivered map.
 
 ## Never
 - Never touch the user's PC or game without explicit permission. Before building content with new or changed units,
