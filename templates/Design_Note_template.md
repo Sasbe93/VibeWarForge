@@ -123,3 +123,9 @@ PHASES: base, explore, combat, defense, boss
 ## Campaign rules
 ## Mission design deviations
 - none (or: rule, deviation, reason)
+
+## Delivery gate
+`python3 tools/deliver.py <map>` refuses this note if a required line or section is missing (WC3: TARGET_DURATION,
+OBJECTIVE_PATHS, TECH_LEVEL, ## Characters, ## Design Review, REQUIRED_WHY, PHASES or ## Flow; BW: TARGET_DURATION,
+OBJECTIVE_PATHS, TECH_LEVEL, ## Characters, MISSION_TYPE, START_SETUP), if it is not English, or if any check FAILs.
+QUALITY_BAND_OK: <reason>     (WC3, only when the map is deliberately far below docs/quality-bar.md, e.g. a small interior map)

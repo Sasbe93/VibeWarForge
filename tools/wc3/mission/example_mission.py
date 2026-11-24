@@ -6,7 +6,10 @@ Then:  python3 tools/wc3/check_map_design_wc3.py output/example_mission/Example_
 Shows: black start + fade-in intro with walking/turning/animated actors in the bottom transmission bar (jass_story.j),
 ESC skip, a short story reveal under black mask + fog of war, layout with discs/lanes/lakes, organic map edge with sectors, start + expansion, a creep camp guarding the
 expansion from its open side, a landmark scene, item drops, one quest, the voiced Say speech convention and the
-World-Editor functions wegen.py needs (config, main, InitCustomPlayerSlots, InitCustomTeams)."""
+World-Editor functions wegen.py needs (config, main, InitCustomPlayerSlots, InitCustomTeams).
+PIPELINE SKELETON ONLY: this map fails many mission checks on purpose (one cliff level, no intro shots, stock names,
+no design review) and is far below docs/quality-bar.md. Copy how the builder is called, never the map; a real
+mission needs its own, much larger build script and must pass python3 tools/deliver.py."""
 import os, sys
 REPO = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', '..')); os.chdir(REPO)
 sys.path.insert(0, 'tools/wc3/mission')

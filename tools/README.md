@@ -14,6 +14,16 @@ Run every tool **from the repository root** (paths such as `data/...`, `external
 | `lib/bw/` | `sclib.py` (BW scenario IO via eudplib, ISOM terrain via `isomtool`) and the isomtool C++ source. |
 | `lib/wc3_bridges/` | Bridge detection and pathing analysis. |
 
+Delivery gate and helpers (repository root):
+- `deliver.py`: the only supported way to hand over a map. Runs all checks (WC3 `run_all_checks.sh`, BW
+  `predelivery_check.py`, ranked checks with `--ranked`), tests the design note for its required lines and English,
+  measures WC3 quality against `docs/quality-bar.md`, and packs `output/delivery/<map>_delivery.zip` with
+  `GATE_REPORT.json` only when everything passes.
+- `lib/check_summary.py`: classifies check outputs (FAIL / CRASH / WARN / OK); `run_all_checks.sh` uses it for its
+  final summary and exit code (0 = 0 FAIL, 1 = FAIL, 2 = crash).
+- `wc3/quality_metrics.py`: terrain, dressing and script richness compared with the reference band.
+- `selftest_agent_setup.py`: AGENTS.md and the pointer files for each agent stay wired up; the gate's fixtures behave.
+
 Typical use:
 ```
 python3 tools/wc3/check_w3x.py output/MyMap.w3x
