@@ -51,6 +51,16 @@ SHORTCUT_OK: <objective|location> :: <vector> :: <why it is fine>      (only for
 Which bases or off-map sources feed the waves and the AI. At least two independent sources; one early-reachable base
 that is not the objective must not switch off all attacks.
 PRESSURE_SINGLE_OK: <reason>      (only when one source is the design)
+ABILITY_SOFTLOCK_OK: <ability id> :: <reason>      (only when an objective spell may be lost with its casters)
+HOLD_LOSE_OK: <quest title> :: <reason>      (only when a hold/defend objective deliberately has no lose condition)
+SPAWN_ZERO_OK: <spawn function> :: <reason>      (only when a wave may spawn 0 units on purpose)
+REWARD_SPAWN_OK: <reward> :: <reason>      (only when a reward appears far from the player and the objective on purpose)
+ENEMY_NEAR_START_OK: <reason>      (only when an enemy beside the start at second 0 is the design)
+QUEST_IDLE_OK: <quest or region> :: <reason>      (only when a quest may complete with nobody acting)
+VOICE_FIT_OK: <unit id> :: <reason>      (only when a unit deliberately uses a soundset of another race/family)
+TERRAIN_OK: empty_levels :: <reason>      (only when an empty height level is deliberate, e.g. an unreachable backdrop)
+CAMPAIGN_REF_OK edge_tree_wall :: <reason>      (only when the edge tree band is the design)
+(every *_OK reason needs 4+ concrete words; placeholders are refused)
 
 ## Tech level
 TECH_LEVEL: <early|mid|late|full> :: <chapter, e.g. M2 of 8, or stand-alone> :: <what the player gets and why>

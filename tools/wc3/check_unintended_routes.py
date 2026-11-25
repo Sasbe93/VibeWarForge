@@ -44,10 +44,28 @@ def load_layout(p):
                 edges.add(frozenset((west[0][0],east[0][0]))); lanes.append([west[0][1],tuple(v),east[0][1]])
     for a,b in ns.get('ROUTES_EXTRA',[]): edges.add(frozenset((rn.get(tuple(a),a) if isinstance(a,tuple) else a, rn.get(tuple(b),b) if isinstance(b,tuple) else b)))
     return regs,lanes,edges,float(ns.get('LANE_W',3.0)),int(ns.get('N',0) or 0)
+def cliff_cells(raw,W,H):
+    """32-wu pathing cells covered by a cliff tile: the 4 corner vertices of a 128-wu tile have different cliff layers
+    and none of them is a ramp vertex. The game blocks those tiles whatever the wpm says."""
+    import w3parse
+    out=np.zeros((H,W),bool)
+    try: E=w3parse.w3e(raw)
+    except Exception: return out
+    VW,VH=E['w'],E['h']
+    lay=np.array([p['layer'] for p in E['P']]).reshape(VH,VW); ramp=np.array([bool(p['fl']&1) for p in E['P']]).reshape(VH,VW)
+    a,b,c,d=lay[:-1,:-1],lay[:-1,1:],lay[1:,:-1],lay[1:,1:]
+    cl=(np.maximum(np.maximum(a,b),np.maximum(c,d))!=np.minimum(np.minimum(a,b),np.minimum(c,d)))
+    rp=ramp[:-1,:-1]|ramp[:-1,1:]|ramp[1:,:-1]|ramp[1:,1:]
+    cl&=~rp
+    big=np.kron(cl,np.ones((4,4),bool))
+    h,w=min(H,big.shape[0]),min(W,big.shape[1]); out[:h,:w]=big[:h,:w]
+    return out
+
 def walk_grid(m):
     d=m.read('war3map.wpm'); _,_,W,H=struct.unpack_from('<4sIii',d)
     walk=(np.frombuffer(d[16:16+W*H],np.uint8).reshape(H,W)&2)==0
     e=w3e_grid(m.read('war3map.w3e')); ox,oy=e['ox'],e['oy']
+    walk&=~cliff_cells(m.read('war3map.w3e'),W,H)   # review t1035: generated wpm files may lack the cliff pathing
     import slk
     T=slk.table('destructabledata.slk','DestructableID')
     for r in doo_rows(m.read('war3map.doo')):

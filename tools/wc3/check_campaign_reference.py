@@ -3,10 +3,11 @@
 chapters (RoC Human02/04/05/06/07/09 originals + Undead04/05, NightElf02, Orc03 2P/MP edits) and 6 custom chapters
 (Dwarf Campaign 1-3, Gnoll Campaign 1, To the Bitter End 05/06).
 Applies to mission maps only (melee/ranked maps keep the ranked rules). [base] = only for base-building missions
-(user town hall or StartCampaignAI/tech limits + gold mine; override with `BASE_BUILDING: yes|no` in the Design Note).
+(user town hall, or user workers + a gold mine; tech limits, an enemy AI or a decorative mine alone do not count; override with `BASE_BUILDING: yes|no` in the Design Note).
 FAIL height       [base] >= 3 cliff levels, >= 2 ramp groups (WARN below 4; every built ramp must be a valid 3-vertex-row ramp,
                   terrain_variety ramp_shape), raw height std >= 100 wu
-FAIL trees        tree share of all doodads <= 30 %; tree-only zone borders <= 0.55
+FAIL trees        tree share of all doodads (margin included) <= 30 %; tree-only zone borders <= 0.55; doodads in the map-edge band
+                  (margin + 2 outer playable cells) at most 65 % trees, as edge_terrain.py (edge_tree_wall: no uniform tree wall)
 FAIL open_area    wide (768-1536) + open (>=1536) walkable area >= 10 %; >= 1 open area of >= 1536 wu;
                   widest point on the start->goal/camp routes >= 1350 wu
 FAIL size         walkable share >= 43 %; [base] playable cells >= 7400
@@ -17,13 +18,13 @@ FAIL ai           every hostile player with a base (town hall or >= 3 buildings)
 FAIL doodads      40-130 non-tree doodads per 1000 playable cells; >= 17 distinct doodad types
 Shallow water is NOT judged here: campaign half-rule in check_campaign_shallow.py.
 Exempt one key with `CAMPAIGN_REF_OK <key> :: reason` in a Design_Note*.md next to the map
-(keys: cliff_levels ramps height_std tree_share tree_only wide_open open_areas route_widest walkable playable potion_share
+(keys: cliff_levels ramps height_std tree_share edge_tree_wall tree_only wide_open open_areas route_widest walkable playable potion_share
  drop_sources drop_random wave_drop ai doodad_density doodad_ids).
 Usage: check_campaign_reference.py MAP.w3x [--json]"""
 import sys, os, re, glob, io, contextlib, json
 H = os.path.dirname(os.path.abspath(__file__)); sys.path[:0] = [H, os.path.join(H, '..', 'lib', 'wc3')]
 import campaign_metrics as CM
-T = dict(cliff_levels=3, ramps=2, height_std=100, tree_share=0.30, tree_only=0.55, wide_open=0.10, open_areas=1, route_widest=1350,
+T = dict(cliff_levels=3, ramps=2, height_std=100, tree_share=0.30, edge_tree_wall=0.65, tree_only=0.55, wide_open=0.10, open_areas=1, route_widest=1350,
          walkable=0.43, playable=7400, potion_share=0.50, potion_target=0.40, drop_sources=3, drop_random=1, doodad_lo=40, doodad_hi=130, doodad_ids=17)
 def evaluate(path, R=None):
     if R is None:
@@ -41,7 +42,8 @@ def evaluate(path, R=None):
         chk('ramps', R['ramps'] >= T['ramps'], 'height: %d ramp groups, %d of them valid 3-row ramps (need >= %d ramp groups; official 2-19 in the originals; target >= 4; every ramp you build must be a valid 3-row ramp, terrain_variety ramp_shape)' % (R['ramps'], R['ramps_ok'], T['ramps']))
         if R['ramps'] >= T['ramps'] and R['ramps'] < 4: out.append(('WARN', 'ramps', 'height: only %d ramp groups (target >= 4)' % R['ramps']))
         chk('height_std', R['height_std_raw'] >= T['height_std'], 'height: raw height std %.0f wu (need >= %d; official 105-492, med 189)' % (R['height_std_raw'], T['height_std']))
-    chk('tree_share', R['tree_share'] <= T['tree_share'], 'trees: %.0f%% of doodads are trees (max %.0f%%; official 7-26%%)' % (100 * R['tree_share'], 100 * T['tree_share']))
+    chk('tree_share', R['tree_share'] <= T['tree_share'], 'trees: %.0f%% of doodads are trees (%d of %d, %d of them outside the playable area; max %.0f%%; official 7-26%%)' % (100 * R['tree_share'], R.get('trees_total', 0), R.get('doodads_total', 0), R.get('trees_margin', 0), 100 * T['tree_share']))
+    chk('edge_tree_wall', R.get('edge_tree_wall', 0) <= T['edge_tree_wall'], 'trees: %.0f%% of the doodads in the map-edge band (margin + 2 outer cells) are trees (max %.0f%%: the edge continues the landscape - cliffs, rocks, water, hills, mixed doodads - not one uniform tree wall)' % (100 * R.get('edge_tree_wall', 0), 100 * T['edge_tree_wall']))
     chk('tree_only', R['tree_only'] <= T['tree_only'], 'trees: tree-only zone borders %.2f (max %.2f; official 0.19-0.54)' % (R['tree_only'], T['tree_only']))
     wo = R['area_wide'] + R['area_open']
     chk('wide_open', wo >= T['wide_open'], 'open_area: wide+open walkable area %.1f%% (need >= %.0f%%; official 10.4-28%%)' % (100 * wo, 100 * T['wide_open']))

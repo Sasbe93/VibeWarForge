@@ -36,7 +36,8 @@ CRITTERS=set('ncrb necr nrat nfro nder nsea npng nalb nshf nvul ncrk ncnt nfro n
 SKIP_WAVE=re.compile(r'Intro|Init|Setup|Config|Cinematic|Story|Camera|Main$|CreateAll',re.I)
 
 def jass_of(m):
-    return (m.read('war3map.j') or m.read('scripts\\war3map.j') or b'').decode('utf8','replace')
+    import jass_norm   # thin wrappers -> natives, player variables -> Player(N) (review t1032)
+    return jass_norm.normalize((m.read('war3map.j') or m.read('scripts\\war3map.j') or b'').decode('utf8','replace'))
 
 def wts_map(m):
     raw=m.read('war3map.wts') or b''
@@ -48,14 +49,30 @@ def resolve(s, wts):
     if m: return wts.get(int(m.group(1)),s)
     return s
 
-def typ_of(title, desc):
-    t=((title or '')+' '+(desc or '')).lower()
-    if re.search(r'\b(survive|hold out|defend .+ for|last for|for \d+ minutes?)\b',t) and not re.search(r'\bmust survive\b',t):
+INFO_QUEST=re.compile(r'^\s*(credits?|about|how to play|tips?|hints?|controls|info(rmation)?|help|acknowledg\w*|changelog|thanks)\b',re.I)
+HERO_RULE=re.compile(r'\b(must not (fall|die)|must survive|may not die|keep \w+ alive|is revived|rises again)\b',re.I)
+
+def typ_of(title, desc, items=()):
+    """objective type; quest items (what the quest log lists) decide first, then title, then description.
+    Hero-survival rules ('X must not fall') are conditions, not the objective type (review t1032)."""
+    for t in [i for i in items if not HERO_RULE.search(i)]+[title or '', desc or '']:
+        k=_typ1(t.lower())
+        if k: return k
+    return 'destroy'
+
+def _typ1(t):
+    if re.search(r'\b(survive|hold out|defend .+ for|last for|for \d+ minutes?)\b',t) and not HERO_RULE.search(t):
         return 'survive'
     if re.search(r'\bescort|convoy|bring .+ (to|home|back)\b',t): return 'escort'
-    if re.search(r'\brescue|free|save\b',t): return 'rescue'
-    if re.search(r'\breach|find your way|get to|meet\b',t): return 'reach'
-    return 'destroy'
+    if re.search(r'\b(rescue|free|save|release)\b',t): return 'rescue'
+    if re.search(r'\b(reach|find your way|get to|meet|explore|scout|discover|find the|carry .+ to|travel to|enter)\b',t): return 'reach'
+    if re.search(r'\b(destroy|kill|slay|defeat|raze|clear|purge|eliminate)\b',t): return 'destroy'
+    return None
+
+def is_info_quest(title, desc, items):
+    """credits / help / info entries in the quest log are no objectives (review t1032: 'Credits' counted as a
+    destroy objective)"""
+    return bool(INFO_QUEST.search(title or '')) and not items
 
 def quests(j, wts):
     # pair title/description/required by the quest variable name
@@ -68,10 +85,17 @@ def quests(j, wts):
     req={}
     for m in re.finditer(r'QuestSetRequired\(\s*(\w+)\s*,\s*(true|false)\s*\)',j,re.I):
         req[m.group(1)]=m.group(2).lower()=='true'
+    itv={}
+    for m in re.finditer(r'(\w+)\s*=\s*QuestCreateItem(?:BJ)?\(\s*(\w+)\s*\)',j): itv[m.group(1)]=m.group(2)
+    items={}
+    for m in re.finditer(r'QuestItemSetDescription\(\s*(\w+)\s*,\s*"([^"]*)"',j):
+        if m.group(1) in itv: items.setdefault(itv[m.group(1)],[]).append(resolve(m.group(2),wts))
+    for m in re.finditer(r'CreateQuestItemBJ\(\s*(\w+)\s*,\s*"([^"]*)"',j): items.setdefault(m.group(1),[]).append(resolve(m.group(2),wts))
     out=[]
     for v,name in titles.items():
-        desc=descs.get(v,'')
-        out.append(dict(var=v,name=name,desc=desc,optional=not req.get(v,True),type=typ_of(name,desc)))
+        desc=descs.get(v,''); it=items.get(v,[])
+        if is_info_quest(name,desc,it): continue
+        out.append(dict(var=v,name=name,desc=desc,items=it,optional=not req.get(v,True),type=typ_of(name,desc,it)))
     if not out:
         # title only as a bare CreateQuest + next lines, already covered; fallback: design-note names later
         for m in re.finditer(r'QuestSetTitle\(\s*[^,]+,\s*"([^"]+)"\s*\)',j):

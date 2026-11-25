@@ -153,6 +153,13 @@ Vectors and checks:
   `tools/wc3/check_tech_restriction.py`, shared model `tools/wc3/mission_model.py` (static, read from war3map.j, the
   units file, the walk grid and the design note; air lines are straight, anti-air is every threat that is not a
   known ground-only unit). Fixtures: `python3 tools/wc3/selftest_t1025_checks.py`.
+- Semantics and opening (`run_all_checks.sh`, fixtures `python3 tools/wc3/selftest_t1034_checks.py`):
+  `check_ability_softlock.py` (an objective spell needs a caster that cannot be lost for good),
+  `check_objective_semantics.py` (hold/defend objectives lose with the defended object; spawn counts never 0 for any
+  difficulty or wave; rewards appear near the player or the objective; objectives have pings or markers),
+  `check_opening_review.py --timeline` (enemies beside the start, quests done at second 0, what happens in the first
+  minutes). The checks read war3map.j through `tools/wc3/jass_norm.py`, which resolves thin wrappers, player
+  variables and constant arithmetic, so a renamed helper does not hide a pattern.
 
 ## Ask the user how new content gets tested (required step)
 Before building a campaign, mission or fun map that contains new or changed units, heroes, buildings or abilities, the agent must ask the user whether all new content should be tested before the map is delivered, and offer two options:

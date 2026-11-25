@@ -3,7 +3,8 @@
 apply to missions too. Play-test feedback: Hollowdeep had no thin raised/lowered layers, no shallow water, everything shielded by trees.
 Measured (reusing the ranked implementations):
   hills      detrended height std of flat walkable land and hill tops per 1000 flat tiles (wc3_bridges.analyse)
-  cliffs     cliff levels with >= 2% of the playable vertices; valid 3-row WC3 ramps (ranked_layout_rules ramp_shape),
+  cliffs     cliff levels with >= 2% of the playable vertices (FAIL empty_levels when a level only exists as bare
+             height zones - no doodads, units or objectives - and the remaining levels fall below the minimum); valid 3-row WC3 ramps (ranked_layout_rules ramp_shape),
              visible ramp texture + dressed height zones, organic outlines (pocket_rules organic_cliffs)
   water      shallow walkable water as % of walkable ground, deep water % (analyse)
   tree walls share of zone borders (walkable cells next to blocked cells) blocked ONLY by trees; same for the player base
@@ -87,7 +88,27 @@ def measure(path):
         ci, cj = int((b0[0]['x'] - OX) // 128), int((b0[0]['y'] - OY) // 128)
         yy, xx = np.mgrid[0:Hh, 0:W]; bt = border_share((xx - ci) ** 2 + (yy - cj) ** 2 <= 14 ** 2)
     melee = 'MeleeStartingUnits' in J
-    return dict(melee=melee, hill_std=r['hill_std'], hills_1k=r['hills_per_1k'], slope=r['slope_pct'], shallow=r['shallow_pct'], deep=r['deep_pct'],
+    # empty levels (review t1035): a cliff level counts only when at least one of its height zones (>= 6x6 vertices)
+    # holds something - 3+ doodads/trees, a unit, or a script-created unit/item - and those used zones alone cover the
+    # 2 % that make a level. Bare geometric rings only lift the metric.
+    from scipy import ndimage as _nd
+    import jass_norm
+    pts = [(d['x'], d['y']) for d in DOO]; upts = [(u['x'], u['y']) for u in U if u['id'] != 'sloc']
+    upts += [(float(a), float(b)) for a, b in re.findall(r"Create(?:Unit|Item)\(\s*(?:[^,()]+|Player\([^)]*\))\s*,\s*'\w{4}'\s*,\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)", jass_norm.normalize(J))]
+    cell = lambda x, y: (int(round((x - OX) / 128)), int(round((y - OY) / 128)))
+    basel = int(np.bincount(layer[vin]).argmax()); empty = []
+    for L in lv:
+        if L == basel: continue
+        zl, nz = _nd.label((layer == L) & vin, structure=np.ones((3, 3))); used = 0; big = 0
+        for k in range(1, nz + 1):
+            zm = zl == k; jj, ii = np.nonzero(zm)
+            if np.ptp(ii) + 1 < 6 or np.ptp(jj) + 1 < 6: continue
+            big += 1; zg = _nd.binary_dilation(zm, iterations=1)
+            nd_ = sum(1 for x, y in pts if 0 <= cell(x, y)[1] < VH and 0 <= cell(x, y)[0] < VW and zg[cell(x, y)[1], cell(x, y)[0]])
+            nu = sum(1 for x, y in upts if 0 <= cell(x, y)[1] < VH and 0 <= cell(x, y)[0] < VW and zg[cell(x, y)[1], cell(x, y)[0]])
+            if nd_ >= 3 or nu: used += int(zm.sum())
+        if big and used < 0.02 * vin.sum(): empty.append(L)   # the used zones alone must still make a level (2 % rule)
+    return dict(empty_levels=empty, melee=melee, hill_std=r['hill_std'], hills_1k=r['hills_per_1k'], slope=r['slope_pct'], shallow=r['shallow_pct'], deep=r['deep_pct'],
                 n_shallow=r['n_shallow'], levels=lv, ramps=ramps, ramps_ok=ramps_ok, tree_only=round(to, 2), border_cells=tn,
                 base_tree_only=None if bt[0] is None else round(bt[0], 2), zones=keep(I2, 'visible_ramps: height zones'),
                 ramp_fails=keep(F2, 'ramp_shape'), zone_fails=keep(F2, 'visible_ramps'), organic_fails=keep(F2, 'organic_cliffs'))
@@ -111,6 +132,12 @@ def run(path, I, F, exempt=None):
         I.append('INFO terrain_variety shallow: %.1f%% shallow walkable water (%d patches), deep %.1f%% - missions: judged by check_campaign_shallow (SHALLOW_WATER: yes|no, about half the chapters)' % (r['shallow'], r['n_shallow'], r['deep']))
     else: judge('shallow', r['shallow'], txt='shallow walkable water %.1f%% of walkable (%d patches), deep %.1f%%' % (r['shallow'], r['n_shallow'], r['deep']))
     judge('levels', len(r['levels']), txt='%d cliff levels %s' % (len(r['levels']), r['levels']))
+    if r.get('empty_levels'):
+        f_ = T['levels'][0]; real = len(r['levels']) - len(r['empty_levels'])
+        line = 'terrain_variety empty_levels: cliff level(s) %s exist mostly as bare height zones (the zones with doodads, units or objectives cover < 2 %% of the map); %d level(s) remain - an empty ring does not count as terrain variety (fill the zone with a scene, camp or route, or remove it)' % (r['empty_levels'], real)
+        if 'empty_levels' in ok: I.append('INFO ' + line + ' - TERRAIN_OK')
+        elif real < f_: F.append(line)
+        else: I.append('WARN ' + line)
     # ramps: >= 1 ramp group when there are >= 2 levels; every ramp the builder made must be a valid 3-row ramp (FAILs below).
     # (the ladder refs use older/hand-made ramps that the strict shape test does not recognise -> ramp count only)
     # 10/14 ladder refs have NO ramp-flag vertices at all (levels joined by open layer seams/height slopes), so a missing ramp is

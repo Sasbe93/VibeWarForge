@@ -38,7 +38,8 @@ class Model:
     def from_parts(cls,base,j=None,notes=None):
         """copy of a loaded model with another script text and/or design note (fixtures)"""
         o=cls.__new__(cls); o.path=base.path; o.walk,o.ox,o.oy=base.walk,base.ox,base.oy; o.U=list(base.U)
-        o._setup(base.j if j is None else j, base.wts, base.notes if notes is None else notes); return o
+        import jass_norm
+        o._setup(base.j if j is None else jass_norm.normalize(j), base.wts, base.notes if notes is None else notes); return o
     def _setup(s,j,wts,notes):
         s.j=j; s.wts=wts; s.notes=notes; s.F=OP.functions(j)
         # units created in the script with literal coordinates: (var or None, owner, id, x, y)
@@ -49,6 +50,10 @@ class Model:
         s.vars={}
         for v,ow,k,x,y in s.JU:
             if v and v!='u' and v not in s.vars: s.vars[v]=(k,x,y,ow)
+        # unit variables bound to preplaced units by a lookup helper, e.g. set udg_gHero = FindAt(Player(0), 'Hmbr', x, y)
+        for mm in re.finditer(r"set\s+(\w+)\s*=\s*\w+\(\s*Player\((\d+|PLAYER_NEUTRAL_\w+)\)\s*,\s*'(\w{4})'\s*,\s*"+NUM+r"\s*,\s*"+NUM,j):
+            v=mm.group(1); ow=mm.group(2); ow=int(ow) if ow.isdigit() else (24 if 'AGGRESSIVE' in ow else 25)
+            if v!='u' and v not in s.vars: s.vars[v]=(mm.group(3),_f(mm.group(4)),_f(mm.group(5)),ow)
         s.start=OP.start_xy(s.U,j)
         big=max([u[3] for u in s.U]+[u[1] for u in s.JU if u[1]<24],default=0)>15
         s.HOST=24 if big else 12; s.NPL=24 if big else 12

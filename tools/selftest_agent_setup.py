@@ -59,6 +59,29 @@ os.remove(tmp)
 sh = read('tools/wc3/run_all_checks.sh') or ''
 need('check_summary.py' in sh and 'exit $rc' in sh, 'run_all_checks.sh no longer ends with the FAIL summary and its exit code')
 
+for c in ('check_ability_softlock', 'check_objective_semantics', 'check_opening_review'):
+    need(c in sh and os.path.isfile(os.path.join(ROOT, 'tools', 'wc3', c + '.py')), f'{c} is not wired into run_all_checks.sh')
+dv = read('tools/deliver.py') or ''
+need('check_opening_review.py' in dv and 'OPENING_REVIEW.txt' in dv, 'tools/deliver.py no longer runs the opening review')
+need('def foreign_map' in dv, 'tools/deliver.py no longer refuses existing/foreign maps')
+for t, bad in (('Old Campaign Chapter Test (Main Run)', True), ('Trigger Test', True), ('River Ford', False), ('The Ashen Testament', False)):
+    need(bool(deliver.TEST_TITLE.search(t)) == bad, f'TEST_TITLE misjudges {t!r}')
+ag = read('AGENTS.md') or ''
+for must in ('Play the opening', 'Never deliver an existing map', 'Never game a check'):
+    need(must in ag, f'AGENTS.md lost {must!r}')
+
+
+# self-review, exceptions, review prompt, rules index (t1034 follow-up)
+for f in ('templates/Self_Review_template.md', 'tools/lib/self_review.py', 'docs/review-prompt.md', 'docs/wc3-mission-rules.md', 'tools/selftest_self_review.py'):
+    need(os.path.isfile(os.path.join(ROOT, f)), f + ' is missing')
+_dv = read('tools/deliver.py') or ''
+need('self_review(mp, rep' in _dv and 'exceptions(text, rep)' in _dv, 'tools/deliver.py no longer runs the self-review and the exception list')
+_r = {'problems': []}; deliver.exceptions('SHORTCUT_OK: North Relay :: lift-off :: <reason>\nWAVE_VARIETY_OK: the siege waves are identical on purpose because the story says so\n', _r)
+need(len(_r['problems']) == 1 and len(_r['exceptions']) == 2, 'deliver.exceptions does not list both lines and refuse only the placeholder')
+_ag = read('AGENTS.md') or ''
+for must in ('Self-review', 'docs/review-prompt.md', 'docs/wc3-mission-rules.md'):
+    need(must in _ag, f'AGENTS.md lost {must!r}')
+
 for e in E: print('FAIL', e)
 print('SELFTEST PASS' if not E else f'SELFTEST FAIL ({len(E)})')
 sys.exit(1 if E else 0)

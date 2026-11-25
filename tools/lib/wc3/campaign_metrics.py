@@ -17,6 +17,7 @@ from check_tech_wc3 import parse_obj
 DEST = SU.slk('destructabledata.slk'); DOOD = SU.slk(os.path.join('..', 'doodads', 'doodads.slk')) if os.path.exists(os.path.join(SU.U, '..', 'doodads', 'doodads.slk')) else {}
 ITEMS = SU.slk('itemdata.slk'); UDATA = SU.slk('unitbalance.slk')
 POTION = re.compile(r'^(phea|pman|pghe|pgma|pomn|pres|prej|pnvl|plcl|rhe\d|rma\d|rre\d|rej\d|shea|sman|srej|hlst|mnst|spre|ssan|pinv|pspd)$')
+WORKERS = set('hpea opeo uaco ewsp nmpe ngnw'.split())
 HALLS = set('htow hkee hcas ogre ostr ofrt unpl unp1 unp2 etol etoa etoe nntt nntg'.split())
 MINES = set('ngol ugol egol ngob'.split())
 BINS = [(0, 384, 'narrow'), (384, 768, 'lane'), (768, 1536, 'wide'), (1536, 1e9, 'open')]
@@ -89,6 +90,9 @@ def objbase(m, f):
 def measure(path, pngdir=None):
     R = dict(map=os.path.basename(os.path.dirname(path)), file=os.path.basename(path))
     m = MPQ(open(path, 'rb').read()); J = (m.read('war3map.j') or m.read('scripts\\war3map.j') or b'').decode('utf8', 'replace')
+    try:   # thin wrappers (e.g. a TT_CreateUnit around CreateUnit) and player variables (gP) resolved (review t1032)
+        sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'wc3')); import jass_norm; J = jass_norm.normalize(J)
+    except ImportError: pass
     R['script_kb'] = round(len(J) / 1024, 1); R['functions'] = len(re.findall(r'^function \w+', J, re.M)); R['triggers'] = len(re.findall(r'CreateTrigger\(\s*\)', J))
     L = w3parse.load(path); E = L['E']; VW, VH = E['w'], E['h']; W, H = VW - 1, VH - 1
     l, r_, b_, t_ = L['margins']; R['size'] = '%dx%d' % (W, H)
@@ -135,7 +139,10 @@ def measure(path, pngdir=None):
     hb = sorted(k for k, v in bl.items() if any(x in HALLS for x in v) or len(v) >= 3)
     ai = {pnum(e_) for e_ in re.findall(r'StartCampaignAI\(\s*([^,]+?)\s*,', J)}
     R['hostile_base_players'] = hb; R['hostile_base_no_ai'] = [k for k in hb if k not in ai]
-    R['enemy_players'] = len(enemies); R['base_building'] = bool(R['user_halls'] or re.search(r'SetPlayerTechMaxAllowed|StartCampaignAI', J) and R['gold_mines'])
+    # base building = the player owns a town hall, or workers next to a gold mine. Tech limits, an enemy campaign AI or a
+    # decorative gold mine alone do not make a hero mission a base-building one (review t1032)
+    R['user_workers'] = sum(1 for u in units if cls(u['o']) == 'user' and base(u['id']) in WORKERS)
+    R['enemy_players'] = len(enemies); R['base_building'] = bool(R['user_halls'] or (R['user_workers'] and R['gold_mines']))
     # creep camps: single-linkage clusters (600 wu) of neutral hostile non-building units
     cr = [(u['x'], u['y']) for u in units if u['o'] == NH and not isbld(u['id'])]
     camps = 0; seen = [False] * len(cr)
@@ -208,7 +215,22 @@ def measure(path, pngdir=None):
         if not (0 <= i < W and 0 <= j < H): continue
         if istree(d['id']): tree[j, i] = True
         elif pin[j, i]: nont.append(d['id'])
-    R['tree_share'] = round(float((tree & pin).sum()) / pin.sum(), 3)
+    R['tree_cover'] = round(float((tree & pin).sum()) / pin.sum(), 3)   # share of playable cells with a tree (old 'tree_share')
+    # share of ALL doodads that are trees (what the reference band means; review t1035: 1531 of 2132 doodads were trees,
+    # 888 of them in the outer margin, while the cell share said 8%)
+    nall = sum(1 for d in D); ntree = sum(1 for d in D if istree(d['id']))
+    R['tree_share'] = round(ntree / nall, 3) if nall else 0.0; R['trees_total'] = ntree; R['doodads_total'] = nall
+    R['trees_margin'] = sum(1 for d in D if istree(d['id']) and not (0 <= cel(d)[0] < W and 0 <= cel(d)[1] < H and pin[cel(d)[1], cel(d)[0]]))
+    # tree wall along the map edge: share of the doodads outside the playable area (the margin the player looks at)
+    # plus the outer 2 playable cells that are trees; the edge should continue the landscape (cliffs, rocks, water,
+    # hills, mixed doodads), not one uniform tree wall (review t1035)
+    try:
+        from scipy import ndimage as _nd
+        band = ~_nd.binary_erosion(pin, iterations=2)
+        md = [d for d in D if not (0 <= cel(d)[0] < W and 0 <= cel(d)[1] < H) or band[cel(d)[1], cel(d)[0]]]
+        R['edge_doodads'] = len(md)
+        R['edge_tree_wall'] = round(sum(1 for d in md if istree(d['id'])) / len(md), 3) if len(md) >= 40 else 0.0
+    except Exception: R['edge_tree_wall'] = 0.0
     R['doodads_nontree'] = len(nont); R['doodad_ids'] = len(set(nont))
     R['doodads_per_1k'] = round(1000.0 * len(nont) / pin.sum(), 1); R['doodad_ids_per_1k'] = round(1000.0 * len(set(nont)) / pin.sum(), 2)
     R['tree_ids'] = len(set(d['id'] for d in D if istree(d['id'])))

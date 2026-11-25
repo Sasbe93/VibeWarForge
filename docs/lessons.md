@@ -44,6 +44,18 @@ that a human playtester rejected.
   `python3 tools/deliver.py MAP` and deliver only what it packs.
 - **C8 Verify engine semantics from real sources**, never from memory or from your own earlier phrasing: `common.j`,
   `common.ai` and official maps. Mark anything unverified as unverified.
+- **C10 Never game the checks.** Unused cliff levels with nothing on them, thin wrapper functions that hide a native
+  call from a regex, quest-credits pseudo-quests and placeholder exception reasons all made checks pass on maps a
+  player would reject. The checks now resolve wrappers and player variables (`tools/wc3/jass_norm.py`), skip info
+  quests and FAIL empty height levels (terrain_variety empty_levels).
+- **C11 Play the opening before you deliver** (`check_opening_review.py --timeline`): enemies beside the start, a
+  quest already done at second 0 or a silent first minute show up there, not in a static check.
+- **C12 Honest provenance.** Write "unknown" when you do not know a value; never invent prompts, versions or builds.
+- **C13 Name checks by what they check**, and describe a check by its effect in plain words when you report it.
+- **C14 Fix scope = what was marked.** When the user marks specific spots, change only those; feedback from a
+  playthrough applies to future maps unless the user allows changing the delivered one.
+- **C15 Write down every rule you are given, in the same turn**: game rule -> the fitting guide or
+  `docs/wc3-mission-rules.md`, working mistake -> this file, measurable property -> a check.
 - **C9 Check bug reports before relying on a fragile engine feature.** Custom campaign movies stayed black in the
   user's Reforged build (known open bug reports); do not plan campaign scenes as video files, use in-engine
   cinematics. When unsure whether a feature works in the user's version, say so before delivery and give a fallback.
@@ -65,8 +77,23 @@ that a human playtester rejected.
   unrelated deeds; no ranking of reward types, the reward follows from the objective.
 - **D7 Routes that enemies use to flee or travel** need an interception zone the player can reach without first
   breaking an enemy base, and must not share the enemy wave corridor.
+- **D8 Objective-critical abilities need a caster who cannot be lost for good.** If only non-revivable units can cast
+  the spell that opens the way, one death softlocks the mission (ability_softlock). Give it to a hero, make the
+  caster trainable or add a fallback.
+- **D9 Hold and defend objectives lose with the defended object.** A "hold the ford" quest needs a defeat or fail
+  condition tied to what is held, waves must never have 0 units on any difficulty or wave, and rewards appear
+  where the player or the objective is, not at the start (objective_semantics).
+- **D10 Distance objectives in periodic timers are objectives too.** An "enter the area" test inside a tick function
+  (IsUnitInRangeXY, a distance helper, an inline Rect) still needs shortcut and path checks.
+- **D11 Voices fit the unit.** A gnoll boss with the Footman soundset sounds wrong; pick a soundset of the same race or
+  creep family (model_voice voice_fit).
+- **D12 Terrain is not a tree wall.** When most doodads are trees and the map edge is a solid tree band, the map reads
+  as a corridor (campaign_reference tree_share, edge_tree_wall). Cliffs in the w3e block walking too.
 
 ## Never copy a previous mission
+- **N0 Never deliver an existing map.** An old instrumented test map (title "Chapter Test (Main Run)") still passed
+  many static checks in a review (t1032). Build your own map; `tools/deliver.py` refuses test titles, the author
+  "VibeModForge", the example and maps without a recorded build.
 - **N1 Copying a build script copies its bugs.** Re-check every player slot, colour, owner and alliance setting in
   reused code (two missions shipped with player and enemy both red, from one copied line).
 - **N2 Decoration is unique per mission.** Re-used scene cells and prop lists make missions look identical; a check

@@ -18,8 +18,9 @@ Sub-rules (FAIL unless noted):
                  without a 'HUD <label> :: shown from .. :: effect ..' line
  revive          ReviveHero without REVIVE_OK; revive path without enemy regen/respawn; quest text says the hero must
                  survive / not fall / not die while a revive exists (contradiction)
- ability_use     detection ability (Adt1/Adts/Atru/Agyv/Abdt/Adtg) on a player unit but no enemy invisibility in the
-                 mission and no ABILITY_USE line
+ ability_use     detection ability (Adt1/Adts/Atru/Agyv/Abdt/Adtg) on a player unit (also on summoned wards) but no
+                 enemy invisibility in the mission and no 'ABILITY_USE <id> :: <concrete use, 4+ words>' line; FAIL also
+                 on legacy maps without a design note
  rescue_exit     a rescued/freed NPC gets a move order but is never removed/hidden/joined (stands around after rescue)
  building_portal a building (gold mine, tavern...) used as EXIT from its own interior: the map is that interior
                  (Dungeon/Underground tileset, or 'INTERIOR: yes' in the note) and units appear at / leave through the building.
@@ -151,7 +152,7 @@ def check(m, note, standalone=False):
     inv = {k for k, (o, _) in w3a.items() if o in INVIS} | INVIS
     has_inv = any(i in Jc for i in inv) or any(i in pl_abil for i in inv)
     for a in sorted(used):
-        if not has_inv and not re.search(r'^\s*ABILITY_USE\s+%s\s*::\s*\S' % a, N, re.M):
+        if not has_inv and not re.search(r'^\s*ABILITY_USE\s+%s\s*::\s*\S+(?:\s+\S+){3}' % a, N, re.M):   # a concrete use, 4+ words
             E.append('ability_use: %s detects invisible units but no enemy is invisible - give the ability a real use (invisible enemies, scouting targets) or drop it; or add ABILITY_USE %s :: <use>' % (a, a))
     # rescue_exit
     for n, b in F.items():
@@ -238,7 +239,8 @@ def main():
         for n, m in ms:
             e, w = check(m, N, sa); E += ['%s %s' % (n, x) for x in e]; W += ['%s %s' % (n, x) for x in w]
         if not nf:   # legacy map without a design note: declaration-based findings are WATCH, hard findings stay FAIL
-            DECL = ('gold_bounty', 'refill_cap', 'ability_use', 'difficulty', 'hud_rows: HUD row', 'revive: ReviveHero without')
+            # ability_use stays FAIL: a detector without anything to detect is useless with or without a note (t1032)
+            DECL = ('gold_bounty', 'refill_cap', 'difficulty', 'hud_rows: HUD row', 'revive: ReviveHero without')
             W += [e for e in E if any(t in e for t in DECL)]; E = [e for e in E if not any(t in e for t in DECL)]
         for e in E: print('FAIL', e)
         for w in W: print('WATCH', w)

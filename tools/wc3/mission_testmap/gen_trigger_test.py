@@ -2146,6 +2146,10 @@ def main():
     db, dw = estimate(Jn, A, float(a.scale), a.tscale, 0.5, 1.5, a.holdmax, 'defeat')
     print('ESTIMATE main run: best %.0f s / worst %.0f s game time (baseline settings: best %.0f s / worst %.0f s) -> speedup x%.1f best, x%.1f worst; '
           'defeat run best %.0f s / worst %.0f s; game speed fastest adds about x1.3-1.7 real time' % (nb, nw, ob, ow, ob / max(nb, 1), ow / max(nw, 1), db, dw))
+    if a.check and 'TT_Start' in J:
+        print('INFO map is already a trigger test variant - skipping trigger_test_gen')
+        print('RESULT OK (0 targets, 0 deaths, 0 not auto-testable)')
+        sys.exit(0)
     res = []
     for variant in (['main', 'defeat'] if a.check else [a.variant]):
         TJ, timers = build_script(J, A, variant, title, logdir, a.scale, a.holdmax, a.tscale, diff=a.difficulty)

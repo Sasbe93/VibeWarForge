@@ -39,6 +39,27 @@ The "weak agent map" column is a map another agent built from this repository wi
 judged "so-so" in map and mission design by the playtester. A cave map (Northrend interior, few ramps by design)
 measured 4 rows below, which is why the refusal starts at 5.
 
+## Anti-gaming (how the metrics resist a map built for the numbers)
+A map can be tuned to pass checks without being better for the player. The tools count only what the player meets:
+- **Only reachable code counts.** quality_metrics counts script lines, sounds, quests and timed callbacks only in
+  functions reachable from `main` (calls, `function X` references, `ExecuteFunc`); the shared library counts as when
+  the band was measured. The checks read war3map.j through `tools/wc3/jass_norm.py`, which resolves thin wrappers,
+  player variables and constant arithmetic, so renaming a native call does not hide it.
+- **Identical waves count once.** Timed callbacks whose bodies differ only in numbers count once; the same sound file
+  created twice counts once; credits/help entries are not quests (check_objective_paths skips info quests).
+- **Exceptions need a concrete reason and are listed.** Every `*_OK` line in the design note needs 4+ words and no
+  placeholder; `tools/deliver.py` refuses thin reasons and lists every exception line in `GATE_REPORT.json`; name
+  them in your report.
+- **Many metrics exactly at the floor is a warning.** When half or more of the band rows sit within 10 % above their
+  minimum, quality_metrics prints `WARN on_floor` and the gate repeats it.
+- **Empty terrain does not count.** A height level with nothing on it (terrain_variety empty_levels) or a tree band at
+  the edge (campaign_reference edge_tree_wall) FAILs instead of raising a number.
+- **Self-review and independent review.** `Self_Review_<map>.md` (template `templates/Self_Review_template.md`) must
+  answer every question with concrete names, places and times of the map (`tools/lib/self_review.py`); a fresh agent
+  reviews the map with `docs/review-prompt.md` before delivery.
+Limits: Warcraft III has no trigger simulation here, so "reachable before victory" means reachable from `main`; code
+that only runs after a victory is not separated. The floor warning is a prompt, not proof.
+
 ## What the agent must judge (no tool can)
 Before running the gate, look at the minimap/preview PNG and the routes PNG and answer these in the design note's
 `## Design Review`. Be honest; "fine" is not an answer.

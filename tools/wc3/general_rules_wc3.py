@@ -7,7 +7,8 @@ ranked versions in ranked_rules_basics / ranked_rules_ranked_layout_rules instea
   neutral_building_count do not overdo neutral buildings: <= 1 per 1100 playable cells (min 2) and <= 1 tavern
   creep_drops            every creep camp drops something (item pool, SaveInteger drop table or UnitDropItem/CreateItem on death)
   hilly_ground           ground height std >= 30 wu over playable land and >= 3 hill zones
-Units are read from war3mapUnits.doo AND from CreateUnit lines in war3map.j (missions create most units in script)."""
+Units are read from war3mapUnits.doo AND from CreateUnit lines in war3map.j (missions create most units in script;
+thin wrappers such as TT_CreateUnit(p, id, x, y, f) count as CreateUnit, tools/wc3/jass_norm.py)."""
 import math, re, numpy as np
 NB = ('ngme','ngad','nmer','nmrk','nfoh','nfov','ndrg','ndrk','ndru','ndrz','ndrb','ndrr','ngwr','nmr0','nmr2','nshp','nfgo','nmoo','nwgt','ntav')
 TREES = set('ATtr BTtw CTtr FTtw LTlt NTtw WTtw WTst YTct YTwt YTst YTft VTlt DTsh ZTtw ITtw ATtc OTtw KTtw JTct JTtw GTsh BTtc CTtc NTtc ZTtc ITtc Yts1 Ytsc NTiw'.split())
@@ -32,7 +33,8 @@ def camps_of(cr, r=500):
     return out
 def run(path, I, F, L=None):
     import w3parse
-    L = L or w3parse.load(path); E = L['E']; J = (L['m'].read('war3map.j') or b'').decode('utf8', 'replace')
+    import jass_norm   # thin create wrappers (e.g. TT_CreateUnit) and player variables resolved (review t1032)
+    L = L or w3parse.load(path); E = L['E']; J = jass_norm.normalize((L['m'].read('war3map.j') or b'').decode('utf8', 'replace'))
     W, H = E['w']-1, E['h']-1; OX, OY = E['ox'], E['oy']; l, r, b, t = L['margins']
     PW, PH, g = L['wpm']; g = np.frombuffer(g, np.uint8).reshape(PH, PW); walk = ~((g[1::4, 1::4] & 2) > 0)[:H, :W]
     tree = np.zeros((H, W), bool)

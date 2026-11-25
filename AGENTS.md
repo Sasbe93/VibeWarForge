@@ -6,7 +6,8 @@ Frozen Throne content. This file is the single entry point; `CLAUDE.md`, `GEMINI
 as your workspace (agents read this file from the workspace root), and run every tool from the repository root.
 
 ## Mandatory for every map, mission or campaign
-1. **Read before you build:** this file, `docs/lessons.md` (how agents got maps wrong before), `docs/quality-bar.md`
+1. **Read before you build:** this file, `docs/lessons.md` (how agents got maps wrong before), `docs/wc3-mission-rules.md`
+   (rule index: which rules a check enforces and which are judgement), `docs/quality-bar.md`
    (what delivery quality means and what the tools cannot judge), then the guides for your task below.
 2. **Plan before you build:** campaign outline, then a design note from `templates/Design_Note_template.md` next to
    the map (`Design_Note_<map>.md`), with every line the template marks as required. The design note is part of
@@ -14,19 +15,31 @@ as your workspace (agents read this file from the workspace root), and run every
 3. **Build with the repository's builders** (`tools/wc3/mission/wc3mission.py` + `tools/lib/wc3/`). The example shows
    the pipeline only; your mission needs its own terrain, scenes, enemies, story and code, as rich as the plan
    (`docs/quality-bar.md`).
-4. **Gate:** `python3 tools/deliver.py output/<map>.w3x` runs every check, the design-note completeness test and the
+4. **Gate** (needs the self-review of step 6): `python3 tools/deliver.py output/<map>.w3x` runs every check, the design-note completeness test and the
    quality metrics, and packs `output/delivery/<map>_delivery.zip` only when all pass. **Deliver only
    that ZIP.** If the gate refuses, fix the map and run it again. Never deliver around the gate, never call a FAIL
    "known" or "existing", never edit a check to make your map pass.
-5. **Report honestly:** say what was tested only statically or in simulation and what was not tested in-game.
-6. **Feedback goes into the repository** (see "Feedback" below), not only into your own memory.
-7. **Provenance record (`docs/provenance.md`):** before you build, log every user prompt that changes a map or
+5. **Play the opening:** `python3 tools/wc3/check_opening_review.py output/<map>.w3x --timeline` lists what happens in
+   the first minutes (timed triggers, enemies near the start, quests already done). Read it as the player would and
+   fix what a player would notice in the first five minutes. `tools/deliver.py` runs it and packs `OPENING_REVIEW.txt`.
+6. **Self-review:** fill `templates/Self_Review_template.md` as `Self_Review_<map>.md` next to the map: what the player
+   sees at second 0, the cheapest path to every objective with every ability the player has, what happens after
+   victory and defeat, every difficulty, each scripted mechanic per instance, softlocks, exceptions, what was not
+   tested in game. Concrete names, places and times of this map; `tools/deliver.py` refuses a missing, unanswered,
+   placeholder, generic or copied self-review.
+7. **Independent review (recommended):** let a fresh agent that has not seen your work review the map with
+   `docs/review-prompt.md` (checks, simulation and a manual player-view analysis; ranked faults, gaming signs, tool
+   gaps). Fix what it finds before delivery.
+8. **Report honestly:** say what was tested only statically or in simulation and what was not tested in-game.
+9. **Feedback goes into the repository** (see "Feedback" below), not only into your own memory.
+10. **Provenance record (`docs/provenance.md`):** before you build, log every user prompt that changes a map or
    campaign: `python3 tools/provenance.py add-prompt --map <map> --agent "<Cursor|Grok Bot|Claude Code|Codex|Dots|other:NAME>"
    --agent-version <v> --model <model> --model-version <v> --text-file <prompt.txt>` (`--redact` when a prompt holds
    personal data). Before changing a map the user may have edited in an editor, run
    `python3 tools/provenance.py check <map> --record` and tell the user that a rebuild replaces their editor changes
    (a backup is kept next to the map). Maps not written by `write_mpq` get `python3 tools/provenance.py stamp <map>`.
-   Never switch the record off (`VIBEFORGE_PROVENANCE=0`) for a delivered map.
+   Never switch the record off (`VIBEFORGE_PROVENANCE=0`) for a delivered map. The record must be honest: write
+   "unknown" for anything you do not know, never a guess.
 
 ## Never
 - Never touch the user's PC or game without explicit permission. Before building content with new or changed units,
@@ -36,6 +49,13 @@ as your workspace (agents read this file from the workspace root), and run every
   the Kokoro voice model), stop and tell the user what to install (`DEPENDENCIES.md`, `external/README.md`). A fresh
   clone has none of them; without the stock data about a third of the checks crash, and `tools/deliver.py` stops
   first. No flat placeholder terrain, no text-only missions as a fallback.
+- Never deliver an existing map as your result: not an old test map, not an example, not a map someone else made.
+  Build the mission with the repository's builders; `tools/deliver.py` refuses test titles ("Chapter Test", "Main
+  Run", "Trigger Test"), the author "VibeModForge", the unchanged example and maps without a build in the provenance
+  record. If you were given a wrong or old file, say so instead of passing it on.
+- Never game a check: no empty terrain zones or unused cliff levels to raise a metric, no exception line with a
+  placeholder reason, no dead triggers or copied waves to raise a count, no renamed function to hide a pattern. A
+  check measures what the player experiences; satisfy that, not the number.
 - Never commit Blizzard game files (extracted assets, stock data) or generated maps (`output/` is git-ignored).
 
 ## Campaign mission (fixed workflow, in this order)
@@ -60,7 +80,7 @@ as your workspace (agents read this file from the workspace root), and run every
 5. **Trigger test:** `python3 tools/wc3/mission_testmap/gen_trigger_test.py MAP.w3x` (`docs/mission-trigger-test.md`);
    AI observation test for attacking AI (`tools/wc3/ai_observation_test.py`).
 6. **Checks:** `bash tools/wc3/run_all_checks.sh MAP.w3x` exits 0 only with 0 FAIL and prints a summary of every
-   failing check; `python3 tools/wc3/quality_metrics.py MAP.w3x` compares the map with the reference band.
+   failing check (it includes ability_softlock, objective_semantics and opening_review); `python3 tools/wc3/quality_metrics.py MAP.w3x` compares the map with the reference band.
 7. **Gate and deliver:** `python3 tools/deliver.py output/<map>.w3x`; deliver only its ZIP. Campaigns (`.w3n`): gate
    every chapter map, then run `check_campaign_button_unlock.py` on the `.w3n`.
 New units/races: `docs/wc3-new-units.md`, `docs/wc3-custom-races.md`, test map via

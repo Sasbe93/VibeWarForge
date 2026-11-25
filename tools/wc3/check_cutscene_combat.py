@@ -3,7 +3,9 @@
 For every cinematic block (CinematicModeBJ(true ...) up to CinematicModeBJ(false ...) or the end of the function; plus
 the matching end function when the block ends in another function, e.g. a skip/finish handler) FAIL unless
  1 CinematicFreezeBegin() is called in the block (directly or one call level deep) before the first transmission, and
- 2 CinematicFreezeEnd() is called in the same function or in a function containing that block's CinematicModeBJ(false).
+ 2 CinematicFreezeEnd() is called in the same function, in a function it calls (two levels, e.g. StorySceneEnd),
+   or in a function containing that block's CinematicModeBJ(false); a scene that ends the game (victory/defeat)
+   needs no end. Thin wrappers resolve (tools/wc3/jass_norm.py).
 Also FAIL when transmissions (TransmissionFromUnit*) run inside a cinematic of a map that has no freeze helpers at all,
 and when the map uses CinematicFreezeBegin without defining CinematicFreezeEnd.
 Exempt with 'CUTSCENE_COMBAT_OK: <function> :: reason' in war3map.j or <map>.cutscene_ok.txt.
@@ -14,7 +16,8 @@ from w3common import open_map
 def funcs(j): return {m.group(1):m.group(0) for m in re.finditer(r'function (\w+) takes.*?endfunction',j,re.S)}
 def called(txt,F): return [F[n] for n in set(re.findall(r'(?:call|ExecuteFunc\(")\s*(\w+)',txt)) if n in F and not n.startswith('CinematicFreeze')]
 def check(f):
-    m,_=open_map(f); j=m.read('war3map.j').decode('utf8','replace')
+    import jass_norm
+    m,_=open_map(f); j=jass_norm.normalize(m.read('war3map.j').decode('utf8','replace'))
     okf=f.rsplit('.',1)[0]+'.cutscene_ok.txt'; ok=j+(open(okf).read() if os.path.exists(okf) else '')
     F=funcs(j); E=[]; nb=0
     if 'CinematicFreezeBegin' in j and 'function CinematicFreezeEnd' not in j: E.append('map: CinematicFreezeEnd not defined')
@@ -31,9 +34,12 @@ def check(f):
             else:
                 t=re.search(r'TransmissionFrom|call Say\(',blk)
                 if t and t.start()<b.start() and not re.search(r'CinematicFreezeBegin\(',blk[:t.start()]): P.append('transmission before CinematicFreezeBegin')
-            closed=mm.group(1).startswith('CinematicModeBJ')
-            endpool=body if closed else body+''.join(F[n] for n in enders)
-            if not re.search(r'CinematicFreezeEnd\(',endpool): P.append('no matching CinematicFreezeEnd')
+            closed=mm.group(1).startswith(('CinematicModeBJ','StorySceneEnd'))
+            # follow scene wrappers: the freeze end may sit in a function the block calls (StorySceneEnd -> CinematicFreezeEnd)
+            endpool=body+''.join(called(body,F))+''.join(called(''.join(called(body,F)),F))
+            if not closed: endpool+=''.join(F[n] for n in enders)
+            ends_game=not closed and re.search(r'CustomVictoryBJ|CustomDefeatBJ|EndGame\(',blk)
+            if not ends_game and not re.search(r'CinematicFreezeEnd\(',endpool): P.append('no matching CinematicFreezeEnd')
             print('  %s: %s'%(name,'OK' if not P else '; '.join(P)))
             E+=['%s: %s'%(name,p) for p in P]
     if not nb: print('  no cinematic blocks')

@@ -4,6 +4,10 @@
 Objectives: enter-region triggers (TriggerRegisterEnterRectSimple / TriggerRegisterEnterRegion with a Rect) whose
 actions complete a quest, win, or give units/gold. The counted unit comes from the trigger's condition and actions
 (a unit variable, a unit type, heroes only, ground units only, or any unit of Player(0)).
+Also distance objectives polled in a periodic tick (review t1032): a timer/periodic-trigger callback (followed two
+call levels) with 'if ... <helper>(X, Y) < R then' (a helper that measures from GetUnitX(<unit>)), 'D2(GetUnitX(u),
+GetUnitY(u), X, Y) < R', DistanceBetweenPoints or IsUnitInRangeXY(u, X, Y, R), whose branch (and the functions or
+triggers it runs) completes a quest, advances a quest item, wins, or gives units/gold -> a region of radius R around (X, Y).
 Vectors, from what this map gives the player (placed units, the roster allowed by SetPlayerTechMaxAllowed, items
 in the script, a Goblin Laboratory on the map): flying units, Goblin Zeppelin, Mass Teleport / Blink heroes and
 teleport items. Each one is compared with the straight air line: anti-air threats (everything that is not a known
@@ -19,25 +23,90 @@ NUM=W.NUM
 def enter_triggers(M):
     R=M.rects(); out=[]
     for fn,body in M.F.items():
-        regs=list(re.finditer(r'TriggerRegisterEnter(?:RectSimple|Region)\(\s*(\w+)\s*,\s*(?:(\w+)|Rect\(\s*'+NUM+r'\s*,\s*'+NUM+r'\s*,\s*'+NUM+r'\s*,\s*'+NUM+r'\s*\))',body))
+        # inline Rect(...) first (otherwise '\w+' takes the word 'Rect'; review t1035 BeaconLit); coordinates are folded
+        regs=list(re.finditer(r'TriggerRegisterEnter(?:RectSimple|Region)\(\s*(\w+)\s*,\s*(?:Rect\(\s*'+NUM+r'\s*,\s*'+NUM+r'\s*,\s*'+NUM+r'\s*,\s*'+NUM+r'\s*\)|(\w+))',body))
         if not regs: continue
         acts={}; conds={}
         for mm in re.finditer(r'TriggerAddAction\(\s*(\w+)\s*,\s*function\s+(\w+)\s*\)',body): acts.setdefault(mm.group(1),[]).append(mm.group(2))
         for mm in re.finditer(r'TriggerAddCondition\(\s*(\w+)\s*,\s*Condition\(\s*function\s+(\w+)\s*\)\s*\)',body): conds.setdefault(mm.group(1),[]).append(mm.group(2))
         for r in regs:
             t=r.group(1)
-            if r.group(2):
-                name=r.group(2)
+            if r.group(6):
+                name=r.group(6)
                 rv=R.get(name) or R.get(re.sub(r'^gg_rgn','gg_rct',name))
                 if not rv:
                     mm=re.search(r'RegionAddRect\(\s*'+re.escape(name)+r'\s*,\s*(\w+)\s*\)',M.j)
                     rv=R.get(mm.group(1)) if mm else None
                 if not rv: continue
             else:
-                name='Rect'; rv=tuple(map(float,r.group(3,4,5,6)))
+                name='Rect'; rv=tuple(map(float,r.group(2,3,4,5)))
             text=''.join(M.body(f) for f in acts.get(t,[])+conds.get(t,[]))
             if not re.search(r'QuestSetCompleted|SQ_Done|CustomVictoryBJ|SetPlayerState\(\s*Player\(0\)|AdjustPlayerStateBJ|SetUnitOwner\([^)]*Player\(0\)|CreateUnit\(\s*Player\(0\)',text): continue
             out.append(dict(region=name,rect=rv,text=text,trig=t))
+    return out+tick_triggers(M)
+
+REWARD=r'QuestSetCompleted|QuestItemSetCompleted|SQ_Done|CustomVictoryBJ|SetPlayerState\(\s*Player\(0\)|AdjustPlayerStateBJ|SetUnitOwner\([^)]*Player\(0\)|CreateUnit\(\s*Player\(0\)'
+
+def _expand(M,text,depth=2):
+    """text plus the bodies of the functions it calls / passes / runs via TriggerExecute (depth levels)"""
+    seen=set(); cur=text; out=text
+    acts={}
+    for mm in re.finditer(r'TriggerAddAction\(\s*(\w+)\s*,\s*function\s+(\w+)\s*\)',M.j): acts.setdefault(mm.group(1),[]).append(mm.group(2))
+    for _ in range(depth):
+        names=set(re.findall(r'(?:call\s+|function\s+|=\s*)(\w+)\s*\(?',cur))|{f for t in re.findall(r'TriggerExecute\(\s*(\w+)',cur) for f in acts.get(t,[])}
+        nxt=''
+        for n in names:
+            if n in M.F and n not in seen: seen.add(n); nxt+=M.F[n]
+        out+=nxt; cur=nxt
+    return out
+
+def _branch(body,i):
+    """text of the if-branch that starts at index i (up to the matching endif/else)"""
+    d=0
+    for mm in re.finditer(r'^\s*(if\b.*\bthen|endif|else\b|elseif\b.*\bthen)\s*$',body[i:],re.M):
+        w=mm.group(1).split()[0]
+        if w=='if': d+=1
+        elif w=='endif': d-=1
+        elif d==1: return body[i:i+mm.start()]
+        if d==0: return body[i:i+mm.start()]
+    return body[i:]
+
+def _helpers(M):
+    """distance helpers like 'function HD takes real x, real y' measuring from GetUnitX(<unit variable>)"""
+    helper={}
+    for n,b in M.F.items():
+        mm=re.search(r'GetUnitX\(\s*(\w+)\s*\)',b)
+        if mm and mm.group(1) in M.vars and re.search(r'SquareRoot|DistanceBetween|D2\(|\bdist',b,re.I) and len(b)<600: helper[n]=mm.group(1)
+    return helper
+
+def tick_triggers(M):
+    cbs=set(re.findall(r'TimerStart\(\s*(?:\w+\(\)|\w+(?:\[[^\]]*\])?)\s*,\s*[\w.]+\s*,\s*true\s*,\s*function\s+(\w+)',M.j))
+    for t in re.findall(r'TriggerRegisterTimerEvent(?:Periodic)?\(\s*(\w+)\s*,\s*[\d.]+\s*(?:,\s*true)?\s*\)',M.j):
+        cbs|=set(re.findall(r'TriggerAddAction\(\s*'+re.escape(t)+r'\s*,\s*function\s+(\w+)',M.j))
+    fns=set(cbs)
+    for _ in range(2):
+        for f in list(fns): fns|={n for n in re.findall(r'call\s+(\w+)\s*\(',M.F.get(f,'')) if n in M.F}
+    helper=_helpers(M)
+    out=[]; seen=set()
+    for f in sorted(fns):
+        body=M.F.get(f,'')
+        for mm in re.finditer(r'^\s*(?:else)?if\b(.*)\bthen\s*$',body,re.M):
+            c=mm.group(1); hit=None
+            m1=re.search(r'IsUnitInRangeXY\(\s*(\w+)\s*,\s*'+NUM+r'\s*,\s*'+NUM+r'\s*,\s*'+NUM,c)
+            if m1: hit=(m1.group(1),float(m1.group(2)),float(m1.group(3)),float(m1.group(4)))
+            for m2 in re.finditer(r'(\w+)\(\s*'+NUM+r'\s*,\s*'+NUM+r'\s*\)\s*<=?\s*'+NUM,c):
+                if m2.group(1) in helper: hit=(helper[m2.group(1)],float(m2.group(2)),float(m2.group(3)),float(m2.group(4)))
+            m3=re.search(r'(?:D2|DistanceBetweenCoords)\(\s*GetUnitX\(\s*(\w+)\s*\)\s*,\s*GetUnitY\(\s*\w+\s*\)\s*,\s*'+NUM+r'\s*,\s*'+NUM+r'\s*\)\s*<=?\s*'+NUM,c)
+            if m3: hit=(m3.group(1),float(m3.group(2)),float(m3.group(3)),float(m3.group(4)))
+            if not hit: continue
+            u,x,y,r=hit
+            text=_expand(M,_branch(body,mm.start()))
+            if not re.search(REWARD+r'|QuestItemSetDescription',text): continue   # tick: quest progress counts too
+            key=(round(x),round(y))
+            if key in seen: continue
+            seen.add(key)
+            out.append(dict(region=f'tick {f}: {u} within {r:.0f} of ({x:.0f},{y:.0f})',rect=(x-r,y-r,x+r,y+r),
+                            text=f'{u} == {u}\n'+text,trig=f))
     return out
 
 def counted(M,o):
@@ -45,6 +114,8 @@ def counted(M,o):
     mm=re.search(ent+r'\s*==\s*(\w+)',t) or re.search(r'(\w+)\s*==\s*'+ent,t)
     for g in (mm.groups() if mm else ()):
         if g in M.vars: return 'var',{M.vars[g][0]},f"{g} ({M.vars[g][0]})"
+    for h,v in _helpers(M).items():
+        if re.search(r'\b'+h+r'\s*\(',t) and v in M.vars: return 'var',{M.vars[v][0]},f"{v} ({M.vars[v][0]}, via {h})"
     mm=re.search(r"GetUnitTypeId\(\s*"+ent+r"\s*\)\s*==\s*'(\w{4})'",t)
     if mm: return 'type',{mm.group(1)},mm.group(1)
     if re.search(r'IsUnitType\(\s*'+ent+r'\s*,\s*UNIT_TYPE_HERO\s*\)\s*(?:==\s*true)?',t) and not re.search(r'UNIT_TYPE_HERO\s*\)\s*==\s*false',t):

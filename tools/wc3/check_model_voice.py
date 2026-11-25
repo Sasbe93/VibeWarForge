@@ -4,6 +4,9 @@ Every custom unit/hero (w3u, not Aloc helpers) needs a row in a markdown table u
 'Model & Voice' (tech tree, Design_Note or race md) with columns: ID | Name | Model | Voice | Reason.
 FAIL: unit has no row; empty model, voice or reason cell; a reason under 4 words;
       a Hive Workshop model (cell contains hiveworkshop) without URL, rating (4-5 stars), votes (>=3), author and credits/license.
+FAIL voice_fit (review t1035): a unit (custom or modified stock) whose soundset (usnd) was changed to one that no
+      unit of the same race uses - and, for creeps, no unit of the same model family - e.g. a Gnoll chieftain with the
+      Footman voice. Accept with 'VOICE_FIT_OK: <id> :: <reason>' in a design note.
 Usage: check_model_voice.py map.w3x|pack_dir [doc.md ...]  (docs default: Design_Note*.md, *Techtree*.md, custom_race*.md next to it and one level up)"""
 import sys,os,re,glob
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
@@ -24,6 +27,29 @@ def col(r,*ks):
     for k in r:
         if any(k.startswith(x) for x in ks): return r[k]
     return ''
+def _fam(path):
+    f=re.split(r'[\\/]',str(path or '').strip())
+    n=(f[-2] if len(f)>=2 else f[-1]).lower()
+    return re.sub(r'(overseer|king|warrior|poacher|brute|assassin|lord|elder|chieftain|\d+)$','',n)[:5]
+def voice_fit(U,notes):
+    import check_unique_models as UM, slk
+    try: S=UM.stock_skin(); T=slk.table('unitdata.slk','unitID')
+    except Exception as ex: return []
+    users={}
+    for k,v in S.items():
+        if v.get('unitsound'): users.setdefault(v['unitsound'].lower(),[]).append(k)
+    E=[]
+    for u,(base,md) in U.items():
+        snd=first(md,'usnd')
+        if not snd: continue
+        race=(T.get(base) or {}).get('race',''); model=first(md,'umdl') or S.get(base,{}).get('file','')
+        us=users.get(str(snd).lower(),[])
+        same=[x for x in us if (T.get(x) or {}).get('race','')==race]
+        if race=='creeps': same=[x for x in same if _fam(S[x].get('file',''))==_fam(model)]
+        if us and not same and not re.search(r'VOICE_FIT_OK:\s*%s\s*::\s*\S+(?:\s+\S+){3}'%re.escape(u),notes):
+            nm=str(first(md,'unam') or u)
+            E.append("%s (%s): voice_fit: soundset '%s' (used by %s) does not fit a %s unit with model %s - pick a soundset of the same race/creature (or VOICE_FIT_OK: %s :: <reason>)"%(u,nm,snd,', '.join(us[:3]),race or '?',model,u))
+    return E
 def check(path,docs):
     F=load(path); E=[]
     d=path if os.path.isdir(path) else os.path.dirname(os.path.abspath(path))
@@ -51,6 +77,7 @@ def check(path,docs):
             if not vo or int(vo.group(1))<3: E.append('%s: Hive model votes missing or < 3'%u)
             if not re.search(r'(author|autor|by)\s*[:=]?\s*\S',row,re.I): E.append('%s: Hive model author missing'%u)
             if not re.search(r'credit|licen|lizenz',row,re.I): E.append('%s: Hive model credits/license missing'%u)
+    E+=voice_fit(U,' '.join(open(p,encoding='utf8',errors='replace').read() for p in docs))
     for e in E: print('  FAIL',e)
     print('%s RESULT %s (%d custom units, %d FAIL, docs: %s)'%(path,'FAIL' if E else 'OK',len(U),len(E),','.join(os.path.basename(x) for x in docs) or 'none')); return not E
 if __name__=='__main__':
